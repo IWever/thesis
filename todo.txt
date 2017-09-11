@@ -1,6 +1,14 @@
-X uittypen meeting
-- hoe gaan we autonoom varen, wat zijn de stappen die daar voor nodig zijn
-- 
-
-Chrome opruimen
-Chrome instellen op deze PC
+x Mail opruimen
+? Wekelijkse meeting Research
+X Update project summary
+X Format maken voor meetings
+X Mendeley uitzoeken
+- Plan van aanpak opstellen
+	- hoe gaan we autonoom varen, wat zijn de stappen die daar voor nodig zijn
+	- Wat zijn de inputs voor model
+	- wat zijn de outputs
+	- Specifieker maken wat te testen aan HCI
+- Opzetten website
+- GUI maken
+- Chrome opruimen
+- Chrome instellen op deze PC
