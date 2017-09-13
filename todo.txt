@@ -2,13 +2,19 @@ x Mail opruimen
 ? Wekelijkse meeting Research
 X Update project summary
 X Format maken voor meetings
-X Mendeley uitzoeken
-- Plan van aanpak opstellen
-	- hoe gaan we autonoom varen, wat zijn de stappen die daar voor nodig zijn
-	- Wat zijn de inputs voor model
-	- wat zijn de outputs
-	- Specifieker maken wat te testen aan HCI
-- Opzetten website
-- GUI maken
+
+- Registreren dutos.nl
+- Advanced Algorithms checken voor inschrijven
+
+- Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
+	- concreet maken CS deel
+	- stappen van onderzoek bepalen
+	- feedback vragen
+- onderzoek in 3 zinnen
+- Plan van aanpak opstellen (input, output, HCI, toekomst)
+
+- Mendeley uitzoeken
+- GUI maken op website
 - Chrome opruimen
-- Chrome instellen op deze PC
+- Chrome instellen op Damen PC
+- KIVI filmpje en foto's verspreiden
