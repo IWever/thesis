@@ -1,22 +1,26 @@
-x Mail opruimen
+hx Mail opruimen
 ? Wekelijkse meeting Research
 X Update project summary
 X Format maken voor meetings
 
 x Registreren dutos.nl
-- Advanced Algorithms checken voor inschrijven
-- website bouwen
+x Master thesis course brightspace en blackboard | MT en CS
 
 - Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
 	- concreet maken CS deel
 	- stappen van onderzoek bepalen
 	- feedback vragen
+- Kick-off plannen
 - IFS invullen
 - onderzoek in 3 zinnen
 - Plan van aanpak opstellen (input, output, HCI, toekomst)
 
 - Mendeley uitzoeken
+- EY course aanmelden
+- Vak voor Q2 uitzoeken
 - GUI maken op website
 - Chrome opruimen
 - Chrome instellen op Damen PC
 - KIVI filmpje en foto's verspreiden
+x website bouwen
+- Amazon account
