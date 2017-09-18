@@ -3,13 +3,15 @@ x Mail opruimen
 X Update project summary
 X Format maken voor meetings
 
-- Registreren dutos.nl
+x Registreren dutos.nl
 - Advanced Algorithms checken voor inschrijven
+- website bouwen
 
 - Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
 	- concreet maken CS deel
 	- stappen van onderzoek bepalen
 	- feedback vragen
+- IFS invullen
 - onderzoek in 3 zinnen
 - Plan van aanpak opstellen (input, output, HCI, toekomst)
 
