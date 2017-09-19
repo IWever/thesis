@@ -18,6 +18,8 @@ x Master thesis course brightspace en blackboard | MT en CS
 - Mendeley uitzoeken
 - EY course aanmelden
 - Vak voor Q2 uitzoeken
+- Toevoegen anchors
+- Update documentation
 - GUI maken op website
 - Chrome opruimen
 - Chrome instellen op Damen PC
