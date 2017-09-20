@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1015"
+   height="648"
+   id="svg3569">
+  <defs
+     id="defs3571">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       style="overflow:visible"
+       id="Arrow1Mend">
+      <path
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         id="path3265" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       style="overflow:visible"
+       id="Arrow2Lend">
+      <path
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path3277" />
+    </marker>
+  </defs>
+  <g
+     transform="translate(132.5,-208.36218)"
+     id="layer1">
+    <path
+       d="M 380.0625,20 C 371.21457,20.000001 364,27.18332 364,36.03125 L 364,140.9375 C 364,149.78543 371.21457,157 380.0625,157 L 408,157 L 352.59375,212.90625 L 352.5625,202.3125 L 339.4375,226.1875 L 336.78125,228.875 L 337.5625,229.625 L 335.03125,234.21875 L 339.59375,231.65625 L 340.34375,232.40625 L 342.96875,229.75 L 366.78125,216.375 L 356.15625,216.4375 L 415.03125,157 L 569.15625,157 L 691.40625,287.5625 L 680.75,287.21875 L 704.28125,301.3125 L 706.75,303.96875 L 707.5,303.25 L 711.96875,305.9375 L 709.59375,301.3125 L 710.40625,300.5625 L 707.78125,297.75 L 695.375,273.53125 L 695.03125,284.125 L 576.03125,157 L 625.53125,157 L 625.46875,157.125 L 852.09375,295.78125 L 841.75,298.25 L 868.125,305.59375 L 871.25,307.5 L 871.78125,306.59375 L 876.8125,308 L 873.28125,304.15625 L 873.84375,303.25 L 870.65625,301.28125 L 852.1875,281.21875 L 854.65625,291.53125 L 634.84375,157 L 664.9375,157 C 673.78543,157 681,149.78543 681,140.9375 L 681,36.03125 C 681,27.183319 673.78545,20 664.9375,20 L 380.0625,20 z M 380.0625,25 L 664.9375,25 C 671.10195,25.000001 676,29.86684 676,36.03125 L 676,140.9375 C 676,147.10191 671.10191,152 664.9375,152 L 380.0625,152 C 373.89809,152 369,147.10191 369,140.9375 L 369,36.03125 C 369,29.866839 373.89809,25 380.0625,25 z "
+       transform="translate(-132.5,208.36218)"
+       style="opacity:0.5;fill:#4babb5;fill-opacity:0.64705882;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3987" />
+    <rect
+       width="552"
+       height="228"
+       ry="28.490921"
+       x="-78"
+       y="458.86218"
+       style="opacity:1;fill:#48acb8;fill-opacity:0.64705882;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3665" />
+    <text
+       x="198.07231"
+       y="492.01917"
+       style="font-size:17.42439461px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3669"
+       xml:space="preserve"><tspan
+         x="198.07231"
+         y="492.01917"
+         id="tspan3671">SITUATION AWARENESS</tspan></text>
+    <rect
+       width="528"
+       height="168"
+       ry="21.368191"
+       x="-66.5"
+       y="506.36218"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3673" />
+    <rect
+       width="359"
+       height="145"
+       ry="18.368191"
+       x="-54.5"
+       y="518.36218"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3675" />
+    <rect
+       width="168"
+       height="119"
+       ry="16.368191"
+       x="-42.5"
+       y="530.36218"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3677" />
+    <g
+       id="g3705">
+      <text
+         x="106.2668"
+         y="575.90894"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3681"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="575.90894"
+           id="tspan3683">of data and</tspan></text>
+      <text
+         x="106.2668"
+         y="554.5014"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3689"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="554.5014"
+           id="tspan3691">Perception</tspan></text>
+      <text
+         x="106.2668"
+         y="597.31653"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3693"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="597.31653"
+           id="tspan3695">the elements of</tspan></text>
+      <text
+         x="106.2668"
+         y="618.72406"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3697"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="618.72406"
+           id="tspan3699">the environment</tspan></text>
+      <text
+         x="106.2668"
+         y="640.13159"
+         style="font-size:18.38118172px;font-style:italic;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3701"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="640.13159"
+           id="tspan3703">(Level 1)</tspan></text>
+    </g>
+    <g
+       transform="translate(178,0)"
+       id="g3717">
+      <text
+         x="106.2668"
+         y="575.90894"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3719"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="575.90894"
+           id="tspan3721">of the meaning</tspan></text>
+      <text
+         x="106.2668"
+         y="554.5014"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3723"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="554.5014"
+           id="tspan3725">Comprehension</tspan></text>
+      <text
+         x="106.2668"
+         y="597.31653"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3727"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="597.31653"
+           id="tspan3729">and significance</tspan></text>
+      <text
+         x="106.2668"
+         y="618.72406"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3731"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="618.72406"
+           id="tspan3733">of the situation</tspan></text>
+      <text
+         x="106.2668"
+         y="640.13159"
+         style="font-size:18.38118172px;font-style:italic;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3735"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="640.13159"
+           id="tspan3737">(Level 2)</tspan></text>
+    </g>
+    <g
+       transform="translate(334,0)"
+       id="g3739">
+      <text
+         x="106.2668"
+         y="575.90894"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3741"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="575.90894"
+           id="tspan3743">of future states</tspan></text>
+      <text
+         x="106.2668"
+         y="554.5014"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3745"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="554.5014"
+           id="tspan3747">Projection</tspan></text>
+      <text
+         x="106.2668"
+         y="597.31653"
+         style="font-size:18.38118172px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3749"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="597.31653"
+           id="tspan3751">and events</tspan></text>
+      <text
+         x="106.2668"
+         y="640.13159"
+         style="font-size:18.38118172px;font-style:italic;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3757"
+         xml:space="preserve"><tspan
+           x="106.2668"
+           y="640.13159"
+           id="tspan3759">(Level 3)</tspan></text>
+    </g>
+    <rect
+       width="144"
+       height="96"
+       ry="11.368191"
+       x="509.5"
+       y="524.36218"
+       style="opacity:1;fill:#48acb8;fill-opacity:0.64705882;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3761" />
+    <text
+       x="581.54681"
+       y="578.60278"
+       style="font-size:17.42439461px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3763"
+       xml:space="preserve"><tspan
+         x="581.54681"
+         y="578.60278"
+         id="tspan3765">DECISION</tspan></text>
+    <rect
+       width="144"
+       height="96"
+       ry="11.368191"
+       x="689.5"
+       y="524.36218"
+       style="opacity:1;fill:#48acb8;fill-opacity:0.64705882;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3767" />
+    <text
+       x="761.48297"
+       y="578.60278"
+       style="font-size:17.42439461px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3769"
+       xml:space="preserve"><tspan
+         x="761.48297"
+         y="578.60278"
+         id="tspan3771">OF</tspan></text>
+    <text
+       x="761.30432"
+       y="557.10278"
+       style="font-size:17.42439461px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3773"
+       xml:space="preserve"><tspan
+         x="761.30432"
+         y="557.10278"
+         id="tspan3775">PERFORMANCE</tspan></text>
+    <text
+       x="762.23169"
+       y="600.10278"
+       style="font-size:17.42439461px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3777"
+       xml:space="preserve"><tspan
+         x="762.23169"
+         y="600.10278"
+         id="tspan3779">ACTION</tspan></text>
+    <g
+       id="g3807">
+      <text
+         x="353.02866"
+         y="416.85629"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3795"
+         xml:space="preserve"><tspan
+           x="353.02866"
+           y="416.85629"
+           id="tspan3797">environment/</tspan></text>
+      <text
+         x="353.34729"
+         y="395.44876"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3799"
+         xml:space="preserve"><tspan
+           x="353.34729"
+           y="395.44876"
+           id="tspan3801">State of the</tspan></text>
+      <text
+         x="353.71078"
+         y="438.26389"
+         style="font-size:18.38118172px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+         id="text3803"
+         xml:space="preserve"><tspan
+           x="353.71078"
+           y="438.26389"
+           id="tspan3805">system</tspan></text>
+    </g>
+    <path
+       d="M 282.50001,409.86218 L -114.79912,409.86218 L -114.79912,572.86218 L -85.5,572.86218 M 834.50001,572.86218 L 868.3094,572.86218 L 868.3094,409.86218 L 432.50001,409.86218 M 473.50001,572.86218 L 505.50001,572.86218 M 654.50001,572.86218 L 684.50001,572.86218"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+       id="path3815" />
+    <path
+       d="M -102.88089,563.98796 L -78.843963,572.82695 L -102.88089,581.66594 C -99.0408,576.4474 -99.06292,569.30754 -102.88089,563.98796 z "
+       style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+       id="path3866" />
+    <path
+       d="M 450.8809,418.7364 L 426.84397,409.89741 L 450.8809,401.05842 C 447.04081,406.27696 447.06293,413.41682 450.8809,418.7364 z "
+       style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+       id="path3858" />
+    <path
+       d="M 484.11912,563.98796 L 508.15605,572.82695 L 484.11912,581.66594 C 487.95921,576.4474 487.93709,569.30754 484.11912,563.98796 z "
+       style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+       id="path3850" />
+    <path
+       d="M 665.11912,563.98796 L 689.15605,572.82695 L 665.11912,581.66594 C 668.95921,576.4474 668.93709,569.30754 665.11912,563.98796 z "
+       style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+       id="path3842" />
+    <path
+       d="M 464.5625,505.5 C 458.39809,505.5 453.5,510.39805 453.5,516.5625 L 453.5,621.4375 C 453.5,627.60191 458.39809,632.5 464.5625,632.5 L 736.4375,632.5 C 742.60191,632.5 747.5,627.60195 747.5,621.4375 L 747.5,516.5625 C 747.5,510.39809 742.60195,505.5 736.4375,505.5 L 464.5625,505.5 z "
+       transform="translate(-132.5,208.36218)"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3876" />
+    <text
+       x="467.46994"
+       y="743.53314"
+       style="font-size:18.09239197px;font-style:italic;font-weight:normal;text-align:center;text-anchor:middle;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3882"
+       xml:space="preserve"><tspan
+         x="467.46994"
+         y="743.53314"
+         id="tspan3884">Individual Factors</tspan></text>
+    <text
+       x="338.99435"
+       y="777.09344"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3886"
+       xml:space="preserve"><tspan
+         x="338.99435"
+         y="777.09344"
+         id="tspan3888">• Goals</tspan></text>
+    <text
+       x="338.99435"
+       y="798.71399"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3890"
+       xml:space="preserve"><tspan
+         x="338.99435"
+         y="798.71399"
+         id="tspan3892">• Preconceptions</tspan></text>
+    <text
+       x="338.99435"
+       y="820.33459"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3894"
+       xml:space="preserve"><tspan
+         x="338.99435"
+         y="820.33459"
+         id="tspan3896">• Knowledge</tspan></text>
+    <text
+       x="494.85605"
+       y="777.09344"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3898"
+       xml:space="preserve"><tspan
+         x="494.85605"
+         y="777.09344"
+         id="tspan3900">• Experience</tspan></text>
+    <text
+       x="494.85605"
+       y="798.71399"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3902"
+       xml:space="preserve"><tspan
+         x="494.85605"
+         y="798.71399"
+         id="tspan3904">• Training</tspan></text>
+    <text
+       x="494.85605"
+       y="820.33459"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3906"
+       xml:space="preserve"><tspan
+         x="494.85605"
+         y="820.33459"
+         id="tspan3908">• Abilities</tspan></text>
+    <path
+       d="M 866.78125,420.9375 L 861.75,422.3125 L 861.1875,421.375 L 857.9375,423.3125 L 831.625,430.4375 L 841.90625,433 L 729.78125,500.5 L 651.28125,500.5 L 696.1875,444.6875 L 697.34375,455.25 L 707.96875,430.0625 L 710.3125,427.15625 L 709.46875,426.5 L 711.5,421.71875 L 707.25,424.71875 L 706.40625,424.03125 L 704.03125,426.96875 L 681.75,442.6875 L 692.3125,441.5625 L 644.875,500.5 L 464.5625,500.5 C 455.71457,500.5 448.5,507.71455 448.5,516.5625 L 448.5,526.34375 L 406.5,503.375 L 416.625,500.40625 L 390.09375,494.40625 L 386.71875,492.5625 L 386.1875,493.53125 L 381.125,492.375 L 384.8125,496.03125 L 384.3125,496.96875 L 387.625,498.78125 L 407.0625,517.9375 L 404.0625,507.75 L 448.5,532.03125 L 448.5,621.4375 C 448.5,630.28543 455.71457,637.5 464.5625,637.5 L 736.4375,637.5 C 745.28543,637.5 752.5,630.28545 752.5,621.4375 L 752.5,516.5625 C 752.5,508.61397 746.66092,501.98458 739.0625,500.71875 L 844.5,437.28125 L 841.9375,447.5625 L 860.59375,427.59375 L 863.78125,425.65625 L 863.21875,424.75 L 866.78125,420.9375 z M 464.5625,505.5 L 736.4375,505.5 C 742.60195,505.5 747.5,510.39809 747.5,516.5625 L 747.5,621.4375 C 747.5,627.60195 742.60191,632.5 736.4375,632.5 L 464.5625,632.5 C 458.39809,632.5 453.5,627.60191 453.5,621.4375 L 453.5,516.5625 C 453.5,510.39805 458.39809,505.5 464.5625,505.5 z "
+       transform="translate(-132.5,208.36218)"
+       style="opacity:0.5;fill:#4babb5;fill-opacity:0.64705882;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3968" />
+    <rect
+       width="312"
+       height="132"
+       ry="13.549042"
+       x="234"
+       y="230.86218"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#bde0e4;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3985" />
+    <path
+       d="M 380.0625,25 C 373.89809,25 369,29.866839 369,36.03125 L 369,140.9375 C 369,147.10191 373.89809,152 380.0625,152 L 664.9375,152 C 671.10191,152 676,147.10191 676,140.9375 L 676,36.03125 C 676,29.86684 671.10195,25.000001 664.9375,25 L 380.0625,25 z "
+       transform="translate(-132.5,208.36218)"
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3993" />
+    <text
+       x="388.86038"
+       y="255.94803"
+       style="font-size:18.09239197px;font-style:italic;font-weight:normal;text-align:center;text-anchor:middle;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text4014"
+       xml:space="preserve"><tspan
+         x="388.86038"
+         y="255.94803"
+         id="tspan4016">Task and Environmental Factors</tspan></text>
+    <text
+       x="325.10855"
+       y="284.89133"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text4018"
+       xml:space="preserve"><tspan
+         x="325.10855"
+         y="284.89133"
+         id="tspan4020">• Workload</tspan></text>
+    <text
+       x="325.10855"
+       y="306.51086"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text4022"
+       xml:space="preserve"><tspan
+         x="325.10855"
+         y="306.51086"
+         id="tspan4024">• Stressors</tspan></text>
+    <text
+       x="325.10855"
+       y="328.13043"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text4026"
+       xml:space="preserve"><tspan
+         x="325.10855"
+         y="328.13043"
+         id="tspan4028">• System design</tspan></text>
+    <text
+       x="325.10855"
+       y="349.74997"
+       style="font-size:18.09239197px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text4040"
+       xml:space="preserve"><tspan
+         x="325.10855"
+         y="349.74997"
+         id="tspan4042">• Complexity</tspan></text>
+  </g>
+</svg>
