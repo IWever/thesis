@@ -1,19 +1,22 @@
-hx Mail opruimen
-? Wekelijkse meeting Research
+X Mail opruimen
 X Update project summary
 X Format maken voor meetings
 
-x Registreren dutos.nl
-x Master thesis course brightspace en blackboard | MT en CS
+X Master thesis course brightspace en blackboard | MT en CS
 
 - Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
 	- concreet maken CS deel
 	- stappen van onderzoek bepalen
 	- feedback vragen
 - Kick-off plannen
-- IFS invullen
+X IFS invullen
 - onderzoek in 3 zinnen
 - Plan van aanpak opstellen (input, output, HCI, toekomst)
+- Thesis map ook naar Dropbox of onedrive
+
+- Contract Sanne laten ondertekenen door Hekkenberg
+- Goedkeuring start afstuderen
+- bi-weekly meetings inplannen begeleiders
 
 - Mendeley uitzoeken
 - EY course aanmelden
@@ -25,4 +28,5 @@ x Master thesis course brightspace en blackboard | MT en CS
 - Chrome instellen op Damen PC
 - KIVI filmpje en foto's verspreiden
 x website bouwen
+x Registreren dutos.nl
 - Amazon account
