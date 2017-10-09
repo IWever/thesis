@@ -5,8 +5,8 @@ X Format maken voor meetings
 X Master thesis course brightspace en blackboard | MT en CS
 
 - Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
-	- concreet maken CS deel
-	- stappen van onderzoek bepalen
+	X concreet maken CS deel
+	X stappen van onderzoek bepalen
 	- feedback vragen
 - Kick-off plannen
 X IFS invullen
@@ -15,7 +15,8 @@ X IFS invullen
 - Thesis map ook naar Dropbox of onedrive
 
 - Contract Sanne laten ondertekenen door Hekkenberg
-- Goedkeuring start afstuderen
+- Goedkeuring start afstuderen CS
+- Goedkeuring start afstuderen MT
 - bi-weekly meetings inplannen begeleiders
 
 - Mendeley uitzoeken
