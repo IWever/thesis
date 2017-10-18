@@ -4,13 +4,13 @@ X Format maken voor meetings
 
 X Master thesis course brightspace en blackboard | MT en CS
 
-- Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
+X Aan de hand van schema naomi duidelijk krijgen wat ik ga doen
 	X concreet maken CS deel
 	X stappen van onderzoek bepalen
-	- feedback vragen
-- Kick-off plannen
-- Johan de Jong - Marin bellen | CC naar robert
-- 3D plaatje verder uitwerken
+	X feedback vragen
+- Kick-off plannen (eventueel opgesplitst)
+- Johan de Jong - Marin mailen | CC naar robert
+- 3D plaatje verder uitwerken en toevoegen aan plan
 X IFS invullen
 - onderzoek in 3 zinnen
 - Plan van aanpak opstellen (input, output, HCI, toekomst)
