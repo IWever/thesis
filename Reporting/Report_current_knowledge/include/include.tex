@@ -5,10 +5,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage{pdfpages}
 \usepackage{subcaption}
+\usepackage{tikz}
 \usepackage{todonotes}
 
 % Change font to sans-serif
 \renewcommand\familydefault{\sfdefault}
+
+% Folder with figures
+\graphicspath {{figure/}}
+
+% Acronym
+\usepackage{acronym} 
 
 \hypersetup{ %setup hyperlinks
     colorlinks,
@@ -19,3 +26,39 @@
 }
 
 \setlength{\parindent}{0pt}
+
+% Front cover
+%\usepackage{transparent}
+%\usepackage{eso-pic}
+%\newcommand\BackgroundPic{%
+%	\put(0,0){%
+%		\parbox[b][\paperheight]{\paperwidth}{%
+%			\vfill
+%			\centering
+%			{\transparent{0.8} \includegraphics[width=\paperwidth,%
+%				keepaspectratio]{cover_PSV_5000_top.jpg}}%
+%			\vfill
+%}}}
+
+% Front cover
+
+\newcommand{\makeCover}{
+	%% Create an empty page.
+	\clearpage
+	\thispagestyle{empty}
+
+ 	%% 
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[inner sep=0pt] at (current page.center)
+		{\includegraphics[width=\paperwidth, keepaspectratio]{cover_PSV_5000_top.jpg}};
+		 
+		\node (title-box) at (current page.east) [fill = lightgray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.7, xshift=-.25\paperwidth, yshift=-5cm, text=white] {\Huge{\@title}};
+		
+		\node (grey-bar) [fill = black, minimum width=.5\paperwidth, minimum height=1cm, fill opacity = 0.5, xshift=-.25\paperwidth, yshift = -4cm] at (title-box.below){};
+	\end{tikzpicture}
+	
+	\maketitle
+	
+	
+}
+	
