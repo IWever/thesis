@@ -1,0 +1,26 @@
+\contentsline {section}{Introduction}{1}{section*.4}
+\contentsline {section}{\numberline {1}Future of shipping}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Steps to be taken}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Current industry projects}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Knowledge of the crew}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Situation Awareness}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Decision making and behaviour}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Normal situation}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Under stress}{5}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Mental models}{5}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Theories}{5}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Questions by crew}{5}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Tool}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bridge design}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}User interface}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Processable information}{6}{subsection.3.3}
+\contentsline {section}{\numberline {4}Model}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Physical models}{7}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Manoeuvrability}{7}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Environmental forces}{7}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Route planning}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Cost function}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Monitoring}{7}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Environment}{7}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Ship}{7}{subsubsection.4.4.2}
+\contentsline {section}{Conclusion}{8}{section*.19}

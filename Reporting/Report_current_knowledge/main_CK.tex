@@ -1,0 +1,50 @@
+\documentclass{article}
+\input{include/include}
+
+\title{MSc Thesis - Current Knowledge\\ 
+	\begin{large} 
+		Model for the complexity of maritime operations
+	\end{large} }
+\date{\today}
+\author{Ingmar Wever (4161041)}
+
+\begin{document}
+\pagenumbering{roman}
+
+\makeCover
+
+\newpage
+\listoftodos[Notes]
+\input{include/acronym}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\newpage
+\pagenumbering{arabic}
+\input{chapter/introduction}
+
+\newpage
+\input{chapter/future}
+
+\newpage
+\input{chapter/interaction}
+
+\newpage
+\input{chapter/tool}
+
+\newpage
+\input{chapter/model}
+
+\newpage
+\input{chapter/conclusion}
+
+\clearpage
+
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{ieeetr}
+\bibliography{include/library}
+
+\end{document}
+
