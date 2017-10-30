@@ -1,13 +1,12 @@
-\usepackage{cite}
+\usepackage{cite} 
 \usepackage{float}
-\usepackage[margin = 1.2in]{geometry}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage[utf8]{inputenc}
-\usepackage{pdfpages}
-\usepackage{subcaption}
-\usepackage{tikz}
-\usepackage{todonotes}
+\usepackage[margin = 1.2in]{geometry} % change the page margins
+\usepackage{graphicx} % to use \includegraphics
+\usepackage{hyperref} % adding urls using \url
+\usepackage[utf8]{inputenc} % makes sure other characters than ASCII can be used
+\usepackage{parskip} % makes sure that a line is skipped after every paragraph
+\usepackage{tikz} % for graphics, also build front cover using tikz
+\usepackage{todonotes} % placing todo notes and summarizing them at start of document
 
 %% Change font to sans-serif
 \renewcommand\familydefault{\sfdefault}
@@ -32,11 +31,11 @@
 %% Front cover
 
 \newcommand{\makeCover}{
-	%% Create an empty page.
+	%% Create an empty page for cover.
 	\clearpage
 	\thispagestyle{empty}
 
- 	%% 
+ 	%% Building cover
 	\begin{tikzpicture}[remember picture,overlay]
 		\node (picture) at (current page.center)
 		{\includegraphics[width=\paperwidth, keepaspectratio]{cover_PSV_5000_top.jpg}};
@@ -45,13 +44,28 @@
 		
 		\node (title-box) at (current page.east) [fill = lightgray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.7, xshift=-.25\paperwidth, yshift=-5cm, text=white] {\Huge{\@title}};
 		
-		\node (grey-bar) [fill = black, minimum width=.5\paperwidth, minimum height=1cm, fill opacity = 0.5, xshift=-.25\paperwidth, yshift = -4cm] at (title-box.below){};
+		\node (grey-bar) [fill = black, minimum width=.5\paperwidth, minimum height=1cm, fill opacity = 0.5, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -4cm] at (title-box){};
 		
 		
 	\end{tikzpicture}
 	
+	%% Create empty page for two-sided printing
+	\clearpage
+	\thispagestyle{empty}
+	\vspace*{5cm}
+	\begin{center}
+		This page is intentionally left blank.
+	\end{center}
+	%% Title page
+	\setcounter{page}{0}
+	
+	\title{\doctitle}
+	\date{\today}
+	\author{\docauthor}
+	
 	\maketitle
 	
+
 	
 }
 	

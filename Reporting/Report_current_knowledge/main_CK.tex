@@ -1,17 +1,19 @@
 \documentclass{article}
-\input{include/include}
 
-\title{MSc Thesis - Current Knowledge\\ 
-	\begin{large} 
+
+\newcommand{\doctitle}{MSc Thesis - Current Knowledge\\ 
+	\begin{Huge} 
 		Model for the complexity of maritime operations
-	\end{large} }
-\date{\today}
-\author{Ingmar Wever (4161041)}
+\end{Huge} }
+
+\newcommand{\docauthor}{Ingmar Wever (4161041)}
+
+\input{include/include}
 
 \begin{document}
 \pagenumbering{roman}
 
-\makeCover
+\makeCover % Cover, blank page and title page
 
 \newpage
 \listoftodos[Notes]
@@ -43,8 +45,9 @@
 \clearpage
 
 \addcontentsline{toc}{section}{References}
-\bibliographystyle{ieeetr}
 \bibliography{include/library}
+\bibliographystyle{ieeetr}
+
 
 \end{document}
 
