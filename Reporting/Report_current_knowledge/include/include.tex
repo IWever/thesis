@@ -1,3 +1,4 @@
+\usepackage{apacite}
 \usepackage{cite} 
 \usepackage{float}
 \usepackage[margin = 1.2in]{geometry} % change the page margins
@@ -8,6 +9,9 @@
 \usepackage{tikz} % for graphics, also build front cover using tikz
 \usepackage{todonotes} % placing todo notes and summarizing them at start of document
 
+%% Bibliography style
+\bibliographystyle{apacite}
+
 %% Change font to sans-serif
 \renewcommand\familydefault{\sfdefault}
 
@@ -17,6 +21,7 @@
 %% Acronym
 \usepackage{acronym} 
 
+%%  Hyperlink colors
 \hypersetup{ %setup hyperlinks
     colorlinks,
     citecolor=black,
@@ -28,7 +33,7 @@
 \setlength{\parindent}{0pt}
 
 
-%% Front cover
+%% Front cover, blank page, title page command
 
 \newcommand{\makeCover}{
 	%% Create an empty page for cover.
@@ -64,6 +69,7 @@
 	\author{\docauthor}
 	
 	\maketitle
+	\newpage
 	
 
 	

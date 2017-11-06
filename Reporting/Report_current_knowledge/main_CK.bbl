@@ -1,38 +1,516 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{Eriksen2017}
-R.~Eriksen, ``{Technology Outlook 2025},'' 2017.
+\bibitem [\protect \citeauthoryear {%
+CASCADe%
+}{%
+CASCADe%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+CASCADe2015}
+\APACinsertmetastar {%
+CASCADe2015}%
+\begin{APACrefauthors}%
+CASCADe.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{About the CASCADe project}.} {{About the CASCADe project}.}
+\newblock
+\begin{APACrefURL} [{2017-11-02}]\url{http://www.cascadeproject.eu/about.aspx}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{MUNIN2016}
-MUNIN, ``{About MUNIN},'' 2016.
+\bibitem [\protect \citeauthoryear {%
+Cohen%
+, Brinkman%
+\BCBL {}\ \BBA {} Neerincx%
+}{%
+Cohen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Cohen2016}
+\APACinsertmetastar {%
+Cohen2016}%
+\begin{APACrefauthors}%
+Cohen, I.%
+, Brinkman, W\BHBI P.%
+\BCBL {}\ \BBA {} Neerincx, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Effects of different real-time feedback types on human
+  performance in high-demanding work conditions}} {{Effects of different
+  real-time feedback types on human performance in high-demanding work
+  conditions}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Human-Computer
+  Studies}{91}{}{1--12}.
+\newblock
+\begin{APACrefURL}
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1071581916000392}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.ijhcs.2016.03.007} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{Wilson2017}
-J.~Wilson, ``{Rolls-Royce Marine unveils ‘Electric Blue' modular smart
-  shipping concept},'' 2017.
+\bibitem [\protect \citeauthoryear {%
+{DNV GL}%
+}{%
+{DNV GL}%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+DNVGL2011}
+\APACinsertmetastar {%
+DNVGL2011}%
+\begin{APACrefauthors}%
+{DNV GL}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Special equipment and systems - nautical safety}}
+  {{Special equipment and systems - nautical safety}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Rules and regulations}{}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1038/147264c0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{Sames2017}
-P.~C. Sames, ``{Unmanned ships on the horizon - DNV GL},'' 2017.
+\bibitem [\protect \citeauthoryear {%
+{DNV GL}%
+}{%
+{DNV GL}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+DNVGL2017}
+\APACinsertmetastar {%
+DNVGL2017}%
+\begin{APACrefauthors}%
+{DNV GL}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Part 6 - Additional class notations - Chapter 2 -
+  Propulsion , power generation and auxiliary systems}} {{Part 6 - Additional
+  class notations - Chapter 2 - Propulsion , power generation and auxiliary
+  systems}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{July}{}.
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{SMASH2017}
-SMASH, ``{Elektrisch containerschip Gouwenaar 2},'' 2017.
+\bibitem [\protect \citeauthoryear {%
+Eriksen%
+}{%
+Eriksen%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Eriksen2017}
+\APACinsertmetastar {%
+Eriksen2017}%
+\begin{APACrefauthors}%
+Eriksen, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Technology Outlook 2025}.} {{Technology Outlook 2025}.}
+\newblock
+\begin{APACrefURL} [{2017-10-23}]\url{https://to2025.dnvgl.com/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{IMO2017}
-IMO, ``{Human Element},'' 2017.
+\bibitem [\protect \citeauthoryear {%
+Ford%
+\ \BBA {} Sterman%
+}{%
+Ford%
+\ \BBA {} Sterman%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+Ford1998}
+\APACinsertmetastar {%
+Ford1998}%
+\begin{APACrefauthors}%
+Ford, D\BPBI N.%
+\BCBT {}\ \BBA {} Sterman, J\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Expert Knowledge Elicitation to Improve Mental and
+  Formal Models}} {{Expert Knowledge Elicitation to Improve Mental and Formal
+  Models}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{System Dynamics Review}{14}{4}{309--340}.
+\newblock
+\begin{APACrefDOI}
+  \doi{10.1002/(SICI)1099-1727(199824)14:4<309::AID-SDR154>3.0.CO;2-5}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{Underwood2013}
-G.~Underwood, A.~Ngai, and J.~Underwood, ``{Driving experience and situation
-  awareness in hazard detection},'' {\em Safety Science}, vol.~56, pp.~29--35,
-  2013.
+\bibitem [\protect \citeauthoryear {%
+IMO%
+}{%
+IMO%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+IMO2017}
+\APACinsertmetastar {%
+IMO2017}%
+\begin{APACrefauthors}%
+IMO.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Human Element}.} {{Human Element}.}
+\newblock
+\begin{APACrefURL} [{2017-10-25}]\url{http://www.imo.org/en/Pages/Default.aspx}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{Kalloniatis2017}
-A.~Kalloniatis, I.~Ali, T.~Neville, P.~La, I.~Macleod, M.~Zuparic, and E.~Kohn,
-  ``{The Situation Awareness Weighted Network (SAWN) model and method: Theory
-  and application},'' {\em Applied Ergonomics}, vol.~61, pp.~178--196, 2017.
+\bibitem [\protect \citeauthoryear {%
+Kalloniatis%
+\ \protect \BOthers {.}}{%
+Kalloniatis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Kalloniatis2017}
+\APACinsertmetastar {%
+Kalloniatis2017}%
+\begin{APACrefauthors}%
+Kalloniatis, A.%
+, Ali, I.%
+, Neville, T.%
+, La, P.%
+, Macleod, I.%
+, Zuparic, M.%
+\BCBL {}\ \BBA {} Kohn, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Situation Awareness Weighted Network (SAWN) model
+  and method: Theory and application}} {{The Situation Awareness Weighted
+  Network (SAWN) model and method: Theory and application}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Ergonomics}{61}{}{178--196}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.apergo.2017.02.002}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.apergo.2017.02.002} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
 
-\bibitem{Sandhaland2015}
-H.~Sandh{\aa}land, H.~Oltedal, and J.~Eid, ``{Situation awareness in bridge
-  operations - A study of collisions between attendant vessels and offshore
-  facilities in the North Sea},'' {\em Safety Science}, vol.~79, pp.~277--285,
-  2015.
+\bibitem [\protect \citeauthoryear {%
+Kongsberg%
+}{%
+Kongsberg%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Kongsberg2017}
+\APACinsertmetastar {%
+Kongsberg2017}%
+\begin{APACrefauthors}%
+Kongsberg.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{K-Master Bridge Solutions}} {{K-Master Bridge
+  Solutions}}.{\BBCQ}
+\newblock
+\begin{APACrefURL} \url{https://www.km.kongsberg.com/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lamme%
+}{%
+Lamme%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Lamme2017}
+\APACinsertmetastar {%
+Lamme2017}%
+\begin{APACrefauthors}%
+Lamme, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\unskip\
+\newblock
+\APACrefbtitle {{The development of an identifiable, integrated, and user
+  focused ship bridge concept for Damen Shipyards}} {{The development of an
+  identifiable, integrated, and user focused ship bridge concept for Damen
+  Shipyards}}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{University of Twente}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+MUNIN%
+}{%
+MUNIN%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+MUNIN2016}
+\APACinsertmetastar {%
+MUNIN2016}%
+\begin{APACrefauthors}%
+MUNIN.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {{About MUNIN}.} {{About MUNIN}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-10-23}]\url{http://www.unmanned-ship.org/munin/about/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rolls-Royce%
+}{%
+Rolls-Royce%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+RollsRoyce2015}
+\APACinsertmetastar {%
+RollsRoyce2015}%
+\begin{APACrefauthors}%
+Rolls-Royce.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{Unified Bridge}.} {{Unified Bridge}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-11-02}]\url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sames%
+}{%
+Sames%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Sames2017}
+\APACinsertmetastar {%
+Sames2017}%
+\begin{APACrefauthors}%
+Sames, P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Unmanned ships on the horizon - DNV GL}.} {{Unmanned ships on
+  the horizon - DNV GL}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-10-23}]\url{https://www.dnvgl.com/article/unmanned-ships-on-the-horizon-94273}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sandh{\aa}land%
+, Oltedal%
+\BCBL {}\ \BBA {} Eid%
+}{%
+Sandh{\aa}land%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Sandhaland2015}
+\APACinsertmetastar {%
+Sandhaland2015}%
+\begin{APACrefauthors}%
+Sandh{\aa}land, H.%
+, Oltedal, H.%
+\BCBL {}\ \BBA {} Eid, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Situation awareness in bridge operations - A study of
+  collisions between attendant vessels and offshore facilities in the North
+  Sea}} {{Situation awareness in bridge operations - A study of collisions
+  between attendant vessels and offshore facilities in the North Sea}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Safety Science}{79}{}{277--285}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.ssci.2015.06.021} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+SMASH%
+}{%
+SMASH%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+SMASH2017}
+\APACinsertmetastar {%
+SMASH2017}%
+\begin{APACrefauthors}%
+SMASH.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Elektrisch containerschip Gouwenaar 2}.} {{Elektrisch
+  containerschip Gouwenaar 2}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-10-23}]\url{https://smartshippingchallenge.nl/initiatieven-en-innovaties/electrisch-containerschip-gouwenaar}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Speier%
+, Valacich%
+\BCBL {}\ \BBA {} Vessey%
+}{%
+Speier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+Speier1999}
+\APACinsertmetastar {%
+Speier1999}%
+\begin{APACrefauthors}%
+Speier, C.%
+, Valacich, J\BPBI S.%
+\BCBL {}\ \BBA {} Vessey, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Influence of Task Interruption on Individual
+  Decision Making : An Information Overload Perspective}} {{The Influence of
+  Task Interruption on Individual Decision Making : An Information Overload
+  Perspective}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Decision Sciences}{30}{2}{337--360}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ulstein%
+}{%
+Ulstein%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+Ulstein2013}
+\APACinsertmetastar {%
+Ulstein2013}%
+\begin{APACrefauthors}%
+Ulstein.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {{ULSTEIN BRIDGE VISION™ - Ulstein}.} {{ULSTEIN BRIDGE
+  VISION™ - Ulstein}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-11-02}]\url{https://ulstein.com/innovations/bridge-vision}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Underwood%
+, Ngai%
+\BCBL {}\ \BBA {} Underwood%
+}{%
+Underwood%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Underwood2013}
+\APACinsertmetastar {%
+Underwood2013}%
+\begin{APACrefauthors}%
+Underwood, G.%
+, Ngai, A.%
+\BCBL {}\ \BBA {} Underwood, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Driving experience and situation awareness in hazard
+  detection}} {{Driving experience and situation awareness in hazard
+  detection}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Safety Science}{56}{}{29--35}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.ssci.2012.05.025} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wilson%
+}{%
+Wilson%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Wilson2017}
+\APACinsertmetastar {%
+Wilson2017}%
+\begin{APACrefauthors}%
+Wilson, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Rolls-Royce Marine unveils ‘Electric Blue' modular smart
+  shipping concept}.} {{Rolls-Royce Marine unveils ‘Electric Blue' modular
+  smart shipping concept}.}
+\newblock
+\begin{APACrefURL}
+  [{2017-10-23}]\url{https://eandt.theiet.org/content/articles/2017/02/rolls-royce-marine-unveils-electric-blue-modular-smart-shipping-concept/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

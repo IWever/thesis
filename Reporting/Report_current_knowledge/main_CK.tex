@@ -15,13 +15,14 @@
 
 \makeCover % Cover, blank page and title page
 
-\newpage
+
 \listoftodos[Notes]
-\input{include/acronym}
 
 \clearpage
 \tableofcontents
 \clearpage
+
+\input{include/acronym}
 
 \newpage
 \pagenumbering{arabic}
@@ -31,7 +32,7 @@
 \input{chapter/future}
 
 \newpage
-\input{chapter/interaction}
+\input{chapter/knowledge}
 
 \newpage
 \input{chapter/tool}
@@ -40,13 +41,14 @@
 \input{chapter/model}
 
 \newpage
+\input{chapter/result}
+
+\newpage
 \input{chapter/conclusion}
 
 \clearpage
 
-\addcontentsline{toc}{section}{References}
 \bibliography{include/library}
-\bibliographystyle{ieeetr}
 
 
 \end{document}

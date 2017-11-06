@@ -1,3 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_CK.aux
-The style file: ieeetr.bst
+The style file: apacite.bst
 Database file #1: include/library.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in DNVGL2017
+Warning--No journal in Kongsberg2017
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Kongsberg2017
+while executing---line 5079 of file apacite.bst
+(There was 1 error message)
