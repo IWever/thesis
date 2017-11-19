@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Backer%
+}{%
+Backer%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Backer2015}
+\APACinsertmetastar {%
+Backer2015}%
+\begin{APACrefauthors}%
+Backer, P\BPBI D\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Report on the joint investigation of the collision
+  between the LNG Carrier mts AL ORAIQ and the mv FLINTERSTAR}} {{Report on the
+  joint investigation of the collision between the LNG Carrier mts AL ORAIQ and
+  the mv FLINTERSTAR}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{October}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 CASCADe%
 }{%
 CASCADe%
@@ -293,6 +318,30 @@ MUNIN.%
 \begin{APACrefURL}
   [{2017-10-23}]\url{http://www.unmanned-ship.org/munin/about/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+of~the Navy%
+}{%
+of~the Navy%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+USSNavy2017}
+\APACinsertmetastar {%
+USSNavy2017}%
+\begin{APACrefauthors}%
+of~the Navy, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Report on the collision between USS Fitzgerald and
+  motor vessel ACX Crystal}} {{Report on the collision between USS Fitzgerald
+  and motor vessel ACX Crystal}}.{\BBCQ}
+\newblock
+
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

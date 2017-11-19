@@ -1,36 +1,40 @@
 \contentsline {section}{Introduction}{1}{section*.4}
-\contentsline {section}{\numberline {1}Future of shipping}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Steps to be taken}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Current industry projects}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}Knowledge of the crew}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Situation Awareness}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Decision making and behaviour}{5}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Normal situation}{5}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Under stress}{5}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Mental models}{5}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Theories}{5}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Questions by crew}{5}{subsubsection.2.3.2}
-\contentsline {section}{\numberline {3}The bridge}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bridge elements}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Instruments and equipment}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}History of bridge design}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Future of bridge design}{7}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Concept designs}{7}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Research projects}{8}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}Suppliers}{8}{subsubsection.3.4.3}
-\contentsline {subsection}{\numberline {3.5}Manoeuvring display}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Information overload}{8}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Bridge design}{9}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}User interface}{9}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Processable information}{9}{subsection.3.9}
-\contentsline {section}{\numberline {4}Model}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Physical models}{10}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Manoeuvrability}{10}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Environmental forces}{10}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Route planning}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Cost function}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Monitoring}{10}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Environment}{10}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Ship}{10}{subsubsection.4.4.2}
-\contentsline {section}{Conclusion}{11}{section*.27}
-\contentsline {section}{References}{12}{section*.29}
+\contentsline {section}{\numberline {1}Reported accidents}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Titanic}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Al Oraiq and MV Flinterstar}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}USS Fitzgerald and ACX Crystal}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}USS John S McCain and Alnic MC}{5}{subsection.1.4}
+\contentsline {section}{\numberline {2}Future of shipping}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Steps to be taken}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Current industry projects}{7}{subsection.2.2}
+\contentsline {section}{\numberline {3}Knowledge of the crew}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Situation awareness}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Mental model}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Crew development in practice}{9}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Possible improvements}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Information overload}{9}{subsection.3.5}
+\contentsline {section}{\numberline {4}The bridge}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bridge elements}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Instruments and equipment}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}History of bridge design}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Future of bridge design}{12}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Concept designs}{13}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Research projects}{13}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Suppliers}{13}{subsubsection.4.4.3}
+\contentsline {subsection}{\numberline {4.5}Manoeuvring display}{13}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Bridge users}{14}{subsection.4.6}
+\contentsline {section}{\numberline {5}Model}{15}{section.5}
+\contentsline {subsection}{\numberline {5.1}Physical models}{15}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Manoeuvrability}{15}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Environmental forces}{15}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Route planning}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Cost function}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Monitoring}{15}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Environment}{15}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Ship}{15}{subsubsection.5.4.2}
+\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Desired result}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Scope}{16}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Timeline}{16}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Research questions}{16}{subsection.6.4}
+\contentsline {section}{References}{17}{section*.31}
