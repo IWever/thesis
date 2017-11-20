@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {3.2}Mental model}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Crew development in practice}{9}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Possible improvements}{9}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Information overload}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.5}Information overload}{10}{subsection.3.5}
 \contentsline {section}{\numberline {4}The bridge}{11}{section.4}
 \contentsline {subsection}{\numberline {4.1}Bridge elements}{11}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Instruments and equipment}{11}{subsection.4.2}
@@ -23,18 +23,10 @@
 \contentsline {subsubsection}{\numberline {4.4.3}Suppliers}{13}{subsubsection.4.4.3}
 \contentsline {subsection}{\numberline {4.5}Manoeuvring display}{13}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Bridge users}{14}{subsection.4.6}
-\contentsline {section}{\numberline {5}Model}{15}{section.5}
-\contentsline {subsection}{\numberline {5.1}Physical models}{15}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Manoeuvrability}{15}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Environmental forces}{15}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Route planning}{15}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Cost function}{15}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Monitoring}{15}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Environment}{15}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Ship}{15}{subsubsection.5.4.2}
-\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}
-\contentsline {subsection}{\numberline {6.1}Desired result}{16}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Scope}{16}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Timeline}{16}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Research questions}{16}{subsection.6.4}
-\contentsline {section}{References}{17}{section*.31}
+\contentsline {section}{\numberline {5}Conclusion}{15}{section.5}
+\contentsline {subsection}{\numberline {5.1}Desired result}{15}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Timeline}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Research questions}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Scope}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Chosen vessels}{15}{subsection.5.5}
+\contentsline {section}{References}{16}{section*.28}

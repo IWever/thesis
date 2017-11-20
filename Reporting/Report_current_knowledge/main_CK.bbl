@@ -270,33 +270,6 @@ Kongsberg.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lamme%
-}{%
-Lamme%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Lamme2017}
-\APACinsertmetastar {%
-Lamme2017}%
-\begin{APACrefauthors}%
-Lamme, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2017}.
-\unskip\
-\newblock
-\APACrefbtitle {{The development of an identifiable, integrated, and user
-  focused ship bridge concept for Damen Shipyards}} {{The development of an
-  identifiable, integrated, and user focused ship bridge concept for Damen
-  Shipyards}}\ \APACtypeAddressSchool {\BUPhD}{}{}.
-\unskip\
-\newblock
-\APACaddressSchool {}{University of Twente}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 MUNIN%
 }{%
 MUNIN%
