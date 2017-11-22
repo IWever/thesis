@@ -1,20 +1,19 @@
 - Kick-off plannen (eventueel opgesplitst)
-- Johan de Jong - Marin mailen | CC naar robert
+- Johan de Jong & Egbert Ypma - Marin mailen | CC naar robert
+- Trond Se. Kvarving - Kongsberg | mailen met wie ik contact moet hebben binnen kongsberg
+- Rinus Koppenol - Wärtsila | Mailen of we kunnen sparren over het idee dat ik heb en welke uitdagingen daarbij komen
 - Plan van aanpak opstellen (input, output, HCI, toekomst)
-- Thesis map ook naar Dropbox of onedrive
 
 - Kick-off
 	- agenda maken
 	- Contract Sanne laten ondertekenen door Hekkenberg
 	- bi-weekly meetings inplannen begeleiders
 
-- Business course aanmelden
 - Maritime Support
 	- Toevoegen anchors en GUI
 	- Update documentation
 - GUI maken op website
 
-- Chrome opruimen
 - Chrome instellen op Damen PC
 
 - KIVI filmpje en foto's verspreiden

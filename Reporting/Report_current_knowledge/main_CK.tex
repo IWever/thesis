@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 
 
 \newcommand{\doctitle}{MSc Thesis - Current Knowledge\\ 
@@ -19,9 +19,11 @@
 \listoftodos[Notes]
 
 \clearpage
+\setcounter{tocdepth}{1}
 \tableofcontents
 \clearpage
 
+\input{include/tikz}
 \input{include/acronym}
 
 \newpage
@@ -40,9 +42,8 @@
 \newpage
 \input{chapter/tool}
 
-%\newpage
-%This will be added in a next version
-%\input{chapter/model}
+\newpage
+\input{chapter/model}
 
 \newpage
 \input{chapter/project-plan}

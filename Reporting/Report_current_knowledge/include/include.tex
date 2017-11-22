@@ -1,5 +1,4 @@
-\usepackage{apacite}
-\usepackage{cite} 
+\usepackage{booktabs} % improving tables
 \usepackage{float}
 \usepackage[margin = 1.2in]{geometry} % change the page margins
 \usepackage{graphicx} % to use \includegraphics
@@ -7,13 +6,15 @@
 \usepackage[utf8]{inputenc} % makes sure other characters than ASCII can be used
 \usepackage{parskip} % makes sure that a line is skipped after every paragraph
 \usepackage{tikz} % for graphics, also build front cover using tikz
+\usepackage{titlesec, color}
 \usepackage{todonotes} % placing todo notes and summarizing them at start of document
+\usepackage{wrapfig}
 
 %% Bibliography style
-\bibliographystyle{apacite}
+\bibliographystyle{apalike}
 
 %% Change font to sans-serif
-\renewcommand\familydefault{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
 
 %% Folder with figures
 \graphicspath {{figure/}}
@@ -21,6 +22,22 @@
 %% Acronym
 \usepackage{acronym} 
 
+%% Text lay-out
+% Customize chapter style
+\titleformat
+{\chapter} % command
+[hang] % shape
+{\bfseries \huge} % format
+{\thechapter \hspace{5pt} \textcolor{cyan} {$|$} } % label
+{0pt}
+{\bfseries \Huge } % before-code
+[] % after-code
+
+\titlespacing
+{\chapter}
+{30pt} % Left
+{0pt} % Top
+{5pt} % Bottom
 %%  Hyperlink colors
 \hypersetup{ %setup hyperlinks
     colorlinks,
@@ -31,6 +48,9 @@
 }
 
 \setlength{\parindent}{0pt}
+
+%% Tikz settings
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
 
 %% Front cover, blank page, title page command
 

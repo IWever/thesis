@@ -1,10 +1,10 @@
-\section{Knowledge of the crew}
+\chapter{Knowledge of the crew}
 \label{sec:knowledge}
 Seafarers are a group which are protected by international maritime treaties such as \ac{SOLAS}, \ac{STCW} and \ac{MARPOL}. Despite the regulations does human behaviour still lead to most accidents at sea. This complex multi-dimensional issue affects maritime safety and marine environmental protection. It involves the entire spectrum of human activities, performed by ships' crews, shore based management, regulatory bodies, recognized organizations, shipyards, legislators, and other relevant parties, all of whom need to cooperate to address human element issues effectively \cite{IMO2017}.
 Fortunately a lot of research is preformed around human behaviour, there is thus an opportunity to keep improving the way people are involved. And there capabilities are utilized while mitigating there vulnerabilities.
 \todo{In short keywords discussed in this chapter}
 
-\subsection{Situation awareness}
+\section{Situation awareness}
 Experience is key to improve the skill to scan for hazards. This is known as the situation awareness \cite{Underwood2013}. Hereby is important to notice that situation awareness is not limited to perceiving, but has multiple levels. This is known as the Endsley model (figure \ref{fig:Endsley-SA-model}), the three levels are \cite{Kalloniatis2017}: 
 \begin{itemize}
 	\item \emph{Perception}. Data is merely perceived.
@@ -12,14 +12,14 @@ Experience is key to improve the skill to scan for hazards. This is known as the
 	\item \emph{Projection}. Making a forecast for likely future states of the situation . This is based on the interpreted data, experience and knowledge.
 \end{itemize}
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{Endsley-SA-model-png.png}
+	\includegraphics[width=.7\textwidth]{Endsley-SA-model-png.png}
 	\caption{Endsley model for Situation awareness}
 	\label{fig:Endsley-SA-model}
 \end{figure}
 
-\subsection{Mental model}
+\section{Mental model}
 To explain why someone predicts a future state that will occur, it is important to get insight in the mental model of the crew.
 The mental model is the mechanism which describes elements in the environment within a volume of space and time. Giving explanations of system functioning, observed system states, and predictions of future system states. Done for a specific representation of the real system, for only selected concepts and relationships \cite{Kalloniatis2017}. 
 The selected concepts and relationships are based on the background of the person. This is the reason why an economist and an engineer will have completely different mental models when looking at a ship. Where the economist sees it as an investment with related cost and returns. Will the engineer focus more on the way how it sails, propels itself and stays upright. 
@@ -29,23 +29,84 @@ The consequences have been failure in monitoring the vessels status. For example
 
 When the crew was not aware of the risk involved, they had a wrong mental model of the system. The best way to improve someone's mental model is by training. This training is mostly focussed around acquiring experience in specific situations. The decision process during these situations is often dynamic, biased by individual perspective and goals, conditioned by previous experiences, including many system components and nonlinear relationships. This is also why it is hard to learn from normal data sources such as books or video. But experience have to be acquired to store situations directly in the mental model of the crew. Consequently failures and conflicts are needed to improve these processes. As they show boundaries for decision making. This can be done using scenario-based training environments using virtual reality. It has been shown that training in those environments will lower stress and enhance professional performance in real-life situations \cite{Ford1998} \cite{Cohen2016}.
 
-\subsection{Crew development in practice}	
-Write down tought process of crew, using one or more known mental model methodologies and in a user story form
+\section{Shipping crew}	
+Already some roles within the shipping crew were mentioned. But to give more insight here is a summary of the different roles on board of a merchant vessel. At smaller vessels roles are combined where possible. The Navy has in some cases even more operational crew members. In figure \ref{fig:crew-structure} the structure is shown for officers. \cite{Nedcon2013}
 
-The user stories already exist, ask Toine and Robert for them, and most likely also Mark
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		level 1/.style={sibling distance=40mm},
+		edge from parent/.style={->,draw},
+		>=latex]
+		
+		% root of the the initial tree, level 1
+		\node[root] {Master}
+		% The first level, as children of the initial tree
+		child {node[level 2] (c1) {Deck crew}}
+		child {node[level 2] (c2) {Engine crew}};
+		
+		% The second level, relatively positioned nodes
+		\begin{scope}[every node/.style={level 3}]
+			\node [below of = c1, xshift=30pt] (c11) {Chief officer};
+			\node [below of = c11] (c12) {Second officer};
+			\node [below of = c12] (c13) {Third officer};
+			\node [below of = c13] (c14) {Deck cadet};
+			
+			\node [below of = c2, xshift=30pt] (c21) {Chief engineer};
+			\node [below of = c21] (c22) {First engineer};
+			\node [below of = c22] (c23) {Second engineer};
+			\node [below of = c23] (c24) {Third engineer};
+			
+		\end{scope}
+		
+		% lines from each level 1 node to every one of its "children"
+		\foreach \value in {1,2,3,4}
+		\draw[->] (c1.195) |- (c1\value.west);
+		
+		\foreach \value in {1,2,3,4}
+		\draw[->] (c2.195) |- (c2\value.west);
+	\end{tikzpicture}
+	\caption{Crew structure basic}
+\label{fig:crew-structure}
+\end{figure}
 
-Extend which licenses and the amount of experience needed
+\subsection{Deck crew}
+The Deck crew is in charge with the vessel navigation, watch keeping, maintaining the ship’s hull, cargo, gear and accommodation, taking care of the ship’s life saving and firefighting appliances. The deck department is also the one in charge with receiving, discharging and caring for cargo. According to the vessel’s hierarchy, the deck officers are as follows: Master, Chief Officer, Second Officer, Third Officer and Deck Cadet (deck officer to be).
 
-Write down how this can be simulated, with for example a cognitive seafarer model
+The supreme authority on board a merchant vessel is the Master or Captain. The entire crew is under his command. He is responsible for the safety, use and maintenance of the vessel and makes sure that every crew member carries out his work accordingly. He is also in charge of the following: payroll, ship’s accounting, inventories, custom and immigration regulations, and the ship’s documentation. In order to become Master, a seafarer must first have several years of experience as a deck officer and as Chief Officer.
+According to the vessel’s hierarchy, the first deck officer and the head of the deck department after the Master is the Chief Officer. He is in charge with the vessel navigation, watch duties, charging and discharging operations. The Chief Officer also directs all the other officers on deck, creates and posts watch assignments and implements the Master’s orders in order to maintain safe operations and maintenance of the vessel.
+Second Officer or Second Mate is the next in rank after the Chief Mate and is the ship’s navigator, focusing on creating the ship’s passage plans and keeping charts and publications up to date. Apart from watch keeping, the Second Officer may also be designated to train the cadets on board or to fulfill the rank of security, safety, environmental or medical officer.
+The Third Officer or Third Mate is the fourth deck officer in command and is usually the Ship’s Safety Officer, responsible with ensuring the good functioning of the fire-fighting equipment and life saving appliances. He undertakes bridge watches and learns how to become a Second Officer.
 
-Does more automation lead to skill degredation in emergency situations? Aviation industry
+A Cadet on board a merchant vessel receives structured training and experience on board and learns how to become a deck officer.
+Apart from the officers, the deck department crew also consists of ratings, such as AB (Able Body Seaman), OS (Ordinary Seaman) and Boatswain.
+The AB is part of the deck crew and has duties such as: taking watches, steering the vessel, assisting the Officer on watch, mooring and unmooring the vessel, deck maintenance and cleaning. The AB also secures and unsecures the cargo and carries our deck and accommodation patrols.
+OS is the crew member whose main duty is to maintain the cleanliness of the whole ship and serves as assistant for the AB. Being an OS is considered to be an apprenticeship, a period called “sea time” in order to be allowed to take courses and training for AB.
+Both AB and OS are usually supervised by a Boatswain, who is also a rating, in charge with examining the cargo-handling gear and lifesaving equipment as well. The Boatswain usually holds an AB certificate as well.
+The structure for the deck department on board merchant vessels is mainly the same on all vessel types. \cite{Nedcon2013}
 
+\subsection{Engine crew}
+The engine crew is responsible with operating, maintaining and repairing, when required, the propulsion and support system. The engine department is also responsible with the repair and maintenance of other systems, such as: lighting, lubrication, refrigeration, air conditioning, separation, fuel oil, electrical power and so on.
+According to the vessel’s hierarchy, the engine officers are as follows: Chief Engineer, Second Engineer, Engine Watch Officer, Electrician Officer and Engine Cadet.
 
-\subsection{Possible improvements}
+The first engine officer and in charge of the engine department is the Chief Engineer. He takes complete control of the engine room and must make sure that every system and equipment runs by the book and is suitable for inspection at all times. The Chief Engineer also maintains up to date inventory for spare parts, extra fuel and oil and delegates the tasks for the officers under his command. In order to become a Chief Engineer a seafarer must first be a Second Engineer with at least two years sea time experience.
+After the Chief Engineer, in charge with the engine room is the Second Engineer, who also has a management level position. He assists the Chief Engineer in keeping the vessel running efficiently, is responsible for supervising the daily maintenance and operation in the engine room and prepares the engine room for arrival, departure or other operations. He reports directly to the Chief Engineer.
+The Engine Watch Officer position is usually held by the Third or Forth Engineer and it is an operational level job. The Third Engineer is usually responsible with the change of boilers, fuel, the auxiliary engines, condensate and feed systems. The Fourth Engineer is the most inexperienced officer, who has duties assigned by the Second Engineer, and some of his responsibilities are: engine watch, air compressors, purifiers and other auxiliary machinery.
+Another officer working in the engine room is the Electrical Engineer, in charge with overseeing and ensuring the maintenance and proper functioning of all the electrical systems and machinery. The Electrical Engineer responds directly to the Second Engineer and to the Chief Officer and has to have proper training to do this job.
+
+Some merchant vessels also have amongst its crew members an Engine Cadet or Electrical Cadet, who receive structured training and experience on board and learn how to become an engine or electrical officer.
+Apart from the officers, the engine department crew also consists of ratings, such as Motorman, Fitter, Electrician, Pumpman and Oiler/wiper.
+The Motorman is the engine rating who keeps watch and assists the engine officers when performing maintenance tasks. He also participates in maintaining and repairing the main and auxiliary engines, pumps and boilers.
+On board vessels, the Fitter carries out daily maintenance and engine cleaning jobs and is also specialized in fabrication, welding or repairing.
+The Electrician on board a merchant vessel is the rating working on the electrical equipment and systems, wiring and high voltage panels.
+Mostly on tanker vessels we may also find a Pumpman, responsible with the liquid cargo transfer system, pumps, the stripping pumps, filters valves, deck machinery involved in the liquid cargo transfer etc. His main job is to keep the liquid cargo system on a tanker running accordingly.
+The Oiler or Wiper on board is the rating in charge with cleaning the engine spaces, machinery, lubricating bearings and other moving parts of the engine and assisting the engine officers in the general maintenance of the machinery in order to ensure the oil temperature is within standards and oil gauges are working properly.
+Although the crew structure in the engine room is mainly the same, there are vessels that only have a part of the mentioned crew. This is due either to the size of the vessel or to financial reasons. \cite{Nedcon2013}
+
+\section{Possible improvements}
 Add part on type of change, related to course on behavioural change, including difference between stressfull and normal situations
 
-\subsection{Information overload}
-The reason not too add another screen is to avoid information overload. While Sandhaland already mentioned how information overload is one of the main reasons for loss of situation awareness. As in most failure cases the right information was somewhere on the screens. But was not perceived correctly by the crew.
+Does more automation lead to skill degredation in emergency situations? Aviation industry
 
 
 %
