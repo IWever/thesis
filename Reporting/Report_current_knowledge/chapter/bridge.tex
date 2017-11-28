@@ -1,9 +1,9 @@
 \chapter{The bridge}
 In section \ref{sec:knowledge} is discussed, how situation awareness is created by monitoring the vessel. The crew monitors the vessel from the bridge. The development of the bridge design is driven by technological advancement and regulatory demands. Which has increased the amount of equipment on a ship's bridge. Leading to all different components giving more and more data. As described by Speier are nowadays new technologies the primary reason for information overload. Not only because it produces more data, more quickly. But also that this information is disseminated more easily to people who do not need it \cite{Speier1999}. 
-\todo{What will be discussed in this chapter}
+This chapter goes a level deeper than the previous one. The focus is on the crew at the bridge, what instruments and equipment there is, how the bridge developed and might develop in the future. The chapter will be concluded with a part on the manoeuvring display which is most relevant for this research. 
 
 \section{User stories crew}
-To get insight in what the crew does on board of the ship, and which functions are desired. Different user stories will be written. In section \ref{sec:deck-crew} the different deck crew members with their responsibilities are already described. 
+To get insight into what the crew does on board of the ship, and which functions are desired. Different user stories will be written. In section \ref{sec:deck-crew} the different deck crew members with their responsibilities are already described. 
 A user story has as main goal to define a measurable function. It might replace a list of requirements. The main focus is who, what and why. Not how it should be implemented or developed. Examples of these user stories related to the tool and model can be:
 \begin{itemize}
 	\item As a master I want to see within a few seconds if there are hazards, so that I can decide if I should pay extra attention.
@@ -12,10 +12,10 @@ A user story has as main goal to define a measurable function. It might replace 
 	\item As a master I want to get extra information on relative speed and possible place of colliding, so that I can judge myself if there is a high risk.
 	\item As a master I want to be able to communicate an explanation for our current status and the decisions we made, to port authorities, nearby vessels and other crew members, so that there is a shared mental model.
 \end{itemize}
-During the project a list of these user stories will be formed, also based on conversations with crew members. Beside this the different steps in the thought process should be mapped. Together with the user stories this can be used to have good mental model of the different crew members. 
+During the project, a list of these user stories will be formed, also based on conversations with crew members. Beside this, the different steps in the thought process should be mapped. Together with the user stories, this can be used to develop a good mental model of the different crew members. 
 Thereby will I also try to consider communication between authorities, other vessels, pilots and within the ship during hand-overs. 
 
-During this process there will be three categories of information: relevant information, unused information, missing information. The unused information might lead to information overload. As Sandhaland already mentioned how information overload is one of the main reasons for loss of situation awareness. During the previously mentioned accidents was the desired information available, however it was not interpreted correctly.
+During this process, there will be three categories of information: relevant information, unused information, missing information. The unused information might lead to information overload. As Sandhaland already mentioned how information overload is one of the main reasons for loss of situation awareness. During the previously mentioned accidents was the desired information available. It was however, not interpreted correctly by the crew.
 
 \newpage
 \section{Bridge elements}
@@ -76,25 +76,25 @@ Within Damen, there is the desire to make the bridge design more standard and cr
 
 \subsection{Research projects}
 The CASCADe project has already been more research-oriented and towards a practical solution. They have tried to develop a bridge system which adapts displayed content on the user interfaces to the current situation, relevant procedures and the needs of the crew. Using a virtual simulation platform which enables analysis of the cooperative bridge system purely based on models, in particular, Cognitive Seafarer Models which mimic decision making and situation awareness processes of real human seafarers. The virtual platform allows a very careful evaluation of the Adaptive Bridge System to research solutions for adaptation which provide benefits (e.g., increase situation awareness) that outweigh their costs (e.g. cognitive disruption).\cite{CASCADe2015}
-Within Damen there has been research on bridge design by Myrthe Lamme. She looked into the development of an identifiable, integrated, and user focused bridge concept. She did this from an industrial design perspective. Her focus kept in mind the current information, and how this can be presented. But did not really look into presenting different information on hazards for example.
+Within Damen there has been research on bridge design by Myrthe Lamme. She looked into the development of an identifiable, integrated, and user-focused bridge concept. She did this from an industrial design perspective. Her focus kept in mind the current information, and how this can be presented. But did not really look into presenting different information on hazards for example.
 
 %\todo{add information on JIP which Robert presented, inlcuding the flowchart, if my project is able to use the same philosophy}
 
 \subsection{Suppliers}
 But currently bridges are already built and the companies developing these are also not standing still. But present more realistic their current status. The Kongsberg K-Master work environment integrates already different systems in one user interface. Dynamic positioning, manual propulsion and thruster control, alarm monitoring and remote control of machinery, central bridge alarm system, the operation of auxiliary bridge systems and chart, radar, autopilot and conning displays are all combined. Where this system was originally only for the aft bridge, is it now used for a variety of vessels. \cite{Kongsberg2017}
-Many of the Damen vessels are making the step towards integrated bridge systems, which is the next step in a more user centered design. Example are Praxis' Mega-Guard IBS or Alphatron's AlphaBridge. On a single screen Radar, ECDIS, conning, alarms, other ship systems and AIS can be combined. 
+Many of the Damen vessels are making the step towards integrated bridge systems, which is the next step in a more user-centered design. Examples are, Praxis' Mega-Guard IBS or Alphatron's AlphaBridge. On a single screen Radar, ECDIS, conning, alarms, other ship systems and AIS can be combined. 
 Other major players in the development of integrated bridge designs are Sperry Marine, Raytheon Anschütz and Admarel.
 
 \section{Manoeuvring display}
-The CASCADe project already showed the advantages of an adaptive bridge system. This is among other things done by creating an overlay in the \ac{ECDIS}. Which is a geographic information system used for nautical navigation. It displays information from \ac{ENC}. And integrates position information, heading and speed trough water. Possibly add radar and \ac{AIS} information. Using alarms when the vessel gets in proximity to hazards. 
+The CASCADe project already showed the advantages of an adaptive bridge system. This is among other things done by creating an overlay in the \ac{ECDIS}. Which is a geographic information system used for nautical navigation. It displays information from \ac{ENC}. And integrates position information, heading and speed through water. Possibly add radar and \ac{AIS} information. Using alarms when the vessel gets in proximity to hazards. 
 
-For this project an overlay will be created to the \ac{ECDIS}. Which improves the current alarm system. Using a white box approach in the model will help to define alarms and mark forbidden zones. Which forms the overlay for the \ac{ECDIS}.
-Thereby need to be taken into account, the rules and regulations for the \ac{ECDIS} system as defined by the \ac{IHO} and \ac{IEC} based on \ac{IMO} resolutions. Three  important standards are IEC 61924-2:2012, IEC 61174:2015 and IEC 62065:2014.
+For this project, an overlay will be created to the \ac{ECDIS}. Which improves the current alarm system. Using a white box approach in the model will help to define alarms and mark forbidden zones. Which forms the overlay for the \ac{ECDIS}.
+Thereby need to be taken into account, the rules and regulations for the \ac{ECDIS} system as defined by the \ac{IHO} and \ac{IEC} based on \ac{IMO} resolutions. Three important standards are IEC 61924-2:2012, IEC 61174:2015 and IEC 62065:2014.
 The first specifies the minimum requirements for the design, manufacture, integration, methods of testing and required test results for an integrated navigation system.
 The second specifies the performance requirements, methods of testing and required test results of the \ac{ECDIS}.
 The third specifies the minimum requirements for track control systems, including alarms and warnings.
 To understand how this information can be added, more information on the backend is needed. The \ac{IHO} standard for \ac{ENC} datasets is S-57. Which normally have a .000 extension. Update files for the \ac{ENC} have extensions like .001, .002 and so on. It has information on every object. In general information on the publisher of the \ac{ENC}, informational text, scale to display. Further information depends on the object, objects can be landmarks, coastguard stations, cables, beacons and other types \cite{IHO2017}. 
-Depending on the \ac{ECDIS} there are different ways to add the overlay. OpenCPN is an free open-source chart plotter and GPS navigation software program (figure \ref{fig:ECDIS}). Which is developed by active sailors using real world conditions for program testing and refinement.
+Depending on the \ac{ECDIS} there are different ways to add the overlay. OpenCPN is a free open-source chart plotter and GPS navigation software program (figure \ref{fig:ECDIS}). Which is developed by active sailors using real-world conditions for program testing and refinement.
 Other options could be to develop a plug-in for existing systems from suppliers of Damen, or the system used by Marin.
 
 \begin{figure}[H]
