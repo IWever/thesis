@@ -1,11 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_CK.aux
-The style file: apalike.bst
+The style file: tudelft-report.bst
 Database file #1: include/library.bib
-Warning--I didn't find a database entry for "Nedcon2013"
-Warning--empty journal in Backer2015
-Warning--there's a number but no volume in Backer2015
-Warning--empty journal in DNVGL2017
-Warning--there's a number but no volume in DNVGL2017
-Warning--empty journal in Kongsberg2017
-Warning--empty journal in USSNavy2017
-(There were 7 warnings)
+Warning--empty institution in Backer2015
+Warning--empty institution in DNVGL2017
+Warning--empty institution in USNavy2017
+(There were 3 warnings)

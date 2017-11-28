@@ -11,21 +11,24 @@
 \BOOKMARK [1][-]{section.3.1}{Situation awareness}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.2}{Mental model}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.3}{Shipping crew}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Possible improvements}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{The bridge}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Bridge elements}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Instruments and equipment}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{History of bridge design}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{Future of bridge design}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.5}{Manoeuvring display}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.6}{Bridge users}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Model}{}% 22
-\BOOKMARK [1][-]{section.5.1}{Physical models}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.2}{Route planning}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.3}{Cost function}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.4}{Monitoring}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Project plan}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Desired result}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{Timeline}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.3}{Research questions}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.4}{Scope}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{Deck crew}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.2}{Engine crew}{section.3.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Crew support}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{The bridge}{}% 17
+\BOOKMARK [1][-]{section.4.1}{User stories crew}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Bridge elements}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{Instruments and equipment}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{History of bridge design}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{Future of bridge design}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.5.1}{Concept designs}{section.4.5}% 23
+\BOOKMARK [2][-]{subsection.4.5.2}{Research projects}{section.4.5}% 24
+\BOOKMARK [2][-]{subsection.4.5.3}{Suppliers}{section.4.5}% 25
+\BOOKMARK [1][-]{section.4.6}{Manoeuvring display}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Project plan}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Desired result}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Timeline}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Research questions}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.4}{Scope}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.4.1}{Model}{section.5.4}% 32
+\BOOKMARK [2][-]{subsection.5.4.2}{Tool}{section.5.4}% 33
+\BOOKMARK [2][-]{subsection.5.4.3}{Chosen vessels and situations}{section.5.4}% 34

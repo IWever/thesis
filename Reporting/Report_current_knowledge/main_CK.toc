@@ -10,34 +10,25 @@
 \contentsline {chapter}{\numberline {3}Knowledge of the crew}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Situation awareness}{8}{section.3.1}
 \contentsline {section}{\numberline {3.2}Mental model}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Shipping crew}{9}{section.3.3}
+\contentsline {section}{\numberline {3.3}Shipping crew}{10}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Deck crew}{10}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Engine crew}{11}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Possible improvements}{11}{section.3.4}
-\contentsline {chapter}{\numberline {4}The bridge}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Bridge elements}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Instruments and equipment}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}History of bridge design}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}Future of bridge design}{13}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Concept designs}{14}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Research projects}{14}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Suppliers}{14}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Manoeuvring display}{15}{section.4.5}
-\contentsline {section}{\numberline {4.6}Bridge users}{15}{section.4.6}
-\contentsline {chapter}{\numberline {5}Model}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Physical models}{16}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Manoeuvrability}{16}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Environmental forces}{16}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Route planning}{16}{section.5.2}
-\contentsline {section}{\numberline {5.3}Cost function}{16}{section.5.3}
-\contentsline {section}{\numberline {5.4}Monitoring}{16}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Ship}{16}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Environment}{16}{subsection.5.4.2}
-\contentsline {chapter}{\numberline {6}Project plan}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Desired result}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Timeline}{17}{section.6.2}
-\contentsline {section}{\numberline {6.3}Research questions}{18}{section.6.3}
-\contentsline {section}{\numberline {6.4}Scope}{18}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Model}{19}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Tool}{19}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Chosen vessels and situations}{19}{subsection.6.4.3}
+\contentsline {section}{\numberline {3.4}Crew support}{12}{section.3.4}
+\contentsline {chapter}{\numberline {4}The bridge}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}User stories crew}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Bridge elements}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Instruments and equipment}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}History of bridge design}{14}{section.4.4}
+\contentsline {section}{\numberline {4.5}Future of bridge design}{15}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Concept designs}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Research projects}{15}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Suppliers}{16}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Manoeuvring display}{16}{section.4.6}
+\contentsline {chapter}{\numberline {5}Project plan}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Desired result}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Timeline}{18}{section.5.2}
+\contentsline {section}{\numberline {5.3}Research questions}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Scope}{19}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Model}{20}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Tool}{20}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Chosen vessels and situations}{20}{subsection.5.4.3}

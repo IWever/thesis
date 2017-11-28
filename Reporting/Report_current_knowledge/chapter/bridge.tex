@@ -2,10 +2,22 @@
 In section \ref{sec:knowledge} is discussed, how situation awareness is created by monitoring the vessel. The crew monitors the vessel from the bridge. The development of the bridge design is driven by technological advancement and regulatory demands. Which has increased the amount of equipment on a ship's bridge. Leading to all different components giving more and more data. As described by Speier are nowadays new technologies the primary reason for information overload. Not only because it produces more data, more quickly. But also that this information is disseminated more easily to people who do not need it \cite{Speier1999}. 
 \todo{What will be discussed in this chapter}
 
+\section{User stories crew}
+Master
+Write down thought process of crew, using one or more known mental model methodologies and in a user story form
+
+The user stories already exist, ask Toine and Robert for them, and most likely also Mark
+
+In those user stories should ALL communication be described. Ask port autorities and pilots which information they want to receive
+
+Thereby must information overlead being taken into account. The reason not too add another screen is to avoid information overload. While Sandhaland already mentioned how information overload is one of the main reasons for loss of situation awareness. As in most failure cases the right information was somewhere on the screens. But was not perceived correctly by the crew.
+
+\todo{Make short user stories for the relevant crew. Also based on the mental model and thought process of the crew. Which tools do they use in that case.}
+
 \section{Bridge elements}
 The bridge of a vessel has four elements according to DNV-GL. The human operator, procedures, technical system and the human-machine interface. The safe operation of the vessel can only be assured when these are aligned. In figure \ref{fig:Bridge-system-elements} the different elements and their key factors are shown. Regulations aim to regulate these factors to ensure a safe performance of the bridge system to ensure system reliability in various modes of operation under different operating conditions. \cite{DNVGL2011}
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=.5\textwidth]{Bridge-system-elements.png}
 	\caption{Bridge system elements according to DNV GL}
@@ -38,35 +50,37 @@ Within Damen, there is the desire to make the bridge design more standard and cr
 \subsection{Research projects}
 The CASCADe project has already been more research-oriented and towards a practical solution. They have tried to develop a bridge system which adapts displayed content on the user interfaces to the current situation, relevant procedures and the needs of the crew. Using a virtual simulation platform which enables analysis of the cooperative bridge system purely based on models, in particular, Cognitive Seafarer Models which mimic decision making and situation awareness processes of real human seafarers. The virtual platform allows a very careful evaluation of the Adaptive Bridge System to research solutions for adaptation which provide benefits (e.g., increase situation awareness) that outweigh their costs (e.g. cognitive disruption).\cite{CASCADe2015}
 
-\todo{add more research on bridge design (Myrthe Lamme)}
+Within Damen there has been research on bridge design by Myrthe Lamme. She looked into the development of an identifiable, integrated, and user focused bridge concept. She did this from an industrial design perspective. Her focus kept in mind the current information, and how this can be presented. But did not really look into presenting different information on hazards for example.
 
-\todo{add information on JIP which Robert presented, inlcuding the flowchart, if my project is able to use the same philosophy}
+%\todo{add information on JIP which Robert presented, inlcuding the flowchart, if my project is able to use the same philosophy}
 
 \subsection{Suppliers}
 But currently bridges are already built and the companies developing these are also not standing still. But present more realistic their current status. The Kongsberg K-Master work environment integrates already different systems in one user interface. Dynamic positioning, manual propulsion and thruster control, alarm monitoring and remote control of machinery, central bridge alarm system, the operation of auxiliary bridge systems and chart, radar, autopilot and conning displays are all combined. Where this system was originally only for the aft bridge, is it now used for a variety of vessels. \cite{Kongsberg2017}
 
-Many of the Damen vessels are making the step towards integrated bridge systems, which is the next step in a more user centered design. In the future they will also start using more integrated systems, such as Praxis' Mega-Guard IBS or Alphatron's AlphaBridge. Both modular bridge systems use in-house developed instruments. Combining the functionality of Radar, \ac{ECDIS}, conning, alarms, other ship systems and \ac{AIS}. 
+Many of the Damen vessels are making the step towards integrated bridge systems, which is the next step in a more user centered design. In the future they will also start using more integrated systems, such as Praxis' Mega-Guard IBS or Alphatron's AlphaBridge. Both modular bridge systems use in-house developed instruments. Combining the functionality of Radar, ECDIS, conning, alarms, other ship systems and AIS. 
 Other major players in the development of integrated bridge designs are Sperry Marine with the VisionMaster FT, Raytheon Anschütz Synapsis NX and for yachts Admarel.
 
-Many regulations exist, limiting the freedom for companies to make designs. 
-\todo{Which regulations are leading, IEC code}
-
 \section{Manoeuvring display}
-The CASCADe project already showed the advantages of an adaptive bridge system. Key in most of these systems is a modification to the overlay in the \ac{ECDIS} system. This is also chosen as starting point for bridge modifications in this project. As it is already possible using the \ac{ECDIS} system to add alarms and layers. The developed model will be a white box approach, this will help to define alarms and mark forbidden zones. Thereby need to be taken into account, the rules and regulations for the \ac{ECDIS} system as defined by the international hydrographic organization.
+The CASCADe project already showed the advantages of an adaptive bridge system. This is among other things done by creating an overlay in the \ac{ECDIS}. Which is a geographic information system used for nautical navigation. It displays information from \ac{ENC}. And integrates position information, heading and speed trough water. Possibly add radar and \ac{AIS} information. Using alarms when the vessel gets in proximity to hazards. 
 
-\todo{How is a map build, S-57, .BSB; how to import and modify, preferably with python}
-\todo{Add pictures of ECDIS display}
+For this project an overlay will be created to the \ac{ECDIS}. Which improves the current alarm system. Using a white box approach in the model will help to define alarms and mark forbidden zones. Which forms the overlay for the \ac{ECDIS}.
 
-\section{Bridge users}
-Write down thought process of crew, using one or more known mental model methodologies and in a user story form
+Thereby need to be taken into account, the rules and regulations for the \ac{ECDIS} system as defined by the \ac{IHO} and \ac{IEC} based on \ac{IMO} resolutions. Three  important standards are IEC 61924-2:2012, IEC 61174:2015 and IEC 62065:2014.
+The first specifies the minimum requirements for the design, manufacture, integration, methods of testing and required test results for an integrated navigation system.
+The second specifies the performance requirements, methods of testing and required test results of the \ac{ECDIS}.
+The third specifies the minimum requirements for track control systems, including alarms and warnings.
 
-The user stories already exist, ask Toine and Robert for them, and most likely also Mark
+To understand how this information can be added, more information on the backend is needed. The \ac{IHO} standard for \ac{ENC} datasets is S-57. Which normally have a .000 extension. Update files for the \ac{ENC} have extensions like .001, .002 and so on. It has information on every object. In general information on the publisher of the \ac{ENC}, informational text, scale to display. Further information depends on the object, objects can be landmarks, coastguard stations, cables, beacons and other types \cite{IHO2017}. 
 
+Depending on the \ac{ECDIS} there are different ways to add the overlay. OpenCPN is an free open-source chart plotter and GPS navigation software program (figure \ref{fig:ECDIS}). Which is developed by active sailors using real world conditions for program testing and refinement.
+Other options could be to develop a plug-in for existing systems from suppliers of Damen, or the system used by Marin.
 
-In those user stories should ALL communication be described. Ask port autorities and pilots which information they want to receive
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{ECDIS.png}
+	\caption{OpenCPN print-screen}
+	\label{fig:ECDIS}
+\end{figure}
 
-Thereby must information overlead being taken into account. The reason not too add another screen is to avoid information overload. While Sandhaland already mentioned how information overload is one of the main reasons for loss of situation awareness. As in most failure cases the right information was somewhere on the screens. But was not perceived correctly by the crew.
-
-\todo{Make short user stories for the captain and other crew. Also based on the mental model and thought process of the crew. Which tools do they use in that case.}
 
 

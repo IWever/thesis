@@ -11,7 +11,7 @@
 \usepackage{wrapfig}
 
 %% Bibliography style
-\bibliographystyle{apalike}
+\bibliographystyle{tudelft-report}
 
 %% Change font to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
@@ -64,33 +64,66 @@
 		\node (picture) at (current page.center)
 		{\includegraphics[width=\paperwidth, keepaspectratio]{cover_PSV_5000_top.jpg}};
 		
-		\node (white-glow) at (current page.center) [fill = white, minimum width = \paperwidth, minimum height = \paperheight, opacity = 0.27]{};
+		\node (white-glow) at (current page.center) [fill = white, minimum width = \paperwidth, minimum height = \paperheight, opacity = 0.15]{};
 		
-		\node (title-box) at (current page.east) [fill = lightgray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.7, xshift=-.25\paperwidth, yshift=-5cm, text=white] {\Huge{\@title}};
+		\node (title-box-bg) at (current page.east) [fill = gray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.85, xshift=-.25\paperwidth, yshift=-5cm, text=white] {};
 		
-		\node (grey-bar) [fill = black, minimum width=.5\paperwidth, minimum height=1cm, fill opacity = 0.5, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -4cm] at (title-box){};
+		\node (title-box) at (current page.east) [minimum width=.5\paperwidth, minimum height=7cm, align=left, xshift=-.25\paperwidth, yshift=-5cm, text=white] {
+			\hspace{.7cm} \Large{MSc Thesis}\\ \\
+			\Huge{Current knowledge}\\ \\
+			\Large{Model to improve situational awareness of crew}\\ \\
+			Ingmar Wever (4161041) \\
+			\today
+			
+		};
+	
+		\node (black-bar) [fill = black, minimum width=.5\paperwidth, minimum height=0.2cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -3.4cm, fill opacity = 0.7] at (title-box){};
 		
+		\node (cyan-bar) [fill = cyan, minimum width=.5\paperwidth, minimum height=0.2cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -3.6cm, fill opacity = 0.7] at (title-box){};
+		
+		\node (white-bar) [fill = white, minimum width=.5\paperwidth, minimum height=1.5cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -4.5cm, fill opacity = 0.95] at (title-box){
+		
+			\includegraphics[height=1.3cm, keepaspectratio]{TU_Delft_logo_RGB.png}
+			\hspace{.8cm}
+			\includegraphics[height=.8cm, keepaspectratio]{Damen_logo.png}
+		};
+	
 		
 	\end{tikzpicture}
 	
 	%% Create empty page for two-sided printing
 	\clearpage
 	\thispagestyle{empty}
-	\vspace*{5cm}
+	\vspace*{6cm}
 	\begin{center}
 		This page is intentionally left blank.
 	\end{center}
-	%% Title page
-	\setcounter{page}{0}
-	
-	\title{\doctitle}
-	\date{\today}
-	\author{\docauthor}
-	
-	\maketitle
-	\newpage
-	
 
-	
+	%% Title page
+	\begin{titlepage}
+		\newpage
+		\setcounter{page}{0}
+		
+		\centering
+		\Large
+		\vspace*{4cm}
+		\doctitle\\
+		\large
+		\vspace{1cm}
+		\today
+		
+		\vspace{8cm}
+		\normalsize
+		\begin{tabular}{lll}
+			Student: & Ingmar Wever & 4161041 \\
+			Project duration: & \multicolumn{2}{l}{September 2017 -- July 2018} \\
+			& & \\
+			Supervisors: & Dr.\ ir.\ Robert Hekkenberg & TU Delft, Maritime Technology \\
+			& Prof.\ Dr. \ Mark Neerincx & TU Delft, Computer Science \\
+			& Toine Cleophas & Damen Shipyards
+		\end{tabular}
+
+\end{titlepage}
+		
 }
 	

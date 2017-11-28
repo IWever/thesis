@@ -1,101 +1,161 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Backer, 2015]{Backer2015}
-Backer, P. D.~E. (2015).
+\bibitem[Backer(2015)]{Backer2015}
+Philippe D~E Backer.
 \newblock {Report on the joint investigation of the collision between the LNG
   Carrier mts AL ORAIQ and the mv FLINTERSTAR}.
-\newblock (October).
+\newblock Technical Report October, 2015.
 
-\bibitem[CASCADe, 2015]{CASCADe2015}
-CASCADe (2015).
-\newblock {About the CASCADe project}.
+\bibitem[CASCADe(2015)]{CASCADe2015}
+CASCADe.
+\newblock {About the CASCADe project}, 2015.
+\newblock URL \url{http://www.cascadeproject.eu/about.aspx}.
 
-\bibitem[Cohen et~al., 2016]{Cohen2016}
-Cohen, I., Brinkman, W.-P., and Neerincx, M.~A. (2016).
+\bibitem[Cohen et~al.(2016)Cohen, Brinkman, and Neerincx]{Cohen2016}
+Iris Cohen, Willem-Paul Brinkman, and Mark~A. Neerincx.
 \newblock {Effects of different real-time feedback types on human performance
   in high-demanding work conditions}.
-\newblock {\em International Journal of Human-Computer Studies}, 91:1--12.
+\newblock \emph{International Journal of Human-Computer Studies}, 91:\penalty0
+  1--12, 2016.
+\newblock ISSN 10715819.
+\newblock \doi{10.1016/j.ijhcs.2016.03.007}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1071581916000392}.
 
-\bibitem[{DNV GL}, 2011]{DNVGL2011}
-{DNV GL} (2011).
+\bibitem[{DNV GL}(2011)]{DNVGL2011}
+{DNV GL}.
 \newblock {Special equipment and systems - nautical safety}.
-\newblock {\em Rules and regulations}.
+\newblock \emph{Rules and regulations}, 2011.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/147264c0}.
 
-\bibitem[{DNV GL}, 2017]{DNVGL2017}
-{DNV GL} (2017).
+\bibitem[{DNV GL}(2017)]{DNVGL2017}
+{DNV GL}.
 \newblock {Part 6 - Additional class notations - Chapter 2 - Propulsion , power
   generation and auxiliary systems}.
-\newblock (July).
+\newblock Technical Report July, 2017.
 
-\bibitem[Eriksen, 2017]{Eriksen2017}
-Eriksen, R. (2017).
-\newblock {Technology Outlook 2025}.
+\bibitem[Eriksen(2017)]{Eriksen2017}
+Remi Eriksen.
+\newblock {Technology Outlook 2025}, 2017.
+\newblock URL \url{https://to2025.dnvgl.com/}.
 
-\bibitem[Ford and Sterman, 1998]{Ford1998}
-Ford, D.~N. and Sterman, J.~D. (1998).
+\bibitem[Ford and Sterman(1998)]{Ford1998}
+David~N Ford and John~D Sterman.
 \newblock {Expert Knowledge Elicitation to Improve Mental and Formal Models}.
-\newblock {\em System Dynamics Review}, 14(4):309--340.
+\newblock \emph{System Dynamics Review}, 14\penalty0 (4):\penalty0 309--340,
+  1998.
+\newblock ISSN 0883-7066.
+\newblock \doi{10.1002/(SICI)1099-1727(199824)14:4<309::AID-SDR154>3.0.CO;2-5}.
 
-\bibitem[IMO, 2017]{IMO2017}
-IMO (2017).
-\newblock {Human Element}.
+\bibitem[IHO(2017)]{IHO2017}
+IHO.
+\newblock {No Title}, 2017.
+\newblock URL \url{http://www.s-57.com/}.
 
-\bibitem[Kalloniatis et~al., 2017]{Kalloniatis2017}
-Kalloniatis, A., Ali, I., Neville, T., La, P., Macleod, I., Zuparic, M., and
-  Kohn, E. (2017).
+\bibitem[IMO(2017)]{IMO2017}
+IMO.
+\newblock {Human Element}, 2017.
+\newblock URL \url{http://www.imo.org/en/Pages/Default.aspx}.
+
+\bibitem[Kalloniatis et~al.(2017)Kalloniatis, Ali, Neville, La, Macleod,
+  Zuparic, and Kohn]{Kalloniatis2017}
+Alexander Kalloniatis, Irena Ali, Timothy Neville, Phuong La, Iain Macleod,
+  Mathew Zuparic, and Elizabeth Kohn.
 \newblock {The Situation Awareness Weighted Network (SAWN) model and method:
   Theory and application}.
-\newblock {\em Applied Ergonomics}, 61:178--196.
+\newblock \emph{Applied Ergonomics}, 61:\penalty0 178--196, 2017.
+\newblock ISSN 18729126.
+\newblock \doi{10.1016/j.apergo.2017.02.002}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.apergo.2017.02.002}.
 
-\bibitem[Kongsberg, 2017]{Kongsberg2017}
-Kongsberg (2017).
-\newblock {K-Master Bridge Solutions}.
+\bibitem[Kongsberg(2017)]{Kongsberg2017}
+Kongsberg.
+\newblock {K-Master Bridge Solutions}, 2017.
+\newblock URL \url{https://www.km.kongsberg.com/}.
 
-\bibitem[MUNIN, 2016]{MUNIN2016}
-MUNIN (2016).
-\newblock {About MUNIN}.
+\bibitem[MUNIN(2016)]{MUNIN2016}
+MUNIN.
+\newblock {About MUNIN}, 2016.
+\newblock URL \url{http://www.unmanned-ship.org/munin/about/}.
 
-\bibitem[of~the Navy, 2017]{USSNavy2017}
-of~the Navy, D. (2017).
-\newblock {Report on the collision between USS Fitzgerald and motor vessel ACX
-  Crystal}.
+\bibitem[Nedcon(2013)]{Nedcon2013}
+Nedcon.
+\newblock {Crew structure on board merchant vessels}, 2013.
+\newblock URL
+  \url{http://www.nedcon.ro/crew-structure-board-merchant-vessels-engine-department/}.
 
-\bibitem[Rolls-Royce, 2015]{RollsRoyce2015}
-Rolls-Royce (2015).
-\newblock {Unified Bridge}.
+\bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
+Rolls-Royce.
+\newblock {Unified Bridge}, 2015.
+\newblock URL
+  \url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}.
 
-\bibitem[Sames, 2017]{Sames2017}
-Sames, P.~C. (2017).
-\newblock {Unmanned ships on the horizon - DNV GL}.
+\bibitem[Saffarian et~al.(2012)Saffarian, de~Winter, and Happee]{Saffarian2012}
+M.~Saffarian, J.~C.~F. de~Winter, and R.~Happee.
+\newblock {Automated Driving: Human-Factors Issues and Design Solutions}.
+\newblock \emph{Proceedings of the Human Factors and Ergonomics Society Annual
+  Meeting}, 56\penalty0 (1):\penalty0 2296--2300, 2012.
+\newblock ISSN 1541-9312.
+\newblock \doi{10.1177/1071181312561483}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/1071181312561483}.
 
-\bibitem[Sandh{\aa}land et~al., 2015]{Sandhaland2015}
-Sandh{\aa}land, H., Oltedal, H., and Eid, J. (2015).
+\bibitem[Sames(2017)]{Sames2017}
+Pierre~C Sames.
+\newblock {Unmanned ships on the horizon - DNV GL}, 2017.
+\newblock URL
+  \url{https://www.dnvgl.com/article/unmanned-ships-on-the-horizon-94273}.
+
+\bibitem[Sandh{\aa}land et~al.(2015)Sandh{\aa}land, Oltedal, and
+  Eid]{Sandhaland2015}
+Hilde Sandh{\aa}land, Helle Oltedal, and Jarle Eid.
 \newblock {Situation awareness in bridge operations - A study of collisions
   between attendant vessels and offshore facilities in the North Sea}.
-\newblock {\em Safety Science}, 79:277--285.
+\newblock \emph{Safety Science}, 79:\penalty0 277--285, 2015.
+\newblock ISSN 18791042.
+\newblock \doi{10.1016/j.ssci.2015.06.021}.
 
-\bibitem[SMASH, 2017]{SMASH2017}
-SMASH (2017).
-\newblock {Elektrisch containerschip Gouwenaar 2}.
+\bibitem[SMASH(2017)]{SMASH2017}
+SMASH.
+\newblock {Elektrisch containerschip Gouwenaar 2}, 2017.
+\newblock URL
+  \url{https://smartshippingchallenge.nl/initiatieven-en-innovaties/electrisch-containerschip-gouwenaar}.
 
-\bibitem[Speier et~al., 1999]{Speier1999}
-Speier, C., Valacich, J.~S., and Vessey, I. (1999).
+\bibitem[Speier et~al.(1999)Speier, Valacich, and Vessey]{Speier1999}
+Cheri Speier, Joseph~S Valacich, and Iris Vessey.
 \newblock {The Influence of Task Interruption on Individual Decision Making :
   An Information Overload Perspective}.
-\newblock {\em Decision Sciences}, 30(2):337--360.
+\newblock \emph{Decision Sciences}, 30\penalty0 (2):\penalty0 337--360, 1999.
 
-\bibitem[Ulstein, 2013]{Ulstein2013}
-Ulstein (2013).
-\newblock {ULSTEIN BRIDGE VISION™ - Ulstein}.
+\bibitem[Ulstein(2013)]{Ulstein2013}
+Ulstein.
+\newblock {ULSTEIN BRIDGE VISION™ - Ulstein}, 2013.
+\newblock URL \url{https://ulstein.com/innovations/bridge-vision}.
 
-\bibitem[Underwood et~al., 2013]{Underwood2013}
-Underwood, G., Ngai, A., and Underwood, J. (2013).
+\bibitem[Underwood et~al.(2013)Underwood, Ngai, and Underwood]{Underwood2013}
+Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock {Driving experience and situation awareness in hazard detection}.
-\newblock {\em Safety Science}, 56:29--35.
+\newblock \emph{Safety Science}, 56:\penalty0 29--35, 2013.
+\newblock ISSN 09257535.
+\newblock \doi{10.1016/j.ssci.2012.05.025}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}.
 
-\bibitem[Wilson, 2017]{Wilson2017}
-Wilson, J. (2017).
+\bibitem[{US Navy}(2017)]{USNavy2017}
+{US Navy}.
+\newblock {Report on the collision between USS Fitzgerald and motor vessel ACX
+  Crystal}.
+\newblock Technical report, 2017.
+
+\bibitem[Wilson(2017)]{Wilson2017}
+Jonathan Wilson.
 \newblock {Rolls-Royce Marine unveils ‘Electric Blue' modular smart shipping
-  concept}.
+  concept}, 2017.
+\newblock URL
+  \url{https://eandt.theiet.org/content/articles/2017/02/rolls-royce-marine-unveils-electric-blue-modular-smart-shipping-concept/}.
 
 \end{thebibliography}
