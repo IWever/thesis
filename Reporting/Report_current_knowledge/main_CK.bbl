@@ -16,7 +16,7 @@ CASCADe.
 \newblock {About the CASCADe project}, 2015.
 \newblock URL \url{http://www.cascadeproject.eu/about.aspx}.
 
-\bibitem[Cohen et~al.(2016)Cohen, Brinkman, and Neerincx]{Cohen2016}
+\bibitem[Cohen et~al.(2016]{Cohen2016}
 Iris Cohen, Willem-Paul Brinkman, and Mark~A. Neerincx.
 \newblock {Effects of different real-time feedback types on human performance
   in high-demanding work conditions}.
@@ -45,7 +45,7 @@ Remi Eriksen.
 \newblock {Technology Outlook 2025}, 2017.
 \newblock URL \url{https://to2025.dnvgl.com/}.
 
-\bibitem[Ford and Sterman(1998)]{Ford1998}
+\bibitem[Ford and Sterman(1998]{Ford1998}
 David~N Ford and John~D Sterman.
 \newblock {Expert Knowledge Elicitation to Improve Mental and Formal Models}.
 \newblock \emph{System Dynamics Review}, 14\penalty0 (4):\penalty0 309--340,
@@ -63,8 +63,7 @@ IMO.
 \newblock {Human Element}, 2017.
 \newblock URL \url{http://www.imo.org/en/Pages/Default.aspx}.
 
-\bibitem[Kalloniatis et~al.(2017)Kalloniatis, Ali, Neville, La, Macleod,
-  Zuparic, and Kohn]{Kalloniatis2017}
+\bibitem[Kalloniatis et~al.(2017]{Kalloniatis2017}
 Alexander Kalloniatis, Irena Ali, Timothy Neville, Phuong La, Iain Macleod,
   Mathew Zuparic, and Elizabeth Kohn.
 \newblock {The Situation Awareness Weighted Network (SAWN) model and method:
@@ -96,7 +95,7 @@ Rolls-Royce.
 \newblock URL
   \url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}.
 
-\bibitem[Saffarian et~al.(2012)Saffarian, de~Winter, and Happee]{Saffarian2012}
+\bibitem[Saffarian et~al.(2012]{Saffarian2012}
 M.~Saffarian, J.~C.~F. de~Winter, and R.~Happee.
 \newblock {Automated Driving: Human-Factors Issues and Design Solutions}.
 \newblock \emph{Proceedings of the Human Factors and Ergonomics Society Annual
@@ -111,8 +110,7 @@ Pierre~C Sames.
 \newblock URL
   \url{https://www.dnvgl.com/article/unmanned-ships-on-the-horizon-94273}.
 
-\bibitem[Sandh{\aa}land et~al.(2015)Sandh{\aa}land, Oltedal, and
-  Eid]{Sandhaland2015}
+\bibitem[Sandh{\aa}land et~al.(2015]{Sandhaland2015}
 Hilde Sandh{\aa}land, Helle Oltedal, and Jarle Eid.
 \newblock {Situation awareness in bridge operations - A study of collisions
   between attendant vessels and offshore facilities in the North Sea}.
@@ -126,7 +124,7 @@ SMASH.
 \newblock URL
   \url{https://smartshippingchallenge.nl/initiatieven-en-innovaties/electrisch-containerschip-gouwenaar}.
 
-\bibitem[Speier et~al.(1999)Speier, Valacich, and Vessey]{Speier1999}
+\bibitem[Speier et~al.(1999]{Speier1999}
 Cheri Speier, Joseph~S Valacich, and Iris Vessey.
 \newblock {The Influence of Task Interruption on Individual Decision Making :
   An Information Overload Perspective}.
@@ -137,7 +135,7 @@ Ulstein.
 \newblock {ULSTEIN BRIDGE VISION™ - Ulstein}, 2013.
 \newblock URL \url{https://ulstein.com/innovations/bridge-vision}.
 
-\bibitem[Underwood et~al.(2013)Underwood, Ngai, and Underwood]{Underwood2013}
+\bibitem[Underwood et~al.(2013]{Underwood2013}
 Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock {Driving experience and situation awareness in hazard detection}.
 \newblock \emph{Safety Science}, 56:\penalty0 29--35, 2013.

@@ -2,6 +2,34 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: main_CK.aux
 The style file: tudelft-report.bst
 Database file #1: include/library.bib
 Warning--empty institution in Backer2015
+0 is an integer literal, not a function, for entry Cohen2016
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Cohen2016
+while executing---line 1428 of file tudelft-report.bst
 Warning--empty institution in DNVGL2017
+0 is an integer literal, not a function, for entry Ford1998
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Ford1998
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Kalloniatis2017
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Kalloniatis2017
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Saffarian2012
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Saffarian2012
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Sandhaland2015
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Sandhaland2015
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Speier1999
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Speier1999
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Underwood2013
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Underwood2013
+while executing---line 1428 of file tudelft-report.bst
 Warning--empty institution in USNavy2017
-(There were 3 warnings)
+(There were 14 error messages)
