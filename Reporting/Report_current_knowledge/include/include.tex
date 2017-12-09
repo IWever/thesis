@@ -37,7 +37,7 @@
 \titlespacing
 {\chapter}
 {30pt} % Left
-{0pt} % Top
+{-30pt} % Top
 {5pt} % Bottom
 %%  Hyperlink colors
 \hypersetup{ %setup hyperlinks
@@ -63,7 +63,7 @@
  	%% Building cover
 	\begin{tikzpicture}[remember picture,overlay]
 		\node (picture) at (current page.center)
-		{\includegraphics[width=\paperwidth, keepaspectratio]{cover_PSV_5000_top.jpg}};
+		{\includegraphics[height=\paperheight, keepaspectratio]{cover_PSV_5000_top.jpg}};
 		
 		\node (white-glow) at (current page.center) [fill = white, minimum width = \paperwidth, minimum height = \paperheight, opacity = 0.15]{};
 		
