@@ -1,31 +1,79 @@
-import numpy as np
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 
-class Situation(object):
-    """ The default settings for a ship which is used:
+class Map(object):
 
-    Attributes:
-        vessels: list of vessels relevant for situation
-    """
+    """ The situation where everything happens:"""
 
     vessels = []
+    screensize = 40000
 
     def __init__(self):
         pass
 
-    def courseCrossing(self, shipA, shipB):
-        locA = np.transpose(np.matrix(shipA.location))
-        locB = np.transpose(np.matrix(shipB.location))
-        p = locA - locB
+    def addShip(self, ship, speed_kn, course_deg, locationX, locationY):
+        """ Add ship to map
 
-        dA = np.array([[math.sin(shipA.course)], [math.cos(shipA.course)]])
-        dB = np.array([[math.sin(shipB.course)], [math.cos(shipB.course)]])
-        d = np.concatenate((-dA, dB), axis=1)
+        Args:
+            ship: ship object which is created previously
+            speed_kn: current speed of vessel, input [knots], stored in [m/s]
+            course_deg: direction relative to north [degrees], stored in [rad]
+            locationX: X coordinate in [m]
+            locationY: Y coordinate in [m]
+        """
 
-        n1 = (np.linalg.inv(d) * p)[0,0]
-        n2 = (np.linalg.inv(d) * p)[1,0]
+        self.vessels.append(ship)
+        ship.speed = speed_kn * 1852 / 3600
+        ship.course = math.pi * course_deg / 180
+        ship.location = [locationX, locationY]
 
-        crossing = locA + n1 * dA
-        relativeSpeed = n2/n1
+    def updateSituation(self, timestep, ownship):
+        for ship in self.vessels:
+            ship.updateLocation(timestep, ownship)
 
-        return crossing, relativeSpeed
+        self.updateMap()
+
+    def updateMap(self):
+        """ Plot vessels """
+
+        plt.figure('Map')
+        plt.cla()
+        plt.axes().set_aspect('equal')
+        plt.xlim(-self.screensize / 2, self.screensize / 2)
+        plt.ylim(-self.screensize / 2, self.screensize / 2)
+
+        # plt.imshow(map,
+        #            cmap='RdYlGn',
+        #            interpolation='nearest',
+        #            extent=[-20000, 20000, -20000, 20000],
+        #            alpha=0.4)
+
+        for ship in self.vessels:
+            plt.plot(ship.location[0], ship.location[1],  marker='o')
+            plt.text(ship.location[0], ship.location[1],  ship.name)
+
+            if ship.speed != 0:
+                plt.quiver(ship.location[0],
+                           ship.location[1],
+                           ship.speed * math.sin(ship.course),
+                           ship.speed * math.cos(ship.course))
+
+    def createMap(self):
+        """ Initialize plot """
+        plt.ion()
+        plt.show()
+
+        self.updateMap()
+
+    def runSimulation(self, stepsize, ownship):
+        self.createMap()
+        time_elapsed = 0
+
+        while plt.fignum_exists('Map'):
+            self.updateSituation(stepsize, ownship)
+            time_elapsed += stepsize
+            plt.text(-20000, 20500, 'Time elapsed: %d minutes' % (time_elapsed / 60))
+            plt.pause(0.0001)
+
+        print('Stopped simulation by closing map')
