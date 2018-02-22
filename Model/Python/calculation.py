@@ -56,3 +56,12 @@ def CPA(shipA, shipB):
     print('CPA between %s and %s: %d meter after %d minutes' % (shipA.name, shipB.name, distance, time_s / 60))
 
     return [distance, time_s]
+
+
+def testCPA(situation):
+    shipsToTest = list(situation.vessels)
+
+    while len(shipsToTest) > 0:
+        ship1 = shipsToTest.pop(0)
+        for ship2 in shipsToTest:
+            CPA(ship1, ship2)

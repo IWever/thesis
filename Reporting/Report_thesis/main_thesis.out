@@ -10,50 +10,61 @@
 \BOOKMARK [0][-]{chapter.2}{Current knowledge}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Accidents}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.2}{Current projects}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Shipping crew}{chapter.2}% 13
-\BOOKMARK [-1][-]{part.1}{I Maritime Technology}{}% 14
-\BOOKMARK [0][-]{chapter.3}{Manoeuvring capability}{part.1}% 15
-\BOOKMARK [1][-]{section.3.1}{IMO standard}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Limits}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.3}{Desired capability}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.4}{Expected route}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{Input}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Filter situation}{part.1}% 21
-\BOOKMARK [1][-]{section.4.1}{Traffic separation schemes}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Navigational aids}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Accepted probabilities}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Other filters}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Safe motion parameters}{part.1}% 26
-\BOOKMARK [1][-]{section.5.1}{Regulations}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Well-clear}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Visualization}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{Probability index}{part.1}% 30
-\BOOKMARK [1][-]{section.6.1}{Input}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.2}{Map for other vessels}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.3}{Predicted capability envelope}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter.7}{Visualization}{part.1}% 34
-\BOOKMARK [1][-]{section.7.1}{Determine closes point of approach}{chapter.7}% 35
-\BOOKMARK [1][-]{section.7.2}{Hazards}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.3}{Routeplanner}{chapter.7}% 37
-\BOOKMARK [-1][-]{part.2}{II Computer Science}{}% 38
-\BOOKMARK [0][-]{chapter.8}{Information at the bridge}{part.2}% 39
-\BOOKMARK [1][-]{section.8.1}{Instruments}{chapter.8}% 40
-\BOOKMARK [1][-]{section.8.2}{Parameters}{chapter.8}% 41
-\BOOKMARK [1][-]{section.8.3}{Usage}{chapter.8}% 42
-\BOOKMARK [0][-]{chapter.9}{Communication}{part.2}% 43
-\BOOKMARK [1][-]{section.9.1}{Systems for communication}{chapter.9}% 44
-\BOOKMARK [1][-]{section.9.2}{Protocols}{chapter.9}% 45
-\BOOKMARK [1][-]{section.9.3}{In practice}{chapter.9}% 46
-\BOOKMARK [0][-]{chapter.10}{Mental model}{part.2}% 47
-\BOOKMARK [1][-]{section.10.1}{Situational awareness}{chapter.10}% 48
-\BOOKMARK [1][-]{section.10.2}{Shared between ships}{chapter.10}% 49
-\BOOKMARK [1][-]{section.10.3}{Master and crew}{chapter.10}% 50
-\BOOKMARK [0][-]{chapter.11}{Possible decisions}{part.2}% 51
-\BOOKMARK [1][-]{section.11.1}{Considerations}{chapter.11}% 52
-\BOOKMARK [1][-]{section.11.2}{Test with seafarers}{chapter.11}% 53
-\BOOKMARK [-1][-]{part.3}{III Wrap-up}{}% 54
-\BOOKMARK [0][-]{chapter.12}{Results}{part.3}% 55
-\BOOKMARK [0][-]{chapter.13}{Conclusion}{part.3}% 56
-\BOOKMARK [1][-]{section.13.1}{Answers to research questions}{chapter.13}% 57
-\BOOKMARK [1][-]{section.13.2}{Recommendations for future research}{chapter.13}% 58
-\BOOKMARK [0][-]{section.13.2}{Bibliography}{part.3}% 59
+\BOOKMARK [2][-]{subsection.2.2.1}{Shipping industry}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Bridge}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Shipping crew}{chapter.2}% 15
+\BOOKMARK [-1][-]{part.1}{I Maritime Technology}{}% 16
+\BOOKMARK [0][-]{chapter.3}{Manoeuvring capability}{part.1}% 17
+\BOOKMARK [1][-]{section.3.1}{IMO standard}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Limits}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Desired capability}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Expected route}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Input}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{Detailed capability}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{Prediction with limited data}{section.3.5}% 24
+\BOOKMARK [0][-]{chapter.4}{Filter situation}{part.1}% 25
+\BOOKMARK [1][-]{section.4.1}{Traffic separation schemes}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Navigational aids}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Accepted probabilities}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{Other filters}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Safe motion parameters}{part.1}% 30
+\BOOKMARK [1][-]{section.5.1}{Regulations}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Well-clear}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Visualization}{chapter.5}% 33
+\BOOKMARK [0][-]{chapter.6}{Probability index}{part.1}% 34
+\BOOKMARK [1][-]{section.6.1}{Input}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.2}{Map for other vessels}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.3}{Predicted capability envelope}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{Visualization}{part.1}% 38
+\BOOKMARK [1][-]{section.7.1}{Determine closes point of approach}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.2}{Hazards}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.3}{Routeplanner}{chapter.7}% 41
+\BOOKMARK [-1][-]{part.2}{II Computer Science}{}% 42
+\BOOKMARK [0][-]{chapter.8}{Information at the bridge}{part.2}% 43
+\BOOKMARK [1][-]{section.8.1}{Instruments}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.2}{Parameters}{chapter.8}% 45
+\BOOKMARK [1][-]{section.8.3}{Usage}{chapter.8}% 46
+\BOOKMARK [0][-]{chapter.9}{Communication}{part.2}% 47
+\BOOKMARK [1][-]{section.9.1}{Systems for communication}{chapter.9}% 48
+\BOOKMARK [1][-]{section.9.2}{Protocols}{chapter.9}% 49
+\BOOKMARK [2][-]{subsection.9.2.1}{Regulation}{section.9.2}% 50
+\BOOKMARK [2][-]{subsection.9.2.2}{Education}{section.9.2}% 51
+\BOOKMARK [1][-]{section.9.3}{In practice}{chapter.9}% 52
+\BOOKMARK [0][-]{chapter.10}{Mental model}{part.2}% 53
+\BOOKMARK [1][-]{section.10.1}{Situational awareness}{chapter.10}% 54
+\BOOKMARK [1][-]{section.10.2}{Shared between ships}{chapter.10}% 55
+\BOOKMARK [1][-]{section.10.3}{Master and crew}{chapter.10}% 56
+\BOOKMARK [2][-]{subsection.10.3.1}{Thought process}{section.10.3}% 57
+\BOOKMARK [2][-]{subsection.10.3.2}{Desired input}{section.10.3}% 58
+\BOOKMARK [2][-]{subsection.10.3.3}{Information overload}{section.10.3}% 59
+\BOOKMARK [0][-]{chapter.11}{Possible decisions}{part.2}% 60
+\BOOKMARK [1][-]{section.11.1}{Considerations}{chapter.11}% 61
+\BOOKMARK [1][-]{section.11.2}{Test with seafarers}{chapter.11}% 62
+\BOOKMARK [2][-]{subsection.11.2.1}{Set-up}{section.11.2}% 63
+\BOOKMARK [2][-]{subsection.11.2.2}{Results}{section.11.2}% 64
+\BOOKMARK [-1][-]{part.3}{III Wrap-up}{}% 65
+\BOOKMARK [0][-]{chapter.12}{Results}{part.3}% 66
+\BOOKMARK [0][-]{chapter.13}{Conclusion}{part.3}% 67
+\BOOKMARK [1][-]{section.13.1}{Answers to research questions}{chapter.13}% 68
+\BOOKMARK [1][-]{section.13.2}{Recommendations for future research}{chapter.13}% 69
+\BOOKMARK [0][-]{section.13.2}{Bibliography}{part.3}% 70

@@ -1,6 +1,30 @@
 \chapter*{Introduction}
 % Describe what this part is about and which question it answers
 
-Question: Which communication and parameters are necessary to enable the crew to make the right decisions, during critical situations entering a port?
+Many people are convinced one of the main developments within the maritime industry will be autonomous shipping. An argument is the improved safety for seafarers, as they don't have to be on board. However this does not necessarily go for all other vessels around the autonomous ship. This is also where one of the main arguments against autonomous shipping come from. How do other (manned) vessels know the intentions of autonomous vessels and can be sure that they will not make unexpected movements?
 
-Hypothesis:
+Currently this is secured in two ways. First and foremost are the COLREGs, rules applicable to all vessels, as these rules are concrete these can be programmed and used. Examples are to stay on starboard side of the shipping lane and to not cross other ships with small relative angle. However in critical situations such as the entering of harbors or in busy parts of the world, the VHF radio is used to ensure that intentions are clear.
+
+To make autonomous shipping possible, autonomous vessels should know how to communicate their intentions, without overloading the VHF and AIS channels. An optimization of the communication must be done, where others vessels know enough about the intentions to adapt their path to it, without overloading communication channels.
+This leads to the following research question:
+
+\begin{quotation}
+	\emph{How to optimize the communication between vessels, using an intelligent agent to support the decision making by the officer of watch?}
+\end{quotation}
+
+The method used within this research is to build a multi-agent system. Where other vessels are seen as semi-intelligent agents. While the own vessel has two agents: A human operator (officer of watch) and an intelligent support system. 
+
+%% Questions
+%- Which communication and parameters are necessary to enable the crew to make the right decisions, during critical situations entering a port?
+
+%- How can the officer of watch be supported in sharing their intentions during critical situations to ensure an unimpeded voyage?
+
+%- How can an intelligent agent support the officer of watch, in sharing intentions of the vessel and asking input to increase situational awareness in the correct manner during critical situations?
+
+%- How to improve communication between vessels by using an intelligent agent to support the officer of watch in acquiring situational awareness and communicate the necessary information?
+
+% needed to improve situational awareness both on my vessel and by using an intelligent agent to support the officer of watch
+
+% Supporting officer on watch. While keeping a watch on the bridge he is the representative of the ship’s master and has the total responsibility of safe and smooth navigation of the ship. Officer on Watch is also in charge of the bridge team, which is there to support him in the navigation process. He is also responsible to ensure that the ship complies with COLREGS and all the orders of the master are followed with utmost safety under all conditions. 
+% Internal checks for errors: compass, echo sounding, position, draft, check gyro, read log entries, follow navigation plan, am I following COLREGs
+% External checks: Global Maritime Distress and Safety System, read log entries, discuss with other officer of watch, ensure lookout at all time, do other vessel do what is expected, radar, ECDIS

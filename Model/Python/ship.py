@@ -1,7 +1,6 @@
 import numpy as np
 import math
 
-from calculation import CPA
 
 class Ship(object):
     """ The default settings for a ship which is used:
@@ -13,6 +12,7 @@ class Ship(object):
         T: depth of vessel (meter)
         displacement: current displacement (tons)
 
+    Other parameters:
         speed: speed over ground (m/s)
         course: course over ground (radians), where 0 is course of own vessel
         location: vector of int with current location of vessel
@@ -29,8 +29,6 @@ class Ship(object):
     course = 0
     location = np.empty(2)
 
-    sixMinuteMap = np.zeros((50, 50))
-
     def __init__(self, name, LBP, width, depth, displacement):
         self.name = name
         self.LBP = LBP
@@ -39,17 +37,40 @@ class Ship(object):
         self.displacement = displacement
 
     def __str__(self):
-        return "%s: at %s with a speed of %d m/s and course %d degrees" % (self.name, self.location, self.speed, self.course * 180 / math.pi)
+        return ("%s: at %s with a speed of %d m/s and course %d degrees" %
+                (self.name, self.location, self.speed, self.course * 180 / math.pi))
 
     def updateLocation(self, timestep, ownship):
-        self.location[0] += timestep * self.speed * math.sin(self.course) - timestep * ownship.speed * math.sin(ownship.course)
-        self.location[1] += timestep * self.speed * math.cos(self.course) - timestep * ownship.speed * math.cos(ownship.course)
+        self.location[0] += (timestep * self.speed * math.sin(self.course)
+                             - timestep * ownship.speed * math.sin(ownship.course))
+        self.location[1] += (timestep * self.speed * math.cos(self.course)
+                             - timestep * ownship.speed * math.cos(ownship.course))
 
-    @staticmethod
-    def testCPA(situation):
-        shipsToTest = list(situation.vessels)
+    def possiblePositions(self, time, precision=500):
+        x = np.zeros(precision)
+        y = np.zeros(precision)
 
-        while len(shipsToTest) > 0:
-            ship1 = shipsToTest.pop(0)
-            for ship2 in shipsToTest:
-                CPA(ship1, ship2)
+        for i in range(0, len(x)):
+            # new speed
+            speed = self.possibleSpeeds()
+
+            # new course
+            course = self.possibleCourse()
+
+            # calculate possible position
+            x[i] = self.location[0] + time * speed * math.sin(course)
+            y[i] = self.location[1] + time * speed * math.cos(course)
+
+        return x, y
+
+    def possibleSpeeds(self):
+        randomSpeed = np.random.normal(scale=2)
+        speed = self.speed * (1 + randomSpeed/10) - randomSpeed
+
+        return speed
+
+    def possibleCourse(self):
+        randomCourse = np.random.normal(scale=5)
+        course = self.course + randomCourse * math.pi / 180
+
+        return course
