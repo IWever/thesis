@@ -8,21 +8,21 @@ from dynamicObjects import shipList
 class World:
     """ The world in which everything will happen """
 
-    def __init__(self, name="Thesis tool", staticObjects=True, dynamicObjects=True, simulation=True, viewer=True):
+    def __init__(self, name="Thesis tool", staticObjects=True, dynamicObjects=True, simulation=True, viewer=False):
         self.name = name
 
         if staticObjects:
-            self.staticObjects = []
+            self.so = []
 
         if dynamicObjects:
-            self.dynamicObjects = shipList
+            self.do = shipList
         if simulation:
-            self.env = simpy.Environment()
+            self.env = simpy.rt.RealtimeEnvironment(factor=0.1)
             self.sim = Simulation(self)
 
         if viewer:
             self.root = tk.Tk()
             self.viewer = Viewer(self)
 
-
+# Create the world
 world = World()

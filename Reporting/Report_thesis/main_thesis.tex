@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,oneside]{book}
+\documentclass[a3paper,11pt,oneside]{book}
 
 
 \newcommand{\doctitle}{MSc Thesis\\ 
@@ -24,28 +24,34 @@
 \input{include/glossary}
 
 \clearpage
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \clearpage
 
 \mainmatter
 \input{chapter/introduction}
-\input{chapter/current-knowledge}
 
-\part{Maritime Technology}
-\input{chapter/intro-MT}
-\input{chapter/manoeuvring}
-\input{chapter/filters}
-\input{chapter/safe-motion-parameters}
-\input{chapter/probability-index}
-\input{chapter/simulation}
+\part{The maritime industry}
+\input{chapter/current-situation}
+\input{chapter/future-shipping}
 
-\part{Computer Science}
-\input{chapter/intro-CS}
-\input{chapter/information}
-\input{chapter/communication}
-\input{chapter/mental-model}
-\input{chapter/possible-decisions}
+\part{Research}
+\input{chapter/questions-methodology}
+\input{chapter/abstract-model}
+\input{chapter/scenarios}
+
+\part{Simulation}
+\input{chapter/requirements}
+\input{chapter/development}
+\input{chapter/implementation}
+
+\part{Reality}
+\input{chapter/validation-strategies}
+\input{chapter/validation-communication}
+\input{chapter/optimization-communicatoin}
+
+
+
 
 \part{Wrap-up}
 \input{chapter/results}
@@ -53,6 +59,14 @@
 \input{chapter/conclusion}
 
 \backmatter
+
+\part{TEMPORARY: Old text}
+\input{chapter/intro-MT}
+\input{chapter/intro-CS}
+\input{chapter/manoeuvring}
+\input{chapter/filters}
+
+
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{include/library}
 

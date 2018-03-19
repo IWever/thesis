@@ -1,0 +1,31 @@
+\chapter{Abstract model}
+As mentioned first an philosophy is developed on how to improve situational awareness by predicting the behavior. This is written down using an abstract model. Here is also a separation made between the Maritime Technology and Computer Science researches. 
+The reason to make this model is to a clear list of topics relevant to the strategy which will be developed for the specific scenario's.
+In figure \ref{fig:abstract-model} a visual of the abstract model is shown. In the next section differents parts of the model will be discussed in more detail.
+
+\begin{figure}[hb]
+	\centering
+	\makebox[\textwidth][c]{
+	\includegraphics[width=1.18\textwidth]{abstract-model.png}
+	}
+	\caption{Abstract model}
+	\label{fig:abstract-model}
+\end{figure}
+
+\section{Ship characteristics}
+The main block manoeuvring capability depends on the ship characteristics. Where there is an influence on both feeling of safety, and the physical limitations. For example a ship crossing another vessel could keep sailing straight as long as possible and than make a hard turn, but it rather changes its course earlier in a way where less loss of speed occurs. With a small ship these hard turns are easy and fairly predictable, but t
+
+Therefore the capability of the ship is split up in three categories, expected location, likely change of course done comfortably and physically possible route based on physics laws.
+As a full CFD simulation is hard to do for every ship which is encountered, models will be used to make estimations quickly. Thereby is important to notice that a high accuracy is not necessary, as those extreme movements have a very low probability to occur. Being a bit conservative here will help to allow for all different scenario's to be tested.
+
+\section{Influencing factors}
+The same goes for the safe motion parameters. There are regulations on minimal passing distances and how close you should come to others. But good seamanship would be to make intentions clear earlier, so that critical situations can be avoided. The regulations which apply depend on the ship characteristics, just as with the natural laws, the probability of getting to the extreme situations where regulations are followed but still problems might occur are not likely.
+The model from Szlapczynski is used to set the estimate safety domains for each ship. Leading to courses and speeds which are safe to sail \cite{Szlapczynski2017}. While also incorporating \ac{COLREGs} and arbitrary distances for well-clear, which is the distance where everyone feels safe.
+The \ac{COLREGs} are also relevant in areas around ports, where traffic separation schemes are used. These should be followed by different types of vessels. This will influence the most likely position for a vessel to be. Incorporating information from traffic controllers will thereby lead to the most likely expected route. The same goes for areas with multiple objects on the map, where ship should navigate around buoys, quays, fishing area's, no-go zones, etc.
+Combining this with ship characteristics will lead to a map where for each vessels is shown what the probability is it will be at a specific place. When looked at the highest probability this will show the most likely route. When looking at all places with a probability above a specific threshold the possible decision can be defined.
+
+\section{Information and communication}
+Already mentioned is the impact of other vessels and objects on the probability a ship will be at a specific location. But to know this impact the information has to be gathered from different parameters. Thereby should be looked if the current parameters are sufficient, or if others equipment or instruments should be installed. As currently vision and radio communication are very important ways to gather information. These types of information are difficult to gather using computers. Therefore will the focus be in this research on what information is needed, not how it is gathered. Although developments within technologies to gather this information will be taken into account to eventually develop the strategies. For example related to \ac{AIS}, \ac{VDES} and different protocols.
+
+\section{Situational awareness}
+When combining information, communication, characteristics and possible decisions an image of the situation can be formed. This will be interpreted in a way which enables the right decision making for route-planning. This planned route can be used on autonomous vessels, or be used to advise the crew which decision they should make and what information they should share with others. Mental models will be used to validate if indeed the different vessel have the right information and if enough information is shared. The results from these blocks will be verified with seafarers to validate that the theory corresponds with operations.

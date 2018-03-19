@@ -46,18 +46,25 @@ class Ship():
 
     def turningCircle(self):
         """" Steady turning radius in [meter] """
-        tc = 200 * self.turningCoefficient
+        tc = 3.5 * self.LBP * self.turningCoefficient
         return tc
 
     def turningSpeed(self):
         """" Steady turning radius in [deg/minute] """
-        ts = 180 * self.turningCoefficient
+        ts = (10000 / self.LBP) * self.turningCoefficient
         return ts
 
 
 if __name__ == "__main__":
     # Test creating a ship
-    shipA = Ship(name="Titia", MMSI=1, LBP=50, width=9, depth=4.5, displacement=220)
+    shipA = Ship(name="Titia",
+                 MMSI=1,
+                 LBP=50, width=9,
+                 depth=4.5,
+                 displacement=50*9*4.5*0.75,
+                 deadweight=220,
+                 nominalSpeed_kn=13)
+
     print(shipA)
     print(shipA.turningCircle())
     print(shipA.turningSpeed())
