@@ -1,27 +1,26 @@
-\chapter{Introduction}
+\chapter*{Introduction}
 \label{sec:introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
-Many people are convinced that one of the main developments within the maritime industry will be autonomous shipping. An argument is the improved safety for seafarers, as they don't have to be on board. However this does not necessarily go for all other vessels around the autonomous ship. This is also where one of the main arguments against autonomous shipping come from. How do other (manned) vessels know the intentions of autonomous vessels and can be sure that they will not make unexpected movements?
+Many people are convinced that one of the main developments within the maritime industry will be partly unmanned and autonomous shipping. A key arguments is the improved safety for seafarers, as they don't have to be on board and human mistakes are taken out. However this does not necessarily go for all other vessels around the autonomous ship. This is also where one of the main arguments against autonomous shipping comes from. How do other (manned) vessels know the intentions of autonomous vessels and can anticipate correctly to them?
 
 \subsubsection*{Problem statement}
 For manned vessels this is currently secured in two ways. First and foremost are the COLREGs, rules applicable to all vessels, as these rules are concrete these can be programmed and used. Examples are to stay on starboard side of the shipping lane and to not cross other ships with small relative angle. However in critical situations such as the entering of harbors or in busy parts of the world, the VHF radio is used to ensure that intentions are clear.
 
-To make autonomous shipping possible, autonomous vessels should know how to communicate their intentions, without overloading the VHF and AIS channels. An optimization of the communication must be done, where others vessels know enough about the intentions to adapt their path to it, without overloading communication channels.
+To make autonomous shipping possible, autonomous vessels should know how to communicate their intentions, without overloading the VHF and AIS channels. Or a different system should be developed which than must be installed on all other vessels. In both cases should the communication be optimized. In a way that other vessels know enough about the intentions to anticipate correctly, without overloading the communication channels.
 
-But this is not the same for different vessels, as a long heavy ship will mostly go straight ahead at a similar speed, while a small tug boat might go all over the place. Thereby is there the impact of traffic separation schemes and harbor entrances on the likelihood of manoeuvring in a certain direction. 
+But this is not the same for different vessels, as a long heavy ship will mostly go straight ahead at a similar speed, while a small tug boat might move around much more. Thereby is there the impact of traffic separation schemes and harbor entrances on the likelihood of manoeuvring in a certain direction. 
 
-By adjusting the course in an early stage the intentions can be made clear, making radio communication unnecessary. This will lead to an unimpeded voyage. Beside the advantage of less pressure on the crew, is it also more easy to have autonomous vessels sailing between manned vessels.
+By adjusting the course in an early stage the intentions can be made clear, making radio communication unnecessary. This will lead to an unimpeded voyage, as critical situation can be avoided. Beside the advantage of less pressure on the crew, is it also more easy to have autonomous vessels sailing between manned vessels.
 The moment these intentions have to be communicated is highly dependent on the type of vessel and ship characteristics. During an unimpeded voyage these communications can be avoided as intentions are in all cases clear.
 
 \subsubsection*{Research questions}
-To enable the step toward autonomous shipping, research will be conducted: When no communication is needed and in case of communication, which information should be shared. This also relates to the different domains of Maritime Technology and Computer Science.
+To enable the step toward autonomous shipping, the first step is a qualitative research. Focused on avoiding the need for radio communication, by looking into which information is most relevant for the different vessels. This will be done from two perspectives within the domains of Maritime Technology and Computer Science. Resulting in two research questions:
 
-Research question for Maritime Technology:
 \begin{quotation}
 	\emph{How do ship characteristics influence the time-domain for decision making to ensure an unimpeded voyage?} 
 \end{quotation}
 
-Research question for Computer Science:
 \begin{quotation}
 	\emph{How to optimize the communication between vessels, to support the decision making by the officer of watch?}
 \end{quotation}
@@ -29,6 +28,7 @@ Research question for Computer Science:
 
 \subsubsection*{Thesis structure}
 Within the project, several steps will be taken. At first more background is given on the current state of the maritime industry, and related developments. 
-Next a more detailed plan of approach for the research is given, including an abstract model on how to improve situational awareness. To test the methodology several scenario's will be used. Therefor these are first defined, leading up to requirements for a tool in which the tests will be performed.
-These requirements lead to user stories and finally an implementation of a simulation.
-This simulation is finally validated together with seafarers on the quality of the communication and if ships act realistically within the different scenario's. This is used to give an advice on how to optimize communication. Or more specifically which information should be shared.
+Next a more detailed plan of approach for the research is given, including an abstract model which shows the philosophy on how situational awareness can be acquired. 
+To test the methodology coming from this philosophy, several scenario's will be used. These are first defined, leading up to requirements for a tool in which the tests can be simulated.
+These requirements lead to user stories and an implementation.
+This simulation is finally validated together with seafarers on the quality of the communication and if ships act realistically within the different scenarios. This is used to give an qualitative advice on how to optimize communication, or more specifically which information should be shared.

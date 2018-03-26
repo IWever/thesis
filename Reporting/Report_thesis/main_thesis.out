@@ -1,58 +1,61 @@
 \BOOKMARK [0][-]{chapter*.2}{Preface}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.4}{Glossary}{}% 3
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter*.6}{Introduction}{}% 4
 \BOOKMARK [-1][-]{part.1}{I The maritime industry}{}% 5
-\BOOKMARK [0][-]{chapter.2}{Current situation}{part.1}% 6
-\BOOKMARK [1][-]{section.2.1}{Accidents}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.2}{Means of communication}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{The bridge}{chapter.2}% 9
-\BOOKMARK [0][-]{chapter.3}{Future of shipping}{part.1}% 10
-\BOOKMARK [1][-]{section.3.1}{Projects}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Other stakeholders}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.3}{TEMPORARY: Roadmaps for different projects}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Possible use cases}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.5}{Changes in communication}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.6}{Challenges when combining unmanned and manned vessel}{chapter.3}% 16
-\BOOKMARK [-1][-]{part.2}{II Research}{}% 17
-\BOOKMARK [0][-]{chapter.4}{Steps to be taken}{part.2}% 18
-\BOOKMARK [1][-]{section.4.1}{Specific step on roadmap towards autonomous}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{Research questions}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Abstract model}{part.2}% 22
-\BOOKMARK [1][-]{section.5.1}{Ship characteristics}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.2}{Influencing factors}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.3}{Information and communication}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.4}{Situational awareness}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Scenario's}{part.2}% 27
-\BOOKMARK [1][-]{section.6.1}{criteria}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{situations}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.3}{Mental model}{chapter.6}% 30
-\BOOKMARK [-1][-]{part.3}{III Simulation}{}% 31
-\BOOKMARK [0][-]{chapter.7}{Requirements}{part.3}% 32
-\BOOKMARK [1][-]{section.7.1}{Probability index}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.2}{User stories full application}{chapter.7}% 34
-\BOOKMARK [1][-]{section.7.3}{User stories modules}{chapter.7}% 35
-\BOOKMARK [1][-]{section.7.4}{Assumptions}{chapter.7}% 36
-\BOOKMARK [0][-]{chapter.8}{Building and verification}{part.3}% 37
-\BOOKMARK [1][-]{section.8.1}{Model and classes}{chapter.8}% 38
-\BOOKMARK [1][-]{section.8.2}{Methods}{chapter.8}% 39
-\BOOKMARK [1][-]{section.8.3}{Estimation of characteristics}{chapter.8}% 40
-\BOOKMARK [1][-]{section.8.4}{Manoeuvring capability model}{chapter.8}% 41
-\BOOKMARK [1][-]{section.8.5}{Routeplanner}{chapter.8}% 42
-\BOOKMARK [0][-]{chapter.9}{Implementation of scenario's}{part.3}% 43
-\BOOKMARK [-1][-]{part.4}{IV Reality}{}% 44
-\BOOKMARK [0][-]{chapter.10}{Validation of strategies}{part.4}% 45
-\BOOKMARK [0][-]{chapter.11}{Validation of communication}{part.4}% 46
-\BOOKMARK [1][-]{section.11.1}{Clear intentions}{chapter.11}% 47
-\BOOKMARK [1][-]{section.11.2}{Risk of information overload}{chapter.11}% 48
-\BOOKMARK [1][-]{section.11.3}{Desired input}{chapter.11}% 49
-\BOOKMARK [0][-]{chapter.12}{Optimization of communication}{part.4}% 50
-\BOOKMARK [1][-]{section.12.1}{Safe motion parameters}{chapter.12}% 51
-\BOOKMARK [-1][-]{part.5}{V Wrap-up}{}% 52
-\BOOKMARK [0][-]{chapter.13}{Results}{part.5}% 53
-\BOOKMARK [0][-]{chapter.14}{Conclusion}{part.5}% 54
-\BOOKMARK [1][-]{section.14.1}{Answers to research questions}{chapter.14}% 55
-\BOOKMARK [1][-]{section.14.2}{Recommendations for future research}{chapter.14}% 56
-\BOOKMARK [-1][-]{part.6}{VI TEMPORARY: Old text}{}% 57
-\BOOKMARK [0][-]{chapter*.29}{Bibliography}{part.6}% 58
+\BOOKMARK [0][-]{chapter.1}{Current situation}{part.1}% 6
+\BOOKMARK [1][-]{section.1.1}{Accidents}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Means of communication}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{The bridge}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Future of shipping}{part.1}% 10
+\BOOKMARK [1][-]{section.2.1}{Projects}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Other stakeholders}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Possible use cases}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Changes in communication}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Challenges when combining unmanned and manned vessel}{chapter.2}% 15
+\BOOKMARK [-1][-]{part.2}{II Research}{}% 16
+\BOOKMARK [0][-]{chapter.3}{Steps to be taken}{part.2}% 17
+\BOOKMARK [1][-]{section.3.1}{Specific step on road map towards autonomous}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Research questions}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Methodology}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Abstract model}{part.2}% 21
+\BOOKMARK [1][-]{section.4.1}{Ship characteristics}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Influencing factors}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Information and communication}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Situational awareness}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Scenarios}{part.2}% 26
+\BOOKMARK [1][-]{section.5.1}{Standard situations}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Real scenarios}{chapter.5}% 28
+\BOOKMARK [-1][-]{part.3}{III Simulation}{}% 29
+\BOOKMARK [0][-]{chapter.6}{Requirements}{part.3}% 30
+\BOOKMARK [1][-]{section.6.1}{Probability index}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{User stories full application}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.3}{User stories modules}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.4}{Assumptions}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter.7}{Building and verification}{part.3}% 35
+\BOOKMARK [1][-]{section.7.1}{Model and classes}{chapter.7}% 36
+\BOOKMARK [1][-]{section.7.2}{Methods}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.3}{Estimation of characteristics}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.4}{Manoeuvring capability model}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.5}{Routeplanner}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.6}{Mental model}{chapter.7}% 41
+\BOOKMARK [0][-]{chapter.8}{Implementation of scenario's}{part.3}% 42
+\BOOKMARK [-1][-]{part.4}{IV Reality}{}% 43
+\BOOKMARK [0][-]{chapter.9}{Validation of strategies}{part.4}% 44
+\BOOKMARK [1][-]{section.9.1}{Are strategies realistic}{chapter.9}% 45
+\BOOKMARK [1][-]{section.9.2}{Factors not taken into account}{chapter.9}% 46
+\BOOKMARK [1][-]{section.9.3}{EXTEND: with more sections}{chapter.9}% 47
+\BOOKMARK [0][-]{chapter.10}{Validation of communication}{part.4}% 48
+\BOOKMARK [1][-]{section.10.1}{Clear intentions}{chapter.10}% 49
+\BOOKMARK [1][-]{section.10.2}{Risk of information overload}{chapter.10}% 50
+\BOOKMARK [1][-]{section.10.3}{Desired input}{chapter.10}% 51
+\BOOKMARK [0][-]{chapter.11}{Optimization of communication}{part.4}% 52
+\BOOKMARK [1][-]{section.11.1}{Safe motion parameters}{chapter.11}% 53
+\BOOKMARK [1][-]{section.11.2}{EXTEND: with more sections}{chapter.11}% 54
+\BOOKMARK [-1][-]{part.5}{V Wrap-up}{}% 55
+\BOOKMARK [0][-]{chapter.12}{Results}{part.5}% 56
+\BOOKMARK [0][-]{chapter.13}{Conclusion}{part.5}% 57
+\BOOKMARK [1][-]{section.13.1}{Answers to research questions}{chapter.13}% 58
+\BOOKMARK [1][-]{section.13.2}{Recommendations for future research}{chapter.13}% 59
+\BOOKMARK [-1][-]{part.6}{VI TEMPORARY: Old text}{}% 60
+\BOOKMARK [0][-]{chapter*.43}{Bibliography}{part.6}% 61

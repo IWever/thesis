@@ -8,7 +8,7 @@ from dynamicObjects import shipList
 class World:
     """ The world in which everything will happen """
 
-    def __init__(self, name="Thesis tool", staticObjects=True, dynamicObjects=True, simulation=True, viewer=False):
+    def __init__(self, name="Thesis tool", staticObjects=True, dynamicObjects=True, simulation=True, viewer=True):
         self.name = name
 
         if staticObjects:

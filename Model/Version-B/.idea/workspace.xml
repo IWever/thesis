@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3d0d09-9836-4766-aea7-8bdbe335d3e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Version-A/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Version-A/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ship.py" afterPath="$PROJECT_DIR$/ship.py" />
       <change beforePath="$PROJECT_DIR$/simulation.py" afterPath="$PROJECT_DIR$/simulation.py" />
       <change beforePath="$PROJECT_DIR$/world.py" afterPath="$PROJECT_DIR$/world.py" />
-      <change beforePath="$PROJECT_DIR$/../../Planning.xlsx" afterPath="$PROJECT_DIR$/../../Planning.xlsx" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.bbl" afterPath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.bbl" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.pdf" afterPath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.synctex.gz" afterPath="$PROJECT_DIR$/../../Reporting/Report_current_knowledge/main_CK.synctex.gz" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/communication.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/current-knowledge.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/information.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/intro-MT.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/intro-MT.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/current-situation.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/current-situation.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/development.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/development.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/implementation.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/implementation.tex" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/manoeuvring.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/manoeuvring.tex" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/mental-model.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/possible-decisions.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/probability-index.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/safe-motion-parameters.tex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/simulation.tex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/optimization-communicatoin.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/optimization-communicatoin.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/questions-methodology.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/questions-methodology.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/scenarios.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/scenarios.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/validation-strategies.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/validation-strategies.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.blg" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.blg" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.out" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.out" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.pdf" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.pdf" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.synctex.gz" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.synctex.gz" />
@@ -43,7 +35,7 @@
     <SUITE FILE_PATH="coverage/Version_B$dynamicObjects.coverage" NAME="dynamicObjects Coverage Results" MODIFIED="1520855750973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$Gonio_test.coverage" NAME="Gonio_test Coverage Results" MODIFIED="1520438879550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$Ship_test.coverage" NAME="Ship_test Coverage Results" MODIFIED="1520863887323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Version_B$world.coverage" NAME="world Coverage Results" MODIFIED="1520864298518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_B$world.coverage" NAME="world Coverage Results" MODIFIED="1522065790781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$ship.coverage" NAME="Ship_test Coverage Results" MODIFIED="1520438264915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
   <component name="FileEditorManager">
@@ -51,8 +43,8 @@
       <file leaf-file-name="world.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            <state relative-caret-position="408">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -63,18 +55,28 @@
       <file leaf-file-name="simulation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="561">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dynamicObjects.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/viewer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dynamicObjects.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dynamicObjects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="697">
+              <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -133,8 +135,8 @@
         <option value="$PROJECT_DIR$/controller.py" />
         <option value="$PROJECT_DIR$/dynamicObjects.py" />
         <option value="$PROJECT_DIR$/ship.py" />
-        <option value="$PROJECT_DIR$/world.py" />
         <option value="$PROJECT_DIR$/simulation.py" />
+        <option value="$PROJECT_DIR$/world.py" />
       </list>
     </option>
   </component>
@@ -166,8 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,6 +179,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,12 +316,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32655138" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32655138" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32655138" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.111979164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -615,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AIS_Message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -638,28 +634,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dynamicObjects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        <state relative-caret-position="408">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulation.py">
+    <entry file="file://$PROJECT_DIR$/viewer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamicObjects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
