@@ -27,7 +27,8 @@ Tanker = Ship(name="Gulf Valour",
               depth=13.2,
               displacement=114900 * deadweight2displacement,
               deadweight=114900,
-              nominalSpeed_kn=10.5)
+              nominalSpeed_kn=10.5,
+              color='green')
 
 Bulk = Ship(name="Amelie",
             MMSI=636092737,
@@ -36,7 +37,8 @@ Bulk = Ship(name="Amelie",
             depth=10.1,
             displacement=34650 * deadweight2displacement,
             deadweight=34650,
-            nominalSpeed_kn=10.5)
+            nominalSpeed_kn=10.5,
+            color='red')
 
 Tug = Ship(name="DAMEN ASD2411",
            MMSI=710030460,
@@ -45,7 +47,8 @@ Tug = Ship(name="DAMEN ASD2411",
            depth=5.61,
            displacement=492,
            deadweight=150,
-           nominalSpeed_kn=13)
+           nominalSpeed_kn=13,
+           color='black')
 
 Bibby = Ship(name="Bibby Wavemaster 1",
              MMSI=232008874,
@@ -54,7 +57,8 @@ Bibby = Ship(name="Bibby Wavemaster 1",
              depth=6.1,
              displacement=5956,
              deadweight=2400,
-             nominalSpeed_kn=12)
+             nominalSpeed_kn=12,
+             color='blue')
 
 EmmaMaersk = Ship(name="Emma Maersk",
                   MMSI=220417000,
@@ -63,7 +67,8 @@ EmmaMaersk = Ship(name="Emma Maersk",
                   depth=12.6,
                   displacement=156907 * deadweight2displacement,
                   deadweight=156907,
-                  nominalSpeed_kn=18)
+                  nominalSpeed_kn=18,
+                  color='dodgerblue')
 
 # Add ships to dictionary
 shipList["Tanker"] = Tanker

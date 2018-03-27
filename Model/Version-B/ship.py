@@ -12,10 +12,15 @@ class Ship():
 
     waypoints = []
     perceivedShips = []
+    lastUpdate = 0
+
+    # Objects used to store plot details
+    marker = None
+    scalar = None
 
     def __init__(self, name, MMSI, LBP, width, depth,
                  displacement, deadweight, nominalSpeed_kn,
-                 turningCoefficient=1, AISEquipment="A", shipType=99):
+                 turningCoefficient=1, AISEquipment="A", shipType=99, color='blue'):
 
         # Ship registration details
         self.name = name
@@ -36,6 +41,9 @@ class Ship():
 
         # Create AIS message
         self.AIS = AISMessage(self)
+
+        # Visualisation details
+        self.color = color
 
         if self.DWT > self.displacement:
             warnings.warn("Deadweigt bigger than displacement of %s" % self.name)

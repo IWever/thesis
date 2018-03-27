@@ -1,3 +1,5 @@
+import math
+
 class Simulation:
     """ The class in which the simulation is created """
 
@@ -7,9 +9,25 @@ class Simulation:
         self.world = world
         self.env = world.env
 
-        self.addObjects()
+        self.initialPositionObjects()
 
-        self.env.run(until=100)
+        print("Created environment for simulation")
+
+        self.env.process(self.runSimulation())
+        self.env.process(self.updateGUI())
+
+    def runSimulation(self):
+        while True:
+            for shipname in self.activeShips:
+                self.moveShip(shipname)
+
+            self.world.viewer.updatePlot()
+            yield self.env.timeout(self.world.secondsPerStep/self.world.updateFrequency)
+
+    def updateGUI(self):
+        while True:
+            self.world.root.update()
+            yield self.env.timeout(1/50)
 
     def addDynamicObject(self, objectName, location, course_deg, speed=None):
         ship = self.world.do[objectName]
@@ -26,8 +44,18 @@ class Simulation:
 
         self.activeShips[objectName] = ship
 
-    def addObjects(self):
-        self.addDynamicObject("Tanker", [0, 0], 0, 7)
-        self.addDynamicObject("Bibby", [8000, 10000], 223)
-        self.addDynamicObject("Bulk", [-8000, 5000], 85)
-        yield
+    def moveShip(self, objectName):
+        ship = self.activeShips[objectName]
+
+        dt = self.env.now - ship.lastUpdate
+        ship.lastUpdate = self.env.now
+
+        s = dt * ship.speed * 1852/3600
+
+        ship.location[0] += s * math.sin(math.radians(ship.course))
+        ship.location[1] += s * math.cos(math.radians(ship.course))
+
+    def initialPositionObjects(self):
+        self.addDynamicObject("Tanker", [0, 0], 0)
+        self.addDynamicObject("Bibby", [3000, 1000], 220)
+        self.addDynamicObject("Bulk", [-2000, 5000], 120)

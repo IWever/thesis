@@ -91,5 +91,5 @@ class Map(object):
             x = np.concatenate((x, xi))
             y = np.concatenate((y, yi))
 
-        sns.kdeplot(x, y, shade=True, shade_lowest=False)
+        # sns.kdeplot(x, y, shade=True, shade_lowest=False)
         self.updateMap()

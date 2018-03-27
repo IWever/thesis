@@ -15,7 +15,7 @@ class AISMessage:
         self.equipmentType = ship.AISEquipmentType
 
         self.speed = ship.speed
-        self.position = ship.location
+        self.location = ship.location
         self.courseOverGround = ship.course
         self.heading = ship.course
         self.time = time
@@ -35,11 +35,11 @@ class AISMessage:
 
     def __str__(self):
         return ("%s last update at %d s: %d m/s, [%d, %d], %d degrees" %
-                (self.name, self.time, self.speed, self.position[0], self.position[1], self.courseOverGround))
+                (self.name, self.time, self.speed, self.location[0], self.location[1], self.courseOverGround))
 
     def update(self, ship, time=0):
         self.speed = ship.speed
-        self.position = ship.position
+        self.location = ship.location
         self.courseOverGround = ship.course
         self.heading = ship.course
         self.time = 0

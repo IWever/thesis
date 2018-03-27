@@ -1,18 +1,8 @@
-class Parent:
+loc = [3000, 0]
+dx = 50
+dy = 598
 
-    def __init__(self):
-        self.testList = []
+loc[0] += dx
+loc[1] += dy
 
-class Child:
-
-    def __init__(self, parent):
-        name = "henk"
-        parent.testList.append(name)
-
-a = Parent()
-
-print(a.testList)
-
-b = Child(a)
-
-print(a.testList)
+print(loc)
