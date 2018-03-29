@@ -3,6 +3,7 @@
     <words>
       <w>deadweight</w>
       <w>mmsi</w>
+      <w>shipname</w>
       <w>waypoints</w>
     </words>
   </dictionary>

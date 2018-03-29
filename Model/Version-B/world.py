@@ -33,10 +33,7 @@ world = World()
 # Run GUI and simulation
 try:
     world.env.run()
-except RuntimeError:
-    print('Simulation is too slow and stopped')
 except TclError:
     print('Application closed by user')
 
 world.root.mainloop()
-

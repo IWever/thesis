@@ -1,5 +1,6 @@
 import math
 
+
 class Simulation:
     """ The class in which the simulation is created """
 
@@ -43,6 +44,37 @@ class Simulation:
         ship.AIS.update(ship, time=self.env.now)
 
         self.activeShips[objectName] = ship
+
+    def removeDynamicObject(self, objectName):
+        ship = self.world.do[objectName]
+
+        ship.location = [0, 0]
+        ship.course = 0
+        ship.speed = 0
+
+        del self.activeShips[objectName]
+
+        try:
+            ship.markerPlot.remove()
+        except AttributeError:
+            pass
+
+        try:
+            ship.scalarPlot.remove()
+        except AttributeError:
+            pass
+        except ValueError:
+            pass
+
+        try:
+            ship.polygonPlot.remove()
+        except AttributeError:
+            pass
+
+        try:
+            ship.tag.remove()
+        except AttributeError:
+            pass
 
     def moveShip(self, objectName):
         ship = self.activeShips[objectName]
