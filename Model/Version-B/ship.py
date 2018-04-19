@@ -7,10 +7,19 @@ from matplotlib import patches
 class Ship():
     """ The ship class"""
 
+    # Current situation of ship
     location = [0, 0]
     speed = 0
     course = 0
+    heading = 0
 
+    rateOfTurn = 0
+    acceleration = 0
+
+    telegraphSpeed = 0
+    rudderAngle = 0
+
+    # Memory of the ship on surroundings
     waypoints = []
     perceivedShips = []
     lastUpdate = 0
@@ -79,7 +88,7 @@ class Ship():
         polygon_new = []
 
         loc = self.location
-        theta = math.radians(self.course)
+        theta = math.radians(self.heading)
 
         for point in self.polygon:
             px = point[0]

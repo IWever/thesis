@@ -32,36 +32,37 @@
 \contentsline {chapter}{\numberline {4}Scenarios}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Standard situations}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Real scenarios}{19}{section.4.2}
-\contentsline {chapter}{\numberline {5}Requirements}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}User stories full application}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}User stories modules}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Assumptions}{20}{section.5.3}
-\contentsline {part}{III\hspace {1em}Simulation}{21}{part.3}
-\contentsline {chapter}{\numberline {6}Building and verification}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}Model and classes}{22}{section.6.1}
-\contentsline {section}{\numberline {6.2}Methods}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}Probability index}{22}{section.6.3}
-\contentsline {section}{\numberline {6.4}Routeplanner}{22}{section.6.4}
-\contentsline {section}{\numberline {6.5}Estimation of characteristics}{22}{section.6.5}
-\contentsline {section}{\numberline {6.6}Manoeuvring capability model}{22}{section.6.6}
-\contentsline {section}{\numberline {6.7}Mental model}{22}{section.6.7}
-\contentsline {chapter}{\numberline {7}Implementation of scenario's}{23}{chapter.7}
-\contentsline {part}{IV\hspace {1em}Reality}{24}{part.4}
-\contentsline {chapter}{\numberline {8}Validation of strategies}{25}{chapter.8}
-\contentsline {section}{\numberline {8.1}Are strategies realistic}{25}{section.8.1}
-\contentsline {section}{\numberline {8.2}Factors not taken into account}{25}{section.8.2}
-\contentsline {section}{\numberline {8.3}EXTEND: with more sections}{25}{section.8.3}
-\contentsline {chapter}{\numberline {9}Validation of communication}{26}{chapter.9}
-\contentsline {section}{\numberline {9.1}Clear intentions}{26}{section.9.1}
-\contentsline {section}{\numberline {9.2}Risk of information overload}{26}{section.9.2}
-\contentsline {section}{\numberline {9.3}Desired input}{26}{section.9.3}
-\contentsline {chapter}{\numberline {10}Optimization of communication}{27}{chapter.10}
-\contentsline {section}{\numberline {10.1}Safe motion parameters}{27}{section.10.1}
-\contentsline {section}{\numberline {10.2}EXTEND: with more sections}{27}{section.10.2}
-\contentsline {part}{V\hspace {1em}Wrap-up}{28}{part.5}
-\contentsline {chapter}{\numberline {11}Results}{29}{chapter.11}
-\contentsline {chapter}{\numberline {12}Conclusion}{30}{chapter.12}
-\contentsline {section}{\numberline {12.1}Answers to research questions}{30}{section.12.1}
-\contentsline {section}{\numberline {12.2}Recommendations for future research}{30}{section.12.2}
-\contentsline {part}{VI\hspace {1em}TEMPORARY: Old text}{31}{part.6}
-\contentsline {chapter}{Bibliography}{36}{chapter*.44}
+\contentsline {chapter}{\numberline {5}Basic design}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Requirements}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}User stories}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}User interactions}{21}{section.5.3}
+\contentsline {section}{\numberline {5.4}Assumptions}{21}{section.5.4}
+\contentsline {part}{III\hspace {1em}Simulation}{22}{part.3}
+\contentsline {chapter}{\numberline {6}Building and verification}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}Model and classes}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}Methods}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}Probability index}{23}{section.6.3}
+\contentsline {section}{\numberline {6.4}Routeplanner}{23}{section.6.4}
+\contentsline {section}{\numberline {6.5}Estimation of characteristics}{23}{section.6.5}
+\contentsline {section}{\numberline {6.6}Manoeuvring capability model}{23}{section.6.6}
+\contentsline {section}{\numberline {6.7}Mental model}{23}{section.6.7}
+\contentsline {chapter}{\numberline {7}Implementation of scenario's}{24}{chapter.7}
+\contentsline {part}{IV\hspace {1em}Reality}{25}{part.4}
+\contentsline {chapter}{\numberline {8}Validation of strategies}{26}{chapter.8}
+\contentsline {section}{\numberline {8.1}Are strategies realistic}{26}{section.8.1}
+\contentsline {section}{\numberline {8.2}Factors not taken into account}{26}{section.8.2}
+\contentsline {section}{\numberline {8.3}EXTEND: with more sections}{26}{section.8.3}
+\contentsline {chapter}{\numberline {9}Validation of communication}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Clear intentions}{27}{section.9.1}
+\contentsline {section}{\numberline {9.2}Risk of information overload}{27}{section.9.2}
+\contentsline {section}{\numberline {9.3}Desired input}{27}{section.9.3}
+\contentsline {chapter}{\numberline {10}Optimization of communication}{28}{chapter.10}
+\contentsline {section}{\numberline {10.1}Safe motion parameters}{28}{section.10.1}
+\contentsline {section}{\numberline {10.2}EXTEND: with more sections}{28}{section.10.2}
+\contentsline {part}{V\hspace {1em}Wrap-up}{29}{part.5}
+\contentsline {chapter}{\numberline {11}Results}{30}{chapter.11}
+\contentsline {chapter}{\numberline {12}Conclusion}{31}{chapter.12}
+\contentsline {section}{\numberline {12.1}Answers to research questions}{31}{section.12.1}
+\contentsline {section}{\numberline {12.2}Recommendations for future research}{31}{section.12.2}
+\contentsline {part}{VI\hspace {1em}TEMPORARY: Old text}{32}{part.6}
+\contentsline {chapter}{Bibliography}{37}{chapter*.45}

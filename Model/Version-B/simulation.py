@@ -35,6 +35,7 @@ class Simulation:
 
         ship.location = location
         ship.course = course_deg
+        ship.heading = course_deg
 
         if speed is None:
             ship.speed = ship.vmean
@@ -50,6 +51,7 @@ class Simulation:
 
         ship.location = [0, 0]
         ship.course = 0
+        ship.heading = 0
         ship.speed = 0
 
         del self.activeShips[objectName]
@@ -79,15 +81,21 @@ class Simulation:
     def moveShip(self, objectName):
         ship = self.activeShips[objectName]
 
+        # Update timestamp and get time since last update
         dt = self.env.now - ship.lastUpdate
         ship.lastUpdate = self.env.now
 
-        s = dt * ship.speed * 1852/3600
+        # Convert to useful parameters
+        speed_ms = dt * ship.speed * 1852/3600
 
-        ship.location[0] += s * math.sin(math.radians(ship.course))
-        ship.location[1] += s * math.cos(math.radians(ship.course))
+
+
+
+        ship.location[0] += speed_ms * math.sin(math.radians(ship.course))
+        ship.location[1] += speed_ms * math.cos(math.radians(ship.course))
 
     def initialPositionObjects(self):
         self.addDynamicObject("Tanker", [0, 0], 0)
         self.addDynamicObject("Bibby", [3000, 1000], 220)
         self.addDynamicObject("Bulk", [-2000, 5000], 120)
+
