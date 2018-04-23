@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -47,6 +47,12 @@ MUNIN.
 \newblock {About MUNIN}, 2016.
 \newblock URL \url{http://www.unmanned-ship.org/munin/about/}.
 
+\bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
+Rolls-Royce.
+\newblock {Unified Bridge}, 2015.
+\newblock URL
+  \url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}.
+
 \bibitem[Sames(2017)]{Sames2017}
 Pierre~C Sames.
 \newblock {Unmanned ships on the horizon - DNV GL}, 2017.
@@ -74,6 +80,11 @@ Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock {Report on the collision between USS Fitzgerald and motor vessel ACX
   Crystal}.
 \newblock Technical report, 2017.
+
+\bibitem[Waterborne(2016)]{Waterborne2016}
+Waterborne.
+\newblock {Waterborne Vision 2030}.
+\newblock 2016.
 
 \bibitem[Wilson(2017)]{Wilson2017}
 Jonathan Wilson.

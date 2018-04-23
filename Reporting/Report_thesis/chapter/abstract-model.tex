@@ -11,7 +11,7 @@ In figure \ref{fig:abstract-model} a visual of the abstract model is shown. In t
 	\caption{Abstract model}
 	\label{fig:abstract-model}
 \end{figure}
-\todo{Make model in same style as infographic and situation sketches}
+\todo{Make model in same style as infographic and situation sketches, using blocks as mentioned below}
 
 \section{Ship characteristics}
 The main block on manoeuvring capability depends on the ship characteristics. Where there is an influence on both feeling of safety, and the physical limitations. For example a ship crossing another vessel could keep sailing straight as long as possible and than make a hard turn, but it rather changes its course earlier in a way where less loss of speed occurs. With a small ship these hard turns are much easier and will most likely occur more often.
@@ -20,9 +20,9 @@ Therefore the capability of the ship is split up in three categories, expected l
 As a full CFD simulation is hard to do for every ship which is encountered, models will be used to make estimations quickly. Thereby is it important to notice that a high accuracy is not necessary, as those extreme movements have a very low probability to occur. Being a bit conservative here will help to allow for all different scenario's to be tested.
 
 \section{Influencing factors}
-The same goes for the safe motion parameters. There are regulations on minimal passing distances and how close you should come to others. But good seamanship would be to make intentions clear earlier, so that critical situations can be avoided. The regulations which apply depend on the ship characteristics, just as with the natural laws, the probability of getting to the extreme situations where regulations are followed but still problems might occur are not likely.
+The same goes for the safe motion parameters. There are regulations on minimal passing distances and how close you should come to others. But good seamanship would be to make intentions clear earlier, so that critical situations can be avoided. Applicability of rules depends on the ship characteristics. Just as with the natural laws, the probability of getting into the extreme situations where regulations are followed but still problems might occur are not likely.
 The model from Szlapczynski is used, to set the estimated safety domains for each ship. Leading to courses and speeds which are safe to sail \cite{Szlapczynski2017}. While also incorporating \ac{COLREGs} and arbitrary distances for well-clear, which is the distance where everyone feels safe.
-The \ac{COLREGs} are also relevant in areas around ports, where traffic separation schemes are used. These should be followed by different types of vessels. This will influence the most likely position for a vessel to be. Incorporating information from traffic controllers will thereby lead to the most likely expected route. The same goes for areas with multiple objects on the map, where ship should navigate around buoys, quays, fishing area's, no-go zones, etc.
+The \ac{COLREGs} are also relevant in areas around ports, where traffic separation schemes are used. These should be followed by different types of vessels. This will influence the most likely position for a vessel to be. Incorporating information from traffic controllers will thereby lead to the most likely expected route. The same goes for areas with multiple objects on the map, where ships should follow lanes marked by buoys, and avoid quays, fishing area's, no-go zones, etc.
 Combining this with ship characteristics will lead to a map where for each vessels is shown, where another ship will likely be. When looked at the highest probability this will show the most likely route for each vessel. Which can be used to advise on the route planning of the own vessel. As the probabilities combined with a threshold will result in a set of possible decisions.
 
 \section{Information and communication}
