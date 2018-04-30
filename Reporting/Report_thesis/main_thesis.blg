@@ -3,6 +3,7 @@ The style file: tudelft-report.bst
 Database file #1: include/library.bib
 Warning--empty institution in Backer2015
 Warning--empty journal in CCNR2017
+Warning--empty journal in NTSB2016
 0 is an integer literal, not a function, for entry Szlapczynski2017
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Szlapczynski2017

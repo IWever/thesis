@@ -1,9 +1,14 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Agile Manifesto}(2001)]{Agile2001}
+{Agile Manifesto}.
+\newblock {Manifesto for Agile Software Development}, 2001.
+\newblock URL \url{http://agilemanifesto.org/}.
 
 \bibitem[Backer(2015)]{Backer2015}
 Philippe D~E Backer.
@@ -46,6 +51,18 @@ IMO.
 MUNIN.
 \newblock {About MUNIN}, 2016.
 \newblock URL \url{http://www.unmanned-ship.org/munin/about/}.
+
+\bibitem[NTSB(2016{\natexlab{a}})]{NTSB2016}
+NTSB.
+\newblock {Executive Summary public meeting about collision between bulk
+  carrier Conti Peridot and Tanker Carla Maersk}.
+\newblock 2016{\natexlab{a}}.
+
+\bibitem[NTSB(2016{\natexlab{b}})]{NTSB2016a}
+NTSB.
+\newblock {Marine Accident Report - Collision between Bulk Carrier Conti
+  Peridot and Tanker Carla Maersk}.
+\newblock \emph{Marine Accident Report}, 2016{\natexlab{b}}.
 
 \bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
 Rolls-Royce.
