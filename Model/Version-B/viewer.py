@@ -170,7 +170,9 @@ class Viewer:
     def setSpeed(self, event=None):
         """" Set speed of selected vessel. """
         try:
-            self.world.do[self.selectedShip].speed = self.speedSlider.get()
+            ship = self.world.do[self.selectedShip]
+            ship.speed = self.speedSlider.get()
+            ship.telegraphSpeed = ship.speed / ship.vmax
         except KeyError:
             self.message.set("First select ship from list")
 
@@ -205,8 +207,8 @@ class Viewer:
         orient=HORIZONTAL, label="Rudder [deg]", resolution=0.5)
         self.rudderAngleSlider.pack(side=TOP, fill=X)
 
-        self.throttleSlider = Scale(self.sailMenuFrame, from_=-100, to=100,
-        orient=HORIZONTAL, label="Throttle [%]", resolution=1)
+        self.throttleSlider = Scale(self.sailMenuFrame, from_=-1, to=1,
+        orient=HORIZONTAL, label="Throttle [%]", resolution=0.01)
         self.throttleSlider.pack(side=TOP, fill=X)
 
     def closeSailingMenu(self):
@@ -219,13 +221,29 @@ class Viewer:
         self.rudderAngleSlider.unbind("<ButtonRelease-1>")
         self.throttleSlider.unbind("<ButtonRelease-1>")
 
-    def shipSelectedToSail(self):
+    def shipSelectedToSail(self, event=None):
+        """ Select a ship to sail and set sliders according to current information known about the ship. """
+        self.selectedShip = self.vesselList.get(self.vesselList.curselection())
+        ship = self.world.do[self.selectedShip]
+
+        self.message.set("Sail %s using sliders" % self.selectedShip)
+        self.rudderAngleSlider.set(ship.rudderAngle)
+        self.throttleSlider.set(ship.telegraphSpeed)
+
+    def setRudder(self, event=None):
+        """" Set rudder for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].rudderAngle = self.rudderAngleSlider.get()
+        except KeyError:
+            self.message.set("First select ship from list")
         pass
 
-    def setRudder(self):
-        pass
-
-    def setThrottle(self):
+    def setThrottle(self, event=None):
+        """" Set speed on telegraph for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].telegraphSpeed = self.throttleSlider.get()
+        except KeyError:
+            self.message.set("First select ship from list")
         pass
 
     """" Functions needed to plot ships in figure. """
@@ -273,7 +291,8 @@ class Viewer:
             pass
 
         try:
-            ship.polygonPlot.remove()
+            pass
+            #ship.polygonPlot.remove()
         except AttributeError:
             pass
         except ValueError:

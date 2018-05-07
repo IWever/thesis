@@ -9,12 +9,15 @@ class Ship():
 
     # Current situation of ship
     location = [0, 0]
-    speed = 0
     course = 0
     heading = 0
+    drift = 0 # radians
 
-    rateOfTurn = 0
+    speed = 0
+    headingChange = 0
+
     acceleration = 0
+    headingAcceleration = 0
 
     telegraphSpeed = 0
     rudderAngle = 0
@@ -33,7 +36,7 @@ class Ship():
 
     def __init__(self, name, MMSI, LBP, width, depth,
                  displacement, deadweight, nominalSpeed_kn,
-                 turningCoefficient=1, AISEquipment="A", shipType=99, color='blue', maxSpeed_kn=30):
+                 turningCoefficient=1, AISEquipment="A", shipType=99, color='blue', maxSpeed_kn=25):
 
         # Ship registration details
         self.name = name
@@ -49,6 +52,7 @@ class Ship():
         self.DWT = deadweight
         self.vmean = nominalSpeed_kn
         self.vmax = maxSpeed_kn
+        self.Cb = LBP * width * depth / displacement
 
         # Relevant Coefficients
         self.turningCoefficient = turningCoefficient

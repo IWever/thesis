@@ -1,5 +1,5 @@
 import math
-
+from manoeuvring import manoeuverShip
 
 class Simulation:
     """ The class in which the simulation is created """
@@ -39,8 +39,10 @@ class Simulation:
 
         if speed is None:
             ship.speed = ship.vmean
+            ship.telegraphSpeed = ship.speed / ship.vmax
         else:
             ship.speed = speed
+            ship.telegraphSpeed = ship.speed / ship.vmax
 
         ship.AIS.update(ship, time=self.env.now)
 
@@ -85,14 +87,9 @@ class Simulation:
         dt = self.env.now - ship.lastUpdate
         ship.lastUpdate = self.env.now
 
-        # Convert to useful parameters
-        speed_ms = dt * ship.speed * 1852/3600
-
-
-
-
-        ship.location[0] += speed_ms * math.sin(math.radians(ship.course))
-        ship.location[1] += speed_ms * math.cos(math.radians(ship.course))
+        # Use model to move ship
+        if ship.speed != 0:
+            manoeuverShip(ship, dt)
 
     def initialPositionObjects(self):
         self.addDynamicObject("Tanker", [0, 0], 0)
