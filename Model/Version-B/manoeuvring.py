@@ -11,14 +11,14 @@ def manoeuverShip(ship, dt):
     Cb = ship.Cb
 
     # Current state of ship
-    beta = math.radians(ship.drift)
+    beta = math.radians(ship.drift) * dt
     omega_z = math.radians(ship.headingChange)
 
     delta = math.radians(ship.rudderAngle)
     tau = ship.telegraphSpeed
 
     # update ship speed
-    v = tau * ship.vmax * 1852 / 3600
+    v = tau * ship.vmax * 1852 / 3600 * (1 - ship.drift / 30)
 
     # Dimensionless factors
     try:
@@ -73,25 +73,34 @@ def manoeuverShip(ship, dt):
     b_2 = b_2H + b_2R
 
     # Calculate changes
-    dBeta = (dt * v / L) * (a_1 * beta + b_1 * omegadot_z + c_1 * delta)
-    dOmegadot_z = (dt * v / L) * (a_2 * beta + b_2 * omegadot_z + c_2 * delta)
+    dBeta = (dt * abs(v) / L) * (a_1 * beta + b_1 * omegadot_z - c_1 * delta)
+    dOmegadot_z = (dt * abs(v) / L) * (a_2 * beta + b_2 * omegadot_z - c_2 * delta)
 
-    beta = .1*dBeta
+    beta = 12 * dBeta
     omegadot_z += dOmegadot_z
-    omega_z = omegadot_z * v / L
+    omega_z = omegadot_z * abs(v) / L
 
     # Update and calculate new orientation of ship
     ship.headingChange = math.degrees(omega_z)
     ship.heading += ship.headingChange * dt
 
-    ship.drift = math.degrees(beta)
+    try:
+        ship.drift = math.degrees(beta) / dt
+    except ZeroDivisionError:
+        ship.drift = 0
 
-    ship.course = ship.heading + ship.drift
+    ship.course = ship.heading + math.degrees(beta)
 
     # Calculate new position
     ship.location[0] += dt * v * math.sin(math.radians(ship.course))
     ship.location[1] += dt * v * math.cos(math.radians(ship.course))
     ship.speed = v * 3600 / 1852
+
+    if ship.name == "Bibby Wavemaster 1":
+        print(ship.drift)
+        print(dt)
+        print(ship.speed)
+
 
 def checkInput(Yb, c_Ry, a_H, Yw, x_Reff, Nb, Nw):
     # Check if estimated values are between limits

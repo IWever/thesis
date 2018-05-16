@@ -54,7 +54,12 @@ class Simulation:
         ship.location = [0, 0]
         ship.course = 0
         ship.heading = 0
+        ship.drift = 0
+
         ship.speed = 0
+        ship.headingChange = 0
+        ship.telegraphSpeed = 0
+        ship.rudderAngle = 0
 
         del self.activeShips[objectName]
 
@@ -92,7 +97,9 @@ class Simulation:
             manoeuverShip(ship, dt)
 
     def initialPositionObjects(self):
-        self.addDynamicObject("Tanker", [0, 0], 0)
-        self.addDynamicObject("Bibby", [3000, 1000], 220)
-        self.addDynamicObject("Bulk", [-2000, 5000], 120)
+        #self.addDynamicObject("Tanker", [3000, 1000], 220)
+        self.addDynamicObject("Bibby", [0, 0], 0)
+        #self.addDynamicObject("Bulk", [-2000, 5000], 120)
+
+        self.world.do["Bibby"].rudderAngle = 35
 

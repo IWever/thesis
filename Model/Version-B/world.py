@@ -12,7 +12,7 @@ class World:
     def __init__(self, name="Dutos ship sim"):
         self.name = name
         self.secondsPerStep = 8
-        self.updateFrequency = 2
+        self.updateFrequency = 16 # amount of simulation steps per screen update
 
         self.so = []
         print("Created empty list to store static objects")

@@ -11,13 +11,12 @@ class Ship():
     location = [0, 0]
     course = 0
     heading = 0
-    drift = 0 # radians
+    drift = 0
 
     speed = 0
     headingChange = 0
 
     acceleration = 0
-    headingAcceleration = 0
 
     telegraphSpeed = 0
     rudderAngle = 0
@@ -32,6 +31,7 @@ class Ship():
     scalarPlot = None
     polygon = None
     polygonPlot = None
+    polygonNumber = 0
     tag = None
 
     def __init__(self, name, MMSI, LBP, width, depth,
@@ -89,6 +89,7 @@ class Ship():
                         (-.5 * self.B, -.5 * self.LBP)]
 
     def patchPolygon(self):
+        self.polygonNumber += 1
         polygon_new = []
 
         loc = self.location

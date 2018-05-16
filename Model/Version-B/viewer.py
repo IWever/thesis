@@ -23,6 +23,9 @@ class Viewer:
         self.scale = 12
         self.shipLocationMarkers = None
         self.selectedShip = None
+        self.shipSpeed = StringVar()
+        self.shipCourse = StringVar()
+        self.shipName = StringVar()
 
         # Collection of callbacks for plot
         self.plotButtonPress = None
@@ -84,6 +87,17 @@ class Viewer:
         for vessel in self.world.do:
             self.vesselList.insert(END, vessel)
 
+        # Labels with details for selected ship
+        self.shipInformationFrame = Frame(self.optionMenu)
+        self.shipInformationFrame.pack(side=BOTTOM, fill=X)
+        self.shipNameLabel = Label(self.shipInformationFrame, textvariable=self.shipName)
+        self.shipNameLabel.pack(side=TOP)
+        self.shipSpeedLabel = Label(self.shipInformationFrame, textvariable=self.shipSpeed)
+        self.shipSpeedLabel.pack(side=TOP)
+        self.shipCourseLabel = Label(self.shipInformationFrame, textvariable=self.shipCourse)
+        self.shipCourseLabel.pack(side=TOP)
+
+
         # Label showing runtime of simulation
         self.timeLabel = Label(self.optionMenu, textvariable=self.time)
         self.timeLabel.pack(side=TOP, fill=X)
@@ -114,11 +128,11 @@ class Viewer:
         self.modifyMenuFrame = Frame(self.optionMenu)
         self.modifyMenuFrame.pack(side=TOP, fill=X)
 
-        self.removeShipButton = Button(self.modifyMenuFrame, text="Remove ship from plot", command=self.closeModifyMenu)
+        self.removeShipButton = Button(self.modifyMenuFrame, text="Remove ship from plot", command=self.removeShipFromPlot)
         self.removeShipButton.pack(side=TOP, fill=X)
 
         self.speedSlider = Scale(self.modifyMenuFrame, from_=-20, to=20,
-                                 orient=HORIZONTAL, label="Speed [kn]", resolution=0.1)
+                                 orient=HORIZONTAL, label="Non-turning speed [kn]", resolution=0.1)
         self.speedSlider.pack(side=TOP, fill=X)
 
         self.courseSlider = Scale(self.modifyMenuFrame, from_=-180, to=360,
@@ -203,7 +217,7 @@ class Viewer:
         self.sailMenuFrame = Frame(self.optionMenu)
         self.sailMenuFrame.pack(side=TOP, fill=X)
 
-        self.rudderAngleSlider = Scale(self.sailMenuFrame, from_=-30, to=30,
+        self.rudderAngleSlider = Scale(self.sailMenuFrame, from_=-35, to=35,
         orient=HORIZONTAL, label="Rudder [deg]", resolution=0.5)
         self.rudderAngleSlider.pack(side=TOP, fill=X)
 
@@ -251,6 +265,21 @@ class Viewer:
         for shipname in self.world.sim.activeShips:
             self.plotShip(shipname)
         self.time.set("Time: %d seconds" % self.world.env.now)
+
+        shipSelectedListbox = self.vesselList.curselection()
+
+        if shipSelectedListbox:
+            selectedShip = self.world.do[self.vesselList.get(shipSelectedListbox)]
+
+            self.shipName.set("%s" % selectedShip.name)
+            self.shipSpeed.set("Speed: %2.1f knots" % selectedShip.speed)
+            self.shipCourse.set("Course: %3.1f degrees" % selectedShip.course)
+
+        else:
+            self.shipName.set("First select a ship")
+            self.shipSpeed.set("Speed: - knots")
+            self.shipCourse.set("Course: - degrees")
+
         self.mapCanvas.draw()
 
     def plotShip(self, shipname):
@@ -277,7 +306,7 @@ class Viewer:
     def deleteShipPlotObjects(ship):
         """" Remove previously plotted objects from map if they exist. """
         try:
-            ship.markerPlot.remove()
+            pass #ship.markerPlot.remove()
         except AttributeError:
             pass
         except ValueError:
@@ -291,8 +320,10 @@ class Viewer:
             pass
 
         try:
-            pass
-            #ship.polygonPlot.remove()
+            if ship.polygonNumber == -1: #% 50 == 0:
+                pass
+            else:
+                ship.polygonPlot.remove()
         except AttributeError:
             pass
         except ValueError:
