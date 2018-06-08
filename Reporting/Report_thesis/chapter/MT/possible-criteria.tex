@@ -1,0 +1,84 @@
+\chapter{Definition of criteria}
+To determine which strategy works best, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. The current and proposed algorithm are discussed below. This is followed by a section on the criteria which can't be calculated.
+
+\section{Calculations based on current systems}
+Within \ac{ARPA} and \ac{ECDIS} the criteria are often already calculated, using linearized algorithms. Below these calculations are discussed for the \ac{CPA} and crossing position.
+
+\subsection{\ac{CPA}}
+Code snippet \todo{convert to nice latex math}:
+\begin{lstlisting}
+xA = shipA.location[0]
+yA = shipA.location[1]
+VA = shipA.speed
+UxA = math.sin(shipA.course)
+UyA = math.cos(shipA.course)
+
+xB = shipB.location[0]
+yB = shipB.location[1]
+VB = shipB.speed
+UxB = math.sin(shipB.course)
+UyB = math.cos(shipB.course)
+
+if (shipB.course == shipA.course) and (shipB.speed == shipA.speed):
+distance = math.sqrt( (xB-xA)**2 + (yB - yA) ** 2)
+print('%s and %s parallel: %d meter apart' % (shipA.name, shipB.name, distance))
+return [distance, 0]
+
+distance = math.sqrt((
+yA * VA * UxA - VA * yB * UxA - yA * VB * UxB + VB * UxB * yB - xA * VA * UyA + xB * VA * UyA + xA * VB * UyB - xB * VB * UyB) ** 2 / (
+UxA ** 2 * VA ** 2 - 2 * UxA * UxB * VA * VB + UxB ** 2 * VB ** 2 + UyA ** 2 * VA ** 2 - 2 * UyA * UyB * VA * VB + UyB ** 2 * VB ** 2))
+time_s = (((-xA + xB) * UxA - UyA * (yA - yB)) * VA + VB * ((xA - xB) * UxB + UyB * (yA - yB))) / (
+(UxA ** 2 + UyA ** 2) * VA ** 2 - 2 * VB * (UxA * UxB + UyA * UyB) * VA + VB ** 2 * (UxB ** 2 + UyB ** 2))
+\end{lstlisting}
+
+\subsection{Crossing}
+Code snippet \todo{convert to nice latex math}:
+\begin{lstlisting}
+locA = np.transpose(np.matrix(shipA.location))
+locB = np.transpose(np.matrix(shipB.location))
+p = locA - locB
+
+UA = np.array([[math.sin(shipA.course)], [math.cos(shipA.course)]])
+UB = np.array([[math.sin(shipB.course)], [math.cos(shipB.course)]])
+
+d = np.concatenate((UB, -UA), axis=1)
+n = np.linalg.inv(d) * p
+
+crossing = locB + n[0, 0] * UB
+relativeSpeed = n[1, 0] / n[0, 0]
+\end{lstlisting}
+
+\section{Proposed algorithm based on planned path}
+Using the planned path of the vessel, better estimations can be made for the closest point of approach and crossing distance. As this planned path is not available for other ships, without introducing new systems, an estimation is made for the likely path. Which first uses a first order change, based on rate of turn and course. This can be extended with a combination of expected location, using the probability that another ship is choosing a specific strategy.
+
+\subsection{CPA}
+1) check if something changed since last calculation
+-> no check out
+-> yes to step 2
+
+2) use waypoints to plan x minutes ahead
+
+3) 
+
+
+
+
+
+Disadvantage: heavier computation and less accuracy due to numerical solve
+
+\subsection{Crossing distance}
+
+\subsection{Passing distance}
+
+
+\section{Conditional criteria}
+
+\subsection{COLREGs}
+How is the path based solely based on COLREGs, without taking into account other ships
+
+use this \url{https://www.myseatime.com/blog/detail/8-colreg-rules-every-navigating-officer-must-understand}
+
+\subsection{Bold movement}
+Combine paths to ensure bold movements
+
+

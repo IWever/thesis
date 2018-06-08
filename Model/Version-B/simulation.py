@@ -25,17 +25,19 @@ class Simulation:
             self.world.viewer.updatePlot()
             yield self.env.timeout(self.world.secondsPerStep/self.world.updateFrequency)
 
+
     def updateGUI(self):
         while True:
             self.world.root.update()
             yield self.env.timeout(1/50)
 
-    def addDynamicObject(self, objectName, location, course_deg, speed=None):
+    def addDynamicObject(self, objectName, location, course_deg, speed=None, rudderAngle=0):
         ship = self.world.do[objectName]
 
         ship.location = location
         ship.course = course_deg
         ship.heading = course_deg
+        ship.rudderAngle = rudderAngle
 
         if speed is None:
             ship.speed = ship.vmean
@@ -97,9 +99,6 @@ class Simulation:
             manoeuverShip(ship, dt)
 
     def initialPositionObjects(self):
-        #self.addDynamicObject("Tanker", [3000, 1000], 220)
-        self.addDynamicObject("Bibby", [0, 0], 0)
-        #self.addDynamicObject("Bulk", [-2000, 5000], 120)
-
-        self.world.do["Bibby"].rudderAngle = 35
-
+        self.addDynamicObject("Tanker", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
+        self.addDynamicObject("Astrorunner", [-3090, 1395], 114, speed=13.4)
+        self.addDynamicObject("Anglia", [2068, -71], 291, speed=10.3)

@@ -1,6 +1,7 @@
 from tkinter import *
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 
@@ -19,8 +20,9 @@ class Viewer:
 
         # Create variables
         self.message = StringVar()
+        self.simulationRunning = True
         self.time = StringVar()
-        self.scale = 12
+        self.scale = 8
         self.shipLocationMarkers = None
         self.selectedShip = None
         self.shipSpeed = StringVar()
@@ -74,6 +76,11 @@ class Viewer:
         self.plotControls = NavigationToolbar2TkAgg(self.mapCanvas, self.infoBar)
         self.plotControls.pack(side=TOP, fill=X)
 
+        # Add map of situation
+        ENCmap = plt.imread('image/Maasgeul-map.png')
+        self.mapPlot.imshow(ENCmap, zorder=0, extent=[0-4090, 7018-4090, 0-2262, 4858-2262])
+
+
     def createSidebar(self):
         """" Create sidebar where simulation and plot can be controlled. """
 
@@ -97,10 +104,11 @@ class Viewer:
         self.shipCourseLabel = Label(self.shipInformationFrame, textvariable=self.shipCourse)
         self.shipCourseLabel.pack(side=TOP)
 
-
         # Label showing runtime of simulation
         self.timeLabel = Label(self.optionMenu, textvariable=self.time)
         self.timeLabel.pack(side=TOP, fill=X)
+        self.simulationControlButton = Button(self.optionMenu, text="Pause simulation", command=self.pauseSimulation)
+        self.simulationControlButton.pack(side=TOP, fill=X)
 
         # Button to enter menu where situation can be modified
         self.modifyShipButton = Button(self.optionMenu, text="Modify mode", command=self.modifyShipFromList)
@@ -109,6 +117,18 @@ class Viewer:
         # Button to enter menu where ships can be sailed as a captain
         self.sailModeButton = Button(self.optionMenu, text="Sailing mode", command=self.sailSelectedShip)
         self.sailModeButton.pack(side=TOP, fill=X)
+
+    """" Run and pause simulation. """
+    def pauseSimulation(self):
+        self.simulationControlButton.configure(text="Run simulation", command=self.runSimulation)
+        self.simulationRunning = False
+        self.message.set("Simulation paused")
+
+    def runSimulation(self):
+        self.message.set("Simulation continued")
+        self.simulationControlButton.configure(text="Pause simulation", command=self.pauseSimulation)
+        self.simulationRunning = True
+        self.world.runSimulation()
 
     """" The modify mode, where ships can be edited to create a specific situation. """
     def modifyShipFromList(self):
@@ -306,7 +326,7 @@ class Viewer:
     def deleteShipPlotObjects(ship):
         """" Remove previously plotted objects from map if they exist. """
         try:
-            pass #ship.markerPlot.remove()
+            ship.markerPlot.remove()
         except AttributeError:
             pass
         except ValueError:

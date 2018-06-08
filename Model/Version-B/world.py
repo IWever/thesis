@@ -13,6 +13,7 @@ class World:
         self.name = name
         self.secondsPerStep = 8
         self.updateFrequency = 16 # amount of simulation steps per screen update
+        self.simEnd = 10
 
         self.so = []
         print("Created empty list to store static objects")
@@ -26,14 +27,23 @@ class World:
         self.root = tk.Tk()
         self.viewer = Viewer(self)
 
+    def runSimulation(self):
+        try:
+            simMinStep = 1
+
+            while world.viewer.simulationRunning:
+                self.simEnd += simMinStep
+                world.env.run(until=self.simEnd)
+
+            print("Simulation paused at %d seconds" % (self.simEnd - 1))
+
+        except TclError:
+            print("Application closed by user at %d seconds" % (self.simEnd - 1))
+
 
 # Create the world
 world = World()
 
 # Run GUI and simulation
-try:
-    world.env.run()
-except TclError:
-    print('Application closed by user')
-
+world.runSimulation()
 world.root.mainloop()

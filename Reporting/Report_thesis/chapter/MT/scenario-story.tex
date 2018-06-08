@@ -1,0 +1,101 @@
+\chapter{Analysis of scenarios}
+\label{ch:scenario-examples}
+Example scenarios will be discussed in this chapter. This is done to determine the relevance of criteria in different situations and scenarios. The same steps as described in the previous chapters will be taken to determine the right strategy. Situation sketches are used to support the descriptions. The results will be a list of tags for the specific scenarios, which can be used to identify a situation. These tags can than be linked to the different criteria.
+
+\section{Entering Maasgeul towards North Sea, Rotterdam}
+The first scenario which will be analysed, is from the viewpoint of a crude oil tanker, which will leave the port of Rotterdam. To enter the traffic lane towards the Maasgeul, it has to cross the path of another vessel coming from port-side. While taking another ship from starboard into account, which is already heading towards the Maasgeul.
+
+The decisions which have to be taken are to change course and/or speed. This must be done multiple times. Different snapshots are taken throughout, including information on criteria which the crew uses to make their decisions.
+This example case is made up, but is based on real situations as described by pilots and \ac{AIS}-recordings.
+First a description of the situation is given, which is the starting point of this example. The aim of this description is to enable the reader to understand the situation.
+Next relevant rules are discussed which should be taken into account when deciding on the strategy.
+Followed by the different snapshots, which will give insight in the decision making process and relevant criteria. This is concluded with a calculations for the relevant criteria.
+
+\subsection{Situation description}
+The location of the situation is the junction between the Beerkanaal, Maasgeul, Nieuwe Waterweg and Callandkanaal. A map with more details is shown in figure \ref{fig:Maasgeul-situation-1200}. Quays restrict the possible paths ships can sail to avoid each other, there is however no traffic separation scheme. 
+In this example case there will be three vessels involved. 
+\begin{itemize}
+	\item GULF VALOUR. 249 meter crude oil tanker. Coming from the Yangtzekanaal, heading to the Maasgeul, via the Beerkanaal. Just rounding the pier of 8e Petroleumhaven with 7.8 knots.
+	\item ASTRORUNNER. 142 meter container ship. Coming from the Maasgeul with 13.4 knots heading towards the Calandkanaal.
+	\item ANGLIA SEAWAYS. 142 meter ro-ro cargo carrier. Leaving Rotterdam via Nieuwe Waterweg towards the North-Sea with 10.3 knots.
+\end{itemize}
+All ships have licensed pilots on board, thereby do traffic controllers monitor the traffic and might give directions.
+
+In order to classify a situation, tags are used. Example tags for this situation are: 
+\emph{junction, harbour, restricted waterways, multiple vessels, traffic controller}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Maasgeul-situation-1200-start.png}
+	\caption{Situation sketch 12:00, with area which can be observed by Gulf Valour}
+	\label{fig:Maasgeul-situation-1200}
+\end{figure}
+
+
+\subsection{Relevant COLREGs}
+The rules relevant for the situation are discussed, these should be taken into account during the decision making process, ordered in a chronological manner, on the moment it becomes relevant. 
+
+\emph{Rule 7a: Every vessel shall use all available means appropriate to the prevailing circumstances and conditions to determine if risk of collision exists. If there is any doubt such risk shall be deemed to exist.} \\
+This is particularly relevant in this case, as both ships can't be observed by the Gulf Valour by sight or radar at the start, due to port terminals and landmasses. 
+
+\emph{Rule 19d: A vessel which detects by radar alone the presence of another vessel shall determine if a close-quarters situation is developing and/or risk of collision exists. If so, she shall take avoiding action in ample time, provided that when such action consists of an alteration of course, so far as possible the following shall be avoided:\\
+	(i). an alteration of course to port for a vessel forward of the beam, other than for a vessel being overtaken;\\
+	(ii). an alteration of course towards a vessel abeam or abaft the beam.}\\
+Determining the 'ample time' for different scenarios is the purpose of this research.
+
+\emph{Rule 9a: A vessel proceeding along the course of a narrow channel or fairway shall keep as near to the outer limit of the channel or fairway which lies on her starboard side as is safe and practicable.}\\
+This might limit the options to avoid a collision, or an exception should be made and communicated.
+
+\emph{Rule 15: When two power-driven vessels are crossing so as to involve risk of collision, the vessel which has the other on her own starboard side shall keep out of the way and shall, if the circumstances of the case admit, avoid crossing ahead of the other vessel.}\\
+It should be determined if the Gulf Valour indeed crosses the Astrorunner in a way, such that this rule applies.
+It might also be that the Beerkanaal is ranked lower and therefore not really a crossing.
+
+\emph{Rule 13c: When a vessel is in any doubt as to whether she is overtaking another, she shall assume that this is the case and act accordingly.}\\
+This is mostly relevant when the Gulf Valour comes close to the Anglia Seaways.
+
+\subsection{Snapshots}
+To get insight into the decision making process, the first step is to know the situational awareness at different moments in the process. Snapshots are taken from these moments. Giving a summary of the information based on observations and communication.
+This is used to validate or form strategies and eventually take decisions. Thereby is discussed which criteria are most important and example tags are used to identify the situations.
+\todo{Communication, Observations, Strategy based on current information, Key criteria}
+
+\subsubsection{12:00 Start}
+The traffic controller has radar images of the whole harbour. He uses them to inform all ships about the position and intention of other ships. In this case the Gulf Valour is told there are two other ships. One at the Nieuwe Waterweg heading for the Maasgeul and one at the Maasgeul heading for the Calandkanaal.
+
+The crew at the Gulf Valour sees both vessels on the \ac{ECDIS}. However is not sure where the ships are exactly, as was mentioned in section \ref{sec:relevant-systems}, is the \ac{ECDIS} not reliable enough. Due to the height of the bridge, it is possible to look over the land a bit, to make an estimation of the position of the other vessels. The \ac{ARPA} has however too much noise to make the desired calculations. 
+
+Currently there is not enough information available to decide which strategy works best. There are no hazards nearby, thus the planned path will be followed. Where the Gulf Valour will make the turn into the Beerkanaal, which will reduce the speed.
+
+\emph{Tags: missing information, restricted waterways, multiple vessels, turning}
+
+\subsubsection{12:03 Ships are visible by sight}
+To avoid an overload of the communication channels, the communication between ships is kept to a minimum. The most important communication comes from the traffic controller. As the situation did not change significantly, no updates are given.
+
+Both vessels are now also visible on the \ac{ARPA} and by sight. A closest point of approach is calculated, however this is based on the current heading and speed. As the Gulf Valour is still turning, this information is not of any use. Based on the speed of both vessels, it is possible though to make an estimation where the closest point of approach will occur. 
+
+Based on this estimation, a strategy can be chosen. The first choice which should be made is if a thight or wider turn is made through the Beerkanaal. As \ac{COLREGs} prescribe to keep starboard, and thus a wider turn. Might it be more convenient to end in the middle or even at port side, by making the turn more tight. As there is no traffic coming into the Beerkanaal. But will make it more easy for the Gulf Valour to pass behind the Astrorunner, considering the Gulf Valour will slow down due to the tighter turn. 
+To determine the right strategy, several key criteria are relevant. The first to consider is the moment both ships enter the crossing, relative to each other. The Gulf Valour can influence this by reducing the speed. This will also influence the path taken during the long turn trough the Beerkanaal. If it is better to make a tight turn on port side, or make it wider to end at starboard side of the Beerkanaal.
+In this case both enter at a similar time, therefor is chosen to have contact with traffic control. They decide to reduce speed a little bit more, by reducing engine speed and making a tight corner.
+
+\emph{Tags: restricted waterways, junction, crossing, turning}
+
+\subsubsection{12:06 Crossing with Astrorunner}
+At this point the strategy determined at the previous snapshot is executed. Thus the Gulf Valour passes the Astrorunner first startboard-starboard, and crossing the path at stern side. This means they deviated from the standard \ac{COLREGs}, but with consent of the traffic controllers.
+
+As the Gulf Valour passes at the stern side, it is easy to have a low rate of turn while crossing. This means a good estimation on relative speed to the Anglia Seaways can already be made by sight and via the \ac{ARPA}. \todo{add screenshot of simulation}
+
+Thereby should be considered which speed the Gulf Valour has to travel according to the schedule, which is higher than the current speed of the Anglia Seaways. This means the Gulf Valour has to act like it is overtaking the Anglia Seaways, while also entering the Maasgeul shipping lane. They have to move to starboard side of this shipping lane, to avoid head-on-head colissions with oncoming future traffic, which is not part of this example.
+Thus the final strategy is to go to the planned speed of 16.2 knots. While sailing in the centre of the shipping lane, leaving enough room to have the Anglia Seaways between the Gulf Valour and the Pier.
+
+\emph{Tags: restricted waterways, junction, traffic-lane, crossing, over-taking, turning}
+
+\subsubsection{12:11 Under control}
+After crossing behind the Astrorunner the path is continued to the middle of the Maasgeul. To ensure a safe overtaking manoeuvrer around the Anglia Seaways. While overtaking the situation is under control and the Gulf Valour is underway to its next destination, without having the risk for close encounters. A few miles further out the pilot will leave and contact with traffic control is not necessary anymore.
+
+\emph{Tags: shipping-lane, over-taking}
+
+\subsection{Criteria check}
+At every step, several criteria determine the strategy. At the different snapshot moments these criteria are calculated, in order to validate them. The results are shown in table \todo{make table}.
+
+
+\section{Second scenario}
+\todo{discuss another scenario}

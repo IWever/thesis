@@ -1,0 +1,91 @@
+\chapter{Database for identification}
+Different situations and scenarios can be identified. This identification is used to develop a decision tree. Using the OODA-loop different steps for decision making can be separated \todo{ref to ooda-loop}. The first step is to observe the situation, this is done by classification based on the path of nearby vessels. The next step is to orient, thus to determine the possible strategies. Next step is to decide which strategy is the right one, by evaluating criteria. Finally you must act on this decision. In this chapter the first steps classification the situation, based on observations is discussed. Followed by the steps taken in the orientation phase to form strategies.
+
+\section{Situation identification}
+Based on the observations different situations can be classified into four types, the different types are described below: 
+\begin{itemize}
+	\item \emph{Passing}. Ships do get close, but the paths are not crossing
+	\item \emph{Crossing}. Paths of ships are crossing
+	\item \emph{Merge}. Two ships from different directions, heading in the same direction, strategy might lead in many cases to a take-over.
+	\item \emph{Take-over} Two ships following the same path with different speeds.
+\end{itemize}
+It depends on the type of waterway which situation is likely. To determine this, a classification of paths is used. To do this systematically, paths can be written as: 
+\begin{quote}
+	[current position, direction]
+\end{quote}
+Combining paths of two ships will describe a situation. Using the system to describe paths. The situations can be written down as:
+\begin{quote}
+	(path own ship $|$ path other ship).
+\end{quote}
+
+To classify a situation where two vessels encounter each other, the paths are considered. Key is to determine the angle between those paths. This way it is possible to classify them using table \ref{tab:scenarios-standard}.
+The boundaries are based on \ac{COLREGs} and shown in figure \ref{fig:junction-letters}. \todo{use colreg boundaries in junction}.
+
+\begin{minipage}{\textwidth}
+	\begin{minipage}[b]{0.8\textwidth}
+		\centering
+		\begin{tabular}{l|l|l}
+			Own ship & Other ships & Situation\\
+			\hline
+			\big[A,D\big] & [D,C] [D,B] [D,A] [C,B] [C,A] [B,A] [B,C] & Passing \\
+			\big[A,C\big] & [C,A] [C,B] [B,A] & Passing \\
+			\big[A,B\big] & [D,C] [C,D] [B,A] & Passing \\
+			\big[A,C\big] & [D,B] [D,A] [C,D] [B,D] & Crossing \\
+			\big[A,B\big] & [D,A] [C,A] [B,D] [B,D] & Crossing \\
+			\big[A,D\big] & [C,D] [B,D] & Merge \\
+			\big[A,C\big] & [D,C] [B,C] & Merge \\
+			\big[A,B\big] & [D,B] [C,B] & Merge \\
+			\big[A,D\big] & [A,D] & Over-taking \\
+			\big[A,C\big] & [A,C] & Over-taking \\
+			\big[A,B\big] & [A,B] & Over-taking \\
+			
+		\end{tabular}
+		
+		\captionof{table}{Standardized paths for situations}
+		\label{tab:scenarios-standard}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.19\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{junction-letters.png}
+		\captionof{figure}{Path description}
+		\label{fig:junction-letters}
+	\end{minipage}
+	
+\end{minipage}
+
+\begin{figure}[h]
+	
+\end{figure}
+
+
+\begin{table}[h]
+	
+\end{table}
+
+
+\section{Strategy orientation}
+Before criteria can be evaluated, more detailed information is needed. Below different types of information are discussed and their consequences on the strategy.
+
+\subsection{Type of waterway}
+To determine which strategies can be chosen. The type of waterway is the first to consider. As this might restrict the area where can be sailed, which influences the possible strategies. For example is it common to over-take ships in open-water on starboard side. While on restricted waterways ships will sail as far as possible to starboard already. This means the ship which is over-taking will have to pass on the port side of the other vessel, at the center of the waterway.
+
+In the next step other static hazards are considered to check if the chosen strategy does not lead to a collision. Or if there are specific regulation frameworks for this waterway. These are however not part of the first iteration of the decision model, as this will introduce much more complexity, without improving the result in most cases.
+
+\todo{add definition of static hazard and more examples, to make link to evaluation tool and tags}
+\todo{also describe the rules, which might be based on signs}
+
+\subsection{Actors}
+The second step is the identification of the dynamic objects. This are all objects which are moving. Most important are off course other ships which do come close. But in future developments of the decision model, objects which are not under any control of a human should be considered, such as floating containers.
+
+To predict the path, first the general information about the object should be acquired. Such as manoeuvrability, speed, course, type of object, under control, etc.
+Thereby might it be possible in future developments to take into account the human factor to improve the path prediction. This could be based on the experience of the crew, availability of a pilot or if the vessel is completely unmanned.
+\todo{add more examples to describe consequence on strategy}
+
+\subsection{Scenarios}
+Using the information on type of waterway, location and actors, the scenario can be identified. Based on the scenarios, can be determined which rules do apply and what their implications are on the possible strategies. 
+The same goes for the estimated path of dynamic objects. This might also narrow down the possible strategies.
+
+Using the above mentioned information in the decision model, the strategies can be narrowed down. This can be used to simplify the decision tree and select the right criteria to evaluate.
+\todo{add more examples to describe consequence on strategy}
+

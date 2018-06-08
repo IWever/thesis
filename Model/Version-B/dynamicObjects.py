@@ -70,9 +70,31 @@ EmmaMaersk = Ship(name="Emma Maersk",
                   nominalSpeed_kn=18,
                   color='dodgerblue')
 
+Astrorunner = Ship(name="Astrorunner",
+                  MMSI=210248000,
+                  LBP=141.58,
+                  width=20.6,
+                  depth=6.5,
+                  displacement=9543 * deadweight2displacement,
+                  deadweight=9543,
+                  nominalSpeed_kn=15.5,
+                  color='orange')
+
+Anglia = Ship(name="Anglia Seaways",
+                  MMSI=219292000,
+                  LBP=142.4,
+                  width=23,
+                  depth=5,
+                  displacement=4650 * deadweight2displacement,
+                  deadweight=4650,
+                  nominalSpeed_kn=16.8,
+                  color='deepskyblue')
+
 # Add ships to dictionary
 shipList["Tanker"] = Tanker
 shipList["Bulk"] = Bulk
 shipList["Tug"] = Tug
 shipList["Bibby"] = Bibby
 shipList["EmmaMaersk"] = EmmaMaersk
+shipList["Astrorunner"] = Astrorunner
+shipList["Anglia"] = Anglia
