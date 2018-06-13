@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="1358 -121.5 4636.3 1322.5" style="enable-background:new 1358 -121.5 4636.3 1322.5;" xml:space="preserve">
+	 viewBox="1308 -121.5 4686.3 2589" style="enable-background:new 1308 -121.5 4686.3 2589;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#333333;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:13.8889px;}
-	.st4{fill:none;stroke:#7F7F7F;}
-	.st5{fill:none;}
+	.st0{fill:#333333;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:13.8889px;}
+	.st3{fill:none;stroke:#7F7F7F;}
+	.st4{fill:none;}
+	.st5{fill:#FFFFFF;}
 	.st6{filter:url(#ebb4f84d-2dca-4e6b-8a12-5fec6d6183c8);}
 	.st7{fill:url(#SVGID_1_);stroke:#7F7F7F;}
 	.st8{fill:url(#SVGID_2_);stroke:#7F7F7F;}
@@ -74,1404 +74,1191 @@
 	</feMerge>
 </filter>
 <g>
-	<g transform="scale(1,1) translate(262.729,142.91)">
-		<g transform="scale(1,1) translate(963.113,66.438)">
-			<rect x="276.3" y="-98.6" class="st0" width="51.4" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(964.113,67.438)">
-			<text transform="matrix(1 0 0 1 277.0749 -50.0764)" class="st1 st2 st3">Passing</text>
-		</g>
-		<g transform="scale(1,1) translate(1527.699,66.438)">
-			<rect x="1266" y="-98.6" class="st0" width="56.8" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(1528.699,67.438)">
-			<text transform="matrix(1 0 0 1 841.5048 -50.0763)" class="st1 st2 st3">Crossing</text>
-		</g>
-		<g transform="scale(1,1) translate(2432.759,66.438)">
-			<rect x="1266" y="-98.6" class="st0" width="41.4" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(2433.759,67.438)">
-			<text transform="matrix(1 0 0 1 1747.6848 -50.0765)" class="st1 st2 st3">Merge</text>
-		</g>
-		<g transform="scale(1,1) translate(2930.554,67.438)">
-			<text transform="matrix(1 0 0 1 2266.5547 -50.0765)" class="st1 st2 st3">Over-taking</text>
-		</g>
+	<g transform="scale(1,1) translate(964.113,67.438)">
+		<text transform="matrix(1 0 0 1 4103.4497 1345.6906)" class="st0 st1 st2">Passing</text>
 	</g>
-	<g transform="scale(1,1) translate(177.229,368.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6
-				l-85.5,150.5 M1352.1-138.6l85.5,150.5"/>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M5093,1482.7L5093,1482.7 M5093,1482.7L5093,1482.7 M5093,1482.7L5093,1482.7 M5093,1482.7l-85.5,150.5
+			 M5093,1482.7l85.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1347.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M5088,1477.7h10v10h-10V1477.7z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(24.766,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(25.766,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(97.92,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(98.92,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(187.729,293.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1153.896" y1="924.17" x2="1153.896" y2="849.17" gradientTransform="matrix(1 0 0 -1 187.729 785.59)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st7" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.532 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(24.766,66.438)">
+		<rect x="5007.5" y="1482.7" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(177.229,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.766,67.438)">
+		<text transform="matrix(1 0 0 1 5007.5 1495.187)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(102.229,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1239.396" y1="698.67" x2="1239.396" y2="623.67" gradientTransform="matrix(1 0 0 -1 102.229 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st8" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.842 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.9591 -102.7503)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(97.92,66.438)">
+		<rect x="5007.5" y="1482.7" class="st5" width="60.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(348.229,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(98.92,67.438)">
+		<text transform="matrix(1 0 0 1 5007.5 1495.187)" class="st0 st1 st2">Too close</text>
 	</g>
-	<g transform="scale(1,1) translate(273.229,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1068.396" y1="698.67" x2="1068.396" y2="623.67" gradientTransform="matrix(1 0 0 -1 273.229 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st9" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.391 -102.7503)" class="st1 st2 st3">from other path</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4905.271" y1="-35.277" x2="4905.271" y2="-110.277" gradientTransform="matrix(1 0 0 -1 187.729 1372.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="5018" y="1407.7" class="st7" width="150" height="75"/>
 	</g>
-	<g transform="scale(1,1) translate(2764.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 5075.9072 1446.5413)" class="st0 st1 st2">CPA</text>
 	</g>
-	<g transform="scale(1,1) translate(2935.479,368.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1523.1-138.6L1523.1-138.6 M1523.1-138.6L1523.1-138.6 M1523.1-138.6L1523.1-138.6 M1523.1-138.6
-				L1266.6,11.9 M1523.1-138.6l256.5,150.5"/>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M5007.5,1708.2"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="4905.271" y1="-35.277" x2="4905.271" y2="-110.277" gradientTransform="matrix(1 0 0 -1 102.229 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st8" cx="5007.5" cy="1670.7" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 4933.7168 1653.3916)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 4968.834 1669.0166)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M5178.5,1708.2"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="4905.271" y1="-35.277" x2="4905.271" y2="-110.277" gradientTransform="matrix(1 0 0 -1 273.229 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st9" cx="5178.5" cy="1670.7" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 5116.3042 1653.3916)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 5106.2661 1669.0166)" class="st0 st1 st2">from other path</text>
+	</g>
+</g>
+<g>
+	<g transform="scale(1,1) translate(2433.759,67.438)">
+		<text transform="matrix(1 0 0 1 -373.7891 1153.0034)" class="st0 st1 st2">Merge</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1646.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2074.4,1290L2074.4,1290 M2074.4,1290L2074.4,1290 M2074.4,1290L2074.4,1290 M2074.4,1290l-256.5,150.5
+			 M2074.4,1290l256.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1518.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2069.4,1285h10v10h-10V1285z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(110.266,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(111.266,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(354.42,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(355.42,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(3116.979,293.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-1775.354" y1="924.17" x2="-1775.354" y2="849.17" gradientTransform="matrix(1 0 0 -1 3116.979 785.59)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st10" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.532 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(110.266,66.438)">
+		<rect x="1817.9" y="1290" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(310.479,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(111.266,67.438)">
+		<text transform="matrix(1 0 0 1 1817.9012 1302.4999)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(710.229,368.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1953.7-138.6L1953.7-138.6 M1953.7-138.6L1953.7-138.6 M1953.7-138.6L1953.7-138.6 M1953.7-138.6
-				L1266.6,11.9 M1953.7-138.6l687.1,150.5"/>
+	<g transform="scale(1,1) translate(354.42,66.438)">
+		<rect x="1817.9" y="1290" class="st5" width="60.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(355.42,67.438)">
+		<text transform="matrix(1 0 0 1 1817.901 1302.4999)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3116.979 1372.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="1999.4" y="1215" class="st10" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2057.3081 1253.8541)" class="st0 st1 st2">CPA</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1817.9,1515.5L1817.9,1515.5 M1817.9,1515.5L1817.9,1515.5 M1817.9,1515.5L1817.9,1515.5 M1817.9,1515.5
+			l-171,150.5 M1817.9,1515.5V1666 M1817.9,1515.5l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1948.7-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M1812.9,1510.5h10v10h-10V1510.5z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(325.547,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(326.547,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(1000.264,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(1001.264,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(1322.292,293.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="19.333" y1="924.17" x2="19.333" y2="849.17" gradientTransform="matrix(1 0 0 -1 1322.292 785.59)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st11" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.532 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="1646.9" y="1515.5" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(443.729,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1533.1-138.6L1533.1-138.6 M1533.1-138.6L1533.1-138.6 M1533.1-138.6L1533.1-138.6 M1533.1-138.6
-				L1266.6,11.9 M1533.1-138.6l266.5,150.5"/>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 1646.9011 1527.9999)" class="st0 st1 st2">Faster</text>
+	</g>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="1646.9" y="1515.5" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 1646.9011 1527.9999)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="1646.9" y="1515.5" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 1646.9012 1527.9999)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 2860.479 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="1742.9" y="1440.5" class="st11" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 1768.6401 1479.3541)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2159.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2330.9,1515.5L2330.9,1515.5 M2330.9,1515.5L2330.9,1515.5 M2330.9,1515.5L2330.9,1515.5 M2330.9,1515.5
+			l-171,150.5 M2330.9,1515.5V1666 M2330.9,1515.5l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1528.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2325.9,1510.5h10v10h-10V1510.5z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(110.639,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="45.2" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(111.639,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">In front</text>
-		</g>
-		<g transform="scale(1,1) translate(377.132,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="45.2" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(378.132,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Behind</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(635.229,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="706.396" y1="698.67" x2="706.396" y2="623.67" gradientTransform="matrix(1 0 0 -1 635.229 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st12" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1285.038 -99.7258)" class="st1 st2 st3">Crossing position</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="2159.9" y="1515.5" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1451.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 2159.9011 1527.9999)" class="st0 st1 st2">Faster</text>
 	</g>
-	<g transform="scale(1,1) translate(1756.229,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1594.8-138.6L1594.8-138.6 M1594.8-138.6L1594.8-138.6 M1594.8-138.6L1594.8-138.6 M1594.8-138.6
-				L1266.6,11.9 M1594.8-138.6l328.1,150.5"/>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="2159.9" y="1515.5" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 2159.9011 1527.9999)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="2159.9" y="1515.5" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 2159.9011 1527.9999)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3373.479 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2255.9" y="1440.5" class="st12" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2281.6401 1479.3541)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 2689.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st13" cx="1646.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1573.1182 1686.2045)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 1608.2351 1701.8295)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1988.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3031.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#BBA35B"/>
+		</linearGradient>
+		<ellipse class="st14" cx="1988.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1945.2241 1686.2045)" class="st0 st1 st2">Abort</text>
+		<text transform="matrix(1 0 0 1 1929.4031 1701.8295)" class="st0 st1 st2">over-taking</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3202.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FADA7A"/>
+		</linearGradient>
+		<ellipse class="st15" cx="2159.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2084.9011 1686.2045)" class="st0 st1 st2">Stay parallel for</text>
+		<text transform="matrix(1 0 0 1 2115.8311 1701.8295)" class="st0 st1 st2">longer</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2501.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3544.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st16" cx="2501.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2439.7051 1686.2045)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 2429.667 1701.8295)" class="st0 st1 st2">from other path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2330.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 3373.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st17" cx="2330.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2268.7051 1686.2045)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 2258.667 1701.8295)" class="st0 st1 st2">from other path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1817.9,1741"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="-1042.5779" y1="157.4101" x2="-1042.5779" y2="82.4101" gradientTransform="matrix(1 0 0 -1 2860.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#7F7F7F"/>
+		</linearGradient>
+		<ellipse class="st18" cx="1817.9" cy="1703.5" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1752.606 1694.017)" class="st0 st1 st2">Adjust speed</text>
+	</g>
+</g>
+<g>
+	<g transform="scale(1,1) translate(2930.554,67.438)">
+		<text transform="matrix(1 0 0 1 734.2837 1148.3163)" class="st0 st1 st2">Over-taking</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3689.6,1285.3L3689.6,1285.3 M3689.6,1285.3L3689.6,1285.3 M3689.6,1285.3L3689.6,1285.3 M3689.6,1285.3
+			l-342,150.5 M3689.6,1285.3v150.5 M3689.6,1285.3l342,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1589.8-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3684.6,1280.3h10v10h-10V1280.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(141.451,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="45.2" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(142.451,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">In front</text>
-		</g>
-		<g transform="scale(1,1) translate(469.57,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="45.2" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(470.57,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Behind</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(2009.354,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="-667.729" y1="698.67" x2="-667.729" y2="623.67" gradientTransform="matrix(1 0 0 -1 2009.354 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st13" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1285.038 -99.7258)" class="st1 st2 st3">Crossing position</text>
-		</g>
+	<g transform="scale(1,1) translate(150.708,66.438)">
+		<rect x="3347.6" y="1285.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(310.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6
-				L1266.6,11.9 M1399.9-138.6l133.3,150.5"/>
+	<g transform="scale(1,1) translate(151.708,67.438)">
+		<text transform="matrix(1 0 0 1 3347.604 1297.8127)" class="st0 st1 st2">Faster</text>
+	</g>
+	<g transform="scale(1,1) translate(302.019,66.438)">
+		<rect x="3347.6" y="1285.3" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(303.019,67.438)">
+		<text transform="matrix(1 0 0 1 3347.604 1297.8127)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(491.162,66.438)">
+		<rect x="3347.6" y="1285.3" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(492.162,67.438)">
+		<text transform="matrix(1 0 0 1 3347.6042 1297.8127)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4142.979 1372.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3614.6" y="1210.3" class="st19" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3640.3428 1249.167)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3946.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M4031.6,1510.8L4031.6,1510.8 M4031.6,1510.8L4031.6,1510.8 M4031.6,1510.8L4031.6,1510.8 M4031.6,1510.8
+			l-85.5,150.5 M4031.6,1510.8l85.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1394.9-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M4026.6,1505.8h10v10h-10V1505.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(48.641,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(49.641,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(169.545,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(170.545,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(368.729,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="972.896" y1="473.17" x2="972.896" y2="398.17" gradientTransform="matrix(1 0 0 -1 368.729 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st14" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1283.109 -99.7258)" class="st1 st2 st3">Crossing distance</text>
-		</g>
+	<g transform="scale(1,1) translate(24.766,66.438)">
+		<rect x="3946.1" y="1510.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(843.479,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.766,67.438)">
+		<text transform="matrix(1 0 0 1 3946.104 1523.3127)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(843.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6
-				L1266.6,11.9 M1399.9-138.6l133.3,150.5"/>
+	<g transform="scale(1,1) translate(97.92,66.438)">
+		<rect x="3946.1" y="1510.8" class="st5" width="60.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(98.92,67.438)">
+		<text transform="matrix(1 0 0 1 3946.104 1523.3127)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4484.979 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3956.6" y="1435.8" class="st20" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 4014.5112 1474.667)" class="st0 st1 st2">CPA</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3604.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3689.6,1510.8L3689.6,1510.8 M3689.6,1510.8L3689.6,1510.8 M3689.6,1510.8L3689.6,1510.8 M3689.6,1510.8
+			l-85.5,150.5 M3689.6,1510.8l85.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1394.9-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3684.6,1505.8h10v10h-10V1505.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(48.641,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(49.641,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(169.545,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(170.545,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(901.729,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="439.896" y1="473.17" x2="439.896" y2="398.17" gradientTransform="matrix(1 0 0 -1 901.729 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st15" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1283.109 -99.7258)" class="st1 st2 st3">Crossing distance</text>
-		</g>
+	<g transform="scale(1,1) translate(24.766,66.438)">
+		<rect x="3604.1" y="1510.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(235.479,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="1106.146" y1="247.67" x2="1106.146" y2="172.67" gradientTransform="matrix(1 0 0 -1 235.479 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st16" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.8419 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.959 -102.7504)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(25.766,67.438)">
+		<text transform="matrix(1 0 0 1 3604.104 1523.3127)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(405.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(97.92,66.438)">
+		<rect x="3604.1" y="1510.8" class="st5" width="60.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(405.979,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(98.92,67.438)">
+		<text transform="matrix(1 0 0 1 3604.104 1523.3127)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4142.979 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3614.6" y="1435.8" class="st21" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3672.5112 1474.667)" class="st0 st1 st2">CPA</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4399.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st22" cx="3946.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3872.321 1681.5175)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 3907.4377 1697.1425)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M4117.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4570.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st23" cx="4117.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 4054.908 1681.5175)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 4044.8699 1697.1425)" class="st0 st1 st2">from other path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4057.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#BBA35B"/>
+		</linearGradient>
+		<ellipse class="st24" cx="3604.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3560.427 1681.5175)" class="st0 st1 st2">Abort</text>
+		<text transform="matrix(1 0 0 1 3544.6057 1697.1425)" class="st0 st1 st2">over-taking</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3775.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_19_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 4228.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st25" cx="3775.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3712.908 1681.5175)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 3702.8699 1697.1425)" class="st0 st1 st2">from other path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3262.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3347.6,1510.8L3347.6,1510.8 M3347.6,1510.8L3347.6,1510.8 M3347.6,1510.8L3347.6,1510.8 M3347.6,1510.8
+			l-85.5,150.5 M3347.6,1510.8l85.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3342.6,1505.8h10v10h-10V1505.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(501.979,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="839.646" y1="247.67" x2="839.646" y2="172.67" gradientTransform="matrix(1 0 0 -1 501.979 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st17" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(24.766,66.438)">
+		<rect x="3262.1" y="1510.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(768.479,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="573.146" y1="247.67" x2="573.146" y2="172.67" gradientTransform="matrix(1 0 0 -1 768.479 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st18" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.8419 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.959 -102.7504)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(25.766,67.438)">
+		<text transform="matrix(1 0 0 1 3262.104 1523.3127)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(938.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(97.92,66.438)">
+		<rect x="3262.1" y="1510.8" class="st5" width="60.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(938.979,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(98.92,67.438)">
+		<text transform="matrix(1 0 0 1 3262.104 1523.3127)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_20_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 3800.979 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3272.6" y="1435.8" class="st26" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3330.511 1474.667)" class="st0 st1 st2">CPA</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_21_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 3715.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st27" cx="3262.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3188.321 1681.5175)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 3223.438 1697.1425)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3433.1,1736.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_22_" gradientUnits="userSpaceOnUse" x1="-453.375" y1="162.0972" x2="-453.375" y2="87.0972" gradientTransform="matrix(1 0 0 -1 3886.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#4BACC6"/>
+		</linearGradient>
+		<ellipse class="st28" cx="3433.1" cy="1698.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3370.908 1681.5175)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 3360.8699 1697.1425)" class="st0 st1 st2">from other path</text>
+	</g>
+</g>
+<g>
+	<g transform="scale(1,1) translate(1528.699,67.438)">
+		<text transform="matrix(1 0 0 1 1104.2338 92.8337)" class="st0 st1 st2">Crossing</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1577.1,906.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2663.9,229.8L2663.9,229.8 M2663.9,229.8L2663.9,229.8 M2663.9,229.8L2663.9,229.8 M2663.9,229.8
+			l-687.1,150.5 M2663.9,229.8L3351,380.3"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2658.9,224.8h10v10h-10V224.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(1034.979,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="306.646" y1="247.67" x2="306.646" y2="172.67" gradientTransform="matrix(1 0 0 -1 1034.979 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st19" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(325.547,66.438)">
+		<rect x="1976.9" y="229.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1622.979,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6L1399.9-138.6 M1399.9-138.6
-				L1266.6,11.9 M1399.9-138.6l133.3,150.5"/>
+	<g transform="scale(1,1) translate(326.547,67.438)">
+		<text transform="matrix(1 0 0 1 1976.854 242.33)" class="st0 st1 st2">Good</text>
+	</g>
+	<g transform="scale(1,1) translate(1000.264,66.438)">
+		<rect x="1976.9" y="229.8" class="st5" width="60.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(1001.264,67.438)">
+		<text transform="matrix(1 0 0 1 1976.854 242.33)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_23_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1322.292 1372.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2588.9" y="154.8" class="st29" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2646.824 193.6842)" class="st0 st1 st2">CPA</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1976.9,455.3L1976.9,455.3 M1976.9,455.3L1976.9,455.3 M1976.9,455.3L1976.9,455.3 M1976.9,455.3
+			l-266.5,150.5 M1976.9,455.3l266.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1394.9-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M1971.9,450.3h10v10h-10V450.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(48.641,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(49.641,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(169.545,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(170.545,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(1681.229,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="-339.604" y1="473.17" x2="-339.604" y2="398.17" gradientTransform="matrix(1 0 0 -1 1681.229 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st20" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1283.109 -99.7258)" class="st1 st2 st3">Crossing distance</text>
-		</g>
+	<g transform="scale(1,1) translate(110.639,66.438)">
+		<rect x="1710.4" y="455.3" class="st5" width="45.2" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1984.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(111.639,67.438)">
+		<text transform="matrix(1 0 0 1 1710.354 467.83)" class="st0 st1 st2">In front</text>
 	</g>
-	<g transform="scale(1,1) translate(2155.979,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1523.1-138.6L1523.1-138.6 M1523.1-138.6L1523.1-138.6 M1523.1-138.6L1523.1-138.6 M1523.1-138.6
-				L1266.6,11.9 M1523.1-138.6l256.5,150.5"/>
+	<g transform="scale(1,1) translate(377.132,66.438)">
+		<rect x="1710.4" y="455.3" class="st5" width="45.2" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(378.132,67.438)">
+		<text transform="matrix(1 0 0 1 1710.354 467.83)" class="st0 st1 st2">Behind</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_24_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 635.229 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="1901.9" y="380.3" class="st30" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 1920.267 419.1841)" class="st0 st1 st2">Crossing position</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2718.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3351,455.3L3351,455.3 M3351,455.3L3351,455.3 M3351,455.3L3351,455.3 M3351,455.3l-328.1,150.5 M3351,455.3
+			l328.1,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1518.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3346,450.3h10v10h-10V450.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(110.266,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(111.266,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(354.42,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(355.42,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(2337.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="-995.854" y1="473.17" x2="-995.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 2337.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st21" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1283.1089 -99.7258)" class="st1 st2 st3">Crossing distance</text>
-		</g>
+	<g transform="scale(1,1) translate(141.451,66.438)">
+		<rect x="3022.9" y="455.3" class="st5" width="45.2" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1451.979,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(142.451,67.438)">
+		<text transform="matrix(1 0 0 1 3022.854 467.83)" class="st0 st1 st2">In front</text>
+	</g>
+	<g transform="scale(1,1) translate(469.57,66.438)">
+		<rect x="3022.9" y="455.3" class="st5" width="45.2" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(470.57,67.438)">
+		<text transform="matrix(1 0 0 1 3022.854 467.83)" class="st0 st1 st2">Behind</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_25_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2009.354 1597.91)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3276" y="380.3" class="st31" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3294.3921 419.1841)" class="st0 st1 st2">Crossing position</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1710.4,680.8L1710.4,680.8 M1710.4,680.8L1710.4,680.8 M1710.4,680.8L1710.4,680.8 M1710.4,680.8
+			l-133.3,150.5 M1710.4,680.8l133.3,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M1705.4,675.8h10v10h-10V675.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(1547.979,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="-206.354" y1="247.67" x2="-206.354" y2="172.67" gradientTransform="matrix(1 0 0 -1 1547.979 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st22" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(48.641,66.438)">
+		<rect x="1577.1" y="680.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1889.479,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(49.641,67.438)">
+		<text transform="matrix(1 0 0 1 1577.104 693.33)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(1814.479,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="-472.854" y1="247.67" x2="-472.854" y2="172.67" gradientTransform="matrix(1 0 0 -1 1814.479 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st23" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(169.545,66.438)">
+		<rect x="1577.1" y="680.8" class="st5" width="60.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(1984.979,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(170.545,67.438)">
+		<text transform="matrix(1 0 0 1 1577.104 693.33)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_26_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 368.729 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="1635.4" y="605.8" class="st32" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 1651.838 644.6841)" class="st0 st1 st2">Crossing distance</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2110.1,906.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2243.4,680.8L2243.4,680.8 M2243.4,680.8L2243.4,680.8 M2243.4,680.8L2243.4,680.8 M2243.4,680.8
+			l-133.3,150.5 M2243.4,680.8l133.3,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2238.4,675.8h10v10h-10V675.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(2080.979,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="-739.354" y1="247.67" x2="-739.354" y2="172.67" gradientTransform="matrix(1 0 0 -1 2080.979 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st24" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(48.641,66.438)">
+		<rect x="2110.1" y="680.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(2497.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(49.641,67.438)">
+		<text transform="matrix(1 0 0 1 2110.104 693.33)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(2497.979,1044.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(169.545,66.438)">
+		<rect x="2110.1" y="680.8" class="st5" width="60.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(170.545,67.438)">
+		<text transform="matrix(1 0 0 1 2110.104 693.33)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_27_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 901.729 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2168.4" y="605.8" class="st33" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2184.8381 644.6841)" class="st0 st1 st2">Crossing distance</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_28_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 235.479 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st34" cx="1577.1" cy="868.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1503.3209 851.5346)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 1538.438 867.1596)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1672.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1843.6,906.3L1843.6,906.3 M1843.6,906.3L1843.6,906.3 M1843.6,906.3L1843.6,906.3 M1843.6,906.3l-171,150.5
+			 M1843.6,906.3v150.5 M1843.6,906.3l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M1838.6,901.3h10v10h-10V901.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(2593.979,969.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_19_" gradientUnits="userSpaceOnUse" x1="-1252.354" y1="247.67" x2="-1252.354" y2="172.67" gradientTransform="matrix(1 0 0 -1 2593.979 109.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st25" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="1672.6" y="906.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(2764.479,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 1672.604 918.8301)" class="st0 st1 st2">Faster</text>
+	</g>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="1672.6" y="906.3" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 1672.604 918.8301)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="1672.6" y="906.3" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 1672.604 918.8301)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_29_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 501.979 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="1768.6" y="831.3" class="st35" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 1794.343 870.1841)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_30_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 768.479 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#00B050"/>
+		</linearGradient>
+		<ellipse class="st36" cx="2110.1" cy="868.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2036.3209 851.5346)" class="st0 st1 st2">Follow planned</text>
+		<text transform="matrix(1 0 0 1 2071.438 867.1596)" class="st0 st1 st2">path</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2205.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2376.6,906.3L2376.6,906.3 M2376.6,906.3L2376.6,906.3 M2376.6,906.3L2376.6,906.3 M2376.6,906.3l-171,150.5
+			 M2376.6,906.3v150.5 M2376.6,906.3l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2371.6,901.3h10v10h-10V901.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(2860.479,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_20_" gradientUnits="userSpaceOnUse" x1="-1518.854" y1="698.67" x2="-1518.854" y2="623.67" gradientTransform="matrix(1 0 0 -1 2860.479 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st26" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="2205.6" y="906.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(3277.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 2205.604 918.8301)" class="st0 st1 st2">Faster</text>
 	</g>
-	<g transform="scale(1,1) translate(3277.479,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6L1437.6-138.6 M1437.6-138.6
-				l-171,150.5 M1437.6-138.6V11.9 M1437.6-138.6l171,150.5"/>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="2205.6" y="906.3" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 2205.604 918.8301)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="2205.6" y="906.3" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 2205.604 918.8301)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_31_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1034.979 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2301.6" y="831.3" class="st37" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2327.343 870.1841)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3022.9,680.8L3022.9,680.8 M3022.9,680.8L3022.9,680.8 M3022.9,680.8L3022.9,680.8 M3022.9,680.8
+			l-133.3,150.5 M3022.9,680.8l133.3,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1432.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3017.9,675.8h10v10h-10V675.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(65.208,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(66.208,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(131.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(132.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(234.662,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(235.662,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(3373.479,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_21_" gradientUnits="userSpaceOnUse" x1="-2031.854" y1="698.67" x2="-2031.854" y2="623.67" gradientTransform="matrix(1 0 0 -1 3373.479 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st27" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.364 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(48.641,66.438)">
+		<rect x="2889.6" y="680.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(2689.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_22_" gradientUnits="userSpaceOnUse" x1="-1347.854" y1="473.17" x2="-1347.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 2689.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st28" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.842 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.959 -102.7504)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(49.641,67.438)">
+		<text transform="matrix(1 0 0 1 2889.604 693.33)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(3106.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(169.545,66.438)">
+		<rect x="2889.6" y="680.8" class="st5" width="60.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(3031.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_23_" gradientUnits="userSpaceOnUse" x1="-1689.854" y1="473.17" x2="-1689.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3031.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#BBA35B"/>
-			</linearGradient>
-			<ellipse class="st29" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1297.948 -118.3754)" class="st1 st2 st3">Abort</text>
-			<text transform="matrix(1 0 0 1 1282.127 -102.7504)" class="st1 st2 st3">over-taking</text>
-		</g>
+	<g transform="scale(1,1) translate(170.545,67.438)">
+		<text transform="matrix(1 0 0 1 2889.604 693.33)" class="st0 st1 st2">Too close</text>
 	</g>
-	<g transform="scale(1,1) translate(3202.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_24_" gradientUnits="userSpaceOnUse" x1="-1860.854" y1="473.17" x2="-1860.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3202.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FADA7A"/>
-			</linearGradient>
-			<ellipse class="st30" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1266.625 -118.3754)" class="st1 st2 st3">Stay parallel for</text>
-			<text transform="matrix(1 0 0 1 1297.5549 -102.7504)" class="st1 st2 st3">longer</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_32_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1681.229 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2947.9" y="605.8" class="st38" width="150" height="75"/>
 	</g>
-	<g transform="scale(1,1) translate(3619.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2964.3381 644.6841)" class="st0 st1 st2">Crossing distance</text>
 	</g>
-	<g transform="scale(1,1) translate(3544.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_25_" gradientUnits="userSpaceOnUse" x1="-2202.854" y1="473.17" x2="-2202.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3544.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st31" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.3909 -102.7504)" class="st1 st2 st3">from other path</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3251.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(3448.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
-	</g>
-	<g transform="scale(1,1) translate(3373.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_26_" gradientUnits="userSpaceOnUse" x1="-2031.854" y1="473.17" x2="-2031.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3373.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st32" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.3909 -102.7504)" class="st1 st2 st3">from other path</text>
-		</g>
-	</g>
-	<g transform="scale(1,1) translate(2935.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
-	</g>
-	<g transform="scale(1,1) translate(2860.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_27_" gradientUnits="userSpaceOnUse" x1="-1518.854" y1="473.17" x2="-1518.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 2860.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#7F7F7F"/>
-			</linearGradient>
-			<ellipse class="st33" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1276.3298 -110.5629)" class="st1 st2 st3">Adjust speed</text>
-		</g>
-	</g>
-	<g transform="scale(1,1) translate(3875.979,368.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1608.6-138.6L1608.6-138.6 M1608.6-138.6L1608.6-138.6 M1608.6-138.6L1608.6-138.6 M1608.6-138.6
-				l-342,150.5 M1608.6-138.6V11.9 M1608.6-138.6l342,150.5"/>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3679.1,680.8L3679.1,680.8 M3679.1,680.8L3679.1,680.8 M3679.1,680.8L3679.1,680.8 M3679.1,680.8
+			l-256.5,150.5 M3679.1,680.8l256.5,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1603.6-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3674.1,675.8h10v10h-10V675.8z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(150.708,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="40.6" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(151.708,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Faster</text>
-		</g>
-		<g transform="scale(1,1) translate(302.019,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="80" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(303.019,67.438)">
-			<text transform="matrix(1 0 0 1 1266.625 -126.08)" class="st1 st2 st3">Same speed</text>
-		</g>
-		<g transform="scale(1,1) translate(491.162,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="43.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(492.162,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Slower</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(4142.979,293.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_28_" gradientUnits="userSpaceOnUse" x1="-2801.354" y1="924.17" x2="-2801.354" y2="849.17" gradientTransform="matrix(1 0 0 -1 4142.979 785.59)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st34" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1292.3638 -99.7258)" class="st1 st2 st3">Relative speed</text>
-		</g>
+	<g transform="scale(1,1) translate(110.266,66.438)">
+		<rect x="3422.6" y="680.8" class="st5" width="36" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(4474.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(111.266,67.438)">
+		<text transform="matrix(1 0 0 1 3422.604 693.33)" class="st0 st1 st2">Good</text>
 	</g>
-	<g transform="scale(1,1) translate(4474.479,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6
-				l-85.5,150.5 M1352.1-138.6l85.5,150.5"/>
+	<g transform="scale(1,1) translate(354.42,66.438)">
+		<rect x="3422.6" y="680.8" class="st5" width="60.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(355.42,67.438)">
+		<text transform="matrix(1 0 0 1 3422.604 693.33)" class="st0 st1 st2">Too close</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_33_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2337.479 1823.41)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3604.1" y="605.8" class="st39" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3620.5879 644.6841)" class="st0 st1 st2">Crossing distance</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2889.6,906.3L2889.6,906.3 M2889.6,906.3L2889.6,906.3 M2889.6,906.3L2889.6,906.3 M2889.6,906.3l-171,150.5
+			 M2889.6,906.3v150.5 M2889.6,906.3l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1347.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M2884.6,901.3h10v10h-10V901.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(24.766,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(25.766,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(97.92,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(98.92,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(4484.979,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_29_" gradientUnits="userSpaceOnUse" x1="-3143.354" y1="698.67" x2="-3143.354" y2="623.67" gradientTransform="matrix(1 0 0 -1 4484.979 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st35" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.5322 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="2718.6" y="906.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(4132.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 2718.604 918.8301)" class="st0 st1 st2">Faster</text>
 	</g>
-	<g transform="scale(1,1) translate(4132.479,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6
-				l-85.5,150.5 M1352.1-138.6l85.5,150.5"/>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="2718.6" y="906.3" class="st5" width="80" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 2718.604 918.8301)" class="st0 st1 st2">Same speed</text>
+	</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="2718.6" y="906.3" class="st5" width="43.7" height="17.6"/>
+	</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 2718.604 918.8301)" class="st0 st1 st2">Slower</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_34_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1547.979 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="2814.6" y="831.3" class="st40" width="150" height="75"/>
+	</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 2840.343 870.1841)" class="st0 st1 st2">Relative speed</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3156.1,906.3"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_35_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1814.479 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st41" cx="3156.1" cy="868.8" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3088.1211 859.3471)" class="st0 st1 st2">Communicate</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3422.6,906.3L3422.6,906.3 M3422.6,906.3L3422.6,906.3 M3422.6,906.3L3422.6,906.3 M3422.6,906.3l-171,150.5
+			 M3422.6,906.3v150.5 M3422.6,906.3l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1347.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3417.6,901.3h10v10h-10V901.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(24.766,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(25.766,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(97.92,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(98.92,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(4142.979,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_30_" gradientUnits="userSpaceOnUse" x1="-2801.354" y1="698.67" x2="-2801.354" y2="623.67" gradientTransform="matrix(1 0 0 -1 4142.979 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st36" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.5322 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="3251.6" y="906.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(4399.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_31_" gradientUnits="userSpaceOnUse" x1="-3057.854" y1="473.17" x2="-3057.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 4399.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st37" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.842 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.9587 -102.7504)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 3251.604 918.8301)" class="st0 st1 st2">Faster</text>
 	</g>
-	<g transform="scale(1,1) translate(4645.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="3251.6" y="906.3" class="st5" width="80" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(4570.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_32_" gradientUnits="userSpaceOnUse" x1="-3228.854" y1="473.17" x2="-3228.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 4570.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st38" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.3909 -102.7504)" class="st1 st2 st3">from other path</text>
-		</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 3251.604 918.8301)" class="st0 st1 st2">Same speed</text>
 	</g>
-	<g transform="scale(1,1) translate(4057.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_33_" gradientUnits="userSpaceOnUse" x1="-2715.854" y1="473.17" x2="-2715.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 4057.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#BBA35B"/>
-			</linearGradient>
-			<ellipse class="st39" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1297.948 -118.3754)" class="st1 st2 st3">Abort</text>
-			<text transform="matrix(1 0 0 1 1282.1267 -102.7504)" class="st1 st2 st3">over-taking</text>
-		</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="3251.6" y="906.3" class="st5" width="43.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(4303.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 3251.604 918.8301)" class="st0 st1 st2">Slower</text>
 	</g>
-	<g transform="scale(1,1) translate(4228.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_34_" gradientUnits="userSpaceOnUse" x1="-2886.854" y1="473.17" x2="-2886.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 4228.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st40" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.3909 -102.7504)" class="st1 st2 st3">from other path</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_36_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2080.979 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3347.6" y="831.3" class="st42" width="150" height="75"/>
 	</g>
-	<g transform="scale(1,1) translate(3790.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3373.343 870.1841)" class="st0 st1 st2">Relative speed</text>
 	</g>
-	<g transform="scale(1,1) translate(3790.479,593.91)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6L1352.1-138.6 M1352.1-138.6
-				l-85.5,150.5 M1352.1-138.6l85.5,150.5"/>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3764.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3935.6,906.3L3935.6,906.3 M3935.6,906.3L3935.6,906.3 M3935.6,906.3L3935.6,906.3 M3935.6,906.3l-171,150.5
+			 M3935.6,906.3v150.5 M3935.6,906.3l171,150.5"/>
+		<g>
 			<g>
-				<g>
-					<path class="st5" d="M1347.1-143.6h10v10h-10V-143.6z"/>
-				</g>
+				<path class="st4" d="M3930.6,901.3h10v10h-10V901.3z"/>
 			</g>
 		</g>
-		<g transform="scale(1,1) translate(24.766,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="36" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(25.766,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6251 -126.08)" class="st1 st2 st3">Good</text>
-		</g>
-		<g transform="scale(1,1) translate(97.92,66.438)">
-			<rect x="1266.6" y="-138.6" class="st0" width="60.7" height="17.6"/>
-		</g>
-		<g transform="scale(1,1) translate(98.92,67.438)">
-			<text transform="matrix(1 0 0 1 1266.6249 -126.08)" class="st1 st2 st3">Too close</text>
-		</g>
 	</g>
-	<g transform="scale(1,1) translate(3800.979,518.91)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_35_" gradientUnits="userSpaceOnUse" x1="-2459.354" y1="698.67" x2="-2459.354" y2="623.67" gradientTransform="matrix(1 0 0 -1 3800.979 560.0901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#D8D8D8"/>
-			</linearGradient>
-			<rect x="1266.6" y="-138.6" class="st41" width="150" height="75"/>
-		</g>
-		<g transform="scale(1,1) translate(3.333,3.333)">
-			<text transform="matrix(1 0 0 1 1324.532 -99.7258)" class="st1 st2 st3">CPA</text>
-		</g>
+	<g transform="scale(1,1) translate(65.208,66.438)">
+		<rect x="3764.6" y="906.3" class="st5" width="40.6" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(3715.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_36_" gradientUnits="userSpaceOnUse" x1="-2373.854" y1="473.17" x2="-2373.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3715.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#00B050"/>
-			</linearGradient>
-			<ellipse class="st42" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1267.842 -118.3754)" class="st1 st2 st3">Follow planned</text>
-			<text transform="matrix(1 0 0 1 1302.959 -102.7504)" class="st1 st2 st3">path</text>
-		</g>
+	<g transform="scale(1,1) translate(66.208,67.438)">
+		<text transform="matrix(1 0 0 1 3764.604 918.8301)" class="st0 st1 st2">Faster</text>
 	</g>
-	<g transform="scale(1,1) translate(3961.479,819.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(131.019,66.438)">
+		<rect x="3764.6" y="906.3" class="st5" width="80" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(3886.479,744.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_37_" gradientUnits="userSpaceOnUse" x1="-2544.854" y1="473.17" x2="-2544.854" y2="398.17" gradientTransform="matrix(1 0 0 -1 3886.479 334.5901)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#4BACC6"/>
-			</linearGradient>
-			<ellipse class="st43" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -118.3754)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1269.3909 -102.7504)" class="st1 st2 st3">from other path</text>
-		</g>
+	<g transform="scale(1,1) translate(132.019,67.438)">
+		<text transform="matrix(1 0 0 1 3764.604 918.8301)" class="st0 st1 st2">Same speed</text>
 	</g>
-	<g transform="scale(1,1) translate(330.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_38_" gradientUnits="userSpaceOnUse" x1="1010.646" y1="22.17" x2="1010.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 330.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st44" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.903 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.541 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(234.662,66.438)">
+		<rect x="3764.6" y="906.3" class="st5" width="43.7" height="17.6"/>
 	</g>
-	<g transform="scale(1,1) translate(747.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(235.662,67.438)">
+		<text transform="matrix(1 0 0 1 3764.604 918.8301)" class="st0 st1 st2">Slower</text>
 	</g>
-	<g transform="scale(1,1) translate(672.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_39_" gradientUnits="userSpaceOnUse" x1="668.646" y1="22.17" x2="668.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 672.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st45" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_37_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2593.979 2048.9099)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#D8D8D8"/>
+		</linearGradient>
+		<rect x="3860.6" y="831.3" class="st43" width="150" height="75"/>
 	</g>
-	<g transform="scale(1,1) translate(576.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(3.333,3.333)">
+		<text transform="matrix(1 0 0 1 3886.343 870.1841)" class="st0 st1 st2">Relative speed</text>
 	</g>
-	<g transform="scale(1,1) translate(501.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_40_" gradientUnits="userSpaceOnUse" x1="839.646" y1="22.17" x2="839.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 501.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FADA7A"/>
-			</linearGradient>
-			<ellipse class="st46" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1266.625 -118.3754)" class="st1 st2 st3">Stay parallel for</text>
-			<text transform="matrix(1 0 0 1 1297.5549 -102.7504)" class="st1 st2 st3">longer</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_38_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 330.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st44" cx="1672.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(863.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_41_" gradientUnits="userSpaceOnUse" x1="477.646" y1="22.17" x2="477.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 863.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st47" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1610.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 1613.882 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 1623.52 1100.5801)" class="st0 st1 st2">position</text>
 	</g>
-	<g transform="scale(1,1) translate(1280.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2014.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(1205.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_42_" gradientUnits="userSpaceOnUse" x1="135.646" y1="22.17" x2="135.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1205.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st48" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1277.1169 -126.08)" class="st1 st2 st3">Mover away</text>
-			<text transform="matrix(1 0 0 1 1282.903 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.5409 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_39_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 672.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st45" cx="2014.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(1109.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1946.621 1084.8472)" class="st0 st1 st2">Communicate</text>
 	</g>
-	<g transform="scale(1,1) translate(1034.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_43_" gradientUnits="userSpaceOnUse" x1="306.646" y1="22.17" x2="306.646" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1034.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st49" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1285.215 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.5409 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M1843.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(1376.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_44_" gradientUnits="userSpaceOnUse" x1="-35.354" y1="22.17" x2="-35.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1376.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st50" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.903 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.5409 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_40_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 501.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FADA7A"/>
+		</linearGradient>
+		<ellipse class="st46" cx="1843.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(1793.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 1768.604 1077.0347)" class="st0 st1 st2">Stay parallel for</text>
+		<text transform="matrix(1 0 0 1 1799.5339 1092.6597)" class="st0 st1 st2">longer</text>
 	</g>
-	<g transform="scale(1,1) translate(1718.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_45_" gradientUnits="userSpaceOnUse" x1="-377.354" y1="22.17" x2="-377.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1718.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st51" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_41_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 863.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st47" cx="2205.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(1622.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2137.6211 1084.8472)" class="st0 st1 st2">Communicate</text>
 	</g>
-	<g transform="scale(1,1) translate(1547.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_46_" gradientUnits="userSpaceOnUse" x1="-206.354" y1="22.17" x2="-206.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1547.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st52" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2547.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(1909.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_47_" gradientUnits="userSpaceOnUse" x1="-568.354" y1="22.17" x2="-568.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 1909.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st53" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.642 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_42_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1205.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st48" cx="2547.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(2326.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2483.0959 1069.3301)" class="st0 st1 st2">Mover away</text>
+		<text transform="matrix(1 0 0 1 2488.8821 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 2498.52 1100.5801)" class="st0 st1 st2">position</text>
 	</g>
-	<g transform="scale(1,1) translate(2251.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_48_" gradientUnits="userSpaceOnUse" x1="-910.354" y1="22.17" x2="-910.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 2251.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st54" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.9028 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.541 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2376.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(2155.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_43_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1034.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st49" cx="2376.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(2080.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_49_" gradientUnits="userSpaceOnUse" x1="-739.354" y1="22.17" x2="-739.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 2080.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st55" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.9028 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.541 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2314.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 2320.1941 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 2327.52 1100.5801)" class="st0 st1 st2">position</text>
 	</g>
-	<g transform="scale(1,1) translate(2422.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_50_" gradientUnits="userSpaceOnUse" x1="-1081.354" y1="22.17" x2="-1081.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 2422.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#FF0000"/>
-			</linearGradient>
-			<ellipse class="st56" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1273.6418 -110.5629)" class="st1 st2 st3">Communicate</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_44_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1376.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st50" cx="2718.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(2839.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2656.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 2659.8821 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 2669.52 1100.5801)" class="st0 st1 st2">position</text>
 	</g>
-	<g transform="scale(1,1) translate(2764.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_51_" gradientUnits="userSpaceOnUse" x1="-1423.354" y1="22.17" x2="-1423.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 2764.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st57" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.9028 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.541 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3060.6,1131.8"/>
 	</g>
-	<g transform="scale(1,1) translate(2668.979,1270.41)">
-		<g transform="scale(1,1) translate(0,0)">
-			<path class="st4" d="M1266.6-138.6"/>
-		</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_45_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1718.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st51" cx="3060.6" cy="1094.3" rx="75" ry="37.5"/>
 	</g>
-	<g transform="scale(1,1) translate(2593.979,1195.41)">
-		<g transform="scale(1,1) translate(0,0)" class="st6">
-			
-				<linearGradient id="SVGID_52_" gradientUnits="userSpaceOnUse" x1="-1252.354" y1="22.17" x2="-1252.354" y2="-52.83" gradientTransform="matrix(1 0 0 -1 2593.979 -116.41)">
-				<stop  offset="0" style="stop-color:#FFFFFF"/>
-				<stop  offset="1" style="stop-color:#8064A2"/>
-			</linearGradient>
-			<ellipse class="st58" cx="1341.6" cy="-101.1" rx="75" ry="37.5"/>
-		</g>
-		<g transform="scale(1,1) translate(25.154,14.17)">
-			<text transform="matrix(1 0 0 1 1279.429 -126.08)" class="st1 st2 st3">Move away</text>
-			<text transform="matrix(1 0 0 1 1282.9028 -110.455)" class="st1 st2 st3">from other</text>
-			<text transform="matrix(1 0 0 1 1292.541 -94.83)" class="st1 st2 st3">position</text>
-		</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2992.6211 1084.8472)" class="st0 st1 st2">Communicate</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M2889.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_46_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1547.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st52" cx="2889.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 2821.6211 1084.8472)" class="st0 st1 st2">Communicate</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_47_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 1909.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st53" cx="3251.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3183.6211 1084.8472)" class="st0 st1 st2">Communicate</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3593.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_48_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2251.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st54" cx="3593.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3531.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 3534.8818 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 3544.52 1100.5801)" class="st0 st1 st2">position</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3422.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_49_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2080.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st55" cx="3422.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3360.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 3363.8818 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 3373.52 1100.5801)" class="st0 st1 st2">position</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_50_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2422.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FF0000"/>
+		</linearGradient>
+		<ellipse class="st56" cx="3764.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3696.6208 1084.8472)" class="st0 st1 st2">Communicate</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M4106.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_51_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2764.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st57" cx="4106.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 4044.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 4047.8818 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 4057.52 1100.5801)" class="st0 st1 st2">position</text>
+	</g>
+	<g transform="scale(1,1) translate(0,0)">
+		<path class="st3" d="M3935.6,1131.8"/>
+	</g>
+	<g transform="scale(1,1) translate(0,0)" class="st6">
+		
+			<linearGradient id="SVGID_52_" gradientUnits="userSpaceOnUse" x1="1341.625" y1="1217.58" x2="1341.625" y2="1142.58" gradientTransform="matrix(1 0 0 -1 2593.979 2274.4102)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#8064A2"/>
+		</linearGradient>
+		<ellipse class="st58" cx="3935.6" cy="1094.3" rx="75" ry="37.5"/>
+	</g>
+	<g transform="scale(1,1) translate(25.154,14.17)">
+		<text transform="matrix(1 0 0 1 3873.408 1069.3301)" class="st0 st1 st2">Move away</text>
+		<text transform="matrix(1 0 0 1 3876.8818 1084.9551)" class="st0 st1 st2">from other</text>
+		<text transform="matrix(1 0 0 1 3886.52 1100.5801)" class="st0 st1 st2">position</text>
 	</g>
 </g>
 </svg>
