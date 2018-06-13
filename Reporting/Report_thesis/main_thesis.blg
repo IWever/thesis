@@ -1,12 +1,17 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_thesis.aux
 The style file: tudelft-report.bst
 Database file #1: include/library.bib
+0 is an integer literal, not a function, for entry Arciszewski2009
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Arciszewski2009
+while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Arimura2001
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Arimura2001
 while executing---line 1428 of file tudelft-report.bst
 Warning--empty publisher in Arimura2001
 Warning--empty institution in Backer2015
+Warning--empty publisher in Boyd1987
 0 is an integer literal, not a function, for entry Breda1999
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Breda1999
@@ -20,6 +25,10 @@ Warning--there's a number but no volume in Feys2016
 0 is an integer literal, not a function, for entry Hodgetts2015
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Hodgetts2015
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Kalloniatis2017
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Kalloniatis2017
 while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Neerincx2012
 while executing---line 1428 of file tudelft-report.bst
@@ -48,4 +57,4 @@ while executing---line 1428 of file tudelft-report.bst
 Warning--empty institution in USNavy2017
 Warning--empty school in Walliser2011
 Warning--empty journal in Waterborne2016
-(There were 18 error messages)
+(There were 22 error messages)

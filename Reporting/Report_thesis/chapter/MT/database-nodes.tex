@@ -22,12 +22,13 @@ To classify a situation where two vessels encounter each other, the paths are co
 The boundaries are based on \ac{COLREGs} and shown in figure \ref{fig:junction-letters}. \todo{use colreg boundaries in junction}.
 
 \begin{minipage}{\textwidth}
-	\begin{minipage}[b]{0.8\textwidth}
+	\begin{minipage}[b]{0.69\textwidth}
 		\centering
 		\begin{tabular}{l|l|l}
 			Own ship & Other ships & Situation\\
 			\hline
-			\big[A,D\big] & [D,C] [D,B] [D,A] [C,B] [C,A] [B,A] [B,C] & Passing \\
+			\big[A,D\big] & [D,C] [D,B] [D,A] [C,B] & Passing \\
+						& [C,A] [B,A] [B,C] & \\
 			\big[A,C\big] & [C,A] [C,B] [B,A] & Passing \\
 			\big[A,B\big] & [D,C] [C,D] [B,A] & Passing \\
 			\big[A,C\big] & [D,B] [D,A] [C,D] [B,D] & Crossing \\
@@ -45,7 +46,7 @@ The boundaries are based on \ac{COLREGs} and shown in figure \ref{fig:junction-l
 		\label{tab:scenarios-standard}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.19\textwidth}
+	\begin{minipage}[b]{0.3\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{junction-letters.png}
 		\captionof{figure}{Path description}

@@ -9,8 +9,9 @@ The operational demands describe the current practice as it is, i.e. without the
 
 However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the strategy. For example due to missing information. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here is the \acf{SMCP}. The primary task of this protocol is to diminish misunderstanding in safety related verbal communications. 
 Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and semaphore signing.
+The reason safety related verbal communication is needed, when you will deviate from the rules, deviant behavior is registered, or more information is needed to take the right decision.
 
-These different ways for communication are not developed to be used by unmanned vessels. On the other hand, is it not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels.
+The different ways for communication are not developed to be used by unmanned vessels. On the other hand, is it not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels.
 
 When using the current systems in a way they are not designed for. This might result in information overload of the crew and communication channels. Resulting in misunderstanding and problems with communication. As the \ac{VHF} can only be used in one way. As it is a receiver or a transmitter, but can't be both at the same time. 
 
@@ -50,7 +51,7 @@ The focus of this research will be on bridge-to-bridge communication. This means
 \end{itemize}
 
 \subsubsection{Goals}
-The main goal is to ensure reliable sharing of information, without the risk for information overload or misunderstanding. 
+The main goal is to ensure reliable sharing of information, without the risk for information overload or misunderstanding. Such that manned ships will trust unmanned ships to choose the right strategy. As manned ships can be informed using human language which reasoning is used by unmanned vessels.
 
 \subsubsection{Problem breakdown}
 This means that manned vessels should be updated only when requested or in case of an unusual activity which could affect their strategy. And manned vessel should be aware when unmanned vessels desire more information to decide on the right strategy.
@@ -127,8 +128,10 @@ Using only existing systems to develop a \acf{no-UI}. These existing systems are
 		\item Flags or symbols
 	\end{itemize}
 	\item Availability on \ac{VHF}
-	\item Exchange of information via \ac{AIS}
+	\item Exchange of information via \ac{AIS} \todo{is it possible to send direct messages via AIS?}
 	\item Horn
 \end{itemize}
 
 Thereby is it easier to learn when its based on known protocols, such as \acf{SMCP} and \ac{COLREGs}.
+
+Introducing optical signs to show you are unmanned might be good.

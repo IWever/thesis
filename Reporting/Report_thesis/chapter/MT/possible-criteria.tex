@@ -1,5 +1,18 @@
 \chapter{Definition of criteria}
-To determine which strategy works best, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. The current and proposed algorithm are discussed below. This is followed by a section on the criteria which can't be calculated.
+To determine which strategy works best, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. First the criteria which are true or false are discussed, followed by the current and proposed algorithms to calculate the other criteria.
+
+\section{Conditional criteria}
+
+\subsection{COLREGs}
+How is the path based solely based on COLREGs, without taking into account other ships
+
+use this \url{https://www.myseatime.com/blog/detail/8-colreg-rules-every-navigating-officer-must-understand}
+
+\subsection{Relative speed}
+
+\subsection{Bold movement}
+Combine paths to ensure bold movements
+
 
 \section{Calculations based on current systems}
 Within \ac{ARPA} and \ac{ECDIS} the criteria are often already calculated, using linearized algorithms. Below these calculations are discussed for the \ac{CPA} and crossing position.
@@ -51,34 +64,30 @@ relativeSpeed = n[1, 0] / n[0, 0]
 \section{Proposed algorithm based on planned path}
 Using the planned path of the vessel, better estimations can be made for the closest point of approach and crossing distance. As this planned path is not available for other ships, without introducing new systems, an estimation is made for the likely path. Which first uses a first order change, based on rate of turn and course. This can be extended with a combination of expected location, using the probability that another ship is choosing a specific strategy.
 
-\subsection{CPA}
-1) check if something changed since last calculation
--> no check out
--> yes to step 2
-
-2) use waypoints to plan x minutes ahead
-
-3) 
-
-
-
-
-
 Disadvantage: heavier computation and less accuracy due to numerical solve
+
+\subsection{CPA}
+\begin{enumerate}
+	\item Check if something has changed since last calculation
+	\begin{enumerate}
+		\item No, check out
+		\item Yes, continue
+	\end{enumerate}
+	\item Use waypoints to determine expected path for own ship (Bezier curve).
+	\item Use path to determine location for each time-step.
+	\item Use course and speed other ships to determine their location for each time-step
+	\item Calculate distance between points for each time-step, compare to stored CPA
+	\begin{enumerate}
+		\item If smaller than stored CPA, update stored CPA with calculated CPA
+	\end{enumerate}
+	\item 
+	
+\end{enumerate}
+\todo{use pseudecode with loop to skip timesteps, speeding up the calculation}
+
 
 \subsection{Crossing distance}
 
 \subsection{Passing distance}
-
-
-\section{Conditional criteria}
-
-\subsection{COLREGs}
-How is the path based solely based on COLREGs, without taking into account other ships
-
-use this \url{https://www.myseatime.com/blog/detail/8-colreg-rules-every-navigating-officer-must-understand}
-
-\subsection{Bold movement}
-Combine paths to ensure bold movements
 
 

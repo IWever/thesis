@@ -17,12 +17,37 @@ Trust in autonomous ships is formed, as the information is reliable, the interac
 \section{Use case}
 Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence (use case).
 
+The use cases provide a detailed description of the interactions between the technology and its user. Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories (described in the system’s foundation).
+
+\subsubsection{Unmanned fast crew supplier crossing shipping lane in front of coaster}
+\emph{Tags: Intention}
+
+\subsubsection{Unmanned fishery vessel gets close to traffic lane with VLCC}
+\emph{Tags: Question}
+
 NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc
 
-The use cases provide a detailed description of the interactions between the technology and its user. Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the elderly is safe and taken care of. Use cases are informed by human factors theories (described in the system’s foundation).
+
 
 \section{Functional requirements}
 In the sCE method, use cases are used to derive functional requirements, i.e. specific functionalities the technology should provide to its user.
+
+Types of messages:
+\begin{itemize}
+	\item \emph{Call}. Start of conversation, in which a ship only requests contact with another ship. It might also be necessary to introduce as an unmanned vessel (why does google assistant do this?)
+	\item \emph{Acknowledge}. Accept invitation for conversation.
+	\item \emph{Message}. Starts with "marker word", followed by the actual message and ended by a request for confirmation. Therefore should be followed by a response.
+	\item \emph{Respond}. Response to the previous message or response.
+	\item \emph{Close}. End conversation with greeting.
+\end{itemize}
+
+Status:
+\begin{itemize}
+	\item \emph{Listening}. Listening to the radio without taking action.
+	\item \emph{Waiting}. Waiting for a response by other ship.
+	\item \emph{Negotiating}. Deciding on the right strategy by discussing this with other ship(s).
+	\item \emph{Messaging}. Sending a message. While sending it is not possible to receive a message.
+\end{itemize}
 
 \section{Claim}
 The sCE method prescribes a strong link between the system’s functional requirements, the system’s objectives, and the hypotheses to be tested during system evaluations. This
@@ -32,4 +57,17 @@ This explicit linking of requirements to claims enables designers to formulate h
 
 \section{Ontology}
 Lastly, the sCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project.
-Running
+
+\url{http://www.segeln.co.at/media/pdf/smcp.pdf}
+
+Marker word: \todo{add description}
+\begin{itemize}
+	\item \emph{Advice}
+	\item \emph{Information}
+	\item \emph{Warning}
+	\item \emph{Intention}
+	\item \emph{Question}
+	\item \emph{Instruction}
+	\item \emph{Request}
+\end{itemize}
+

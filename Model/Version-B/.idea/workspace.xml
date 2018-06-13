@@ -2,42 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3d0d09-9836-4766-aea7-8bdbe335d3e8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../General/Voorbeeld thesis/Concept_thesis_SvenLos[11863].pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../General/Voorbeeld thesis/Final report Rogier Burger Thesis TU Delft.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decision-making/Situation sketch.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Decision-making/Situation sketch.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamicObjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamicObjects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/world.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/accidents.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/accidents.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/basic-design.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/bridge-systems.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/bridge-systems.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-intro.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-lessons.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-reality.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-scenarios.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-simulation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/com-strategies.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/development.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/intro-model-design.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-intro.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-lessons.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-reality.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-scenarios.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-simulation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/td-strategies.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/library.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/library.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/case_huisman.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/case_huisman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Evaluation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Evaluation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Foundation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Foundation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Specification.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Specification.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/database-nodes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/database-nodes.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/decision-model.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/decision-model.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/possible-criteria.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/possible-criteria.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/junction-letters.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/junction-letters.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tdo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tdo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.toc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +54,8 @@
       <file leaf-file-name="simulation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="425">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -354,22 +336,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50208336" side_tool="true" weight="0.32655138" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49791667" weight="0.37003058" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49791667" weight="0.37003058" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.111979164" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -381,29 +362,29 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32960325" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32925585" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49791667" visible="true" weight="0.4240571" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49791667" visible="true" weight="0.4240571" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32960325" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50208336" side_tool="true" weight="0.32655138" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32925585" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32960325" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="425">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
