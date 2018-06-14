@@ -1,6 +1,7 @@
 import math
 from manoeuvring import manoeuverShip
 
+
 class Simulation:
     """ The class in which the simulation is created """
 
@@ -25,13 +26,12 @@ class Simulation:
             self.world.viewer.updatePlot()
             yield self.env.timeout(self.world.secondsPerStep/self.world.updateFrequency)
 
-
     def updateGUI(self):
         while True:
             self.world.root.update()
             yield self.env.timeout(1/50)
 
-    def addDynamicObject(self, objectName, location, course_deg, speed=None, rudderAngle=0):
+    def addDynamicObject(self, objectName, location, course_deg, speed=None, rudderAngle=0, firstWaypoint=None):
         ship = self.world.do[objectName]
 
         ship.location = location
@@ -45,6 +45,11 @@ class Simulation:
         else:
             ship.speed = speed
             ship.telegraphSpeed = ship.speed / ship.vmax
+
+        if firstWaypoint is None:
+            pass
+        else:
+            ship.waypoints.append(firstWaypoint)
 
         ship.AIS.update(ship, time=self.env.now)
 
@@ -97,8 +102,20 @@ class Simulation:
         # Use model to move ship
         if ship.speed != 0:
             manoeuverShip(ship, dt)
+            if ship.waypoints:
+                ship.adjustRudder()
 
     def initialPositionObjects(self):
         self.addDynamicObject("Tanker", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
         self.addDynamicObject("Astrorunner", [-3090, 1395], 114, speed=13.4)
         self.addDynamicObject("Anglia", [2068, -71], 291, speed=10.3)
+
+        self.world.do["Tanker"].waypoints.append([-550, -1000])
+        self.world.do["Tanker"].waypoints.append([-3000, 1300])
+
+        self.world.do["Astrorunner"].waypoints.append([-1400, 600])
+        self.world.do["Astrorunner"].waypoints.append([1800, -900])
+
+        self.world.do["Anglia"].waypoints.append([500, 600])
+        self.world.do["Anglia"].waypoints.append([-3800, 2150])
+

@@ -65,68 +65,68 @@
 \contentsline {chapter}{\numberline {8}Decision-model}{35}{chapter.8}
 \contentsline {section}{\numberline {8.1}Ontology}{35}{section.8.1}
 \contentsline {section}{\numberline {8.2}Database}{35}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Types of situations}{35}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Strategies}{35}{subsection.8.2.2}
-\contentsline {subsubsection}{Types}{35}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Decisions}{35}{subsection.8.2.3}
-\contentsline {section}{\numberline {8.3}Rules}{35}{section.8.3}
-\contentsline {chapter}{\numberline {9}Development of testing environment}{37}{chapter.9}
-\contentsline {section}{\numberline {9.1}Basic design}{37}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Requirements}{37}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}User stories}{37}{subsection.9.1.2}
-\contentsline {subsection}{\numberline {9.1.3}User interactions}{38}{subsection.9.1.3}
-\contentsline {subsection}{\numberline {9.1.4}Minimum viable product}{38}{subsection.9.1.4}
-\contentsline {section}{\numberline {9.2}Manoeuvring capability model}{38}{section.9.2}
-\contentsline {section}{\numberline {9.3}Probability index}{38}{section.9.3}
-\contentsline {section}{\numberline {9.4}Routeplanner}{38}{section.9.4}
-\contentsline {section}{\numberline {9.5}Estimation of characteristics}{39}{section.9.5}
-\contentsline {section}{\numberline {9.6}Application design}{39}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Design patterns}{39}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Model and classes}{39}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}Methods}{39}{subsection.9.6.3}
-\contentsline {subsection}{\numberline {9.6.4}User interface}{39}{subsection.9.6.4}
-\contentsline {chapter}{\numberline {10}Evaluation decision model}{40}{chapter.10}
-\contentsline {section}{\numberline {10.1}Verification}{40}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Test-scenarios}{40}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Result of testing}{40}{subsection.10.1.2}
-\contentsline {section}{\numberline {10.2}Validation}{40}{section.10.2}
-\contentsline {chapter}{\numberline {11}Lessons learned}{41}{chapter.11}
-\contentsline {section}{\numberline {11.1}Factors not taken into account}{41}{section.11.1}
-\contentsline {section}{\numberline {11.2}Result}{41}{section.11.2}
-\contentsline {part}{III\hspace {1em}Interface to enable teamwork between manned and unmanned ships}{42}{part.3}
-\contentsline {chapter}{\numberline {12}Foundation}{44}{chapter.12}
-\contentsline {section}{\numberline {12.1}Operational demands}{44}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Problem scenario}{44}{subsection.12.1.1}
-\contentsline {subsection}{\numberline {12.1.2}Problem analysis}{44}{subsection.12.1.2}
-\contentsline {subsubsection}{Stakeholders}{45}{subsection.12.1.2}
-\contentsline {subsubsection}{Other possible actors}{45}{subsection.12.1.2}
-\contentsline {subsubsection}{Information extraction from problem scenario}{45}{section*.69}
-\contentsline {subsubsection}{Goals}{46}{section*.69}
-\contentsline {subsubsection}{Problem breakdown}{46}{section*.69}
-\contentsline {subsubsection}{Possible situations when communication is needed}{46}{section*.69}
-\contentsline {subsubsection}{Problems that might also be adressed}{46}{section*.69}
-\contentsline {subsubsection}{Infeasible solutions}{46}{section*.69}
-\contentsline {section}{\numberline {12.2}Human factors}{46}{section.12.2}
-\contentsline {subsubsection}{Human factor knowledge}{47}{section.12.2}
-\contentsline {subsubsection}{Human factor measures}{47}{section*.71}
-\contentsline {subsubsection}{Interaction design patterns}{47}{section*.71}
-\contentsline {section}{\numberline {12.3}Envisioned technology}{48}{section.12.3}
-\contentsline {chapter}{\numberline {13}System design specification}{49}{chapter.13}
-\contentsline {section}{\numberline {13.1}Design scenarios}{49}{section.13.1}
-\contentsline {section}{\numberline {13.2}Use case}{49}{section.13.2}
-\contentsline {subsubsection}{Unmanned fast crew supplier crossing shipping lane in front of coaster}{49}{section.13.2}
-\contentsline {subsubsection}{Unmanned fishery vessel gets close to traffic lane with VLCC}{50}{section.13.2}
-\contentsline {section}{\numberline {13.3}Functional requirements}{50}{section.13.3}
-\contentsline {section}{\numberline {13.4}Claim}{51}{section.13.4}
-\contentsline {section}{\numberline {13.5}Ontology}{51}{section.13.5}
-\contentsline {chapter}{\numberline {14}Design evaluation}{52}{chapter.14}
-\contentsline {section}{\numberline {14.1}Artefact}{52}{section.14.1}
-\contentsline {section}{\numberline {14.2}Evaluation method}{52}{section.14.2}
-\contentsline {section}{\numberline {14.3}Evaluation results}{52}{section.14.3}
-\contentsline {part}{IV\hspace {1em}Wrap-up}{53}{part.4}
-\contentsline {chapter}{\numberline {15}Results}{54}{chapter.15}
-\contentsline {chapter}{\numberline {16}Conclusion}{55}{chapter.16}
-\contentsline {section}{\numberline {16.1}Answers to research questions}{55}{section.16.1}
-\contentsline {section}{\numberline {16.2}Recommendations for future research}{55}{section.16.2}
-\contentsline {part}{V\hspace {1em}TEMPORARY: Old text}{56}{part.5}
-\contentsline {chapter}{Bibliography}{63}{section*.81}
+\contentsline {subsubsection}{Encountered situations}{35}{section.8.2}
+\contentsline {subsubsection}{Criteria}{35}{table.caption.63}
+\contentsline {subsubsection}{Evaluation of criteria}{36}{table.caption.64}
+\contentsline {subsubsection}{Possible strategies}{36}{table.caption.65}
+\contentsline {section}{\numberline {8.3}Decisions}{36}{section.8.3}
+\contentsline {chapter}{\numberline {9}Development of testing environment}{39}{chapter.9}
+\contentsline {section}{\numberline {9.1}Basic design}{39}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Requirements}{39}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}User stories}{39}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}User interactions}{40}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {9.1.4}Minimum viable product}{40}{subsection.9.1.4}
+\contentsline {section}{\numberline {9.2}Manoeuvring capability model}{40}{section.9.2}
+\contentsline {section}{\numberline {9.3}Probability index}{40}{section.9.3}
+\contentsline {section}{\numberline {9.4}Routeplanner}{40}{section.9.4}
+\contentsline {section}{\numberline {9.5}Estimation of characteristics}{41}{section.9.5}
+\contentsline {section}{\numberline {9.6}Application design}{41}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Design patterns}{41}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Model and classes}{41}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}Methods}{41}{subsection.9.6.3}
+\contentsline {subsection}{\numberline {9.6.4}User interface}{41}{subsection.9.6.4}
+\contentsline {chapter}{\numberline {10}Evaluation decision model}{42}{chapter.10}
+\contentsline {section}{\numberline {10.1}Verification}{42}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Test-scenarios}{42}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Result of testing}{42}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}Validation}{42}{section.10.2}
+\contentsline {chapter}{\numberline {11}Lessons learned}{43}{chapter.11}
+\contentsline {section}{\numberline {11.1}Factors not taken into account}{43}{section.11.1}
+\contentsline {section}{\numberline {11.2}Result}{43}{section.11.2}
+\contentsline {part}{III\hspace {1em}Interface to enable teamwork between manned and unmanned ships}{44}{part.3}
+\contentsline {chapter}{\numberline {12}Foundation}{46}{chapter.12}
+\contentsline {section}{\numberline {12.1}Operational demands}{46}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Problem scenario}{46}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Problem analysis}{46}{subsection.12.1.2}
+\contentsline {subsubsection}{Stakeholders}{47}{subsection.12.1.2}
+\contentsline {subsubsection}{Other possible actors}{47}{subsection.12.1.2}
+\contentsline {subsubsection}{Information extraction from problem scenario}{47}{section*.75}
+\contentsline {subsubsection}{Goals}{48}{section*.75}
+\contentsline {subsubsection}{Problem breakdown}{48}{section*.75}
+\contentsline {subsubsection}{Possible situations when communication is needed}{48}{section*.75}
+\contentsline {subsubsection}{Problems that might also be adressed}{48}{section*.75}
+\contentsline {subsubsection}{Infeasible solutions}{48}{section*.75}
+\contentsline {section}{\numberline {12.2}Human factors}{48}{section.12.2}
+\contentsline {subsubsection}{Human factor knowledge}{49}{section.12.2}
+\contentsline {subsubsection}{Human factor measures}{49}{section*.77}
+\contentsline {subsubsection}{Interaction design patterns}{49}{section*.77}
+\contentsline {section}{\numberline {12.3}Envisioned technology}{50}{section.12.3}
+\contentsline {chapter}{\numberline {13}System design specification}{51}{chapter.13}
+\contentsline {section}{\numberline {13.1}Design scenarios}{51}{section.13.1}
+\contentsline {section}{\numberline {13.2}Use case}{51}{section.13.2}
+\contentsline {subsubsection}{Unmanned fast crew supplier crossing shipping lane in front of coaster}{51}{section.13.2}
+\contentsline {subsubsection}{Unmanned fishery vessel gets close to traffic lane with VLCC}{52}{section.13.2}
+\contentsline {section}{\numberline {13.3}Functional requirements}{52}{section.13.3}
+\contentsline {section}{\numberline {13.4}Claim}{53}{section.13.4}
+\contentsline {section}{\numberline {13.5}Ontology}{53}{section.13.5}
+\contentsline {chapter}{\numberline {14}Design evaluation}{54}{chapter.14}
+\contentsline {section}{\numberline {14.1}Artefact}{54}{section.14.1}
+\contentsline {section}{\numberline {14.2}Evaluation method}{54}{section.14.2}
+\contentsline {section}{\numberline {14.3}Evaluation results}{54}{section.14.3}
+\contentsline {part}{IV\hspace {1em}Wrap-up}{55}{part.4}
+\contentsline {chapter}{\numberline {15}Results}{56}{chapter.15}
+\contentsline {chapter}{\numberline {16}Conclusion}{57}{chapter.16}
+\contentsline {section}{\numberline {16.1}Answers to research questions}{57}{section.16.1}
+\contentsline {section}{\numberline {16.2}Recommendations for future research}{57}{section.16.2}
+\contentsline {part}{V\hspace {1em}TEMPORARY: Old text}{58}{part.5}
+\contentsline {chapter}{Bibliography}{65}{section*.87}

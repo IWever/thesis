@@ -42,7 +42,6 @@ def overlapPolygons(polygonA, polygonB):
     warnings.warn("overlapPolygon not implemented")
     pass
 
-
 # Test methods
 if __name__ == "__main__":
     point = [5, 1]

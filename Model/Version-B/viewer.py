@@ -27,6 +27,7 @@ class Viewer:
         self.selectedShip = None
         self.shipSpeed = StringVar()
         self.shipCourse = StringVar()
+        self.shipRudder = StringVar()
         self.shipName = StringVar()
 
         # Collection of callbacks for plot
@@ -103,6 +104,8 @@ class Viewer:
         self.shipSpeedLabel.pack(side=TOP)
         self.shipCourseLabel = Label(self.shipInformationFrame, textvariable=self.shipCourse)
         self.shipCourseLabel.pack(side=TOP)
+        self.shipRudderLabel = Label(self.shipInformationFrame, textvariable=self.shipRudder)
+        self.shipRudderLabel.pack(side=TOP)
 
         # Label showing runtime of simulation
         self.timeLabel = Label(self.optionMenu, textvariable=self.time)
@@ -294,11 +297,13 @@ class Viewer:
             self.shipName.set("%s" % selectedShip.name)
             self.shipSpeed.set("Speed: %2.1f knots" % selectedShip.speed)
             self.shipCourse.set("Course: %3.1f degrees" % selectedShip.course)
+            self.shipRudder.set("Rudder: %2.1f degrees" % selectedShip.rudderAngle)
 
         else:
             self.shipName.set("First select a ship")
             self.shipSpeed.set("Speed: - knots")
             self.shipCourse.set("Course: - degrees")
+            self.shipRudder.set("Rudder: - degrees")
 
         self.mapCanvas.draw()
 
@@ -322,6 +327,10 @@ class Viewer:
         ship.markerPlot = self.mapPlot.scatter(ship.location[0], ship.location[1], marker='o', color=ship.color)
         ship.tag = self.mapPlot.text(ship.location[0], ship.location[1], shipname)
 
+        if ship.waypoints:
+            for waypointLocation in ship.waypoints:
+                ship.waypointMarker = self.mapPlot.scatter(waypointLocation[0], waypointLocation[1], marker='x', color=ship.color)
+
     @staticmethod
     def deleteShipPlotObjects(ship):
         """" Remove previously plotted objects from map if they exist. """
@@ -340,7 +349,7 @@ class Viewer:
             pass
 
         try:
-            if ship.polygonNumber == -1: #% 50 == 0:
+            if ship.polygonNumber == -1:
                 pass
             else:
                 ship.polygonPlot.remove()
@@ -355,3 +364,11 @@ class Viewer:
             pass
         except ValueError:
             pass
+
+        for i in range(len(ship.waypoints)):
+            try:
+                ship.waypointMarker.remove()
+            except AttributeError:
+                pass
+            except ValueError:
+                pass

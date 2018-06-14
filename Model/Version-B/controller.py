@@ -1,5 +1,7 @@
-class Controller:
-    """ This will have the tools to control the simulation via the GUI """
+import math
 
-    def __init__(self, world):
-        pass
+class Controller:
+    """ This will control the vessel """
+
+    def __init__(self, ship):
+        self.ship = ship
