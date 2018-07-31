@@ -1,36 +1,41 @@
 \chapter{Decision-model}
 In the previous chapters are ways to identify and evaluate a situation discussed, including a case study. This means the first two steps of the OODA loop are taken, observe and orient. The next step is to decide on the right strategy. Deciding on the right strategy also includes the moment this strategy should be executed. 
-This is done using a rule-based time-domain decision model. First an ontology is defined. Followed by a database of scenarios and situations as defined in the previous chapters. Combining this with the rules will result in the decision model. 
+This is done using a rule-based time-domain decision model. First an ontology is defined. Followed by a database of scenarios and situations as defined in the previous chapters. Combining this with the rules will result in the decision model. Thereby is the aim of this decision model to avoid communication.
 
-\section{Ontology}
-\begin{table}[h]
+\section{Decision phases}
+To describe the different phases in the decision taking process. An ontology is defined to describe these phases. Thereby is shown in figure \todo{add process diagram} how these steps relate in a process diagram.
+\begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
 		Class & Description\\
 		\midrule
-		Situation & \\
-		Criteria & \\
-		Evaluation & \\
-		Strategy & \\
+		Situation & The first step is to identify the encountered situation, to determine which criteria are relevant. \\
+		Problem identification & The second step is to determine if there is a problem, as there is only a change in strategy needed when this is the case. \\
+		Strategy & If there is a problem, a new strategy can be chosen, this is based on the evaluation of the criteria. \\
+		Action & From this strategy, different actions will follow. \\
+		Result & Finally the result is evaluated, in a similar manner to the problem identification. \\
 		\bottomrule
 	\end{tabular}
 	
-	\captionof{table}{Tags for different situations}
-	\label{tab:situations}
+	\captionof{table}{Ontology used in decision model to describe phases}
+	\label{tab:ontology}
 \end{table}
 
-\section{Database}
+
+
+\section{Tags for decision making}
 
 \subsubsection{Encountered situations}
-\begin{table}[h]
+This is the first step to limit the about of steps needed to get to the right strategy. The identification process is described in table \ref{tab:situations} and section \ref{sec:situation-identification}.
+\begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
 		Tag & Description\\
 		\midrule
-		Passing & \\
-		Crossing & \\
-		Merge & \\
-		Over-taking & \\
+		Passing & The paths of both ships are in opposite direction, and do not cross. \\
+		Crossing & The final direction of both ships differs, but they do cross. \\
+		Merge & The final direction of both ships is the same. \\
+		Over-taking & The paths of both ships are the same but at different speeds. \\
 		\bottomrule
 	\end{tabular}
 	
@@ -38,46 +43,26 @@ This is done using a rule-based time-domain decision model. First an ontology is
 	\label{tab:situations}
 \end{table}
 
-\subsubsection{Criteria}
-\begin{table}[h]
+\subsubsection{Identification of problem}
+To identify if there is a problem, different criteria are being evaluated. These criteria are described in chapter \ref{ch:criteria}. In table \ref{tab:identification-criteria} the nodes and branch tags within the decision tree are discussed to evaluate if there is a problem, and what kind of problem there is. 
+\begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
-		Tag & Description\\
+		Tag & Evaluation \\
 		\midrule
-		CPA & \\
-		Crossing point & \\
-		Crossing distance & \\
-		Relative speed & \\
-		COLREGs & \\
+		\acf{CPA} & Good; Too close \\
+		Crossing point & In front; Behind \\
+		Crossing distance & Good; Too close \\
+		Relative speed & Faster; Same speed; slower \\
 		\bottomrule
 	\end{tabular}
 	
-	\captionof{table}{Tags for used criteria}
-	\label{tab:criteria}
-\end{table}
-
-\subsubsection{Evaluation of criteria}
-\begin{table}[h]
-	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
-		\toprule
-		Tag & Description\\
-		\midrule
-		Good & \\
-		Too close & \\
-		In front & \\
-		Behind & \\\
-		Faster & \\
-		Same speed & \\
-		Slower & \\
-		\bottomrule
-	\end{tabular}
-	
-	\captionof{table}{Tags for different evaluations}
-	\label{tab:evaluations}
+	\captionof{table}{Tags used for identification of a problem}
+	\label{tab:identification-criteria}
 \end{table}
 
 \subsubsection{Possible strategies}
-\begin{table}[h]
+\begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
 		Tag & Description\\
@@ -96,8 +81,72 @@ This is done using a rule-based time-domain decision model. First an ontology is
 	\label{tab:strategies}
 \end{table}
 
-\section{Decisions}
-Static analysis in figure \ref{fig:Crossing_decision_tree}-\ref{fig:Passing_decision_tree}, more branches when deceleration/accelaration and colregs are included
+\subsubsection{Possible actions}
+To execute a strategy, different actions are taken. These action are a combination of an action type, and a moment to execute action. In table \ref{tab:actions} and \ref{tab:time-domain-action} these are described.
+\begin{table}[H]
+	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
+		\toprule
+		Tag & Description\\
+		\midrule
+		Continue without change & \\
+		Starboard & \\
+		Portside & \\
+		Slow down & \\
+		Speed-up & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Types of actions}
+	\label{tab:actions}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
+		\toprule
+		Tag & Description\\
+		\midrule
+		Now & \\
+		In ... minutes & \\
+		After action ... & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Time-domain for action}
+	\label{tab:time-domain-action}
+\end{table}
+
+\subsubsection{Result}
+\begin{table}[H]
+	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
+		\toprule
+		Tag & Description\\
+		\midrule
+		CPA & \\
+		Perceived risk & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Tags for safe situation criteria}
+	\label{tab:criteria-safe-situation}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
+		\toprule
+		Tag & Description\\
+		\midrule
+		Safe situation & \\
+		Communicate & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Tags for results}
+	\label{tab:result}
+\end{table}
+
+
+\section{Decision trees}
+Static analysis to identify the problem can be found in figure \ref{fig:Crossing_decision_tree}-\ref{fig:Passing_decision_tree}.
 
 \begin{figure}[p]
 	\centering
@@ -110,7 +159,7 @@ Static analysis in figure \ref{fig:Crossing_decision_tree}-\ref{fig:Passing_deci
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=.95\textwidth]{Merge_decision_tree.png}
-	\caption{Decision tree when crossing}
+	\caption{Decision tree when merging}
 	\label{fig:Merge_decision_tree}
 \end{figure}
 
@@ -118,7 +167,7 @@ Static analysis in figure \ref{fig:Crossing_decision_tree}-\ref{fig:Passing_deci
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=.9\textwidth]{Over-taking_decision_tree.png}
-	\caption{Decision tree when crossing}
+	\caption{Decision tree when over-taking}
 	\label{fig:Over-taking_decision_tree}
 \end{figure}
 
@@ -126,7 +175,7 @@ Static analysis in figure \ref{fig:Crossing_decision_tree}-\ref{fig:Passing_deci
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.2\textwidth]{Passing_decision_tree.png}
-	\caption{Decision tree when crossing}
+	\caption{Decision tree when passing}
 	\label{fig:Passing_decision_tree}
 \end{figure}
 

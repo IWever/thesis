@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -50,6 +50,13 @@ CCNR.
   Rhine}.
 \newblock pages 1--94, 2017.
 
+\bibitem[Davis(1989)]{Davis1989}
+Fred~D. Davis.
+\newblock {Perceived Usefulness , Perceived Ease of Use , and User Acceptance
+  of}.
+\newblock \emph{Management Information System Research Center}, 13\penalty0
+  (3):\penalty0 319--340, 1989.
+
 \bibitem[{DNV GL}(2011)]{DNVGL2011}
 {DNV GL}.
 \newblock {Special equipment and systems - nautical safety}.
@@ -72,6 +79,14 @@ Remi Eriksen.
 Andreas Feys, Maurits van~den Boogaard, and Joan le~Poole.
 \newblock {Control concepts for navigation of autonomous ships in ports}.
 \newblock \emph{HIPER}, \penalty0 (September), 2016.
+
+\bibitem[Hetherington et~al.(2006]{Hetherington2006}
+Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
+\newblock {Safety in shipping: The human element}.
+\newblock \emph{Journal of Safety Research}, 37\penalty0 (4):\penalty0
+  401--411, 2006.
+\newblock ISSN 00224375.
+\newblock \doi{10.1016/j.jsr.2006.04.007}.
 
 \bibitem[Hodgetts et~al.(2015]{Hodgetts2015}
 Helen~M. Hodgetts, S{\'{e}}bastien Tremblay, Beno{\^{i}}t~R. Valli{\`{e}}res,
@@ -101,10 +116,34 @@ Alexander Kalloniatis, Irena Ali, Timothy Neville, Phuong La, Iain Macleod,
 \newblock \doi{10.1016/j.apergo.2017.02.002}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.apergo.2017.02.002}.
 
+\bibitem[Lyons and Havig(2014]{Lyons2014}
+Joseph~B. Lyons and Paul~R. Havig.
+\newblock {Transparency in a human-machine context: Approaches for fostering
+  shared awareness/intent}.
+\newblock \emph{Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 8525
+  LNCS\penalty0 (PART 1):\penalty0 181--190, 2014.
+\newblock ISSN 16113349.
+\newblock \doi{10.1007/978-3-319-07458-0_18}.
+
+\bibitem[McMorris et~al.(2018]{McMorris2018}
+Terry McMorris, Martin Barwood, Beverley~J. Hale, Matt Dicks, and Jo~Corbett.
+\newblock {Cognitive fatigue effects on physical performance: A systematic
+  review and meta-analysis}, 2018.
+\newblock ISSN 00319384.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0031938418300441}.
+
 \bibitem[MUNIN(2016)]{MUNIN2016}
 MUNIN.
 \newblock {About MUNIN}, 2016.
 \newblock URL \url{http://www.unmanned-ship.org/munin/about/}.
+
+\bibitem[Nedcon(2013)]{Nedcon2013}
+Nedcon.
+\newblock {Crew structure on board merchant vessels}, 2013.
+\newblock URL
+  \url{http://www.nedcon.ro/crew-structure-board-merchant-vessels-engine-department/}.
 
 \bibitem[Neerincx(2008)]{Neerincx2008}
 M.A. Neerincx.
@@ -120,6 +159,13 @@ Mark Neerincx and Jasper Linderberg.
   Guide}.
 \newblock 2012.
 \newblock URL \url{http://scetool.nl/sce{\_}manual{\_}v1.0.pdf}.
+
+\bibitem[Nieva(2018)]{Nieva2018}
+Richard Nieva.
+\newblock {Google says it's designing Duplex with 'disclosure built-in' -
+  CNET}, 2018.
+\newblock URL
+  \url{https://www.cnet.com/news/google-says-its-designing-duplex-with-disclosure-built-in/}.
 
 \bibitem[NTSB(2016{\natexlab{a}})]{NTSB2016}
 NTSB.
@@ -177,15 +223,43 @@ SMASH.
 \newblock URL
   \url{https://smartshippingchallenge.nl/initiatieven-en-innovaties/electrisch-containerschip-gouwenaar}.
 
-\bibitem[Szlapczynski and Szlapczynska(2017]{Szlapczynski2017}
+\bibitem[Speier et~al.(1999]{Speier1999}
+Cheri Speier, Joseph~S Valacich, and Iris Vessey.
+\newblock {The Influence of Task Interruption on Individual Decision Making :
+  An Information Overload Perspective}.
+\newblock \emph{Decision Sciences}, 30\penalty0 (2):\penalty0 337--360, 1999.
+
+\bibitem[Szlapczynski and Szlapczynska(2017{\natexlab{a}}]{Szlapczynski2017}
 Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock {A method of determining and visualizing safe motion parameters of a
   ship navigating in restricted waters}.
 \newblock \emph{Ocean Engineering}, 129\penalty0 (September 2016):\penalty0
-  363--373, 2017.
+  363--373, 2017{\natexlab{a}}.
 \newblock ISSN 00298018.
 \newblock \doi{10.1016/j.oceaneng.2016.11.044}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.oceaneng.2016.11.044}.
+
+\bibitem[Szlapczynski and Szlapczynska(2017{\natexlab{b}}]{Szlapczynski2017a}
+Rafal Szlapczynski and Joanna Szlapczynska.
+\newblock {Review of ship safety domains: Models and applications}.
+\newblock \emph{Ocean Engineering}, 145\penalty0 (August):\penalty0 277--289,
+  2017{\natexlab{b}}.
+\newblock ISSN 00298018.
+\newblock \doi{10.1016/j.oceaneng.2017.09.020}.
+\newblock URL \url{https://doi.org/10.1016/j.oceaneng.2017.09.020}.
+
+\bibitem[Underwood et~al.(2013]{Underwood2013}
+Geoffrey Underwood, Athy Ngai, and Jean Underwood.
+\newblock {Driving experience and situation awareness in hazard detection}.
+\newblock \emph{Safety Science}, 56:\penalty0 29--35, 2013.
+\newblock ISSN 09257535.
+\newblock \doi{10.1016/j.ssci.2012.05.025}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}.
+
+\bibitem[{US Coast Guard}()]{USCG2018}
+{US Coast Guard}.
+\newblock {AIS Messages}.
+\newblock URL \url{https://www.navcen.uscg.gov/?pageName=AISMessages}.
 
 \bibitem[{US Navy}(2017)]{USNavy2017}
 {US Navy}.
@@ -198,6 +272,14 @@ James Walliser.
 \newblock \emph{{Trust in automated systems the effect of automation level on
   trust calibration}}.
 \newblock PhD thesis, 2011.
+
+\bibitem[Washburn and Putney(2001]{Washburn2001}
+David~A. Washburn and R.~Thompson Putney.
+\newblock {Attention and task difficulty: When is performance facilitated?}
+\newblock \emph{Learning and Motivation}, 32\penalty0 (1):\penalty0 36--47,
+  2001.
+\newblock ISSN 00239690.
+\newblock \doi{10.1006/lmot.2000.1065}.
 
 \bibitem[Waterborne(2016)]{Waterborne2016}
 Waterborne.

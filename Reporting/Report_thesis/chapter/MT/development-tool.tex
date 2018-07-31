@@ -48,8 +48,31 @@ Estimation of relation between throttle, loss of speed while turning. Thus a map
 \section{Probability index}
 what should the polygons show
 
-\section{Routeplanner}
-Including the usage of waypoints with weights
+\section{Radio}
+The area in which situations are tested are not larger than the radius of an VHF radio (about 20 NM - IMO regulations)
+
+\url{http://solasv.mcga.gov.uk/m_notice/mgn/mgn324.pdf} - p8
+
+Therefore a ra
+
+\section{Controller}
+Based on the waypoints there is a simple controller to adjust the rudder angle. This controller steers based on the relative angle between the waypoint and the current position. This is done in the \emph{adjustRudder} function. The distance and relative angle is calculated, this is used in a simple decision tree to decide on the rudder angle, which is similar to a so-called "proportional controller". For this simulation it will give enough accuracy. For a better result, a "PID-controller" could be implemented:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l}
+		\toprule
+		Relative angle (\degree) & Rudder angle (\degree) \\
+		\midrule
+		25-180 & 35\\
+		10-25 & 25\\
+		0-10 & Relative angle $*$ 8/10 \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Rudder angle based on relative angle}
+	\label{tab:Rudder-angle}
+\end{table}
 
 \section{Estimation of characteristics}
 Deadweight to displacement for example

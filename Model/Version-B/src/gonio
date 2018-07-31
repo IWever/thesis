@@ -1,0 +1,66 @@
+import math
+import warnings
+
+
+def rotatePolygon(originalPolygon, rotationalCenter, rotationalAngle_deg):
+    """Rotate polygon around point with a specified angle."""
+
+    rotatedPolygon = []
+    for i in range(0, int(len(originalPolygon) / 2)):
+        point = [originalPolygon[i * 2], originalPolygon[i * 2 + 1]]
+
+        rotatedPoint = rotatePoint(point, rotationalCenter, rotationalAngle_deg)
+
+        rotatedPolygon.append(rotatedPoint[0])
+        rotatedPolygon.append(rotatedPoint[1])
+
+    return rotatedPolygon
+
+
+def rotatePoint(point, rotationalCenter, rotationalAngle_deg):
+    """Rotate a point around another point with a specified angle."""
+
+    xc = rotationalCenter[0]
+    yc = rotationalCenter[1]
+
+    xp = point[0]
+    yp = point[1]
+
+    theta = math.radians(rotationalAngle_deg)
+
+    xnew = math.cos(theta) * (xp - xc) + math.sin(theta) * (yp - yc) + xc
+    ynew = - math.sin(theta) * (xp - xc) + math.cos(theta) * (yp - yc) + yc
+
+    rotatedPoint = [xnew, ynew]
+
+    return rotatedPoint
+
+
+def overlapPolygons(polygonA, polygonB):
+    """Determine the overlapping area of two polygons."""
+
+    warnings.warn("overlapPolygon not implemented")
+    pass
+
+def testfunction():
+    print("succes")
+
+
+# Test methods
+if __name__ == "__main__":
+    point = [5, 1]
+    poly = [1, 1, 1, -1, -1, -1, -1, 1]
+    c = [1, 1]
+    angle = 180
+
+    print("original point: ", point)
+    newPoint = rotatePoint(point, c, angle)
+    print("new point: ", newPoint, " rotated over: %d degrees" % angle)
+
+    print("original polygon: ", poly)
+    pnew = rotatePolygon(poly, c, angle)
+    print("new polygon: ", pnew, " rotated over: %d degrees" % angle)
+    pnew2 = rotatePolygon(pnew, c, angle)
+    print("new polygon: ", pnew2, " rotated over: %d degrees again" % angle)
+
+    overlapPolygons(pnew, pnew2)

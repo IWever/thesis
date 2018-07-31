@@ -1,5 +1,5 @@
 \chapter{System design specification}
-The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge and the envisioned technology. The system specification consists of (a) design scenarios, (b) actors and use cases, (c) requirements, (d) claims, and (e) ontology.
+The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology.
 
 \section{Design scenarios}
 The sCE method prescribes the specification of design scenarios. Design scenarios are short stories that provide a clear description of how the user will work with the technology thereby enjoying the solution offered to one of the problem scenarios. Together, the problem and design scenarios provide a contextualized view on:
@@ -12,62 +12,158 @@ The sCE method prescribes the specification of design scenarios. Design scenario
 
 Manned ships are able to understand intentions of unmanned ships, resulting in good situational awareness. In cases they desire more information, they are able to acquire this using current systems. Without the risk for an information overload. Thereby are the additions to existing protocols for those systems easy to understand, as they use the same philosophy as current protocols.
 
-Trust in autonomous ships is formed, as the information is reliable, the interaction is similar to the interaction with other manned ships. This resulted in acceptance of unmanned ships on the general waterways. Where the risk of collisions and perceived risk did not increase.
+Trust in autonomous ships is formed, as the information is reliable, the interaction is similar to the interaction with other manned ships. This resulted in acceptance of unmanned ships on the general waterways. Where the risk for collisions and perceived risk reduces, or at least does not increase.
+
+\subsubsection{Information extraction from problem scenario}
+In the previous chapter the problem is described which has to be solved with the envisioned technology. To solve the problem, the following issues have to be tackled:
+\begin{enumerate}
+	\item Different actors are afraid of information overload.
+	\item Officer of watch is afraid to lose situational awareness.
+	\item Officer of watch is afraid to lose autonomy.
+	\item Current systems are not designed to be used by unmanned vessels.
+	\item Manned ships want to ask for support or information.
+	\item Unmanned ships want to ask for support or information.
+\end{enumerate}
+
+\subsubsection{Envisioned effect of system implementation}
+How the above mentioned problems are tackled are shortly discussed below. This shows what the result is after implementing the envisioned technology:
+\begin{enumerate}
+	\item The system will send only on demand or when it has tried any other solution. This will reduce the probability for information overload. As a threshold to check if the system is successful in solving the problem of information overload, the current amount of communication can be used.
+	\item The protocols which are currently used by the officer of watch are the same. The purpose is to make it more easy to get information. This means that the situational awareness will minimally be affected by the system on board of the manned vessel. Also here the current level of situational awareness can be used as a threshold.
+	\item By introducing an negotiating agent, decisions can be made in a similar manner to current ships. Using the decision tree it will have a favorite strategy, but it might be possible to use others if this is better for the encountered manned ship. This will ensure that the officer of watch at the manned ship, still has a feeling of autonomy, similar to that of the current situation. 
+	\item Although the current systems are not designed to be used by unmanned vessels. Are there major developments on conversational agents in the last few years. This means that voice communication is starting to become more easy to develop. Certainly when considering that a lot of radio conversations are recorded. Thus it will be more easy to train the agent. Thereby must still be considered the importance of transparent communication. Thus also being open about being a robot. 
+
+	\item Using addressed \ac{AIS} messages and a conversational agent at unmanned vessels. Manned ships will be able to ask for support or information at all time. It is even likely they will receive the information faster compared to manned-manned ship communication.
+	\item The conversational agent is most relevant for unmanned ships when they want to ask for support or information. As addressed messages are not often used at the moment. They will use the \ac{SMCP} in a similar way to how it is currently used. So not much will change compared to the current situation for manned ships.
+\end{enumerate}
 
 \section{Use case}
 Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence (use case).
 
 The use cases provide a detailed description of the interactions between the technology and its user. Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories (described in the system’s foundation).
 
-\subsubsection{Unmanned fast crew supplier crossing shipping lane in front of coaster}
-\emph{Tags: Intention}
+\subsubsection{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}
 
-\subsubsection{Unmanned fishery vessel gets close to traffic lane with VLCC}
+\emph{Tags: Intention}\todo{add more tags}
+
+A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. There she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 will pass in front of the Reefer with a distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}.
+To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This is done in the following manner:
+\begin{itemize}
+	\item The \ac{AIS}, masthead and flags are showing the vessel is sailing autonomously, without interference from crew and listening to the \ac{VHF}.
+	\item A conversation is started by the FCS2610, by calling the station on board of the Reefer and updating status in \ac{AIS}. 
+		\begin{quote}
+			Reefer, C-6-Z-G-7\\
+			Reefer, C-6-Z-G-7\\
+			This is unmanned FCS2610, 2-F-F-P-4 \\
+			Unmanned FCS2610, 2-F-F-P-4 \\
+			Switch to VHF channel seven-two\\
+			over.
+		\end{quote}
+	\item The FCS2610 waits for a response from 
+		\begin{quote}
+			Unmanned FCS2610, 2-F-F-P-4 \\
+			This is Reefer\\
+			Agree VHF channel seven-two\\
+			over.
+		\end{quote}
+	\item At \ac{VHF} channel 72, FCS2610 communicates her intentions.
+		\begin{quote}
+			Reefer, C-6-Z-G-7\\
+			This is unmanned FCS2610, 2-F-F-P-4 \\
+			Intention. I intend to pass in front with a distance of 0.5 Nautical mile.\\
+			over.
+		\end{quote}
+	\item At \ac{VHF} channel 72, Reefer confirms intention.
+		\begin{quote}
+			Unmanned FCS2610, 2-F-F-P-4 \\
+			This is Reefer, C-6-Z-G-7\\
+			Intention received. You intend to pass in front. Distance is 0.5 Nautical mile.\\
+			over.
+		\end{quote}
+	\item Close communication and pass in front.
+		\begin{quote}
+			Reefer, C-6-Z-G-7\\
+			This is unmanned FCS2610, 2-F-F-P-4 \\
+			Nothing more. Have a good watch. \\
+			Over.
+		\end{quote}
+		\begin{quote}
+			Unmanned FCS2610\\
+			This is Reefer\\
+			Thank you. \\
+			Over and out.
+		\end{quote}
+	\item Update AIS status of FCS2610 to show it has no questions, and is listening.
+\end{itemize}
+
+\subsubsection{Fishery vessel gets close to traffic lane with unmanned VLCC}
 \emph{Tags: Question}
 
 NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc
 
+\section{Functional requirements and claims}
+In the sCE method, use cases are used to derive functional requirements and claims, i.e. specific functionalities the technology should provide to its user followed by the system’s objectives, and the hypotheses to be tested during system evaluations. This is accomplished by annotating all functional requirements with their underlying objectives (called claims).
 
+This explicit linking of requirements to claims enables designers to formulate hypotheses that need to be tested in system evaluations to justify the adoption of the functional requirement. If the claim cannot be proven to be valid through system evaluations, the designers need to refine their system design, for instance, by trying to improve the functionality, replacing the functionality with a different one, or dropping the functionality and the claim altogether (i.e. by deciding that the objective is not reachable at this point). Either way, there is no use of including a functionality that does not achieve its underlying claims. User stories are used to do this, these are usually in a from: "As an $\langle actor \rangle$, I want to $\langle what? \rangle$, so that $\langle why? \rangle$". Followed by an acceptance criteria, to determine when this part is correctly implemented.
 
-\section{Functional requirements}
-In the sCE method, use cases are used to derive functional requirements, i.e. specific functionalities the technology should provide to its user.
-
-Types of messages:
+\subsubsection{Actors}
+The primary actors who will be taken into account in this first iteration are:
 \begin{itemize}
-	\item \emph{Call}. Start of conversation, in which a ship only requests contact with another ship. It might also be necessary to introduce as an unmanned vessel (why does google assistant do this?)
-	\item \emph{Acknowledge}. Accept invitation for conversation.
-	\item \emph{Message}. Starts with "marker word", followed by the actual message and ended by a request for confirmation. Therefore should be followed by a response.
-	\item \emph{Respond}. Response to the previous message or response.
-	\item \emph{Close}. End conversation with greeting.
+	\item Officer of watch
+	\item Unmanned vessel
+	\item Nearby vessel
 \end{itemize}
 
-Status:
+\subsubsection{User stories}
 \begin{itemize}
-	\item \emph{Listening}. Listening to the radio without taking action.
-	\item \emph{Waiting}. Waiting for a response by other ship.
-	\item \emph{Negotiating}. Deciding on the right strategy by discussing this with other ship(s).
-	\item \emph{Messaging}. Sending a message. While sending it is not possible to receive a message.
+	\item As an officer of watch, I want to know if there are unmanned ships in the area, so that I know if I have to adapt my way of communication. \ac{AIS} shows if ship is manned, and what its status is.
+	
+	\item As an officer of watch, I want to validate if information received via \ac{AIS} is correct, so that I can base my decision on correct information. When officer of watch asks unmanned ship via \ac{VHF}, the answer should be reliable and based on current information.
+	
+	\item As an officer of watch, I want to make my intentions clear towards all other ships, so that they can anticipate to this. Shared intentions should be incorporated into the decision making process of unmanned ships.
+	
+	\item As an officer of watch, I want to be able to make small mistakes when following a protocol, so that I can still act fast when I do not know the exact \ac{SMCP} sentence. The unmanned vessel should understand the message, even if its not exactly the \ac{SMCP} sentence.
+	
+	\item As an officer of watch, I want to use existing protocols, so that the extra effort to communicate with unmanned vessels will be kept to a minimum. Current seafarers should be able to understand what they should be doing without an explanation on the protocol. 
+	
+	\item As an unmanned vessel, I want to initiate communication, so that I can exchange information or ask questions to another specific ship. The unmanned ship needs situational awareness based on a digital model of the reality to know which ship sails where and what the interactions could be in order to make the right decision.
+	
+	\item As an unmanned vessel, I want to validate if acquired information is correct, so that I can base my decision on correct information. Check via communication if digital model is correct.
+	
+	\item As an unmanned vessel, I want to be able to check if they understand my intentions when other ships do not act as expected, so that I know if I should change my strategy. The communication should be incorporated in the decision making process and unexpected actions by others ships should be registered.
+	
+	\item As a nearby vessel, I want to receive only information which is relevant to me, so that the risk for information overload is limited. By switching \ac{VHF} channels for full conversations this is similar to the current way of working.
 \end{itemize}
-
-\section{Claim}
-The sCE method prescribes a strong link between the system’s functional requirements, the system’s objectives, and the hypotheses to be tested during system evaluations. This
-is accomplished by annotating all functional requirements with their underlying objectives (called claims).
-
-This explicit linking of requirements to claims enables designers to formulate hypotheses that need to be tested in system evaluations to justify the adoption of the functional requirement. If the claim cannot be proven to be valid through system evaluations, the designers need to refine their system design, for instance, by trying to improve the functionality, replacing the functionality with a different one, or dropping the functionality and the claim altogether (i.e. by deciding that the objective is not reachable at this point). Either way, there is no use of including a functionality that does not achieve its underlying claims.
+\todo{add more user stories}
 
 \section{Ontology}
 Lastly, the sCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project.
 
+Status:
+\begin{description}
+	\item [Listening]. Listening to the radio without taking action.
+	\item [Waiting]. Waiting for a response by other ship.
+	\item [Negotiating]. Deciding on the right strategy by discussing this with other ship(s).
+	\item [Messaging]. Sending a message. While sending it is not possible to receive a message.
+\end{description}
+
 \url{http://www.segeln.co.at/media/pdf/smcp.pdf}
 
-Marker word: \todo{add description}
-\begin{itemize}
-	\item \emph{Advice}
-	\item \emph{Information}
-	\item \emph{Warning}
-	\item \emph{Intention}
-	\item \emph{Question}
-	\item \emph{Instruction}
-	\item \emph{Request}
-\end{itemize}
+Types of messages:
+\begin{description}
+	\item [Call] Start of conversation, in which a ship only requests contact with another ship. It might also be necessary to introduce as an unmanned vessel (why does google assistant do this?)
+	\item [Acknowledge] Accept invitation for conversation.
+	\item [Message] Starts with "marker word", followed by the actual message and ended by a request for confirmation. In the \ac{SMCP} the following marker words are used:
+	\begin{itemize}
+		\item \emph{Advice}
+		\item \emph{Information}
+		\item \emph{Warning}
+		\item \emph{Intention}
+		\item \emph{Question}
+		\item \emph{Instruction}
+		\item \emph{Request}
+	\end{itemize}
+	\item [Respond] Response to the previous message or response.
+	\item [Close] End conversation with greeting.
+\end{description}
 

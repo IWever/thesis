@@ -1,39 +1,43 @@
 \contentsline {todo}{Make new title}{}{section*.1}
-\contentsline {todo}{Add figure with line with available information, certainty correct decision is being made. Supporting why research is relevant.}{2}{section*.12}
-\contentsline {todo}{link structure to chapters}{2}{section*.13}
-\contentsline {todo}{it this the complete list?}{6}{section*.15}
-\contentsline {todo}{make a cleaner infographic showing the different parts of the bridge}{6}{section*.16}
-\contentsline {todo}{Is this relevant, if yes, describe different parts}{7}{section*.18}
-\contentsline {todo}{Categorize into communication, situational awareness, etc.}{7}{section*.20}
-\contentsline {todo}{Are these really relevant accidents, add more/other?}{9}{section*.25}
-\contentsline {todo}{Add images of resulting damages}{9}{section*.26}
-\contentsline {todo}{Summaries all lessons learned from the above mentioned accidents}{14}{section*.31}
-\contentsline {todo}{Reference to infographic with time-line unmanned/autonomous levels}{16}{section*.32}
-\contentsline {todo}{give more info on projects and why my research has added value to them.}{17}{section*.34}
-\contentsline {todo}{more info on JIP and Soevereign}{17}{section*.36}
-\contentsline {todo}{Make infographic}{17}{section*.37}
-\contentsline {todo}{update with info from IRYOON}{18}{section*.40}
-\contentsline {todo}{Make model in same style as infographic and situation sketches, using blocks as mentioned below, also use notes from Soevereign meeting}{20}{section*.42}
-\contentsline {todo}{add picture of OODA loop}{24}{section*.44}
-\contentsline {todo}{ref to ooda-loop}{25}{section*.45}
-\contentsline {todo}{use colreg boundaries in junction}{25}{section*.46}
-\contentsline {todo}{add definition of static hazard and more examples, to make link to evaluation tool and tags}{26}{section*.49}
-\contentsline {todo}{also describe the rules, which might be based on signs}{26}{section*.50}
-\contentsline {todo}{add more examples to describe consequence on strategy}{26}{section*.51}
-\contentsline {todo}{add more examples to describe consequence on strategy}{26}{section*.52}
-\contentsline {todo}{convert to nice latex math}{27}{section*.54}
-\contentsline {todo}{convert to nice latex math}{28}{section*.55}
-\contentsline {todo}{use pseudecode with loop to skip timesteps, speeding up the calculation}{29}{section*.56}
-\contentsline {todo}{Communication, Observations, Strategy based on current information, Key criteria}{32}{section*.58}
-\contentsline {todo}{add screenshot of simulation}{33}{section*.59}
-\contentsline {todo}{make table}{34}{section*.60}
-\contentsline {todo}{discuss another scenario}{34}{section*.61}
-\contentsline {todo}{add user stories to appendix}{40}{section*.71}
-\contentsline {todo}{Extent the acceptance criteria for the full application}{40}{section*.72}
-\contentsline {todo}{is dit een actor?}{47}{section*.75}
-\contentsline {todo}{link papers to questions and answer}{49}{section*.77}
-\contentsline {todo}{is it possible to send direct messages via AIS?}{50}{section*.78}
-\contentsline {todo}{add description}{53}{section*.79}
-\contentsline {todo}{describe formula to determine crossingpoint of line}{62}{section*.83}
-\contentsline {todo}{CPA calculation}{62}{section*.84}
-\contentsline {todo}{refer to timeline inforgraphic in previous chapter}{64}{section*.87}
+\contentsline {todo}{list of used symbols}{iv}{section*.6}
+\contentsline {todo}{Add figure with line with available information, certainty correct decision is being made. Supporting why research is relevant.}{2}{section*.13}
+\contentsline {todo}{link structure to chapters}{2}{section*.14}
+\contentsline {todo}{simplify graphic to make it more relevant}{6}{section*.15}
+\contentsline {todo}{give extended descriptions of systems}{7}{section*.21}
+\contentsline {todo}{How is information used. Mention parts on information overload. Thereby also the difference between ships. Officer walking around on big ship, vs small bridge on a tug for example.}{9}{section*.25}
+\contentsline {todo}{Are these really relevant accidents, add more/other?}{16}{section*.33}
+\contentsline {todo}{Add images of resulting damages}{16}{section*.34}
+\contentsline {todo}{Summaries all lessons learned from the above mentioned accidents}{21}{section*.39}
+\contentsline {todo}{Reference to infographic with time-line unmanned/autonomous levels}{23}{section*.40}
+\contentsline {todo}{change name so all projects are positive}{23}{section*.41}
+\contentsline {todo}{give more info on projects and why my research has added value to them.}{24}{section*.43}
+\contentsline {todo}{more info on JIP and Soevereign}{24}{section*.45}
+\contentsline {todo}{Make infographic}{24}{section*.46}
+\contentsline {todo}{update with info from IRYOON}{25}{section*.49}
+\contentsline {todo}{Make model in same style as infographic and situation sketches, using blocks as mentioned below, also use notes from Soevereign meeting}{27}{section*.51}
+\contentsline {todo}{add picture of OODA loop}{31}{section*.53}
+\contentsline {todo}{ref to ooda-loop}{32}{section*.54}
+\contentsline {todo}{use colreg boundaries in junction and terminology (head-on, overtaking, etc.)}{32}{section*.55}
+\contentsline {todo}{add definition of static hazard and more examples, to make link to evaluation tool and tags}{33}{section*.58}
+\contentsline {todo}{also describe the rules, which might be based on signs}{33}{section*.59}
+\contentsline {todo}{add more examples to describe consequence on strategy}{33}{section*.60}
+\contentsline {todo}{add more examples to describe consequence on strategy}{33}{section*.61}
+\contentsline {todo}{convert to nice latex math}{34}{section*.63}
+\contentsline {todo}{convert to nice latex math}{35}{section*.64}
+\contentsline {todo}{use pseudecode with loop to skip timesteps, speeding up the calculation}{36}{section*.65}
+\contentsline {todo}{add process diagram}{37}{section*.66}
+\contentsline {todo}{Communication, Observations, Strategy based on current information, Key criteria}{44}{section*.80}
+\contentsline {todo}{add screenshot of simulation}{45}{section*.81}
+\contentsline {todo}{make table}{46}{section*.82}
+\contentsline {todo}{discuss another scenario}{46}{section*.83}
+\contentsline {todo}{summarize relevant lessons, and what NOT should be forgotton}{46}{section*.84}
+\contentsline {todo}{add user stories to appendix}{48}{section*.85}
+\contentsline {todo}{Extent the acceptance criteria for the full application}{48}{section*.86}
+\contentsline {todo}{add link to abstract model}{54}{section*.88}
+\contentsline {todo}{citation or reference}{56}{section*.90}
+\contentsline {todo}{focus op situation awareness en taakbelasting, dialoog aspecten}{58}{section*.92}
+\contentsline {todo}{link papers to questions and answer, keep short}{58}{section*.93}
+\contentsline {todo}{add more tags}{62}{section*.94}
+\contentsline {todo}{add more user stories}{65}{section*.95}
+\contentsline {todo}{describe formula to determine crossingpoint of line}{73}{section*.97}
+\contentsline {todo}{CPA calculation}{73}{section*.98}

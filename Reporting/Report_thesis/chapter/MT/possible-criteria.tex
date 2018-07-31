@@ -1,4 +1,5 @@
 \chapter{Definition of criteria}
+\ref{ch:criteria}
 To determine which strategy works best, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. First the criteria which are true or false are discussed, followed by the current and proposed algorithms to calculate the other criteria.
 
 \section{Conditional criteria}
@@ -19,7 +20,7 @@ Combine paths to ensure bold movements
 \section{Calculations based on current systems}
 Within \ac{ARPA} and \ac{ECDIS} the criteria are often already calculated, using linearized algorithms. Below these calculations are discussed for the \ac{CPA} and crossing position.
 
-\subsection{\ac{CPA}}
+\subsection{\acf{CPA}}
 Code snippet \todo{convert to nice latex math}:
 \begin{lstlisting}
 xA = shipA.location[0]
@@ -46,7 +47,7 @@ time_s = (((-xA + xB) * UxA - UyA * (yA - yB)) * VA + VB * ((xA - xB) * UxB + Uy
 (UxA ** 2 + UyA ** 2) * VA ** 2 - 2 * VB * (UxA * UxB + UyA * UyB) * VA + VB ** 2 * (UxB ** 2 + UyB ** 2))
 \end{lstlisting}
 
-\subsection{Crossing}
+\subsection{Crossing distance}
 Code snippet \todo{convert to nice latex math}:
 \begin{lstlisting}
 locA = np.transpose(np.matrix(shipA.location))
@@ -68,7 +69,7 @@ Using the planned path of the vessel, better estimations can be made for the clo
 
 Disadvantage: heavier computation and less accuracy due to numerical solve
 
-\subsection{CPA}
+\subsection{\acf{CPA}}
 \begin{enumerate}
 	\item Check if something has changed since last calculation
 	\begin{enumerate}

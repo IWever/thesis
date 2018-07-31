@@ -22,6 +22,10 @@ while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Feys2016
 while executing---line 1428 of file tudelft-report.bst
 Warning--there's a number but no volume in Feys2016
+0 is an integer literal, not a function, for entry Hetherington2006
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Hetherington2006
+while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Hodgetts2015
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Hodgetts2015
@@ -29,6 +33,14 @@ while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Kalloniatis2017
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Kalloniatis2017
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Lyons2014
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Lyons2014
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry McMorris2018
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry McMorris2018
 while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Neerincx2012
 while executing---line 1428 of file tudelft-report.bst
@@ -50,11 +62,28 @@ while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry HFW2002
 while executing---line 1428 of file tudelft-report.bst
 Warning--empty note in HFW2002
+0 is an integer literal, not a function, for entry Speier1999
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Speier1999
+while executing---line 1428 of file tudelft-report.bst
 0 is an integer literal, not a function, for entry Szlapczynski2017
 while executing---line 1428 of file tudelft-report.bst
 You can't pop an empty literal stack for entry Szlapczynski2017
 while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Szlapczynski2017a
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Szlapczynski2017a
+while executing---line 1428 of file tudelft-report.bst
+0 is an integer literal, not a function, for entry Underwood2013
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Underwood2013
+while executing---line 1428 of file tudelft-report.bst
+Warning--empty year in USCG2018
 Warning--empty institution in USNavy2017
 Warning--empty school in Walliser2011
+0 is an integer literal, not a function, for entry Washburn2001
+while executing---line 1428 of file tudelft-report.bst
+You can't pop an empty literal stack for entry Washburn2001
+while executing---line 1428 of file tudelft-report.bst
 Warning--empty journal in Waterborne2016
-(There were 22 error messages)
+(There were 36 error messages)
