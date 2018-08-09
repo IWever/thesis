@@ -19,10 +19,11 @@ class Ship():
         self.speed = 0
         self.headingChange = 0
 
-        self.acceleration = 0
+        self.speedSetting = 0
 
         self.telegraphSpeed = 0
         self.rudderAngle = 0
+        self.rudderAngleReal = 0
 
         # Memory of the ship on surroundings
         self.waypoints = []

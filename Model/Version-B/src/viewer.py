@@ -298,7 +298,7 @@ class Viewer:
             self.shipName.set("%s" % selectedShip.name)
             self.shipSpeed.set("Speed: %2.1f knots" % selectedShip.speed)
             self.shipCourse.set("Course: %3.1f degrees" % selectedShip.course)
-            self.shipRudder.set("Rudder: %2.1f degrees" % selectedShip.rudderAngle)
+            self.shipRudder.set("Rudder: %2.1f degrees" % selectedShip.rudderAngleReal)
 
         else:
             self.shipName.set("First select a ship")

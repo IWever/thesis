@@ -1,4 +1,5 @@
 \chapter{System design specification}
+\label{ch:system-design}
 The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology.
 
 \section{Design scenarios}
@@ -42,9 +43,12 @@ Scenarios are used to create more specific descriptions of step-by-step interact
 
 The use cases provide a detailed description of the interactions between the technology and its user. Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories (described in the system’s foundation).
 
+NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc.
+\todo{Rewrite introduction with purpose of these usecases}
+
 \subsubsection{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}
 
-\emph{Tags: Intention}\todo{add more tags}
+\emph{Tags: Intention, Crossing, Messaging}
 
 A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. There she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 will pass in front of the Reefer with a distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}.
 To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This is done in the following manner:
@@ -98,8 +102,7 @@ To ensure the Reefer understands the intentions of the FCS2610, communication is
 
 \subsubsection{Fishery vessel gets close to traffic lane with unmanned VLCC}
 \emph{Tags: Question}
-
-NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc
+\todo{describe use case}
 
 \section{Functional requirements and claims}
 In the sCE method, use cases are used to derive functional requirements and claims, i.e. specific functionalities the technology should provide to its user followed by the system’s objectives, and the hypotheses to be tested during system evaluations. This is accomplished by annotating all functional requirements with their underlying objectives (called claims).
@@ -134,26 +137,29 @@ The primary actors who will be taken into account in this first iteration are:
 	
 	\item As a nearby vessel, I want to receive only information which is relevant to me, so that the risk for information overload is limited. By switching \ac{VHF} channels for full conversations this is similar to the current way of working.
 \end{itemize}
-\todo{add more user stories}
+\todo{add more user stories?}
 
 \section{Ontology}
-Lastly, the sCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project.
+Lastly, the sCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project. For this project they are categorized in status, messages and situations.
 
-Status:
+\subsection{Status}
+By defining different states for the system, does the system know which functions and protocols should be executed. The different states are described below:
 \begin{description}
-	\item [Listening]. Listening to the radio without taking action.
-	\item [Waiting]. Waiting for a response by other ship.
-	\item [Negotiating]. Deciding on the right strategy by discussing this with other ship(s).
-	\item [Messaging]. Sending a message. While sending it is not possible to receive a message.
+	\item [Listening] Listening to the radio without taking action.
+	\item [Waiting] Waiting for a response by other ship.
+	\item [Negotiating] Deciding on the right strategy by discussing this with other ship(s).
+	\item [Messaging] Sending a message. While sending it is not possible to receive a message.
+	\item [Updating] Adjusting the information stored within the system, which will consecutively be send to others ships via \ac{AIS}.
+	\item [Unavailable] There is a problem with the system, which makes it unable to communicate.
 \end{description}
+These states will also be communicated via \ac{AIS}, to ensure transparency between different agents and avoid confusion.
 
-\url{http://www.segeln.co.at/media/pdf/smcp.pdf}
-
-Types of messages:
+\subsection{Types of messages}
+Both in the messaging and negotiation states, will there be messages send. These messages form the conversation. In the different phases of the conversation, different messages will be send. These are described below:
 \begin{description}
-	\item [Call] Start of conversation, in which a ship only requests contact with another ship. It might also be necessary to introduce as an unmanned vessel (why does google assistant do this?)
+	\item [Call] Start of conversation, in which a ship only requests contact with another ship.
 	\item [Acknowledge] Accept invitation for conversation.
-	\item [Message] Starts with "marker word", followed by the actual message and ended by a request for confirmation. In the \ac{SMCP} the following marker words are used:
+	\item [Message] Starts with "marker word" to clarify communication purpose, followed by the actual message and ended by a request for confirmation. In the \ac{SMCP} the following marker words are used:
 	\begin{itemize}
 		\item \emph{Advice}
 		\item \emph{Information}
@@ -163,7 +169,17 @@ Types of messages:
 		\item \emph{Instruction}
 		\item \emph{Request}
 	\end{itemize}
-	\item [Respond] Response to the previous message or response.
+	\item [Response] Response to the previous message in conversation.
 	\item [Close] End conversation with greeting.
 \end{description}
+As mentioned before the \acf{SMCP} will be used, as this is a known protocol for seafarers. This protocol has its own ontology. This is described by \ac{IMO} in the \href{https://puc.overheid.nl/doc/PUC_1418_14/1/#16830}{regulations}.
 
+\subsection{Situation}
+To make the link with the decision model and problem identification as described in part \ref{part:MT}. Will the protocol use the same identifiers for situations. 
+\begin{description}
+	\item [Passing] Ships do get close, but the paths are not crossing
+	\item [Crossing] Paths of ships are crossing
+	\item [Merge] Two ships from different directions, heading in the same direction, strategy might lead in many cases to a take-over.
+	\item [Take-over] Two ships following the same path with different speeds.
+\end{description}
+These situations are described in more detail in section \ref{sec:situation-identification}, using path descriptions.

@@ -12,72 +12,73 @@
 \BOOKMARK [1][-]{section.1.6}{Relevant systems for autonomous shipping}{chapter.1}% 12
 \BOOKMARK [0][-]{chapter.2}{Accidents}{part.1}% 13
 \BOOKMARK [1][-]{section.2.1}{MV AL ORAIQ and MV FLINTERSTAR}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.2}{USS FITZGERALD and MV ACX CRYSTAL}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.3}{USS JOHN S MCCAIN and MV ALNIC MC}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.4}{MV CONTI PERIDOT and MV CARLA MAERSK}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.5}{Lessons learned}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{Steps towards the future}{part.1}% 19
-\BOOKMARK [1][-]{section.3.1}{Why autonomous and unmanned shipping}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{Projects}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{Other stakeholders}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.4}{Possible use cases}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.5}{Changes in communication}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.6}{Challenges when combining unmanned and manned vessel}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{Abstract model}{part.1}% 26
-\BOOKMARK [1][-]{section.4.1}{Ship characteristics}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Influencing factors}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Information and communication}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.4}{Situational awareness}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.5}{Focus of this research}{chapter.4}% 31
-\BOOKMARK [-1][-]{part.2}{II Relevance of criteria for decision making}{}% 32
-\BOOKMARK [0][-]{chapter.5}{Identify the existence of a problem}{part.2}% 33
-\BOOKMARK [1][-]{section.5.1}{Situation identification}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Strategy orientation}{chapter.5}% 35
-\BOOKMARK [0][-]{chapter.6}{Definition of criteria}{part.2}% 36
-\BOOKMARK [1][-]{section.6.1}{Conditional criteria}{chapter.6}% 37
-\BOOKMARK [1][-]{section.6.2}{Calculations based on current systems}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.3}{Proposed algorithm based on planned path}{chapter.6}% 39
-\BOOKMARK [0][-]{chapter.7}{Decision-model}{part.2}% 40
-\BOOKMARK [1][-]{section.7.1}{Decision phases}{chapter.7}% 41
-\BOOKMARK [1][-]{section.7.2}{Tags for decision making}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.3}{Decision trees}{chapter.7}% 43
-\BOOKMARK [0][-]{chapter.8}{Analysis of scenarios}{part.2}% 44
-\BOOKMARK [1][-]{section.8.1}{Entering Maasgeul towards North Sea, Rotterdam}{chapter.8}% 45
-\BOOKMARK [1][-]{section.8.2}{Second scenario}{chapter.8}% 46
-\BOOKMARK [1][-]{section.8.3}{Relevant lessons}{chapter.8}% 47
-\BOOKMARK [0][-]{chapter.9}{Development of testing environment}{part.2}% 48
-\BOOKMARK [1][-]{section.9.1}{Basic design}{chapter.9}% 49
-\BOOKMARK [1][-]{section.9.2}{Manoeuvring capability model}{chapter.9}% 50
-\BOOKMARK [1][-]{section.9.3}{Probability index}{chapter.9}% 51
-\BOOKMARK [1][-]{section.9.4}{Radio}{chapter.9}% 52
-\BOOKMARK [1][-]{section.9.5}{Controller}{chapter.9}% 53
-\BOOKMARK [1][-]{section.9.6}{Estimation of characteristics}{chapter.9}% 54
-\BOOKMARK [1][-]{section.9.7}{Application design}{chapter.9}% 55
-\BOOKMARK [0][-]{chapter.10}{Manoeuvrability requirements for safe operation}{part.2}% 56
-\BOOKMARK [1][-]{section.10.1}{Critical scenarios}{chapter.10}% 57
-\BOOKMARK [1][-]{section.10.2}{Criteria}{chapter.10}% 58
-\BOOKMARK [1][-]{section.10.3}{Resulting design matrix}{chapter.10}% 59
-\BOOKMARK [0][-]{chapter.11}{Lessons learned}{part.2}% 60
-\BOOKMARK [1][-]{section.11.1}{Factors not taken into account}{chapter.11}% 61
-\BOOKMARK [1][-]{section.11.2}{Result}{chapter.11}% 62
-\BOOKMARK [-1][-]{part.3}{III Protocol to enable teamwork between manned and unmanned ships}{}% 63
-\BOOKMARK [0][-]{chapter.12}{Foundation}{part.3}% 64
-\BOOKMARK [1][-]{section.12.1}{Operational demands}{chapter.12}% 65
-\BOOKMARK [1][-]{section.12.2}{Human factors}{chapter.12}% 66
-\BOOKMARK [1][-]{section.12.3}{Envisioned technology}{chapter.12}% 67
-\BOOKMARK [0][-]{chapter.13}{System design specification}{part.3}% 68
-\BOOKMARK [1][-]{section.13.1}{Design scenarios}{chapter.13}% 69
-\BOOKMARK [1][-]{section.13.2}{Use case}{chapter.13}% 70
-\BOOKMARK [1][-]{section.13.3}{Functional requirements and claims}{chapter.13}% 71
-\BOOKMARK [1][-]{section.13.4}{Ontology}{chapter.13}% 72
-\BOOKMARK [0][-]{chapter.14}{Design evaluation}{part.3}% 73
-\BOOKMARK [1][-]{section.14.1}{Artefact}{chapter.14}% 74
-\BOOKMARK [1][-]{section.14.2}{Evaluation method}{chapter.14}% 75
-\BOOKMARK [1][-]{section.14.3}{Evaluation results}{chapter.14}% 76
-\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 77
-\BOOKMARK [0][-]{chapter.15}{Results}{part.4}% 78
-\BOOKMARK [0][-]{chapter.16}{Conclusion}{part.4}% 79
-\BOOKMARK [1][-]{section.16.1}{Answers to research questions}{chapter.16}% 80
-\BOOKMARK [1][-]{section.16.2}{Recommendations for future research}{chapter.16}% 81
-\BOOKMARK [-1][-]{part.5}{V TEMPORARY: Old text}{}% 82
-\BOOKMARK [0][-]{chapter*.99}{Bibliography}{part.5}% 83
+\BOOKMARK [1][-]{section.2.2}{MV ARTADI and MV ST-GERMAIN}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.3}{USS FITZGERALD and MV ACX CRYSTAL}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.4}{USS JOHN S MCCAIN and MV ALNIC MC}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.5}{MV CONTI PERIDOT and MV CARLA MAERSK}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.6}{Lessons learned}{chapter.2}% 19
+\BOOKMARK [0][-]{chapter.3}{Steps towards the future}{part.1}% 20
+\BOOKMARK [1][-]{section.3.1}{Why autonomous and unmanned shipping}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Projects}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.3}{Other stakeholders}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Possible use cases}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{Changes in communication}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.6}{Challenges when combining unmanned and manned vessel}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Abstract model}{part.1}% 27
+\BOOKMARK [1][-]{section.4.1}{Ship characteristics}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Influencing factors}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Information and communication}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Situational awareness}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.5}{Focus of this research}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Development of testing environment}{part.1}% 33
+\BOOKMARK [1][-]{section.5.1}{Basic design}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Manoeuvring capability model}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Probability index}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Radio}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{Controller}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.6}{Estimation of characteristics}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.7}{Application design}{chapter.5}% 40
+\BOOKMARK [-1][-]{part.2}{II Relevance of criteria for decision making}{}% 41
+\BOOKMARK [0][-]{chapter.6}{Identify the existence of a problem}{part.2}% 42
+\BOOKMARK [1][-]{section.6.1}{Situation identification}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.2}{Strategy orientation}{chapter.6}% 44
+\BOOKMARK [0][-]{chapter.7}{Definition of criteria}{part.2}% 45
+\BOOKMARK [1][-]{section.7.1}{Conditional criteria}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.2}{Calculations based on current systems}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.3}{Proposed algorithm based on planned path}{chapter.7}% 48
+\BOOKMARK [0][-]{chapter.8}{Decision-model}{part.2}% 49
+\BOOKMARK [1][-]{section.8.1}{Decision phases}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.2}{Tags for decision making}{chapter.8}% 51
+\BOOKMARK [1][-]{section.8.3}{Decision trees}{chapter.8}% 52
+\BOOKMARK [0][-]{chapter.9}{Analysis of scenarios}{part.2}% 53
+\BOOKMARK [1][-]{section.9.1}{Entering Maasgeul towards North Sea, Rotterdam}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.2}{Second scenario}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.3}{Relevant lessons}{chapter.9}% 56
+\BOOKMARK [0][-]{chapter.10}{Manoeuvrability requirements for safe operation}{part.2}% 57
+\BOOKMARK [1][-]{section.10.1}{Critical scenarios}{chapter.10}% 58
+\BOOKMARK [1][-]{section.10.2}{Criteria}{chapter.10}% 59
+\BOOKMARK [1][-]{section.10.3}{Resulting design matrix}{chapter.10}% 60
+\BOOKMARK [0][-]{chapter.11}{Lessons learned}{part.2}% 61
+\BOOKMARK [1][-]{section.11.1}{Factors not taken into account}{chapter.11}% 62
+\BOOKMARK [1][-]{section.11.2}{Result}{chapter.11}% 63
+\BOOKMARK [-1][-]{part.3}{III Protocol to enable teamwork between manned and unmanned ships}{}% 64
+\BOOKMARK [0][-]{chapter.12}{Foundation}{part.3}% 65
+\BOOKMARK [1][-]{section.12.1}{Operational demands}{chapter.12}% 66
+\BOOKMARK [1][-]{section.12.2}{Human factors}{chapter.12}% 67
+\BOOKMARK [1][-]{section.12.3}{Envisioned technology}{chapter.12}% 68
+\BOOKMARK [0][-]{chapter.13}{System design specification}{part.3}% 69
+\BOOKMARK [1][-]{section.13.1}{Design scenarios}{chapter.13}% 70
+\BOOKMARK [1][-]{section.13.2}{Use case}{chapter.13}% 71
+\BOOKMARK [1][-]{section.13.3}{Functional requirements and claims}{chapter.13}% 72
+\BOOKMARK [1][-]{section.13.4}{Ontology}{chapter.13}% 73
+\BOOKMARK [0][-]{chapter.14}{Design evaluation}{part.3}% 74
+\BOOKMARK [1][-]{section.14.1}{Artefact}{chapter.14}% 75
+\BOOKMARK [1][-]{section.14.2}{Evaluation method}{chapter.14}% 76
+\BOOKMARK [1][-]{section.14.3}{Evaluation results}{chapter.14}% 77
+\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 78
+\BOOKMARK [0][-]{chapter.15}{Results}{part.4}% 79
+\BOOKMARK [0][-]{chapter.16}{Conclusion}{part.4}% 80
+\BOOKMARK [1][-]{section.16.1}{Answers to research questions}{chapter.16}% 81
+\BOOKMARK [1][-]{section.16.2}{Recommendations for future research}{chapter.16}% 82
+\BOOKMARK [-1][-]{part.5}{V TEMPORARY: Old text}{}% 83
+\BOOKMARK [0][-]{chapter*.111}{Bibliography}{part.5}% 84

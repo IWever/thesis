@@ -1,4 +1,5 @@
 from src.manoeuvring import manoeuverShip
+import math
 
 
 class Simulation:
@@ -46,10 +47,12 @@ class Simulation:
 
         if speed is None:
             ship.speed = ship.vmean
-            ship.telegraphSpeed = ship.speed / ship.vmax
+            ship.telegraphSpeed = (ship.speed / ship.vmax) ** 2
+            ship.speedSetting = ship.speed
         else:
             ship.speed = speed
-            ship.telegraphSpeed = ship.speed / ship.vmax
+            ship.telegraphSpeed = (ship.speed / ship.vmax) ** 2
+            ship.speedSetting = ship.speed
 
         if firstWaypoint is None:
             pass

@@ -1,5 +1,6 @@
 import math
 import warnings
+import numpy as np
 
 """" Function to describe manoeuvring capabilities """
 
@@ -14,11 +15,28 @@ def manoeuverShip(ship, dt):
     beta = math.radians(ship.drift) * dt
     omega_z = math.radians(ship.headingChange)
 
-    delta = math.radians(ship.rudderAngle)
-    tau = ship.telegraphSpeed
+    # Speed with acceleration
+    dragfactor = 0.08
+    C = dragfactor * ship.DWT * ship.vmax**2
+    acceleration = (C * ship.telegraphSpeed - dragfactor * ship.DWT * np.sign(ship.speedSetting) * ship.speedSetting ** 2) / ship.DWT
 
-    # update ship speed
-    v = tau * ship.vmax * 1852 / 3600 * (1 - ship.drift / 30)
+    if abs(acceleration) > 0.5:
+        acceleration = 0.5 * np.sign(acceleration)
+
+    ship.speedSetting += float(acceleration * dt)
+
+    v = ship.speedSetting * 1852 / 3600 * (1 - abs(ship.drift) / 30)
+
+    # Rudder angle with change [Artyszuk, 2016, ch6]
+    rudderError = ship.rudderAngle - ship.rudderAngleReal
+
+    if abs(rudderError) > 2.5 * dt:
+        ship.rudderAngleReal += 2.5 * dt * np.sign(rudderError)
+    else:
+        ship.rudderAngleReal += rudderError * dt
+
+    delta = math.radians(ship.rudderAngleReal)
+
 
     # Dimensionless factors
     try:

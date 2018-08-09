@@ -1,14 +1,9 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[{Agile Manifesto}(2001)]{Agile2001}
-{Agile Manifesto}.
-\newblock {Manifesto for Agile Software Development}, 2001.
-\newblock URL \url{http://agilemanifesto.org/}.
 
 \bibitem[Arciszewski et~al.(2009]{Arciszewski2009}
 Henryk~F.R. Arciszewski, Tjerk~E. {De Greef}, and Jan~H. {Van Delft}.
@@ -39,10 +34,25 @@ John~R. Boyd.
 \newblock URL
   \url{http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:A+discourse+on+Wining+and+Losing{\#}0}.
 
-\bibitem[Breda and Passenier(1999]{Breda1999}
-L~Van Breda and P~O Passenier.
-\newblock {The effect of a superimposed display on navigational performance}.
-\newblock In \emph{Proceedings twelfth ship control systems symposium}, 1999.
+\bibitem[Bradshaw et~al.(2003]{Bradshaw2003}
+Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
+  Robert Hoffman, Renia Jeffers, Debbie Prescott, Niranjan Suri, Andrzej Uszok,
+  and Ron {Van Hoof}.
+\newblock {Adjustable Autonomy and Human-Agent Teamwork in Practice: An Interim
+  Report on Space Applications}.
+\newblock pages 243--280, 2003.
+\newblock ISSN 978-1-4613-4833-7.
+\newblock \doi{10.1007/978-1-4419-9198-0_11}.
+\newblock URL \url{http://link.springer.com/10.1007/978-1-4419-9198-0{\_}11}.
+
+\bibitem[Carver and Turoff(2007]{Carver2007}
+Liz Carver and Murray Turoff.
+\newblock {Human-computer interaction: The human and computer as a team in
+  emergency management information systems}.
+\newblock \emph{Communications of the ACM}, 50\penalty0 (3):\penalty0 33--38,
+  2007.
+\newblock ISSN 00010782.
+\newblock \doi{10.1145/1226736.1226761}.
 
 \bibitem[CCNR(2017)]{CCNR2017}
 CCNR.
@@ -56,6 +66,15 @@ Fred~D. Davis.
   of}.
 \newblock \emph{Management Information System Research Center}, 13\penalty0
   (3):\penalty0 319--340, 1989.
+
+\bibitem[Demir et~al.(2017]{Demir2017}
+Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
+\newblock {Team situation awareness within the context of human-autonomy
+  teaming}.
+\newblock \emph{Cognitive Systems Research}, 46:\penalty0 3--12, 2017.
+\newblock ISSN 13890417.
+\newblock \doi{10.1016/j.cogsys.2016.11.003}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.cogsys.2016.11.003}.
 
 \bibitem[{DNV GL}(2011)]{DNVGL2011}
 {DNV GL}.
@@ -75,10 +94,11 @@ Remi Eriksen.
 \newblock URL
   \url{https://ec.europa.eu/maritimeaffairs/policy/blue{\_}growth{\_}en}.
 
-\bibitem[Feys et~al.(2016]{Feys2016}
-Andreas Feys, Maurits van~den Boogaard, and Joan le~Poole.
-\newblock {Control concepts for navigation of autonomous ships in ports}.
-\newblock \emph{HIPER}, \penalty0 (September), 2016.
+\bibitem[Gregory and Shanahan(2010]{Gregory2010}
+Dik Gregory and Paul Shanahan.
+\newblock \emph{{The Human Element}}, volume~60.
+\newblock The Stationery Office, 2010.
+\newblock ISBN 9780115531200.
 
 \bibitem[Hetherington et~al.(2006]{Hetherington2006}
 Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
@@ -87,17 +107,6 @@ Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
   401--411, 2006.
 \newblock ISSN 00224375.
 \newblock \doi{10.1016/j.jsr.2006.04.007}.
-
-\bibitem[Hodgetts et~al.(2015]{Hodgetts2015}
-Helen~M. Hodgetts, S{\'{e}}bastien Tremblay, Beno{\^{i}}t~R. Valli{\`{e}}res,
-  and Fran{\c{c}}ois Vachon.
-\newblock {Decision support and vulnerability to interruption in a dynamic
-  multitasking environment}.
-\newblock \emph{International Journal of Human Computer Studies}, 79:\penalty0
-  106--117, 2015.
-\newblock ISSN 10959300.
-\newblock \doi{10.1016/j.ijhcs.2015.01.009}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.ijhcs.2015.01.009}.
 
 \bibitem[IMO(1972)]{IMO1972}
 IMO.
@@ -149,9 +158,7 @@ Nedcon.
 M.A. Neerincx.
 \newblock {Situated cognitive engineering: Developing adaptive track handling
   support for naval command and control centers}.
-\newblock \emph{HCP-2008-Third {\ldots}}, X\penalty0 (X):\penalty0 1--18, 2008.
-\newblock URL
-  \url{http://www.researchgate.net/publication/252818201{\_}Situated{\_}cognitive{\_}engineering{\_}Developing{\_}adaptive{\_}track{\_}handling{\_}support{\_}for{\_}naval{\_}command{\_}and{\_}control{\_}centers/file/3deec525cf247b3aac.pdf}.
+\newblock pages 1--18, 2008.
 
 \bibitem[Neerincx and Linderberg(2012]{Neerincx2012}
 Mark Neerincx and Jasper Linderberg.
@@ -179,19 +186,28 @@ NTSB.
   Peridot and Tanker Carla Maersk}.
 \newblock \emph{Marine Accident Report}, 2016{\natexlab{b}}.
 
+\bibitem[Palmer et~al.(2007]{Palmer2007}
+A.~R. Palmer, D.~A. Hall, C.~Sumner, D.~J~K Barrett, S.~Jones, K.~Nakamoto, and
+  D.~R. Moore.
+\newblock {Some investigations into non-passive listening}.
+\newblock \emph{Hearing Research}, 229\penalty0 (1-2):\penalty0 148--157, 2007.
+\newblock ISSN 03785955.
+\newblock \doi{10.1016/j.heares.2006.12.007}.
+
+\bibitem[Porathe et~al.(2013]{Porathe2013}
+Thomas Porathe, Margareta L{\"{u}}tzh{\"{o}}ft, and Gesa Praetorius.
+\newblock {Communicating intended routes in ECDIS: Evaluating technological
+  change}.
+\newblock \emph{Accident Analysis and Prevention}, 60:\penalty0 366--370, 2013.
+\newblock ISSN 00014575.
+\newblock \doi{10.1016/j.aap.2012.12.012}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.aap.2012.12.012}.
+
 \bibitem[Porathe et~al.(2014]{Porathe2014}
 Thomas Porathe, Johannes Prison, and Y~Man.
 \newblock {Situation awareness in remote control centres for unmanned ships}.
 \newblock \emph{Human Factors in Ship Design {\&} Operation}, \penalty0
   (February):\penalty0 1--9, 2014.
-
-\bibitem[Prison et~al.(2013]{Prison2013}
-Johannes Prison, Joakim Dahlman, and Monica Lundh.
-\newblock {Ship sense-striving for harmony in ship manoeuvring}.
-\newblock \emph{WMU Journal of Maritime Affairs}, 12\penalty0 (1):\penalty0
-  115--127, 2013.
-\newblock ISSN 16541642.
-\newblock \doi{10.1007/s13437-013-0038-5}.
 
 \bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
 Rolls-Royce.
@@ -199,23 +215,11 @@ Rolls-Royce.
 \newblock URL
   \url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}.
 
-\bibitem[Rothblum et~al.(2002]{HFW2002}
-Anita Rothblum, David Wheal, Stuart Withington, Scott Shappell, Douglas
-  Wiegmann, William Boehm, and Marc Chaderjian.
-\newblock {Human Factors in Incident Investigation and Analysis}.
-\newblock 2002.
-
 \bibitem[Sames(2017)]{Sames2017}
 Pierre~C Sames.
 \newblock {Unmanned ships on the horizon - DNV GL}, 2017.
 \newblock URL
   \url{https://www.dnvgl.com/article/unmanned-ships-on-the-horizon-94273}.
-
-\bibitem[Schutter(2016)]{Schutter2016}
-A~S~C Schutter.
-\newblock \emph{{Supported scheduling of unmanned vehicles for military
-  operations}}.
-\newblock Master thesis, Delft University of Technology, 2016.
 
 \bibitem[SMASH(2017)]{SMASH2017}
 SMASH.

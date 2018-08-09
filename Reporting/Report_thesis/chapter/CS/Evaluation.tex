@@ -1,13 +1,150 @@
 \chapter{Design evaluation}
 The last part of the sCE method is the design evaluation. The design evaluation aims to test and validate the system’s design, or to discriminate between multiple design options, such that the current design can be improved upon in incremental development cycles. The sCE method describes three parts that are relevant with respect to the system evaluation: (1) the artefact, (2) the evaluation method, and (3) the evaluation results.
 
+\todo{add description of what will be measured and corresponding research question}
+
 \section{Artefact}
-The artefact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means.
+The artefact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means. This first iteration will aim at finding flaws based on expert knowledge. To acquire this a simplified prototype will be used. This means that there is no implementation using hardware which might be used in latter stages. But a simulation environment is created to test situations with experts. Where is checked if experts believe that the protocol as described in chapter \ref{ch:system-design} is sufficient to get to the right decision. 
+
+To get the right feedback, several situations will be simulated. These situations are based on the accidents as described in chapter \ref{ch:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in chapter \ref{ch:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} and usage of systems like \acf{AIS}.
+
+\todo{add description and printscreen of tool}
+\todo{add SMCP cheatsheet}
+\todo{Describe and reference to why tool, to cooperate at sea}
 
 \section{Evaluation method}
-The evaluation method can take many forms, such as a human-in-the-loop study, a use- case-based simulation, or an expert review.
+The evaluation method can take many forms, such as a human-in-the-loop study, a use- case-based simulation, or an expert review. In this case a so-called Wizard of Oz evaluation is used. This technique enables unimplemented technology to be evaluated by using a human to simulate the response of a system. As the technology itself has not yet been implemented. The "wizard" simulates the system's responses in real-time.
 
-Question if it should pass turing test, which Human Factor measures are possible.
+\subsection{Experiment requirements}
+To do the experiment, a participant is needed to have the role of \acf{OoW} and tools to execute. During the experiment there will be different variables, which have to be taken into account to be able to draw the right conclusions. These are described in this section.
+
+\subsubsection{Participants}
+The participant is in this case the \acf{OoW}. The experiment will be done with at least 10 different participants. The formal requirements are as follows:
+\begin{itemize}
+	\item Nationality: Dutch, due to location of experiment.
+	\item License: Completed training as a maritime officer.
+	\item Experience: At least 3 years of experience as seafarer.
+	\item Attitude towards autonomous shipping: Both positive and negative.
+	\item Age: 25-60
+\end{itemize}
+
+\subsubsection{Tools}
+Beside the participants, tools are needed to do the experiment. The tools needed are:
+\begin{itemize}
+	\item Laptop to show a visual of situation and show what happens during the simulation.
+	\item Questionaire to be used before, during an after the experiment.
+	\item Room without distractions to do the experiment.
+	\item Recordering device to store and later process actions during the experiment.
+\end{itemize}
+
+\subsubsection{Variables}
+Independent variables: SMCP
+Dependent variables: Trust (how to measure?), performance (right decisions), situation awareness (10 things he should have noted), effectiveness (accuraat en volledig), efficiency (inspanning en tijd) and satisfaction (prettig en comfortabel). 
+
+\subsection{Experiment procedure}
+To execute the experiment. Several steps are taken together with the \acf{OoW}:
+\begin{enumerate}
+	\item Explain how the OoW can take actions, such as steering, change speed, set way-points or engage in communication.
+	\item Ask general questions on attitude and basic information.
+	\item Explain situation to OoW in a similar way to common hand-over. Only describe relevant issues for navigational duties.
+	\item Start playing simulation.
+	\item Depending on the simulation, let autonomous ship take actions or wait for the OoW to engage in communication.
+	\item End simulation.
+	\item Question OoW why which decision was made.
+	\item Question OoW on several "what if"-scenarios and how that would have changed its actions.
+	\item Repeat step 3-7 for more situations.
+	\item Describe functional design and purpose of protocol.
+	\item Question OoW about advantages and challenges of protocol.
+	\item Question OoW about human factors.
+\end{enumerate}
+
+\subsubsection{Explanation (1, 2)}
+The participant is not explicitly informed about the exact purpose of the research. It will however get a short introduction on how to use the tool during the simulation. It should be easy to use, as similar action should be executed when operating a vessel. Thereby is some information about the participant acquired:
+\begin{itemize}
+	\item Which licenses do you have?
+	\item What is you experience?
+	\item What is you attitude towards unmanned and autonomous shipping?
+	\item What do you see as the biggest challenge for introducing autonomous and unmanned vessels?
+\end{itemize}
+
+\todo{add summary of description when using the tool, reference to chapter tool}
+
+\subsubsection{Situations and scenarios (3, 4, 5, 6, 9)}
+The next steps are repeated several times for the different situations. The situations which are used will be:
+\begin{enumerate}
+	\item Collision between MV ARTADI and MV ST-Germain
+	\begin{enumerate}[label=(\Alph*)]
+		\item Same decisions as reality
+		\item Do what Artadi expected
+		\item Do what St-Germain expected
+	\end{enumerate}
+	\item Entering Maasgeul towards North Sea at port of Rotterdam.
+	\begin{enumerate}[label=(\Alph*)]
+		\item Crossing in front
+		\item Crossing at the back
+		\item Passing
+	\end{enumerate}
+\end{enumerate}
+
+
+
+For these situations and scenarios, the following are described:
+\begin{itemize}
+	\item Ship's position, course and speed
+	\item Traffic density
+	\item Weather condition and night vision
+	\item Logbooks, checklist and daily orders
+\end{itemize}
+
+\todo{add pictures of what is exactly happening in each situations, and what possible decisions might be}
+
+\subsubsection{Relevant questions for situation (7, 8, 9)}
+To gain insight into the quality of the experiment and effectiveness of the protocol, the following questions will be asked:
+\begin{itemize}
+	\item Why did you do $\langle action \rangle$?
+	\item Did the autonomous vessel act as you expected?
+	\item Did you have the feeling, you were in control of the situation?
+	\item Did you miss any information to choose the right strategy?
+	\item Did you feel the urge to communicate?
+	\item Why did you or didn't you feel the urge to communicate?
+	\item Was the communication as you expected it to be?
+	\item Would you have acted differently is you knew there was a human officer of watch?
+	\item \dots \todo{Is this enough?}
+\end{itemize}
+
+\subsubsection{General questions on protocol and human factors (10, 11, 12)}
+After running the different situations an interview is held. This interview is intended to answer the following questions from the participant perspective and explain the purpose of this research:
+\begin{itemize}
+	\item Should a protocol like this pass the turing test?
+	\item Would you like to know beforehand if it is an unmanned vessel?
+	\item Did you find the protocol easy to use?
+	\item Is the protocol useful?
+	\item Is the protocol transparent, thus do you understand why steps are taken?
+	\item Do you feel differently about introducing unmanned and autonomous vessels?
+\end{itemize}
+
+\subsection{Key performance indicators}
+The performance indicators are similar to the human factor measures as described in section \ref{sec:human-factors}. This will be a combination of both quantitative and qualitative measurements. Thus combining numerical values with non-numerical arguments.
+\begin{itemize}
+	\item Is the system used correctly? 
+	\begin{enumerate}
+		\item System is not understood and actions of participant are random.
+		\item System is not understood, but by experience with other systems the results are good.
+		\item System is understood, but does not help to get the good result.
+		\item System is understood, and results are as expected.
+		\item System is understood, and improves situational awareness compared to existing way of working.
+	\end{enumerate}
+	\item Does the protocol act as expected?
+	\item Will it solve the problem of missing information?
+	\item Do people perceive it as easy to use and useful?
+	\item What is the impact on attitude towards unmanned ships?
+\end{itemize}
+\todo{add concrete measurement}
+\todo{make link with variables}
 
 \section{Evaluation results}
 The evaluation results describe the outcomes of the test. Because of the iterative and rapid research cycles, the evaluation does not necessarily include all requirements/claims/use cases available in the system specification. Oftentimes the evaluation investigates a subset of the system specification. Therefore, it is often useful to also specify what claims were tested, with the use of what evaluation method, and what artefact was used during the evaluation (i.e. which requirements, technology, interaction design patterns were included in the artefact).
+
+\subsection{Outcomes}
+
+\subsection{Conclusions}

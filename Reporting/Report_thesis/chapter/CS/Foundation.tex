@@ -41,7 +41,7 @@ The focus of this research will be on bridge-to-bridge communication. This means
 		
 		He wants to avoid information overload, while being aware of the situation. This is only possible when he stays concentrated, to acquire this, the tasks must be challenging and he needs to have a form of autonomy.
 	
-		\item \emph{Helmsman and lookout}. Both monitor the situation and execute commands from the officer of watch. A risk for them is information overload, which could result in information overload. \todo{citation or reference}
+		\item \emph{Helmsman and lookout}. Both monitor the situation and execute commands from the officer of watch. A risk for them is information overload or underload \cite{Neerincx2008}.
 	\end{itemize}
 		
 	\item Unmanned vessel
@@ -83,6 +83,7 @@ The easiest solution for unmanned ships would be to just install a new system. T
 This is also the reason to use a \ac{no-UI}, as a GUI will require new screens or changes to the \ac{ECDIS} which are only possible when regulations are changed.
 
 \section{Human factors}
+\label{sec:human-factors}
 When designing technology, there are two driving questions that need to be well-thought out: (1) What tasks and/or values is the user trying to accomplish and how can the technology support the user in doing so?, and (2) How can the technology be designed such that the user is able to work with the technology?
 
 The Human Factors segment of the sCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasize that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2).
@@ -90,18 +91,40 @@ The Human Factors segment of the sCE method describes the available relevant kno
 The three constituents important to the human factors analysis are: (a) the human factors knowledge, (b) measures, and (c) interaction design patterns.
 
 \subsubsection{Human factor knowledge}
-Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. \todo{focus op situation awareness en taakbelasting, dialoog aspecten}
+Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. The key problems relevant for human factors are the information overload, situational awareness, autonomy, and learning a new protocol. Thus the following questions should be answered:
 \begin{itemize}
-	\item Which information is needed to have situational awareness? \cite{HFW2002} \cite{Breda1999} \cite{Prison2013} \cite{Hodgetts2015} \cite{Porathe2014}
-	\item When does information overload occur? \cite{Arimura2001} \cite{Neerincx2008} \cite{Schutter2016} \cite{Porathe2014}
-	\item What is more effective to ensure a feeling of autonomy? \cite{Feys2016}
-	\item How is information perceived if it is being pushed or pulled? Thus listen to radio with continious information (repeating), or only send message when asked for
-	\item What are the expectations of a human from an unmanned ship?
-	\item Do people trust automated systems in emergency situations? \cite{Neerincx2008} \cite{Walliser2011}
-	\item Is there an uncanny valley for chatbots?
-	\item ...
+	\item When does information overload occur?
+	\begin{itemize}
+		\item In case of divided attention there is a high risk for information overload and distraction by low priority messages. Therefor the developed system should be context aware so it can limit this risk by adapting the message to the situation \cite{Arimura2001}.
+		\item Overload might appear due to a competition for the operator’s attention that is going on between different information items. If many tasks are handled by automated systems, the operator can deal with high workload circumstances, but will suffer from severe underload during quiet periods, probably losing his or her situational awareness \cite{Neerincx2008}.
+		\item The information acquired at one particular moment does not necessarily serve for high-level situation awareness, for the user needs to recall the previous related information to understand the situation thoroughly. But constantly providing information might not be the solution because there will be a huge risk of information overloading. Admittedly it is plausible to deliver needed information for the coming task by task detection, the user might still fail to keep pace to the rapid changing system and fulfill multi-threaded tasks\cite{Porathe2014}.
+	\end{itemize}
+	
+	\item Which information is needed for situational awareness?
+	\begin{itemize}
+		\item Situational awareness can be enhanced by feedback, perceived information from the environment, information from other agents, as well as remote sensors. \cite{Carver2007}
+		\item Understanding the current picture is not enough for full situational awareness. Expert decision makers must be able to project their understanding into the future. This enables them to make the decision they must take now to create the best options in the future. Projection requires to have good mental models of the dynamic relationships between the relevant parts of the environment over time. Expers focus a lot on creating their own futures via present decisions. In turn, these decisions are formed out of their comprehension of the likely interactions of all the elements they deem both relevant and important \cite{Gregory2010}.
+		\item A large part of sensors, automation, and operators, are used to build a common operational picture. Providing different agents with the information required to make sense of the situation \cite{Neerincx2008}.
+	\end{itemize}
+	
+	\item How is information perceived when acquiring it passively of actively?
+	\begin{itemize}
+		\item Attention profoundly modulate the activity of sensory systems and this can take place at many levels of processing. Imaging studies, in particular, have revealed the greater activation of auditory areas and areas outside of sensory processing areas when attending to a stimulus \cite{Palmer2007}.
+		\item Good teamwork involves anticipating the needs of teammates and that means pushing information before it is requested. Therefore, if things are going well, there should be little need for pulling information. In this studys task, participants were instructed to push information to others, and over time master the specific timing of information sharing to the intended recipient. Findings indicate that pushing information was positively associated with TSA and team performance, and human-autonomy teams had lower levels of both pushing and pulling information than all-human teams \cite{Demir2017}.
+	\end{itemize}
+	
+	\item What is needed for successful teamwork between human and a computer?
+	\begin{itemize}
+		\item  People need to understand what is happening and why when a teammate tends to respond in a certain way; they need to be able to control the actions of an agent even when it does not always wait for the human’s input before it makes a move; and they need to be able to reliably predict what will happen, even though the agent may alter its responses over time \cite{Bradshaw2003}.
+		\item Effective team communication, a fundamental part of team coordination, is crucial for both effective team situation awareness and team performance \cite{Demir2017}.
+	\end{itemize}
+	
+	\item Do people trust automated systems?
+	\begin{itemize}
+		\item When using automation, the role of the human changes from operator to supervisor. For effective operation, the human must appropriately calibrate trust in the automated system. Improper trust leads to misuse and disuse of the system. \cite{Walliser2011}.
+	\end{itemize}
 \end{itemize}
-\todo{link papers to questions and answer, keep short}
+\todo{Is dit voldoende?}
 
 \subsubsection{Human factor measures}
 Measures describe how to operationalize the quality of the intended behavior or performance, i.e. how well is a user working with the design able to reach his/her objectives and what is the quality of the collaboration between the human worker and the technology?
