@@ -2,25 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3d0d09-9836-4766-aea7-8bdbe335d3e8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MTexperiment/createShips.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MTexperiment/general.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MTexperiment/manoeuvreTests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MTexperiment/manouvringCriteriaEvaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MTexperiment/plotResults.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../General/Formulieren/Checklist_Version_July 2018.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../General/Formulieren/Checklist_Version_July 2018.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract model.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract model.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manoeuvring.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manoeuvring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manoeuvring.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manoeuvringModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/viewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Planning.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Planning.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Evaluation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Evaluation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Foundation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Foundation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Specification.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/CS/Specification.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/database-nodes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/database-nodes.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/decision-model.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/decision-model.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/development-tool.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/decision-model.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/evaluation-criteria.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/evaluation-criteria.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/introduction.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/possible-criteria.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/possible-criteria.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/accidents.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/accidents.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/scenario-story.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/MT/scenario-story.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/abstract-model.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/accidents.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/bridge-systems.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/development-tool.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/development-tool.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/future-shipping.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/glossary.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/chapter/results.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/Bridge-system-elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/Bridge-system-elements.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/abstract-model.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/figure/abstract-model.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/include.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/library.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/include/library.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.bbl" afterDir="false" />
@@ -31,6 +44,7 @@
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tdo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tdo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reporting/Report_thesis/main_thesis.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Theory/Hydro/Damen Trial Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Theory/Hydro/Damen Trial Results.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +54,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Version_B$test.coverage" NAME="test Coverage Results" MODIFIED="1529332327888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_B$test.coverage" NAME="test Coverage Results" MODIFIED="1534458652129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$viewer.coverage" NAME="viewer Coverage Results" MODIFIED="1522323851061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Version_B$world.coverage" NAME="world Coverage Results" MODIFIED="1533826648671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_B$world.coverage" NAME="world Coverage Results" MODIFIED="1533929992959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$ship.coverage" NAME="Ship_test Coverage Results" MODIFIED="1520438264915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
-    <SUITE FILE_PATH="coverage/Version_B$manouvringCriteriaEvaluation.coverage" NAME="manouvringCriteriaEvaluation Coverage Results" MODIFIED="1533828581979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Version_B$manouvringCriteriaEvaluation.coverage" NAME="manouvringCriteriaEvaluation Coverage Results" MODIFIED="1535026368698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Version_B$simulation.coverage" NAME="simulation Coverage Results" MODIFIED="1529333352397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$Ship_test.coverage" NAME="Ship_test Coverage Results" MODIFIED="1529773753178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_B$dynamicObjects.coverage" NAME="dynamicObjects Coverage Results" MODIFIED="1520855750973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -52,70 +66,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="world.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world.py">
+      <file leaf-file-name="manouvringCriteriaEvaluation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MTexperiment/manouvringCriteriaEvaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="244">
+              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/simulation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="118" column="8" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dynamicObjects.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamicObjects.py">
+      <file leaf-file-name="manoeuvringModel.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/manoeuvringModel.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="42" selection-start-line="42" selection-end-line="50" selection-end-column="25" />
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manouvringCriteriaEvaluation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py">
+      <file leaf-file-name="manoeuvreTests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MTexperiment/manoeuvreTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="358">
+              <caret line="186" column="27" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MTexperiment/general.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotResults.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MTexperiment/plotResults.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manoeuvring.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manoeuvring.py">
+      <file leaf-file-name="createShips.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MTexperiment/createShips.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="545">
+              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,6 +149,9 @@
       <find>shipRudder</find>
       <find>tau</find>
       <find>plot</find>
+      <find>shipSpeed</find>
+      <find>deleteShipPlotObjects</find>
+      <find>turning</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,12 +188,22 @@
         <option value="$PROJECT_DIR$/ship.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/src/__init__.py" />
-        <option value="$PROJECT_DIR$/src/ship.py" />
         <option value="$PROJECT_DIR$/src/simulation.py" />
-        <option value="$PROJECT_DIR$/src/manoeuvring.py" />
         <option value="$PROJECT_DIR$/src/world.py" />
         <option value="$PROJECT_DIR$/src/viewer.py" />
         <option value="$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/evasiveManouvre.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/plot.py" />
+        <option value="$PROJECT_DIR$/src/manoeuvring.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/manouvre.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/createShips.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/plotResults.py" />
+        <option value="$PROJECT_DIR$/src/ship.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/general.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/manoeuvreTests.py" />
+        <option value="$PROJECT_DIR$/src/MTexperiment/manouvringCriteriaEvaluation.py" />
+        <option value="$PROJECT_DIR$/src/manoeuvringModel.py" />
       </list>
     </option>
   </component>
@@ -193,10 +214,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,6 +238,12 @@
               <item name="Version-B" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Version-B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Version-B" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MTexperiment" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -234,6 +260,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\src\MTexperiment" />
       <recent name="D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\src\" />
       <recent name="D:\ingma\OneDrive\Studie\Thesis\Model\Version-B" />
       <recent name="D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\source" />
@@ -303,7 +330,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py" />
+      <option name="SCRIPT_NAME" value="D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\src\MTexperiment\manouvringCriteriaEvaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -397,9 +424,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manouvringCriteriaEvaluation" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.world" />
         <item itemvalue="Python.simulation" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.viewer" />
       </list>
     </recent_temporary>
@@ -434,17 +461,17 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32985386" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32881" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49791667" weight="0.36951983" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49791667" weight="0.3455115" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32985386" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39874738" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32881" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -453,32 +480,34 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32881" />
-      <window_info active="true" anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32881" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49791667" visible="true" weight="0.4240571" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32985386" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49791667" visible="true" weight="0.3455115" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32960325" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32881" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="6" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39874738" />
+      <window_info active="true" anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50208336" side_tool="true" weight="0.32655138" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32925585" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32960325" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32985386" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32985386" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="1" weight="0.32881" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32881" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,41 +529,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/manoeuvring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ship.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ship.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/world.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -632,70 +626,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ship.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicObjects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="42" selection-start-line="42" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manoeuvring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/simulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="118" column="8" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1661">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+        <state relative-caret-position="320">
+          <caret line="340" column="40" lean-forward="true" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicObjects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ship.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MTexperiment/createShips.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manouvringCriteriaEvaluation.py">
+    <entry file="file://$PROJECT_DIR$/src/MTexperiment/plotResults.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="52">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MTexperiment/manouvringCriteriaEvaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MTexperiment/manoeuvreTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="186" column="27" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MTexperiment/general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manoeuvringModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

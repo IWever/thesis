@@ -1,108 +1,22 @@
-\chapter{Development of testing environment}
-\label{ch:tool}
-In the next parts, situations will be simulated. For part \ref{part:MT} this is done to evaluate the decision model and problem identification. While part \ref{part:CS} aims to get expert feedback on the protocol.
+\chapter*{Abstract model}
 
-\section{Basic design}
-To test the different scenarios a tool will be build. This tool will be able to simulate the scenarios to get more insight why decisions are made. Full scale testing will cost much more money, time and effort, as it is harder to control. Small scale testing will introduce many unknown factors. Therefore is chosen to build an application in which models can be tested.
-The development will be based on the principles of the Agile Manifesto, as this has proven to result in effective software. This means there will be a start with a basic tool, which will continuously be improved. Changes in requirements might appear trough out the whole process, to deliver a better tool. Thereby must be kept in mind that working software is the primary measure of progress. This is only possible when the software is sustainable and thus easy to maintain and improve, which is only possible with a good design. Keeping it simple will be key in this process. Thereby reflective moments are needed to check if the chosen path is the right one, or if the direction should be adapted.
+\section*{Ship characteristics}
+The main block on manoeuvring capability depends on the ship characteristics. Where there is an influence on both feeling of safety, and the physical limitations. For example a ship crossing another vessel could keep sailing straight as long as possible and than make a hard turn, but it rather changes its course earlier in a way where less loss of speed occurs. With a small ship these hard turns are much easier and will most likely occur more often.
 
-\subsection{Requirements}
-The first step is to set the goals or requirements of the software. This doesn't mean it is a full description of the software, but features it should at least have to be able to answer the research questions.
-The most important requirement is that ships within the simulation behave similarly to ships in reality. This does not necessarily mean that all hydromechanics should be known. But ships should have similar ways of turning and changing speed. This can be based on sea-trials and done using a mapping from current speed, current rotation, rudder angle and throttle to future speed and turning speed.
-The second requirement should be that it is flexible, in a way that different scenarios can be added and tested easily. Thereby changing ship characteristics, shared information and other inputs.
-Thirdly, it must be possible to show the register of possible decisions for the different vessels. To be able to validate this with seafarers. Meaning it will be a white box model.
+Therefore the capability of the ship is split up in three categories, expected location, likely change of course and physically possible route based on physics laws.
+As a full CFD simulation is hard to do for every ship which is encountered, models will be used to make estimations quickly. Thereby is it important to notice that a high accuracy is not necessary, as those extreme movements have a very low probability to occur. Being a bit conservative here will help to allow for all different scenario's to be tested.
 
-\subsection{User stories}
-The next step is to define users stories from the requirements. User stories are in a form: \emph{"As a [user] I want [action] so that [result]"}. Extending them with an acceptance criteria this will result in the features which should be implemented.
+\section*{Influencing factors}
+The same goes for the safe motion parameters. There are regulations on minimal passing distances and how close you should come to others. But good seamanship would be to make intentions clear earlier, so that critical situations can be avoided. Applicability of rules depends on the ship characteristics. Just as with the natural laws, the probability of getting into the extreme situations where regulations are followed but still problems might occur are not likely.
+The model from Szlapczynski is used, to set the estimated safety domains for each ship. Leading to courses and speeds which are safe to sail \cite{Szlapczynski2017}. While also incorporating \ac{COLREGs} and arbitrary distances for well-clear, which is the distance where everyone feels safe.
+The \ac{COLREGs} are also relevant in areas around ports, where traffic separation schemes are used. These should be followed by different types of vessels. This will influence the most likely position for a vessel to be. Incorporating information from traffic controllers will thereby lead to the most likely expected route. The same goes for areas with multiple objects on the map, where ships should follow lanes marked by buoys, and avoid quays, fishing area's, no-go zones, etc.
+Combining this with ship characteristics will lead to a map where for each vessels is shown, where another ship will likely be. When looked at the highest probability this will show the most likely route for each vessel. Which can be used to advise on the route planning of the own vessel. As the probabilities combined with a threshold will result in a set of possible decisions.
 
-Within this application there will be different roles. For which these user stories can be used. These can be split between users and objects. Below these are described:
-\begin{itemize}
-	\item \emph{Operator}. The person who set-up the simulation and fills in the different properties for the ships and specific scenario.
-	\item \emph{Viewer}. Someone who uses the application to view a specific scenario. Thereby trying to answer the research questions.
-	\item \emph{Ship}. Object in the map which is used by the simulation. But to work correctly it also had needs for information.
-\end{itemize}
+\section*{Information and communication}
+Already mentioned is the impact of other vessels and objects on the probability that a ship will be at a specific location. But to know this impact, information has to be gathered from different parameters. Thereby should be looked if the current parameters are sufficient and can be trusted, or if other equipment or instruments should be installed.
 
-Some examples of those user stories are given below. All users stories can be found in appendix XXX.\todo{add user stories to appendix}. 
+Currently vision and radio communication are very important ways to gather information. These types of information are difficult to gather using computers, currently many researches happen on for example Lidar and other methods. Therefore this research will focus on what information is needed, not how it is gathered. Although developments within technologies to gather this information will be taken into account to develop eventually the strategies. For example related to \ac{AIS}, \ac{VDES} and different protocols.
 
-\begin{itemize}
-	\item As an operator, I want to add vessels to the map, by selecting them in a list, so that they become part of the simulation. \\
-	Acceptance criteria: Ship visualized and other ships start receiving information.
-	\item As a viewer, I want to to be able to get the belief state, intention and next action of a ship, so that I can verify if it is what I expected it to be. \\
-	Acceptance criteria: Belief state, intention and next action are shown.
-	\item As a ship, I want to be able to predict the path of other vessels, so that I can make my decisions based on this. \\
-	Acceptance criteria: correctly updated belief state about other vessels.
-\end{itemize}
-
-\subsection{User interactions}
-What should be done in the different modules
-
-\subsection{Minimum viable product}
-Considering the above mentioned requirements and user stories. Not everything is within the scope, and thus shouldn't be developed and implemented. Examples of possible features which are not implemented are: ... 
-There must also be considered that several assumptions are made to create a system which works in a practical manner, as not al input data is available or calculations might be very hard and slow down the simulation too much. The assumptions made are: ...
-
-Thereby should be kept in mind that the acceptance criteria for the application is: The ability to insert a model for decision making for a ship, which depends on information collected from other ships closeby, its own ship characteristics and the environment it acts in.
-\todo{Extent the acceptance criteria for the full application}
-
-\section{Manoeuvring capability model}
-Estimation of relation between throttle, loss of speed while turning. Thus a mapping from current speed, current rotation, rudder angle and throttle to future speed and turning speed
-
-\section{Probability index}
-what should the polygons show
-
-\section{Radio}
-The area in which situations are tested are not larger than the radius of an VHF radio (about 20 NM - IMO regulations)
-
-\url{http://solasv.mcga.gov.uk/m_notice/mgn/mgn324.pdf} - p8
-
-Therefore a ra
-
-\section{Controller}
-Based on the waypoints there is a simple controller to adjust the rudder angle. This controller steers based on the relative angle between the waypoint and the current position. This is done in the \emph{adjustRudder} function. The distance and relative angle is calculated, this is used in a simple decision tree to decide on the rudder angle, which is similar to a so-called "proportional controller". For this simulation it will give enough accuracy. For a better result, a "PID-controller" could be implemented:
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{l|l}
-		\toprule
-		Relative angle (\degree) & Rudder angle (\degree) \\
-		\midrule
-		25-180 & 35\\
-		10-25 & 25\\
-		0-10 & Relative angle $*$ 8/10 \\
-		\bottomrule
-	\end{tabular}
-	
-	\captionof{table}{Rudder angle based on relative angle}
-	\label{tab:Rudder-angle}
-\end{table}
-
-\section{Estimation of characteristics}
-Deadweight to displacement for example
-
-\section{Application design}
-Building and verification including description of the architecture. Model-view-controller architecture, for easy modification as there are less dependencies between modules.
-
-\subsection{Design patterns}
-Push-pull listener
-
-\subsection{Model and classes}
-Use list from excel, make simple drawing how they link an talk to each other. Based on model-view-controller.
-
-\subsection{Methods}
-Full list in appendix XXX, describe important methods and how design patterns are used. Push-pull for example
-
-\subsection{User interface}
-Some screenshots of the application with a description what can be controlled and seen. Implementation of models is not relevant yet.
-
-\todo{Add more information, image to show current status}
-Currently is a hydro model implemented, you are able to steer the ship or use waypoints and a background image can be used to show the map.
-
-\begin{figure}[hb]
-	\centering
-	\makebox[\textwidth][c]{
-		\includegraphics[width=1.18\textwidth]{printscreen20180805.png}
-	}
-	\caption{Example of evaluation tool}
-	\label{fig:printscreen-tool}
-\end{figure}
-
+\section*{Situational awareness}
+When combining information, communication, characteristics and possible decisions an image of the situation can be formed. This will be interpreted in a way which enables the right decision making for route-planning. This planned route can be used on autonomous vessels, or be used to advise the crew which decision they should make and what information they should share with others. Mental models will be used to validate if indeed the different vessel have the right information and if enough information is shared. The results from these blocks will be verified with seafarers to validate that the theory corresponds with operations.
 

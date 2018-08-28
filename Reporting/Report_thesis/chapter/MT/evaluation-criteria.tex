@@ -1,10 +1,139 @@
-\chapter{Manoeuvrability requirements for safe operation}
+\chapter{Dependence of manoeuvrability on decision criteria}
+\label{ch:criteria-manouvre}
+The criteria as described in the previous chapter are aimed to determine if there is a problem. In the case there is a problem. Different actions can be undertaken to mitigate the risk. To determine which actions are feasible different criteria are used. As these manoeuvers are complex is it usefull to develop a database with thresholds upfront. To determine these thresholds, simulation are performed for different ships and scenario's. In this chapter is described how these thresholds are calculated, using the tool as described in chapter~\ref{ch:tool}. 
 
-\section{Critical scenarios}
+\section{Manoeuvrer descriptions}
+The \ac{COLREGs} prescribe to have single bold movements, thus alterations of course or speed, should be clearly observable. To acquire this, do strategies often result in actions which can be categorized in different types of manoeuvers. Most common in extreme situations are the evasive manoeuvrer and emergency stop. The time needed to do these manoeuvers depends on the manoeuvring characteristics. These characteristics are measured using different types of manoeuvers. Most relevant in this case are the zig-zag test and turning circle of the ship. In this section these different manoeuvers are described.
+\todo{add figure of these manoeuvers}
 
-\section{Criteria}
-Turning circle
-Advance distance
-Tactical diameter
+\subsection{Evasive manoeuvrer}
+The evasive manoeuvrer aims to increase the closest point of approach distance. Based on \ac{COLREGs} is there a stand-on and give-away vessel. The stand-on vessel is supposed to keep course and speed the same, while the give-way vessel is supposed to manoeuvrer. 
+There are many way an evasive manoeuvrer can be done. But to simplify the calculation, is for now chosen to use a perpendicular crossing situation, where the give-away vessel aims to end the manoeuvrer with the same course as before. In figure~\ref{fig:evasive-manoeuvrer} the paths are plotted for a Tug and Tanker. The manoeuvrer is simulated for different speeds and with different maximum course changes. 
+Figure~\ref{fig:astrorunner-evasive-20} shows how the rudder is changed during the evasive manoeuvrer. Also can be seen that the speed drops, due to a drift angle.
 
-\section{Resulting design matrix}
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=\textwidth]{Effect-of-initial-speed-on-path-large.png}
+	\caption{Evasive manoeuvrer at different speeds and angles, with ASD Tug and Tanker}
+	\label{fig:evasive-manoeuvrer}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=\textwidth]{Evasive-manoeuvre-20-degrees-Astrorunner-(15-kn).png}
+	\caption{Evasive manoeuvrer till 20 degrees with Astrorunner}
+	\label{fig:astrorunner-evasive-20}
+\end{figure}
+
+\subsection{Sea-trial}
+Manoeuvring capabilities of a ship are determined during the sea-trial. Different tests are performed to ensure the vessel complies with regulations and its contract on manoeuvring capability. The manoeuvers used to determine this are the zig-zag test, turning circle and emergency stop. In this section these will be described.
+
+\subsubsection{Zig-zag test}
+The second test is the zig-zag test. Herein is the overshoot tested when changing course. This is done by putting the rudder at an angle of 10 or 20 degrees to port side, till the course change is also 10 or 20 degrees, than the rudder is changed to starboard side. This is repeated several times to get a good measurement of the overshoot. The overshoot is determined by measuring the course changes. In figure~\ref{fig:zig-zag-paths} the paths are shown for several ships. While in figure~ \ref{fig:astrorunner-zig-zag-10} the rudder, course and heading changes are shown.
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Paths-from-zig-zag-tests.png}
+	\caption{Paths from both zig-zag tests at design speed for different ships}
+	\label{fig:zig-zag-paths}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Zig-zag-10-10-Astrorunner-(15-kn).png}
+	\caption{Zig-zag 10:10 test with Astrorunner (140m cargoship)}
+	\label{fig:astrorunner-zig-zag-10}
+\end{figure}
+
+
+\subsubsection{Turning circle manoeuvrer}
+The final test is to determine the turning circle of the vessel. The rudder is put at a 20 or 35 degrees. That the ship will start turning. After a while the ship will turn at a constant speed and course change. The results of this test are an advance distance, which is the distance from starting to give rudder, till the ship has turned 90 degrees. The tactical diameter, which is the distance between the starting point and maximum distance to the side. And finally the steady turning diameter, which is the diameter of the turning circle when speed and course change are constant. The paths of different ships at design speed are shown in figure~\ref{fig:turning-circle}.
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Paths-from-turning-circle.png}
+	\caption{Paths from turning circle tests at design speed for different ships}
+	\label{fig:turning-circle}
+\end{figure}
+
+\subsubsection{Emergency stop}
+\todo{Not yet implemented}
+
+
+\section{Relevant variables}
+
+
+\section{Dependency analysis}
+\begin{itemize}
+	\item Time used to limit overshoot (changetime)
+	\item Speed of other vessel
+\end{itemize}
+
+\section{Trial results}
+During the tests, different results are acquired which show the manoeuvrability of a ship. This can be related to the criteria which determine if a vessel can safely act in a specific situation. The measured variables are:
+\begin{itemize}
+	\item Turning circle
+	\item Advance distance
+	\item Tactical diameter
+	\item \acf{CPA}
+	\item Time needed for manoeuvrer
+	\item Distance before problem occurs
+	\item Starting speed
+\end{itemize}
+
+Results of trials showing the dependency of passing distance on distance till CPA and current speed are shown in figure~\ref{fig:result-distance-passing-distance-start-speed} on page~\pageref{fig:result-distance-passing-distance-start-speed}.
+
+As can be seen does there exist an asymptote at a distance for every ship and speed. This distance is equal to the distance needed to turn 90 degrees. As in this case the ship can sail parallel to the course of the other vessel. Therefor no simulation are done for these distances. Only the minimal distance for a certain passing distance is needed. 
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Astrorunner-1500-distance-passing-distance-start-speed.png} 
+		\caption{Astrorunner (140m  cargoship)} 
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{DAMEN-Combi-Freighter-7200-1500-distance-passing-distance-start-speed.png} 
+		\caption{DAMEN Combi freighter 7200 (118m freighter)} 
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Gulf-Valour-1500-distance-passing-distance-start-speed.png} 
+		\caption{Gulf Valour (250m tanker)} 
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Emma-Maersk-1500-distance-passing-distance-start-speed} 
+		\caption{Emma Maersk (400m containership)} 
+	\end{subfigure}
+	\caption{Dependency of passing distance on distance till CPA and current speed} 
+	\label{fig:result-distance-passing-distance-start-speed} 
+\end{figure}
+
+Also other the course change, time to execute and advance distance are plotted. But less conclusions can be drawn from this. Examples are shown in figure~\ref{fig:other-trial-example-plots} on page~\pageref{fig:other-trial-example-plots}.
+From this plots can be concluded that the distance before the accident and current speed influences the maximum passing distance. Where should be considered that the line also shows where the previously mentioned asymptote is.
+
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Emma-Maersk-1500-speed-passing-distance-distance-travelled.png} 
+		\caption{Emma Maersk - Start speed, passing distance and distance till accident} 
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Emma-Maersk-1500-speed-passing-distance-time.png} 
+		\caption{Emma Maersk - Start speed, passing distance and time} 
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{Emma-Maersk-1500-time-passing-distance-course-change.png} 
+		\caption{Emma Maersk - Time needed, passing distance and course change} 
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\linewidth}
+		\includegraphics[width=\linewidth]{1500-distsance-passing-distance-advance.png} 
+		\caption{Advance based on distance and passing distance} 
+	\end{subfigure}
+	\caption{Other plots} 
+	\label{fig:other-trial-example-plots} 
+\end{figure}
+
+\section{Examples of resulting design matrix}
+Proefvaarten met schepen om draaicirkel en zigzag te bepalen.\\
+Van schepen is bekend hoeveel tijd en afstand kan worden gewonnen met welke manouvre.\\
+Dit combineren kan worden gebruikt tijdens scheepsontwerp.\\

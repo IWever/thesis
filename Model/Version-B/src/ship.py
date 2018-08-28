@@ -8,7 +8,7 @@ class Ship():
     """ The ship class"""
     def __init__(self, name, MMSI, LBP, width, depth,
                  displacement, deadweight, nominalSpeed_kn,
-                 turningCoefficient=1, AISEquipment="A", shipType=99, color='blue', maxSpeed_kn=25):
+                 AISEquipment="A", shipType=99, color='blue', maxSpeed_kn=25):
 
         # Current situation of ship
         self.location = [0, 0]
@@ -17,6 +17,7 @@ class Ship():
         self.drift = 0
 
         self.speed = 0
+        self.acceleration = 0
         self.headingChange = 0
 
         self.speedSetting = 0
@@ -29,6 +30,7 @@ class Ship():
         self.waypoints = []
         self.perceivedShips = []
         self.lastUpdate = 0
+        self.waypointUpdateNeeded = False
 
         # Objects used to store plot details
         self.markerPlot = None
@@ -55,8 +57,8 @@ class Ship():
         self.vmax = maxSpeed_kn
         self.Cb = LBP * width * depth / displacement
 
-        # Relevant Coefficients
-        self.turningCoefficient = turningCoefficient
+        # Sea-trial
+        self.seaTrialResults = None
 
         # Create AIS message
         self.AIS = AISMessage(self)
@@ -72,16 +74,7 @@ class Ship():
         return ("%s: at %s with a speed of %d m/s and course %d degrees" %
                 (self.name, self.location, self.speed, self.course))
 
-    def turningCircle(self):
-        """" Steady turning radius in [meter] """
-        tc = 3.5 * self.LBP * self.turningCoefficient
-        return tc
-
-    def turningSpeed(self):
-        """" Steady turning radius in [deg/minute] """
-        ts = (10000 / self.LBP) * self.turningCoefficient
-        return ts
-
+    # Functions for plotting
     def createPolygon(self):
         self.polygon = [(-.5 * self.B, .35 * self.LBP),
                         (0, 0.5 * self.LBP),
@@ -110,6 +103,7 @@ class Ship():
 
         return patch
 
+    # Functions to automatically steer vessel
     def adjustRudder(self):
         locationError = np.asarray(self.waypoints[0]) - np.asarray(self.location)
         distance2waypoint = math.sqrt(locationError[0] ** 2 + locationError[1] ** 2)
@@ -152,36 +146,25 @@ class Ship():
 
         if distance2waypoint < self.LBP + 50:
             self.waypoints.pop(0)
-
-    def identifyProblem(self, listWithOtherShips):
-        ownName = self.name
-
-        for ship in listWithOtherShips:
-            if not (ownName == ship.name):
-                CPA = calculate
-
-    def solveProblem(self):
-        problemSolved = False
-
-        return problemSolved
+            self.waypointUpdateNeeded = True
 
 
 if __name__ == "__main__":
     # Test creating a ship
-    shipA = Ship(name="Titia",
-                 MMSI=1,
-                 LBP=50, width=9,
-                 depth=4.5,
-                 displacement=50*9*4.5*0.75,
-                 deadweight=220,
-                 nominalSpeed_kn=13)
+    pass
 
-    print(shipA)
-    print(shipA.turningCircle())
-    print(shipA.turningSpeed())
-    print(shipA.AIS)
-
-    for point in shipA.polygon:
-        print(point)
-
-    testfunction()
+    # shipA = Ship(name="Titia",
+    #              MMSI=1,
+    #              LBP=50, width=9,
+    #              depth=4.5,
+    #              displacement=50*9*4.5*0.75,
+    #              deadweight=220,
+    #              nominalSpeed_kn=13)
+    #
+    # print(shipA)
+    # print(shipA.turningCircle())
+    # print(shipA.turningSpeed())
+    # print(shipA.AIS)
+    #
+    # for point in shipA.polygon:
+    #     print(point)

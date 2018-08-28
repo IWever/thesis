@@ -331,8 +331,14 @@ class Viewer:
         if not ship.waypointMarker:
             self.plotWaypoint(shipname)
 
+        # if ship.waypointUpdateNeeded:
+        #     self.plotWaypoint(shipname)
+        #     ship.waypointUpdateNeeded = False
+
     def plotWaypoint(self, shipname):
         ship = self.world.sim.activeShips[shipname]
+
+        self.deleteWaypointMarkers(ship)
 
         if ship.waypoints:
             for waypointLocation in ship.waypoints:
@@ -372,11 +378,15 @@ class Viewer:
         except ValueError:
             pass
 
+    @staticmethod
     def deleteWaypointMarkers(ship):
-        for i in range(len(ship.waypoints)):
+        print("try to remove")
+        for i in range(len(ship.waypoints) + 1):
             try:
                 ship.waypointMarker.remove()
             except AttributeError:
                 pass
             except ValueError:
+                pass
+            except TypeError:
                 pass

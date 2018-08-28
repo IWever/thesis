@@ -1,96 +1,149 @@
 \chapter{Definition of criteria}
-\label{ch:criteria}
-To determine which strategy works best, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. First the criteria which are true or false are discussed, followed by the current and proposed algorithms to calculate the other criteria.
-
-\section{Conditional criteria}
-
-\subsection{COLREGs}
-How is the path based solely based on COLREGs, without taking into account other ships
-
-Most important rule of \ac{COLREGs}, is that you are allowed to deviate from any rule if it will increase the safe operation. This is only the case when others also expect you to deviate.
-
-use this \url{https://www.myseatime.com/blog/detail/8-colreg-rules-every-navigating-officer-must-understand}
-
-\subsection{Relative speed}
-
-\subsection{Bold movement}
-Combine paths to ensure bold movements
-
+\label{ch:criteria-problem}
+To determine which problem might occur due to dynamic and static hazards, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. First the criteria which are true or false are discussed, followed by the current and proposed algorithms to calculate the other criteria. Later in the process, these criteria can be used again. To ensure that the chosen strategies ensures a minimal \acf{CPA} and crossing distance.
 
 \section{Calculations based on current systems}
-Within \ac{ARPA} and \ac{ECDIS} the criteria are often already calculated, using linearized algorithms. Below these calculations are discussed for the \ac{CPA} and crossing position.
+Within \ac{ARPA} and \ac{ECDIS}, different calculations are already being made, which can be used to evaluate if there is a problem in the current scenario. These calculations often use linearized algorithms, which results are not correct when turning. Below these calculations are discussed for the \acf{CPA} and crossing position.
+\todo{add code snippets to appendix or ref to simulation environment}
 
 \subsection{\acf{CPA}}
-Code snippet \todo{convert to nice latex math}:
-\begin{lstlisting}
-xA = shipA.location[0]
-yA = shipA.location[1]
-VA = shipA.speed
-UxA = math.sin(shipA.course)
-UyA = math.cos(shipA.course)
+The \ac{CPA} refers to the positions at which two dynamically moving objects reach their closest possible distance. This is an important calculation for collision avoidance. The linearized form uses two points moving at fixed speed and fixed direction. An example is shown in figure \ref{fig:CPA}. Where P and Q are the moving points, with corresponding direction vectors u and v, which include the speed and direction.
 
-xB = shipB.location[0]
-yB = shipB.location[1]
-VB = shipB.speed
-UxB = math.sin(shipB.course)
-UyB = math.cos(shipB.course)
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{CPA_lines.png}
+	\caption{Example for \acf{CPA}}
+	\label{fig:CPA}
+\end{figure}
 
-if (shipB.course == shipA.course) and (shipB.speed == shipA.speed):
-distance = math.sqrt( (xB-xA)**2 + (yB - yA) ** 2)
-print('%s and %s parallel: %d meter apart' % (shipA.name, shipB.name, distance))
-return [distance, 0]
+A formula can be derived for the closest point of approach. With the motion equations for $P$ and $Q$, the distance can be calculated. Where $P_0$ and $Q_0$ are the current positions:
+\begin{equation}
+	\label{eq:motion}
+	P(t) = P_0 + t \cdot u ;\quad  Q(t) = Q_0 + t \cdot v
+\end{equation}
 
-distance = math.sqrt((
-yA * VA * UxA - VA * yB * UxA - yA * VB * UxB + VB * UxB * yB - xA * VA * UyA + xB * VA * UyA + xA * VB * UyB - xB * VB * UyB) ** 2 / (
-UxA ** 2 * VA ** 2 - 2 * UxA * UxB * VA * VB + UxB ** 2 * VB ** 2 + UyA ** 2 * VA ** 2 - 2 * UyA * UyB * VA * VB + UyB ** 2 * VB ** 2))
-time_s = (((-xA + xB) * UxA - UyA * (yA - yB)) * VA + VB * ((xA - xB) * UxB + UyB * (yA - yB))) / (
-(UxA ** 2 + UyA ** 2) * VA ** 2 - 2 * VB * (UxA * UxB + UyA * UyB) * VA + VB ** 2 * (UxB ** 2 + UyB ** 2))
-\end{lstlisting}
+\begin{equation}
+	d(t) = |P(t) - Q(t)| = |P_0 - Q_0 + t (u - v)|
+\end{equation}
+
+Since d(t) is a minimum when $D(t) = d(t)^2$ is a minimum:
+\begin{equation}
+	D(t) = d(t)^2 = (u - v) \bullet (u - v) t^2 + 2 (P_0 - Q_0) \bullet (u - v) t + (P_0 - Q_0) \bullet (P_0 - Q_0)
+\end{equation}
+
+\begin{equation}
+\frac{d D(t)}{dt} = 0 = 2t[(u - v) \bullet (u-v)] + 2 (P_0 - Q_0) \bullet (u - v)
+\end{equation}
+
+This can be solved for t to calculate the moment where CPA is the smallest:
+\begin{equation}
+	t_{CPA} = \frac{-(P_0 - Q_0) \bullet (u - v)}{|u - v|^2}
+\end{equation}
+\begin{equation}
+	d_{CPA}(t_{CPA}) = |P_0 - Q_0 + \frac{-(P_0 - Q_0) \bullet (u - v)}{|u - v|^2} \bullet (u - v)|
+\end{equation}
+If $t_{CPA}$ is smaller than 0, the CPA is in the past, else it is in the future.
 
 \subsection{Crossing distance}
-Code snippet \todo{convert to nice latex math}:
-\begin{lstlisting}
-locA = np.transpose(np.matrix(shipA.location))
-locB = np.transpose(np.matrix(shipB.location))
-p = locA - locB
+The crossing distance is the distance between two ships if they pass each others path. This can be both in front or behind a vessel. This distance is mostly relevant for how safe a crossing situation feels. The crew on manned ships do not want to have ships too close in front of them, as they can't do an evasive manoeuvrer in those situations. The same motion equation as for CPA can be used (equation \ref{eq:motion}). 
 
-UA = np.array([[math.sin(shipA.course)], [math.cos(shipA.course)]])
-UB = np.array([[math.sin(shipB.course)], [math.cos(shipB.course)]])
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{crossing_lines.png}
+	\caption{Example for crossing point and distance}
+	\label{fig:CPA}
+\end{figure}
 
-d = np.concatenate((UB, -UA), axis=1)
-n = np.linalg.inv(d) * p
+In this case the distance is calculated between two points at a certain moment in time. The first step is to calculate the crossing point (cp) of the two lines:
+\begin{equation}
+	P(t_{cp,p}) = Q(t_{cp,q}) \rightarrow P_0 + t_{cp,p} \cdot u = Q_0 + t_{cp,q} \cdot v
+\end{equation}
 
-crossing = locB + n[0, 0] * UB
-relativeSpeed = n[1, 0] / n[0, 0]
-\end{lstlisting}
+\begin{equation}
+	t_{cp,P} = \frac{(Q_0 - P_0) \times v}{u \times v}
+\end{equation}
+
+\begin{equation}
+	t_{cp,Q} = \frac{(P_0 - Q_0) \times u}{v \times u}
+\end{equation}
+
+
+\begin{equation}
+	cp = P_0 + \left[ \frac{(Q_0 - P_0) \times v}{u \times v} \right] \cdot u =  Q_0 + \left[ \frac{(P_0 - Q_0) \times u}{v \times u} \right] \cdot v
+\end{equation}
+
+The next step is to determine where each vessel is, when the other vessel is at the crossing point. To determine finally what the crossing distance is:
+\begin{equation}
+	P(t_{cp,Q}) = P_0 + \left[ \frac{(Q_0 - P_0) \times v}{u \times v} \right] \cdot u
+\end{equation}
+\begin{equation}
+	Q(t_{cp,P}) = Q_0 + \left[ \frac{(P_0 - Q_0) \times u}{v \times u} \right] \cdot v
+\end{equation}
+\begin{equation}
+	d(t) = |P(t) - Q(t)|
+\end{equation}
+The crossing distance (cd) for when P crosses Q and vice versa, can be calculated using the following formulas:
+\begin{equation}
+	d_{cd,PQ}(t_{cp,P}) = |P(t_{cp,P}) - Q(t_{cp,P})|
+\end{equation}
+\begin{equation}
+	d_{cd,QP}(t_{cp,Q}) = |P(t_{cp,Q}) - Q(t_{cp,Q})|
+\end{equation}
 
 \section{Proposed algorithm based on planned path}
-Using the planned path of the vessel, better estimations can be made for the closest point of approach and crossing distance. As this planned path is not available for other ships, without introducing new systems, an estimation is made for the likely path. Which first uses a first order change, based on rate of turn and course. This can be extended with a combination of expected location, using the probability that another ship is choosing a specific strategy.
+To improve the evaluation of criteria, better non-linearized methods are necessary for the calculation of the \ac{CPA} and crossing point. By predicting the likely path of a vessel, better estimations can be made. Which first uses a first order change, based on rate of turn and course. This can be extended with a combination of expected location, using the probability that another ship is choosing a specific strategy.
 
-Disadvantage: heavier computation and less accuracy due to numerical solve
+Although it will result in better evaluations, is the disadvantage that much heavier computations are needed, while also introducing uncertainty with the numerical solver. Therefore a combination can be made based on the expected route to use the linearized or non-linearized methods. The calculations have to be done for every combination of your ship and another ship which is nearby.
+
+The Bézier curve is used to describe the paths in a non-linearized manner. The definition of a Bézier curve is first given. Followed by the same criteria as in the previous section: \acf{CPA} and crossing distance. This time describing the algorithm using to calculate it in a non-linearized manner.
+
+\subsection{Bézier curve}
+The first iteration of the algorithm is semi-linearized. Where the path of own ship is represented by a Bézier curve, based on its waypoints and strategy. To describe the Bézier curve, points have to be fitted along the planned path. This is similar to the method as described by Taams \cite{Taams2018}. While the other ship is still linearized, as not enough information on the strategy and waypoints is known without introducing new systems and protocols.
+
+For the calculation does the distance function not change. This is still $
+d(t) = |P(t) - Q(t)|$. However is P taken as own ship and gets a new formula using the Bézier curve. This curve has a degree of $n$, which depends on the way-points and can be described using the following equations:
+\begin{equation}
+P(t) = \sum\limits_{i=0}^n b_{i,n}(t) \cdot P_i \quad and
+\end{equation}
+\begin{equation}
+b_{i,n}(t) = \begin{array}{c} n \\ i \end{array} t^i(1-t)^{n-i}, i = 0,\dots,n
+\end{equation}
 
 \subsection{\acf{CPA}}
+The numerical algorithm used to calculate the CPA is shown below. Herein is the Bézier curve thus used for making a representation of own vessel, while other vessels are represented with the linearized function as described earlier.
 \begin{enumerate}
-	\item Check if something has changed since last calculation
+	\item Check if situation (course, speed, other vessels) has changed since last calculation:
 	\begin{enumerate}
-		\item No, check out
+		\item No, break
 		\item Yes, continue
 	\end{enumerate}
-	\item Use waypoints to determine expected path for own ship (Bezier curve).
+	\item Use waypoints to determine expected path for own ship (Bézier curve).
 	\item Use path to determine location for each time-step.
 	\item Use course and speed other ships to determine their location for each time-step
-	\item Calculate distance between points for each time-step, compare to stored CPA
+	\item Calculate distance between ships for each time-step:
 	\begin{enumerate}
 		\item If smaller than stored CPA, update stored CPA with calculated CPA
+		\item If larger than stored CPA, do not update
 	\end{enumerate}
-	\item 
-	
+	\item Return CPA
 \end{enumerate}
-\todo{use pseudecode with loop to skip timesteps, speeding up the calculation}
-
 
 \subsection{Crossing distance}
-
-\subsection{Passing distance}
-
-
+The algorithm to calculate the crossing distance will require much less computational power, as not all time-steps have to be calculated. Just the ones where the path cross. The following algorithm can be used. It should be noted that some calculations from the CPA calculation can be reused.
+\begin{enumerate}
+	\item Check if something has changed since last calculation:
+	\begin{enumerate}
+		\item No, break
+		\item Yes, continue
+	\end{enumerate}
+	\item Use waypoints to determine expected path for own ship (Bézier curve).
+	\item Determine crossing point(s) between linear path and Bézier curve.
+	\item Check if crossing points exist:
+	\begin{enumerate}
+		\item No, break
+		\item Yes, determine location for crossing point(s)
+	\end{enumerate}
+	\item Calculate time when ships are at crossing point(s).
+	\item Calculate distance between ships at time of crossing.
+	\item Return crossing distances.
+\end{enumerate}

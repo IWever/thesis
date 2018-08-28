@@ -1,4 +1,4 @@
-from src.manoeuvring import manoeuverShip
+from src.manoeuvringModel import manoeuverShip
 import math
 
 

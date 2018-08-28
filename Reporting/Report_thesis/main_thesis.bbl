@@ -1,17 +1,9 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Arciszewski et~al.(2009]{Arciszewski2009}
-Henryk~F.R. Arciszewski, Tjerk~E. {De Greef}, and Jan~H. {Van Delft}.
-\newblock {Adaptive automation in a naval combat management system}.
-\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics Part
-  A:Systems and Humans}, 39\penalty0 (6):\penalty0 1188--1199, 2009.
-\newblock ISSN 10834427.
-\newblock \doi{10.1109/TSMCA.2009.2026428}.
 
 \bibitem[Arimura et~al.(2001]{Arimura2001}
 Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
@@ -20,19 +12,29 @@ Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
 \newblock ISBN 3540679154.
 \newblock \doi{10.1007/978-3-642-29066-4{_}11}.
 
+\bibitem[Artyszuk(2016)]{Artyszuk2016}
+Jaroslaw Artyszuk.
+\newblock {Inherent Properties of Ship Manoeuvring Linear Models in View of the
+  Full-mission Model Adjustment}.
+\newblock \emph{TransNav, the International Journal on Marine Navigation and
+  Safety of Sea Transportation}, 10\penalty0 (4):\penalty0 595--604, 2016.
+\newblock ISSN 2083-6473.
+\newblock \doi{10.12716/1001.10.04.08}.
+\newblock URL
+  \url{http://www.transnav.eu/Article{\_}Inherent{\_}Properties{\_}of{\_}Ship{\_}Manoeuvring{\_}Artyszuk,40,683.html}.
+
 \bibitem[Backer(2015)]{Backer2015}
 Philippe D~E Backer.
 \newblock {Report on the joint investigation of the collision between the LNG
   Carrier mts AL ORAIQ and the mv FLINTERSTAR}.
 \newblock Technical Report October, 2015.
 
-\bibitem[Boyd(1987)]{Boyd1987}
-John~R. Boyd.
-\newblock \emph{{A discourse on winning and losing}}.
-\newblock 1987.
-\newblock ISBN M-U 43947 (Briefing slides).
+\bibitem[{Bernard Marr}(2017)]{Marr2017}
+{Bernard Marr}.
+\newblock {Rolls-Royce And Google Partner To Create Smarter, Autonomous Ships
+  Based On AI And Machine Learning}, 2017.
 \newblock URL
-  \url{http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:A+discourse+on+Wining+and+Losing{\#}0}.
+  \url{https://www.forbes.com/sites/bernardmarr/2017/10/23/rolls-royce-and-google-partner-to-create-smarter-autonomous-ships-based-on-ai-and-machine-learning/{\#}481e61a26dfe}.
 
 \bibitem[Bradshaw et~al.(2003]{Bradshaw2003}
 Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
@@ -108,6 +110,12 @@ Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
 \newblock ISSN 00224375.
 \newblock \doi{10.1016/j.jsr.2006.04.007}.
 
+\bibitem[Hoffman(2018)]{Hoffman2018}
+Ryan~W Hoffman.
+\newblock {Sensitivity Analyses of Optimized Attitude Estimators Using Sensor
+  Fusion Solutions for Low- Cost MEMS Configurations}.
+\newblock 2018.
+
 \bibitem[IMO(1972)]{IMO1972}
 IMO.
 \newblock {Convention on the International Regulations for Preventing
@@ -142,6 +150,13 @@ Terry McMorris, Martin Barwood, Beverley~J. Hale, Matt Dicks, and Jo~Corbett.
 \newblock ISSN 00319384.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0031938418300441}.
+
+\bibitem[Molland and Turnock(2007]{Molland2007}
+Anthony Molland and Stephen Turnock.
+\newblock \emph{{Marine Rudders and Control Surfaces}}.
+\newblock 2007.
+\newblock ISBN 9780750669443.
+\newblock \doi{10.1016/B978-0-7506-6944-3.X5000-8}.
 
 \bibitem[MUNIN(2016)]{MUNIN2016}
 MUNIN.
@@ -185,6 +200,12 @@ NTSB.
 \newblock {Marine Accident Report - Collision between Bulk Carrier Conti
   Peridot and Tanker Carla Maersk}.
 \newblock \emph{Marine Accident Report}, 2016{\natexlab{b}}.
+
+\bibitem[{Oliver Cameron}(2017)]{Cameron2017}
+{Oliver Cameron}.
+\newblock {An Introduction to LIDAR: The Key Self-Driving Car Sensor}, 2017.
+\newblock URL
+  \url{https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff}.
 
 \bibitem[Palmer et~al.(2007]{Palmer2007}
 A.~R. Palmer, D.~A. Hall, C.~Sumner, D.~J~K Barrett, S.~Jones, K.~Nakamoto, and
@@ -252,6 +273,11 @@ Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock \doi{10.1016/j.oceaneng.2017.09.020}.
 \newblock URL \url{https://doi.org/10.1016/j.oceaneng.2017.09.020}.
 
+\bibitem[Taams(2018)]{Taams2018}
+Hugo Taams.
+\newblock {Guidance, Navigation and Control of Autonomous Vessels}.
+\newblock Technical report, TU Delft, Delft, 2018.
+
 \bibitem[Underwood et~al.(2013]{Underwood2013}
 Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock {Driving experience and situation awareness in hazard detection}.
@@ -260,9 +286,9 @@ Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock \doi{10.1016/j.ssci.2012.05.025}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}.
 
-\bibitem[{US Coast Guard}()]{USCG2018}
+\bibitem[{US Coast Guard}(2018)]{USCG2018}
 {US Coast Guard}.
-\newblock {AIS Messages}.
+\newblock {AIS Messages}, 2018.
 \newblock URL \url{https://www.navcen.uscg.gov/?pageName=AISMessages}.
 
 \bibitem[{US Navy}(2017)]{USNavy2017}

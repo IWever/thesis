@@ -35,20 +35,17 @@
 
 \part{Steps towards safe autonomous shipping}
 \input{chapter/intro-towards-autonomous}
-\input{chapter/bridge-systems}
-\input{chapter/accidents}
 \input{chapter/future-shipping}
-\input{chapter/abstract-model}
-\input{chapter/development-tool}
+\input{chapter/decision-model}
 
 \part{Relevance of criteria for decision making}
 \label{part:MT}
 \input{chapter/MT/introduction}
+\input{chapter/MT/decision-process}
 \input{chapter/MT/database-nodes}
 \input{chapter/MT/possible-criteria}
-\input{chapter/MT/decision-model}
-\input{chapter/MT/scenario-story}
 \input{chapter/MT/evaluation-criteria}
+\input{chapter/MT/scenario-story}
 \input{chapter/MT/lessons-learned}
 
 \part{Protocol to enable teamwork between manned and unmanned ships}
@@ -62,15 +59,30 @@
 \input{chapter/results}
 \input{chapter/conclusion}
 
+\part{Appendices}
+\begin{appendices}
+	\appendix
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+	\input{chapter/Appendix/bridge-systems}
+	\input{chapter/Appendix/simulation-environment}
+	\input{chapter/Appendix/decision-trees}
+	\input{chapter/Appendix/accidents}
+	\input{chapter/Appendix/experiment-forms}
+\end{appendices}
+
+
 \backmatter
 
 \part{TEMPORARY: Old text}
 \input{chapter/manoeuvring}
 \input{chapter/filters}
-
+\input{chapter/development-tool}
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{include/library}
+
+
 
 
 \end{document}
