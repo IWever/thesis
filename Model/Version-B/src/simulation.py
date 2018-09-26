@@ -1,5 +1,6 @@
 from src.manoeuvringModel import manoeuverShip
 import math
+from matplotlib import patches
 
 
 class Simulation:
@@ -11,7 +12,10 @@ class Simulation:
         self.world = world
         self.env = world.env
 
-        self.initialPositionObjects()
+        module = __import__("Scenarios.%s" % self.world.experimentName, globals(), locals(), ['object'], 1)
+        initial = getattr(module, "initial")
+
+        initial(self)
 
         print("Created environment for simulation")
 
@@ -20,9 +24,13 @@ class Simulation:
         self.env.process(self.updateGUI())
 
     def runSimulation(self):
+        self.world.log("Simulation started")
         while True:
             for shipname in self.activeShips:
                 self.moveShip(shipname)
+
+            for shipname in self.activeShips:
+                self.updateStatistics(shipname)
 
             self.world.viewer.updatePlot()
             yield self.env.timeout(self.world.secondsPerStep/self.world.updateFrequency)
@@ -48,11 +56,11 @@ class Simulation:
         if speed is None:
             ship.speed = ship.vmean
             ship.telegraphSpeed = (ship.speed / ship.vmax) ** 2
-            ship.speedSetting = ship.speed
+            ship.acceleration = 0
         else:
             ship.speed = speed
             ship.telegraphSpeed = (ship.speed / ship.vmax) ** 2
-            ship.speedSetting = ship.speed
+            ship.acceleration = 0
 
         if firstWaypoint is None:
             pass
@@ -72,6 +80,7 @@ class Simulation:
         ship.drift = 0
 
         ship.speed = 0
+        ship.acceleration = 0
         ship.headingChange = 0
         ship.telegraphSpeed = 0
         ship.rudderAngle = 0
@@ -113,17 +122,42 @@ class Simulation:
             if ship.waypoints:
                 ship.adjustRudder()
 
-    def initialPositionObjects(self):
-        self.addDynamicObject("Tanker", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
-        self.addDynamicObject("Astrorunner", [-3090, 1395], 114, speed=13.4)
-        self.addDynamicObject("Anglia", [2068, -71], 291, speed=10.3)
+    def updateStatistics(self, objectName):
+        shipA = self.activeShips[objectName]
 
-        self.world.do["Tanker"].waypoints.append([-550, -1000])
-        self.world.do["Tanker"].waypoints.append([-3000, 1300])
+        # Calculate closest point of approach
+        for shipname in self.activeShips:
+            if shipA is not self.activeShips[shipname]:
+                shipB = self.activeShips[shipname]
+                d = math.hypot(shipA.location[0]-shipB.location[0], shipA.location[1]-shipB.location[1])
+                try:
+                    shipA.perceivedShipCPA[shipB] = min(shipA.perceivedShipCPA[shipB], d)
+                except KeyError:
+                    shipA.perceivedShipCPA[shipB] = d
 
-        self.world.do["Astrorunner"].waypoints.append([-1400, 600])
-        self.world.do["Astrorunner"].waypoints.append([1800, -900])
+                if d < shipA.LBP:
+                    self.world.log("%s and %s are too close (%d meter)" % (shipA.name, shipB.name, d))
 
-        self.world.do["Anglia"].waypoints.append([500, 600])
-        self.world.do["Anglia"].waypoints.append([-3800, 2150])
+    @staticmethod
+    def createLandPatch(polygon):
+        patch = patches.Polygon(polygon)
+        patch.set_color("olive")
+        patch.set_alpha(0.8)
 
+        return patch
+
+    @staticmethod
+    def createDangerPatch(polygon):
+        patch = patches.Polygon(polygon)
+        patch.set_color("crimson")
+        patch.set_alpha(0.2)
+
+        return patch
+
+    @staticmethod
+    def createDangerLinePatch(polygon):
+        patch = patches.Polygon(polygon)
+        patch.set_linestyle("dashed")
+        patch.set_edgecolor("crimson")
+
+        return patch

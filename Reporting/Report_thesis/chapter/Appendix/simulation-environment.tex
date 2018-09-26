@@ -1,17 +1,16 @@
 \chapter{Simulation environment}
 \label{app:tool}
-In the next parts, situations will be simulated. For part \ref{part:MT} this is done to evaluate criteria for the decision model and problem identification. While part \ref{part:CS} aims to get expert feedback on the protocol.
+This appendix will describe the development process of the simulation tool. This tool will be used to simulate situations and manoeuvers. For part \ref{part:MT} this is done to evaluate criteria for the decision model and problem identification. While part \ref{part:CS} aims to get expert feedback on the protocol.
 
-The different scenarios will be simulated using a tool. This tool will be able to simulate the scenarios to give more insight why decisions are made. Full scale testing will cost much more money, time and effort, as it is harder to control. Small scale testing will introduce many unknown factors. Therefore is chosen to build an application in which models can be simulated and tested.
-A start is made with a basic tool, which will continuously be improved. Changes in requirements might appear trough out the whole process, to deliver a better tool. The code is written in such a way that it is easy to maintain and improve by using different modules.
+The reason to use such a tool, is that full scale testing will cost much more money, time and effort, while it is harder to control. Only using algebraic solutions will give less insight, while introducing much more complexity. Therefore is chosen to build an application in which models can be simulated and tested numerically.
+A start is made with a basic tool, which will continuously be improved. Changes in requirements have appeared during the whole research. The code is written in such a way that it is easy to maintain and can be improved by using different modules.
 
 \section{Foundation}
-The first step is to set the goals or requirements of the tool. This doesn't mean it is a full description of the tool, but features it should at least have to be able to answer the research questions.
-The most important requirement is that ships within the simulation behave similarly to ships in reality. This does not necessarily mean that all hydromechanics should be known. But ships should have similar behaviors when turning or changing speed. This can be based on sea-trials and done using a mapping from current speed, current rotation, rudder angle and throttle to future speed and turning speed.
-The second requirement should be that it is flexible, in a way that different scenarios can be added, tested and visualized easily. Thereby changing ship characteristics, shared information and other inputs.
-Thirdly, it must be possible to show the register of possible decisions for the different vessels. To be able to validate this with seafarers. Meaning it will be a white box model.
+The first step is to set the goals or requirements for the tool. This doesn't mean it is a full description of the tool, but features it should at least have to be able to support the research.
+The most important requirement is that ships within the simulation behave similarly to ships in reality. Even when not all hydromechanics characteristics are known. But ships should have similar behaviors when turning or changing speed. This can be based on sea-trials and done using a mapping from current speed, current rotation, rudder angle and throttle to future speed and turning speed. This is combined with a model for hydrodynamic calculations by Artyszuk \cite{Artyszuk2016}, which is based on the often used 2$^{nd}$ order Nomoto model \cite{Nomoto1957}.
+The second requirement should be that it is flexible. This means different scenarios can be added, tested and visualized easily. Thereby changing ship characteristics, shared information and other inputs.
+The third requirement is that it should be possible to predetermine run the simulation with pre-determined actions, paths and manoeuvers.
 
-\subsection{User stories}
 The next step is to define users stories from the requirements. User stories are in a form: \emph{"As a [user] I want [action] so that [result]"}. Extending them with an acceptance criteria this will result in the features which should be implemented.
 
 Within the tool there will be different roles. For which these user stories can be used. These can be split between users and objects. Below these are described:
@@ -21,48 +20,101 @@ Within the tool there will be different roles. For which these user stories can 
 	\item \emph{Ship}. Object in the map which is used by the simulation. But to work correctly it also had needs for information.
 \end{itemize}
 
-Some examples of those user stories are given below. All users stories can be found in appendix XXX.\todo{add user stories to appendix}. 
+Some examples of those user stories are given below:
 \begin{itemize}
 	\item As an operator, I want to add vessels to the map, by selecting them in a list, so that they become part of the simulation. \\
-	Acceptance criteria: Ship visualized and other ships start receiving information.
-	\item As a viewer, I want to to be able to get the belief state, intention and next action of a ship, so that I can verify if it is what I expected it to be. \\
-	Acceptance criteria: Belief state, intention and next action are shown.
-	\item As a ship, I want to be able to predict the path of other vessels, so that I can make my decisions based on this. \\
-	Acceptance criteria: correctly updated belief state about other vessels.
+	Acceptance criteria: Ship visualized and can be selected to operate.
+	\item As an operator, I want to predefine a path, so that I can test manoeuvers. \\
+	Acceptance criteria: Waypoints can be set and added.
+	\item As a viewer, I want to see what intentions are of other ships when they sail automated. \\
+	Acceptance criteria: Waypoints are shown on the map.
+	\item As a ship, I want to be manoeuvrer in a realistic way, so that the simulation is relevant for real-life situation. \\
+	Acceptance criteria: Hydrodynamic model is validated.
 \end{itemize}
 
-\subsection{Requirements}
-The acceptance criteria for the application is: The ability to insert a model for decision making for a ship, which depends on information collected from other ships closeby, its own ship characteristics and the environment it acts in.
+\subsection{Software architecture}
+Based on the above described requirements and user stories, different modules are defined. Using the "model-view-controller" design pattern, has resulted in the following general modules:
+\begin{description}
+	\item[World] The world is the class in which everything happens. Thus a kind of facade.
+	\item[Simulation] The simulation adds processes which are relevant for simulating situations in real-time. This also means that it ensures the right steps are taken at the right moment, such as updating the GUI and moving ships around. Thereby does it coordinate which objects are active within the simulation
+	\item[Viewer] This module only listens to the world to check if things change. This is shown in the GUI. Also without this visualization the simulation will still be able to run.
+	\item[DynamicObject] Here the used ships are defined which can be used in the simulation.
+\end{description}
 
-There must also be considered that several assumptions are made to create a system which works in a practical manner, as not al input data is available or calculations might be very hard and slow down the simulation too much. The assumptions made are: ...
-\todo{Extend with more specific requirements}
+The above modules are for the general functionality of the tool. The implementation of more specific functions are in the following modules:
+\begin{description}
+	\item[Ship] Ships are used in the simulation. Within this module is stored how the ships look and their characteristics such as its safety domain.
+	\item[ManoeuvringModel] The manoeuvring model only contains a single method, in which each numerical step is calculated. Thus it receives a ship, the ships current situation and the time-step. It finally returns the new speed, course, heading and location. Thereby does it check if the input values are correct. It does not matter in which world it is, or how it is visualized.
+	\item[Gonio] Some calculations have to be done many times, such as rotating points and polygons around another point. This is can be done in the Gonio module.
+\end{description}
 
-\section{Architecture}
-\todo{describe different modules}
+
+For the specific implementation of both parts of this research, two packages are used: Testing manoeuvers (MTexperiment) and scenario descriptions for the expert reviews (Scenarios). 
+
+The MTexperiment uses a bit different design pattern, as the goal is to have as many simulations as possible in the shortest time. Where only the final result is visualized. This is acquired by using a module with general functions such as ship creation, manoeuvrer ship and store the results. While other modules are used to define the tests, select the executed tests and plot the results. 
+
+For the expert reviews, the GUI is very important. The Scenarios package contains all different scenarios which can be used for the expert review. In those scenario descriptions the objects used are defined, both static and dynamic object (e.g: ships). Also is given which waypoints ships should use and which part of the map is shown.
+
+This is done to make the code readable and make sure that is known what is happening where. Using these modules enabled me to work efficiently and improve parts, without having the risk that other parts will break. For even better maintainable code, the tool could be split up in more packages and classes. This would however result in much more time, without improving the result of this research.
 
 \section{Design specifications}
+The theory behind the specific modules is described in this section. This will include the necessary information for a ship which have to be added, information on the environment and the hydrodynamic model.
 
 \subsection{Ship description}
-
-\subsection{Environment description}
-
-\subsection{Hydrodynamic model}
-\label{apps:hydro-model}
-This can be based on sea-trials and done using a mapping from current speed, current rotation, rudder angle and throttle to future speed and turning speed.
-
-Turning rate rudder: 2,3 deg/s in regulations, 2,5 based on \cite{Artyszuk2016}, 3 deg/s based on \cite{Molland2007}.
-$a_H = 2.5$ empirical amplification factor of (effective) rudder force due to hull‐rudder interaction [0.6]
-
-
-\subsection{Radio}
-The area in which situations are tested are not larger than the radius of an VHF radio (about 20 NM - IMO regulations)
-
-\url{http://solasv.mcga.gov.uk/m_notice/mgn/mgn324.pdf} - p8
-
-\subsection{Controller}
-Based on the waypoints there is a simple controller to adjust the rudder angle. This controller steers based on the relative angle between the waypoint and the current position. This is done in the \emph{adjustRudder} function. The distance and relative angle is calculated, this is used in a simple decision tree to decide on the rudder angle, which is similar to a so-called "proportional controller". For this simulation it will give enough accuracy. For a better result, a "PID-controller" could be implemented:
+The key characteristics for a ship are given in table \ref{tab:input-ship-characteristics}. Beside these input values, there are also the information stored by the simulation about the vessel. These are described in table \ref{tab:stored-ship-characteristics} and included in the Ship object.
 
 \begin{table}[H]
+	\centering
+	\begin{tabular}{p{0.18\textwidth}|p{0.17\textwidth}|p{0.66\textwidth}}
+		\toprule
+		Input & Unit & Description\\
+		\midrule
+		Name & - & The name of the vessel\\
+		Color & - & Color of the vessel as shown in visualization \\
+		MMSI & - & Unique identification number \\
+		LBP & meter & Length of the vessel between perpendiculars \\
+		Width & meter & Width of the vessel \\
+		Draft & meter & Current draft of the vessel\\
+		Displacement & metric ton & Its weight based on the amount of water its hull displaces\\
+		Nominal speed & knots & The speed the ships sails on average \\
+		Max speed & knots & The maximum possible speed on flat water \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Input for ship characteristics}
+	\label{tab:input-ship-characteristics}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{0.18\textwidth}|p{0.17\textwidth}|p{0.63\textwidth}}
+		\toprule
+		Input & Unit & Description\\
+		\midrule
+		Last Update & seconds & Time in simulation at last update of location \\
+		Location & [meter, meter] & X and Y position \\
+		Course & degrees & Course, thus direction of movement \\
+		Heading & degrees & Heading, thus direction of bow \\
+		Drift & degrees & Difference between course and heading \\
+		Speed & knots & Current speed \\
+		Inertia turning & radians/second$^2$ & Inertia due to rotational movements \\
+		Acceleration & meter/second$^2$ & Inertia due to mass moving \\
+		Telegraph speed & \% & Speed-setting at bridge\\
+		Rudder angle & degrees & Angle of rudder from straight \\
+		Waypoints & [meter, meter] & X and Y postion of waypoints\\
+		GUI objects & - & Objects describing what should be plotted, such as direction arrow, ship shape, safety domain, etc.\\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Ship details from simulation}
+	\label{tab:stored-ship-characteristics}
+\end{table}
+
+\subsection{Controller}
+Based on the waypoints there is a simple controller to adjust the rudder angle automatically. This controller steers based on the relative angle between the next waypoint and the current position. This is done in the \emph{adjustRudder} function. The distance and relative angle is calculated, this is used in a simple decision tree to decide on the rudder angle, which is similar to a so-called "proportional controller". To enable ships to sail around automated, this is sufficient and gives enough accuracy. For a better result, a "PID-controller" could be implemented. In table \ref{tab:Rudder-angle} the criteria for the decision tree are shown. Where the relative angle is the angle between the current course and the angle to from the current position to the waypoint. 
+
+\begin{minipage}{\textwidth}
+	\begin{minipage}[b]{0.52\textwidth}
 	\centering
 	\begin{tabular}{l|l}
 		\toprule
@@ -70,13 +122,93 @@ Based on the waypoints there is a simple controller to adjust the rudder angle. 
 		\midrule
 		25-180 & 35\\
 		10-25 & 25\\
-		0-10 & Relative angle $*$ 8/10 \\
+		0-10 & Relative angle x .8 \\
 		\bottomrule
 	\end{tabular}
 	
 	\captionof{table}{Rudder angle based on relative angle}
 	\label{tab:Rudder-angle}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.47\textwidth}
+		\centering
+		\includegraphics[width=.6\textwidth]{waypoint-angle.png}
+		\captionof{figure}{Calculation of relative angle}
+		\label{fig:waypoint-angle}
+	\end{minipage}
+\end{minipage}
+
+This controller is limited due to the maximum turning rate of the rudder. This is discussed in multiple publications. Based on regulations from IMO the rudder should at least turn with 2,3 deg/second. But in reality this is often closer to 3 degrees/second \cite{Molland2007}. The value used by Artyszuk is 2,5 degrees/second \cite{Artyszuk2016}. When validating the model with the sea-trials, it seems that 3 degrees/second gave the most realistic results. Thus this has been used during the evasive manoeuvers and other experiments.
+
+
+
+\subsection{Manoeuvring model}
+\label{apps:hydro-model}
+To describe manoeuvring correctly a hydrodynamic model is needed. Using an emperical model, instead of a fully physical correct model shortens the implementation time. By validating the model with known data from sea-trials, can be determined if the accuracy of the model is sufficient for the tests. The model used is described by Artyszuk \cite{Artyszuk2016}. This linear dynamic higher-order model is based on the 2$^{nd}$ order Nomoto model \cite{Nomoto1957}. The input for this model is based on different papers and real-life comparisons, in order to be able to simulate the ships as accurately as possible. It is a numerical model. Which means the input for the manoeuvring function is a ship and a time-step.
+
+The first step is to gather relevant ship characteristics and the current state of the vessel, as shown in table \ref{tab:input-hydro-model}
+\begin{table}[p]
+	\centering
+	\begin{tabular}{p{0.18\textwidth}|p{0.17\textwidth}|p{0.63\textwidth}}
+		\toprule
+		Input & Unit & Description\\
+		\midrule
+		Length & meter & Length of the vessel\\
+		Width & meter & Width of the vessel \\
+		Cb & - & Block coefficient $(displacement / L \cdot B \cdot T)$ \\
+		Drift & degrees & Angle between course and heading \\
+		Inertia turning & radians/second$^2$ & Inertia due to rotational movements \\
+		Speed & knots & Current speed \\
+		Telegraph speed & \% & Speed-setting at bridge\\
+		Rudder angle & degrees & Angle of rudder from straight \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Input for manoeuvring model}
+	\label{tab:input-hydro-model}
 \end{table}
+
+Using this information, an estimation can be made about the acceleration. An estimate of the forces is used in this case. Where two forces are calculated, propelling force and resistance. The propelling force is based on the setting of the telegraph and drift angle which determine the steady state speed. This is multiplied with a force factor to get the right results. The resistance depends on the current ship speed and a force factor. The difference between these two determine if the ship is able to accelerate and how much. Thereby is there a filter which limits the maximum acceleration due to inertia. This eventually results in a new ship speed.
+
+Parallel to this calculation, a new course and heading is calculated. Based on the course, heading, manoeuvring characteristics and rudder angle. Different dimensionless factors are used, these are given in table \ref{tab:dimensionless-factors}. When more information on the hydrodynamics of a vessel is known, these input can be adapted. These inputs are validated for some of the used vessels, the resulting values did not differ significantly. This was most notable when running the different sea-trials with variable inputs. The ship characteristics had a much bigger influence. Although the impact of extreme changes in the rudder configuration have been looked into. The full calculation is discussed by Artyszuk \cite{Artyszuk2016}. 
+
+
+\begin{table}[p]
+	\centering
+	\begin{tabular}{p{0.1\textwidth}|p{0.1\textwidth}|p{0.78\textwidth}}
+		\toprule
+		Name & Value & Description\\
+		\midrule
+		$k_{11}$ & 1.004 & Sway added mass coefficient \\
+		$r_{z}$ & 0.247 & Ship's gyration dimensionless radius \\
+		$r_{66}$ & 0.225 & Added gyration dimensionless radius \\
+		$Y_{b}$ & 0.0043 & Hull hydrodynamic derivatives\\
+		$Y_{w}$ & 0.0260 & Hull hydrodynamic derivatives\\
+		$N_{b}$ & 0.0024 & Hull hydrodynamic derivative including Munk moment contribution \\
+		$N_{w}$ & -0.0630 & Hull hydrodynamic derivatives for moment\\
+		$A_{R}$ & 0.0177 & Dimensionless rudder ratio $(Ar/(L*T))$ \\
+		$w$ & 0.326 & Propeller wake fraction \\
+		$c_{Th}$ & 2.127 & Thrust coefficient propeller \\
+		$\partial C_{L} / \partial a$ & 0.0385 & Rudder lift coefficient derivative, which depends on $\alpha$ and $c_{Th}$ \\
+		
+		$a_{H}$ & 2.5 & Empirical factor for rudder force due to hull‐rudder interaction \\
+		$c_{Ry}$ & 1.0 & Empirical multiplier to the rudder geometric local drift angle \\
+		$x_{Reff}$ & -0.5 & Effective rudder longitudinal position \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Dimensionless coefficients based on Artyszuk}
+	\label{tab:dimensionless-factors}
+\end{table}
+
+\subsection{Criteria evaluation}
+Describe how cpa and crossing distance is implemented.
+
+\section{Input for tool}
+\subsection{Ship description}
+
+\subsection{Environment description}
+
 
 \section{Build}
 printscreens\\

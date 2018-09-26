@@ -28,11 +28,17 @@ def removeEntriesFromDict(entries, dict):
         if key in dict:
             del dict[key]
 
+def removeListsFromDict(dict):
+    entries = []
+    for key in dict:
+        if isinstance(dict[key], list):
+            entries.append(key)
+    removeEntriesFromDict(entries, dict)
 
 def setSpeed(ship, speed):
     ship.speed = speed
     ship.telegraphSpeed = (ship.speed / ship.vmax) ** 2
-    ship.speedSetting = ship.speed
+    ship.acceleration = 0
 
 def resetShip(ship):
     # Reset ship
@@ -47,16 +53,17 @@ def resetShip(ship):
 
 def manouverStep(ship, dt, result):
     manoeuverShip(ship, dt)
-    result["time"] += dt
-    result["timestamp"].append(result["time"])
+    result["Time"] += dt
+    result["Timestamp"].append(result["Time"])
     result["locx"].append(ship.location[0])
     result["locy"].append(ship.location[1])
-    result["speed"].append(ship.speed)
-    result["acceleration"].append(ship.acceleration)
-    result["course"].append(ship.course)
-    result["heading"].append(ship.heading)
-    result["rudder"].append(ship.rudderAngle)
-    result["rudderReal"].append(ship.rudderAngleReal)
+    result["Speed"].append(ship.speed)
+    result["Acceleration*100"].append(ship.acceleration*100)
+    result["Course"].append(ship.course)
+    result["Heading"].append(ship.heading)
+    result["Drift"].append(ship.drift)
+    result["Rudder"].append(ship.rudderAngle)
+    result["Rudder real"].append(ship.rudderAngleReal)
 
 
     return result

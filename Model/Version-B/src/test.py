@@ -1,18 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import math
+import datetime
 
-def make_plot(slope):
-    x = np.arange(1,10)
-    y = slope*x+3
-    plt.figure()
-    plt.plot(x,y)
+b = [-5, 19]
+a = [3, 21]
 
-make_plot(2)
-make_plot(3)
-plt.show()
+d = math.hypot(a[0]-b[0], a[1] - b[1])
 
-a = "name"
-
-b = int(a)
-
-print(b)
+print(datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))

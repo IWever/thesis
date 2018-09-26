@@ -16,18 +16,28 @@ def manoeuverShip(ship, dt):
     omega_z = math.radians(ship.headingChange)
 
     # Speed with acceleration
-    dragfactor = 0.08
-    C = dragfactor * ship.DWT * ship.vmax**2
-    acceleration = (C * ship.telegraphSpeed - dragfactor * ship.DWT * np.sign(ship.speedSetting) * ship.speedSetting ** 2) / ship.DWT
+    forcefactor = 0.08 * 1025
+    driftfactor = (1 - abs(ship.drift) / 30)
 
-    if abs(acceleration) > 0.5:
-        acceleration = 0.5 * np.sign(acceleration)
+    steadySpeed = math.sqrt(ship.telegraphSpeed) * ship.vmax * driftfactor
 
-    ship.acceleration = acceleration
+    deliveredForce = forcefactor * steadySpeed ** 2
+    usedForce = forcefactor * ship.speed ** 2
 
-    ship.speedSetting += float(acceleration * dt)
+    deltaForce = deliveredForce - usedForce
+    deltaAcceleration = deltaForce / ship.DWT
 
-    v = ship.speedSetting * 1852 / 3600 * (1 - abs(ship.drift) / 30)
+    accelartionError = deltaAcceleration - ship.acceleration
+    maxIncreaseAccelaration = 0.0005
+    if abs(accelartionError) > maxIncreaseAccelaration:
+        deltaAcceleration = ship.acceleration + maxIncreaseAccelaration * np.sign(accelartionError)
+
+    maxAccelartion = 0.05
+    if abs(deltaAcceleration) > maxAccelartion:
+        deltaAcceleration = maxAccelartion * np.sign(deltaAcceleration)
+
+    ship.acceleration = deltaAcceleration
+    v = ship.speed * 1852 / 3600 + deltaAcceleration * dt
 
     # Rudder angle with change [Artyszuk, 2016, ch6]
     rudderError = ship.rudderAngle - ship.rudderAngleReal
@@ -50,24 +60,24 @@ def manoeuverShip(ship, dt):
     hullCoeff = 0.5 * L / (B * Cb)
 
     # Coefficients estimated from [Artyszuk, 2016]
-    k_11 = 0.056 # surge added mass coefficient
-    k_22 = 1.004 # sway added mass coefficient
-    r_z = 0.247 # ship's gyration dimensionless radius (Jz / (m * L^2))
-    r_66 = 0.225 # added gyration dimensionless radius (m66 / (m * L^2))
+    k_11 = 0.056    # surge added mass coefficient
+    k_22 = 1.004    # sway added mass coefficient
+    r_z = 0.247     # ship's gyration dimensionless radius (Jz / (m * L^2))
+    r_66 = 0.225    # added gyration dimensionless radius (m66 / (m * L^2))
 
     Yb = 0.0043
     Yw = 0.0260
     Nb = 0.0024
     Nw = -0.0630
 
-    A_R = 0.0177 # dimensionless rudder ratio (Ar/(L*T)) [0.0177]
-    w = 0.326 # propeller wake fraction [0.326]
-    c_Th = 2.127 # Thrust coefficient propeller [2.127]
-    dCLda = 0.0385 # rudder lift coefficient derivative [0.0385]
+    A_R = 0.0177    # dimensionless rudder ratio (Ar/(L*T)) [0.0177]
+    w = 0.326       # propeller wake fraction [0.326]
+    c_Th = 2.127    # Thrust coefficient propeller [2.127]
+    dCLda = 0.0385  # rudder lift coefficient derivative [0.0385]
 
-    a_H = 0.6 # empirical amplification factor of (effective) rudder force due to hull‐rudder interaction [0.6]
-    c_Ry = 1.0 # empirical multiplier (≥1 or <1) to the rudder geometric local drift angle [1.0]
-    x_Reff = -0.5 # effective rudder longitudinal position [-0.5]
+    a_H = 2.5       # empirical amplification factor of (effective) rudder force due to hull‐rudder interaction [0.6]
+    c_Ry = 1.0      # empirical multiplier (≥1 or <1) to the rudder geometric local drift angle [1.0]
+    x_Reff = -0.5   # effective rudder longitudinal position [-0.5]
 
     checkInput(Yb, c_Ry, a_H, Yw, x_Reff, Nb, Nw)
 
@@ -109,7 +119,7 @@ def manoeuverShip(ship, dt):
     except ZeroDivisionError:
         ship.drift = 0
 
-    ship.course = ship.heading - ship.drift #math.degrees(beta)
+    ship.course = ship.heading - ship.drift
 
     # Calculate new position
     ship.location[0] += dt * v * math.sin(math.radians(ship.course))

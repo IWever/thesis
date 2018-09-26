@@ -4,18 +4,31 @@ import simpy
 from src.simulation import Simulation
 from src.viewer import Viewer
 from src.dynamicObjects import shipList
+import datetime
 
 
 class World:
     """ The world in which everything will happen """
 
-    def __init__(self, name="Dutos ship sim"):
-        self.name = name
-        self.secondsPerStep = 8
-        self.updateFrequency = 16 # amount of simulation steps per screen update
-        self.simEnd = 10
+    def __init__(self):
 
-        self.so = []
+        # Set-up for world
+        self.experimentName = "Maasgeul0"
+        self.comment = "Test"
+        self.showWaypointMarkers = True
+        self.saveLog = False
+
+        # Set-up for simulation
+        self.mapName = None
+        self.mapLocation = [-4000, 4000, -2500, 2500]  # [Xleft, Xright, Ybottom, Ytop]
+        self.secondsPerStep = 8
+        self.updateFrequency = 16  # amount of simulation steps per screen update
+
+        # Initialization simulation
+        self.simEnd = 10
+        self.actionLog = []
+
+        self.so = {}
         print("Created empty list to store static objects")
 
         self.do = shipList
@@ -25,20 +38,43 @@ class World:
         self.sim = Simulation(self)
 
         self.root = tk.Tk()
+        #self.secondScreen = tk.Tk()
         self.viewer = Viewer(self)
 
     def runSimulation(self):
         try:
             simMinStep = 1
-
             while world.viewer.simulationRunning:
                 self.simEnd += simMinStep
                 world.env.run(until=self.simEnd)
 
-            print("Simulation paused at %d seconds" % (self.simEnd - 1))
+            self.log("Simulation paused at %d seconds" % (self.simEnd - 1))
 
         except TclError:
-            print("Application closed by user at %d seconds" % (self.simEnd - 1))
+            self.closeSimulation()
+
+    def closeSimulation(self):
+        for shipname in self.sim.activeShips:
+            self.log("")
+            ship = self.sim.activeShips[shipname]
+
+            self.log("%s - CPA (meter)" % ship.name)
+            for shipname in ship.perceivedShipCPA:
+                self.log("%20s | %d meter" % (shipname, ship.perceivedShipCPA[shipname]))
+
+        if self.saveLog:
+            filename = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "_" + self.experimentName + "-" + self.comment
+            with open("D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\log\%s.txt" % filename, 'w') as f:
+                for line in self.actionLog:
+                    f.write("%s\n" % line)
+
+        self.log("")
+        self.log("Simulation closed by user after %d seconds" % (self.simEnd - 1))
+        sys.exit()
+
+    def log(self, message):
+        print(message)
+        self.actionLog.append("%d s: %s" % (self.env.now, message))
 
 
 # Create the world

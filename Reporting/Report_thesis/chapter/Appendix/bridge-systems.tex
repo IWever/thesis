@@ -112,7 +112,7 @@ The \acf{ECDIS} is a development in the navigational chart system used in naval 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.72\textwidth]{ECDIS.jpg}
-	\caption{\acf{ECDIS} integrated in bridge console}
+	\caption{\acf{ECDIS}}
 	\label{fig:ECDIS}
 \end{figure}
 
@@ -162,10 +162,10 @@ Previously all information was plotted by hand on navigational charts. With the 
 	\hfill
 	\begin{subfigure}[b]{0.37\textwidth}
 		\includegraphics[width=\textwidth]{ECDIS-Radar-overlay.png}
-		\caption{Radar overlay}
+		\caption{Radar overlay on ECDIS}
 	\end{subfigure}
 	
-	\caption{\acf{ECDIS}}
+	\caption{Radar and ECDIS}
 	\label{fig:ECDIS-example}
 	
 \end{figure}
@@ -209,6 +209,7 @@ The human operator has two sides, to formal straight forward role as an operator
 \label{sec:deck-crew}
 To give more insight into the different roles on board of a merchant's vessel, is the structure shown for officers in figure \ref{fig:crew-structure}. At smaller vessels, roles are combined where possible. The Navy has in some cases even more operational crew members. Apart from the licensed officers who manage the vessel, does the crew also consist of ratings who have hands-on skills within their own domain. \cite{Nedcon2013}
 
+\input{include/tikz}
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}[
@@ -243,7 +244,7 @@ To give more insight into the different roles on board of a merchant's vessel, i
 	\foreach \value in {1,2,3,4}
 	\draw[->] (c2.195) |- (c2\value.west);
 	\end{tikzpicture}
-	\caption{Crew structure basic}
+	\caption{Basic crew structure organogram}
 	\label{fig:crew-structure}
 \end{figure}
 
@@ -287,6 +288,7 @@ Whereas the human operator is more prone to environmental factors. Where workloa
 These factors do only consider the single individual within the human operator team. But with larger ships there are multiple persons at the bridge, all with their own responsibilities. Research has shown that many of these crews have multiple cultures and nationalities work next to each other. Which often have a agreed working language which is not their first. This leads not only to minor irritations. But in some cases to hazardous situations \cite{Hetherington2006}. Certainly when conversations happen via a radio with some noise. 
 
 \subsection{Procedures}
+\label{apps:procedures}
 To become a certified seafarer, different skills and knowledge must be acquired. The \ac{IMO} has developed several conventions to standardize this knowledge globally, the \ac{STCW} is leading here. This ensures that ships sailing in international waters have skilled crew which know what they can expect from other vessels. This also means they have navigational abilities such as plotting on a radar. But they also have knowledge of the conventions and systems used for safe navigation. Below some of these are explained in more detail. Followed by a description of known flaws of these systems and differences when compared to procedures used in practice.
 
 \subsubsection{\acf{COLREGs}}

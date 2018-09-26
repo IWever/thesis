@@ -1,29 +1,27 @@
-\BOOKMARK [0][-]{chapter*.3}{Preface}{}% 1
-\BOOKMARK [0][-]{chapter*.4}{Abstract}{}% 2
-\BOOKMARK [0][-]{chapter*.5}{Glossary}{}% 3
-\BOOKMARK [0][-]{chapter*.8}{Introduction}{}% 4
-\BOOKMARK [-1][-]{part.1}{I Steps towards safe autonomous shipping}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Steps towards the future}{part.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Decision model}{part.1}% 7
-\BOOKMARK [-1][-]{part.2}{II Relevance of criteria for decision making}{}% 8
-\BOOKMARK [0][-]{chapter.3}{Decision making process}{part.2}% 9
-\BOOKMARK [0][-]{chapter.4}{Identification of situation and scenarios}{part.2}% 10
-\BOOKMARK [0][-]{chapter.5}{Definition of criteria}{part.2}% 11
-\BOOKMARK [0][-]{chapter.6}{Dependence of manoeuvrability on decision criteria}{part.2}% 12
-\BOOKMARK [0][-]{chapter.7}{Analysis of scenarios}{part.2}% 13
-\BOOKMARK [0][-]{chapter.8}{Lessons learned}{part.2}% 14
-\BOOKMARK [-1][-]{part.3}{III Protocol to enable teamwork between manned and unmanned ships}{}% 15
-\BOOKMARK [0][-]{chapter.9}{Foundation}{part.3}% 16
-\BOOKMARK [0][-]{chapter.10}{System design specification}{part.3}% 17
-\BOOKMARK [0][-]{chapter.11}{Design evaluation}{part.3}% 18
-\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 19
-\BOOKMARK [0][-]{chapter.12}{Results}{part.4}% 20
-\BOOKMARK [0][-]{chapter.13}{Conclusion}{part.4}% 21
-\BOOKMARK [-1][-]{part.5}{V Appendices}{}% 22
-\BOOKMARK [0][-]{appendix.A}{Current systems for safe navigation}{part.5}% 23
-\BOOKMARK [0][-]{appendix.B}{Simulation environment}{part.5}% 24
-\BOOKMARK [0][-]{appendix.C}{Decision trees}{part.5}% 25
-\BOOKMARK [0][-]{appendix.D}{Accidents}{part.5}% 26
-\BOOKMARK [0][-]{appendix.E}{Experiment questionnaire}{part.5}% 27
-\BOOKMARK [-1][-]{part.6}{VI TEMPORARY: Old text}{}% 28
-\BOOKMARK [0][-]{appendix*.119}{Bibliography}{part.6}% 29
+\BOOKMARK [0][-]{chapter*.2}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.13}{Introduction}{}% 3
+\BOOKMARK [-1][-]{part.1}{I The problem of communication for autonomous vessels}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Steps towards the future}{part.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Decision model}{part.1}% 6
+\BOOKMARK [-1][-]{part.2}{II Effect of manoeuvrability on decision making}{}% 7
+\BOOKMARK [0][-]{chapter.3}{Decision making process}{part.2}% 8
+\BOOKMARK [0][-]{chapter.4}{Identification of situation and scenarios}{part.2}% 9
+\BOOKMARK [0][-]{chapter.5}{Definition of criteria}{part.2}% 10
+\BOOKMARK [0][-]{chapter.6}{Dependence of decision domain on manoeuvrability}{part.2}% 11
+\BOOKMARK [0][-]{chapter.7}{Result}{part.2}% 12
+\BOOKMARK [-1][-]{part.3}{III Necessity of a protocol to enable teamwork between manned and unmanned ships}{}% 13
+\BOOKMARK [0][-]{chapter.8}{Foundation}{part.3}% 14
+\BOOKMARK [0][-]{chapter.9}{System design specification}{part.3}% 15
+\BOOKMARK [0][-]{chapter.10}{Design evaluation}{part.3}% 16
+\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 17
+\BOOKMARK [0][-]{chapter.11}{Results}{part.4}% 18
+\BOOKMARK [0][-]{chapter.12}{Conclusion}{part.4}% 19
+\BOOKMARK [-1][-]{part.5}{V Appendices}{}% 20
+\BOOKMARK [0][-]{appendix.A}{Current systems for safe navigation}{part.5}% 21
+\BOOKMARK [0][-]{appendix.B}{Simulation environment}{part.5}% 22
+\BOOKMARK [0][-]{appendix.C}{Decision trees}{part.5}% 23
+\BOOKMARK [0][-]{appendix.D}{Accidents}{part.5}% 24
+\BOOKMARK [0][-]{appendix.E}{Experiment questionnaire}{part.5}% 25
+\BOOKMARK [-1][-]{part.6}{VI TEMPORARY: Old text}{}% 26
+\BOOKMARK [0][-]{appendix*.99}{Bibliography}{part.6}% 27

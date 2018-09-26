@@ -1,48 +1,23 @@
-\contentsline {todo}{Make new title}{}{section*.1}
-\contentsline {todo}{list of used symbols}{v}{section*.6}
-\contentsline {todo}{link structure to chapters}{2}{section*.14}
-\contentsline {todo}{rewrite in more readible text}{4}{section*.15}
-\contentsline {todo}{Make infographic}{7}{section*.19}
-\contentsline {todo}{Describe different levels of automation}{7}{section*.20}
-\contentsline {todo}{more info on JIP and Sovereign}{8}{section*.23}
-\contentsline {todo}{add model from sovereign}{9}{section*.25}
-\contentsline {todo}{add process diagram}{16}{section*.31}
-\contentsline {todo}{use colreg boundaries in junction and terminology (head-on, overtaking, etc.)}{20}{section*.40}
-\contentsline {todo}{add definition of static hazard and more examples, to make link to evaluation tool and tags}{21}{section*.41}
-\contentsline {todo}{also describe the rules, which might be based on signs}{21}{section*.42}
-\contentsline {todo}{add more examples to describe consequence on strategy - Relative speed}{21}{section*.43}
-\contentsline {todo}{add more examples to describe consequence on strategy}{22}{section*.44}
-\contentsline {todo}{add code snippets to appendix or ref to simulation environment}{23}{section*.45}
-\contentsline {todo}{add figure of these manoeuvers}{27}{section*.48}
-\contentsline {todo}{Not yet implemented}{28}{section*.54}
-\contentsline {todo}{Evaluate scenarios using decision process as described above}{35}{section*.57}
-\contentsline {todo}{Communication, Observations, Strategy based on current information, Key criteria}{37}{section*.59}
-\contentsline {todo}{add screenshot of simulation}{38}{section*.60}
-\contentsline {todo}{make table}{39}{section*.61}
-\contentsline {todo}{discuss another scenario}{39}{section*.62}
-\contentsline {todo}{summarize relevant lessons, and what NOT should be forgotton}{39}{section*.63}
-\contentsline {todo}{add link to abstract model}{42}{section*.64}
-\contentsline {todo}{Is dit voldoende?}{47}{section*.66}
-\contentsline {todo}{Rewrite introduction with purpose of these usecases}{52}{section*.67}
-\contentsline {todo}{describe use case}{53}{section*.68}
-\contentsline {todo}{add more user stories?}{54}{section*.69}
-\contentsline {todo}{add description and printscreen of tool}{57}{section*.70}
-\contentsline {todo}{add SMCP cheatsheet}{57}{section*.71}
-\contentsline {todo}{Describe and reference to why tool, to cooperate at sea}{57}{section*.72}
-\contentsline {todo}{add concrete measurement}{59}{section*.74}
-\contentsline {todo}{make link with variables}{59}{section*.75}
-\contentsline {todo}{Describe situations in more detail}{60}{section*.76}
-\contentsline {todo}{add summary of description when using the tool, reference to chapter tool}{61}{section*.77}
-\contentsline {todo}{add pictures of what is exactly happening in each situations, and what possible decisions might be}{61}{section*.78}
-\contentsline {todo}{Is this enough?}{62}{section*.79}
-\contentsline {todo}{How is information used. Mention parts on information overload. Thereby also the difference between ships. Officer walking around on big ship, vs small bridge on a tug for example.}{74}{section*.90}
-\contentsline {todo}{How does it go in practice, experience.}{79}{section*.95}
-\contentsline {todo}{Write into a story}{80}{section*.96}
-\contentsline {todo}{add user stories to appendix}{81}{section*.97}
-\contentsline {todo}{Extend with more specific requirements}{82}{section*.98}
-\contentsline {todo}{describe different modules}{82}{section*.99}
-\contentsline {todo}{Are these really relevant accidents, add more/other?}{87}{section*.107}
-\contentsline {todo}{Add images of resulting damages}{87}{section*.108}
-\contentsline {todo}{Summaries all lessons learned from the above mentioned accidents}{93}{section*.114}
-\contentsline {todo}{describe formula to determine crossingpoint of line}{97}{section*.116}
-\contentsline {todo}{CPA calculation}{97}{section*.117}
+\contentsline {todo}{list of used symbols?}{v}{section*.10}
+\contentsline {todo}{State problems more clearly}{1}{section*.15}
+\contentsline {todo}{link structure to chapters}{3}{section*.17}
+\contentsline {todo}{add renders/artist impressions of vessels}{10}{section*.21}
+\contentsline {todo}{create visual, instead of list}{52}{section*.48}
+\contentsline {todo}{describe use case}{58}{section*.49}
+\contentsline {todo}{add more user stories?}{60}{section*.50}
+\contentsline {todo}{add description and printscreen of tool}{64}{section*.51}
+\contentsline {todo}{add SMCP cheatsheet}{64}{section*.52}
+\contentsline {todo}{Describe and reference to why tool, to cooperate at sea}{64}{section*.53}
+\contentsline {todo}{Describe situations in more detail}{66}{section*.55}
+\contentsline {todo}{add summary of description when using the tool, reference to chapter tool}{68}{section*.56}
+\contentsline {todo}{add pictures of what is exactly happening in each situations, and what possible decisions might be}{68}{section*.57}
+\contentsline {todo}{Is this enough?}{69}{section*.58}
+\contentsline {todo}{How is information used. Mention parts on information overload. Thereby also the difference between ships. Officer walking around on big ship, vs small bridge on a tug for example.}{82}{section*.69}
+\contentsline {todo}{How does it go in practice, experience.}{89}{section*.74}
+\contentsline {todo}{Write into a story}{89}{section*.75}
+\contentsline {todo}{Show decision trees relevant to determine critical path}{99}{section*.81}
+\contentsline {todo}{Are these really relevant accidents, add more/other?}{102}{section*.87}
+\contentsline {todo}{Add images of resulting damages}{102}{section*.88}
+\contentsline {todo}{Summaries all lessons learned from the above mentioned accidents}{109}{section*.94}
+\contentsline {todo}{describe formula to determine crossingpoint of line}{113}{section*.96}
+\contentsline {todo}{CPA calculation}{113}{section*.97}

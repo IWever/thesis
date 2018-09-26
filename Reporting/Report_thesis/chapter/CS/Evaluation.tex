@@ -3,21 +3,21 @@ The last part of the sCE method is the design evaluation. The design evaluation 
 
 The artefact gives a short summary of the developed protocol and its workings, together with the tool in which it can be simulated. The evaluation method will be interviews with experienced seafarers. The aim of the interviews is to answer the following question:
 \begin{quotation}
-	\emph{Will a protocol based on existing maritime systems and communication protocols be sufficient to ensure safe navigation while manned and unmanned vessels encounter each other?}
+	\emph{Will a protocol based on existing maritime systems and communication protocols be sufficient to ensure safe navigation, while manned and unmanned vessels encounter each other?}
 \end{quotation}
 Different measures are used for validation and verification. Key variables are: Trust, situation awareness, effectiveness, efficiency and satisfaction. In this chapter these will be described in more detailed and what the results of the evaluation are.
 
 \section{Artefact}
 The artefact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means. This first iteration will aim at finding flaws based on expert knowledge. To acquire this a simplified prototype will be used. This means that there is no implementation using hardware which might be used in latter stages. But a simulation environment is created to test situations with experts. Where is checked if experts believe that the protocol as described in chapter \ref{ch:system-design} is sufficient to get to the right decision. 
 
-To get the right feedback, several situations will be simulated. These situations are based on the accidents as described in chapter \ref{ch:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in chapter \ref{ch:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} and usage of systems like \acf{AIS}.
+To get the right feedback, several situations will be simulated. These situations are based on the accidents as described in appendix \ref{app:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in appendix \ref{app:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the esxperiment as described by IMO \cite{IMO2000} and usage of systems like \acf{AIS} and \acf{ARPA}.
 
 \todo{add description and printscreen of tool}
 \todo{add SMCP cheatsheet}
 \todo{Describe and reference to why tool, to cooperate at sea}
 
 \section{Evaluation method}
-The evaluation method can take many forms, such as a human-in-the-loop study, a use-case-based simulation, or an expert review. In this case a so-called Wizard of Oz evaluation is used. This technique enables unimplemented technology to be evaluated by using a human to simulate the response of a system. As the technology itself has not yet been implemented. The "wizard" simulates the system's responses in real-time.
+The evaluation method can take many forms, such as a human-in-the-loop study, a use-case-based simulation, or an expert review. In this case a so-called Wizard of Oz evaluation is used. This technique enables unimplemented technology to be evaluated by using a human to simulate the response of a system. As the technology itself has not yet been implemented. The "wizard" simulates the system's responses in real-time. Using seafarers and the Wizard of Oz method, an expert evaluation can be acquired on the proposed system without implementing it.
 
 \subsection{Experiment design}
 To do the experiment, a participant is needed to have the role of \acf{OoW} and tools to execute. During the experiment there will be different variables, which have to be taken into account to be able to draw the right conclusions. These are described in this section.
@@ -36,17 +36,19 @@ The different participants will receive different scenarios of the same situatio
 \subsubsection{Tools}
 Beside the participants, tools are needed to do the experiment. The tools needed are:
 \begin{itemize}
-	\item Laptop to show a visual of situation and show what happens during the simulation.
+	\item Laptop with second screen to show a dynamic map of the situation during the simulation.
 	\item Questionaire to be used before, during an after the experiment.
 	\item Room without distractions to do the experiment.
-	\item Recordering device to store and later process actions during the experiment.
+	\item Possibility to store and later process actions during the experiment.
 \end{itemize}
 
 \subsubsection{Dependent variables}
-During the experiment different variables will be evaluated. These determine if indeed the system act as expected and will result in safe navigation when using existing protocols. The first variables relate to experiment:
+During the experiment different variables will be evaluated. These are based on the human factor measures as described in section \ref{sec:human-factors}. This will be a combination of both quantitative and qualitative measurements. Thus combining numerical values with non-numerical arguments. 
+Using the variables can be concluded if the system acted as expected and will result in safe navigation when using existing protocols. The first variables relate to experiment:
 \begin{description}
-	\item [Trust] The system is safe en reliable. This is measured using a questionnaire.
-	\item [Situation awareness] The perception of environmental elements and events with respect to time or space, the comprehension of their meaning, and the projection of their status. This is measured by asking if the participants have noticed some changes in the simulation.
+	\item [Trust] The system acts not only out of self-interest, but in order to acquire a pareto-optimal solution. This means that the system is honest, approved by well-known institutions and ensure fairness. This is only possible when the system is able to communicate correctly, and others are confident that the system did indeed take the right decisions \cite{Ozawa2013}.
+	This is measured using a survey and amount of cooperation with the system.
+	\item [Situation awareness] The perception of environmental elements and events with respect to time or space, the comprehension of their meaning, and the projection of their status. This is measured by asking if the participants have noticed some changes in the simulation together with an observer rating system \cite{Naderpour2016}.
 	\item [Performance] Simple evaluation if the participant acted correctly. Thus did he safely navigate the vessel by making the right decisions. For more detailed results, the \acf{CPA} can be used.
 	\item [Satisfaction] Pleased feeling, as the participant likes the way he acted and how the system works. This will also be measured using a questionnaire.
 \end{description}
@@ -56,25 +58,6 @@ Based on the variables measured in the experiment, can conclusions be drawn abou
 	\item [Effectiveness] The protocol is prompt and thorough.
 	\item [Efficiency] The protocol is easy to understand and use. Thereby does it not cost much effort and time to use it during operation.
 \end{description}
-
-\subsection{Key performance indicators}
-The performance indicators are similar to the human factor measures as described in section \ref{sec:human-factors}. This will be a combination of both quantitative and qualitative measurements. Thus combining numerical values with non-numerical arguments.
-\begin{itemize}
-	\item Is the system used correctly? 
-	\begin{enumerate}
-		\item System is not understood and actions of participant are random.
-		\item System is not understood, but by experience with other systems the results are good.
-		\item System is understood, but does not help to get the good result.
-		\item System is understood, and results are as expected.
-		\item System is understood, and improves situational awareness compared to existing way of working.
-	\end{enumerate}
-	\item Does the protocol act as expected?
-	\item Will it solve the problem of missing information?
-	\item Do people perceive it as easy to use and useful?
-	\item What is the impact on attitude towards unmanned ships?
-\end{itemize}
-\todo{add concrete measurement}
-\todo{make link with variables}
 
 \subsection{Experiment task}
 \label{ssec:experiment-task}
@@ -182,10 +165,8 @@ After running the different situations an interview is held. This interview is i
 	\item Should a protocol like this pass the turing test?
 	\item Would you like to know beforehand if it is an unmanned vessel?
 	\item Are horns still commonly used to show intentions?
-	\item Did you find the protocol easy to use?
-	\item Is the protocol useful?
-	\item Is the protocol transparent, thus do you understand why steps are taken?
-	\item Do you feel differently about introducing unmanned and autonomous vessels?
+	\item Did you find the SMCP easy to use?
+	\item Is the SMCP useful?
 \end{itemize}
 
 \section{Evaluation results}
@@ -194,3 +175,7 @@ The evaluation results describe the outcomes of the test. Because of the iterati
 \subsection{Outcomes}
 
 \subsection{Conclusions}
+
+\begin{quotation}
+	\emph{Are existing systems and protocols for communication, sufficient to ensure that manned and unmanned ships can operate side by side safely?}
+\end{quotation}

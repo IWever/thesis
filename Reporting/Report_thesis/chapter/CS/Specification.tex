@@ -1,6 +1,6 @@
 \chapter{System design specification}
 \label{ch:system-design}
-The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology.
+The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge, and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology.
 
 \section{Design scenarios}
 The sCE method prescribes the specification of design scenarios. Design scenarios are short stories that provide a clear description of how the user will work with the technology thereby enjoying the solution offered to one of the problem scenarios. Together, the problem and design scenarios provide a contextualized view on:
@@ -39,22 +39,22 @@ How the above mentioned problems are tackled are shortly discussed below. This s
 \end{enumerate}
 
 \section{Use case}
-Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence (use case).
+Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence.
+Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories as described in the previous chapter.
 
-The use cases provide a detailed description of the interactions between the technology and its user. Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories (described in the system’s foundation).
+%NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc.
 
-NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc.
-\todo{Rewrite introduction with purpose of these usecases}
+The purpose of the use cases, as described in this section are: To give insight in all interactions during a common critical situation at sea. Tags are used to relate them to the situations and scenarios as described in chapter \ref{ch:decision-process}. By making it very specific, better insight is acquired in factors which should be taken into account when defining functional requirements. 
 
 \subsubsection{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}
 
-\emph{Tags: Intention, Crossing, Messaging}
+\emph{Tags: Crossing, Move away from other, Evasive manoeuvrer now, Crossing distance, \ac{CPA}, Intention, Messaging}
 
-A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. There she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 will pass in front of the Reefer with a distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}.
-To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This is done in the following manner:
+A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. In which she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 noticed the Reefer late and has to make an evasive manoeuvrer to pass in front of the Reefer with a distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}, using criteria from chapter \ref{ch:criteria-problem}.
+To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This will take place in the following manner:
 \begin{itemize}
-	\item The \ac{AIS}, masthead and flags are showing the vessel is sailing autonomously, without interference from crew and listening to the \ac{VHF}.
-	\item A conversation is started by the FCS2610, by calling the station on board of the Reefer and updating status in \ac{AIS}. 
+	\item The \ac{AIS}, masthead and flags are showing the vessel is sailing autonomously. This means there is no crew, but the autonomous systems listens to the \ac{VHF}.
+	\item A conversation is started by the FCS2610, calling the station on board of the Reefer and updating status in \ac{AIS} to communicate intention. 
 		\begin{quote}
 			Reefer, C-6-Z-G-7\\
 			Reefer, C-6-Z-G-7\\
@@ -172,14 +172,14 @@ Both in the messaging and negotiation states, will there be messages send. These
 	\item [Response] Response to the previous message in conversation.
 	\item [Close] End conversation with greeting.
 \end{description}
-As mentioned before the \acf{SMCP} will be used, as this is a known protocol for seafarers. This protocol has its own ontology. This is described by \ac{IMO} in the \href{https://puc.overheid.nl/doc/PUC_1418_14/1/#16830}{regulations}.
+As mentioned before the \acf{SMCP} will be used, as this is a known protocol for seafarers. This protocol has its own ontology. This is described by \ac{IMO} in the \href{https://puc.overheid.nl/doc/PUC_1418_14/1/#16830}{regulations} \cite{IMO2000}.
 
 \subsection{Situation}
 To make the link with the decision model and problem identification as described in part \ref{part:MT}. Will the protocol use the same identifiers for situations. 
 \begin{description}
-	\item [Passing] Ships do get close, but the paths are not crossing
-	\item [Crossing] Paths of ships are crossing
-	\item [Merge] Two ships from different directions, heading in the same direction, strategy might lead in many cases to a take-over.
-	\item [Take-over] Two ships following the same path with different speeds.
+	\item [Passing] The paths of both ships are in opposite direction, and do not cross.
+	\item [Crossing]The final direction of both ships differs, but they do cross.
+	\item [Over-taking] The paths of both ships are the same but at different speeds.
+	\item [Merge] The starting direction of both ships differs, but the final direction is the same.
 \end{description}
 These situations are described in more detail in section \ref{sec:situation-identification}, using path descriptions.

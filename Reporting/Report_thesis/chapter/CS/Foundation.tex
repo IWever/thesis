@@ -1,5 +1,5 @@
 \chapter{Foundation}
-The foundation segment in the \ac{sCE} methodology describes the design rationale in terms of (a) operational demands, (b) relevant human factors knowledge, and (c) envisioned technologies. Together, these three constituents describe (1) the problem to be solved, (2) the existing knowledge on ways to solve the problem, and (3) the technology needed to implement that solution.
+The foundation segment in the \ac{sCE} methodology describes the design rationale in terms of operational demands, relevant human factors knowledge, and envisioned technologies. Together, these three constituents describe the problem to be solved, the existing knowledge on ways to solve the problem, and the technology needed to implement that solution.
 
 \section{Operational demands}
 The operational demands describe the current practice as it is, i.e. without the envisioned technology. For the operational demands, the sCE method prescribes as main components the stakeholders and their characteristics, and the problem description and analysis thereof.
@@ -7,12 +7,12 @@ The operational demands describe the current practice as it is, i.e. without the
 \subsection{Problem scenario}
 \acf{COLREGs} have been developed long before bridge-to-bridge voice communications became available. They are supposed to be unambigious. It is the responsibility of all bridge watch keepers to know how to apply them instinctively, on the basis of observation primarily by sight and radar. They work effectively when ships in an interaction obey them; they also specifically address circumstances where one ship does not.
 
-However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy. For example due to missing information. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here is the \acf{SMCP}. The primary task of this protocol is to diminish misunderstanding in safety related verbal communications. 
-Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and semaphore signing.
+However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy. For example due to missing information. This happens already more often due to larger ship, more complex manoeuvers and more traffic. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here are the \acf{SMCP}. The primary task of this protocol is to diminish misunderstanding in safety related verbal communications. 
+Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and text messaging.
 
-The reason safety related verbal communication is needed, when you will deviate from the rules, deviant behavior is registered, or more information is needed to take the right decision. Cases where this occurs is when there is no visual. For example due to bad weather, obstacles like bridges and terminals, or the information received via \ac{AIS} is not reliable.
+Reasons for safety related verbal communication are: when you will deviate from the rules, deviant behavior is registered, or more information is needed to decide on the right strategy. This is often necessary due to lack of visual information. For example due to bad weather, obstacles like bridges and terminals, or the information received via \ac{AIS} is not reliable. This does not only impact the information you get by looking out of the window, but also the quality of the \ac{ECDIS} and \ac{ARPA} is worse.
 
-Marker words are used to introduce the content and purpose of the communication. Below for each of the marker words an example is given.
+When using \ac{SMCP}, marker words are used to introduce the content and purpose of the communication. In appendix \ref{apps:procedures} the \ac{SMCP} are described in more detail. Examples for all marker words are given below.
 \begin{description}
 	\item [Advice] Stand by on channel 6 - 8.
 	\item [Information] The fairway entrance is: position: bearing 1-3-7 degrees true from North Point Lighthouse, distance: 2 decimal 3 miles.
@@ -24,16 +24,16 @@ Marker words are used to introduce the content and purpose of the communication.
 \end{description}
 After this message there is a confirmation that the message is received, followed by a repetition of the send message, or an answer to the question. Indicated with the corresponding marker word.
 
-The different ways for communication are not developed to be used by unmanned vessels. On the other hand, is it not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels.
+The different ways for communication are not developed to be used by unmanned vessels. On the other hand, is it not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels. As this will require many more new regulations, development time and time to train seafarers.
 
-When using the current systems in a way they are not designed for. This might result in information overload of the crew and communication channels. Resulting in misunderstanding and problems with communication. As the \ac{VHF} can only be used in one way. As it is a receiver or a transmitter, but can't be both at the same time. 
+When using the current systems in a way they are not designed for. This might result in misunderstanding and problems with communication. Due to for example information overload of the crew and communication channels. This can be caused by the way the \ac{VHF} is designed. As it is a receiver or a transmitter, but can't be both at the same time, which means that in case two messages are send at the same time, both senders will not receive the others message.
 
 \subsection{Problem analysis}
 To avoid misunderstanding which could result in hazardous situations. It is important that manned and unmanned vessels are able to communicate. To solve this problem, a more extensive analysis is made. 
 Describing the values of the different actors and discussing their related problems.
 
 \subsubsection{Primary actors}
-The focus of this research will be on bridge-to-bridge communication. This means the most important actors can be divided for the unmanned and manned vessel:
+The focus of this research will be on bridge-to-bridge communication. This means the most important actors for unmanned and manned vessel are:
 \begin{itemize}
 	\item Manned vessel
 	\begin{itemize}
@@ -46,7 +46,7 @@ The focus of this research will be on bridge-to-bridge communication. This means
 		
 	\item Unmanned vessel
 	\begin{itemize}
-		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information it can acquire via all different means. Including newly developed communication protocols. His duties are similar to the duties of the officer of watch as described for the manned vessel.
+		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information it can acquire via all different means. Including newly developed communication protocols, computer vision and algorithms to transform sensory data to useful information. His duties are similar to the duties of the officer of watch as described for the manned vessel.
 	\end{itemize}
 
 	\item Other vessels
@@ -62,7 +62,7 @@ Beside the first group of actors, others could also be influenced by the new pro
 	\item Only recipients
 	\begin{itemize}
 		\item Crew on vessels which are not traveling.
-		\item Shipowners of unmanned vessels, monitoring vessel from other location.
+		\item Shipowners of unmanned vessels, monitoring vessel from remote location.
 	\end{itemize}
 	\item Not within scope of the research
 	\begin{itemize}
@@ -76,19 +76,17 @@ The main goal is to ensure reliable sharing of information, without the risk for
 
 This means that manned vessels should be updated only when requested or in case of an unusual activity which could affect their strategy. And manned vessel should be aware when unmanned vessels desire more information to decide on the right strategy.
 
-Using the same philosophy, it might be possible to develop also a protocol for communication with traffic controllers in later iterations. This is certainly relevant it is also not feasible for them, to have new systems to communicate and instruct unmanned ships.
+Using the same philosophy, it might be possible to develop a protocol for communication with traffic controllers in later iterations. This becomes more important when the time needed to develop a new systems for traffic controllers also takes too much time to develop and/or implement.
 
 \subsubsection{Infeasible solutions}
-The easiest solution for unmanned ships would be to just install a new system. This is however not feasible as mentioned before. To implement this it would mean that all ships which could encounter an unmanned ship will have to install this too. It might be possible to make it obligatory via regulations, this will however cost a lot of time and money. Making the introduction of unmanned ships less likely.
+The easiest solution for unmanned ships would be to just install a new system. This is however not feasible as mentioned before. To implement this, it would mean that all ships which could encounter an unmanned ship will have to install this too. It might be possible to make it obligatory via regulations, this will however cost a lot of time and money. Making the introduction of unmanned ships less likely.
 This is also the reason to use a \ac{no-UI}, as a GUI will require new screens or changes to the \ac{ECDIS} which are only possible when regulations are changed.
 
 \section{Human factors}
 \label{sec:human-factors}
 When designing technology, there are two driving questions that need to be well-thought out: (1) What tasks and/or values is the user trying to accomplish and how can the technology support the user in doing so?, and (2) How can the technology be designed such that the user is able to work with the technology?
 
-The Human Factors segment of the sCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasize that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2).
-
-The three constituents important to the human factors analysis are: (a) the human factors knowledge, (b) measures, and (c) interaction design patterns.
+The Human Factors segment of the sCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasize that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2). The three elements important to the human factors analysis are: The human factors knowledge, measures, and interaction design patterns.
 
 \subsubsection{Human factor knowledge}
 Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. The key problems relevant for human factors are the information overload, situational awareness, autonomy, and learning a new protocol. Thus the following questions should be answered:
@@ -124,7 +122,6 @@ Human factors knowledge describes available knowledge coming from previous resea
 		\item When using automation, the role of the human changes from operator to supervisor. For effective operation, the human must appropriately calibrate trust in the automated system. Improper trust leads to misuse and disuse of the system. \cite{Walliser2011}.
 	\end{itemize}
 \end{itemize}
-\todo{Is dit voldoende?}
 
 \subsubsection{Human factor measures}
 Measures describe how to operationalize the quality of the intended behavior or performance, i.e. how well is a user working with the design able to reach his/her objectives and what is the quality of the collaboration between the human worker and the technology?
@@ -138,6 +135,7 @@ Measures describe how to operationalize the quality of the intended behavior or 
 
 \subsubsection{Interaction design patterns}
 Interaction design patterns (IDPs) focus on the human-computer interaction, such as usable interface design and control options. IDPs offer generic solutions to recurring HCI design problems that have been proven to be effective. IDPs are often made available in repositories.
+\todo{create visual, instead of list}
 
 \begin{itemize}
 	\item Radio communication
@@ -166,7 +164,7 @@ Interaction design patterns (IDPs) focus on the human-computer interaction, such
 \section{Envisioned technology}
 The envisioned technology describes the available options of using existing technology and/or the need to develop novel technology in order to come to a system solution. The sCE method asks designers to specify what devices (hardware) and software could be used in the system design. In addition, for each type of technology, an argument should be provided as to why this technology might be of use and what the possible downsides might be of that particular type of technology.
 
-Using only existing systems to develop a \acf{no-UI}. Different systems which are currently used, are described in chapter \ref{ch:systems}. Below different systems and protocols are mentioned which can be used to design the new protocol. Using these already existing systems will shorten de development, learning and implementation time.
+The envisioned technology will use only existing systems to develop a \acf{no-UI}. Different systems which are currently used, are described in appendix \ref{app:systems}. Below different systems and protocols are mentioned which can be used in the new protocol. Using these already existing systems will shorten the development, learning and implementation time.
 
 \begin{itemize}
 	\item Radio communication
@@ -193,6 +191,9 @@ Using only existing systems to develop a \acf{no-UI}. Different systems which ar
 	\end{itemize}
 \end{itemize}
 
-Thereby is it easier to learn when its based on known protocols, such as \acf{SMCP} and \ac{COLREGs}. This also makes it recognizable, which means that users will understand the benefits quicker. Show that it is easy to use and useful are key for the acceptance of technology \cite{Davis1989}.
+Using already existing protocols makes it more easy to learn, such as \acf{SMCP} and \ac{COLREGs}. This also makes it recognizable, which means that users will understand the benefits quicker. Show that it is easy to use and useful are key for the acceptance of technology \cite{Davis1989}.
 
-The type and amount of information presented to users must be tailored to the unique situation in which the information is to be used. Prior research on trust in automation found that providing human operators with information related to the reliability of an automated tool promoted more optimal reliance strategies on the tool. Further, information related to the limitations of an automated tool aids in trust recovery following errors of the automation. This added information appears to be useful in deciphering the boundary conditions under which the tools are more or less capable. Thus, providing humans with information related to the performance of an automated tool appears to be beneficial \cite{Lyons2014}. Therefor it is beneficial for the cooperation between manned and unmanned vessels to clearly show if it is an unmanned vessel. This will firstly be done using visible signals, and also at the start of radio communication. This also happens in industry projects like Google Duplex \cite{Nieva2018}.
+The type and amount of information presented to users must be tailored to the unique situation in which the information is to be used. Prior research on trust in automation found that providing human operators with information related to the reliability of an automated tool promoted more optimal reliance strategies on the tool. Further, information related to the limitations of an automated tool aids in trust recovery following errors of the automation. This added information appears to be useful in deciphering the boundary conditions under which the tools are more or less capable. Thus, providing human operators with information related to the performance of an automated tool, appears to be beneficial \cite{Lyons2014}. Therefor it is beneficial for the cooperation between manned and unmanned vessels to clearly show if it is an unmanned vessel. This will firstly be done using visible signals, and also at the start of radio communication. This also happens in industry projects such as Google Duplex \cite{Nieva2018}.
+
+\vspace{1.5cm}
+\emph{In the next chapter} the system design specification will be given for the envisioned technology. Most important will be the definition of the usage of radio communication and how this should be supported with other forms of communication, such as visible and audible signals.

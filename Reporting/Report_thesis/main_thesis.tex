@@ -1,11 +1,12 @@
 \documentclass[a4paper,11pt,oneside]{book}
 
 
-\newcommand{\doctitle}{MSc Thesis\\ 
-	\begin{Huge} 
-		ADD NEW TITLE
-		\todo{Make new title} 
-\end{Huge} }
+\newcommand{\doctitle}{\begin{spacing}{2}
+		MSc Thesis Report\\ 
+		\begin{Huge}
+			Manoeuvrability and communication requirements for safe operation of autonomous and unmanned vessels
+		\end{Huge}
+	\end{spacing}}
 
 \newcommand{\docauthor}{Ingmar Wever (4161041)}
 
@@ -13,7 +14,6 @@
 
 \begin{document}
 \frontmatter
-\input{include/tikz}
 
 \makeCover % Cover, blank page and title page
 
@@ -22,33 +22,37 @@
 
 \input{chapter/preface}
 \input{chapter/summary}
-\input{include/glossary}
 
-\clearpage
-\setcounter{tocdepth}{1}
-\tableofcontents
+\begin{spacing}{1}
+	\input{include/glossary}
+	
+	\clearpage
+	\setcounter{tocdepth}{1}
+	
+	\tableofcontents
+\end{spacing}
 \clearpage
 
 \mainmatter
 
 \input{chapter/introduction}
 
-\part{Steps towards safe autonomous shipping}
+\part{The problem of communication for autonomous vessels}
 \input{chapter/intro-towards-autonomous}
 \input{chapter/future-shipping}
 \input{chapter/decision-model}
 
-\part{Relevance of criteria for decision making}
+\part{Effect of manoeuvrability on decision making}
 \label{part:MT}
 \input{chapter/MT/introduction}
 \input{chapter/MT/decision-process}
 \input{chapter/MT/database-nodes}
 \input{chapter/MT/possible-criteria}
 \input{chapter/MT/evaluation-criteria}
-\input{chapter/MT/scenario-story}
+%\input{chapter/MT/scenario-story}
 \input{chapter/MT/lessons-learned}
 
-\part{Protocol to enable teamwork between manned and unmanned ships}
+\part{Necessity of a protocol to enable teamwork between manned and unmanned ships}
 \label{part:CS}
 \input{chapter/CS/introduction}
 \input{chapter/CS/Foundation}

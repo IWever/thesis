@@ -16,13 +16,19 @@ class Viewer:
         # Initial creation and import of world
         self.world = world
         self.root = world.root
-        self.root.title(world.name)
+        self.root.title(world.experimentName)
+
+        try:
+            self.secondScreen = world.secondScreen
+            self.secondScreen.title("ECDIS viewer")
+        except AttributeError:
+            pass
 
         # Create variables
         self.message = StringVar()
         self.simulationRunning = True
         self.time = StringVar()
-        self.scale = 8
+        self.scale = 4
         self.shipLocationMarkers = None
         self.selectedShip = None
         self.shipSpeed = StringVar()
@@ -39,7 +45,8 @@ class Viewer:
         self.createSidebar()
 
         # Run the GUI
-        print("Created GUI screen")
+        self.world.log("Created GUI screen")
+        self.initialPlot()
         self.updatePlot()
 
     """" Create the different parts of the GUI. """
@@ -65,8 +72,12 @@ class Viewer:
 
         # Figure within frame containing plot
         self.mapFigure = Figure()
-        self.mapPlot = self.mapFigure.add_subplot(111, adjustable='box', aspect=1)
-        self.mapPlot.axis([-self.scale * 650, self.scale * 650, -self.scale * 500, self.scale * 500])
+        # Adjust margins
+        self.mapPlot = self.mapFigure.subplots_adjust(left=0.05, bottom=0.05, right=1, top=1)
+
+        self.mapPlot = self.mapFigure.add_subplot(111, adjustable='box', aspect=1, facecolor='lightblue')
+        self.mapPlot.axis(self.world.mapLocation)
+        self.mapPlot.grid(False)
 
         # Canvas used to draw plot within GUI
         self.mapCanvas = FigureCanvasTkAgg(self.mapFigure, master=self.mapViewer)
@@ -74,12 +85,8 @@ class Viewer:
         self.mapCanvas.show()
 
         # Add standard control panel for plot to info-bar
-        self.plotControls = NavigationToolbar2TkAgg(self.mapCanvas, self.infoBar)
+        self.plotControls = NavigationToolbar2TkAgg(self.mapCanvas, self.mapViewer)
         self.plotControls.pack(side=TOP, fill=X)
-
-        # Add map of situation
-        ENCmap = plt.imread('image/Maasgeul-map.png')
-        self.mapPlot.imshow(ENCmap, zorder=0, extent=[0-4090, 7018-4090, 0-2262, 4858-2262])
 
 
     def createSidebar(self):
@@ -92,7 +99,7 @@ class Viewer:
         # Listbox showing vessels within simulation
         self.vesselList = Listbox(self.optionMenu, selectmode=SINGLE)
         self.vesselList.pack(side=BOTTOM, fill=BOTH)
-        for vessel in self.world.do:
+        for vessel in self.world.sim.activeShips:
             self.vesselList.insert(END, vessel)
 
         # Labels with details for selected ship
@@ -112,6 +119,7 @@ class Viewer:
         self.timeLabel.pack(side=TOP, fill=X)
         self.simulationControlButton = Button(self.optionMenu, text="Pause simulation", command=self.pauseSimulation)
         self.simulationControlButton.pack(side=TOP, fill=X)
+        self.root.bind("<space>", self.pauseSimulation)
 
         # Button to enter menu where situation can be modified
         self.modifyShipButton = Button(self.optionMenu, text="Modify mode", command=self.modifyShipFromList)
@@ -120,17 +128,20 @@ class Viewer:
         # Button to enter menu where ships can be sailed as a captain
         self.sailModeButton = Button(self.optionMenu, text="Sailing mode", command=self.sailSelectedShip)
         self.sailModeButton.pack(side=TOP, fill=X)
+        self.sailSelectedShip()
 
     """" Run and pause simulation. """
-    def pauseSimulation(self):
+    def pauseSimulation(self, event=None):
         self.simulationControlButton.configure(text="Run simulation", command=self.runSimulation)
         self.simulationRunning = False
+        self.root.bind("<space>", self.runSimulation)
         self.message.set("Simulation paused")
 
-    def runSimulation(self):
+    def runSimulation(self, event=None):
         self.message.set("Simulation continued")
         self.simulationControlButton.configure(text="Pause simulation", command=self.pauseSimulation)
         self.simulationRunning = True
+        self.root.bind("<space>", self.pauseSimulation)
         self.world.runSimulation()
 
     """" The modify mode, where ships can be edited to create a specific situation. """
@@ -143,7 +154,9 @@ class Viewer:
 
         self.vesselList.bind('<<ListboxSelect>>', self.shipSelectedToModify)
         self.speedSlider.bind("<ButtonRelease-1>", self.setSpeed)
+        self.speedSlider.bind("<ButtonRelease-3>", self.setSpeed)
         self.courseSlider.bind("<ButtonRelease-1>", self.setCourse)
+        self.courseSlider.bind("<ButtonRelease-3>", self.setCourse)
         self.plotButtonPress = self.mapCanvas.mpl_connect('button_press_event', self.setLocationForShip)
 
     def openModifyMenu(self):
@@ -161,6 +174,10 @@ class Viewer:
         self.courseSlider = Scale(self.modifyMenuFrame, from_=-180, to=360,
                                   orient=HORIZONTAL, label="Course [deg]")
         self.courseSlider.pack(side=TOP, fill=X)
+
+        self.vesselList.delete(0,'end')
+        for vessel in self.world.do:
+            self.vesselList.insert(END, vessel)
 
     def shipSelectedToModify(self, event=None):
         """ Select a ship to modify and set sliders according to current information known about the ship. """
@@ -188,11 +205,16 @@ class Viewer:
         self.courseSlider.unbind("<ButtonRelease-1>")
         self.mapCanvas.mpl_disconnect(self.plotButtonPress)
 
+        self.vesselList.delete(0, 'end')
+        for vessel in self.world.sim.activeShips:
+            self.vesselList.insert(END, vessel)
+
     """" Functions called in modify menu to modify situation. """
     def setLocationForShip(self, event=None):
         """" Set location of selected vessel. """
         try:
             self.world.do[self.selectedShip].location = [event.xdata, event.ydata]
+            self.world.log("%s added at [%d, %d]" % (self.selectedShip, event.xdata, event.ydata))
         except KeyError:
             self.message.set("First select ship from list")
 
@@ -201,6 +223,7 @@ class Viewer:
         try:
             self.world.do[self.selectedShip].course = self.courseSlider.get()
             self.world.do[self.selectedShip].heading = self.courseSlider.get()
+            self.world.log("For %s course set at %d degrees" % (self.selectedShip, self.courseSlider.get()))
         except KeyError:
             self.message.set("First select ship from list")
 
@@ -210,6 +233,7 @@ class Viewer:
             ship = self.world.do[self.selectedShip]
             ship.speed = self.speedSlider.get()
             ship.telegraphSpeed = ship.speed / ship.vmax
+            self.world.log("For %s speed set at %d knots" % (self.selectedShip, ship.speed))
         except KeyError:
             self.message.set("First select ship from list")
 
@@ -218,6 +242,7 @@ class Viewer:
         if self.selectedShip in self.world.sim.activeShips:
             self.world.sim.removeDynamicObject(self.selectedShip)
             self.deleteShipPlotObjects(self.world.do[self.selectedShip])
+            self.world.log("%s has been removed" % (self.selectedShip))
         else:
             self.message.set("No active vessel was selected")
 
@@ -233,7 +258,9 @@ class Viewer:
 
         self.vesselList.bind('<<ListboxSelect>>', self.shipSelectedToSail)
         self.rudderAngleSlider.bind("<ButtonRelease-1>", self.setRudder)
+        self.rudderAngleSlider.bind("<ButtonRelease-3>", self.setRudder)
         self.throttleSlider.bind("<ButtonRelease-1>", self.setThrottle)
+        self.throttleSlider.bind("<ButtonRelease-3>", self.setThrottle)
 
     def openSailingMenu(self):
         """" Frame with buttons and sliders to sail ship. """
@@ -241,12 +268,20 @@ class Viewer:
         self.sailMenuFrame.pack(side=TOP, fill=X)
 
         self.rudderAngleSlider = Scale(self.sailMenuFrame, from_=-35, to=35,
-        orient=HORIZONTAL, label="Rudder [deg]", resolution=0.5)
+                                       orient=HORIZONTAL, label="Rudder [deg]", resolution=0.5)
         self.rudderAngleSlider.pack(side=TOP, fill=X)
 
         self.throttleSlider = Scale(self.sailMenuFrame, from_=-1, to=1,
-        orient=HORIZONTAL, label="Throttle [%]", resolution=0.01)
+                                    orient=HORIZONTAL, label="RPM [%]", resolution=0.01)
         self.throttleSlider.pack(side=TOP, fill=X)
+
+        self.addWaypoint = Button(self.sailMenuFrame, text="Add waypoint", command=self.addWaypoint)
+        self.addWaypoint.pack(side=TOP, fill=X)
+
+        self.root.bind("<Left>", self.steerLeft)
+        self.root.bind("<Right>", self.steerRight)
+        self.root.bind("<Up>", self.speedUp)
+        self.root.bind("<Down>", self.slowDown)
 
     def closeSailingMenu(self):
         self.sailMenuFrame.forget()
@@ -257,6 +292,10 @@ class Viewer:
         self.vesselList.unbind('<<ListboxSelect>>')
         self.rudderAngleSlider.unbind("<ButtonRelease-1>")
         self.throttleSlider.unbind("<ButtonRelease-1>")
+        self.root.unbind("<Left>")
+        self.root.unbind("<Right>")
+        self.root.unbind("<Up>")
+        self.root.unbind("<Down>")
 
     def shipSelectedToSail(self, event=None):
         """ Select a ship to sail and set sliders according to current information known about the ship. """
@@ -271,6 +310,47 @@ class Viewer:
         """" Set rudder for selected vessel. """
         try:
             self.world.do[self.selectedShip].rudderAngle = self.rudderAngleSlider.get()
+            self.world.log("Rudder angle for %s set at %d degrees" % (self.selectedShip, self.rudderAngleSlider.get()))
+        except KeyError:
+            self.message.set("First select ship from list")
+        pass
+
+    def steerRight(self, event=None):
+        """" Set rudder for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].rudderAngle += 5
+            self.rudderAngleSlider.set(self.world.do[self.selectedShip].rudderAngle)
+            self.world.log("Rudder angle for %s set at %d degrees" % (self.selectedShip, self.rudderAngleSlider.get()))
+        except KeyError:
+            self.message.set("First select ship from list")
+        pass
+
+    def steerLeft(self, event=None):
+        """" Set rudder for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].rudderAngle -= 5
+            self.rudderAngleSlider.set(self.world.do[self.selectedShip].rudderAngle)
+            self.world.log("Rudder angle for %s set at %d degrees" % (self.selectedShip, self.rudderAngleSlider.get()))
+        except KeyError:
+            self.message.set("First select ship from list")
+        pass
+
+    def speedUp(self, event=None):
+        """" Set rudder for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].telegraphSpeed += 0.02
+            self.throttleSlider.set(self.world.do[self.selectedShip].telegraphSpeed)
+            self.world.log("For %s telegraphspeed changed to %1.3f" % (self.selectedShip, self.throttleSlider.get()))
+        except KeyError:
+            self.message.set("First select ship from list")
+        pass
+
+    def slowDown(self, event=None):
+        """" Set rudder for selected vessel. """
+        try:
+            self.world.do[self.selectedShip].telegraphSpeed -= 0.02
+            self.throttleSlider.set(self.world.do[self.selectedShip].telegraphSpeed)
+            self.world.log("For %s telegraphspeed changed to %1.3f" % (self.selectedShip, self.throttleSlider.get()))
         except KeyError:
             self.message.set("First select ship from list")
         pass
@@ -279,11 +359,37 @@ class Viewer:
         """" Set speed on telegraph for selected vessel. """
         try:
             self.world.do[self.selectedShip].telegraphSpeed = self.throttleSlider.get()
+            self.world.log("For %s telegraphspeed changed to %1.3f" % (self.selectedShip, self.throttleSlider.get()))
         except KeyError:
             self.message.set("First select ship from list")
         pass
 
+    def addWaypoint(self, event=None):
+        self.message.set("Select new waypoint")
+        self.plotButtonPress = self.mapCanvas.mpl_connect('button_press_event', self.clickWaypoint)
+
+    def clickWaypoint(self, event=None):
+        try:
+            self.world.do[self.selectedShip].waypoints.append([event.xdata, event.ydata])
+            self.world.log("For %s added waypoint at [%d, %d]" % (self.selectedShip, event.xdata, event.ydata))
+            self.plotWaypoint(self.selectedShip)
+            self.mapCanvas.mpl_disconnect(self.plotButtonPress)
+            self.message.set("Sail selected ship")
+        except KeyError:
+            self.message.set("First select ship from list and than select waypoint")
+
+
     """" Functions needed to plot ships in figure. """
+    def initialPlot(self):
+        # Add map of situation using image
+        if self.world.mapName is not None:
+            ENCmap = plt.imread('image/%s.png' % self.world.mapName)
+            self.mapPlot.imshow(ENCmap, zorder=0, extent=self.world.mapLocation)
+
+        for staticPatch in self.world.so:
+            self.mapPlot.add_patch(self.world.so[staticPatch])
+
+
     def updatePlot(self):
         for shipname in self.world.sim.activeShips:
             self.plotShip(shipname)
@@ -327,13 +433,15 @@ class Viewer:
 
         ship.markerPlot = self.mapPlot.scatter(ship.location[0], ship.location[1], marker='o', color=ship.color)
         ship.tag = self.mapPlot.text(ship.location[0], ship.location[1], shipname)
+        ship.safetyDomain = self.mapPlot.add_artist(ship.safetyDomainEllipse())
 
-        if not ship.waypointMarker:
+        if self.world.showWaypointMarkers:
+            if not ship.waypointMarker:
+                self.plotWaypoint(shipname)
+
+        if ship.waypointUpdateNeeded and self.world.showWaypointMarkers:
             self.plotWaypoint(shipname)
-
-        # if ship.waypointUpdateNeeded:
-        #     self.plotWaypoint(shipname)
-        #     ship.waypointUpdateNeeded = False
+            ship.waypointUpdateNeeded = False
 
     def plotWaypoint(self, shipname):
         ship = self.world.sim.activeShips[shipname]
@@ -341,8 +449,12 @@ class Viewer:
         self.deleteWaypointMarkers(ship)
 
         if ship.waypoints:
+            waypointX = []
+            waypointY = []
             for waypointLocation in ship.waypoints:
-                ship.waypointMarker = self.mapPlot.scatter(waypointLocation[0], waypointLocation[1], marker='x', color=ship.color)
+                waypointX.append(waypointLocation[0])
+                waypointY.append(waypointLocation[1])
+            ship.waypointMarker = self.mapPlot.scatter(waypointX, waypointY, marker='x', color=ship.color)
 
     @staticmethod
     def deleteShipPlotObjects(ship):
@@ -378,15 +490,18 @@ class Viewer:
         except ValueError:
             pass
 
+        try:
+            ship.safetyDomain.remove()
+        except AttributeError:
+            pass
+        except ValueError:
+            pass
+
     @staticmethod
     def deleteWaypointMarkers(ship):
-        print("try to remove")
-        for i in range(len(ship.waypoints) + 1):
-            try:
-                ship.waypointMarker.remove()
-            except AttributeError:
-                pass
-            except ValueError:
-                pass
-            except TypeError:
-                pass
+        try:
+            ship.waypointMarker.remove()
+        except AttributeError:
+            pass
+        except ValueError:
+            pass

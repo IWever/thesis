@@ -1,10 +1,9 @@
 \chapter{Definition of criteria}
 \label{ch:criteria-problem}
-To determine which problem might occur due to dynamic and static hazards, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However do they use linearized algorithms, which do not predict the closest points of approach and crossing distance correctly while turning. First the criteria which are true or false are discussed, followed by the current and proposed algorithms to calculate the other criteria. Later in the process, these criteria can be used again. To ensure that the chosen strategies ensures a minimal \acf{CPA} and crossing distance.
+The first step of the decision tree was to identify the situation and scenario. In order to determine if a problem might occur in those situations or scenarios, different criteria are evaluated. Most of these criteria are already calculated by the current systems, such as \ac{ECDIS} and \ac{ARPA}. However, do they use linearized algorithms. These do not predict the \ac{CPA} and crossing distance correctly while turning, often resulting in many dismissed alarms. The description of different criteria is given, followed by the calculation needed to evaluate them. This is done for both the linearized algorithms and proposed algorithms. Later in the process, these criteria can be used again. To ensure that the chosen strategies ensures safe operation with low perceived risk.
 
 \section{Calculations based on current systems}
-Within \ac{ARPA} and \ac{ECDIS}, different calculations are already being made, which can be used to evaluate if there is a problem in the current scenario. These calculations often use linearized algorithms, which results are not correct when turning. Below these calculations are discussed for the \acf{CPA} and crossing position.
-\todo{add code snippets to appendix or ref to simulation environment}
+Within \ac{ARPA} and \ac{ECDIS}, different calculations are already being made, which can be used to evaluate if there is a problem in the current scenario. These calculations often use linearized algorithms, which results are not correct when turning. The false alarms given due to these wrong results can be easily dismissed by humans, but computers do not always handle false positives well. The advantage however is that the calculations can be done very fast. Below these calculations are discussed for the \acf{CPA} and crossing position. How this is implemented in the simulation tool is discussed in appendix \ref{app:tool}.
 
 \subsection{\acf{CPA}}
 The \ac{CPA} refers to the positions at which two dynamically moving objects reach their closest possible distance. This is an important calculation for collision avoidance. The linearized form uses two points moving at fixed speed and fixed direction. An example is shown in figure \ref{fig:CPA}. Where P and Q are the moving points, with corresponding direction vectors u and v, which include the speed and direction.
@@ -51,10 +50,10 @@ The crossing distance is the distance between two ships if they pass each others
 	\centering
 	\includegraphics[scale=0.6]{crossing_lines.png}
 	\caption{Example for crossing point and distance}
-	\label{fig:CPA}
+	\label{fig:crossing-distance}
 \end{figure}
 
-In this case the distance is calculated between two points at a certain moment in time. The first step is to calculate the crossing point (cp) of the two lines:
+In figure \ref{fig:crossing-distance} the distance is calculated between two points at a certain moment in time. The first step is to calculate the crossing point (cp) of the two lines:
 \begin{equation}
 	P(t_{cp,p}) = Q(t_{cp,q}) \rightarrow P_0 + t_{cp,p} \cdot u = Q_0 + t_{cp,q} \cdot v
 \end{equation}
@@ -98,7 +97,7 @@ Although it will result in better evaluations, is the disadvantage that much hea
 The Bézier curve is used to describe the paths in a non-linearized manner. The definition of a Bézier curve is first given. Followed by the same criteria as in the previous section: \acf{CPA} and crossing distance. This time describing the algorithm using to calculate it in a non-linearized manner.
 
 \subsection{Bézier curve}
-The first iteration of the algorithm is semi-linearized. Where the path of own ship is represented by a Bézier curve, based on its waypoints and strategy. To describe the Bézier curve, points have to be fitted along the planned path. This is similar to the method as described by Taams \cite{Taams2018}. While the other ship is still linearized, as not enough information on the strategy and waypoints is known without introducing new systems and protocols.
+The first iteration of the algorithm is semi-linearized. Where the path of own ship is represented by a Bézier curve, based on its waypoints and strategy. To describe the Bézier curve, points have to be fitted along the planned path. This is similar to the method as described by Taams \cite{Taams2018}. While the path prediction for the other ship is still linearized, as not enough information on the strategy and waypoints is known without introducing new systems and protocols.
 
 For the calculation does the distance function not change. This is still $
 d(t) = |P(t) - Q(t)|$. However is P taken as own ship and gets a new formula using the Bézier curve. This curve has a degree of $n$, which depends on the way-points and can be described using the following equations:
@@ -147,3 +146,19 @@ The algorithm to calculate the crossing distance will require much less computat
 	\item Calculate distance between ships at time of crossing.
 	\item Return crossing distances.
 \end{enumerate}
+
+\vspace{1.5cm}
+\emph{In the next chapter} criteria will be described which depend on the manoeuvrability characteristics of a ship. Using the calculations for \ac{CPA} and crossing distance, it can be determined if the chosen strategy without communication will result in safe operation.
+
+
+
+
+
+
+
+
+
+
+
+
+

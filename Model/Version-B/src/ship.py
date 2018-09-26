@@ -20,15 +20,13 @@ class Ship():
         self.acceleration = 0
         self.headingChange = 0
 
-        self.speedSetting = 0
-
         self.telegraphSpeed = 0
         self.rudderAngle = 0
         self.rudderAngleReal = 0
 
         # Memory of the ship on surroundings
         self.waypoints = []
-        self.perceivedShips = []
+        self.perceivedShipCPA = {}
         self.lastUpdate = 0
         self.waypointUpdateNeeded = False
 
@@ -40,6 +38,7 @@ class Ship():
         self.polygonNumber = 0
         self.tag = None
         self.waypointMarker = None
+        self.safetyDomain = None
 
         # Ship registration details
         self.name = name
@@ -71,8 +70,7 @@ class Ship():
             warnings.warn("Deadweigt bigger than displacement of %s" % self.name)
 
     def __str__(self):
-        return ("%s: at %s with a speed of %d m/s and course %d degrees" %
-                (self.name, self.location, self.speed, self.course))
+        return (self.name)
 
     # Functions for plotting
     def createPolygon(self):
@@ -103,6 +101,21 @@ class Ship():
 
         return patch
 
+    def safetyDomainEllipse(self):
+        # Based on coldwell's domains
+        a = math.radians(self.heading)
+
+        cx = self.location[0] + math.cos(a) * 0.75 * self.LBP + math.sin(a) * 1.1 * self.LBP
+        cy = self.location[1] - math.sin(a) * 0.75 * self.LBP + math.cos(a) * 1.1 * self.LBP
+        center = (cx, cy)
+
+        width = 5 * self.LBP
+        height = 10 * self.LBP
+
+        ellipse = patches.Ellipse(center, width, height, angle=-self.course, color=self.color, fill=False)
+
+        return ellipse
+
     # Functions to automatically steer vessel
     def adjustRudder(self):
         locationError = np.asarray(self.waypoints[0]) - np.asarray(self.location)
@@ -116,7 +129,7 @@ class Ship():
         elif dx > 0 and dy < 0:
             angleOfError = 90 + math.degrees(np.arctan(abs(dy)/dx))
         elif dx < 0 and dy < 0:
-            angleOfError = 180 + math.degrees(np.arctan(abs(dy)/abs(dx)))
+            angleOfError = 180 + math.degrees(np.arctan(dx/dy))
         elif dx < 0 and dy > 0:
             angleOfError = 360 - math.degrees(np.arctan(abs(dx)/dy))
         elif dx == 0 and dy == 0:
@@ -128,6 +141,7 @@ class Ship():
         elif dy == 0:
             angleOfError = np.sign(dx) * 90
         else:
+            angleOfError = self.course
             warnings.warn("Angle to waypoint not defined %d, %d" % (dx, dy))
 
         headingError = self.course - angleOfError
@@ -137,9 +151,9 @@ class Ship():
         elif headingError > 180:
             headingError -= 360
 
-        if abs(headingError) >= 25:
+        if (abs(headingError) >= 25) and (distance2waypoint > 1500):
             self.rudderAngle = -35 * np.sign(headingError)
-        elif abs(headingError) >= 10:
+        elif abs(headingError) >= 15:
             self.rudderAngle = -25 * np.sign(headingError)
         else:
             self.rudderAngle = - 8 * headingError/10

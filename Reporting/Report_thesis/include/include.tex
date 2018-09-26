@@ -1,9 +1,11 @@
+\usepackage{afterpage}
 \usepackage[noend]{algpseudocode}
 \usepackage{appendix}
 \usepackage{booktabs} % improving tables
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage[margin = 1.2in]{geometry} % change the page margins
+\usepackage{textcomp} % To avoid warnings in gensymb
 \usepackage{gensymb} % for generic symbols
 \usepackage{graphicx} % to use \includegraphics
 \usepackage{hyperref} % adding urls using \url
@@ -11,6 +13,8 @@
 \usepackage{listings} % to add code snippets
 \usepackage{multicol} % use multiple columns in text
 \usepackage{parskip} % makes sure that a line is skipped after every paragraph
+\usepackage{pifont} % For checkmark and cross mark
+\usepackage{setspace} % set spacing in paragrahs like contents
 \usepackage{subcaption} % for caption of subfigures
 \usepackage{tikz} % for graphics, also build front cover using tikz
 \usepackage{titlesec, color}
@@ -27,17 +31,17 @@
 \graphicspath {{figure/}}
 
 %% Acronym
-\usepackage{acronym} 
+\usepackage{acronym}
 
 %% Text lay-out
 % Customize chapter style
 \titleformat
 {\chapter} % command
 [hang] % shape
-{\bfseries \LARGE} % format
+{\bfseries \LARGE \raggedright} % format
 {\thechapter \hspace{5pt} \textcolor{cyan} {$|$} } % label
 {0pt}
-{\bfseries \LARGE } % before-code
+{\bfseries \LARGE \raggedright} % before-code
 [] % after-code
 
 \titlespacing
@@ -56,8 +60,15 @@
 
 \setlength{\parindent}{0pt}
 
+%% Line spacing
+\renewcommand{\baselinestretch}{1.35} 
+
 %% Tikz settings
 \usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+
+%% Checkmarks and cross
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 
 %% Front cover, blank page, title page command
 
@@ -73,22 +84,24 @@
 		
 		\node (white-glow) at (current page.center) [fill = white, minimum width = \paperwidth, minimum height = \paperheight, opacity = 0.15]{};
 		
-		\node (title-box-bg) at (current page.east) [fill = gray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.85, xshift=-.25\paperwidth, yshift=-5cm, text=white] {};
+		\node (title-box-bg) at (current page.east) [fill = gray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.85, xshift=-.3\paperwidth, yshift=-5cm, text=white] {};
 		
-		\node (title-box) at (current page.east) [minimum width=.5\paperwidth, minimum height=7cm, align=left, xshift=-.25\paperwidth, yshift=-5cm, text=white] {
-			\hspace{.7cm}
-			\Huge{MSc Thesis}\\ \\
-			\Large{New TITLE desribing the research}\\ \\
-			Ingmar Wever (4161041) \\
+		\node (title-box) at (current page.east) [minimum width=.5\paperwidth, minimum height=7cm, align=left, xshift=-.3\paperwidth, yshift=-5cm, text=white] {
+			\hspace{.5cm}
+			\huge{MSc Thesis Report} \\ \\
+			\Large{Manoeuvrability and communication} \\
+			\Large{requirements for safe operation of} \\
+			\Large{autonomous and unmanned vessels} \\ \\
+			Ingmar Wever \\
 			\today
 			
 		};
 	
-		\node (black-bar) [fill = black, minimum width=.5\paperwidth, minimum height=0.2cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -3.4cm, fill opacity = 0.7] at (title-box){};
+		\node (black-bar) [fill = black, minimum width=.5\paperwidth, minimum height=0.2cm, yshift = -3.4cm, fill opacity = 0.7] at (title-box){};
 		
-		\node (cyan-bar) [fill = cyan, minimum width=.5\paperwidth, minimum height=0.2cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -3.6cm, fill opacity = 0.7] at (title-box){};
+		\node (cyan-bar) [fill = cyan, minimum width=.5\paperwidth, minimum height=0.2cm, yshift = -3.6cm, fill opacity = 0.7] at (title-box){};
 		
-		\node (white-bar) [fill = white, minimum width=.5\paperwidth, minimum height=1.5cm, xshift=-.25\paperwidth, xshift=.25\paperwidth, yshift = -4.5cm, fill opacity = 0.95] at (title-box){
+		\node (white-bar) [fill = white, minimum width=.5\paperwidth, minimum height=1.5cm, yshift = -4.5cm, fill opacity = 0.95] at (title-box){
 		
 			\includegraphics[height=1.3cm, keepaspectratio]{TU_Delft_logo_RGB.png}
 			\hspace{.8cm}
@@ -116,17 +129,17 @@
 		
 		\centering
 		\Large
-		\vspace*{3cm}
-		\doctitle\\
+		\vspace*{2cm}
+		\doctitle
 		\large
 		\vspace{1cm}
 		\today
 		
-		\vspace{7cm}
+		\vspace{6cm}
 		\normalsize
 		\begin{tabular}{lll}
 			Student: & Ingmar Wever & 4161041 \\
-			Project duration: & \multicolumn{2}{l}{September 2017 -- July 2018} \\
+			Project duration: & \multicolumn{2}{l}{September 2017 -- October 2018} \\
 			& & \\
 			Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Maritime Technology \\
 			& Prof.Dr. Mark Neerincx & TU Delft, Computer Science \\
