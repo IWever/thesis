@@ -1,9 +1,16 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adamson(2003)]{Adamson2003}
+Peter Adamson.
+\newblock \emph{{Review: Epictetus: A Stoic and Socratic Guide to Life}}.
+\newblock 2003.
+\newblock ISBN 0199245568 (alk. paper).
+\newblock \doi{10.1093/mind/112.446.363}.
 
 \bibitem[Arimura et~al.(2001]{Arimura2001}
 Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
@@ -91,11 +98,36 @@ Remi Eriksen.
 \newblock {Technology Outlook 2025}, 2017.
 \newblock URL \url{https://to2025.dnvgl.com/}.
 
+\bibitem[Fischer et~al.(2011]{Fischer2011}
+Peter Fischer, Joachim~I. Krueger, Tobias Greitemeyer, Claudia Vogrincic,
+  Andreas Kastenm{\"{u}}ller, Dieter Frey, Moritz Heene, Magdalena Wicher, and
+  Martina Kainbacher.
+\newblock {The bystander-effect: A meta-analytic review on bystander
+  intervention in dangerous and non-dangerous emergencies}.
+\newblock \emph{Psychological Bulletin}, 137\penalty0 (4):\penalty0 517--537,
+  2011.
+\newblock ISSN 00332909.
+\newblock \doi{10.1037/a0023304}.
+
+\bibitem[Galilei(1632)]{Galilei1632}
+Galileo Galilei.
+\newblock \emph{{Dialogue concerning the two chief world systems}}.
+\newblock 1632.
+\newblock ISBN 9780520004504.
+\newblock \doi{10.1126/science.119.3095.546-b}.
+
 \bibitem[Gregory and Shanahan(2010]{Gregory2010}
 Dik Gregory and Paul Shanahan.
 \newblock \emph{{The Human Element}}, volume~60.
 \newblock The Stationery Office, 2010.
 \newblock ISBN 9780115531200.
+
+\bibitem[Harari(2016)]{Harari2016}
+Y~N Harari.
+\newblock \emph{{Homo Deus: A Brief History of Tomorrow}}.
+\newblock Random House, 2016.
+\newblock ISBN 9781473545373.
+\newblock URL \url{https://books.google.nl/books?id=dWYyCwAAQBAJ}.
 
 \bibitem[Hetherington et~al.(2006]{Hetherington2006}
 Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
@@ -164,6 +196,11 @@ Terry McMorris, Martin Barwood, Beverley~J. Hale, Matt Dicks, and Jo~Corbett.
 \newblock ISSN 00319384.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0031938418300441}.
+
+\bibitem[Minsky et~al.(1991]{Minsky1991}
+Marvin Minsky, Ray Kurzweil, and Steve Mann.
+\newblock {Society of mind}, 1991.
+\newblock ISSN 00043702.
 
 \bibitem[Molland and Turnock(2007]{Molland2007}
 Anthony Molland and Stephen Turnock.
@@ -277,6 +314,11 @@ F.H.H.A. Quadvlieg and P.~van Coevorden.
 \newblock {Manoeuvring Criteria: More Than Imo A751 Requirements Alone!}
 \newblock \emph{International Conference on Marine Simulation and Ship
   Maneuverability}, pages 1--8, 2003.
+
+\bibitem[Rall and Dieckman(2005]{Rall2005}
+Marcus Rall and Peter Dieckman.
+\newblock {Crisis Resource Management to Improve patient safety}.
+\newblock \emph{Euroanesthesia}, \penalty0 (May):\penalty0 107--112, 2005.
 
 \bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
 Rolls-Royce.

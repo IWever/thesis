@@ -1,8 +1,11 @@
+\usepackage{acronym}
 \usepackage{afterpage}
 \usepackage[noend]{algpseudocode}
 \usepackage{appendix}
 \usepackage{booktabs} % improving tables
 \usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage{include/epipart}
 \usepackage{float}
 \usepackage[margin = 1.2in]{geometry} % change the page margins
 \usepackage{textcomp} % To avoid warnings in gensymb
@@ -22,16 +25,16 @@
 \usepackage{wrapfig}
 
 %% Bibliography style
-\bibliographystyle{tudelft-report}
+\bibliographystyle{include/tudelft-report}
 
 %% Change font to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
 
 %% Folder with figures
-\graphicspath {{figure/}}
+\graphicspath{{figure/}}
 
-%% Acronym
-\usepackage{acronym}
+%% Epigraph size
+\setlength{\epigraphwidth}{0.45\textwidth}
 
 %% Text lay-out
 % Customize chapter style
@@ -69,6 +72,9 @@
 %% Checkmarks and cross
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+
+
+%% Epipart
 
 %% Front cover, blank page, title page command
 

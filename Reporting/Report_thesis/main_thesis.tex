@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,oneside]{book}
+\documentclass[a4paper,11pt,twoside]{book}
 
 
 \newcommand{\doctitle}{\begin{spacing}{2}
@@ -13,9 +13,7 @@
 \input{include/include}
 
 \begin{document}
-\frontmatter
-
-\makeCover % Cover, blank page and title page
+\frontmatter\makeCover % Cover, blank page and title page
 
 \listoftodos[Notes]
 \clearpage
@@ -37,11 +35,26 @@
 
 \input{chapter/introduction}
 
+
+
+
+\epigraphhead[550]{
+	\emph{It is impossible for a man to learn what he thinks he already knows.}\\
+	
+	-- Epictetus \cite{Adamson2003}}\thispagestyle{empty}
 \part{The problem of communication for autonomous vessels}
+
 \input{chapter/intro-towards-autonomous}
 \input{chapter/future-shipping}
 \input{chapter/decision-model}
 
+
+
+
+\epigraphhead[550]{
+	\emph{We rarely recognize how wonderful it is that a person can traverse an entire lifetime without making a single really serious mistake. Like putting a fork in one's eye or using a window instead of a door.}\\
+	
+	-- Marvin Minsky \cite{Minsky1991}}\thispagestyle{empty}
 \part{Effect of manoeuvrability on decision making}
 \label{part:MT}
 \input{chapter/MT/introduction}
@@ -52,6 +65,13 @@
 %\input{chapter/MT/scenario-story}
 \input{chapter/MT/lessons-learned}
 
+
+
+
+\epigraphhead[550]{
+	\emph{Meant is not said, said is not heard, heard is not understood, understood is not done.}\\
+	
+	-- Marcus Rall \cite{Rall2005}}\thispagestyle{empty}
 \part{Necessity of a protocol to enable teamwork between manned and unmanned ships}
 \label{part:CS}
 \input{chapter/CS/introduction}
@@ -59,29 +79,37 @@
 \input{chapter/CS/Specification}
 \input{chapter/CS/Evaluation}
 
+\epigraphhead[550]{
+	\emph{All truths are easy to understand once they are discovered. The point is to discover them.}\\
+	
+	-- Galileo \cite{Galilei1632}}\thispagestyle{empty}
 \part{Wrap-up}
 \input{chapter/results}
 \input{chapter/conclusion}
 
+
+
+
+\epigraphhead[550]{
+	\emph{Studying history will not tell us what to choose, but at least gives us more options to choose from.}\\
+	
+	-- Yuval Noah Harrari \cite{Harari2016}}\thispagestyle{empty}
+
 \part{Appendices}
+
 \begin{appendices}
 	\appendix
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
 	\input{chapter/Appendix/bridge-systems}
 	\input{chapter/Appendix/simulation-environment}
-	\input{chapter/Appendix/decision-trees}
+	%\input{chapter/Appendix/decision-trees}
 	\input{chapter/Appendix/accidents}
 	\input{chapter/Appendix/experiment-forms}
 \end{appendices}
 
 
 \backmatter
-
-\part{TEMPORARY: Old text}
-\input{chapter/manoeuvring}
-\input{chapter/filters}
-\input{chapter/development-tool}
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{include/library}

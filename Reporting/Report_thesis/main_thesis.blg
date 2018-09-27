@@ -1,117 +1,132 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_thesis.aux
-The style file: tudelft-report.bst
+The style file: include/tudelft-report.bst
 Database file #1: include/library.bib
+Warning--empty publisher in Adamson2003
 0 is an integer literal, not a function, for entry Arimura2001
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Arimura2001
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty publisher in Arimura2001
 Warning--empty institution in Backer2015
 0 is an integer literal, not a function, for entry Bradshaw2003
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Bradshaw2003
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Bradshaw2003
 0 is an integer literal, not a function, for entry Carver2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Carver2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Demir2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Demir2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
+0 is an integer literal, not a function, for entry Fischer2011
+while executing---line 1428 of file include/tudelft-report.bst
+You can't pop an empty literal stack for entry Fischer2011
+while executing---line 1428 of file include/tudelft-report.bst
+Warning--empty publisher in Galilei1632
 0 is an integer literal, not a function, for entry Gregory2010
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Gregory2010
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Hetherington2006
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Hetherington2006
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Hoffman2018
 Warning--empty institution in IMO2000
 0 is an integer literal, not a function, for entry Kalloniatis2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Kalloniatis2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Kooij2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Kooij2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Lyons2014
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Lyons2014
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry McMorris2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry McMorris2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
+0 is an integer literal, not a function, for entry Minsky1991
+while executing---line 1428 of file include/tudelft-report.bst
+You can't pop an empty literal stack for entry Minsky1991
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Molland2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Molland2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty publisher in Molland2007
 0 is an integer literal, not a function, for entry Naderpour2016
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Naderpour2016
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Neerincx2008
 0 is an integer literal, not a function, for entry Neerincx2012
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Neerincx2012
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Neerincx2012
 0 is an integer literal, not a function, for entry Nomoto1957
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Nomoto1957
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in NTSB2016
 0 is an integer literal, not a function, for entry Ozawa2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Ozawa2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Palmer2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Palmer2007
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Porathe2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Porathe2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Porathe2014
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Porathe2014
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--there's a number but no volume in Porathe2014
 0 is an integer literal, not a function, for entry Quadvlieg2003
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Quadvlieg2003
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
+0 is an integer literal, not a function, for entry Rall2005
+while executing---line 1428 of file include/tudelft-report.bst
+You can't pop an empty literal stack for entry Rall2005
+while executing---line 1428 of file include/tudelft-report.bst
+Warning--there's a number but no volume in Rall2005
 0 is an integer literal, not a function, for entry Saarni2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Saarni2018
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Speier1999
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Speier1999
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Szlapczynski2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Szlapczynski2017
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Szlapczynski2017a
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Szlapczynski2017a
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 0 is an integer literal, not a function, for entry Underwood2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Underwood2013
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty institution in USNavy2017
 Warning--empty school in Walliser2011
 0 is an integer literal, not a function, for entry Washburn2001
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Washburn2001
-while executing---line 1428 of file tudelft-report.bst
+while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Waterborne2016
-(There were 50 error messages)
+(There were 56 error messages)

@@ -172,6 +172,8 @@ Previously all information was plotted by hand on navigational charts. With the 
 
 These screens are all integrated in some way into the bridge console. Depending on the size of the vessel, the lay-out may differ. Although, there are also regulations for the placement of systems in \ac{SOLAS}. Examples of these bridge layouts can be found in figure \ref{fig:Bridge-system-elements}.
 
+These lay-outs also show that bridges are operated in different ways. Where the officer of watch walks around on bigger ships, which also enables the crew to look together and discuss further actions. While on smaller ships the operator can see every screen from its seat. Certainly in those cases is it important to have the right balance between supplying the operator with enough information to decide on the right strategy. But avoid an information overload.
+
 \begin{figure}[p]
 	\centering
 	
@@ -200,8 +202,6 @@ These screens are all integrated in some way into the bridge console. Depending 
 	
 \end{figure}
 
-\todo{How is information used. Mention parts on information overload. Thereby also the difference between ships. Officer walking around on big ship, vs small bridge on a tug for example.} 
-
 \subsection{Human operator}
 The human operator has two sides, to formal straight forward role as an operator. Which can be described with a list of tasks depending on their function. And the more difficult and unpredictable side of being a human. Which relates to the situational awareness and decision making ability.
 
@@ -210,7 +210,7 @@ The human operator has two sides, to formal straight forward role as an operator
 To give more insight into the different roles on board of a merchant's vessel, is the structure shown for officers in figure \ref{fig:crew-structure}. At smaller vessels, roles are combined where possible. The Navy has in some cases even more operational crew members. Apart from the licensed officers who manage the vessel, does the crew also consist of ratings who have hands-on skills within their own domain. \cite{Nedcon2013}
 
 \input{include/tikz}
-\begin{figure}[h]
+\begin{figure}[p]
 	\centering
 	\begin{tikzpicture}[
 	level 1/.style={sibling distance=40mm},
@@ -265,16 +265,16 @@ The structure for the deck department on board merchant vessels is mainly the sa
 \subsubsection{Human factor}
 At unmanned autonomous vessels the human operator will be replaced by a computer. This means that the duties as described above will be executed by a computer. This automation step has unknown consequences for the ability to observe and decision making. While it has clear advantages when it comes to memory and reduced concentration due to fatigue.
 
-Situational awareness is a model to determine the ability to observe and make decisions. How well humans perform is determined by their (learning) experience \cite{Underwood2013}. Hereby is important to notice that situational awareness is not limited to perceiving, but has multiple levels. This is described using the Endsley model (figure \ref{fig:Endsley-SA-model}).
+Situational awareness is a model to determine the ability to observe and make decisions. How well humans perform is determined by their (learning) experience \cite{Underwood2013}. Hereby is important to notice that situational awareness is not limited to perceiving, but has multiple levels. This is described using the Endsley model (figure~\ref{fig:Endsley-SA-model}).
+The first step is to acquire situational awareness. This is based on three different levels of information processing \cite{Kalloniatis2017}: 
 
-\begin{figure}[H]
+\begin{figure}[p]
 	\centering
-	\includegraphics[width=.8\textwidth]{Endsley-SA-model-png.png}
+	\includegraphics[width=.9\textwidth]{Endsley-SA-model-png.png}
 	\caption{Endsley model for situational awareness}
 	\label{fig:Endsley-SA-model}
 \end{figure}
 
-The first step is to acquire situational awareness. This is based on three different levels of information processing \cite{Kalloniatis2017}: 
 \begin{description}
 	\item [Perception] Data is merely perceived.
 	\item [Comprehension] Interpretation of data, enabling understanding of relevance in relation to tasks performed and goals to be attained. Forming a holistic picture of the operational environment. Identifying the significance of objects and events in that environment.
@@ -317,43 +317,50 @@ It is a collection of phrases used to standardize and simplify the communication
 \end{description}
 
 \section{Difference between theory and practice}
+In the previous section is described how different systems and components should function to form the bridge system. However this is not always the case. These exceptions should be taken into account when developing an unmanned vessel. It is not within the scope of this research to find all exceptions. But based on conversations with seafarers can some already be identified which are relevant for solving the problem with communication.
 
-\todo{How does it go in practice, experience.}
+\subsubsection{Natural language}
+The first challenge is the usage of a protocol. Every seafarer learns today the \acf{SMCP}. But during operation many natural language influences are used. This does include talking in the local language, for example Dutch in front of the ports in the North sea. This was one of the main issues during the collision between AL ORAIQ and FLINTERSTAR, as described in appendix \ref{sec:al-oraiq-vs-flinterstar}.
+Another example which occured when I sailed at inland waters was the usage of location descriptions. It is very common to tell at which point a decision is taken. Many of these locations exist on maps, but in some cases it also happens that area's get names which are not written down on maps. For example was there a camping between Rotterdam and Dordrecht, which does not exist anymore. However the operators still refer to this bend as the camping.
+Autonomous systems should be able to interpret natural language and recognize when manned vessel make natural language variations to known protocols. Or using completely different ontologies. 
 
-Certainly in inland water or near coast conversations might be in natural language, instead of \ac{SMCP}.
+\subsubsection{Incorrect AIS information}
+Another important issue is the usage of AIS, as mentioned on the \acf{VDES} conference is AIS victim of its own success. Due to the popularity, more and more information is send over these radio frequencies. Limiting the number of AIS transmissions per ship per minute. Which automatically reduces the accuracy and relevance, as information is older. This make it harder to predict paths on the AIS information, therefor it is obligated to use \acf{ARPA}. This is however harder to interpret. Combining these would give very good information which can be used by the autonomous system.
+There is however another problem in this case. As shown by Loodswezen do some ships tweak the AIS information, in order to ensure that the officer of watch uses its \ac{ARPA}. This can be seen in figure~\ref{fig:wrong-AIS}. Here the vessel have an error of 150-200 meter compared to the \ac{ARPA}. How to cope with this is not within the scope of this research, but is something which should be discussed within organizations, such as \acf{IMO}. As it will determine which solutions are possible.
 
-Mention the problems with ECDIS/AIS (old information, not correct as mentioned by loodswezen), as I refer to this in snapshots scenario description. 
+\begin{figure}[bhp]
+	\centering
+	\includegraphics[width=.9\textwidth]{ais1.jpg}
+	\caption{Wrong AIS input when plotted on ARPA}
+	\label{fig:wrong-AIS}
+\end{figure}
 
-\section{Relevant systems for autonomous shipping}
+\section{Relevant systems for communication between manned and unmanned ships}
 \label{sec:relevant-systems}
-Not everything is relevant to other ships, in order to determine the possible decisions. This is only: information from radar, information available in AIS (where reliability must be considered), warning systems, etc...
+In the previous sections a lot of different systems are discussed. But not all these systems are relevant for the development of communication between manned and unmanned ships. In table~\ref{tab:current-technology} the most relevant systems and technologies are discussed, this will be the basis for the envisioned technology.
+This only includes systems for the communication. Not the systems to make decisions and create situational awareness, such as the ECDIS and ARPA.
 
-\todo{Write into a story}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l}
+		\toprule
+		Radio communication & Usage of message markers \\
+		& Availability on \ac{VHF} \\
+		& Natural language variations on \ac{SMCP} \\
+		& NATO phonetic alphabet and numbing \\
+		& \ac{AIS} messages \\
+		\midrule
+		Visible signals & Light signals \\
+		& Mast head signals \\
+		& Flags \\
+		& Heading, position and movements \\
+		\midrule
+		Audible signals & Horn \\
+		& Speakers\\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Current relevant systems and technologies}
+	\label{tab:current-technology}
+\end{table}
 
-\begin{itemize}
-	\item Radio communication
-	\begin{itemize}
-		\item Conversational agent using \acf{SMCP}
-		\item Availability on \acf{VHF}
-		\item \acf{AIS} messages
-	\end{itemize}
-	\item Visible signals
-	\begin{itemize}
-		\item Light signals
-		\item Flags
-		\item Mast head signals
-		\item Heading, position and movements
-	\end{itemize}
-	\item Audible signals
-	\begin{itemize}
-		\item Horn
-		\item Speakers
-	\end{itemize}
-	\item Distress, urgency and safety signals
-	\begin{itemize}
-		\item Flares
-		\item Smoke
-	\end{itemize}
-\end{itemize}
-
-e.g: VDES

@@ -142,8 +142,46 @@ This controller is limited due to the maximum turning rate of the rudder. This i
 
 
 
-\subsection{Manoeuvring model}
+\subsection{Manoeuvring}
 \label{apps:hydro-model}
+Ship manoeuvring is the ability to keep course, change course, keep track and change speed. Minimal requirements are given by \ac{IMO} standard. However, shipowners may introduce additional requirements. 
+Ship manoeuvrability is described by the following characteristics: 
+\begin{itemize}
+	\item Initial turning ability (start turning)
+	\item Sustained turning ability (keep turning)
+	\item Yaw checking ability (stop turning motion)
+	\item Stopping ability (in rather short distance and time)
+	\item Yaw stability (ability to move straight ahead)
+\end{itemize}
+During sea-trials these capabilities can be determined. However this project will aim at predicting manoeuvrability while using limited input. Thereby is there a difference between the maximum limits and what a ship is likely to do. This will eventually lead to the possible movements of the vessel.
+
+\subsubsection{IMO standard}
+The manoeuvrability of a ship is considered satisfactory is the following criteria are complied:
+\begin{enumerate}
+	\item \emph{Turning ability}. The advance should not exceed 4.5 ship lengths (L) and the tactical diameter should not exceed 5 ship lengths in the turning circle manoeuvre.
+	\item \emph{Initial turning ability}. With the application of 10\degree rudder angle to port or starboard, the ship should not have traveled more than 2.5 ship lengths by the time the heading has changed by 10\degree from the original heading. 
+	\item \emph{Yaw-checking and course-keeping abilities}. 
+	\begin{enumerate}
+		\item The value of the first overshoot angle in the 10\degree/10\degree zig-zag test should not exceed: 
+		\begin{enumerate}
+			\item 10\degree if L/V is less than 10 seconds
+			\item 20\degree if L/V is 30 seconds or more
+			\item (5 + 1/2(L/V)) degrees if L/V is between 10 and 30 seconds
+		\end{enumerate}
+		where L and V are expressed in m and m/s, respectively.
+		\item The value of the second overshoot angle in the 10\degree/10\degree zig-zag test should not exceed:
+		\begin{enumerate}
+			\item 25\degree if L/V is less than 10 seconds
+			\item 40\degree if L/V is 30 seconds or more
+			\item (117.5 + 0.75(L/V)) degrees if L/V is between 10 and 30 seconds
+		\end{enumerate}
+		\item The value of the first overshoot angle in the 20\degree/20\degree zig-zag test should not exceed 25\degree. 
+	\end{enumerate}
+	\item \emph{Stopping ability}. The track reach in the full astern stopping test should not exceed 15 ship lengths. However, this value may be modified by the Administration where ships of large displacement make this criterion impracticable, but should in no case exceed	20 ship lengths. 
+\end{enumerate}
+
+
+\subsubsection{Emperical model}
 To describe manoeuvring correctly a hydrodynamic model is needed. Using an emperical model, instead of a fully physical correct model shortens the implementation time. By validating the model with known data from sea-trials, can be determined if the accuracy of the model is sufficient for the tests. The model used is described by Artyszuk \cite{Artyszuk2016}. This linear dynamic higher-order model is based on the 2$^{nd}$ order Nomoto model \cite{Nomoto1957}. The input for this model is based on different papers and real-life comparisons, in order to be able to simulate the ships as accurately as possible. It is a numerical model. Which means the input for the manoeuvring function is a ship and a time-step.
 
 The first step is to gather relevant ship characteristics and the current state of the vessel, as shown in table \ref{tab:input-hydro-model}
@@ -201,16 +239,9 @@ Parallel to this calculation, a new course and heading is calculated. Based on t
 	\label{tab:dimensionless-factors}
 \end{table}
 
-\subsection{Criteria evaluation}
-Describe how cpa and crossing distance is implemented.
-
-\section{Input for tool}
-\subsection{Ship description}
-
-\subsection{Environment description}
-
 
 \section{Build}
+\todo{Describe current level of implementation of tool}
 printscreens\\
 User interface\\
 Graphs\\
