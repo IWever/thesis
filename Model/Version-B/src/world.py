@@ -13,9 +13,9 @@ class World:
     def __init__(self):
 
         # Set-up for world
-        self.experimentName = "Maasgeul0"
+        self.experimentName = "Dover1_control_Astrorunner"
         self.comment = "Test"
-        self.showWaypointMarkers = True
+        self.showWaypointMarkers = False
         self.saveLog = False
 
         # Set-up for simulation

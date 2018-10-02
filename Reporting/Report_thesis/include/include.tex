@@ -21,7 +21,7 @@
 \usepackage{subcaption} % for caption of subfigures
 \usepackage{tikz} % for graphics, also build front cover using tikz
 \usepackage{titlesec, color}
-\usepackage{todonotes} % placing todo notes and summarizing them at start of document
+\usepackage[bordercolor=orange,backgroundcolor=blue!10,linecolor=black,textsize=footnotesize]{todonotes} % placing todo notes and summarizing them at start of document
 \usepackage{wrapfig}
 
 %% Bibliography style
@@ -69,16 +69,11 @@
 %% Tikz settings
 \usetikzlibrary{arrows,shapes,positioning,shadows,trees}
 
-%% Checkmarks and cross
-\newcommand{\cmark}{\ding{51}}%
-\newcommand{\xmark}{\ding{55}}%
-
-
-%% Epipart
 
 %% Front cover, blank page, title page command
+\newenvironment*{emptyenv}{}{}
 
-\newcommand{\makeCover}{
+\newcommand{\addCoverPage}{
 	%% Create an empty page for cover.
 	\clearpage
 	\thispagestyle{empty}
@@ -116,9 +111,12 @@
 	
 		
 	\end{tikzpicture}
-	
+}
+
+\newcommand{\addEmptyPage}{
 	%% Create empty page for two-sided printing
 	\clearpage
+	\setcounter{page}{0}
 	\thispagestyle{empty}
 	\vspace*{6cm}
 	\begin{center}
@@ -127,34 +125,34 @@
 		\tiny{(Except for the above line.)}
 
 	\end{center}
+}
 
+\newcommand{\addTitlePage}{
+	\begin{emptyenv}
+	
 	%% Title page
-	\begin{titlepage}
-		\newpage
-		\setcounter{page}{0}
-		
-		\centering
-		\Large
-		\vspace*{2cm}
-		\doctitle
-		\large
-		\vspace{1cm}
-		\today
-		
-		\vspace{6cm}
-		\normalsize
-		\begin{tabular}{lll}
-			Student: & Ingmar Wever & 4161041 \\
-			Project duration: & \multicolumn{2}{l}{September 2017 -- October 2018} \\
-			& & \\
-			Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Maritime Technology \\
-			& Prof.Dr. Mark Neerincx & TU Delft, Computer Science \\
-			& Toine Cleophas & Damen Shipyards \\
-			Other committee members: & Prof.ir. Hans Hopman & TU Delft, Maritime Technology \\
-			& cs begeleider & TU Delft, Computer Science \\
-		\end{tabular}
-
-\end{titlepage}
-		
+	\newpage
+	
+	\centering
+	\Large
+	\vspace*{2cm}
+	\doctitle
+	\large
+	\vspace{1cm}
+	\today
+	
+	\vspace{6cm}
+	\normalsize
+	\begin{tabular}{lll}
+		Student: & Ingmar Wever & 4161041 \\
+		Project duration: & \multicolumn{2}{l}{September 2017 -- October 2018} \\
+		& & \\
+		Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Maritime Technology \\
+		& Prof.Dr. Mark Neerincx & TU Delft, Computer Science \\
+		& Toine Cleophas & Damen Shipyards \\
+		Other committee members: & Prof.ir. Hans Hopman & TU Delft, Maritime Technology \\
+		& cs begeleider & TU Delft, Computer Science \\
+	\end{tabular}
+	\end{emptyenv}
 }
 	

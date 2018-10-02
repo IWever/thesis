@@ -1,6 +1,6 @@
 \chapter{Decision making process}
 \label{ch:decision-process}
-Using a rule-based time-domain decision model, more insight can be acquired on the decision process. Thus can be answered what the situation is, and what problems might occur. Using a decision tree this can be done in a structured way, where the nodes are described with tags. This generalized model can be optimized in later stages to create a fully functional decision algorithm for autonomous and unmanned ships, using more advanced modeling techniques and machine learning. First the decision phases are described. Followed by lists of nodes used to identify scenarios and situations. Combining this with the rules, will result in the decision model. Also the criteria necessary to go trough the steps are discussed. The aim of this decision model is gain insight in the decision process to show what critical situations are when you want to try to avoid communication.
+A rule-based time-domain decision model is used, to acquire more insight into the decision-making process. Using this can be answered what the situation is, and what problems might occur. This is done in a structured way by using a decision tree. Where the nodes are described with tags. This generalized model can be optimized in later stages to create a fully functional decision algorithm for autonomous and unmanned ships. Using advanced modeling techniques and machine learning algorithms. First the decision phases are described, followed by lists of nodes used to identify scenarios and situations. Combining this with the COLREGs will result in a functional decision model. Also the criteria necessary to go through the steps are discussed. The aim of this decision model is to gain insight into the decision process. To show which situations are critical when the goal is to avoid communication.
 
 \section{Decision phases}
 The decision making process has different phases. As shown in chapter \ref{ch:model}. A simplified version of the decision model is shown in figure \ref{fig:decision-process}. These different phases are described in table \ref{tab:phases-description}.
@@ -17,9 +17,9 @@ The decision making process has different phases. As shown in chapter \ref{ch:mo
 		\toprule
 		Class & Description\\
 		\midrule
-		Mental model & Acquire knowledge about the situation, not part of this research \\
+		Mental model & Acquire knowledge about the situation, not within the scope of this research \\
 		Situation identification & Identify the encountered situation, to determine which criteria are relevant, based on waterway lay-out and other ships. \\
-		Predict future states & The second step is to determine if a problem will occur, as there is only a change in strategy needed when this is the case. \\
+		Predict future states & Predict if a problem will occur, as there is only a change in strategy needed when this is the case. \\
 		Strategy & If there is a problem, a new strategy should be chosen, this is based on the evaluation of criteria. \\
 		Action & From this strategy, different actions will follow. \\
 		Result & Finally the result is evaluated, using the same criteria to determine a problem in future states. \\
@@ -34,16 +34,16 @@ The decision making process has different phases. As shown in chapter \ref{ch:mo
 To describe the nodes within the decision trees, short keywords are used. These describe in short what kind of situation, problem, strategy, action or result there is. By using the same terms, confusion is avoided. Definitions for those terms are given in this section.
 
 \subsubsection{Encountered situations}
-This is the first step to limit the number of strategies which are relevant to evaluate. The nodes within the identification process are described in table \ref{tab:situations}, more details on how this is determined is described in section \ref{sec:situation-identification}.
+This is the first step to limit the number of strategies which are relevant to evaluate. The nodes within the identification process are described in table \ref{tab:situations}, more details on how this is determined are described in section \ref{sec:situation-identification}.
 \begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
 		Tag & Description\\
 		\midrule
 		Passing & The paths of both ships are in opposite direction, and do not cross. \\
-		Crossing & The final direction of both ships differs, but they do cross. \\
+		Crossing & The final direction of both ships differ, but they do cross. \\
 		Over-taking & The paths of both ships are the same but at different speeds. \\
-		Merge & The starting direction of both ships differs, but the final direction is the same. \\
+		Merge & The starting direction of both ships differ, but the final direction is the same. \\
 		\bottomrule
 	\end{tabular}
 	
@@ -52,7 +52,7 @@ This is the first step to limit the number of strategies which are relevant to e
 \end{table}
 
 \subsubsection{Predict future states}
-To identify if a problem will occur, different criteria are being evaluated. These criteria are described in chapter~\ref{ch:criteria-problem}. In table~\ref{tab:identification-criteria} the nodes within the decision tree are discussed to evaluate if there is a problem, and what kind of problem there is. 
+To identify if a problem will occur, different criteria are being evaluated. These criteria are described in chapter~\ref{ch:criteria-problem}. In table~\ref{tab:identification-criteria} the nodes within the decision tree are discussed to evaluate if there is a problem, and which evaluations are possible for these criteria. 
 \begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
@@ -66,12 +66,12 @@ To identify if a problem will occur, different criteria are being evaluated. The
 		\bottomrule
 	\end{tabular}
 	
-	\captionof{table}{Criteria and result of evaluation to determine problem}
+	\captionof{table}{Criteria and result of evaluation to identify a problem}
 	\label{tab:identification-criteria}
 \end{table}
 
 \subsubsection{Possible strategies}
-Using the identification of the situation and prediction of future states. A limited number of strategies might be possible. The strategies will result in actions, but can be categorized in the groups as described in table~\ref{tab:strategies}. The possible actions per strategy are shown. To determine if an action is necessary and possible, the distance and time which is left to avoid a problem is evaluated. These criteria are described in table~\ref{tab:manouvre-criteria}.
+Using the identification of the situation and prediction of future states. A limited number of strategies might be possible. The strategies will result in actions, but can be categorized in the groups as described in table~\ref{tab:strategies}. The possible actions per strategy are shown. To determine if an action is necessary and possible, the distance and time which is left to avoid a problem are evaluated. These criteria are described in table~\ref{tab:manouvre-criteria}.
 \begin{table}[H]
 	\begin{tabular}{p{0.4\textwidth}|p{0.59\textwidth}}
 		\toprule
@@ -104,7 +104,7 @@ Using the identification of the situation and prediction of future states. A lim
 \end{table}
 
 \subsubsection{Possible actions}
-From the chosen strategy, actions will follow. These action are a combination of an action type, and a moment to execute action. In table \ref{tab:actions} and \ref{tab:time-domain-action} these are described. These actions consist of different smaller sub-actions, such as rudder to 35 degrees port-side. 
+From the chosen strategy, actions will follow. These action are a combination of an action type, and a moment to execute action. In table \ref{tab:actions} and \ref{tab:time-domain-action} these are described. These actions consist of different smaller sub-actions such as: "rudder 35 degrees to port-side". 
 \begin{table}[H]
 	\begin{tabular}{p{0.35\textwidth}|p{0.64\textwidth}}
 		\toprule
@@ -138,7 +138,7 @@ From the chosen strategy, actions will follow. These action are a combination of
 \end{table}
 
 \subsubsection{Result}
-Using the evaluations from the action phase, can the eventual solution be evaluated. Herein is the human factor on board of other vessels taken into account, in the form of perceived risk. This perceived risk is linked to the safety domains \cite{Szlapczynski2017a}. The safety domain as described by Coldwell is used \cite{Coldwell1983}. This domain is based on an ellipse, which is not centered at the location of the vessel, as shown in figure~\ref{fig:coldwell-safety-domain}. This takes into account that ships rather pass on port-side and behind. In this model the safety domain only depends on the length of the ship.
+Using the criteria from the action phase, can the chosen action be evaluated. Herein is the human factor on board of other vessels taken into account, in the form of perceived risk. This perceived risk is linked to the safety domains \cite{Szlapczynski2017a}. The safety domain as described by Coldwell is used \cite{Coldwell1983}. This domain is based on an ellipse, which is not centered at the location of the vessel, as shown in figure~\ref{fig:coldwell-safety-domain}. This takes into account that ships rather pass on port-side and behind. In this model the safety domain only depends on the length of the ship.
 
 \begin{figure}[p]
 	\centering
@@ -166,7 +166,7 @@ Evaluations and criteria are shown in table \ref{tab:criteria-safe-situation}. T
 
 
 \section{Critical paths in decision trees}
-When combing the nodes as described in the previous section, very large decision trees are obtained. For specific situations and scenarios the eventual decision tree is much smaller than a tree covering all possibilities. Although a generalized model of the tree is drawn, based on the previously described nodes. This model is shown in figure \ref{fig:decision-tree-general}. Where the purple blocks show evaluation criteria and the grey blocks are choices. Thereby should be considered that the actions are evaluated in a similar manner compared to predicting future states.
+When combing the nodes as described in the previous section, very large decision trees are obtained. The decision tree for specific situations and scenarios is much smaller, than a tree covering all possibilities. Although a generalized model of the tree can be drawn, based on the previously described nodes. This model is shown in figure \ref{fig:decision-tree-general}. Where the orange blocks show evaluation criteria and the white blocks are choices. Thereby should be considered that the actions are evaluated in a similar manner compared to predicting future states.
 
 When all possible paths are considered, this will result in a very big decision tree. Which does not result in more insight in the critical paths. Using identification and evaluation criteria several common critical paths can be identified . These paths will be identified and evaluated in the next chapters.
 

@@ -7,14 +7,10 @@ The artefact gives a short summary of the developed protocol and its workings, t
 \end{quotation}
 Different measures are used for validation and verification. Key variables are: Trust, situation awareness, effectiveness, efficiency and satisfaction. In this chapter these will be described in more detailed and what the results of the evaluation are.
 
-\section{Artefact}
-The artefact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means. This first iteration will aim at finding flaws based on expert knowledge. To acquire this a simplified prototype will be used. This means that there is no implementation using hardware which might be used in latter stages. But a simulation environment is created to test situations with experts. Where is checked if experts believe that the protocol as described in chapter \ref{ch:system-design} is sufficient to get to the right decision. 
+\section{Artifact}
+The artifact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means. This first iteration will aim at finding flaws based on expert knowledge. To acquire this a simulation environment will be used. This means that there is no implementation using hardware which might be used in latter stages. The simulation environment is created to test situations with experts. Where is verified if experts believe that the protocol is sufficient to get to the right decision, as described in chapter~\ref{ch:system-design}. 
 
-To get the right feedback, several situations will be simulated. These situations are based on the accidents as described in appendix \ref{app:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in appendix \ref{app:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the esxperiment as described by IMO \cite{IMO2000} and usage of systems like \acf{AIS} and \acf{ARPA}.
-
-\todo{add description and printscreen of tool}
-\todo{add SMCP cheatsheet}
-\todo{Describe and reference to why tool, to cooperate at sea}
+To get the right feedback, several situations will be simulated. These situations are based on the accident reports as described in appendix \ref{app:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in appendix \ref{app:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the experiment and usage of systems like \acf{AIS} and \acf{ARPA}.
 
 \section{Evaluation method}
 The evaluation method can take many forms, such as a human-in-the-loop study, a use-case-based simulation, or an expert review. In this case a so-called Wizard of Oz evaluation is used. This technique enables unimplemented technology to be evaluated by using a human to simulate the response of a system. As the technology itself has not yet been implemented. The "wizard" simulates the system's responses in real-time. Using seafarers and the Wizard of Oz method, an expert evaluation can be acquired on the proposed system without implementing it.
@@ -36,11 +32,21 @@ The different participants will receive different scenarios of the same situatio
 \subsubsection{Tools}
 Beside the participants, tools are needed to do the experiment. The tools needed are:
 \begin{itemize}
-	\item Laptop with second screen to show a dynamic map of the situation during the simulation.
-	\item Questionaire to be used before, during an after the experiment.
+	\item Laptop with second screen to show simulation environment.
+	\item Questionnaire to be used before, during an after the experiment.
 	\item Room without distractions to do the experiment.
 	\item Possibility to store and later process actions during the experiment.
 \end{itemize}
+
+The simulation environment is discussed in more detail in appendix~\ref{app:tool}. The simulation environment is shown in figure~\ref{fig:printscreen-tool}. Where the map is shown on the left, which is updated regularly. The side-bar can be used to control the selected vessel. In the status-bar at the bottom of the screen, information is given on possible actions, errors and status of simulation.
+
+\begin{figure}[hbp]
+	\centering
+	\includegraphics[width=\textwidth]{printscreen-maasgeul.png}
+	\caption{Simulation environment}
+	\label{fig:printscreen-tool}
+\end{figure}
+
 
 \subsubsection{Dependent variables}
 During the experiment different variables will be evaluated. These are based on the human factor measures as described in section \ref{sec:human-factors}. This will be a combination of both quantitative and qualitative measurements. Thus combining numerical values with non-numerical arguments. 
@@ -64,42 +70,97 @@ Based on the variables measured in the experiment, can conclusions be drawn abou
 During the experiment will the parcipant act as an \acf{OoW} in different situations. The duties of the \ac{OoW} are to keep watch and navigate the vessel. While keeping a watch on the bridge he is the representative of the ship’s master and has the total responsibility of safe and smooth navigation of the ship. This means he has to follow a proper navigation plan to avoid any kind of collision according to COLREGs. Thereby is he aware of ship’s speed, turning circles, and ship handling characteristics. He also communicates with other vessels when that is necessary.
 
 More specific will he sail a vessel in different scenario's. It depends on the scenario how and if the participant can communicate with other vessels. He will do this by directing a vessel on a 2D-map as shown in the simulation environment. He will have access to the same information as any other bridge, also presented in a similar way, except for the visual 3D-view. But this lack of information is compensated by more reliability for the ECDIS and Radar.
-Within the experiment, tests will be done for different situations and scenarios: 
-
+Within the experiment, tests will be done for different situations and scenarios. The resulting strategies are listed below.
+\begin{multicols}{2}
 \begin{enumerate}
-	\item Collision between MV ARTADI and MV ST-Germain
+	\item Crossing situation at North-Sea
 	\begin{enumerate}[label=(\Alph*)]
-		\item Same decisions as reality
-		\item Do what Artadi expected
-		\item Do what St-Germain expected
+		\item Follow COLREGs strictly
+		\item Cross in front
+		\item Cross at the back
 	\end{enumerate}
-	\item Entering Maasgeul towards North Sea at port of Rotterdam.
+	\item Entering Maasgeul from Maasvlakte
 	\begin{enumerate}[label=(\Alph*)]
-		\item Crossing in front
-		\item Crossing at the back
-		\item Passing
+		\item Cross in front
+		\item Cross at the back
+		\item Pass without crossing
 	\end{enumerate}
 \end{enumerate}
+\end{multicols}
 
-These different scenarios will be described in more detail below. This does not only include the location of vessel, but also traffic, weather conditions and other information which is shared during watch take-overs.
+\subsubsection{Crossing situation at North-Sea}
+The first situation for the experiment is a crossing situation based on the accident between MV ARTADI and MV ST-GERMAIN (appendix~\ref{sec:artadiVSst-germain}). Where both ships followed COLREGs, but due to a lack of communication and wrong presumptions on the intentions, did the accident occur.
 
-\todo{Describe situations in more detail}
+The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 400-meter container vessel (EMMA MAERSK). This situation is shown in figure~\ref{fig:crossing-dover}. The relevant information on these ships is given in table~\ref{tab:info-Dover}.
 
-\subsubsection{Collision between MV ARTADI and MV ST-Germain}
-\begin{itemize}
-	\item Ship's position, course and speed
-	\item Traffic density
-	\item Weather condition and night vision
-	\item Logbooks, checklist and daily orders
-\end{itemize}
+\begin{table}[hp]
+	\centering
+	\begin{tabular}{l | r r r l}
+		\toprule
+		 & GULF VALOUR & ASTRORUNNER & EMMA MAERSK & \\
+		\midrule
+		Length 	& 249.0	& 141.6	&  397.7 & m \\
+		Width 	& 48.0	& 20.6	&  56.4 & m  \\
+		Draft 	& 13.2	& 6.5	&  12.6 & m  \\
+		Deadweight & 114900 & 9543 & 156907 & m \\
+		Type 	& Oil tanker	& General cargo vessel	&  Container vessel & \\
+		\midrule
+		Position& [-1400, -1400]	& [3250, 0]	&  [400, 2400] & m \\
+		Speed 	& 16.0	& 15.2	&  12.0 & knots\\
+		Course 	& 45	& 278	&  225 & degrees \\
+		Previous port & Singapore & Zeebrugge & Rotterdam \\
+		Next port & Rotterdam 	& Dover	& Hongkong & \\
+		Direction & North-east	& West	& South-west & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Relevant information crossing at North-Sea}
+	\label{tab:info-dover}
+\end{table}
 
-\subsubsection{Entering Maasgeul towards North Sea at port of Rotterdam.}
-\begin{itemize}
-	\item Ship's position, course and speed
-	\item Traffic density
-	\item Weather condition and night vision
-	\item Logbooks, checklist and daily orders
-\end{itemize}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{situation-dover.png}
+	\caption{Situation sketch crossing situation North-Sea}
+	\label{fig:crossing-Dover}
+\end{figure}
+
+\subsubsection{Entering Maasgeul from Maasvlakte}
+The second situation is a common situation at the port of Rotterdam. The situation is based on the description by Pilots from 'Nederlands Loodswezen'. The big challenge here is that ships are accelerating and decelerating. Therefore do traffic controllers notify ships about others intentions. But in the case as presented does this not always happen, or too late.
+
+The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 140-meter ro-ro cargo vessel (ANGLIA SEAWAYS). This situation is shown in figure~\ref{fig:entering-maasgeul}. The relevant information on these ships is given in table~\ref{tab:info-Rotterdam}.
+
+\begin{table}[hp]
+	\centering
+	\begin{tabular}{l | r r r l}
+		\toprule
+		& GULF VALOUR & ASTRORUNNER & ANGLIA SEAWAYS & \\
+		\midrule
+		Length 	& 249.0	& 141.6	&  142.4 & m \\
+		Width 	& 48.0	& 20.6	&  23.0 & m  \\
+		Draft 	& 13.2	& 6.5	&  5.0 & m  \\
+		Deadweight & 114900 & 9543 & 4650 & m \\
+		Type 	& Oil tanker	& General cargo vessel	&  Container vessel & \\
+		\midrule
+		Position& [-1372, -1377]	& [-3090, 1395]	&  [3000, -550] & m \\
+		Speed 	& 7.8	& 13.4	&  10.3 & knots\\
+		Course 	& 98	& 114	&  291 & degrees \\
+		Origin & Princess Arianehaven & North-Sea & Vulcaanhaven \\
+		Destination & North-Sea & Beneluxhaven & North-Sea \\
+		Direction & Leaving & Entering & Leaving & \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Relevant information entering Maasgeul}
+	\label{tab:info-Rotterdam}
+\end{table}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{situation-maasgeul.png}
+	\caption{Situation sketch port of Rotterdam}
+	\label{fig:entering-maasgeul}
+\end{figure}
 
 \subsection{Experiment procedure}
 To execute the experiment. Several steps are taken together with the \acf{OoW}:
@@ -118,55 +179,47 @@ To execute the experiment. Several steps are taken together with the \acf{OoW}:
 \end{enumerate}
 
 \subsubsection{Explanation (1, 2)}
-The participant is not explicitly informed about the exact purpose of the research. It will however get a short introduction on how to use the tool during the simulation. It should be easy to use, as similar action should be executed when operating a vessel. Thereby is some information about the participant acquired:
+The participant is not explicitly informed about the exact purpose of the research. It will however get a short introduction on how to use the simulation environment. This includes the commands it can give as an officer of watch. It should be easy to use, as similar action should be executed when operating a vessel. Thereby is some information about the participant acquired:
 \begin{itemize}
 	\item Which licenses do you have?
 	\item What is you experience?
-	\item What is you attitude towards unmanned and autonomous shipping?
+	\item What do you expect from the developments towards autonomous shipping?
 	\item What do you see as the biggest challenge for introducing autonomous and unmanned vessels?
 \end{itemize}
 
-\todo{add summary of description when using the tool, reference to chapter tool}
-
 \subsubsection{Situations and scenarios (3, 4, 5, 6, 9)}
-The next steps are repeated several times for the different situations. The situations are described in section \ref{ssec:experiment-task}:
+The next steps are repeated several times for the different situations. The situations are described in section \ref{ssec:experiment-task}, thereby does it depend on the experiment order in which situation it is possible to communicate:
 \begin{enumerate}
-	\item Collision between MV ARTADI and MV ST-Germain
-	\item Entering Maasgeul towards North Sea at port of Rotterdam.
+	\item Crossing situation at Nort-Sea
+	\item Entering Maasgeul from Maasvlakte
 \end{enumerate}
 
-For these situations and scenarios, the following are described:
-\begin{itemize}
-	\item Ship's position, course and speed
-	\item Traffic density
-	\item Weather condition and night vision
-	\item Logbooks, checklist and daily orders
-\end{itemize}
-
-\todo{add pictures of what is exactly happening in each situations, and what possible decisions might be}
-
 \subsubsection{Relevant questions for situation (7, 8, 9)}
-To gain insight into the quality of the experiment and effectiveness of the protocol, the following questions will be asked:
+To gain insight into the quality of the experiment and effectiveness of the protocol, different questions will be asked. Here there is also a link with the decision model as described in section~\ref{ch:model}:
 \begin{itemize}
-	\item Why did you do $\langle action \rangle$?
-	\item Did the autonomous vessel act as you expected?
-	\item Did you have the feeling, you were in control of the situation?
-	\item Did you miss any information to choose the right strategy?
-	\item Did you feel the urge to communicate?
-	\item Why did you or didn't you feel the urge to communicate?
-	\item Was the communication as you expected it to be?
+	\item What type of situation is this?
+	\item Which criteria are relevant?
+	\item Which strategy did you choose?
+	\item Which actions were taken?
+	\item Did other ships behave as expected?
+	\item Were you in control over the situation?
+	\item Did you miss any information to come-up with the right strategy?
+	\item Was it necessary to communicate?
+	\item If there was communication, was this as expected?
+	\item Can you explain why?
 	\item Would you have acted differently is you knew there was a human officer of watch?
-	\item \dots \todo{Is this enough?}
 \end{itemize}
 
-\subsubsection{General questions on protocol and human factors (10, 11, 12)}
-After running the different situations an interview is held. This interview is intended to answer the following questions from the participant perspective and explain the purpose of this research:
+\subsubsection{General questions on protocol, autonomous shipping and human factors (10, 11, 12)}
+After running the different situations an interview is held. This part of the experiment is intended to answer the following questions from the participant perspective and explain the purpose of this research:
 \begin{itemize}
-	\item Should a protocol like this pass the turing test?
-	\item Would you like to know beforehand if it is an unmanned vessel?
-	\item Are horns still commonly used to show intentions?
-	\item Did you find the SMCP easy to use?
-	\item Is the SMCP useful?
+	\item Do you expect to trust autonomous ships more, when they would pass the Turing test?
+	\item Do you want to know if a ship is unmanned?
+	\item Are ship's horns still used to communicate intended manoeuvers?
+	\item Do you still use \acf{SMCP}  consciously?
+	\item Is the protocol around SMCP easy to use?
+	\item Is the protocol around SMCP easy to learn?
+	\item Is the protocol around SMCP a good protocol?
 \end{itemize}
 
 \section{Evaluation results}

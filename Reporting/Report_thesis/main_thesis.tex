@@ -1,5 +1,4 @@
-\documentclass[a4paper,11pt,twoside]{book}
-
+\documentclass[a4paper,11pt,oneside]{book}
 
 \newcommand{\doctitle}{\begin{spacing}{2}
 		MSc Thesis Report\\ 
@@ -13,7 +12,10 @@
 \input{include/include}
 
 \begin{document}
-\frontmatter\makeCover % Cover, blank page and title page
+\frontmatter
+\addCoverPage  % Cover
+\addEmptyPage  % Blank page
+\addTitlePage  % Title page
 
 \listoftodos[Notes]
 \clearpage
@@ -36,19 +38,16 @@
 \input{chapter/introduction}
 
 
-
-
 \epigraphhead[550]{
 	\emph{It is impossible for a man to learn what he thinks he already knows.}\\
 	
 	-- Epictetus \cite{Adamson2003}}\thispagestyle{empty}
 \part{The problem of communication for autonomous vessels}
+\label{part:general}
 
 \input{chapter/intro-towards-autonomous}
 \input{chapter/future-shipping}
 \input{chapter/decision-model}
-
-
 
 
 \epigraphhead[550]{
@@ -64,8 +63,6 @@
 \input{chapter/MT/evaluation-criteria}
 %\input{chapter/MT/scenario-story}
 \input{chapter/MT/lessons-learned}
-
-
 
 
 \epigraphhead[550]{

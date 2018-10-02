@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -53,6 +53,13 @@ Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
 \newblock \doi{10.1007/978-1-4419-9198-0_11}.
 \newblock URL \url{http://link.springer.com/10.1007/978-1-4419-9198-0{\_}11}.
 
+\bibitem[Cahoon et~al.(2014]{Cahoon2014}
+S.~Cahoon, L.~Caesar, and J.~Fei.
+\newblock {Human resource practices in seafaring: Opportunities for improving
+  retention}.
+\newblock \emph{Contemporary Marine and Maritime Policy}, \penalty0 (June
+  2017), 2014.
+
 \bibitem[Carver and Turoff(2007]{Carver2007}
 Liz Carver and Murray Turoff.
 \newblock {Human-computer interaction: The human and computer as a team in
@@ -97,6 +104,18 @@ Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
 Remi Eriksen.
 \newblock {Technology Outlook 2025}, 2017.
 \newblock URL \url{https://to2025.dnvgl.com/}.
+
+\bibitem[Finnsg{\aa}rd et~al.(2018]{Finnsgard2018}
+Christian Finnsg{\aa}rd, Joakim Kalantari, Zeeshan Raza, Violeta Roso, and
+  Johan Woxenius.
+\newblock {Swedish shippers' strategies for coping with slow-steaming in deep
+  sea container shipping}.
+\newblock \emph{Journal of Shipping and Trade}, 3\penalty0 (1):\penalty0 8,
+  2018.
+\newblock ISSN 2364-4575.
+\newblock \doi{10.1186/s41072-018-0033-2}.
+\newblock URL
+  \url{https://jshippingandtrade.springeropen.com/articles/10.1186/s41072-018-0033-2}.
 
 \bibitem[Fischer et~al.(2011]{Fischer2011}
 Peter Fischer, Joachim~I. Krueger, Tobias Greitemeyer, Claudia Vogrincic,
