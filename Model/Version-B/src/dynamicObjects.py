@@ -28,6 +28,7 @@ Tanker = Ship(name="Gulf Valour",
               displacement=114900 * deadweight2displacement,
               deadweight=114900,
               nominalSpeed_kn=10.5,
+              maxSpeed_kn=18,
               color='green')
 
 Bulk = Ship(name="Amelie",
@@ -38,6 +39,7 @@ Bulk = Ship(name="Amelie",
             displacement=34650 * deadweight2displacement,
             deadweight=34650,
             nominalSpeed_kn=10.5,
+            maxSpeed_kn=14,
             color='red')
 
 Tug = Ship(name="DAMEN ASD2411",
@@ -48,6 +50,7 @@ Tug = Ship(name="DAMEN ASD2411",
            displacement=492,
            deadweight=150,
            nominalSpeed_kn=13,
+           maxSpeed_kn=14,
            color='black')
 
 Bibby = Ship(name="Bibby Wavemaster 1",
@@ -58,6 +61,7 @@ Bibby = Ship(name="Bibby Wavemaster 1",
              displacement=5956,
              deadweight=2400,
              nominalSpeed_kn=12,
+             maxSpeed_kn=17,
              color='blue')
 
 EmmaMaersk = Ship(name="Emma Maersk",
@@ -68,6 +72,7 @@ EmmaMaersk = Ship(name="Emma Maersk",
                   displacement=156907 * deadweight2displacement,
                   deadweight=156907,
                   nominalSpeed_kn=18,
+                  maxSpeed_kn=27,
                   color='dodgerblue')
 
 Astrorunner = Ship(name="Astrorunner",
@@ -78,6 +83,7 @@ Astrorunner = Ship(name="Astrorunner",
                   displacement=9543 * deadweight2displacement,
                   deadweight=9543,
                   nominalSpeed_kn=15.5,
+                  maxSpeed_kn=17,
                   color='orange')
 
 Anglia = Ship(name="Anglia Seaways",
@@ -88,6 +94,7 @@ Anglia = Ship(name="Anglia Seaways",
                   displacement=4650 * deadweight2displacement,
                   deadweight=4650,
                   nominalSpeed_kn=16.8,
+                  maxSpeed_kn=18,
                   color='deepskyblue')
 
 # Add ships to dictionary

@@ -55,6 +55,7 @@ class Ship():
         self.vmean = nominalSpeed_kn
         self.vmax = maxSpeed_kn
         self.Cb = LBP * width * depth / displacement
+        self.rudderAmplificationFactor = 2.5
 
         # Sea-trial
         self.seaTrialResults = None
@@ -160,6 +161,7 @@ class Ship():
 
         if distance2waypoint < self.LBP + 50:
             self.waypoints.pop(0)
+            self.rudderAngle = 0
             self.waypointUpdateNeeded = True
 
 

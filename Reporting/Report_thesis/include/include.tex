@@ -21,8 +21,11 @@
 \usepackage{subcaption} % for caption of subfigures
 \usepackage{tikz} % for graphics, also build front cover using tikz
 \usepackage{titlesec, color}
-\usepackage[bordercolor=orange,backgroundcolor=blue!10,linecolor=black,textsize=footnotesize]{todonotes} % placing todo notes and summarizing them at start of document
+\usepackage[textsize=footnotesize]{todonotes} % placing todo notes and summarizing them at start of document
 \usepackage{wrapfig}
+
+%% Todonots setting
+\presetkeys{todonotes}{inline, bordercolor=orange, backgroundcolor=blue!10, linecolor=black}{}
 
 %% Bibliography style
 \bibliographystyle{include/tudelft-report}
@@ -35,6 +38,12 @@
 
 %% Epigraph size
 \setlength{\epigraphwidth}{0.45\textwidth}
+
+%% No line-breaking
+\hyphenpenalty=10000
+
+%% Captions always centered
+\captionsetup{justification=centering}
 
 %% Text lay-out
 % Customize chapter style
@@ -71,7 +80,11 @@
 
 
 %% Front cover, blank page, title page command
-\newenvironment*{emptyenv}{}{}
+\newcommand{\emptyDoublePage}{
+	\newpage
+	\phantom{-}
+	\newpage
+}
 
 \newcommand{\addCoverPage}{
 	%% Create an empty page for cover.
@@ -91,8 +104,8 @@
 			\hspace{.5cm}
 			\huge{MSc Thesis Report} \\ \\
 			\Large{Manoeuvrability and communication} \\
-			\Large{requirements for safe operation of} \\
-			\Large{autonomous and unmanned vessels} \\ \\
+			\Large{requirements for safe operation when} \\
+			\Large{manned and unmanned vessels meet} \\ \\
 			Ingmar Wever \\
 			\today
 			
@@ -125,34 +138,50 @@
 		\tiny{(Except for the above line.)}
 
 	\end{center}
+	\todo{Titels begeleiders, thesis number and graduation date}
 }
 
 \newcommand{\addTitlePage}{
-	\begin{emptyenv}
+	\begin{titlepage}
 	
 	%% Title page
 	\newpage
 	
 	\centering
 	\Large
-	\vspace*{2cm}
-	\doctitle
-	\large
+	\vspace*{1cm}
+	Thesis Report for the degree of \\ 
+	MSc Marine Technology and MSc Computer Science\\
 	\vspace{1cm}
+	\begin{spacing}{2}
+		\begin{Huge}
+			Manoeuvrability and communication requirements for safe operation when manned and unmanned vessels meet
+		\end{Huge}
+	\end{spacing}
+	\large
+	\vspace{1cm}	
+	by Ingmar Wever
+	at Damen Shipyards and TU Delft
+	
 	\today
 	
-	\vspace{6cm}
+	\vspace{1.5cm}
+	\footnotesize
+	This thesis (THESISNUMBER) is classified as confidential in accordancewith the general conditions for projects performed by the TU Delft. 
+	
+	\vspace{3cm}
 	\normalsize
 	\begin{tabular}{lll}
 		Student: & Ingmar Wever & 4161041 \\
-		Project duration: & \multicolumn{2}{l}{September 2017 -- October 2018} \\
+		Project duration: & \multicolumn{2}{l}{September 2017 -- November 2018} \\
 		& & \\
-		Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Maritime Technology \\
-		& Prof.Dr. Mark Neerincx & TU Delft, Computer Science \\
-		& Toine Cleophas & Damen Shipyards \\
-		Other committee members: & Prof.ir. Hans Hopman & TU Delft, Maritime Technology \\
-		& cs begeleider & TU Delft, Computer Science \\
+		Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Ship Design \\
+		& Prof.Dr. Mark Neerincx & TU Delft, Interactive Intelligence \\
+		& Toine Cleophas & Damen Shipyards, R\&D \\
+		Committee members: & Peter de Vos MSc. & TU Delft, Marine Engineering \\
+		& Dr.ir. Willem-Paul Brinkman & TU Delft, Interactive Intelligence \\
 	\end{tabular}
-	\end{emptyenv}
+
+	\end{titlepage}
 }
 	

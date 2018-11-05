@@ -1,0 +1,35 @@
+0 s: Created GUI screen
+0 s: Simulation started
+11 s: Simulation paused at 10 seconds
+40 s: Rudder angle for Tanker set at 5 degrees
+53 s: Rudder angle for Tanker set at 10 degrees
+53 s: Rudder angle for Tanker set at 15 degrees
+103 s: Rudder angle for Tanker set at 10 degrees
+105 s: Rudder angle for Tanker set at 5 degrees
+110 s: Rudder angle for Tanker set at 0 degrees
+116 s: Rudder angle for Tanker set at -5 degrees
+149 s: Rudder angle for Tanker set at 0 degrees
+185 s: Rudder angle for Tanker set at -5 degrees
+193 s: Rudder angle for Tanker set at -10 degrees
+198 s: Rudder angle for Tanker set at -15 degrees
+220 s: Rudder angle for Tanker set at -10 degrees
+221 s: Rudder angle for Tanker set at -5 degrees
+224 s: Rudder angle for Tanker set at 0 degrees
+231 s: Rudder angle for Tanker set at 5 degrees
+266 s: Rudder angle for Tanker set at 0 degrees
+300 s: Rudder angle for Tanker set at -5 degrees
+308 s: Rudder angle for Tanker set at -10 degrees
+349 s: Rudder angle for Tanker set at -5 degrees
+352 s: Rudder angle for Tanker set at 0 degrees
+409 s: 
+409 s: Gulf Valour - CPA (meter)
+409 s:          Astrorunner | 905 meter
+409 s:          Emma Maersk | 1890 meter
+409 s: 
+409 s: Astrorunner - CPA (meter)
+409 s:          Gulf Valour | 905 meter
+409 s:          Emma Maersk | 2015 meter
+409 s: 
+409 s: Emma Maersk - CPA (meter)
+409 s:          Gulf Valour | 1890 meter
+409 s:          Astrorunner | 2015 meter

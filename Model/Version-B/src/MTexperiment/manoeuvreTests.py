@@ -52,20 +52,20 @@ def zigzag(ship, speed, angle, dt, printResult, reduceMemory):
     result = {
         "Shipname": ship.name,
         "test": ("Zigzag %d:%d| dt: %f" % (angle, angle, dt)),
-        "Start speed": ship.speed,
-        "Time": 0,
+        "Start speed [knots]": ship.speed,
+        "Time [seconds]": 0,
         "Timestamp": [],
         "locx": [],
         "locy": [],
-        "Speed": [],
-        "Acceleration*100":[],
-        "Course": [],
-        "Heading": [],
-        "Drift": [],
-        "Rudder": [],
-        "Rudder real": [],
-        "minOvershoot": 0,
-        "maxOvershoot": 0
+        "Speed [knots]": [],
+        "Acceleration*100 [m/s^2]":[],
+        "Course [degrees]": [],
+        "Heading [degrees]": [],
+        "Drift [degrees]": [],
+        "Rudder [degrees]": [],
+        "Rudder real [degrees]": [],
+        "minOvershoot [degrees]": 0,
+        "maxOvershoot [degrees]": 0
     }
 
     # Start of manoeuvrer and change rudder
@@ -96,13 +96,13 @@ def zigzag(ship, speed, angle, dt, printResult, reduceMemory):
         result = manouverStep(ship, dt, result)
 
     # Calculations
-    result["minOvershoot"] = min(result["Course"]) + angle
-    result["maxOvershoot"] = max(result["Course"]) - angle
+    result["minOvershoot [degrees]"] = min(result["Course [degrees]"]) + angle
+    result["maxOvershoot [degrees]"] = max(result["Course [degrees]"]) - angle
 
     # Print results
     if printResult:
         print(result["test"])
-        print("Overshoot is %f and %f" % (result["minOvershoot"], result["maxOvershoot"]))
+        print("Overshoot is %f and %f" % (result["minOvershoot [degrees]"], result["maxOvershoot [degrees]"]))
         print("")
 
     # Reduce stored data by removing part of test result
@@ -122,23 +122,23 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
     result = {
         "Shipname": ship.name,
         "test": ("Turning circle | rudder angle: %d | dt: %f" % (rudderAngle, dt)),
-        "Start speed": ship.speed,
-        "Time": 0,
+        "Start speed [knots]": ship.speed,
+        "Time [seconds]": 0,
         "Timestamp": [],
         "locx": [],
         "locy": [],
-        "Speed": [],
-        "Acceleration*100": [],
-        "Course": [],
-        "Heading": [],
-        "Drift": [],
-        "Rudder": [],
-        "Rudder real": [],
-        "Advance": 0,
-        "Tactical diameter": 0,
-        "Steady turning diameter": 0,
-        "Final speed": 0,
-        "Steady drift angle": 0
+        "Speed [knots]": [],
+        "Acceleration*100 [m/s^2]": [],
+        "Course [degrees]": [],
+        "Heading [degrees]": [],
+        "Drift [degrees]": [],
+        "Rudder [degrees]": [],
+        "Rudder real [degrees]": [],
+        "Advance [meter]": 0,
+        "Tactical diameter [meter]": 0,
+        "Steady turning diameter [meter]": 0,
+        "Final speed [knots]": 0,
+        "Steady drift angle [degrees]": 0
     }
 
     # Start of manoeuvrer and change rudder
@@ -153,29 +153,29 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
     while circle <= 3:
         result = manouverStep(ship, dt, result)
 
-        if (result["Course"][-1] > 5 * 180) and testflag == 0:
+        if (result["Course [degrees]"][-1] > 5 * 180) and testflag == 0:
             maxSteadyTurn = result["locx"][-1]
             testflag = 1
 
-        if result["Course"][-1] > 3*360:
+        if result["Course [degrees]"][-1] > 3*360:
             minSteadyTurn = result["locx"][-1]
             circle += 3
 
     # Calculations
-    result["Advance"] = max(result["locy"])
-    result["Tactical diameter"] = max(result["locx"])
-    result["Steady turning diameter"] = maxSteadyTurn - minSteadyTurn
-    result["Final speed"] = result["Speed"][-1]
-    result["Steady drift angle"] = result["Drift"][-1]
+    result["Advance [meter]"] = max(result["locy"])
+    result["Tactical diameter [meter]"] = max(result["locx"])
+    result["Steady turning diameter [meter]"] = maxSteadyTurn - minSteadyTurn
+    result["Final speed [knots]"] = result["Speed [knots]"][-1]
+    result["Steady drift angle [degrees]"] = result["Drift [degrees]"][-1]
 
     # Print results
     if printResult:
         print(result["test"])
-        print("Tactical diameter: %d" % result["tactical diameter"])
-        print("Advance: %d" % result["advance"])
-        print("Steady turning diameter: %d" % result["steady turning diameter"])
-        print("Final speed: %2.1f" % result["final speed"])
-        print("Steady drift angle: %2.1f degrees" % result["steady drift angle"])
+        print("Tactical diameter: %d" % result["Tactical diameter [meter]"])
+        print("Advance: %d" % result["Advance [meter]"])
+        print("Steady turning diameter: %d" % result["Steady turning diameter [meter]"])
+        print("Final speed: %2.1f" % result["Final speed [knots]"])
+        print("Steady drift angle: %2.1f degrees" % result["Steady drift angle [degrees]"])
         print("")
 
     if reduceMemory:
@@ -184,7 +184,7 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
     return result
 
 
-def evasiveManouvre(ship, speed, courseChange, dt = 0.01, changetime = 19, speedOther = 14, printResult=False, reduceMemory=True):
+def evasiveManouvre(ship, speed, courseChange, dt=0.01, changetime=19, speedOther=14, printResult=False, reduceMemory=True):
     # Set ship speed, location, angle and inertia
     setSpeed(ship, speed)
     resetShip(ship)
@@ -193,24 +193,25 @@ def evasiveManouvre(ship, speed, courseChange, dt = 0.01, changetime = 19, speed
     result = {
         "Shipname": ship.name,
         "test": ("Evasive manouvre | Course change: %d degrees | dt = %s s | changetime: %d s" % (courseChange, str(dt), changetime)),
-        "Course change": courseChange,
-        "Start speed": ship.speed,
-        "Time": 0,
-        "Speed other": speedOther,
-        "Timestep": dt,
+        "Start speed [knots]": ship.speed,
+        "Speed other [knots]": speedOther,
+        "Time [seconds]": 0,
+        "Timestep [seconds]": dt,
         "Timestamp": [],
         "locx": [],
         "locy": [],
-        "Speed": [],
-        "Acceleration*100": [],
-        "Course": [],
-        "Heading": [],
-        "Drift": [],
-        "Rudder": [],
-        "Rudder real": [],
-        "Distance": 0,
-        "Extra time": 0,
-        "Passing distance": 0
+        "Speed [knots]": [],
+        "Acceleration*100 [m/s^2]": [],
+        "Course [degrees]": [],
+        "Heading [degrees]": [],
+        "Drift [degrees]": [],
+        "Rudder [degrees]": [],
+        "Rudder real [degrees]": [],
+        "Distance till initial CPA": 0,
+        "Extra time [seconds]": 0,
+        "Passing distance [meter]": 0,
+        "Overshoot [degrees]": 0,
+        "Max course [degrees]": 0
     }
 
     # Start of manouvre
@@ -220,44 +221,46 @@ def evasiveManouvre(ship, speed, courseChange, dt = 0.01, changetime = 19, speed
     # Reduce rudder angle
     while changetime * ship.headingChange > - courseChange - ship.heading:
         result = manouverStep(ship, dt, result)
-        if result["Time"] >= 2000:
+        if result["Time [seconds]"] >= 2000:
             return None
     ship.rudderAngle = 0
 
     # Sail till angle of desired course change
     while ship.course > -courseChange:
         result = manouverStep(ship, dt, result)
-        if result["Time"] >= 2000:
+        if result["Time [seconds]"] >= 2000:
             return None
     ship.rudderAngle = 35
 
     # Return rudder to 0 position
     while changetime * ship.headingChange < - ship.course:
         result = manouverStep(ship, dt, result)
-        if result["Time"] >= 2000:
+        if result["Time [seconds]"] >= 2000:
             return None
     ship.rudderAngle = 0
 
     # Stop test
     while ship.course < 0:
         result = manouverStep(ship, dt, result)
-        if result["Time"] >= 2000:
+        if result["Time [seconds]"] >= 2000:
             return None
 
     # Calculate measures
-    timeWhenStraight = ship.location[1] / (result["Start speed"] * 1852/3600)
-    result["Extra time"] = result["Time"] - timeWhenStraight
+    timeWhenStraight = ship.location[1] / (result["Start speed [knots]"] * 1852/3600)
+    result["Extra time [seconds]"] = result["Time [seconds]"] - timeWhenStraight
 
-    result["Passing distance"] = abs(ship.location[0]) + result["Extra time"] * speedOther * 1852 / 3600
-    result["Distance"] = ship.location[1]
+    result["Passing distance [meter]"] = abs(ship.location[0]) + result["Extra time [seconds]"] * speedOther * 1852 / 3600
+    result["Distance till initial CPA [meter]"] = ship.location[1]
+    result["Overshoot [degrees]"] = -min(result["Course [degrees]"]) - courseChange
+    result["Max course [degrees]"] = -min(result["Course [degrees]"])
 
     # Print result
     if printResult:
         print("----- Trial: %s (%2.1f kn) -----" % (ship.name, speed))
         print(result["test"])
-        print("Time: %d s | extra time gained: %d" % (result["time"], result["extraTime"]))
+        print("Time: %d s | extra time gained: %d | Overshoot: %2.1f" % (result["Time [seconds]"], result["Extra time [seconds]"], result["Overshoot [degrees]"]))
         print("Distance to side: %d | Distance forward: %d" % (abs(ship.location[0]), ship.location[1]))
-        print("Passing distance behind ship with speed (%d kn): %d" % (speedOther, result["passingDistance"]))
+        print("Passing distance behind ship with speed (%d kn): %d" % (speedOther, result["Passing distance [meter]"]))
 
     if reduceMemory:
         removeListsFromDict(result)

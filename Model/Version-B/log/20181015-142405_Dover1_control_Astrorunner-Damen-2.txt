@@ -1,0 +1,121 @@
+0 s: Created GUI screen
+0 s: Simulation started
+11 s: Simulation paused at 10 seconds
+11 s: Rudder angle for Astrorunner set at 5 degrees
+16 s: Rudder angle for Astrorunner set at 10 degrees
+19 s: Rudder angle for Astrorunner set at 15 degrees
+19 s: Rudder angle for Astrorunner set at 20 degrees
+20 s: Rudder angle for Astrorunner set at 25 degrees
+20 s: Rudder angle for Astrorunner set at 30 degrees
+21 s: Rudder angle for Astrorunner set at 35 degrees
+21 s: Rudder angle for Astrorunner set at 35 degrees
+22 s: Rudder angle for Astrorunner set at 35 degrees
+22 s: Rudder angle for Astrorunner set at 35 degrees
+23 s: Rudder angle for Astrorunner set at 35 degrees
+23 s: Rudder angle for Astrorunner set at 35 degrees
+24 s: Rudder angle for Astrorunner set at 35 degrees
+24 s: Rudder angle for Astrorunner set at 35 degrees
+25 s: Rudder angle for Astrorunner set at 35 degrees
+25 s: Rudder angle for Astrorunner set at 35 degrees
+26 s: Rudder angle for Astrorunner set at 35 degrees
+26 s: Rudder angle for Astrorunner set at 35 degrees
+27 s: Rudder angle for Astrorunner set at 35 degrees
+27 s: Rudder angle for Astrorunner set at 35 degrees
+28 s: Rudder angle for Astrorunner set at 35 degrees
+28 s: Rudder angle for Astrorunner set at 35 degrees
+29 s: Rudder angle for Astrorunner set at 35 degrees
+29 s: Rudder angle for Astrorunner set at 35 degrees
+30 s: Rudder angle for Astrorunner set at 35 degrees
+30 s: Rudder angle for Astrorunner set at 35 degrees
+31 s: Rudder angle for Astrorunner set at 35 degrees
+31 s: Rudder angle for Astrorunner set at 35 degrees
+32 s: Rudder angle for Astrorunner set at 35 degrees
+32 s: Rudder angle for Astrorunner set at 35 degrees
+32 s: Rudder angle for Astrorunner set at 35 degrees
+33 s: Rudder angle for Astrorunner set at 35 degrees
+33 s: Rudder angle for Astrorunner set at 35 degrees
+34 s: Rudder angle for Astrorunner set at 35 degrees
+60 s: Rudder angle for Astrorunner set at 35 degrees
+62 s: Rudder angle for Astrorunner set at 35 degrees
+63 s: Rudder angle for Astrorunner set at 35 degrees
+63 s: Rudder angle for Astrorunner set at 35 degrees
+69 s: Rudder angle for Astrorunner set at 35 degrees
+71 s: Rudder angle for Astrorunner set at 35 degrees
+72 s: Rudder angle for Astrorunner set at 35 degrees
+72 s: Rudder angle for Astrorunner set at 35 degrees
+73 s: Rudder angle for Astrorunner set at 35 degrees
+73 s: Rudder angle for Astrorunner set at 35 degrees
+73 s: Rudder angle for Astrorunner set at 35 degrees
+74 s: Rudder angle for Astrorunner set at 35 degrees
+74 s: Rudder angle for Astrorunner set at 35 degrees
+75 s: Rudder angle for Astrorunner set at 35 degrees
+75 s: Rudder angle for Astrorunner set at 35 degrees
+76 s: Rudder angle for Astrorunner set at 35 degrees
+76 s: Rudder angle for Astrorunner set at 35 degrees
+77 s: Rudder angle for Astrorunner set at 35 degrees
+77 s: Rudder angle for Astrorunner set at 35 degrees
+78 s: Rudder angle for Astrorunner set at 35 degrees
+78 s: Rudder angle for Astrorunner set at 35 degrees
+79 s: Rudder angle for Astrorunner set at 35 degrees
+79 s: Rudder angle for Astrorunner set at 35 degrees
+84 s: Rudder angle for Astrorunner set at 35 degrees
+85 s: Rudder angle for Astrorunner set at 35 degrees
+86 s: Rudder angle for Astrorunner set at 35 degrees
+86 s: Rudder angle for Astrorunner set at 35 degrees
+87 s: Rudder angle for Astrorunner set at 30 degrees
+88 s: Rudder angle for Astrorunner set at 25 degrees
+89 s: Rudder angle for Astrorunner set at 20 degrees
+90 s: Rudder angle for Astrorunner set at 15 degrees
+90 s: Rudder angle for Astrorunner set at 10 degrees
+91 s: Rudder angle for Astrorunner set at 5 degrees
+92 s: Rudder angle for Astrorunner set at 0 degrees
+94 s: Rudder angle for Astrorunner set at -5 degrees
+131 s: Rudder angle for Astrorunner set at 0 degrees
+138 s: Rudder angle for Astrorunner set at 5 degrees
+140 s: Rudder angle for Astrorunner set at 0 degrees
+141 s: Rudder angle for Astrorunner set at -5 degrees
+142 s: Rudder angle for Astrorunner set at -10 degrees
+142 s: Rudder angle for Astrorunner set at -15 degrees
+143 s: Rudder angle for Astrorunner set at -20 degrees
+154 s: Rudder angle for Astrorunner set at -15 degrees
+155 s: Rudder angle for Astrorunner set at -10 degrees
+157 s: Rudder angle for Astrorunner set at -5 degrees
+158 s: Rudder angle for Astrorunner set at 0 degrees
+190 s: Rudder angle for Astrorunner set at 5 degrees
+196 s: Rudder angle for Astrorunner set at 10 degrees
+201 s: Rudder angle for Astrorunner set at 15 degrees
+207 s: Rudder angle for Astrorunner set at 20 degrees
+213 s: Rudder angle for Astrorunner set at 25 degrees
+215 s: Rudder angle for Astrorunner set at 30 degrees
+216 s: Rudder angle for Astrorunner set at 35 degrees
+242 s: Rudder angle for Astrorunner set at 30 degrees
+243 s: Rudder angle for Astrorunner set at 25 degrees
+244 s: Rudder angle for Astrorunner set at 20 degrees
+267 s: Rudder angle for Astrorunner set at 15 degrees
+271 s: Rudder angle for Astrorunner set at 10 degrees
+275 s: Rudder angle for Astrorunner set at 5 degrees
+291 s: Rudder angle for Astrorunner set at 0 degrees
+292 s: Rudder angle for Astrorunner set at -5 degrees
+292 s: Rudder angle for Astrorunner set at -10 degrees
+308 s: Rudder angle for Astrorunner set at -15 degrees
+311 s: Rudder angle for Astrorunner set at -20 degrees
+313 s: Rudder angle for Astrorunner set at -25 degrees
+337 s: Rudder angle for Astrorunner set at -20 degrees
+339 s: Rudder angle for Astrorunner set at -15 degrees
+340 s: Rudder angle for Astrorunner set at -10 degrees
+342 s: Rudder angle for Astrorunner set at -5 degrees
+345 s: Rudder angle for Astrorunner set at 0 degrees
+347 s: Rudder angle for Astrorunner set at 5 degrees
+355 s: Rudder angle for Astrorunner set at 0 degrees
+558 s: 
+558 s: Gulf Valour - CPA (meter)
+558 s:          Astrorunner | 1257 meter
+558 s:          Emma Maersk | 1814 meter
+558 s: 
+558 s: Astrorunner - CPA (meter)
+558 s:          Gulf Valour | 1257 meter
+558 s:          Emma Maersk | 3330 meter
+558 s: 
+558 s: Emma Maersk - CPA (meter)
+558 s:          Gulf Valour | 1814 meter
+558 s:          Astrorunner | 3330 meter

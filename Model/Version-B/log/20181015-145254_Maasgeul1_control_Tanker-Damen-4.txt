@@ -1,0 +1,114 @@
+0 s: Created GUI screen
+0 s: Simulation started
+11 s: Simulation paused at 10 seconds
+113 s: Rudder angle for Tanker set at -30 degrees
+130 s: For Tanker telegraphspeed changed to 0.170
+133 s: For Tanker telegraphspeed changed to 0.150
+134 s: For Tanker telegraphspeed changed to 0.130
+135 s: For Tanker telegraphspeed changed to 0.110
+142 s: For Tanker telegraphspeed changed to 0.090
+143 s: For Tanker telegraphspeed changed to 0.070
+144 s: For Tanker telegraphspeed changed to 0.050
+154 s: Rudder angle for Tanker set at -25 degrees
+156 s: Rudder angle for Tanker set at -20 degrees
+159 s: Rudder angle for Tanker set at -15 degrees
+165 s: Rudder angle for Tanker set at -10 degrees
+166 s: Rudder angle for Tanker set at -5 degrees
+168 s: Rudder angle for Tanker set at 0 degrees
+221 s: For Tanker telegraphspeed changed to 0.070
+233 s: For Tanker telegraphspeed changed to 0.090
+239 s: For Tanker telegraphspeed changed to 0.110
+351 s: Rudder angle for Tanker set at -5 degrees
+355 s: Rudder angle for Tanker set at -10 degrees
+360 s: Rudder angle for Tanker set at -15 degrees
+387 s: For Tanker telegraphspeed changed to 0.130
+391 s: For Tanker telegraphspeed changed to 0.150
+397 s: Rudder angle for Tanker set at -20 degrees
+401 s: Rudder angle for Tanker set at -25 degrees
+407 s: Rudder angle for Tanker set at -30 degrees
+417 s: Rudder angle for Tanker set at -35 degrees
+423 s: For Tanker telegraphspeed changed to 0.170
+424 s: For Tanker telegraphspeed changed to 0.190
+426 s: For Tanker telegraphspeed changed to 0.210
+427 s: For Tanker telegraphspeed changed to 0.230
+428 s: For Tanker telegraphspeed changed to 0.250
+429 s: For Tanker telegraphspeed changed to 0.270
+431 s: For Tanker telegraphspeed changed to 0.290
+432 s: For Tanker telegraphspeed changed to 0.310
+434 s: For Tanker telegraphspeed changed to 0.330
+436 s: For Tanker telegraphspeed changed to 0.350
+438 s: For Tanker telegraphspeed changed to 0.370
+442 s: For Tanker telegraphspeed changed to 0.390
+444 s: For Tanker telegraphspeed changed to 0.410
+446 s: For Tanker telegraphspeed changed to 0.430
+448 s: For Tanker telegraphspeed changed to 0.450
+449 s: For Tanker telegraphspeed changed to 0.470
+497 s: Rudder angle for Tanker set at -30 degrees
+500 s: Rudder angle for Tanker set at -25 degrees
+506 s: Rudder angle for Tanker set at -20 degrees
+526 s: Rudder angle for Tanker set at -15 degrees
+528 s: Rudder angle for Tanker set at -10 degrees
+531 s: Rudder angle for Tanker set at -5 degrees
+538 s: Rudder angle for Tanker set at 0 degrees
+567 s: For Tanker telegraphspeed changed to 0.490
+568 s: For Tanker telegraphspeed changed to 0.510
+569 s: For Tanker telegraphspeed changed to 0.530
+570 s: For Tanker telegraphspeed changed to 0.550
+570 s: For Tanker telegraphspeed changed to 0.570
+571 s: For Tanker telegraphspeed changed to 0.590
+572 s: For Tanker telegraphspeed changed to 0.610
+573 s: For Tanker telegraphspeed changed to 0.630
+573 s: For Tanker telegraphspeed changed to 0.650
+574 s: For Tanker telegraphspeed changed to 0.670
+592 s: Rudder angle for Tanker set at -5 degrees
+595 s: Rudder angle for Tanker set at -10 degrees
+602 s: Rudder angle for Tanker set at -15 degrees
+605 s: Rudder angle for Tanker set at -20 degrees
+641 s: Rudder angle for Tanker set at -15 degrees
+644 s: Rudder angle for Tanker set at -10 degrees
+650 s: Rudder angle for Tanker set at -5 degrees
+653 s: Rudder angle for Tanker set at 0 degrees
+664 s: Rudder angle for Tanker set at 5 degrees
+669 s: Rudder angle for Tanker set at 10 degrees
+673 s: Rudder angle for Tanker set at 15 degrees
+687 s: Rudder angle for Tanker set at 10 degrees
+717 s: Rudder angle for Tanker set at 5 degrees
+720 s: Rudder angle for Tanker set at 0 degrees
+826 s: Rudder angle for Tanker set at -5 degrees
+829 s: Rudder angle for Tanker set at -10 degrees
+853 s: Rudder angle for Tanker set at -5 degrees
+866 s: Rudder angle for Tanker set at 0 degrees
+977 s: For Tanker telegraphspeed changed to 0.690
+978 s: For Tanker telegraphspeed changed to 0.710
+978 s: For Tanker telegraphspeed changed to 0.730
+979 s: For Tanker telegraphspeed changed to 0.750
+980 s: For Tanker telegraphspeed changed to 0.770
+980 s: For Tanker telegraphspeed changed to 0.790
+981 s: For Tanker telegraphspeed changed to 0.810
+982 s: For Tanker telegraphspeed changed to 0.830
+984 s: For Tanker telegraphspeed changed to 0.850
+985 s: For Tanker telegraphspeed changed to 0.870
+985 s: For Tanker telegraphspeed changed to 0.890
+985 s: For Tanker telegraphspeed changed to 0.910
+986 s: For Tanker telegraphspeed changed to 0.930
+986 s: For Tanker telegraphspeed changed to 0.950
+986 s: For Tanker telegraphspeed changed to 0.970
+987 s: For Tanker telegraphspeed changed to 0.990
+987 s: For Tanker telegraphspeed changed to 1.000
+988 s: For Tanker telegraphspeed changed to 1.000
+1044 s: Rudder angle for Tanker set at 5 degrees
+1045 s: Rudder angle for Tanker set at 10 degrees
+1056 s: Rudder angle for Tanker set at 5 degrees
+1060 s: Rudder angle for Tanker set at 0 degrees
+1070 s: 
+1070 s: Gulf Valour - CPA (meter)
+1070 s:          Astrorunner | 554 meter
+1070 s:       Anglia Seaways | 1109 meter
+1070 s: 
+1070 s: Astrorunner - CPA (meter)
+1070 s:          Gulf Valour | 554 meter
+1070 s:       Anglia Seaways | 805 meter
+1070 s: 
+1070 s: Anglia Seaways - CPA (meter)
+1070 s:          Gulf Valour | 1109 meter
+1070 s:          Astrorunner | 805 meter

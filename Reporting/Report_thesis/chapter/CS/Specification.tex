@@ -1,6 +1,6 @@
 \chapter{System design specification}
 \label{ch:system-design}
-The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge, and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology.
+The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge, and the envisioned technology. The system specification consists of design scenarios, use cases, requirements, claims, and ontology. This chapter will answer the question how a protocol should look like to ensure safe navigation, when manned and unmanned vessels meet.
 
 \section{Design scenarios}
 The sCE method prescribes the specification of design scenarios. Design scenarios are short stories that provide a clear description of how the user will work with the technology thereby enjoying the solution offered to one of the problem scenarios. Together, the problem and design scenarios provide a contextualized view on:
@@ -17,6 +17,7 @@ Trust in autonomous ships is formed, as the information is reliable, the interac
 
 \subsubsection{Information extraction from problem scenario}
 In the previous chapter the problem is described which has to be solved with the envisioned technology. To solve the problem, the following issues have to be tackled:
+\begin{spacing}{1}
 \begin{enumerate}
 	\item Different actors are afraid of information overload.
 	\item Officer of watch is afraid to lose situational awareness.
@@ -25,6 +26,7 @@ In the previous chapter the problem is described which has to be solved with the
 	\item Manned ships want to ask for support or information.
 	\item Unmanned ships want to ask for support or information.
 \end{enumerate}
+\end{spacing}
 
 \subsubsection{Envisioned effect of system implementation}
 How the above mentioned problems are tackled are shortly discussed below. This shows what the result is after implementing the envisioned technology:
@@ -38,80 +40,11 @@ How the above mentioned problems are tackled are shortly discussed below. This s
 	\item The conversational agent is most relevant for unmanned ships when they want to ask for support or information. As addressed messages are not often used at the moment. They will use the \ac{SMCP} in a similar way to how it is currently used. So not much will change compared to the current situation for manned ships.
 \end{enumerate}
 
-\section{Use case}
-Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence.
-Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories as described in the previous chapter.
-
-%NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc.
-
-The purpose of the use cases, as described in this section are: To give insight in all interactions during a common critical situation at sea. Tags are used to relate them to the situations and scenarios as described in chapter \ref{ch:decision-process}. By making it very specific, better insight is acquired in factors which should be taken into account when defining functional requirements. 
-
-\subsubsection{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}
-
-\emph{Tags: Crossing, Move away from other, Evasive manoeuvrer now, Crossing distance, \ac{CPA}, Intention, Messaging}
-
-A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. In which she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 noticed the Reefer late and has to make an evasive manoeuvrer to pass in front of the Reefer with a distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}, using criteria from chapter \ref{ch:criteria-problem}.
-To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This will take place in the following manner:
-\begin{itemize}
-	\item The \ac{AIS}, masthead and flags are showing the vessel is sailing autonomously. This means there is no crew, but the autonomous systems listens to the \ac{VHF}.
-	\item A conversation is started by the FCS2610, calling the station on board of the Reefer and updating status in \ac{AIS} to communicate intention. 
-		\begin{quote}
-			Reefer, C-6-Z-G-7\\
-			Reefer, C-6-Z-G-7\\
-			This is unmanned FCS2610, 2-F-F-P-4 \\
-			Unmanned FCS2610, 2-F-F-P-4 \\
-			Switch to VHF channel seven-two\\
-			over.
-		\end{quote}
-	\item The FCS2610 waits for a response from 
-		\begin{quote}
-			Unmanned FCS2610, 2-F-F-P-4 \\
-			This is Reefer\\
-			Agree VHF channel seven-two\\
-			over.
-		\end{quote}
-	\item At \ac{VHF} channel 72, FCS2610 communicates her intentions.
-		\begin{quote}
-			Reefer, C-6-Z-G-7\\
-			This is unmanned FCS2610, 2-F-F-P-4 \\
-			Intention. I intend to pass in front with a distance of 0.5 Nautical mile.\\
-			over.
-		\end{quote}
-	\item At \ac{VHF} channel 72, Reefer confirms intention.
-		\begin{quote}
-			Unmanned FCS2610, 2-F-F-P-4 \\
-			This is Reefer, C-6-Z-G-7\\
-			Intention received. You intend to pass in front. Distance is 0.5 Nautical mile.\\
-			over.
-		\end{quote}
-	\item Close communication and pass in front.
-		\begin{quote}
-			Reefer, C-6-Z-G-7\\
-			This is unmanned FCS2610, 2-F-F-P-4 \\
-			Nothing more. Have a good watch. \\
-			Over.
-		\end{quote}
-		\begin{quote}
-			Unmanned FCS2610\\
-			This is Reefer\\
-			Thank you. \\
-			Over and out.
-		\end{quote}
-	\item Update AIS status of FCS2610 to show it has no questions, and is listening.
-\end{itemize}
-
 \section{Functional requirements and claims}
-In the sCE method, use cases are used to derive functional requirements and claims, i.e. specific functionalities the technology should provide to its user followed by the system’s objectives, and the hypotheses to be tested during system evaluations. This is accomplished by annotating all functional requirements with their underlying objectives (called claims).
+The functional requirements and claims, describe specific functionalities the technology should provide to its users, this is followed by the system’s objectives, and the hypotheses to be tested during system evaluations. This is accomplished by annotating all functional requirements with their underlying objectives (called claims).
 
 This explicit linking of requirements to claims enables designers to formulate hypotheses that need to be tested in system evaluations to justify the adoption of the functional requirement. If the claim cannot be proven to be valid through system evaluations, the designers need to refine their system design, for instance, by trying to improve the functionality, replacing the functionality with a different one, or dropping the functionality and the claim altogether (i.e. by deciding that the objective is not reachable at this point). Either way, there is no use of including a functionality that does not achieve its underlying claims. User stories are used to do this, these are usually in a from: "As an $\langle actor \rangle$, I want to $\langle what? \rangle$, so that $\langle why? \rangle$". Followed by an acceptance criteria, to determine when this part is correctly implemented.
-
-\subsubsection{Actors}
-The primary actors who will be taken into account in this first iteration are:
-\begin{itemize}
-	\item Officer of watch
-	\item Unmanned vessel
-	\item Nearby vessel
-\end{itemize}
+The primary actors who will be taken into account in this first iteration are: \acf{OoW}, unmanned vessels, and nearby vessels
 
 \subsubsection{User stories}
 \begin{itemize}
@@ -132,6 +65,69 @@ The primary actors who will be taken into account in this first iteration are:
 	\item As an unmanned vessel, I want to be able to check if they understand my intentions when other ships do not act as expected, so that I know if I should change my strategy. The communication should be incorporated in the decision making process and unexpected actions by others ships should be registered.
 	
 	\item As a nearby vessel, I want to receive only information which is relevant to me, so that the risk for information overload is limited. By switching \ac{VHF} channels for full conversations this is similar to the current way of working.
+\end{itemize}
+
+\section{Use case}
+\label{sec:use-case}
+Scenarios are used to create more specific descriptions of step-by-step interactions between the technology and its users (i.e. use cases). Use cases include actors, to specify which stakeholders/agents are interacting with each other in a given action sequence.
+Use cases make the design scenario more concrete by describing exactly how the technology makes sure that the problem is solved. Use cases are informed by human factors theories as described in the previous chapter.
+
+%NB: Use cases do not specify the way in which the technology enables the described interactions. For example, the interactions may take place through voice commands and audio, but could also be text-based, be instantiated with the use a drop-down menu, or even by a human operator sitting on the other side of the application, listening and responding to the events taking place. No assumptions are made about the level of automation or the current capabilities of the technology in mind. A use case simply describes the behaviour of the system, regardless of the technology required to produce that behaviour. Because the sCE method describes an iterative process of specifying the system’s design, at later stages some behaviours may prove to be infeasible or not viable. This may result in alternative use cases that may be better aligned with the available technology. But it may also be the case that one ends up with a slightly different version of the technology that in fact is able to produce the ideal behaviour described in the original use case. The main goal of iteratively refining the system specification is to gather all the alternative design solutions, compare them in systematic evaluations, and converge to one design solution that is effective, reliable, affordable, etc.
+
+The purpose of the use case, as described in this section are: To give insight in all interactions during a common critical situation at sea. Tags are used to relate them to the situations and scenarios as described in chapter \ref{ch:decision-process}. By making it very specific, better insight is acquired in factors which should be taken into account when defining functional requirements. 
+
+\subsubsection{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}
+
+\emph{Tags: Crossing, Move away from other, Evasive manoeuvrer now, Crossing distance, \ac{CPA}, Intention, Messaging}
+
+A 26 meter autonomous fast crew supplier (FCS2610) is heading towards a wind farm at the north sea with a speed of 22 knots. To get there, she has to cross a busy traffic lane. In which she will pass a 150 meter container ship (Reefer), sailing at 14 knots. The FCS2610 noticed the Reefer late and has to make an evasive manoeuvrer to pass in front of the Reefer with a passing distance of 900 meter or 0.5 Nautical mile. Which is just accepted according to the safety domains \cite{Szlapczynski2017a}, using criteria from chapter \ref{ch:criteria-problem}.
+To ensure the Reefer understands the intentions of the FCS2610, communication is necessary. This will take place in the following manner:
+\begin{itemize}
+	\item The \ac{AIS}, masthead and flags are showing the vessel is sailing autonomously. This means there is no crew, but the autonomous systems listens to the \ac{VHF}.
+	\item A conversation is started by the FCS2610, calling the station on board of the Reefer and updating status in \ac{AIS} to communicate intention. 
+	\begin{quote}
+		Reefer, C-6-Z-G-7\\
+		Reefer, C-6-Z-G-7\\
+		This is unmanned FCS2610, 2-F-F-P-4 \\
+		Unmanned FCS2610, 2-F-F-P-4 \\
+		Switch to VHF channel seven-two\\
+		over.
+	\end{quote}
+	\item The FCS2610 waits for a response from 
+	\begin{quote}
+		Unmanned FCS2610, 2-F-F-P-4 \\
+		This is Reefer\\
+		Agree VHF channel seven-two\\
+		over.
+	\end{quote}
+	\item At \ac{VHF} channel 72, FCS2610 communicates her intentions.
+	\begin{quote}
+		Reefer, C-6-Z-G-7\\
+		This is unmanned FCS2610, 2-F-F-P-4 \\
+		Intention. I intend to pass in front with a distance of 0.5 Nautical mile.\\
+		over.
+	\end{quote}
+	\item At \ac{VHF} channel 72, Reefer confirms intention.
+	\begin{quote}
+		Unmanned FCS2610, 2-F-F-P-4 \\
+		This is Reefer, C-6-Z-G-7\\
+		Intention received. You intend to pass in front. Distance is 0.5 Nautical mile.\\
+		over.
+	\end{quote}
+	\item Close communication and pass in front.
+	\begin{quote}
+		Reefer, C-6-Z-G-7\\
+		This is unmanned FCS2610, 2-F-F-P-4 \\
+		Nothing more. Have a good watch. \\
+		Over.
+	\end{quote}
+	\begin{quote}
+		Unmanned FCS2610\\
+		This is Reefer\\
+		Thank you. \\
+		Over and out.
+	\end{quote}
+	\item Update AIS status of FCS2610 to show it has no questions, and is listening.
 \end{itemize}
 
 \section{Ontology}
@@ -160,12 +156,28 @@ Both in the messaging and negotiation states, will there be messages send. These
 \end{description}
 The \acf{SMCP} will be used, as this is a known protocol for seafarers. This protocol has its own ontology. This is described by \ac{IMO} in the \href{https://puc.overheid.nl/doc/PUC_1418_14/1/#16830}{regulations} \cite{IMO2000}. A short summary of the \ac{SMCP} can be found in appendix~\ref{apps:procedures}.
 
-\subsection{Situation}
-To make the link with the decision model and problem identification as described in part \ref{part:MT}. Will the protocol use the same identifiers for situations. 
+\subsection{Speech acts}
+As can be seen in the use case in section~\ref{sec:use-case}, does a conversation contain several steps, which relate to the different message types. Where every message within the conversation ends with \emph{over}, and should be answered with a response from the other vessel.
+
+Using the speech act theory of Austin \cite{Austin1975}, can be validated that each message and conversation are useful. As communication should be kept to a minimum. This means that every message send, should have an locutionary, illocutionary and perlocutionary speech act.
+
+Where the locutionary part are just the sounds. The illocutionary part is the intrinsic message. And the perlocutionary speech act, aims to trigger an action. Thus in case of the locutionary act, \emph{What are your intentions?}. Is the illocutionary message, \emph{I want you to tell me that your intentions are}. While the perlocutionary aim is that the other vessel will tell what the intentions are.
+Below the different \textbf{perlocutionary}, illocutionary, and (locutionary) acts in a conversation are shown. Where should be considered that the MESSAGE itself also has these different acts.
+
 \begin{description}
-	\item [Passing] The paths of both ships are in opposite direction, and do not cross.
-	\item [Crossing]The final direction of both ships differs, but they do cross.
-	\item [Over-taking] The paths of both ships are the same but at different speeds.
-	\item [Merge] The starting direction of both ships differs, but the final direction is the same.
+	\item[Other ship pays attention] I want other ship to listen to me.\\ ($<name~\&~call~sign~other~vessel>$, $<name~\&~call~sign~other~vessel>$. This is $<name~\&~call~sign~own~vessel>$)
+	\item[Other ship switches to right VHF-channel] I want to communicate via specific VHF-channel.\\ (Switch to VHF channel $<channel>$)
+	\item[Other ship takes action and/or shares information] I want other ship to understand message.\\ ($<marker~word>$, \emph{MESSAGE})
+	\item[Other ship closes message too] I want other ship to know, the conversation has ended.\\ (over and out)
 \end{description}
-These situations are described in more detail in section \ref{sec:situation-identification}, using path descriptions.
+
+To make it more clear what the illocutionary act is, does the \ac{SMCP} define seven marker words, these introduce the content and purpose of the communication. The marker word is placed in a message after calling the other vessel and introducing yourself, but before the real message. Examples for messages including the different marker words are given below:
+\begin{itemize}
+	\item \emph{Advice}. Stand by on channel 6 - 8.
+	\item \emph{Information}. The fairway entrance is: position: bearing 1-3-7 degrees true from North Point Lighthouse, distance: 2 decimal 3 miles.
+	\item \emph{Warning}. Buoy number: one - five unlit.
+	\item \emph{Intention}. I intend to reduce speed, new speed: eight knots.
+	\item \emph{Question}. What are your intentions?
+	\item \emph{Instruction}. You must alter course to starboard.
+	\item \emph{Request}. Immediate tug assistance.
+\end{itemize}

@@ -1,0 +1,44 @@
+0 s: Created GUI screen
+0 s: Simulation started
+12 s: Simulation paused at 11 seconds
+15 s: Simulation paused at 14 seconds
+20 s: For Astrorunner telegraphspeed changed to 0.350
+25 s: Rudder angle for Astrorunner set at 5 degrees
+27 s: Rudder angle for Astrorunner set at 10 degrees
+27 s: Rudder angle for Astrorunner set at 15 degrees
+28 s: Rudder angle for Astrorunner set at 20 degrees
+30 s: Rudder angle for Astrorunner set at 25 degrees
+36 s: Rudder angle for Astrorunner set at 20 degrees
+36 s: Rudder angle for Astrorunner set at 15 degrees
+42 s: For Astrorunner telegraphspeed changed to 0.370
+43 s: For Astrorunner telegraphspeed changed to 0.390
+43 s: For Astrorunner telegraphspeed changed to 0.410
+45 s: For Astrorunner telegraphspeed changed to 0.430
+46 s: For Astrorunner telegraphspeed changed to 0.450
+47 s: For Astrorunner telegraphspeed changed to 0.470
+48 s: For Astrorunner telegraphspeed changed to 0.490
+49 s: For Astrorunner telegraphspeed changed to 0.510
+57 s: Rudder angle for Astrorunner set at 10 degrees
+58 s: Rudder angle for Astrorunner set at 5 degrees
+59 s: Rudder angle for Astrorunner set at 0 degrees
+70 s: Rudder angle for Astrorunner set at -5 degrees
+73 s: Rudder angle for Astrorunner set at -10 degrees
+82 s: Rudder angle for Astrorunner set at -5 degrees
+83 s: Rudder angle for Astrorunner set at 0 degrees
+93 s: For Astrorunner telegraphspeed changed to 0.530
+168 s: For Astrorunner telegraphspeed changed to 0.510
+169 s: For Astrorunner telegraphspeed changed to 0.490
+241 s: For Astrorunner telegraphspeed changed to 0.470
+242 s: For Astrorunner telegraphspeed changed to 0.450
+464 s: 
+464 s: Gulf Valour - CPA (meter)
+464 s:          Astrorunner | 1369 meter
+464 s:          Emma Maersk | 1814 meter
+464 s: 
+464 s: Astrorunner - CPA (meter)
+464 s:          Gulf Valour | 1369 meter
+464 s:          Emma Maersk | 1910 meter
+464 s: 
+464 s: Emma Maersk - CPA (meter)
+464 s:          Gulf Valour | 1814 meter
+464 s:          Astrorunner | 1910 meter

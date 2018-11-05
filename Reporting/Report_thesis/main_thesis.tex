@@ -1,13 +1,4 @@
-\documentclass[a4paper,11pt,oneside]{book}
-
-\newcommand{\doctitle}{\begin{spacing}{2}
-		MSc Thesis Report\\ 
-		\begin{Huge}
-			Manoeuvrability and communication requirements for safe operation of autonomous and unmanned vessels
-		\end{Huge}
-	\end{spacing}}
-
-\newcommand{\docauthor}{Ingmar Wever (4161041)}
+\documentclass[a4paper,11pt,twoside]{book}
 
 \input{include/include}
 
@@ -23,21 +14,23 @@
 \input{chapter/preface}
 \input{chapter/summary}
 
+{\let\cleardoublepage\clearpage%
 \begin{spacing}{1}
 	\input{include/glossary}
 	
-	\clearpage
+	\emptyDoublePage
 	\setcounter{tocdepth}{1}
 	
 	\tableofcontents
 \end{spacing}
 \clearpage
+}
+\emptyDoublePage
 
 \mainmatter
-
 \input{chapter/introduction}
 
-
+\emptyDoublePage
 \epigraphhead[550]{
 	\emph{It is impossible for a man to learn what he thinks he already knows.}\\
 	
@@ -50,11 +43,12 @@
 \input{chapter/decision-model}
 
 
+\emptyDoublePage
 \epigraphhead[550]{
 	\emph{We rarely recognize how wonderful it is that a person can traverse an entire lifetime without making a single really serious mistake. Like putting a fork in one's eye or using a window instead of a door.}\\
 	
 	-- Marvin Minsky \cite{Minsky1991}}\thispagestyle{empty}
-\part{Effect of manoeuvrability on decision making}
+\part{Impact of manoeuvrability on decision making}
 \label{part:MT}
 \input{chapter/MT/introduction}
 \input{chapter/MT/decision-process}
@@ -62,9 +56,10 @@
 \input{chapter/MT/possible-criteria}
 \input{chapter/MT/evaluation-criteria}
 %\input{chapter/MT/scenario-story}
-\input{chapter/MT/lessons-learned}
+\input{chapter/MT/lessons-learned-MT}
 
 
+\emptyDoublePage
 \epigraphhead[550]{
 	\emph{Meant is not said, said is not heard, heard is not understood, understood is not done.}\\
 	
@@ -75,22 +70,23 @@
 \input{chapter/CS/Foundation}
 \input{chapter/CS/Specification}
 \input{chapter/CS/Evaluation}
+\input{chapter/CS/lessons-learned-CS}
 
+
+\emptyDoublePage
 \epigraphhead[550]{
 	\emph{All truths are easy to understand once they are discovered. The point is to discover them.}\\
 	
 	-- Galileo \cite{Galilei1632}}\thispagestyle{empty}
 \part{Wrap-up}
-\input{chapter/results}
 \input{chapter/conclusion}
 
 
-
-
+\emptyDoublePage
 \epigraphhead[550]{
 	\emph{Studying history will not tell us what to choose, but at least gives us more options to choose from.}\\
 	
-	-- Yuval Noah Harrari \cite{Harari2016}}\thispagestyle{empty}
+	-- Yuval Noah Harari \cite{Harari2016}}\thispagestyle{empty}
 
 \part{Appendices}
 
@@ -102,12 +98,12 @@
 	\input{chapter/Appendix/simulation-environment}
 	%\input{chapter/Appendix/decision-trees}
 	\input{chapter/Appendix/accidents}
-	\input{chapter/Appendix/experiment-forms}
+	%\input{chapter/Appendix/experiment-forms}
 \end{appendices}
 
 
+\emptyDoublePage
 \backmatter
-
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{include/library}
 

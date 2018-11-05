@@ -1,4 +1,6 @@
 from src.manoeuvringModel import manoeuverShip
+import datetime
+import pickle
 
 # Functions
 def addDynamicObject(ship, location, course_deg, speed=None, rudderAngle=0, firstWaypoint=None):
@@ -53,17 +55,22 @@ def resetShip(ship):
 
 def manouverStep(ship, dt, result):
     manoeuverShip(ship, dt)
-    result["Time"] += dt
-    result["Timestamp"].append(result["Time"])
+    result["Time [seconds]"] += dt
+    result["Timestamp"].append(result["Time [seconds]"])
     result["locx"].append(ship.location[0])
     result["locy"].append(ship.location[1])
-    result["Speed"].append(ship.speed)
-    result["Acceleration*100"].append(ship.acceleration*100)
-    result["Course"].append(ship.course)
-    result["Heading"].append(ship.heading)
-    result["Drift"].append(ship.drift)
-    result["Rudder"].append(ship.rudderAngle)
-    result["Rudder real"].append(ship.rudderAngleReal)
+    result["Speed [knots]"].append(ship.speed)
+    result["Acceleration*100 [m/s^2]"].append(ship.acceleration*100)
+    result["Course [degrees]"].append(ship.course)
+    result["Heading [degrees]"].append(ship.heading)
+    result["Drift [degrees]"].append(ship.drift)
+    result["Rudder [degrees]"].append(ship.rudderAngle)
+    result["Rudder real [degrees]"].append(ship.rudderAngleReal)
 
 
     return result
+
+def saveResult(result):
+    filename = r"D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\results\%s" % datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "_Result"
+    with open(filename, 'wb') as output:
+            pickle.dump(result, output, pickle.HIGHEST_PROTOCOL)

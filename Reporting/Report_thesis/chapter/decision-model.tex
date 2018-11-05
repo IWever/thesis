@@ -1,13 +1,13 @@
 % Which parts should be solved to use the new technology
-\chapter{Decision model}
+\chapter{Decision model for safe operation}
 \label{ch:model}
-In the previous chapter, several projects are discussed, which gave insight in the challenges towards unmanned and autonomous shipping. Using a model for decision making, this challenge can be tackled in a structured way. This model shows which factors influence the decision-making process and how this is supported by relevant research.
+In the previous chapter, several projects are discussed, which gave insight in the challenges towards unmanned and autonomous shipping. Using a model for decision making, insight is acquired how the challenge of communication can be tackled in a structured way. This model shows which factors influence the decision-making process and how this is supported by relevant research. The steps in this decision process are the same for manned and unmanned ships.
 
 The decision process within the model is based on Boyd's OODA loop, Endsley model for situational awareness, and combined with models used in the projects as mentioned in chapter~\ref{ch:future}. 
 The OODA loop has different phases: Observe, orient, decide and act. Similar to Endsley's model: Perceive, comprehend, project, decide and act. 
-The combined model describes how this applies to, choosing the right strategy for safe operation, and relates to external factors and relevant theory. In figure \ref{fig:decision-model} a visual of the decision model is shown. The first step describes what can be observed, to form a mental model. The next step is to orient, in which the situation and hazards are identified. This will result in a set of strategies, which will be evaluated using different criteria, resulting in a decision. After this decision, an action is executed. This chapter will discuss these phases in more detail and how they relate to external factors and relevant theory.
+The combined model describes how this applies to, choosing the right strategy for safe operation, and relates to external factors and relevant theory. In figure \ref{fig:decision-model} a visual of the decision model is shown. The first step describes what can be observed, to form a mental model. The next step is to orient, in which the situation and hazards are identified. This will result in a set of strategies, which will be evaluated using different criteria, resulting in a decision. After this decision, an action is executed. This chapter will discuss these phases in more detail and how they relate to the challenge of communication, by discussing external factors and relevant theory.
 
-\begin{figure}[hbp]
+\begin{figure}[p]
 	\centering
 	\includegraphics[width=\textwidth]{decision-model.png}
 	\caption{Decision model}
@@ -31,14 +31,18 @@ This research will define a method to evaluate these critical situations. The si
 Based on the situation different strategies might be possible. These strategies have to be evaluated. This is done by predicting how the different strategies will influence the path of the different vessels. A trade-off must be made between exact calculations and computation time. For example is the \acf{CPA} currently determined using linearized algorithms in common \ac{ARPA} systems. Using non-linearized methods with for example a Bézier curve will result in smaller errors. Simulations would improve this even more, however does a simulation with correct hydrodynamic models cost much more computational time. In chapter~\ref{ch:criteria-problem}, the linearized and non-linearized methods are described. The simulation is done with the tool as described in appendix \ref{app:tool}, but this tool is not optimized for such calculations. Therefore will it not be able to do these calculations in real-time. The hydrodynamic model used in the simulation also described in appendix \ref{apps:hydro-model}. After this phase different manoeuvers are evaluated which corresponds to the different strategies. How this will be done for common critical strategies is discussed in chapter \ref{ch:criteria-manouvre}, this will result in manoeuvring requirements, these requirements can be used by ship designers, to ensure that the ship can operate safely with minimal need for communication.
 After the evaluation of these criteria is known which strategy will result in safe operation of the vessel.
 
+\newpage
 \section{External factors}
 How easy it is to go through the decision process and end up at the right strategy depends on the situation. The situation is mostly influenced by environmental factors. In some cases are the static sensors not sufficient to analyze the environment properly, resulting in an incomplete mental model. This section will describe in more detail how the environment influences the forming of the mental model and how safe operation within this environment would benefit from communication. 
 
 \subsection{Environment}
 As discussed before, is the mental model mostly a representation of the environment in which the vessel acts. The sensors will measure this environment. Many critical situations occurred due to weather conditions. The reason is that the sight is limited during heavy rain or snow. Also might the wind and waves limit the manoeuvring capabilities of a vessel. This is also the reason some vessels are not allowed to enter a port when winds are too high.
 This is mostly due to the layout of the waterway. Due to currents, operations (e.g. maintenance and fishery) or limited depth, might some area's be restricted. This information is often acquired via communication channels, but communication channels which only allow receiving and not sending, such as \acf{Navtex}.
-The same goes for basic information on other ships. They might send their location and speed via \ac{AIS}, but still key is the \ac{ARPA}. Due to weather conditions, these systems could have worse performance, as heavy rain creates noise at the radar. In the situations where sensors do not function as expected. Communication is needed, even if whole decision process itself is optimized to avoid communication.
+
+The same goes for basic information on other ships. They might send their location and speed via \ac{AIS}, but still key is the \ac{ARPA}. Due to weather conditions, these systems could have worse performance, as heavy rain creates noise at the radar. In the situations where sensors do not function as expected. Communication is needed, even if the whole decision process itself is optimized to avoid communication.
 The same goes for communication with shore-based stations such as traffic controllers or in the future remote pilots. These often have information which could not be retrieved via sensors or current systems. Such as a place and time to berth or pick-up a pilot.
+
+Both shore-based stations and ships can only share intentions and their planned path via the radio. Future unmanned will most likely be able to negotiate using other systems. But in case with manned-manned or manned-unmanned interaction is this only possible via \ac{VHF} radio for now.
 
 \subsection{Communication}
 As described are there still cases in which communication is necessary. In part \ref{part:CS} the case where communication between manned and unmanned vessel is needed is discussed. Using the \acf{sCE} method a protocol is defined, based on existing systems and protocols. Thus using \ac{AIS} to send written messages, or \ac{VHF} and \ac{SMCP} for verbal messages. 

@@ -1,25 +1,25 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Adamson(2003)]{Adamson2003}
+\bibitem[Adamson (2003)]{Adamson2003}
 Peter Adamson.
 \newblock \emph{{Review: Epictetus: A Stoic and Socratic Guide to Life}}.
 \newblock 2003.
 \newblock ISBN 0199245568 (alk. paper).
 \newblock \doi{10.1093/mind/112.446.363}.
 
-\bibitem[Arimura et~al.(2001]{Arimura2001}
+\bibitem[Arimura et~al. (2001)]{Arimura2001}
 Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
 \newblock \emph{{Lecture Notes in Artificial Intelligence}}, volume 2225.
 \newblock 2001.
 \newblock ISBN 3540679154.
 \newblock \doi{10.1007/978-3-642-29066-4{_}11}.
 
-\bibitem[Artyszuk(2016)]{Artyszuk2016}
+\bibitem[Artyszuk (2016)]{Artyszuk2016}
 Jaroslaw Artyszuk.
 \newblock {Inherent Properties of Ship Manoeuvring Linear Models in View of the
   Full-mission Model Adjustment}.
@@ -30,19 +30,31 @@ Jaroslaw Artyszuk.
 \newblock URL
   \url{http://www.transnav.eu/Article{\_}Inherent{\_}Properties{\_}of{\_}Ship{\_}Manoeuvring{\_}Artyszuk,40,683.html}.
 
-\bibitem[Backer(2015)]{Backer2015}
+\bibitem[Austin (1975)]{Austin1975}
+J.L. Austin.
+\newblock \emph{{How to Do Things with Words}}.
+\newblock Harvard University Press, Cambridge, MA, 2nd edition, 1975.
+
+\bibitem[Backer (2015)]{Backer2015}
 Philippe D~E Backer.
 \newblock {Report on the joint investigation of the collision between the LNG
   Carrier mts AL ORAIQ and the mv FLINTERSTAR}.
 \newblock Technical Report October, 2015.
 
-\bibitem[{Bernard Marr}(2017)]{Marr2017}
+\bibitem[{Bernard Marr} (2017)]{Marr2017}
 {Bernard Marr}.
 \newblock {Rolls-Royce And Google Partner To Create Smarter, Autonomous Ships
   Based On AI And Machine Learning}, 2017.
 \newblock URL \url{https://www.forbes.com/sites/bernardmarr}.
 
-\bibitem[Bradshaw et~al.(2003]{Bradshaw2003}
+\bibitem[Blanke et~al. (2017)]{Blanke2017}
+Mogens Blanke, Michael Henrique, and Jakob Bang.
+\newblock {A pre-analysis on autonomous ships}.
+\newblock pages 1--27, 2017.
+\newblock URL \url{https://www.dma.dk/Documents/Publikationer/Autonome
+  skibe{\_}DTU{\_}rapport{\_}UK.pdf}.
+
+\bibitem[Bradshaw et~al. (2003)]{Bradshaw2003}
 Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
   Robert Hoffman, Renia Jeffers, Debbie Prescott, Niranjan Suri, Andrzej Uszok,
   and Ron {Van Hoof}.
@@ -53,14 +65,21 @@ Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
 \newblock \doi{10.1007/978-1-4419-9198-0_11}.
 \newblock URL \url{http://link.springer.com/10.1007/978-1-4419-9198-0{\_}11}.
 
-\bibitem[Cahoon et~al.(2014]{Cahoon2014}
+\bibitem[Cahoon et~al. (2014)]{Cahoon2014}
 S.~Cahoon, L.~Caesar, and J.~Fei.
 \newblock {Human resource practices in seafaring: Opportunities for improving
   retention}.
 \newblock \emph{Contemporary Marine and Maritime Policy}, \penalty0 (June
   2017), 2014.
 
-\bibitem[Carver and Turoff(2007]{Carver2007}
+\bibitem[Cappelle et~al. (2018)]{Cappelle2018}
+L.E. Cappelle, L.~Chen, and R.R. Negenborn.
+\newblock {Survey on ASV technology developments and readiness levels for
+  autonomous shipping}.
+\newblock In \emph{9th International Conference on Computational Logistics
+  (ICCL 2018)}, Vietri sul Mare, Italy, 2018.
+
+\bibitem[Carver and Turoff (2007)]{Carver2007}
 Liz Carver and Murray Turoff.
 \newblock {Human-computer interaction: The human and computer as a team in
   emergency management information systems}.
@@ -69,7 +88,7 @@ Liz Carver and Murray Turoff.
 \newblock ISSN 00010782.
 \newblock \doi{10.1145/1226736.1226761}.
 
-\bibitem[Coldwell(1983)]{Coldwell1983}
+\bibitem[Coldwell (1983)]{Coldwell1983}
 T.~G. Coldwell.
 \newblock {Marine Traffic Behaviour in Restricted Waters}.
 \newblock \emph{Journal of Navigation}, 36\penalty0 (3):\penalty0 430--444,
@@ -77,14 +96,14 @@ T.~G. Coldwell.
 \newblock ISSN 14697785.
 \newblock \doi{10.1017/S0373463300039783}.
 
-\bibitem[Davis(1989)]{Davis1989}
+\bibitem[Davis (1989)]{Davis1989}
 Fred~D. Davis.
 \newblock {Perceived Usefulness , Perceived Ease of Use , and User Acceptance
   of}.
 \newblock \emph{Management Information System Research Center}, 13\penalty0
   (3):\penalty0 319--340, 1989.
 
-\bibitem[Demir et~al.(2017]{Demir2017}
+\bibitem[Demir et~al. (2017)]{Demir2017}
 Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
 \newblock {Team situation awareness within the context of human-autonomy
   teaming}.
@@ -93,19 +112,19 @@ Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
 \newblock \doi{10.1016/j.cogsys.2016.11.003}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.cogsys.2016.11.003}.
 
-\bibitem[{DNV GL}(2011)]{DNVGL2011}
+\bibitem[{DNV GL} (2011)]{DNVGL2011}
 {DNV GL}.
 \newblock {Special equipment and systems - nautical safety}.
 \newblock \emph{Rules and regulations}, 2011.
 \newblock ISSN 0028-0836.
 \newblock \doi{10.1038/147264c0}.
 
-\bibitem[Eriksen(2017)]{Eriksen2017}
+\bibitem[Eriksen (2017)]{Eriksen2017}
 Remi Eriksen.
 \newblock {Technology Outlook 2025}, 2017.
 \newblock URL \url{https://to2025.dnvgl.com/}.
 
-\bibitem[Finnsg{\aa}rd et~al.(2018]{Finnsgard2018}
+\bibitem[Finnsg{\aa}rd et~al. (2018)]{Finnsgard2018}
 Christian Finnsg{\aa}rd, Joakim Kalantari, Zeeshan Raza, Violeta Roso, and
   Johan Woxenius.
 \newblock {Swedish shippers' strategies for coping with slow-steaming in deep
@@ -117,7 +136,7 @@ Christian Finnsg{\aa}rd, Joakim Kalantari, Zeeshan Raza, Violeta Roso, and
 \newblock URL
   \url{https://jshippingandtrade.springeropen.com/articles/10.1186/s41072-018-0033-2}.
 
-\bibitem[Fischer et~al.(2011]{Fischer2011}
+\bibitem[Fischer et~al. (2011)]{Fischer2011}
 Peter Fischer, Joachim~I. Krueger, Tobias Greitemeyer, Claudia Vogrincic,
   Andreas Kastenm{\"{u}}ller, Dieter Frey, Moritz Heene, Magdalena Wicher, and
   Martina Kainbacher.
@@ -128,27 +147,27 @@ Peter Fischer, Joachim~I. Krueger, Tobias Greitemeyer, Claudia Vogrincic,
 \newblock ISSN 00332909.
 \newblock \doi{10.1037/a0023304}.
 
-\bibitem[Galilei(1632)]{Galilei1632}
+\bibitem[Galilei (1632)]{Galilei1632}
 Galileo Galilei.
 \newblock \emph{{Dialogue concerning the two chief world systems}}.
 \newblock 1632.
 \newblock ISBN 9780520004504.
 \newblock \doi{10.1126/science.119.3095.546-b}.
 
-\bibitem[Gregory and Shanahan(2010]{Gregory2010}
+\bibitem[Gregory and Shanahan (2010)]{Gregory2010}
 Dik Gregory and Paul Shanahan.
 \newblock \emph{{The Human Element}}, volume~60.
 \newblock The Stationery Office, 2010.
 \newblock ISBN 9780115531200.
 
-\bibitem[Harari(2016)]{Harari2016}
+\bibitem[Harari (2016)]{Harari2016}
 Y~N Harari.
 \newblock \emph{{Homo Deus: A Brief History of Tomorrow}}.
 \newblock Random House, 2016.
 \newblock ISBN 9781473545373.
 \newblock URL \url{https://books.google.nl/books?id=dWYyCwAAQBAJ}.
 
-\bibitem[Hetherington et~al.(2006]{Hetherington2006}
+\bibitem[Hetherington et~al. (2006)]{Hetherington2006}
 Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
 \newblock {Safety in shipping: The human element}.
 \newblock \emph{Journal of Safety Research}, 37\penalty0 (4):\penalty0
@@ -156,25 +175,25 @@ Catherine Hetherington, Rhona Flin, and Kathryn Mearns.
 \newblock ISSN 00224375.
 \newblock \doi{10.1016/j.jsr.2006.04.007}.
 
-\bibitem[Hoffman(2018)]{Hoffman2018}
+\bibitem[Hoffman (2018)]{Hoffman2018}
 Ryan~W Hoffman.
 \newblock {Sensitivity Analyses of Optimized Attitude Estimators Using Sensor
   Fusion Solutions for Low- Cost MEMS Configurations}.
 \newblock 2018.
 
-\bibitem[IMO(1972)]{IMO1972}
+\bibitem[IMO (1972)]{IMO1972}
 IMO.
 \newblock {Convention on the International Regulations for Preventing
   Collisions at Sea, 1972 (COLREGs)}, 1972.
 \newblock URL
   \url{http://www.imo.org/en/About/conventions/listofconventions/pages/colreg.aspx}.
 
-\bibitem[{International Maritime Organization}(2000)]{IMO2000}
+\bibitem[{International Maritime Organization} (2000)]{IMO2000}
 {International Maritime Organization}.
 \newblock {Imo standard marine communication phrases (smcp)}.
 \newblock Technical report, 2000.
 
-\bibitem[Kalloniatis et~al.(2017]{Kalloniatis2017}
+\bibitem[Kalloniatis et~al. (2017)]{Kalloniatis2017}
 Alexander Kalloniatis, Irena Ali, Timothy Neville, Phuong La, Iain Macleod,
   Mathew Zuparic, and Elizabeth Kohn.
 \newblock {The Situation Awareness Weighted Network (SAWN) model and method:
@@ -184,13 +203,19 @@ Alexander Kalloniatis, Irena Ali, Timothy Neville, Phuong La, Iain Macleod,
 \newblock \doi{10.1016/j.apergo.2017.02.002}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.apergo.2017.02.002}.
 
-\bibitem[Kooij et~al.(2018]{Kooij2018}
+\bibitem[Kooij et~al. (2018)]{Kooij2018}
 C~Kooij, M~Loonstijn, R~G Hekkenberg, and K~Visser.
 \newblock {Towards autonomous shipping: operational challenges of unmanned
   short sea cargo vessels}.
 \newblock \emph{Marine Design XIII}, pages 871--880, 2018.
 
-\bibitem[Lyons and Havig(2014]{Lyons2014}
+\bibitem[Liu et~al. (2015)]{Liu2015a}
+Jialun Liu, Frans Quadvlieg, and Robert Hekkenberg.
+\newblock {Impacts of rudder profiles on ship manoeuvrability}.
+\newblock \emph{International Conference on Marine Simulation and Ship
+  Maneuverability (MARSIM '15)}, \penalty0 (September), 2015.
+
+\bibitem[Lyons and Havig (2014)]{Lyons2014}
 Joseph~B. Lyons and Paul~R. Havig.
 \newblock {Transparency in a human-machine context: Approaches for fostering
   shared awareness/intent}.
@@ -200,7 +225,7 @@ Joseph~B. Lyons and Paul~R. Havig.
 \newblock ISSN 16113349.
 \newblock \doi{10.1007/978-3-319-07458-0_18}.
 
-\bibitem[MARSIM(1996)]{MARSIM1996}
+\bibitem[MARSIM (1996)]{MARSIM1996}
 MARSIM.
 \newblock \emph{{Marine simulation and ship manoeuvrability : proceedings of
   the international conference MARSIM '96}}.
@@ -208,7 +233,7 @@ MARSIM.
 \newblock ISBN 9054108312 9789054108313.
 \newblock URL \url{https://tudelft.on.worldcat.org/oclc/905476225}.
 
-\bibitem[McMorris et~al.(2018]{McMorris2018}
+\bibitem[McMorris et~al. (2018)]{McMorris2018}
 Terry McMorris, Martin Barwood, Beverley~J. Hale, Matt Dicks, and Jo~Corbett.
 \newblock {Cognitive fatigue effects on physical performance: A systematic
   review and meta-analysis}, 2018.
@@ -216,24 +241,33 @@ Terry McMorris, Martin Barwood, Beverley~J. Hale, Matt Dicks, and Jo~Corbett.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0031938418300441}.
 
-\bibitem[Minsky et~al.(1991]{Minsky1991}
+\bibitem[Minsky et~al. (1991)]{Minsky1991}
 Marvin Minsky, Ray Kurzweil, and Steve Mann.
 \newblock {Society of mind}, 1991.
 \newblock ISSN 00043702.
 
-\bibitem[Molland and Turnock(2007]{Molland2007}
+\bibitem[Molland and Turnock (2007)]{Molland2007}
 Anthony Molland and Stephen Turnock.
 \newblock \emph{{Marine Rudders and Control Surfaces}}.
 \newblock 2007.
 \newblock ISBN 9780750669443.
 \newblock \doi{10.1016/B978-0-7506-6944-3.X5000-8}.
 
-\bibitem[MUNIN(2016)]{MUNIN2016}
+\bibitem[Most et~al. (2000)]{Most2000}
+Steven~B Most, Daniel~J. Simons, Brian~J Scholl, and Christopher~F Chabris.
+\newblock {Sustained Inattentional Blindness}.
+\newblock \emph{Psyche}, 6\penalty0 (December):\penalty0 14, 2000.
+\newblock ISSN 1039723X.
+\newblock \doi{10.1068/p2952}.
+\newblock URL
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.72.9071{\&}rep=rep1{\&}type=pdf}.
+
+\bibitem[MUNIN (2016)]{MUNIN2016}
 MUNIN.
 \newblock {About MUNIN}, 2016.
 \newblock URL \url{http://www.unmanned-ship.org/munin/about/}.
 
-\bibitem[Naderpour et~al.(2016]{Naderpour2016}
+\bibitem[Naderpour et~al. (2016)]{Naderpour2016}
 Mohsen Naderpour, Jie Lu, and Guangquan Zhang.
 \newblock {A safety-critical decision support system evaluation using situation
   awareness and workload measures}.
@@ -243,33 +277,33 @@ Mohsen Naderpour, Jie Lu, and Guangquan Zhang.
 \newblock \doi{10.1016/j.ress.2016.01.024}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.ress.2016.01.024}.
 
-\bibitem[Nedcon(2013)]{Nedcon2013}
+\bibitem[Nedcon (2013)]{Nedcon2013}
 Nedcon.
 \newblock {Crew structure on board merchant vessels}, 2013.
 \newblock URL
   \url{http://www.nedcon.ro/crew-structure-board-merchant-vessels-engine-department/}.
 
-\bibitem[Neerincx(2008)]{Neerincx2008}
+\bibitem[Neerincx (2008)]{Neerincx2008}
 M.A. Neerincx.
 \newblock {Situated cognitive engineering: Developing adaptive track handling
   support for naval command and control centers}.
 \newblock pages 1--18, 2008.
 
-\bibitem[Neerincx and Linderberg(2012]{Neerincx2012}
+\bibitem[Neerincx and Linderberg (2012)]{Neerincx2012}
 Mark Neerincx and Jasper Linderberg.
 \newblock {Applying the Situated Cognitive Engineering Method - A Comprehensive
   Guide}.
 \newblock 2012.
 \newblock URL \url{http://scetool.nl/sce{\_}manual{\_}v1.0.pdf}.
 
-\bibitem[Nieva(2018)]{Nieva2018}
+\bibitem[Nieva (2018)]{Nieva2018}
 Richard Nieva.
 \newblock {Google says it's designing Duplex with 'disclosure built-in' -
   CNET}, 2018.
 \newblock URL
   \url{https://www.cnet.com/news/google-says-its-designing-duplex-with-disclosure-built-in/}.
 
-\bibitem[Nomoto and Taguchi(1957]{Nomoto1957}
+\bibitem[Nomoto and Taguchi (1957)]{Nomoto1957}
 Kensaku Nomoto and Kenshi Taguchi.
 \newblock {On steering qualities of ships}.
 \newblock \emph{Journal of Zosen Kiokai}, 1957\penalty0 (101):\penalty0 57--66,
@@ -278,25 +312,25 @@ Kensaku Nomoto and Kenshi Taguchi.
 \newblock URL
   \url{https://www.jstage.jst.go.jp/article/jjasnaoe1952/1957/101/1957{\_}101{\_}57/{\_}article}.
 
-\bibitem[NTSB(2016{\natexlab{a}})]{NTSB2016}
+\bibitem[NTSB (2016{\natexlab{a}})]{NTSB2016}
 NTSB.
 \newblock {Executive Summary public meeting about collision between bulk
   carrier Conti Peridot and Tanker Carla Maersk}.
 \newblock 2016{\natexlab{a}}.
 
-\bibitem[NTSB(2016{\natexlab{b}})]{NTSB2016a}
+\bibitem[NTSB (2016{\natexlab{b}})]{NTSB2016a}
 NTSB.
 \newblock {Marine Accident Report - Collision between Bulk Carrier Conti
   Peridot and Tanker Carla Maersk}.
 \newblock \emph{Marine Accident Report}, 2016{\natexlab{b}}.
 
-\bibitem[{Oliver Cameron}(2017)]{Cameron2017}
+\bibitem[{Oliver Cameron} (2017)]{Cameron2017}
 {Oliver Cameron}.
 \newblock {An Introduction to LIDAR: The Key Self-Driving Car Sensor}, 2017.
 \newblock URL
   \url{https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff}.
 
-\bibitem[Ozawa and Sripad(2013]{Ozawa2013}
+\bibitem[Ozawa and Sripad (2013)]{Ozawa2013}
 Sachiko Ozawa and Pooja Sripad.
 \newblock {How do you measure trust in the health system? A systematic review
   of the literature}.
@@ -305,7 +339,7 @@ Sachiko Ozawa and Pooja Sripad.
 \newblock \doi{10.1016/j.socscimed.2013.05.005}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.socscimed.2013.05.005}.
 
-\bibitem[Palmer et~al.(2007]{Palmer2007}
+\bibitem[Palmer et~al. (2007)]{Palmer2007}
 A.~R. Palmer, D.~A. Hall, C.~Sumner, D.~J~K Barrett, S.~Jones, K.~Nakamoto, and
   D.~R. Moore.
 \newblock {Some investigations into non-passive listening}.
@@ -313,7 +347,7 @@ A.~R. Palmer, D.~A. Hall, C.~Sumner, D.~J~K Barrett, S.~Jones, K.~Nakamoto, and
 \newblock ISSN 03785955.
 \newblock \doi{10.1016/j.heares.2006.12.007}.
 
-\bibitem[Porathe et~al.(2013]{Porathe2013}
+\bibitem[Porathe et~al. (2013)]{Porathe2013}
 Thomas Porathe, Margareta L{\"{u}}tzh{\"{o}}ft, and Gesa Praetorius.
 \newblock {Communicating intended routes in ECDIS: Evaluating technological
   change}.
@@ -322,53 +356,61 @@ Thomas Porathe, Margareta L{\"{u}}tzh{\"{o}}ft, and Gesa Praetorius.
 \newblock \doi{10.1016/j.aap.2012.12.012}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.aap.2012.12.012}.
 
-\bibitem[Porathe et~al.(2014]{Porathe2014}
+\bibitem[Porathe et~al. (2014)]{Porathe2014}
 Thomas Porathe, Johannes Prison, and Y~Man.
 \newblock {Situation awareness in remote control centres for unmanned ships}.
 \newblock \emph{Human Factors in Ship Design {\&} Operation}, \penalty0
   (February):\penalty0 1--9, 2014.
 
-\bibitem[Quadvlieg and van Coevorden(2003]{Quadvlieg2003}
+\bibitem[Prinzmetal and Gettleman (1993)]{Prinzmetal1993}
+William Prinzmetal and Laurie Gettleman.
+\newblock {Vertical-horizontal illusion: One eye is better than two}.
+\newblock \emph{Perception {\&} Psychophysics}, 53\penalty0 (1):\penalty0
+  81--88, 1993.
+\newblock ISSN 00315117.
+\newblock \doi{10.3758/BF03211717}.
+
+\bibitem[Quadvlieg and van Coevorden (2003)]{Quadvlieg2003}
 F.H.H.A. Quadvlieg and P.~van Coevorden.
 \newblock {Manoeuvring Criteria: More Than Imo A751 Requirements Alone!}
 \newblock \emph{International Conference on Marine Simulation and Ship
   Maneuverability}, pages 1--8, 2003.
 
-\bibitem[Rall and Dieckman(2005]{Rall2005}
+\bibitem[Rall and Dieckman (2005)]{Rall2005}
 Marcus Rall and Peter Dieckman.
 \newblock {Crisis Resource Management to Improve patient safety}.
 \newblock \emph{Euroanesthesia}, \penalty0 (May):\penalty0 107--112, 2005.
 
-\bibitem[Rolls-Royce(2015)]{RollsRoyce2015}
+\bibitem[Rolls-Royce (2015)]{RollsRoyce2015}
 Rolls-Royce.
 \newblock {Unified Bridge}, 2015.
 \newblock URL
   \url{https://www.rolls-royce.com/innovation/unified-bridge.aspx{\#}overview}.
 
-\bibitem[Saarni et~al.(2018]{Saarni2018}
+\bibitem[Saarni et~al. (2018)]{Saarni2018}
 Jouni Saarni, Sini Nordberg-Davis, and Antti Saurama.
 \newblock {Outlook on the transition towards autonomous shipping}.
 \newblock Technical report, Turun yliopisto, University of Turku, 2018.
 
-\bibitem[Sames(2017)]{Sames2017}
+\bibitem[Sames (2017)]{Sames2017}
 Pierre~C Sames.
 \newblock {Unmanned ships on the horizon - DNV GL}, 2017.
 \newblock URL
   \url{https://www.dnvgl.com/article/unmanned-ships-on-the-horizon-94273}.
 
-\bibitem[SMASH(2017)]{SMASH2017}
+\bibitem[SMASH (2017)]{SMASH2017}
 SMASH.
 \newblock {Elektrisch containerschip Gouwenaar 2}, 2017.
 \newblock URL
   \url{https://smartshippingchallenge.nl/initiatieven-en-innovaties/electrisch-containerschip-gouwenaar}.
 
-\bibitem[Speier et~al.(1999]{Speier1999}
+\bibitem[Speier et~al. (1999)]{Speier1999}
 Cheri Speier, Joseph~S Valacich, and Iris Vessey.
 \newblock {The Influence of Task Interruption on Individual Decision Making :
   An Information Overload Perspective}.
 \newblock \emph{Decision Sciences}, 30\penalty0 (2):\penalty0 337--360, 1999.
 
-\bibitem[Szlapczynski and Szlapczynska(2017{\natexlab{a}}]{Szlapczynski2017}
+\bibitem[Szlapczynski and Szlapczynska (2017{\natexlab{a}})]{Szlapczynski2017}
 Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock {A method of determining and visualizing safe motion parameters of a
   ship navigating in restricted waters}.
@@ -378,7 +420,7 @@ Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock \doi{10.1016/j.oceaneng.2016.11.044}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.oceaneng.2016.11.044}.
 
-\bibitem[Szlapczynski and Szlapczynska(2017{\natexlab{b}}]{Szlapczynski2017a}
+\bibitem[Szlapczynski and Szlapczynska (2017{\natexlab{b}})]{Szlapczynski2017a}
 Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock {Review of ship safety domains: Models and applications}.
 \newblock \emph{Ocean Engineering}, 145\penalty0 (August):\penalty0 277--289,
@@ -387,12 +429,18 @@ Rafal Szlapczynski and Joanna Szlapczynska.
 \newblock \doi{10.1016/j.oceaneng.2017.09.020}.
 \newblock URL \url{https://doi.org/10.1016/j.oceaneng.2017.09.020}.
 
-\bibitem[Taams(2018)]{Taams2018}
+\bibitem[Taams (2018)]{Taams2018}
 Hugo Taams.
 \newblock {Guidance, Navigation and Control of Autonomous Vessels}.
 \newblock Technical report, TU Delft, Delft, 2018.
 
-\bibitem[Underwood et~al.(2013]{Underwood2013}
+\bibitem[Tj{\o}swold (2012)]{Tjoswold2012}
+Sissel Tj{\o}swold.
+\newblock {Verifying and Validation of a Manoeuvring Model for NTNU ' s
+  Research Vessel R / V Gunnerus}.
+\newblock Technical Report June, 2012.
+
+\bibitem[Underwood et~al. (2013)]{Underwood2013}
 Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock {Driving experience and situation awareness in hazard detection}.
 \newblock \emph{Safety Science}, 56:\penalty0 29--35, 2013.
@@ -400,24 +448,24 @@ Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock \doi{10.1016/j.ssci.2012.05.025}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}.
 
-\bibitem[{US Coast Guard}(2018)]{USCG2018}
+\bibitem[{US Coast Guard} (2018)]{USCG2018}
 {US Coast Guard}.
 \newblock {AIS Messages}, 2018.
 \newblock URL \url{https://www.navcen.uscg.gov/?pageName=AISMessages}.
 
-\bibitem[{US Navy}(2017)]{USNavy2017}
+\bibitem[{US Navy} (2017)]{USNavy2017}
 {US Navy}.
 \newblock {Report on the collision between USS Fitzgerald and motor vessel ACX
   Crystal}.
 \newblock Technical report, 2017.
 
-\bibitem[Walliser(2011)]{Walliser2011}
+\bibitem[Walliser (2011)]{Walliser2011}
 James Walliser.
 \newblock \emph{{Trust in automated systems the effect of automation level on
   trust calibration}}.
 \newblock PhD thesis, 2011.
 
-\bibitem[Washburn and Putney(2001]{Washburn2001}
+\bibitem[Washburn and Putney (2001)]{Washburn2001}
 David~A. Washburn and R.~Thompson Putney.
 \newblock {Attention and task difficulty: When is performance facilitated?}
 \newblock \emph{Learning and Motivation}, 32\penalty0 (1):\penalty0 36--47,
@@ -425,16 +473,25 @@ David~A. Washburn and R.~Thompson Putney.
 \newblock ISSN 00239690.
 \newblock \doi{10.1006/lmot.2000.1065}.
 
-\bibitem[Waterborne(2016)]{Waterborne2016}
+\bibitem[Waterborne (2016)]{Waterborne2016}
 Waterborne.
 \newblock {Waterborne Vision 2030}.
 \newblock 2016.
 
-\bibitem[Wilson(2017)]{Wilson2017}
+\bibitem[Wilson (2017)]{Wilson2017}
 Jonathan Wilson.
 \newblock {Rolls-Royce Marine unveils ‘Electric Blue' modular smart shipping
   concept}, 2017.
 \newblock URL
   \url{https://eandt.theiet.org/content/articles/2017/02/rolls-royce-marine-unveils-electric-blue-modular-smart-shipping-concept/}.
+
+\bibitem[Zaky et~al. (2018)]{Zaky2018}
+Mochammad Zaky, Masaaki Sano, and Hironori Yasukawa.
+\newblock {Improvement of maneuverability in a VLCC by a high lift rudder}.
+\newblock \emph{Ocean Engineering}, 165\penalty0 (July):\penalty0 438--449,
+  2018.
+\newblock ISSN 00298018.
+\newblock \doi{10.1016/j.oceaneng.2018.07.030}.
+\newblock URL \url{https://doi.org/10.1016/j.oceaneng.2018.07.030}.
 
 \end{thebibliography}

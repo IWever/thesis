@@ -1,0 +1,32 @@
+0 s: Created GUI screen
+0 s: Simulation started
+12 s: Simulation paused at 11 seconds
+14 s: Simulation paused at 13 seconds
+131 s: Rudder angle for Astrorunner set at 5 degrees
+132 s: Rudder angle for Astrorunner set at 10 degrees
+133 s: Rudder angle for Astrorunner set at 15 degrees
+134 s: Rudder angle for Astrorunner set at 20 degrees
+135 s: Rudder angle for Astrorunner set at 25 degrees
+166 s: Rudder angle for Astrorunner set at 20 degrees
+170 s: Rudder angle for Astrorunner set at 15 degrees
+171 s: Rudder angle for Astrorunner set at 10 degrees
+172 s: Rudder angle for Astrorunner set at 5 degrees
+173 s: Rudder angle for Astrorunner set at 0 degrees
+279 s: Rudder angle for Astrorunner set at -5 degrees
+283 s: Rudder angle for Astrorunner set at -10 degrees
+292 s: Rudder angle for Astrorunner set at -15 degrees
+319 s: Rudder angle for Astrorunner set at -10 degrees
+320 s: Rudder angle for Astrorunner set at -5 degrees
+323 s: Rudder angle for Astrorunner set at 0 degrees
+560 s: 
+560 s: Gulf Valour - CPA (meter)
+560 s:          Astrorunner | 1201 meter
+560 s:          Emma Maersk | 1814 meter
+560 s: 
+560 s: Astrorunner - CPA (meter)
+560 s:          Gulf Valour | 1201 meter
+560 s:          Emma Maersk | 2341 meter
+560 s: 
+560 s: Emma Maersk - CPA (meter)
+560 s:          Gulf Valour | 1814 meter
+560 s:          Astrorunner | 2341 meter

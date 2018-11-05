@@ -1,25 +1,28 @@
 import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
-
+import datetime
 
 def createPlot(figureName):
     plt.figure(figureName)
 
 def storePlot(figureName):
     plt.tight_layout()
-    plt.savefig("D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\plots\ " + figureName + ".png", dpi=250)
+    plt.savefig("D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\plots\ " + datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "_" + figureName + ".png", dpi=250)
 
 def plotLinesOverTime(figureName, testResults, plotY, save=True):
     createPlot(figureName)
 
     for testname in testResults:
         for value in plotY:
-            plt.plot(testResults[testname]["timestamp"], testResults[testname][value], label=value)
+            plt.plot(testResults[testname]["Timestamp"], testResults[testname][value], label=value)
         plt.legend()
+        plt.xlabel("Time [seconds]")
 
     if save:
         storePlot(figureName)
+
+
 
 
 def plotScatter(figureName, testResults, plotX, plotY, plotC, save=True):
@@ -39,6 +42,7 @@ def plotScatter(figureName, testResults, plotX, plotY, plotC, save=True):
 
     plt.xlabel(plotX)
     plt.ylabel(plotY)
+    plt.xlim(xmin=0.0)
     cbar = plt.colorbar()
     cbar.set_label(plotC)
 

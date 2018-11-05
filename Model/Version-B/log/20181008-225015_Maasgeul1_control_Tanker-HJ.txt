@@ -1,0 +1,214 @@
+C:\ProgramData\Anaconda3\python.exe D:/ingma/OneDrive/Studie/Thesis/Model/Version-B/src/world.py
+Created empty list to store static objects
+Stored database of ships in world
+Created environment for simulation
+Created GUI screen
+Simulation started
+Simulation paused at 10 seconds
+Simulation paused at 12 seconds
+For Tanker telegraphspeed changed to 0.170
+For Tanker telegraphspeed changed to 0.150
+For Tanker telegraphspeed changed to 0.130
+For Tanker telegraphspeed changed to 0.110
+For Tanker telegraphspeed changed to 0.090
+For Tanker telegraphspeed changed to 0.070
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -20 degrees
+For Tanker telegraphspeed changed to 0.090
+For Tanker telegraphspeed changed to 0.110
+For Tanker telegraphspeed changed to 0.130
+For Tanker telegraphspeed changed to 0.150
+For Tanker telegraphspeed changed to 0.170
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at 5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -15 degrees
+For Tanker telegraphspeed changed to 0.150
+For Tanker telegraphspeed changed to 0.130
+For Tanker telegraphspeed changed to 0.110
+For Tanker telegraphspeed changed to 0.090
+For Tanker telegraphspeed changed to 0.070
+For Tanker telegraphspeed changed to 0.050
+For Tanker telegraphspeed changed to 0.030
+For Tanker telegraphspeed changed to 0.010
+For Tanker telegraphspeed changed to -0.010
+For Tanker telegraphspeed changed to -0.030
+For Tanker telegraphspeed changed to -0.050
+For Tanker telegraphspeed changed to -0.030
+For Tanker telegraphspeed changed to -0.010
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+For Tanker telegraphspeed changed to -0.030
+For Tanker telegraphspeed changed to -0.010
+For Tanker telegraphspeed changed to 0.010
+For Tanker telegraphspeed changed to 0.030
+For Tanker telegraphspeed changed to 0.050
+For Tanker telegraphspeed changed to 0.070
+For Tanker telegraphspeed changed to 0.090
+Rudder angle for Tanker set at -5 degrees
+For Tanker telegraphspeed changed to 0.110
+For Tanker telegraphspeed changed to 0.130
+For Tanker telegraphspeed changed to 0.150
+For Tanker telegraphspeed changed to 0.170
+For Tanker telegraphspeed changed to 0.190
+For Tanker telegraphspeed changed to 0.210
+For Tanker telegraphspeed changed to 0.230
+For Tanker telegraphspeed changed to 0.250
+For Tanker telegraphspeed changed to 0.270
+For Tanker telegraphspeed changed to 0.290
+For Tanker telegraphspeed changed to 0.310
+For Tanker telegraphspeed changed to 0.330
+For Tanker telegraphspeed changed to 0.350
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at 5 degrees
+Rudder angle for Tanker set at 10 degrees
+For Tanker telegraphspeed changed to 0.370
+For Tanker telegraphspeed changed to 0.390
+For Tanker telegraphspeed changed to 0.410
+For Tanker telegraphspeed changed to 0.430
+For Tanker telegraphspeed changed to 0.450
+For Tanker telegraphspeed changed to 0.470
+For Tanker telegraphspeed changed to 0.490
+For Tanker telegraphspeed changed to 0.510
+For Tanker telegraphspeed changed to 0.530
+For Tanker telegraphspeed changed to 0.550
+For Tanker telegraphspeed changed to 0.570
+For Tanker telegraphspeed changed to 0.590
+For Tanker telegraphspeed changed to 0.610
+For Tanker telegraphspeed changed to 0.630
+For Tanker telegraphspeed changed to 0.650
+For Tanker telegraphspeed changed to 0.670
+For Tanker telegraphspeed changed to 0.690
+For Tanker telegraphspeed changed to 0.710
+Rudder angle for Tanker set at 5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -35 degrees
+Rudder angle for Tanker set at -30 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at 5 degrees
+Rudder angle for Tanker set at 10 degrees
+Rudder angle for Tanker set at 15 degrees
+Rudder angle for Tanker set at 20 degrees
+Rudder angle for Tanker set at 25 degrees
+Rudder angle for Tanker set at 30 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 35 degrees
+Rudder angle for Tanker set at 30 degrees
+Rudder angle for Tanker set at 25 degrees
+Rudder angle for Tanker set at 20 degrees
+Rudder angle for Tanker set at 15 degrees
+Rudder angle for Tanker set at 10 degrees
+Rudder angle for Tanker set at 5 degrees
+Rudder angle for Tanker set at 0 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -25 degrees
+Rudder angle for Tanker set at -20 degrees
+Rudder angle for Tanker set at -15 degrees
+Rudder angle for Tanker set at -10 degrees
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+For Tanker telegraphspeed changed to 0.730
+For Tanker telegraphspeed changed to 0.750
+For Tanker telegraphspeed changed to 0.770
+For Tanker telegraphspeed changed to 0.790
+For Tanker telegraphspeed changed to 0.810
+For Tanker telegraphspeed changed to 0.830
+For Tanker telegraphspeed changed to 0.850
+For Tanker telegraphspeed changed to 0.870
+For Tanker telegraphspeed changed to 0.890
+For Tanker telegraphspeed changed to 0.910
+For Tanker telegraphspeed changed to 0.930
+For Tanker telegraphspeed changed to 0.950
+For Tanker telegraphspeed changed to 0.970
+For Tanker telegraphspeed changed to 0.990
+For Tanker telegraphspeed changed to 1.000
+For Tanker telegraphspeed changed to 1.000
+For Tanker telegraphspeed changed to 1.000
+For Tanker telegraphspeed changed to 1.000
+For Tanker telegraphspeed changed to 1.000
+Rudder angle for Tanker set at -5 degrees
+Rudder angle for Tanker set at 0 degrees
+
+Gulf Valour - CPA (meter)
+         Astrorunner | 596 meter
+      Anglia Seaways | 1169 meter
+
+Astrorunner - CPA (meter)
+         Gulf Valour | 596 meter
+      Anglia Seaways | 805 meter
+
+Anglia Seaways - CPA (meter)
+         Gulf Valour | 1169 meter
+         Astrorunner | 805 meter
+
+Simulation closed by user after 788 seconds
+
+Process finished with exit code 0

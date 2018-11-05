@@ -1,51 +1,66 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Steps from manned to autonomous ships\relax }}{6}{figure.caption.18}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Steps from manned to autonomous ships\relax }}{10}{figure.caption.18}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Illustration of MUNIN vision\relax }}{11}{figure.caption.19}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Render of Electric Blue\relax }}{14}{figure.caption.20}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Render of Yara Birkeland\relax }}{14}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Decision model\relax }}{13}{figure.caption.23}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Decision model\relax }}{18}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Decision process\relax }}{18}{figure.caption.27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Model for safety domain by Coldwell\relax }}{22}{figure.caption.35}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Generalized model for decision tree\relax }}{22}{figure.caption.37}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Decision process\relax }}{27}{figure.caption.29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Model for safety domain by Coldwell\relax }}{31}{figure.caption.37}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Generalized model for decision tree\relax }}{31}{figure.caption.39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Path description for situation identification\relax }}{24}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Path description for situation identification\relax }}{34}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example for \acf {CPA}\relax }}{27}{figure.caption.38}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Example for crossing point and distance\relax }}{29}{figure.caption.39}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example for \acf {CPA}\relax }}{37}{figure.caption.43}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example for crossing point and distance\relax }}{39}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Turning circle test\relax }}{34}{figure.caption.40}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Zig-zag test\relax }}{34}{figure.caption.41}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Evasive manoeuvrer\relax }}{35}{figure.caption.42}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Direction for evasive manoeuvrer in crossing situation\relax }}{39}{figure.caption.44}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Change time during evasive manoeuvrer for different ship types\relax }}{39}{figure.caption.45}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Dependency of passing distance on distance till CPA and current speed\relax }}{41}{figure.caption.46}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Simulation environment\relax }}{65}{figure.caption.57}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Situation sketch crossing situation North-Sea\relax }}{69}{figure.caption.59}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Situation sketch port of Rotterdam\relax }}{69}{figure.caption.61}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Turning circle test\relax }}{45}{figure.caption.45}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Zig-zag test\relax }}{45}{figure.caption.46}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Evasive manoeuvrer\relax }}{46}{figure.caption.47}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Direction for evasive manoeuvrer in crossing situation\relax }}{50}{figure.caption.49}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces General curve for relation between distance till CPA and passing distance\relax }}{52}{figure.caption.51}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Relation between passing distance, distance till CPA and start speed\relax }}{53}{figure.caption.52}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Relation between distance till CPA, passing distance and advance distance by varying start speed and rudder amplification factor\relax }}{55}{figure.caption.53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Bridge system elements\relax }}{77}{figure.caption.64}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces \acf {VHF}\relax }}{80}{figure.caption.68}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces \acf {ARPA}\relax }}{81}{figure.caption.69}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces \acf {ECDIS}\relax }}{82}{figure.caption.71}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Radar and ECDIS\relax }}{85}{figure.caption.72}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Various examples of bridge designs\relax }}{85}{figure.caption.73}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Basic crew structure organogram\relax }}{88}{figure.caption.74}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Endsley model for situational awareness\relax }}{88}{figure.caption.75}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Wrong AIS input when plotted on ARPA\relax }}{92}{figure.caption.78}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Calculation of relative angle\relax }}{98}{figure.B.1}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Example of evaluation tool\relax }}{102}{figure.caption.85}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Illutstration map of approximate collision location\relax }}{104}{figure.caption.89}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Illutstration map of approximate collision location\relax }}{105}{figure.caption.90}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Illutstration map of approximate collision location\relax }}{106}{figure.caption.91}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Illustration map of approximate collision location\relax }}{109}{figure.caption.92}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Illutstration map of approximate collision location\relax }}{109}{figure.caption.93}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Classification of participants based on experience\relax }}{83}{figure.caption.62}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Ship-types operated by participants\relax }}{85}{figure.caption.63}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Simulation environment\relax }}{85}{figure.caption.64}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Situation sketch crossing situation North-Sea\relax }}{88}{figure.caption.66}
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Situation sketch port of Rotterdam\relax }}{90}{figure.caption.68}
+\contentsline {figure}{\numberline {11.6}{\ignorespaces Estimation of relative start speed from memory for North Sea\relax }}{94}{figure.caption.69}
+\contentsline {figure}{\numberline {11.7}{\ignorespaces Estimation of relative start speed from memory for entering Maasgeul\relax }}{94}{figure.caption.70}
+\contentsline {figure}{\numberline {11.8}{\ignorespaces Response to color of vessels in situation when crossing at the North Sea\relax }}{95}{figure.caption.71}
+\contentsline {figure}{\numberline {11.9}{\ignorespaces Response to color of vessels in situation when entering Maasgeul\relax }}{95}{figure.caption.72}
+\contentsline {figure}{\numberline {11.10}{\ignorespaces Protocol vs no-communication when crossing at the North Sea\relax }}{97}{figure.caption.73}
+\contentsline {figure}{\numberline {11.11}{\ignorespaces Protocol vs no-communication when entering Maasgeul\relax }}{97}{figure.caption.74}
+\contentsline {figure}{\numberline {11.12}{\ignorespaces Opinion of participants on SMCP\relax }}{98}{figure.caption.75}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Bridge system elements\relax }}{111}{figure.caption.78}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces \acf {VHF}\relax }}{114}{figure.caption.82}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces \acf {ARPA}\relax }}{115}{figure.caption.83}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces \acf {ECDIS}\relax }}{116}{figure.caption.85}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Radar and ECDIS\relax }}{119}{figure.caption.86}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Various examples of bridge designs\relax }}{119}{figure.caption.87}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Basic crew structure organogram\relax }}{122}{figure.caption.88}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Endsley model for situational awareness\relax }}{122}{figure.caption.89}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Wrong AIS input when plotted on ARPA\relax }}{126}{figure.caption.92}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Calculation of relative angle\relax }}{133}{figure.B.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Change time during evasive manoeuvrer for different ship types\relax }}{139}{figure.caption.98}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Simulation environment\relax }}{139}{figure.caption.99}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Illustration of collision MV AL ORAIQ and MV FLINTERSTAR\relax }}{142}{figure.caption.103}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Illustration of collision between MV ARTADI and MV ST-GERMAIN\relax }}{143}{figure.caption.104}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Approximate collision location USS FITZGERALD and MV ACX CRYSTAL\relax }}{144}{figure.caption.105}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Approximate collision location USS JOHN S MCCAIN and MV ALNIC MC\relax }}{147}{figure.caption.106}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Illustration of collision MV CONTI PERIDOT and MV CARLA MAERSK\relax }}{147}{figure.caption.107}

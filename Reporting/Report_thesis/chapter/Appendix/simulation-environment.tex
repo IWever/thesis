@@ -122,7 +122,7 @@ Based on the waypoints there is a simple controller to adjust the rudder angle a
 		\midrule
 		25-180 & 35\\
 		10-25 & 25\\
-		0-10 & Relative angle x .8 \\
+		0-10 & 0.8 x Relative angle \\
 		\bottomrule
 	\end{tabular}
 	
@@ -187,7 +187,7 @@ To describe manoeuvring correctly a hydrodynamic model is needed. Using an emper
 The first step is to gather relevant ship characteristics and the current state of the vessel, as shown in table \ref{tab:input-hydro-model}
 \begin{table}[p]
 	\centering
-	\begin{tabular}{p{0.18\textwidth}|p{0.17\textwidth}|p{0.63\textwidth}}
+	\begin{tabular}{p{0.18\textwidth}|p{0.17\textwidth}|p{0.57\textwidth}}
 		\toprule
 		Input & Unit & Description\\
 		\midrule
@@ -213,7 +213,7 @@ Parallel to this calculation, a new course and heading is calculated. Based on t
 
 \begin{table}[p]
 	\centering
-	\begin{tabular}{p{0.1\textwidth}|p{0.1\textwidth}|p{0.78\textwidth}}
+	\begin{tabular}{p{0.1\textwidth}|p{0.1\textwidth}|p{0.72\textwidth}}
 		\toprule
 		Name & Value & Description\\
 		\midrule
@@ -239,21 +239,97 @@ Parallel to this calculation, a new course and heading is calculated. Based on t
 	\label{tab:dimensionless-factors}
 \end{table}
 
+\subsection{Numerical settings}
+The simulation environment uses a numerical model. This means that the results are highly influenced by the input values. Two of these inputs are the time-step during the simulations and the moment the rudder is changed to limit the overshoot in the critical evasive manoeuvrer.
+
+\subsubsection{Time-step for simulation}
+The time-step has a big influence on the quality of the simulation and runtime. When the time-step is too large, the results of the calculations are wrong. But when the timestep is too small, the runtime becomes too large. This trade-off must be made, to do this in a substantiated way, different tests are done for different time-steps. 
+The key performance indicator is the error of the final position and maximum course for an evasive manoeuvrer. This is determined by calculating the difference between a time-step and a very small time-step (0.00001 second per step). This is done for different ship types. The error in passing distance varied from 0.002 when using 0.001 seconds, to 20 meters when using 1 second as time-step. Being within 0.5 meter gives a result where other factors, such as the quality of the hydrodynamic model, will have a much larger impact on the results. This is the case for a time-step below 0,01 seconds. Therefor is this used during the simulations. The error in the resulting overshoot for a time-step of 0.01 seconds, for all ships below 0.02\%. 
+
+\subsubsection{Change time for critical evasive manoeuvrer}
+\label{apps:change-time}
+The change time determines when commands should be given. The optimal change time is when the least time is needed to increase the closest point of approach as much as possible. As this is most relevant for critical situations.
+To evaluate this criteria the change time has been tested for multiple vessels. The used criteria is the distance to the side (Y), divided by the advanced distance (X) (as shown in figure \ref{fig:evasive-manoeuvrer-path}). This is plotted against the time it took to make the manoeuvrer. From left to right a 140-meter container vessel, a 250-meter Tanker and a 400-meter cargo vessel are used. The results are shown in figure \ref{fig:change-time}.
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{Changetime-test.png}
+	\caption{Change time during evasive manoeuvrer for different ship types}
+	\label{fig:change-time} 
+\end{figure}
+
+The optimal change time should be at the upper left corner. As this means the increase of the passing distance and thereby the CPA is as big as possible, in the shortest time and traveled distance. When looking at the figure can be seen that this is the case around 18~seconds. Where should be noted that larger vessels have a larger optimal change time. This can be explained by the larger inertia of these vessels. A higher speed has a similar result. The effect of these larger change times is however very small compared to other factors. Examples of these factors are the maximum  turning rate of the rudder or rudder-hull interaction coefficient. Therefore is chosen to use a single change time for the evasive manoeuvrer tests. The chosen change time is 18~seconds.
 
 \section{Build}
-\todo{Describe current level of implementation of tool}
-printscreens\\
-User interface\\
-Graphs\\
-Quality/Dependency analysis (dt vs runtime)\\
-Currently implemented (level of intelligence)
-Currently is a hydro model implemented, you are able to steer the ship or use waypoints and a background image can be used to show the map.
+In this section the final tool will be discussed. Thereby showing what outputs can be generated and how the simulation environment can be viewed. Thereby also discussing shortly how the simulation can be controlled by the user and what the simulation does by itself.
 
-\begin{figure}[hb]
+\subsection{User interface}
+The simulation environment uses a tkinter GUI. This GUI has three parts. A big block which shows the map with vessel, speed vector, safety domains, land masses and forbidden zones. Using the buttons in the bottom left the map can be changed, this means moving around and zooming. At the bottom is an information bar which gives information on the current status of the simulation and possible actions. At the right of the screen is the control panel. Here can the user select if he want to modify the simulation or sail around. When in modify mode, the ships can be added, removed or edited. When sailing, only the rudder angle and RPM of the engine can be changed. Thereby is it also possible to add waypoints, so the ship will sail automatically. Further some basic information is shown, such as the speed [knots], course [degrees] and rudder angle [degrees]. This can be seen in figure~\ref{fig:printscreen-tool2}.
+
+\begin{figure}[p]
 	\centering
-	\makebox[\textwidth][c]{
-		\includegraphics[width=1.18\textwidth]{printscreen20180805.png}
-	}
-	\caption{Example of evaluation tool}
-	\label{fig:printscreen-tool}
+	\includegraphics[width=\textwidth]{printscreen-maasgeul.png}
+	\caption{Simulation environment}
+	\label{fig:printscreen-tool2}
 \end{figure}
+
+\subsection{Output}
+Besided simulations within this GUI, it is also possible to execute them without showing the map. This will limit the computational time. 
+To visualize these results, different outputs are stored. These are logged during the simulation. The outputs are stored in a dictionary, so they can be labeled easily. Table~\ref{tab:output-manoeuvers} shows the different outputs for the simulation. These outputs can be plotted as scatter, path or line plots. These are shown in chapter~\ref{ch:criteria-manouvre}.
+This makes it possible to test manoeuvers many times with small variances. The configured tests are described in table~\ref{tab:manoeuvring-tests}.
+
+\begin{table}[p]
+	\centering
+	\hyphenpenalty=10000
+	\begin{tabular}{p{0.22\textwidth}|p{0.1\textwidth}|p{0.6\textwidth}}
+		\toprule
+		Label & Type & Description \\
+		\midrule
+		Shipname & string & Name of ship which is subject of test \\
+		Testname & string & Exectued test with details about input \\
+		Start speed & float & Initial speed of vessel before manoeuvrer \\
+		Time & integer & Variable which stores the simulated time \\
+		Timestep & float & Time per numerical step \\
+		Location & list & X and Y location of vessel in environment \\
+		Speed & list & Speed of vessel at every time-step \\
+		Acceleration & list & Acceleration of vessel at every time-step \\
+		Course & list & Course of vessel at every time-step \\
+		Heading & list & Heading of vessel at every time-step \\
+		Drift & list & Course - heading of vessel at every time-step \\
+		Set rudder angle & list & Set rudder-angle of vessel at every time-step \\
+		Real rudder angle & list & Real angle of rudder at every time-step \\
+		Manoeuvrer specific & - & Resulting passing distance, max angle, overshoot, calculated passing distance, speed other vessel, turning circle, advance distance, etc.\\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Different manoeuvring tests}
+	\label{tab:output-manoeuvers}
+\end{table}
+
+\begin{table}[p]
+	\centering
+	\hyphenpenalty=10000
+	\begin{tabular}{p{0.22\textwidth}|p{0.7\textwidth}}
+		\toprule
+		Name & Goal \\
+		\midrule
+		Sea-trial & Execute zig-zag and turning circle test\\
+		Rudder test & Test performance of rudder and how it responds \\
+		Evasive manoeuvrer & Compare behavior for different angles \\
+		Change time & Test correct moment to start rotating rudder \\
+		Timestep & Compare the quality of simulation using different time-steps \\
+		Random & Determine effectives of evasive manoeuvrer to increase the crossing distance and CPA \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Different manoeuvring tests}
+	\label{tab:manoeuvring-tests}
+\end{table}
+
+
+\subsection{Level of implementation}
+Currently is a hydro model implemented based on \cite{Artyszuk2016}. This makes it possible to have realistic behavior of the vessels in flat water. Thereby is it possible to steer the ship in a similar manner to current bridge operation. Thus by setting the RPM of the engine(s) and changing the rudder angle. 
+
+Thereby is there also an automated way, which helps to steer the ship automatically via predefined waypoints. Thereby does it not take into account where other vessel sail, or how the map looks like. The distance between vessels is calculated continuously, which gives warnings when ships are too close. This will however not lead to an actual crash, nor does a crash happen when getting to close to land masses in the map.
+
+
+

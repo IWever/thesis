@@ -1,16 +1,17 @@
-\chapter{Dependence of decision domain on manoeuvrability}
+\chapter{Manoeuvers for tool validation and testing}
 \label{ch:criteria-manouvre}
-The criteria as described in the previous chapter are aimed to determine if there is a problem. In case there is a problem. Different actions can be undertaken to mitigate the risk. To determine which actions are feasible different criteria are used. As these manoeuvers are complex, is it useful to develop a database with thresholds upfront. To determine these thresholds, simulations are performed for different ships and scenarios. In this chapter is described how these thresholds are calculated, using the simulation environment as described in appendix~\ref{app:tool}. The information gathered about the manoeuvers can be used to determine if an action is possible. Thus in this chapter is information gathered about the time and distance needed for a manoeuvrer. Followed by an evaluation of the impact that the manoeuvrer has on the CPA.
+The criteria as described in the chapter~\ref{ch:criteria-problem} are aimed to evaluate if there is a problem. In case there is a problem, different actions can be undertaken to mitigate the risk. To determine which manoeuvers are feasible, other criteria are used. As the simulation of all possible manoeuvers can't be done in real-time, due to its complexity. Will a look-up table be used. This look-up table has data for different manoeuvers and ship types. Every matrix shows how much the CPA can be improved at different speeds and for different decision domains (both time and distance).
+To make these matrices, simulations are performed for different ships and scenarios. In this chapter is described which manoeuvrer is most critical and will be tested in the simulation environment. The information gathered about the manoeuvers is used to determine relations between different input values, this will show if an action is possible. Thus in this chapter is information gathered about the time and distance needed for a manoeuvrer. Followed by an evaluation of the impact that the manoeuvrer has on the CPA.
 
 \section{Manoeuvrer descriptions}
 \label{sec:manoeuvrer-description}
-Strategies often result in actions which can be categorized in different types of manoeuvers. Most common to avoid critical situations, are evasive manoeuvers. The time needed to do an evasive manoeuvers, depends on the way it is executed and the manoeuvring characteristics of the ship. To ensure that the results from simulations are correct. Other manoeuvers used in sea-trials are used to validate the manoeuvrability of a vessel is similar to the real-life situation. Examples of these manoeuvers are the zig-zag test and turning circle test. In this section the manoeuvers from sea-trials and the evasive manoeuvrer are described.
+Strategies often result in actions which are categorized in different types of manoeuvers. Most common to avoid critical situations, are evasive manoeuvers. The time needed to do an evasive manoeuvers, depends on the way it is executed and the manoeuvring characteristics of the ship. To ensure that the results from simulations are correct. Are manoeuvers used which are also used in sea-trials. These manoeuvers are used to validate if the manoeuvrability of a vessel is similar to the real-life situation. Examples of these manoeuvers are the zig-zag test and turning circle test. In this section the manoeuvers from sea-trials and the evasive manoeuvrer are described.
 
 \subsection{Sea-trial}
-Manoeuvring capabilities of a ship are determined during the sea-trials. Using the same manoeuvring tests and metrics as currently used by ship designers, will ensure that the results of other tests are reliable. Different tests are performed to ensure the vessel complies with regulations and its contract on manoeuvring capability. The manoeuvers used to determine this, are the turning circle and zig-zag test. In this section these will be described. The resulting metrics are discussed section~\ref{sec:manoeuvrer-results}. These metrics can be used to validate how well the manoeuvring model works, compared to existing sea-trials with the same ship. Using for example the trial database of Damen Shipyards.
+Manoeuvring capabilities of a ship are determined during the sea-trials. Using the same manoeuvring tests and metrics as currently used by ship designers, will ensure that the results of other tests are reliable. Different tests are performed to ensure the vessel complies with regulations and its contract on manoeuvring capability. The manoeuvers used to determine this, are the turning circle and zig-zag test. In this section these will be described. The resulting metrics are discussed section~\ref{sec:manoeuvrer-results}. These metrics are used to validate how well the manoeuvring model works, compared to existing sea-trials with the same ship. Using for example the trial database of Damen Shipyards.
 
 \subsubsection{Turning circle manoeuvrer}
-The first test is to determine the turning circle of the vessel. The rudder is given a maximum angle of 35 degrees. The ship will start turning. After some time the ship will turn at a steady speed and course change. The results of this test are an advance distance, which is the distance from starting to give rudder, till the ship has turned 90 degrees. The tactical diameter, which is the distance between the starting point and maximum distance the ship traveled to the side. And finally the steady turning diameter, which is the diameter of the turning circle when speed and course change are constant. An example is shown in figure~\ref{fig:turning-circle}. Showing the rudder angle, speed change, acceleration and drift angle ($\beta$) for an 140-meter cargoship.
+The first test is to determine the turning circle of the vessel. The rudder is given a maximum angle of 35 degrees. The ship will start turning. After some time the ship will turn at a steady speed and course change. The results of this test are an advance distance, which is the distance from starting to give rudder, till the ship has turned 90 degrees. The tactical diameter, which is the distance between the starting point and maximum distance the ship traveled to the side. And finally the steady turning diameter, which is the diameter of the turning circle when speed and course change are constant. An example is shown in figure~\ref{fig:turning-circle}. Showing the changes in the rudder angle, and how this affects the speed, acceleration and drift angle ($\beta$) for a 140-meter cargo-ship.
 
 \begin{figure}[p]
 	\begin{subfigure}[b]{0.43\linewidth}
@@ -30,7 +31,7 @@ The first test is to determine the turning circle of the vessel. The rudder is g
 \end{figure}
 
 \subsubsection{Zig-zag test}
-The second test is the zig-zag test. Herein is the overshoot tested when changing course. This is done by putting the rudder at an angle of 10 or 20 degrees to port side, till the course change is also 10 or 20 degrees, than the rudder is changed to starboard side. This is repeated several times to get a good measurement of the overshoot. The overshoot is determined by measuring the course changes. In figure~\ref{fig:zig-zag} the zig-zag test is shown. In figure~\ref{fig:zig-zag-astrorunner} the rudder, course and heading changes are shown during a zig-zag test. The measured overshoot is a key metric for the manoeuvrability of a vessel, as it shows how easy it is to rotate the vessel. The larger the overshoot, the better the yaw checking ability, but this will result in a lower path changing-ability. 
+The second test is the zig-zag test. Herein is the initial turning time, yaw checking time and overshoot tested. This is done by putting the rudder at an angle of 10 or 20 degrees to port side, till the course change is also 10 or 20 degrees, than the rudder is changed to starboard side. This is repeated several times to get a good measurement of the overshoot. The overshoot is determined by measuring the course changes. In figure~\ref{fig:zig-zag} the zig-zag test is shown. In figure~\ref{fig:zig-zag-astrorunner} the rudder, course and heading changes are shown during a zig-zag test. The measured overshoot is a key metric for the manoeuvrability of a vessel, as it shows how easy it is to rotate the vessel. The overshoot is the maximum course change minus the test angle on which the rudder is changed (20 degrees in figure~\ref{fig:zig-zag-astrorunner}). The larger the overshoot, the better the yaw checking ability, but this will result in a lower path changing-ability.
 
 \begin{figure}[p]
 	\begin{subfigure}[b]{0.43\linewidth}
@@ -41,20 +42,22 @@ The second test is the zig-zag test. Herein is the overshoot tested when changin
 	\end{subfigure} 
 	\begin{subfigure}[b]{0.56\linewidth}
 		\centering
-		\includegraphics[width=\textwidth]{Zig-zag-10-10-Astrorunner-(15-kn).png}
-		\caption{Zig-zag 10:10 test at 15kn with 140m cargoship}
+		\includegraphics[width=\textwidth]{Zig-zag-20-20-Astrorunner-(15-kn).png}
+		\caption{Zig-zag 20:20 test at 15kn with 140m cargoship}
 		\label{fig:zig-zag-astrorunner}
 	\end{subfigure}
 	\caption{Zig-zag test}
 	\label{fig:zig-zag} 
 \end{figure}
 
-\subsection{Evasive manoeuvrer}
-\label{sec:evasive-manoeuvrer}
-The evasive manoeuvrer aims to increase the \acf{CPA}. Based on \ac{COLREGs} is there a stand-on and give-way vessel. The stand-on vessel is supposed to keep course and speed the same, while the give-way vessel is supposed to manoeuvrer. 
-There are many ways an evasive manoeuvrer can be done. However, the most critical situation is when maximum rudder is given and the crossing situation is perpendicular. Thereby is te aim of the give-away vessel to end the manoeuvrer with the same course as it started with. In figure~\ref{fig:evasive-manoeuvrer} an example of such manoeuvrer is shown for the give-way vessel. Figure~\ref{fig:astrorunner-evasive-20} shows how the rudder is used during the evasive manoeuvrer. Also can be seen that the speed reduces, mostly due to the drift angle. The manoeuvrer is simulated for different speeds and with different maximum course changes. 
+\newpage
 
-\begin{figure}[p]
+\subsection{Critical evasive manoeuvrer}
+\label{sec:evasive-manoeuvrer}
+The critical evasive manoeuvrer aims to increase the \acf{CPA} as much as possible, and return to the original course. Using the least amount of time and advance distance. Based on \ac{COLREGs} is there a stand-on and give-way vessel. The stand-on vessel is supposed to keep course and speed the same, while the give-way vessel is supposed to manoeuvrer. 
+There are many ways for an evasive manoeuvrer to be done. However, the most critical situation is when maximum rudder is given to avoid another ship which has a perpendicular course. Thereby is te aim of the give-away vessel to end the manoeuvrer with the same course as it started with. In figure~\ref{fig:evasive-manoeuvrer} an example of such manoeuvrer is shown for the give-way vessel. Figure~\ref{fig:astrorunner-evasive-20} shows how the rudder is used during the evasive manoeuvrer. Also is seen that the speed reduces, mostly due to the drift angle. The manoeuvrer is simulated for different speeds and with different maximum course changes. 
+
+\begin{figure}[hbp]
 	\begin{subfigure}[b]{0.43\linewidth}
 		\centering
 		\includegraphics[width=\textwidth]{evasive-manoeuvre.png}
@@ -78,7 +81,10 @@ To validate if the results will be as expected, the same manoeuvers as in sea-tr
 
 \subsection{Validation of hydrodynamic model}
 The hydrodynamic model which is used is described in section \ref{apps:hydro-model} and the paper by Artyszuk \cite{Artyszuk2016}. This linear dynamic higher-order model is based on the 2$^{nd}$ order Nomoto model \cite{Nomoto1957}. Where different derivations are made to incorporate ship characteristics. 
-The model is validated using the sea-trial database from Damen Shipyards, criteria as described by IMO resolution A751(18) \cite{Quadvlieg2003} and results presented at MARSIM '96 \cite{MARSIM1996}. Combining these sources will give ranges in which the result can be expected. By using the same vessels and manoeuvers as are stored in the database, the quality of the hydrodynamic model can be validated. This is done by comparing the results from the model and the range based on the database and regulations. The overshoot measured during the sea-trials has a larger spread, but gives insight if the input characteristics result in behavior which can be expected. For example has a tug a larger overshoot, compared to a cargo vessel. As the course keeping characteristics are very different. The results for the turning circle test give more definitive answers on the quality of the model. The model is accepted when the results of these tests are close to the expected results. As not all input coefficients have been optimized for each ship. The optimization of these coefficients is not within the scope of this research. In table \ref{tab:validation-model}, the expected results are compared with the results from the manoeuvring model for different ship types and sizes. The overshoot is based on a 10 degrees zig-zag test, so change of course at 10 degrees and for 10 degrees of rudder. The turning circle test happens when giving the maximum amount of rudder. Both test are started when sailing at design speed. Although some of the model results are not within the expected result, is decided to use this model. But when choosing ships to do the tests on for the evasive manoeuvrer, it should be considered that the model works better for larger mid-size cargo vessels.
+The model is validated using the sea-trial database from Damen Shipyards, criteria as described by IMO resolution A751(18) \cite{Quadvlieg2003}, similar simulator comparisons \cite{Tjoswold2012} and results presented at MARSIM '96 \cite{MARSIM1996}. Combining these sources will give ranges in which the metrics from the sea-trials are expected. By using the same vessels and manoeuvers as are stored in the database, the quality of the hydrodynamic model is validated. This validation is done by comparing the resulting metrics from the simulation model to expected metrics, which are based on the database and regulations. 
+
+The overshoot measured during the zig-zag test has a larger spread compared to other metrics, as it depends much more on weather conditions and human factor. But the overshoot gives insight, if the input characteristics result in behavior which can be expected. For example should a tug have a larger overshoot, compared to a cargo vessel. As the course keeping characteristics are very different. The results for the turning circle test give more definitive answers on the quality of the model. The model is accepted when the results of these tests are close to the expected results. As not all input coefficients have been optimized for each ship to behave as realistic as possible. The optimization of these coefficients is not within the scope of this research. In table \ref{tab:validation-model}, the expected results are compared with the results from the manoeuvring model for different ship types and sizes. The overshoot is based on a 10 degrees zig-zag test, so change of course at 10 degrees and for 10 degrees of rudder. The turning circle test starts by giving the maximum amount of rudder. Both test start when sailing at design speed. For the small tug boat the results are not within the expected range. The overshoot and advance distance lare for the other vessels within the expected range. The tactical diameter is however relatively too large. This larger difference between expected results and simulation results is seen more often \cite{Tjoswold2012}. This has been identified as an error with non-linear damping. The critical evasive manoeuvrer is much more similar to the first part of the turning circle test in which the advance distance will be determined. Therefore the inputs for the manoeuvring model will not be changed to improve the tactical diameter. 
+Thus when testing the critical evasive manoeuvrer, it should be considered that the model works better for larger cargo vessels and manoeuvers which do not go further than 90 degrees.
 
 \begin{table}[hp]
 	\centering
@@ -115,8 +121,8 @@ The model is validated using the sea-trial database from Damen Shipyards, criter
 \afterpage{\clearpage}
 
 \newpage
-\subsection{Input for evasive manoeuvrer}
-Section \ref{sec:evasive-manoeuvrer} describes the evasive manoeuvrer. During the manoeuvrer there are several actions: give rudder, give rudder to opposite direction, steer straight. The timing of these steps determines the overshoot. Thereby should the maximum turning rate of rudder be taken into account.
+\subsection{Input for critical evasive manoeuvrer}
+Section \ref{sec:evasive-manoeuvrer} describes the critical evasive manoeuvrer. During the manoeuvrer, there are several actions: give rudder, give rudder to opposite direction, steer straight. The timing of these steps determines the overshoot. Thereby should the maximum turning rate of rudder be taken into account.
 During the simulation different steps are taken:
 \begin{enumerate}
 	\item Start of manoeuvrer. Rudder angle: 35 degrees to initial direction.
@@ -124,7 +130,9 @@ During the simulation different steps are taken:
 	\item At desired course change. Rudder angle: 35 degrees to opposite direction.
 	\item Few seconds before reaching original course. Rudder angle: 0 degrees.
 \end{enumerate}
-This will result in a manoeuvrer which has a bit of overshoot, but is comparable to the decision taken by an officer of watch (human or autonomous). 35 degrees is the maximum angle to which a rudder turns for most vessels. Everything is known except the "few seconds". This will be further referred to as "change time". Thereby does the initial direction depend on the location of the crossing vessel. How the initial rudder direction depends on the location and direction of the other vessel, is shown in figure \ref{fig:evasive-direction}. If the other ship is in the green area, you should steer to starboard. When the other ship is in a red area, your initial direction should be to port. Where the orange cross show where you were initially to collide. 
+This will result in a manoeuvrer which has a bit of overshoot, but is comparable to the decision taken by an officer of watch (human or autonomous). 35 degrees is the maximum angle to which a rudder turns for most vessels. Everything is known except the "few seconds". This will be further referred to as "change time". Thereby does the initial direction depend on the location of the crossing vessel. How the initial rudder direction should be, depends on the location and direction of the other vessel. This is shown in figure \ref{fig:evasive-direction}. In order improve the CPA, you should steer away from the others path. This means that if the other ship is in the green area, you should steer to starboard. When the other ship is in a red area, your initial direction should be to port. Where the orange cross shows the initial collision location.
+The change time is determined using different tests, these are described in appendix~\ref{apps:change-time}. Based on these tests is chosen to set the change-time to 18~seconds.
+The critical evasive manoeuvrer aims to increase the \ac{CPA} as much as possible and return to the original course. The increase in \ac{CPA} is determined by two factors. The first is the distance which the ship moves to the side. The second factor is the time it takes extra to reach the new \ac{CPA} due to the longer path and slowing down due to steering. This extra time is multiplied with the speed of the other vessel. The increase in \ac{CPA} is finally calculated by adding these factors to the original \ac{CPA}.
 
 \begin{figure}[p]
 	\centering
@@ -133,60 +141,93 @@ This will result in a manoeuvrer which has a bit of overshoot, but is comparable
 	\label{fig:evasive-direction} 
 \end{figure}
 
-The change time is determined by varying this for different ships. The optimal change time is when the least time is needed to increase the closest point of approach as much as possible. As this is most relevant for critical situations.
-To evaluate this criteria the change time has been tested for multiple vessels. The used criteria is the distance to the side (X), divided by the advanced distance (Y) (as shown in figure \ref{fig:evasive-manoeuvrer-path}). This is plotted against the time it took to make the manoeuvrer. From left to right a 140-meter container vessel, a 250-meter Tanker and a 400-meter cargo vessel are used. The results are shown in figure \ref{fig:change-time}.
-\begin{figure}[p]
+
+
+\clearpage
+
+\section{Trial results for critical evasive manoeuvrer}
+During the tests as described in section \ref{sec:manoeuvrer-description}, different results are acquired. Using the simulation tool as described in appendix \ref{app:tool} different criteria are evaluated, such as CPA and crossing distance. The primary input for these results depend on the ship manoeuvrability and starting speed of the vessel. To eventually calculate the closest point of approach and passing distance, the speed of the other vessel and crossing angle should be taken into account. To evaluate the above mentioned criteria, are the metrics acquired as described in table~\ref{tab:evasive-manoeuvrer-metrics} and shown in figure~\ref{fig:evasive-manoeuvrer-path}.
+
+\begin{table}[H]
+	\hyphenpenalty=10000
+	\begin{tabular}{p{0.32\textwidth}|p{0.64\textwidth}}
+		\toprule
+		Metric & Description\\
+		\midrule
+		Time needed for manoeuvrer & Time from first rudder, till ship returned to original course \\
+		Advance distance (X) & Distance traveled forward in direction of original course \\
+		Side distance (Y) & Distance traveled perpendicular to original course\\
+		Extra time & Time needed for manoeuvrer, minus the time it would have taken to travel the same distance forward \\
+		Extra passing distance & Adding the distance to the side to the extra time times the speed of the other vessel \\
+		\bottomrule
+	\end{tabular}
+	
+	\captionof{table}{Metrics for evasive manoeuvrer}
+	\label{tab:evasive-manoeuvrer-metrics}
+\end{table}
+
+When two ships are parallel, the situation becomes a head-on or take-over situation. Which is less critical and more easy to solve than a crossing situation. To get into one of these situations from a crossing situation, the ship has alter its course. In the case of a crossing angle of 90 degrees, the ship has to turn the most. This is deducted from figure~\ref{fig:evasive-direction}.
+Therefore is the used crossing angle during the tests for the critical evasive manoeuvrer: 90 degrees. As this is the most critical crossing angle.
+
+Due to the perpendicular approach the passing distance is most relevant. This is used to calculate the increase in CPA, in the case where the CPA is not sufficient, but there is not risk for collision. This is calculated by adding the distance to the side, to the speed of the other vessel times the extra time needed for the manoeuvrer. For the speed of the other vessel is in this case 14 knots used. The effect of the speed of another vessel is relatively small, for the same passing distance will the distance till CPA vary with less than 50 meters. 14 knots is a common speed for large cargo vessels which can be encountered at open-sea. If the speed lowers, the possible passing distance decreases for the same distance till CPA. 
+
+Results of trials showing the relation between passing distance, distance till crossing point and starting speed are shown in figure~\ref{fig:result-distance-passing-distance-start-speed}.
+There exist a maximum at the distance for every ship and speed. This distance is equal to the distance needed to do an evasive manoeuvrer with a maximum course change of 90 degrees. As in this case the ship becomes parallel to the course of the other vessel. Which means that its not a crossing situation anymore. For the critical evasive manoeuvrer is therefore only the minimal distance till a possible problem relevant.
+
+\begin{figure}[hp]
 	\centering
-	\includegraphics[width=\textwidth]{Changetime-test.png}
-	\caption{Change time during evasive manoeuvrer for different ship types}
-	\label{fig:change-time} 
+	\includegraphics[width=.6\textwidth]{generalized-passing-distance.png}
+	\caption{General curve for relation between distance till CPA and passing distance}
+	\label{fig:general-advance} 
 \end{figure}
 
-The optimal change time should be at the upper left corner. As this means the increase is as big as possible in the shortest time and traveled distance. When looking at the figure can be seen that this is the case around 18~seconds. Where should be noted that larger vessels have a larger optimal change time. This can be explained by the larger inertia of these vessels. A higher speed has a similar result. The effect of these larger change times is however very small compared to other factors. Examples of these factors are the maximum  turning rate of the rudder or rudder-hull interaction coefficient. Therefore is chosen to use a single change time for the evasive manoeuvrer tests. The chosen change time is 18~seconds.
-
-\afterpage{\clearpage}
-\newpage
-
-\section{Trial results}
-During the tests as described in section \ref{sec:manoeuvrer-description}, different results can be acquired. Using the simulation tool as described in appendix \ref{app:tool} different metrics can be calculated. The primary input for these results depend on the ship manoeuvrability and starting speed of the vessel. However to eventually calculate the closest point of approach and passing distance, the speed of the other vessel and crossing angle should be taken into account.
-These can be related to the criteria which determine if a vessel can safely act in a specific situation. The metrics acquired for the evasive manoeuvrer test are:
-\begin{itemize}
-	\item Time needed for manoeuvrer
-	\item Distance before problem occurs
-	\item Distance to the side
-	\item Extra time to travel same distance forward
-	\item Passing distance
-\end{itemize}
-
-The crossing angle between the paths of the two vessels to determine the CPA and passing distance, is in all cases 90 degrees. As this is the most critical crossing angle. This is because the ship will need the maximum course change to get parallel to the other ship. When two ships are parallel, the situation becomes a head-on or take-over situation. Which is less critical and more easy to solve. 
-
-Due to the perpendicular approach the passing distance becomes most relevant. As this can also be used to calculate the increase in CPA, in the case where the CPA is not sufficient, but there is not risk for collision. This can be easily calculated by adding the distance to the side, to the speed of the other vessel times the extra time needed for the manoeuvrer. For the speed of the other vessel is in this case 12 knots. As this is a minimal speed, that most large cargo vessels sail at open sea. 
-
-Results of trials showing the dependency of passing distance on distance till CPA and current speed are shown in figure~\ref{fig:result-distance-passing-distance-start-speed}.
-As can be seen does there exist an asymptote at a distance for every ship and speed. This distance is equal to the distance needed to turn 90 degrees. As in this case the ship can sail parallel to the course of the other vessel. Therefor no simulations are done for these distances. Only the minimal distance till a possible problem is needed, which results in a passing distance. 
+The wedges as shown in figure~\ref{fig:result-distance-passing-distance-start-speed} should be read as follows: If I'm operating the Gulf Valour at 13 knots, and I'm currently on a collision course with another vessel sailing 14 knots. It means that I have to start acting at least 860 meter before the collision point to end-up with a \ac{CPA} of 500 meter.
+For the Emma Maersk at a similar speed of 13 knots and also a desired passing distance of 500 meter, do they have to act 1150 meter before the expected collision. The curves within these plots are generalized in figure~\ref{fig:general-advance}, thus the location of the curve depends on the advance distance and speed of other ship.
 
 \begin{figure}[!p]
 	\centering
 	\begin{subfigure}[b]{0.6\textwidth}
-		\includegraphics[width=\textwidth]{Astrorunner-1500-distance-passing-distance-start-speed.png} 
-		\caption{Astrorunner (140m  cargoship)} 
+		\includegraphics[width=\textwidth]{astrorunner.png} 
+		\caption{Astrorunner (140m  cargo ship)} 
 	\end{subfigure}
 	\begin{subfigure}[b]{0.6\linewidth}
-		\includegraphics[width=\textwidth]{Gulf-Valour-1500-distance-passing-distance-start-speed.png} 
+		\includegraphics[width=\textwidth]{gulf-valour.png} 
 		\caption{Gulf Valour (250m tanker)} 
 	\end{subfigure}
 	\begin{subfigure}[b]{0.6\textwidth}
-		\includegraphics[width=\textwidth]{Emma-Maersk-1500-distance-passing-distance-start-speed} 
-		\caption{Emma Maersk (400m containership)} 
+		\includegraphics[width=\textwidth]{emma-maersk.png} 
+		\caption{Emma Maersk (400m container ship)} 
 	\end{subfigure}
-	\caption{Dependency of passing distance on distance till CPA and current speed} 
+	\caption{Relation between passing distance, distance till CPA and start speed} 
 	\label{fig:result-distance-passing-distance-start-speed} 
 \end{figure}
 
-\section{Factors not taken into account}
-\todo{What should also be considered but is currently not included}
+\section{Relation between advance distance and passing distance}
+\label{sec:relation-advance-distance}
+The key manoeuvrability characteristic relevant for the critical evasive manoeuvrer from sea-trials, is the advance distance measured during the turning circle test. To show the relation between the advance distance, distance till CPA and passing distance, is a comparison be made between the trial results as shown in figure~\ref{fig:result-distance-passing-distance-start-speed}. Many more ships are however needed to get a continuous graph which can be used for general purposes. These ships are mocked by varying not only the start speed and course change, but also the input for the manoeuvring model. This is done by varying the empirical amplification factor of the rudder force, this means that the rudder is more effective, in reality this can be acquired by changing the size of the rudder or adding an extra rudder. Due to non-linearities can't be said that a doubling of this factor is the same as adding an extra rudder, it will however give a requirement for the advance distance when a maximum CPA is required. Examples of the resulting relation between passing distance, distance till CPA and start speed are shown in figure~\ref{fig:result-advance-distance}. Due to the mocking are there no clear curves visible for the start speed, as is the case in figure~\ref{fig:result-distance-passing-distance-start-speed}, because the mocking influences the advance distance, and this does form the clear curves.
 
-Germans for example do sometimes alter the off-set of AIS to avoid confusing with radar image. As captains should use radar instead of AIS information to navigate. AIS is not reliable enough, but with small errors captains still do it, so giving it a large off-set will force captains to use radar.
+\begin{figure}[!p]
+	\centering
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{astrorunner-variations.png} 
+		\caption{140m cargo ship} 
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\linewidth}
+		\includegraphics[width=\textwidth]{gulf-valour-variations.png} 
+		\caption{250m tanker} 
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{emma-maersk-variations.png} 
+		\caption{400m container ship} 
+	\end{subfigure}
 
-other factors equipment, flagstate, origin of crew, etc.
+	\begin{subfigure}[b]{.9	\textwidth}
+		\includegraphics[width=\textwidth]{advance-passing-distance.png}
+		\caption{Combined plots with advance distance}
+		\label{fig:passing-distance-advance}
+	\end{subfigure}
+	\caption{Relation between distance till CPA, passing distance and advance distance by varying start speed and rudder amplification factor} 
+	\label{fig:result-advance-distance} 
+\end{figure}
 
+In figure~\ref{fig:passing-distance-advance} is shown how the relation between distance till CPA and the final passing distance depends on the advance distance. Where the advance distance depends on the ship (140m cargo ship, 250m tanker or 400m container ship), the start-speed and the empirical rudder amplification factor. This has created a continuous graph, which can be used during the design process or while operating a vessel to determine the required advance distance for a specific situation. This can be used on its turn to define vessel dependent speed limits or manoeuvrability requirements for specific area's.

@@ -19,7 +19,7 @@ def manoeuverShip(ship, dt):
     forcefactor = 0.08 * 1025
     driftfactor = (1 - abs(ship.drift) / 30)
 
-    steadySpeed = math.sqrt(ship.telegraphSpeed) * ship.vmax * driftfactor
+    steadySpeed = np.sign(ship.telegraphSpeed) * math.sqrt(math.fabs(ship.telegraphSpeed)) * ship.vmax * driftfactor
 
     deliveredForce = forcefactor * steadySpeed ** 2
     usedForce = forcefactor * ship.speed ** 2
@@ -75,7 +75,7 @@ def manoeuverShip(ship, dt):
     c_Th = 2.127    # Thrust coefficient propeller [2.127]
     dCLda = 0.0385  # rudder lift coefficient derivative [0.0385]
 
-    a_H = 2.5       # empirical amplification factor of (effective) rudder force due to hull‐rudder interaction [0.6]
+    a_H = ship.rudderAmplificationFactor       # empirical amplification factor of (effective) rudder force due to hull‐rudder interaction [0.6]
     c_Ry = 1.0      # empirical multiplier (≥1 or <1) to the rudder geometric local drift angle [1.0]
     x_Reff = -0.5   # effective rudder longitudinal position [-0.5]
 

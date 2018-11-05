@@ -5,26 +5,13 @@ The foundation segment in the \acf{sCE} methodology, describes the design ration
 The operational demands describe the current practice as it is, i.e. without the envisioned technology. For the operational demands, the sCE method prescribes as main components the stakeholders and their characteristics, and the problem description and analysis thereof.
 
 \subsection{Problem scenario}
-\acf{COLREGs} have been developed long before bridge-to-bridge voice communications became available. They are supposed to be unambigious. It is the responsibility of all bridge watch keepers to know how to apply them instinctively, on the basis of observation primarily by sight and radar. They work effectively when ships in an interaction obey them; they also specifically address circumstances where one ship does not.
+\acf{COLREGs} have been developed long before bridge-to-bridge voice communications became available. They are supposed to be unambigious. It is the responsibility of all bridge watch keepers to know how to apply them instinctively, on the basis of observation by sight and radar. They work effectively when ships in an interaction obey them; they also specifically address circumstances where one ship does not.
 
-However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy. For example due to missing information. This happens already more often due to larger ship, more complex manoeuvers and more traffic. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here are the \acf{SMCP}. The primary task of this protocol is to diminish misunderstanding in safety related verbal communications. 
-Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and text messaging.
+However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy. For example due to missing information. This happens already more often due to larger ship, more complex manoeuvers and more traffic. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here are the \acf{SMCP}. The primary task of these phrases and surrounding protocol is to diminish misunderstanding in safety related verbal communications. Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and text messaging.
 
-Reasons for safety related verbal communication are: when you will deviate from the rules, deviant behavior is registered, or more information is needed to decide on the right strategy. This is often necessary due to lack of visual information. For example due to bad weather, obstacles like bridges and terminals, or the information received via \acf{AIS} is not reliable. This does not only impact the information you get by looking out of the window, but also the quality of the \acf{ECDIS} and \acf{ARPA} is worse.
+Reasons for safety related verbal communication are: You will deviate from the rules, deviant behavior is registered, or more information is needed to decide on the right strategy. This is often necessary due to lack of visual information. For example due to bad weather, obstacles like bridges and terminals, or the information received via \ac{AIS} is not reliable. This does not only impact the information you get by looking out of the window, but also the quality of the \acf{ECDIS} and \acf{ARPA} is worse.
 
-When using \ac{SMCP}, marker words are used to introduce the content and purpose of the communication. In appendix \ref{apps:procedures} the \ac{SMCP} are described in more detail. Examples for all marker words are given below.
-\begin{description}
-	\item [Advice] Stand by on channel 6 - 8.
-	\item [Information] The fairway entrance is: position: bearing 1-3-7 degrees true from North Point Lighthouse, distance: 2 decimal 3 miles.
-	\item [Warning] Buoy number: one - five unlit.
-	\item [Intention] I intend to reduce speed, new speed: eight knots.
-	\item [Question] What are your intentions?
-	\item [Instruction] You must alter course to starboard.
-	\item [Request] Immediate tug assistance.
-\end{description}
-After this message there is a confirmation that the message is received, followed by a repetition of the send message, or an answer to the question. Indicated with the corresponding marker word.
-
-The different ways for communication are not developed to be used by unmanned vessels. On the other hand, is it not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels. As this will require many more new regulations, development time and time to train seafarers.
+The different ways for communication are not developed to be used by unmanned vessels. On the other hand, it is not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels. As this will require many more new regulations, development time and time to train seafarers.
 
 When using the current systems in a way they are not designed for. This might result in misunderstanding and problems with communication. Due to for example information overload of the crew and communication channels. This can be caused by the way the \ac{VHF} is designed. As it is a receiver or a transmitter, but can't be both at the same time, which means that in case two messages are send at the same time, both senders will not receive the others message.
 
@@ -37,16 +24,16 @@ The focus of this research will be on bridge-to-bridge communication. This means
 \begin{itemize}
 	\item Manned vessel
 	\begin{itemize}
-		\item \emph{Officer of watch}. He is the responsible person. He might work together with a helmsman and a lookout. He has to ensure a proper functioning of all available systems. Thereby does he discuss with other crew members if there are any unusual activities. He is responsible to follow a proper navigation plan, while having his own safe passage plan, to avoid collisions. He will use sight, \acf{ARPA} and \acf{ECDIS}. Thereby is he aware of the ship's speed, turning circle and other handling characteristics to decide on the right strategy. He will monitor the \ac{VHF} radio all the time while underway to assist in emergencies if necessary, to hear Coast Guard alerts for weather and hazards or restrictions to navigation, and to hear another vessel hailing you.
+		\item \emph{Officer of watch}. He is the responsible person. He might work together with a helmsman and a lookout. He has to ensure a proper functioning of all available systems. Thereby does he discuss with other crew members if there are any unusual activities. He is responsible to follow a proper navigation plan, while having his own safe passage plan, to avoid collisions. He will use sight, \acf{ARPA} and \acf{ECDIS}. Thereby is he aware of the ship's speed, turning circle and other handling characteristics to decide on the right strategy. He will monitor the \ac{VHF} radio all the time while underway, to assist in emergencies if necessary, to hear Coast Guard alerts for weather and hazards or restrictions to navigation, and to hear another vessel hailing you.
 		
-		He wants to avoid information overload, while being aware of the situation. This is only possible when he stays concentrated, to acquire this, the tasks must be challenging and he needs to have a form of autonomy.
+		He wants to avoid information overload, while being aware of the situation. This is only possible when he stays concentrated, to acquire this, the tasks must be challenging and he needs to have a form of autonomy \cite{Porathe2014}.
 	
 		\item \emph{Helmsman and lookout}. Both monitor the situation and execute commands from the officer of watch. A risk for them is information overload or underload \cite{Neerincx2008}.
 	\end{itemize}
 		
 	\item Unmanned vessel
 	\begin{itemize}
-		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information it can acquire via all different means. Including newly developed communication protocols, computer vision and algorithms to transform sensory data to useful information. His duties are similar to the duties of the officer of watch as described for the manned vessel.
+		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information acquired via all different means. Including newly developed communication protocols, computer vision and algorithms to transform sensory data to useful information. His duties are similar to the duties of the officer of watch as described for the manned vessel.
 	\end{itemize}
 
 	\item Other vessels

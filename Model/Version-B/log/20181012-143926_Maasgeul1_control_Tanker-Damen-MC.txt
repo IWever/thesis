@@ -1,0 +1,14 @@
+0 s: Created GUI screen
+0 s: Simulation started
+123 s: 
+123 s: Gulf Valour - CPA (meter)
+123 s:          Astrorunner | 2744 meter
+123 s:       Anglia Seaways | 3487 meter
+123 s: 
+123 s: Astrorunner - CPA (meter)
+123 s:          Gulf Valour | 2744 meter
+123 s:       Anglia Seaways | 4910 meter
+123 s: 
+123 s: Anglia Seaways - CPA (meter)
+123 s:          Gulf Valour | 3487 meter
+123 s:          Astrorunner | 4910 meter

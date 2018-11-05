@@ -4,7 +4,8 @@ def initial(simulation):
     simulation.addDynamicObject("Astrorunner", [3250, 0], 278, speed=15.2, rudderAngle=0)
     simulation.addDynamicObject("EmmaMaersk", [400, 2400], 225, speed=12, rudderAngle=0)
 
-    simulation.world.do["Astrorunner"].waypoints.append([0, 400])
+    simulation.world.do["Astrorunner"].waypoints.append([1880, 350])
+    simulation.world.do["Astrorunner"].waypoints.append([450, 1300])
 
     # Static objects
     separationZonePolygon = [

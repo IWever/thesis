@@ -376,11 +376,11 @@ FUNCTION {output.bibitem}
 { newline$
   "\bibitem[" write$
   label write$
-  ")" make.full.names duplicate$ short.list =
+  "" make.full.names duplicate$ short.list =
      { pop$ }
      { * }
    if$
-  "]{" * write$
+  ")]{" * write$
   cite$ write$
   "}" write$
   newline$
@@ -1192,7 +1192,7 @@ FUNCTION {calc.short.authors}
 FUNCTION {calc.label}
 { calc.short.authors
   short.list
-  "("
+  " ("
   *
   year duplicate$ empty$
   short.list key field.or.null = or
