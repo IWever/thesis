@@ -71,6 +71,6 @@ def manouverStep(ship, dt, result):
     return result
 
 def saveResult(result):
-    filename = r"D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\results\%s" % datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "_Result"
+    filename = r"D:\ingma\OneDrive\Studie\Thesis\Model\Version-B\results\%s" % datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "_Result_" + result["TC"]["Simulation"]
     with open(filename, 'wb') as output:
             pickle.dump(result, output, pickle.HIGHEST_PROTOCOL)

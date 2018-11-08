@@ -135,7 +135,7 @@ class Simulation:
                 except KeyError:
                     shipA.perceivedShipCPA[shipB] = d
 
-                if d < shipA.LBP:
+                if d < 1875:
                     self.world.log("%s and %s are too close (%d meter)" % (shipA.name, shipB.name, d))
 
     @staticmethod

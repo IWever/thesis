@@ -1,57 +1,57 @@
 \chapter{Foundation}
-The foundation segment in the \acf{sCE} methodology, describes the design rationale in terms of operational demands, relevant human factors knowledge, and envisioned technologies. Together, these three constituents describe the problem to be solved, the existing knowledge on ways to solve the problem, and the technology needed to implement that solution.
+The foundation segment in the \acf{sCE} methodology describes the design rationale in terms of operational demands, relevant human factors knowledge, and envisioned technologies. Together, these three constituents describe the problem to be solved, the existing knowledge on ways to solve the problem, and the technology needed to implement that solution.
 
 \section{Operational demands}
-The operational demands describe the current practice as it is, i.e. without the envisioned technology. For the operational demands, the sCE method prescribes as main components the stakeholders and their characteristics, and the problem description and analysis thereof.
+The operational demands describe the current practice as it is, i.e. without the envisioned technology. For the operational demands, the sCE method prescribes as main components the stakeholders with their characteristics and the problem description with an analysis thereof.
 
 \subsection{Problem scenario}
-\acf{COLREGs} have been developed long before bridge-to-bridge voice communications became available. They are supposed to be unambigious. It is the responsibility of all bridge watch keepers to know how to apply them instinctively, on the basis of observation by sight and radar. They work effectively when ships in an interaction obey them; they also specifically address circumstances where one ship does not.
+\acf{COLREGs} have been developed long before bridge-to-bridge voice communication became available. They are supposed to be unambiguous. It is the responsibility of all bridge watchkeepers to know how to apply them instinctively, from observation by sight and radar. They work effectively when ships in an interaction obey them; they also specifically address circumstances where one ship does not.
 
-However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy. For example due to missing information. This happens already more often due to larger ship, more complex manoeuvers and more traffic. In those cases the \ac{VHF} radio can be used for verbal bridge-to-bridge communication. Leading here are the \acf{SMCP}. The primary task of these phrases and surrounding protocol is to diminish misunderstanding in safety related verbal communications. Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and text messaging.
+However, as shown in the previous parts, are \ac{COLREGs} not always sufficient to decide on the right strategy, for example, due to missing information. Problems with \ac{COLREGs} happen already more often due to larger ships, more complex manoeuvers and more traffic. In those cases, operators can use the \ac{VHF} radio for verbal bridge-to-bridge communication. Leading here are the \acf{SMCP}. The primary task of these phrases and surrounding protocol is to diminish misunderstanding in safety-related verbal communications. Beside this verbal communication, non-verbal communication might be used, such as light signals, sound signals and text messaging.
 
-Reasons for safety related verbal communication are: You will deviate from the rules, deviant behavior is registered, or more information is needed to decide on the right strategy. This is often necessary due to lack of visual information. For example due to bad weather, obstacles like bridges and terminals, or the information received via \ac{AIS} is not reliable. This does not only impact the information you get by looking out of the window, but also the quality of the \acf{ECDIS} and \acf{ARPA} is worse.
+Three reasons for safety-related verbal communication are: As the operator you will deviate from the rules, you register deviant behaviour at other ships, or more information is needed to decide on the right strategy. Communication is often necessary due to the lack of visual information. For example, due to bad weather, obstacles like bridges and terminals, or the information received via \ac{AIS} is not reliable. Besides the impact on the information you get by looking out of the window, is also the quality of the \acf{ECDIS} and \acf{ARPA} worse.
 
-The different ways for communication are not developed to be used by unmanned vessels. On the other hand, it is not feasible to require all manned vessel to install new systems for communication, before introducing unmanned vessels. As this will require many more new regulations, development time and time to train seafarers.
+The different ways for communication are not developed to be used by unmanned vessels. On the other hand, it is not feasible to require all manned vessels to install new systems for communication, before introducing unmanned vessels. As this will require many more new regulations, development time and time to train seafarers.
 
-When using the current systems in a way they are not designed for. This might result in misunderstanding and problems with communication. Due to for example information overload of the crew and communication channels. This can be caused by the way the \ac{VHF} is designed. As it is a receiver or a transmitter, but can't be both at the same time, which means that in case two messages are send at the same time, both senders will not receive the others message.
+Misunderstanding and problems with communication can be the result of changing the usage of systems over time, due to the evolving demands for operators. These changes can result in an information overload of the crew and communication channels, caused by the more frequent use of \ac{VHF}. As it is a receiver or a transmitter, but can't be both at the same time, which means that in case two messages are sent at the same time, both senders will not receive the others message.
 
 \subsection{Problem analysis}
-To avoid misunderstanding which could result in hazardous situations. It is important that manned and unmanned vessels are able to communicate. To solve this problem, a more extensive analysis is made. 
+To avoid misunderstanding which could result in hazardous situations. It is important that manned and unmanned vessels can communicate. A more extensive analysis is made to solve this problem. 
 Describing the values of the different actors and discussing their related problems.
 
 \subsubsection{Primary actors}
-The focus of this research will be on bridge-to-bridge communication. This means the most important actors for unmanned and manned vessel are:
+The focus of this research will be on bridge-to-bridge communication. For this communication are the most important actors for unmanned and manned vessels:
 \begin{itemize}
 	\item Manned vessel
 	\begin{itemize}
-		\item \emph{Officer of watch}. He is the responsible person. He might work together with a helmsman and a lookout. He has to ensure a proper functioning of all available systems. Thereby does he discuss with other crew members if there are any unusual activities. He is responsible to follow a proper navigation plan, while having his own safe passage plan, to avoid collisions. He will use sight, \acf{ARPA} and \acf{ECDIS}. Thereby is he aware of the ship's speed, turning circle and other handling characteristics to decide on the right strategy. He will monitor the \ac{VHF} radio all the time while underway, to assist in emergencies if necessary, to hear Coast Guard alerts for weather and hazards or restrictions to navigation, and to hear another vessel hailing you.
+		\item \emph{Officer of watch}. He is the responsible person. He might work together with a helmsman and a lookout. He has to ensure proper functioning of all available systems. He does discuss with other crew members if there are any unusual activities. He is responsible for following a proper navigation plan while having his safe passage plan, to avoid collisions. He will use sight, \acf{ARPA} and \acf{ECDIS}. Thereby is he aware of the ship's speed, turning circle and other handling characteristics to decide on the right strategy. He will monitor the \ac{VHF} radio all the time while underway, to assist in emergencies if necessary, to hear Coast Guard alerts for weather and hazards or restrictions to navigation, and to hear another vessel hailing you.
 		
-		He wants to avoid information overload, while being aware of the situation. This is only possible when he stays concentrated, to acquire this, the tasks must be challenging and he needs to have a form of autonomy \cite{Porathe2014}.
-	
+		He wants to avoid information overload while being aware of the situation, which is only possible when he stays concentrated. This happens when the tasks are challenging, and he needs to have a form of autonomy \cite{Porathe2014}.
+		
 		\item \emph{Helmsman and lookout}. Both monitor the situation and execute commands from the officer of watch. A risk for them is information overload or underload \cite{Neerincx2008}.
 	\end{itemize}
-		
+	
 	\item Unmanned vessel
 	\begin{itemize}
-		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information acquired via all different means. Including newly developed communication protocols, computer vision and algorithms to transform sensory data to useful information. His duties are similar to the duties of the officer of watch as described for the manned vessel.
+		\item \emph{Controller agent}. This agent is responsible for situational awareness. Thus getting safely from A to B. It will decide on the navigational strategy, it will do this based on the information acquired via all different means. Including newly developed communication protocols, computer vision and algorithms to transform sensor data into useful information. His duties are similar to the duties of the officer of watch as described for the manned vessel.
 	\end{itemize}
-
+	
 	\item Other vessels
 	\begin{itemize}
-		\item \emph{Crew and pilots on nearby vessels}. They might want to know the intentions of other vessels to base their strategy on. However do not want to receive all discussions. As this will result in an information overload.
+		\item \emph{Crew and pilots on nearby vessels}. They might want to know the intentions of other vessels to base their strategy on, without receiving all discussions, as this might result in information overload.
 	\end{itemize}
 	
 \end{itemize}
 
 \subsubsection{Secondary actors}
-Beside the first group of actors, others could also be influenced by the new protocol. Although they are not within the scope of this first design cycle, they should be considered to avoid problems such as information overload on current communication channels or confusion. 
+Beside the first group of actors, The new protocol could also influence others, besides the first group of actors mentioned above. Although they are not within the scope of this first design cycle, they should be considered to avoid problems such as information overload on current communication channels or confusion. 
 \begin{itemize}
 	\item Only recipients
 	\begin{itemize}
-		\item Crew on vessels which are not traveling.
-		\item Shipowners of unmanned vessels, monitoring vessel from remote location.
+		\item Crew on vessels which are not travelling.
+		\item Shipowners of unmanned vessels, monitoring vessel from a remote location.
 	\end{itemize}
-	\item Not within scope of the research
+	\item Not within the scope of the research
 	\begin{itemize}
 		\item Vessel traffic controllers
 		\item Crew which are in distress and require assistance
@@ -59,47 +59,45 @@ Beside the first group of actors, others could also be influenced by the new pro
 \end{itemize}
 
 \subsubsection{Goals}
-The main goal is to ensure reliable sharing of information, without the risk for information overload or misunderstanding. Such that manned ships will trust unmanned ships to choose the right strategy. As manned ships can be informed, using natural language describing the reasoning of unmanned vessels.
-
-This means that manned vessels should be updated only when requested or in case of an unusual activity which could affect their strategy. And manned vessel should be aware when unmanned vessels desire more information to decide on the right strategy.
-
-Using the same philosophy, it might be possible to develop a protocol for communication with traffic controllers in later iterations. This becomes more important when the time needed to develop a new systems for traffic controllers also takes too much time to develop and/or implement.
+The main goal is to ensure reliable sharing of information, without the risk for information overload or misunderstanding, so that manned ships will trust unmanned ships to choose the right strategy, as manned ships can be informed, using natural language describing the reasoning of unmanned vessels. 
+During communication should manned vessels only be updated when requested or in case of an unusual activity which could affect their strategy. Manned vessels should thereby be aware when unmanned vessels desire more information to decide on the right strategy.
+It might be possible to develop a protocol for communication with traffic controllers in later iterations, using the same philosophy. This communication becomes more critical when the development of a new system for traffic controllers also takes too much time to develop or implement.
 
 \subsubsection{Infeasible solutions}
-The easiest solution for unmanned ships would be to just install a new system. This is however not feasible as mentioned before. To implement this, it would mean that all ships which could encounter an unmanned ship will have to install this too. It might be possible to make it obligatory via regulations, this will however cost a lot of time and money. Making the introduction of unmanned ships less likely.
-This is also the reason to use a \ac{no-UI}, as a GUI will require new screens or changes to the \ac{ECDIS} which are only possible when regulations are changed.
+The easiest solution for unmanned ships would be to install a new system on every vessel. This is however not feasible as mentioned before. To implement this, it would mean that all ships which could encounter an unmanned ship will have to install this too. It might be possible to make it obligatory via regulations, which will cost much more time and money. Making the introduction of unmanned ships less likely.
+Time and money is also the reason to use a \ac{no-UI}, as a GUI will require new screens or changes to the \ac{ECDIS} which are only possible when regulations are changed.
 
 \section{Human factors}
 \label{sec:human-factors}
-When designing technology, there are two driving questions that need to be well-thought out: (1) What tasks and/or values is the user trying to accomplish and how can the technology support the user in doing so?, and (2) How can the technology be designed such that the user is able to work with the technology?
+When designing technology, there are two driving questions that need to be well-thought out: (1) What tasks and/or values is the user trying to accomplish and how can the technology support the user in doing so?, and (2) How can the technology be designed such that the user can work with the technology?
 
-The Human Factors segment of the sCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasize that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2). The three elements important to the human factors analysis are: The human factors knowledge, measures, and interaction design patterns.
+The Human Factors segment of the sCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasise that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2). The three elements relevant to the human factors analysis are the human factors knowledge, measures, and interaction design patterns.
 
 \subsubsection{Human factor knowledge}
-Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. The key problems relevant for human factors are the information overload, situational awareness, autonomy, and learning a new protocol. Thus the following questions should be answered:
+Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. The key problems relevant for human factors are information overload, situational awareness, autonomy, and learning a new protocol. Thus the following questions should be answered:
 \begin{itemize}
 	\item When does information overload occur?
 	\begin{itemize}
-		\item In case of divided attention there is a high risk for information overload and distraction by low priority messages. Therefor the developed system should be context aware so it can limit this risk by adapting the message to the situation \cite{Arimura2001}.
-		\item Overload might appear due to a competition for the operator’s attention that is going on between different information items. If many tasks are handled by automated systems, the operator can deal with high workload circumstances, but will suffer from severe underload during quiet periods, probably losing his or her situational awareness \cite{Neerincx2008}.
-		\item The information acquired at one particular moment does not necessarily serve for high-level situation awareness, for the user needs to recall the previous related information to understand the situation thoroughly. But constantly providing information might not be the solution because there will be a huge risk of information overloading. Admittedly it is plausible to deliver needed information for the coming task by task detection, the user might still fail to keep pace to the rapid changing system and fulfill multi-threaded tasks\cite{Porathe2014}.
+		\item In case of divided attention, there is a high risk for information overload and distraction by low priority messages. Therefore the developed system should be context-aware so it can limit this risk by adapting the message to the situation \cite{Arimura2001}.
+		\item Overload might appear due to a competition for the operator’s attention that is going on between different information items. If automated systems handle many tasks, the operator can deal with high workload circumstances but will suffer from severe underload during quiet periods, probably losing his or her situational awareness \cite{Neerincx2008}.
+		\item The information acquired at one particular moment does not necessarily serve for high-level situation awareness, for the user needs to recall the previous related information to understand the situation thoroughly. But constantly providing information might not be the solution because there will be a huge risk for information overload. Admittedly it is plausible to deliver needed information for the future task by task detection. The user might still fail to keep pace to the rapidly changing system and fulfil multi-threaded tasks\cite{Porathe2014}.
 	\end{itemize}
 	
-	\item Which information is needed for situational awareness?
+	\item Which information do operators need for situational awareness?
 	\begin{itemize}
-		\item Understanding the current picture is not enough for full situational awareness. Expert decision makers must be able to project their understanding into the future. This enables them to make the decision they must take now to create the best options in the future. Projection requires to have good mental models of the dynamic relationships between the relevant parts of the environment over time. Expers focus a lot on creating their own futures via present decisions. In turn, these decisions are formed out of their comprehension of the likely interactions of all the elements they deem both relevant and important \cite{Gregory2010}.
+		\item Understanding the current picture is not enough for full situational awareness. Expert decision makers must be able to project their understanding into the future. This projection enables experts to make the decision which results in the best options in the future. Projection requires to have good mental models of the dynamic relationships between the relevant parts of the environment over time. Experts focus a lot on creating their futures via present decisions. In turn, experts do form these decisions out of their comprehension of the likely interactions of all the elements they deem both relevant and important \cite{Gregory2010}.
 		\item Situational awareness can be enhanced by feedback, perceived information from the environment, information from other agents, as well as remote sensors. \cite{Carver2007}
 	\end{itemize}
 	
-	\item How is information perceived when acquiring it passively of actively?
+	\item How is information perceived when acquiring it passively or actively?
 	\begin{itemize}
-		\item Attention profoundly modulate the activity of sensory systems and this can take place at many levels of processing. Imaging studies, in particular, have revealed the greater activation of auditory areas and areas outside of sensory processing areas when attending to a stimulus \cite{Palmer2007}.
-		\item Good teamwork involves anticipating the needs of teammates and that means pushing information before it is requested. Therefore, if things are going well, there should be little need for pulling information. In this study task, participants were instructed to push information to others, and over time master the specific timing of information sharing to the intended recipient. Findings indicate that pushing information was positively associated with team situation awareness and team performance, and human-autonomy teams had lower levels of both pushing and pulling information than all-human teams \cite{Demir2017}.
+		\item Attention profoundly modulates the activity of sensory systems, and this can take place at many levels of processing. Imaging studies, in particular, have revealed the greater activation of auditory areas and areas outside of sensory processing areas when attending to a stimulus \cite{Palmer2007}.
+		\item Good teamwork involves anticipating the needs of teammates, and that means pushing information before operators request it. Therefore, if things are going well, there should be little need for pulling information. In this study task, participants were instructed to push information to others, and over time master the specific timing of information sharing to the intended recipient. Findings indicate that pushing information was positively associated with team situation awareness and team performance, and human-autonomy teams had lower levels of both pushing and pulling information than all-human teams \cite{Demir2017}.
 	\end{itemize}
 	
 	\item What is needed for successful teamwork between human and a computer?
 	\begin{itemize}
-		\item  People need to understand what is happening and why when a teammate tends to respond in a certain way; they need to be able to control the actions of an agent even when it does not always wait for the human’s input before it makes a move; and they need to be able to reliably predict what will happen, even though the agent may alter its responses over time \cite{Bradshaw2003}.
+		\item  People need to understand what is happening and why when a teammate tends to respond in a certain way. They need to be able to control the actions of an agent even when it does not always wait for the human’s input before it makes a move, and they need to be able to reliably predict what will happen, even though the agent may alter its responses over time \cite{Bradshaw2003}.
 		\item Effective team communication, a fundamental part of team coordination, is crucial for both effective team situation awareness and team performance \cite{Demir2017}.
 	\end{itemize}
 	
@@ -110,23 +108,28 @@ Human factors knowledge describes available knowledge coming from previous resea
 \end{itemize}
 
 \subsubsection{Human factor measures}
-Measures describe how to operationalize the quality of the intended behavior or performance, i.e. how well is a user working with the design able to reach his/her objectives and what is the quality of the collaboration between the human worker and the technology?
+Measures describe how to operationalise the quality of the intended behaviour or performance, i.e. how well is a user working with the design able to reach his/her objectives and what is the quality of the collaboration between the human worker and the technology?
+\begin{multicols}{2}
 \begin{itemize}
 	\item Is the system used correctly?
+	\item Will the protocol solve the problem of missing information?
 	\item Does the protocol act as expected?
-	\item Will it solve the problem of missing information?
 	\item What is the impact on attitude towards unmanned ships?
 \end{itemize}
+\end{multicols}
 
 \subsubsection{Interaction design patterns}
 \acf{IDPs} focus on the \acf{HCI}, such as usable interface design and control options. IDPs offer generic solutions to recurring HCI design problems that have been proven to be effective. Relevant IDPs are given in table~\ref{tab:IDPs}.
+Keywords are often seen as the new buttons to interact. For the new protocol are message markers the keywords. These make it easier to train the conversational agent, and more clear for operators on manned vessels what the options are. Whereas the conversational skills of the agent are the core of general communication, the usage of other methods of communication will improve redundancy and effectiveness. 
+A multimodal conversational agent also includes visible signals such as masthead light signals, flags and AIS messages. These will enable operators to see immediately if the vessel is unmanned.
+The last two methods are for extreme situations: audible and distress signals. The agent for the unmanned vessel should understand what these mean and how to use them before manned vessels trust them.
 
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
 	\begin{tabular}{l|l}
 		\toprule
 		Radio communication & Usage of message markers and conversational agent \\
-		Visible signals & Light signals, mast head signals and flags \\
+		Visible signals & Mast head signals, flags and \ac{AIS} information \\
 		Audible signals & Horn and speakers \\
 		Distress, urgency and safety signals & Flares and smoke \\
 		\bottomrule
@@ -137,29 +140,29 @@ Measures describe how to operationalize the quality of the intended behavior or 
 \end{table}
 
 \section{Envisioned technology}
-The envisioned technology describes the available options of using existing technology and/or the need to develop novel technology in order to come to a system solution. The sCE method asks designers to specify what devices (hardware) and software could be used in the system design. In addition, for each type of technology, an argument should be provided as to why this technology might be of use and what the possible downsides might be of that particular type of technology.
+The envisioned technology describes the available options of using existing technology and the need to develop novel technology to come to a system solution. The sCE method asks to specify what devices (hardware) and software the designers could use in the system design. In addition, for each type of technology, an argument should be provided as to why this technology might be of use and what the possible downsides might be of that particular type of technology.
 
-The envisioned technology will use only existing systems to develop a \ac{no-UI}. Different systems which are currently used, are described in appendix~\ref{app:systems}. Below different systems and protocols are mentioned which can be used in the new protocol. Using these already existing systems will shorten the development, learning and implementation time. The used systems, equipment and protocols are given in table~\ref{tab:envisioned-technology}.
+The envisioned technology will use only existing systems to develop a \ac{no-UI}. Different systems which are currently used, are described in appendix~\ref{app:systems}. Below different systems and protocols are mentioned which can be used in the new protocol. Using these already existing systems will shorten the development, learning and implementation time. Table~\ref{tab:envisioned-technology} gives the used systems, equipment and protocols.
 
-\begin{table}[H]
+\begin{table}[hbtp]
 	\centering
 	\begin{tabular}{l|l}
 		\toprule
 		Radio communication & Conversational agent \\
-			& Negotiating agent \\
-			& Usage of message markers \\
-			& Availability on \ac{VHF} \\
-			& Natural language variations on \ac{SMCP} \\
-			& NATO phonetic alphabet and numbing \\
-			& Addressed \ac{AIS} message to exchange information or interrogate \\
+		& Negotiating agent \\
+		& Usage of message markers \\
+		& Availability on \ac{VHF} \\
+		& Natural language variations on \ac{SMCP} \\
+		& NATO phonetic alphabet and numbing \\
+		& Addressed \ac{AIS} message to exchange information or interrogate \\
 		\midrule
 		Visible signals & Light signals \\
-			& Mast head signals \\
-			& Flags \\
-			& Heading, position and movements \\
+		& Mast head signals \\
+		& Flags \\
+		& Heading, position and movements \\
 		\midrule
 		Audible signals & Horn \\
-			& Speakers\\
+		& Speakers\\
 		\bottomrule
 	\end{tabular}
 	
@@ -167,9 +170,9 @@ The envisioned technology will use only existing systems to develop a \ac{no-UI}
 	\label{tab:envisioned-technology}
 \end{table}
 
-Using already existing protocols makes it more easy to learn, such as \acf{SMCP} and \ac{COLREGs}. This also makes it recognizable, which means that users will understand the benefits quicker. Show that it is easy to use and useful are key for the acceptance of technology \cite{Davis1989}.
+Using already existing protocols makes it easier to learn, such as \acf{SMCP} and \ac{COLREGs}. These systems make it also recognisable, which means that users will understand the benefits quicker. Show that it is useful and easy to use, as this is key to the acceptance of technology \cite{Davis1989}.
 
-The type and amount of information presented to users must be tailored to the unique situation in which the information is to be used. Prior research on trust in automation found that providing human operators with information related to the reliability of an automated tool promoted more optimal reliance strategies on the tool. Further, information related to the limitations of an automated tool aids in trust recovery following errors of the automation. This added information appears to be useful in deciphering the boundary conditions under which the tools are more or less capable. Thus, providing human operators with information related to the performance of an automated tool, appears to be beneficial \cite{Lyons2014}. Therefor it is beneficial for the cooperation between manned and unmanned vessels to clearly show if it is an unmanned vessel. This will firstly be done using visible signals, and also at the start of radio communication. This also happens in industry projects such as Google Duplex \cite{Nieva2018}.
+The type and amount of information presented to users must be tailored to the unique situation in which users use the information. Prior research on trust in automation found that providing human operators with information related to the reliability of an automated tool promoted more optimal reliance strategies on the tool. Further, information related to the limitations of an automated tool aids in trust recovery following errors of the automation. This added information appears to be useful in deciphering the boundary conditions under which the tools are more or less capable. Thus, providing human operators with information related to the performance of an automated tool appears to be beneficial \cite{Lyons2014}. Therefore it is beneficial for the cooperation between manned and unmanned vessels to show if it is an unmanned vessel, which will first be done using visible signals, and also at the start of radio communication. Telling the user that you are unmanned or automated also happens in industry projects, such as Google Duplex \cite{Nieva2018}.
 
 \vspace{1.5cm}
-\emph{In the next chapter} the system design specification will be given for the envisioned technology. Most important will be the definition of the usage of radio communication and how this should be supported with other forms of communication, such as visible and audible signals.
+\emph{In the next chapter} the system design specification will be presented for the envisioned technology. Most important will be the definition of the usage of radio communication and how this should be supported by other forms of communication, such as visible and audible signals.

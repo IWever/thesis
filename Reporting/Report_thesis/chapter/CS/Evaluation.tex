@@ -1,32 +1,27 @@
 \chapter{Design evaluation}
 \label{ch:evaluation}
-The last part of the sCE method is the design evaluation. The design evaluation aims to test and validate the system’s design, or to discriminate between multiple design options, such that the current design can be improved upon in incremental development cycles. 
+The last part of the sCE method is the design evaluation. The design evaluation aims to test and validate the system’s design, such that the current design can be improved in incremental development cycles. 
 
-The evaluation method will be an experiment within a simulation environment where participants have to decide on the actions, followed by a questionaire related to this experiment. The participants are experienced seafarers. The aim of the interviews is to answer the following question:
+The evaluation method will be an experiment, where participants have to decide on the actions in a simulation environment, together with a questionnaire related to the experiment and communication in general. The participants are experienced seafarers. The interviews aim to answer the following question:
 \begin{quotation}
 	\emph{Will the described protocol ensure safe navigation and more situational awareness, when manned and unmanned vessels encounter each other?}
 \end{quotation}
-Different measures are used for validation and verification. Key variables are: performance, trust, situation awareness and satisfaction. In this chapter, these will be described in more detail. The aim of this chapter is to test if the earlier described protocol, will indeed result in more situational awareness. This should on its turn result in safer navigation.
+Different measures are used for validation and verification. Key variables are performance, trust, situation awareness and satisfaction. This chapter describes these in more detail. This chapter aims to test if the earlier described protocol, will indeed result in more situational awareness. The situational awareness should on its turn result in safer navigation.
 
-To get the right feedback, several situations will be simulated. These situations are based on the accident reports as described in appendix \ref{app:accidents}, common situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualized using the tool as described in appendix \ref{app:tool}. This will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the experiment, and usage of systems like \acf{AIS} and \acf{ARPA}.
+Several situations will be simulated to get the right feedback. The situations are based on the accident reports as described in appendix \ref{app:accidents}, everyday situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualised using the tool as described in appendix \ref{app:tool}. This visualisation will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge-based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the experiment, and usage of systems like \acf{AIS} and \acf{ARPA}.
 
 \section{Evaluation method}
-The evaluation method is so-called Wizard of Oz evaluation. This technique enables unimplemented technology to be evaluated, by using a human to simulate the response of a system. As the technology itself has not yet been implemented. The "wizard" simulates the systems responses in real-time. Using seafarers and the Wizard of Oz method, an expert evaluation can be acquired on the proposed protocol without implementing it.
+The evaluation method is a so-called Wizard of Oz evaluation. This technique enables unimplemented technology to be evaluated, by using a human to simulate the response of an automated system. As the technology itself has not yet been implemented. The "wizard" simulates the system responses in real-time. Using seafarers and the Wizard of Oz method, an expert evaluation can be acquired on the proposed protocol without implementing it.
 
 \subsection{Experiment set-up}
-To do the experiment, a participant is needed to have the role of \acf{OoW} and tools to execute. During the experiment, different variables will be tested. This is part of the experiment design and described in this section.
-
-\subsubsection{Experiment design}
-An interview with the participant will be done, during the interview the participant has to do two assignments. In only one of the two assignment is the participant allowed to use the protocol. This means that the experiment is a within-subject design. The most significant benefits of this type of experimental design is that it does not require a large pool of participants. A within-subject design can also help reduce errors associated with individual differences. A major drawback which should be taken into account during the experiment is that the result of the first assignment may influence the result of the second assignment. A problem known as a carryover effect. This is mitigated by counter-balancing the participants, thus some are allowed to communicate using the protocol during the first assignment, others the second.
-
-Thereby are variables measured on different levels. This is done by using the same set of questions every time. within the questionnaire there are both questions using a linear scale and open questions. The linear scale questions are on a ordinal level, it is not possible to do calculations, but making an histogram of the results will show the tendency of the participants. The level of measurement of open question is on a nominal level. Where conclusions can be drawn by grouping answers on subject. 
+A participant is needed as \acf{OoW}, and tools to execute the experiment. During the experiment, different variables will be tested. The description of these is part of the experiment design and is described in this section.
 
 \subsubsection{Participants}
-The 16 participants in this experiment are classified, based on their experience and expectations from autonomous shipping. All participants are Dutch, but their experience differs in certification, types of vessel they have operated, and their years of experience. Their experience is described by the certificates they have acquired, and their years of experience at the bridge. 
+The 16 participants in this experiment are classified, based on their experience and expectations from autonomous shipping. All participants are Dutch, but their experience differs in certification, types of vessel they have operated, and their years of experience at the bridge.
 \begin{description}
-	\item[Officer in charge] This category has the lowest ranked officers at the bridge. In this case they were trained to be officers of watch, but only had limited sailing experience, therefore they are not yet allowed to be chief mate or master. They are currently studying at STC-Rotterdam. The advantage of this group is that they had tests on their knowledge of SMCP and COLREGs within the last year.
-	\item[Chief mate] The chief mate is head of the deck department of a merchant ship. This means he is responsible for the deck crew and cargo. He reports to the master or captain. The officer directs the helmsman to carry out course or speed changes.
-	\item[Master] He is the highest ranked officer, therefore he is ultimately responsible for the safety and security of the ship. The master ensures that the ship complies with company policies, local regulations and international laws. The captain is ultimately responsible for aspects of operation, including the safe navigation of the ship.
+	\item[Officer in charge] This category has the lowest ranked officers at the bridge. In this case, they were trained to be officers of watch but only had limited sailing experience. Therefore they are not yet allowed to be chief mate or master. They are currently studying at STC-Rotterdam. The advantage of this group is that they studied SMCP and COLREGs and worked as an officer of watch, within the last year.
+	\item[Chief mate] is head of the deck department of a merchant ship. He is responsible for the deck crew and cargo. He reports to the master or captain. The officer directs the helmsman to carry out a course or speed change.
+	\item[Master] is the highest ranked officer. He is ultimately responsible for the safety and security of the ship. The master ensures that the ship complies with company policies, local regulations and international laws. The captain is ultimately responsible for aspects of the operation, including the safe navigation of the ship.
 \end{description}
 
 \begin{figure}[h]
@@ -36,10 +31,10 @@ The 16 participants in this experiment are classified, based on their experience
 	\label{fig:participants}
 \end{figure}
 
-The classification of participants is shown in figure~\ref{fig:participants}. Where the different colors indicate the participants highest rank, according to their certification. The maximum radius corresponds to their years of experience, while the shading the autonomy participants think ships will eventually have. 
-The lightest color is for participants who expect vessels to be partly autonomous. Which means that they expect there will always be crew on board. Remote operation means that they expect ships to sail without crew, but that every ship will be monitored 24/7 from a remote location, where the operator can intervene at any time. The darkest colors show the participants who think ships will eventually be able to operate fully autonomous, even in the busiest regions, such as the Dover and Malacca strait.
+The classification of participants is shown in figure~\ref{fig:participants}. The different colours indicate the participants highest rank according to their certification. The maximum radius corresponds to their years of experience, while the shading the autonomy participants think ships will eventually have. 
+The lightest colour is for participants who expect vessels to be partly autonomous, which means that they expect there will always be crew on board. Remote operation means that they expect ships to sail without a crew, but that every ship will be monitored 24/7 from a remote location, where the operator can intervene at any time. The darkest colours show the participants who think ships will eventually be able to operate fully autonomous, even in the busiest regions, such as the Dover and Malacca Strait.
 
-The number of operators and their role per ship-type is shown in figure~\ref{fig:ship-types}, some participants sailed on different ship types. Where tugs and fast crew suppliers are under small vessel. Complex workboats are crane barges and dredgers. Coasters and general cargo vessels are most common. Ro-Ro and Ferries are more complex than the coasters and often also a bit longer. Cruise ships bring much more responsibility due to the number of passengers, resulting in larger safety domains. Tankers are the least maneuverable vessels operated by one of the participants.
+The number of operators and their role per ship-type is shown in figure~\ref{fig:ship-types}, some participants sailed on different ship types. Tugs and fast crew suppliers are under small vessels. Complex workboats are crane barges and dredgers. Coasters and general cargo vessels are most common. Ro-Ro and Ferries are more complex than the coasters and often also a bit longer. Cruise ships bring much more responsibility due to the number of passengers, resulting in larger safety domains. Tankers are the least manoeuvrable vessels operated by one of the participants.
 
 \begin{figure}[p]
 	\centering
@@ -51,15 +46,15 @@ The number of operators and their role per ship-type is shown in figure~\ref{fig
 \subsubsection{Tools}
 Beside the participants, tools are needed to do the experiment. The tools needed are:
 \begin{spacing}{1}
-\begin{itemize}
-	\item Screen to show simulation environment
-	\item Questionnaire to be used before, during and after the experiment
-	\item Room without distractions to do the experiment
-	\item Possibility to store and later process actions during the experiment
-\end{itemize}
+	\begin{itemize}
+		\item Screen to show the simulation environment
+		\item Questionnaire to be used before, during and after the experiment
+		\item Room without distractions to do the experiment
+		\item Possibility to store and later process actions during the experiment
+	\end{itemize}
 \end{spacing}
 
-The simulation environment is discussed in more detail in appendix~\ref{app:tool}. The simulation environment is shown in figure~\ref{fig:printscreen-tool}. Where the map is shown on the left, the side-bar can be used to control the selected vessel. In the status-bar at the bottom of the screen, information is given on possible actions, errors and status of simulation.
+The simulation environment is discussed in more detail in appendix~\ref{app:tool}. Figure~\ref{fig:printscreen-tool} shows the simulation environment. The environment has the map on the left, the side-bar or arrow-keys can be used to control the selected vessel. The status bar at the bottom of the screen gives information on possible actions, errors and status of simulation.
 
 \begin{figure}[p]
 	\centering
@@ -68,51 +63,43 @@ The simulation environment is discussed in more detail in appendix~\ref{app:tool
 	\label{fig:printscreen-tool}
 \end{figure}
 
-\subsubsection{Dependent variables}
-During the experiment different variables will be evaluated. These are based on the human factor measures, as described in section \ref{sec:human-factors}. This will be a combination of both quantitative and qualitative measurements. Thus combining numerical values with non-numerical arguments. 
-Using the variables can be concluded if the system acted as expected and will result in safe navigation when using existing protocols. The dependent variables within the experiment are:
-\begin{description}
-	\item [Performance] "Yes" or "No" evaluation if the participant operated safely. Thus did he safely navigate the vessel by making the right decisions. Which means that the participant followed the applicable \ac{COLREGs} and showed good seamanship. The resulting \acf{CPA} is a good measure for this. Also the reasoning and situation recognition which results in choosing the right strategy is a measure.
-	
-	\item [Trust] The system acts not only out of self-interest, but in order to acquire a pareto-optimal solution. The participants must have a feeling of confidence that unmanned vessels act as they expect. Therefor they must be confident that the system works as it is supposed to do. In later stages this will also be supported by evaluations of well-known institutions. \cite{Ozawa2013}.
-	For now the survey is leading here. Where questions will be asked on the participants trust in autonomous systems, their trust in SMCP and how they thought the communication went during the experiment.
-	
-	\item [Situation awareness] The perception of environmental elements and events with respect to time or space, the comprehension of their meaning, and the projection of their status \cite{Naderpour2016}. This is measured using an observer rating system, showing if participants have noticed changes in course, the color of different vessels and relative speed.
-	
-	\item [Satisfaction] The participant should like to use the protocol. This is measured by questioning them on the effectiveness of \ac{SMCP}, observe their usage of the protocol during the experiment and their reaction to vessels using the protocol.
-\end{description}
+\subsubsection{Experiment design}
+The experiment will consist of an interview and two assignment. In only one of the two assignments, the participant is allowed to use the protocol. This set-up means that the experiment is a within-subject design. The most significant benefits of this type of experimental design are that it does not require a large pool of participants. A within-subject design can also help to reduce errors associated with individual differences. A major drawback which should be taken into account during the experiment is that the result of the first assignment may influence the result of the second assignment. A problem which is known as the carryover effect. This effect is mitigated by counter-balancing the participants. Thus some are allowed to communicate using the protocol during the first assignment, others during the second.
+
+Thereby are variables measured on different levels. The same set of questions is used for this both times. The questionnaire uses both questions with a linear scale and open questions. The linear scale questions are on an ordinal level, it is not possible to do calculations, but making a histogram of the results will show the tendency of the participants. The level of measurement for the open questions is at a nominal level. Conclusions are drawn based on the grouping of questions and answers per subject. 
 
 \subsection{Experiment task}
 \label{ssec:experiment-task}
-The participant will act as an \acf{OoW} in different situations. The duties of the \ac{OoW} are to keep watch and navigate the vessel. While keeping a watch on the bridge he is the representative of the ship’s master and has the total responsibility of safe and smooth navigation of the ship. This means he has to follow a proper navigation plan to avoid any kind of collision according to COLREGs. Thereby is he aware of ship’s speed, turning circles, and ship handling characteristics. He also communicates with other vessels when that is necessary.
+The participant will act as an \acf{OoW} in two situations. The duties of the \ac{OoW} are to keep watch and navigate the vessel. He is the representative of the ship’s master while keeping watch on the bridge, and has the total responsibility for safe navigation. This responsibility means that he has to follow a proper navigation plan to avoid any collision according to COLREGs. He is thereby aware of ship’s speed, turning circles, and ship handling characteristics. He also communicates with other vessels when that is necessary.
 
-More specific will he sail a vessel in different scenario's. It depends on the scenario how and if the participant can communicate with other vessels. He will do this by directing a vessel on a 2D-map as shown in the simulation environment. He will have access to the same information as any other bridge, also presented in a similar way, except for the visual 3D-view. But this lack of information is compensated by more reliability for the ECDIS and Radar.
-Within the experiment, tests will be done for different situations and scenarios. The resulting strategies are listed below.
+More specific will he sail a vessel in different scenario's. To answer the research question for this chapter, will there be two cases. One in which the participant can communicate using the designed protocol, in the other scenario he is not able to communicate. During each scenario will he direct a vessel on a 2D-map, as shown in the simulation environment.
+Within the experiment, tests will be done for different situations and scenarios. Each participant is thus able to communicate in either situation 1 or situation 2. The resulting strategies are listed below.
 \begin{multicols}{2}
-\begin{enumerate}
-	\item Crossing situation at North-Sea
-	\begin{enumerate}[label=(\Alph*)]
-		\item Follow COLREGs strictly
-		\item Cross in front
-		\item Cross at the back
+	\begin{enumerate}
+		\item Crossing situation at North-Sea
+		\begin{enumerate}[label=(\Alph*)]
+			\item Follow COLREGs strictly
+			\item Cross in front
+			\item Cross at the back
+		\end{enumerate}
+		\item Entering Maasgeul from Maasvlakte
+		\begin{enumerate}[label=(\Alph*)]
+			\item Cross in front
+			\item Cross at the back
+			\item Pass without crossing
+		\end{enumerate}
 	\end{enumerate}
-	\item Entering Maasgeul from Maasvlakte
-	\begin{enumerate}[label=(\Alph*)]
-		\item Cross in front
-		\item Cross at the back
-		\item Pass without crossing
-	\end{enumerate}
-\end{enumerate}
 \end{multicols}
 
 \newpage
 
 \subsubsection{Crossing situation at North-Sea}
+\label{ssec:crossing-north-sea}
 The first situation for the experiment is a crossing situation based on the accident between MV ARTADI and MV ST-GERMAIN (appendix~\ref{sec:artadiVSst-germain}). Where both ships followed COLREGs, but due to a lack of communication and wrong presumptions on the intentions, did the accident occur.
 
-The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 400-meter container vessel (EMMA MAERSK). This situation is shown in figure~\ref{fig:crossing-dover}. The relevant information for these ships is given in table~\ref{tab:info-dover}.
+The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 400-meter container vessel (EMMA MAERSK). Figure~\ref{fig:crossing-dover} shows the situation. The relevant information for these ships is given in table~\ref{tab:info-dover}.
 
-For the situation when operating the Astrorunner while crossing the Gulf Valour at the North-Sea, an example of the communication is given below:
+An example is given below for the communication in the situation when operating the ASTRORUNNER while crossing the GULF VALOUR at the North-Sea:
 \begin{spacing}{1}
 	\begin{itemize}
 		\item Call
@@ -131,7 +118,7 @@ For the situation when operating the Astrorunner while crossing the Gulf Valour 
 		\item Response
 		\begin{quote}
 			Astrorunner. This is Gulf Valour \\
-			Question received. We will alter course to give way and pass 1 nautical mile astern. Over.
+			Question received. We will alter course to give way and pass one nautical mile astern. Over.
 		\end{quote}
 		\item Close communication.
 		\begin{quote}
@@ -148,30 +135,30 @@ For the situation when operating the Astrorunner while crossing the Gulf Valour 
 	\centering
 	\begin{tabular}{l | r r r l}
 		\toprule
-		 & GULF VALOUR & ASTRORUNNER & EMMA MAERSK & \\
+		& GULF VALOUR & ASTRORUNNER & EMMA MAERSK & \\
 		\midrule
-		Length 	& 249.0	& 141.6	&  397.7 & m \\
-		Width 	& 48.0	& 20.6	&  56.4 & m  \\
-		Draft 	& 13.2	& 6.5	&  12.6 & m  \\
+		Length     & 249.0    & 141.6    &  397.7 & m \\
+		Width     & 48.0    & 20.6    &  56.4 & m  \\
+		Draft     & 13.2    & 6.5    &  12.6 & m  \\
 		Deadweight & 114900 & 9543 & 156907 & m \\
-		Type 	& Oil tanker	& General cargo vessel	&  Container vessel & \\
+		Type     & Oil tanker    & General cargo vessel    &  Container vessel & \\
 		\midrule
-		Position& [-1400, -1400]	& [3250, 0]	&  [400, 2400] & m \\
-		Speed 	& 16.0	& 15.2	&  12.0 & knots\\
-		Course 	& 45	& 278	&  225 & degrees \\
+		Position& [-1400, -1400]    & [3250, 0]    &  [400, 2400] & m \\
+		Speed     & 16.0    & 15.2    &  12.0 & knots\\
+		Course     & 45    & 278    &  225 & degrees \\
 		Previous port & Singapore & Zeebrugge & Rotterdam \\
-		Next port & Rotterdam 	& Dover	& Hongkong & \\
-		Direction & North-east	& West	& South-west & \\
+		Next port & Rotterdam     & Dover    & Hongkong & \\
+		Direction & North-east    & West    & South-west & \\
 		\bottomrule
 	\end{tabular}
-	\captionof{table}{Relevant information crossing at North-Sea}
+	\captionof{table}{Relevant information for crossing situation at North-Sea}
 	\label{tab:info-dover}
 \end{table}
 
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=\textwidth]{situation-dover.png}
-	\caption{Situation sketch crossing situation North-Sea}
+	\caption{Situation sketch for crossing situation North-Sea}
 	\label{fig:crossing-dover}
 \end{figure}
 
@@ -180,9 +167,9 @@ For the situation when operating the Astrorunner while crossing the Gulf Valour 
 \subsubsection{Entering Maasgeul from Maasvlakte}
 The second situation is a common situation at the port of Rotterdam. The situation is based on the description by Pilots from 'Nederlands Loodswezen'. The big challenge here is that ships are accelerating and decelerating. Therefore do traffic controllers notify ships about others intentions. But in the case as presented does this not always happen, or too late.
 
-The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 140-meter Ro-Ro vessel (ANGLIA SEAWAYS). This situation is shown in figure~\ref{fig:entering-maasgeul}. The relevant information for these ships is given in table~\ref{tab:info-Rotterdam}.
+The traffic in this simulation consists of three ships: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 140-meter Ro-Ro vessel (ANGLIA SEAWAYS). Figure~\ref{fig:entering-maasgeul} shows the situation. The relevant information for these ships is given in table~\ref{tab:info-Rotterdam}.
 
-For the situation where the Gulf Valour is leaving the port of Rotterdam and has to cross or pass the Astrorunner the following conversation is likely:
+The following conversation is likely for the situation where the GULF VALOUR is leaving the port of Rotterdam and has to cross or pass the ASTRORUNNER:
 \begin{spacing}{1}
 	\begin{itemize}
 		\item Call
@@ -206,7 +193,7 @@ For the situation where the Gulf Valour is leaving the port of Rotterdam and has
 		\item Message
 		\begin{quote}
 			Astrorunner. This is Gulf Valour. \\
-			Instruction. You are stand-on vessel and should keep course and speed. Over.
+			Instruction. You are the stand-on vessel and should keep course and speed. Over.
 		\end{quote}
 		\item Response
 		\begin{quote}
@@ -230,15 +217,15 @@ For the situation where the Gulf Valour is leaving the port of Rotterdam and has
 		\toprule
 		& GULF VALOUR & ASTRORUNNER & ANGLIA SEAWAYS & \\
 		\midrule
-		Length 	& 249.0	& 141.6	&  142.4 & m \\
-		Width 	& 48.0	& 20.6	&  23.0 & m  \\
-		Draft 	& 13.2	& 6.5	&  5.0 & m  \\
+		Length     & 249.0    & 141.6    &  142.4 & m \\
+		Width     & 48.0    & 20.6    &  23.0 & m  \\
+		Draft     & 13.2    & 6.5    &  5.0 & m  \\
 		Deadweight & 114900 & 9543 & 4650 & m \\
-		Type 	& Oil tanker	& General cargo vessel	&  Container vessel & \\
+		Type     & Oil tanker    & General cargo vessel    &  Container vessel & \\
 		\midrule
-		Position& [-1372, -1377]	& [-3090, 1395]	&  [3000, -550] & m \\
-		Speed 	& 7.8	& 13.4	&  10.3 & knots\\
-		Course 	& 98	& 114	&  291 & degrees \\
+		Position& [-1372, -1377]    & [-3090, 1395]    &  [3000, -550] & m \\
+		Speed     & 7.8    & 13.4    &  10.3 & knots\\
+		Course     & 98    & 114    &  291 & degrees \\
 		Origin & Princess Arianehaven & North-Sea & Vulcaanhaven \\
 		Destination & North-Sea & Beneluxhaven & North-Sea \\
 		Direction & Leaving & Entering & Leaving & \\
@@ -258,140 +245,194 @@ For the situation where the Gulf Valour is leaving the port of Rotterdam and has
 
 \clearpage
 
+\subsection{Dependent variables}
+During the experiment, different variables will be evaluated. These are based on the human factor measures, as described in section \ref{sec:human-factors}. To answer research questions during the experiment, will a combination of both quantitative and qualitative measurements take place. Thus combining numerical values with non-numerical arguments. The measurements are done during the experiment via an interview and observations.
+Using the variables can be concluded if the system acted as expected and will result in safe navigation when using existing protocols. In the next section will these variables be linked to questions asked during the experiment, using the symbols as shown behind the variable name. The dependent variables within the experiment are:
+
+\begin{description}
+	\item [Performance] \performance Evaluation if the participant operated safely. Thus did he safely navigate the vessel by making the right decisions, which means that the participant followed the applicable \ac{COLREGs} and showed good seamanship. The resulting \acf{CPA} is a good measure for this. Also, the reasoning and situation recognition which results in choosing the right strategy is a measure. Questions which will be answered are:
+	\begin{enumerate}
+		\item Does the participant follow \ac{COLREGs}?
+		\item Does the participant stay well clear of other ships?
+		\item Does the participant communicate using \ac{SMCP}?
+	\end{enumerate}
+	
+	\item [Trust] \trust The system does not act only out of self-interest but to acquire a pareto-optimal solution. The participants must have a feeling of confidence that unmanned vessels operate as they expect. Therefore they must be confident that the system works as it is supposed to do. In later stages, this will also be supported by evaluations of reputable institutions. \cite{Ozawa2013}.
+	For now, the survey is leading here, where questions will be asked on the participant's trust in autonomous systems, their trust in SMCP and how they thought the communication went during the experiment. Questions which will be answered are:
+	\begin{enumerate}
+		\item Is the participant confident that the system works?
+		\item What worries a participant when using the system?
+		\item How well does a participant trust unmanned vessels compared to manned vessels?
+	\end{enumerate}
+	
+	\item [Situation awareness] \SA The perception of environmental elements and events with respect to time or space, the comprehension of their meaning, and the projection of their status \cite{Naderpour2016}. The situational awareness is measured using an observer rating system, showing if participants have noticed changes in course, the colour of different vessels and relative speed. Questions which will be answered are:
+	\begin{enumerate}
+		\item Does the participant predict future states correctly?
+		\item Is the participant aware of other vessels (e.g. speed)?
+		\item Has the participant free cognitive capacity (e.g. colour)?
+	\end{enumerate}
+	
+	\item [Satisfaction] \satisfaction The participant should like to use the protocol. This is measured by questioning them on the effectiveness of \ac{SMCP}, observe their usage of the protocol during the experiment and their reaction to vessels using the protocol. Questions which will be answered are:
+	\begin{enumerate}
+		\item Does the participant enjoy using \ac{SMCP}?
+		\item Does the protocol change the behaviour of participants?
+	\end{enumerate}
+\end{description}
+
+During the experiment these questions are answered, some are asked directly to the participants. Other answers are based on the behaviour of the participants. The answer to all of these question is on a nominal level, as these are all "Yes" or "No" questions. However, the results of the questionnaire are on an ordinal level, as these answers explain the "why". For situational awareness and performance are also higher level measurements used. Such as the metrics \ac{CPA} and runtime, which are on a ratio level. Estimating the speed of vessels is on an ordinal scale measured. Statistics for those metrics will however not give more insights in the dependent variables, as there are too many factors influencing these results, such as the chosen strategy and accepted risk.
+
 \subsection{Experiment procedure}
 To execute the experiment. Several steps are taken together with the \acf{OoW}:
 \begin{enumerate}
 	\item Explain how the OoW can take actions, such as steering, change speed, set way-points or engage in communication.
 	\item Ask general questions on attitude and basic information.
-	\item Explain situation to OoW in a similar way, to a common watch hand-over. Only discussing relevant issues for navigational duties.
+	\item Explain the situation to OoW in a similar way, to a usual watch hand-over. Only discussing relevant issues for navigational duties.r
 	\item Start simulation.
 	\item Depending on the simulation, let autonomous ship take actions or wait for the OoW to engage in communication.
 	\item End simulation.
-	\item Question OoW why decisions were made.
+	\item Question OoW why he made decisions.
 	\item Evaluate the simulation.
 	\item Repeat step 3-8 for more situations.
-	\item Question OoW about advantages and challenges of protocol.
+	\item Question OoW about advantages and challenges of the protocol.
 \end{enumerate}
 The answers to the questions are collected using a Google form. This form includes the same questions as described below. These questions are yes/no, a yes to no scale of four steps or answers can be selected in a list. Often followed by an open question to explain the answers in more detail. 
+All questions aim to gather information for one of the dependent variables, get to know the participant or gather expert opinions and feedback on the designed protocol. Using symbols behind each question shows what this aim is.
+\begin{multicols}{2}
+	\begin{itemize}
+		\item[$\clubsuit$] Performance
+		\item[$\diamondsuit$] Trust
+		\item[$\odot$] Get to know the participant
+		\item[$\spadesuit$] Situation awareness
+		\item[$\heartsuit$] Satisfaction
+		\item[$\star$] Protocol
+	\end{itemize}
+\end{multicols}
+
+
 
 \subsubsection{Explanation and basic information (1, 2)}
-The participant is not explicitly informed about the exact purpose of the research. The participant will however get a short introduction on how to use the simulation environment. This includes the commands it can give as an officer of watch. The environment is easy to use, as action are similar to the ones currently happening at the bridge. Thereby is some information about the participant acquired, followed by some general questions relevant to the protocol, such as there knowledge on \acf{SMCP}.
+The participant is not explicitly informed about the exact purpose of the research. The participant will, however, get a short introduction on how to use the simulation environment. This introduction includes the commands it can give as an officer of watch. The environment is easy to use, as action are similar to the ones currently happening at the bridge. Thereby is some information about the participant acquired, followed by some general questions relevant to the protocol, such as there knowledge of \acf{SMCP}.
 \begin{spacing}{1}
-\begin{itemize}
-	\item Which certificates do you have?
-	\item What is you experience as captain and mate?
-	\item Which type of vessels did you operate?
-	\item What do you expect from the developments towards autonomous shipping?
-	\item What do you see as the biggest challenge for introducing autonomous and unmanned vessels?
-	\item Do you expect to trust autonomous ships more?
-	\item Do you want to know if a ship is unmanned?
-	\item Are ship's horns still used to communicate intended manoeuvers?
-	\item What are the most important forms of communication?
-	\item Do you still use \ac{SMCP} consciously?
-	\item How does a standard conversation look like, according to the \ac{SMCP}?
-	\item Is the protocol around \ac{SMCP} easy to use?
-\end{itemize}
+	\begin{itemize}
+		\item Which certificates do you have? \participant
+		\item What is your experience as captain and mate? \participant
+		\item Which type of vessels did you operate? \participant
+		\item What do you expect from the developments towards autonomous shipping? \participant \protocol
+		\item What do you see as the biggest challenge for introducing autonomous and unmanned vessels? \participant \protocol
+		\item Do you expect to trust autonomous ships more? \participant \trust
+		\item Do you want to know if a ship is unmanned? \trust
+		\item Are ship's horns still used to communicate intended manoeuvers? \protocol
+		\item What are the most important forms of communication? \protocol
+		\item Do you still use \ac{SMCP} consciously? \participant
+		\item How does a standard conversation look like, according to the \ac{SMCP}? \participant \protocol
+		\item Is the protocol around \ac{SMCP} easy to use? \protocol
+	\end{itemize}
 \end{spacing}
 
 \subsubsection{Situations and scenarios (3, 4, 5, 6)}
 The next steps are repeated several times for the different situations. The communication in that situations should be about the intentions of the other vessel. When using the designed protocol, the conversation should be similar to the examples given in section~\ref{ssec:experiment-task}. It depends on the experiment order, in which situation it is possible to communicate:
 \begin{spacing}{1}
-\begin{enumerate}
-	\item Crossing situation at North-Sea
-	\item Leaving port of Rotterdam via Maasgeul
-\end{enumerate}
+	\begin{enumerate}
+		\item Crossing situation at North-Sea
+		\item Leaving port of Rotterdam via Maasgeul
+	\end{enumerate}
 \end{spacing}
 
 \subsubsection{Relevant questions for situation (7, 8, 9)}
-To gain insight into the quality of the experiment and effectiveness of the protocol, different questions will be asked. Thereby is a link made to the decision process as discussed in section~\ref{ch:model}:
+Different questions will be asked, to gain insight into the quality of the experiment and the effectiveness of the protocol. Thereby is a link made to the decision process as discussed in section~\ref{ch:model}:
 \begin{spacing}{1}
-\begin{itemize}
-	\item What type of situation is this?
-	\item Which criteria are relevant?
-	\item Which strategy did you choose?
-	\item Which actions were taken?
-	\item What was the speed of different vessels?
-	\item How often did the ships change their course?
-	\item Which color did every ship have?
-	\item Did other ships behave as expected?
-	\item Were you in control over the situation?
-	\item Did you miss any information to come-up with the right strategy?
-	\item Was it necessary to communicate?
-	\item If there was communication, was this as you expected?
-	\item Would you have acted differently is you knew there was a human officer of watch?
-\end{itemize}
+	\begin{itemize}
+		\item What type of situation is this? \SA
+		\item Which criteria are relevant? \performance
+		\item Which strategy did you choose? \performance
+		\item Which actions were taken? \performance
+		\item What was the speed of different vessels? \SA
+		\item How often did the ships change their course? \SA
+		\item Which colour did every ship have? \SA
+		\item Did other ships behave as expected? \SA \performance
+		\item Were you in control over the situation? \performance \trust \satisfaction
+		\item Did you miss any information to come up with the right strategy? \protocol \satisfaction
+		\item Was it necessary to communicate? \SA \trust
+		\item If there was communication, was this as you expected? \satisfaction
+		\item Would you act differently, if you knew there was a human officer of watch? \trust \satisfaction
+	\end{itemize}
 \end{spacing}
 
 \subsubsection{General questions on protocol (10)}
-After running the different situations an interview is held. This part of the experiment is intended to answer the following questions from the participant perspective and explain the purpose of this research:
+After running the different situations, an interview is held. This part of the experiment is intended to answer the following questions from the participant perspective and explain the purpose of this research:
 \begin{spacing}{1}
-\begin{itemize}
-	\item Is the protocol around \ac{SMCP} easy to learn?
-	\item Is the protocol around \ac{SMCP} a complete protocol?
-	\item Do you have any other commands on \ac{SMCP}?
-\end{itemize}
+	\begin{itemize}
+		\item Is the protocol around \ac{SMCP} easy to learn? \protocol
+		\item Is the protocol around \ac{SMCP} a complete protocol? \protocol
+		\item Do you have any other comments on \ac{SMCP}? \protocol
+	\end{itemize}
 \end{spacing}
 
 \section{Evaluation results}
-The evaluation results describe the outcomes of the test. Because of the iterative and rapid research cycles, the evaluation does not necessarily include all requirements/claims/use cases available in the system specification. Oftentimes the evaluation investigates a subset of the system specification. Therefore, it is often useful to also specify what claims were tested, with the use of what evaluation method, and what artefact was used during the evaluation (i.e. which requirements, technology, interaction design patterns were included in the artefact).
+The evaluation results describe the outcomes of the test. Because of the iterative and rapid research cycles, the evaluation does not necessarily include all requirements/claims/use cases available in the system specification. Often the evaluation investigates a subset of the system specification. Therefore, it is often useful to also specify what claims were tested, with the use of what evaluation method, and what artefact was used during the evaluation (i.e. which requirements, technology, and interaction design patterns were included in the artefact).
 
-The results of the experiment are evaluated in a systematic way for the 16 responses. First, a summary is made of the reactions to the Google form. This is done using both a statistical analysis on the ordinal level, and classification of answers on the nominal level. Dependent variables discussed are discussed, using this summary.
+The results of the experiment are evaluated in a systematic way for the 16 respondents. First, a summary is made of the reactions to the Google form. This summary is made using both a statistical analysis on the ordinal level and classification of answers on the nominal level. Dependent variables discussed are discussed, using this summary. Six of the participants were only able to communicate in the crossing situation at the North Sea. Ten participants had the possibility of communication only in the second situation when leaving the port of Rotterdam via the Maasgeul.
 
 \subsection{Observations during simulations}
-Situational awareness is tested by questioning participants about the relative start speed, color and course changes. The participants focused at possible future risks. Speed estimations did they often base on normal behavior for different ship types, instead of taking the speed vector into account. 
+Situational awareness is tested by questioning participants about the relative start speed, colour and course changes. The participants focused on possible future risks. Speed estimations did they often base on normal behaviour for different ship types, instead of taking the speed vector into account. 
 
-The first case is the crossing situation at the North-Sea. The situation was implemented in such a way, that the container ship was the slowest, and tanker the fastest. As can be seen in figure~\ref{fig:speed-estimation-dover} did the participants think the opposite. This can be explained that a large container ship (Emma Maersk) usually go the fastest, the smaller general cargo vessel already a bit slower (Astrorunner), and the tanker (Gulf Valour) the slowest. Thus opposite to how the scenario was set-up.
+The first case is the crossing situation at the North-Sea. The situation was implemented in such a way, that the container ship was the slowest, and tanker the fastest. As can be seen in figure~\ref{fig:speed-estimation-dover} did the participants think the opposite, which can be explained by the usual speed of different vessels. A large container ship (Emma Maersk) usually goes the fastest, the smaller general cargo vessel a bit slower (Astrorunner), and the tanker (Gulf Valour) is often the slowest. Thus opposite to how the scenario was set-up. Between the two test-group, protocol and no-communication was there no difference.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.8\textwidth]{speed-estimation-dover.png}
-	\caption{Estimation of relative start speed from memory for North Sea}
+	\caption{Estimation of relative start speed at North Sea (protocol vs no-communication)}
 	\label{fig:speed-estimation-dover}
 \end{figure}
 
 Wrong estimations could also be the result of the simulation environment. But the estimates of the participants are opposite to the vertical-horizontal illusion when considering the speed vectors as measurement \cite{Prinzmetal1993}. Thereby did participants estimate the speed correctly, when they were able to see the speed vectors and were questioned about the speed during the experiment, instead of making an estimation based on memory.
 
-The relative start speed in the second situation when leaving the port of Rotterdam via the Maasgeul, had results as could expected. This is shown in figure~\ref{fig:speed-estimation-maasgeul}. Where most participant did estimate the relative speed correctly.
+The relative start speed in the second situation when leaving the port of Rotterdam via the Maasgeul, had results as could be expected. Figure~\ref{fig:speed-estimation-maasgeul} shows this, where most participants did estimate the relative speed correctly. Also, for this case, was there no difference if a participant was able to use the protocol.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.8\textwidth]{speed-estimation-maasgeul.png}
-	\caption{Estimation of relative start speed from memory for entering Maasgeul}
+	\caption{Estimation of relative start speed for Maasgeul (protocol vs no-communication)}
 	\label{fig:speed-estimation-maasgeul}
 \end{figure}
 
-The estimation for the number of course changes went a lot better for the first situation. The Emma Maersk did not alter course and this was correctly observed. Just as the single course change for the Astrorunner to ensure a perpendicular passing of the traffic separation scheme. The course changes of the Gulf Valour depended on the situation. If the participant controlled the Gulf Valour, they said that two course changes were made: Alter course to starboard and return to original course. While in the case where the participant operated from the Astrorunner, was the last alternation not counted for. Thus did the participants count only one course change for the Gulf Valour. This can be explained by the attention of the participant. When the Gulf Valour alters course for the second time, is the Astrorunner close to the Emma Maersk, the participant pays therefor attention to the Emma Maersk and not the Gulf Valour.
+The estimation for the number of course changes went a lot better for the first situation. The Emma Maersk did not alter course, which participants correctly observed, just as the single course change for the Astrorunner to ensure a perpendicular passing of the traffic separation scheme. The course changes of the Gulf Valour depended on the situation. If the participant controlled the Gulf Valour, they said that the Gulf Valour made two course-changes: First alter course to starboard, and second return to original course. While in the case where the participant operated from the Astrorunner, did they often not count the last alteration. Thus did the participants count only one course-change for the Gulf Valour. The attention of the participants can explain this observation. When the Gulf Valour alters course for the second time, the Astrorunner is close to the Emma Maersk, and the participant pays therefor attention to the Emma Maersk and not the Gulf Valour.
 
-In the second situation are the course changes much more clear, as two vessels go straight (Astrorunner and Anglia Seaways), while the Gulf Valour make one clear turn. It depends on the exact actions the participant took how many course changes were made. But there were no wrong answers given at this point. 
+In the second situation are the course changes much more clear, as two vessels go straight (Astrorunner and Anglia Seaways), while the Gulf Valour make one clear turn. It depends on the exact actions the participant took, how many course changes the vessel made. But there were no wrong answers given. 
 Being able to communicate, did affect the strategy and thereby actions, but not the ability to register the right amount of course changes.
 
-The color is something which does not have any affect on the decision, it is however information which shows if they remembered irrelevant details about the simulation. This is a measure for the free cognitive capacity, as more irrelevant details are remembered when a situation is less complex, also known as inattentional blindness \cite{Most2000}. This difference can be seen between the situation when crossing the North Sea, and entering the Maasgeul. Figure~\ref{fig:color-dover} and figure~\ref{fig:color-maasgeul} show that more participants have the color correct in the crossing situation at the North Sea, which is also the less complex situation when it comes to making the right decision. 
+The colour is something which does not have any effect on the decision. It is, however, information which shows if the participants remembered irrelevant details about the simulation. These irrelevant details are a measure for the free cognitive capacity, as participants remember more of these when the situation is less complex, also known as inattentional blindness \cite{Most2000}. This difference can be seen between the situation when crossing the North Sea, and entering the Maasgeul. Figure~\ref{fig:color-dover} and figure~\ref{fig:color-maasgeul} show that more participants have the colour correct in the crossing situation at the North Sea, which is also the less complex situation when it comes to making the right decision.
 
-\begin{figure}[h]
+\begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=.8\textwidth]{color-Dover.png}
-	\caption{Response to color of vessels in situation when crossing at the North Sea}
-	\label{fig:color-dover}
+	\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{color-Dover.png}
+		\caption{Situation when crossing at the North Sea}
+		\label{fig:color-dover}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.8\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{color-Maasgeul.png}
+		\caption{Situation when entering Maasgeul}
+		\label{fig:color-maasgeul}
+	\end{subfigure}
+	
+	\caption{Response to color of vessels for protocol vs no-communication}
+	\label{fig:experiment-color} 
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=.8\textwidth]{color-Maasgeul.png}
-	\caption{Response to color of vessels in situation when entering Maasgeul}
-	\label{fig:color-maasgeul}
-\end{figure}
+After each simulation did the participants also answer questions on actions of other vessels, communication and missing information. The results of this are shown in figure~\ref{fig:sq-dover} and figure~\ref{fig:sq-maasgeul}. It should be noted that the experiment was not fully counter-balanced and there was a limited number of participants, which means there is a high margin of error. Therefore are conclusions drawn only when there is a significant difference between the results for protocol vs no-communication. 
 
-After each simulation did the participants also answer questions on actions of other vessels, communication and missing information. The results of this are shown in figure~\ref{fig:sq-dover} and figure~\ref{fig:sq-maasgeul}. It should be noted that the experiment was not fully counter-balanced, and due to the limited number of participants is there a high margin of error. Therefor are conclusions drawn only when there is a big difference between the results for protocol vs no-communication. 
+Interesting is that 40\% of the participants would have acted differently when no communication was possible. Their explanation for this is that they could not anticipate to other vessels, thus slowed down, hoping that they could deduce from the actions of the other ships what their plans were. If the protocol works well, this is not needed. The other participants said they followed the \ac{COLREGs}, and expect unmanned vessels to do the same. This reasoning means that the participants would act the same when the other vessel was manned.
 
-Interesting is that 40\% of the participants would have acted differently when no communication was possible. Their explanation for this is that they could not anticipate to other vessels, thus slowed down, hoping that they could deduce from the actions of the other vessels what their plans were. If the protocol works well, this is not needed. The other participants said they followed the \ac{COLREGs}, and expect unmanned vessels to do the same, thus would the participants act the same when the other vessel was manned.
+A conclusion which was expected is that the participants would miss information when they were not able to communicate using the protocol. In the second situation when entering the Maasgeul, this is the case. However, most participants did indicate they were also missing information on the \ac{CPA} during the experiment as is usually shown on the \ac{ARPA}. With the first situation at the North Sea did more than half of the participants think it was not necessary to communicate. Therefore did a similar amount of participants miss the same information in both cases (protocol vs no-communication).
 
-A conclusion which was expected is that the participants would miss information when they were not able to communicate using the protocol. This is the case in the second situation when entering the Maasgeul. However did most participants indicate they were also missing information on the \ac{CPA}. In the first situation at the North Sea did more than half of the participants think it was not necessary to communicate. Therefore did a similar amount of participants miss the same information in both cases (protocol vs no-communication).
+Also did the type of ships participants have operated, influence their behaviour, as operators who used to sail on small vessels did often take more risk and expected higher accelerations and manoeuvrability. While the operators who used to operate large vessels, such as tankers and cruise ships, prefered to wait for other ships to act first if they were missing information.
 
-Also did the type of ships participants have operated, influence their behavior. As operators who used to sail on small vessels did often take more risk and expected higher accelerations and manoeuvrability. While the operators who used to be operate large vessels, such as tankers and cruise ships, rather waited for other ships to act first. If they were missing information.
+In case the participants used the protocol, the communication was in both situations as expected for most of them. This shows that seafarers expect to be able to use natural language variation on \ac{SMCP}.
 
-In case the participants used the protocol, the communication was in both situations as expected for most of them. This shows that the natural language variation on \ac{SMCP} as proposed is the communication other seafarers will expect.
-
-The participants are questioned about their trust in autonomous systems, in all cases they want to know if a ship is unmanned. So that they can anticipate to it. They gave as example that it is likely that an autonomous vessel will follow COLREGs more strict than ships operated by an Filipino crew. But in an emergency situation, such as failure in the engine room, do the participants trust autonomous ships less. Therefor there was not a definitive answer if autonomous vessels will be trusted more or less, compared to manned vessels.
+The participants are questioned about their trust in autonomous systems, in all cases, they want to know if a ship is unmanned, so that they can anticipate to it. They gave as an example that it is likely that an autonomous vessel will follow COLREGs more strict, than ships operated by a Filipino crew. But in emergencies, such as failure in the engine room, do the participants trust autonomous ships less. Therefore there was not a definitive answer if autonomous vessels will be trusted more or less, compared to manned vessels.
 
 \begin{figure}[p]
 	\centering
@@ -409,19 +450,19 @@ The participants are questioned about their trust in autonomous systems, in all 
 
 
 \subsection{Evaluation of the protocol}
-The questionaire tries to validate design choices for the protocol. A design choice which is based on COLREGs, but unknown if it works in practice is the usage of the ship's horn to communicate the intended manoeuvrer. All participants said that the ship's horn is only used in two situation. When a ship wants to get attention from another ship, in case other means of communication do not work. Or in case of fog, is the fog horn sounded every few minutes to make other ships alert of presences \cite{IMO1972}.
+The questionnaire tries to validate design choices for the protocol. A design choice which is based on COLREGs, but unknown if it works in practice is the usage of the ship's horn to communicate the intended manoeuvrer. All participants said that ships only use the ship's horn in two situations. When a ship wants to get attention from another ship, in case other means of communication do not work. Or in case of fog, then is the fog horn sounded every few minutes to make other ships alert of presences \cite{IMO1972}.
 
-The most important form of communication is the VHF radio. Although new systems are also used more often, such as \ac{AIS} text messaging and INMARSAT-C. INMARSAT C provides two-way data and messaging communication services to and from virtually anywhere in the world. Which improves the ship-to-ship communication, the disadvantage is that surrounding vessels are not able to listen to the conversation, and thus will not receive the shared information.
+The most important form of communication is the VHF radio, although new systems are used more often, such as \ac{AIS} text messaging and INMARSAT-C. INMARSAT C provides two-way data and messaging communication services to and from virtually anywhere in the world. Which improves the ship-to-ship communication, the disadvantage is that surrounding vessels are not able to listen to the conversation and thus will not receive the shared information.
 
-According to the participants are conversations via \ac{VHF} based on \ac{SMCP}, but do not follow the protocol strictly. A few key characteristics are described by the participants:
+According to the participants are conversations via \ac{VHF} based on \ac{SMCP}, but do not follow the protocol strictly. The participants describe a few key characteristics:
 \begin{itemize}
-	\item Start of every message, has the purpose to get attention, by calling specific vessel: \\ "($<name~other~vessel>$, $<name~other~vessel>$. This is $<name~own~vessel>$)"
+	\item Start of every message has the purpose to get attention, by calling specific vessel: \\ "($<name~other~vessel>$, $<name~other~vessel>$. This is $<name~own~vessel>$)"
 	\item Common practice is to use the words as defined by \ac{SMCP} (alter course, instead of change course). The sentences are often not used as described by \ac{SMCP}.
 	\item Marker words are not used.
 	\item When responding, the previous message is repeated.
 	\item Message is ended with over, conversation with over and out.
 \end{itemize}
-In general do they state that the protocol is easy to use, easy to learn and complete. This is also shown in figure~\ref{fig:SMCP-experiment-result}. The drawback is that the protocol covers too much, therefor people can't always remember how they should follow the protocol. 
+In general, they do state that the protocol is easy to use, easy to learn and complete. as figure~\ref{fig:SMCP-experiment-result} shows. The drawback is that the protocol covers too much. Therefore people can't always remember how they should follow the protocol and make variations to it. 
 
 \begin{figure}[h]
 	\centering
@@ -430,20 +471,20 @@ In general do they state that the protocol is easy to use, easy to learn and com
 	\label{fig:SMCP-experiment-result}
 \end{figure}
 
-Less relevant for \ac{SMCP}, but more for the final design of the protocol is the knowledge of English. As the level of and pronunciation of English is not at the right level for all officers, certainly for example with Filipino, Indian or Pakistani crew. This means that the voice recognitzion should be tested for these accents. It is also important to know the names of different systems (e.g. LORAN, DSC, etc.) and places (e.g. camping, seal beach, etc.), which vary per ship and area and can not always be found on maps.
+Less relevant for \ac{SMCP}, but more for the final design of the protocol is the knowledge of English. As the level of and pronunciation of English is not at the right level for all officers, certainly for example with Filipino, Indian or Pakistani crew. This problem means that voice recognition should be tested for a variety of accents. It is also essential to know the names of different systems (e.g. LORAN, DSC, etc.) and places (e.g. camping, seal beach, etc.), which vary per ship and area and cannot always be found on maps.
 
-Thereby was the identification of vessels hard before the introduction of AIS. This should be considered during the development of such a protocol. As it should also be possible to identify ships when the \ac{AIS} fails, this means it should be possible to identify ships without knowing the call-signs and name via \ac{AIS}.
+Thereby was the identification of vessels hard before the introduction of AIS, which should be considered during the development of such a protocol. As it should also be possible to identify ships when the \ac{AIS} fails, this means it should be possible to identify vessels without knowing the call-signs and name via \ac{AIS}.
 
-Due to the speed and starting point of the simulation, did the operators have to decide quickly if they wanted to communicate. Therefor was commented by some of them, that they would have liked to communicate earlier, than the moment the simulation started. So they would have had enough time in case the other vessel did not respond immediately. Although the designed protocol and the current usage of \ac{VHF} differ in the way how strict SMCP is used. Does it take the same amount of steps, and a similar amount of words. Therefor it is not expected that the conversations will take longer, if the voice recognition works correctly.
+Due to the speed and starting point of the simulation, the operators did have to decide if they wanted to communicate quickly. Therefore was commented by some of them, that they would have liked to communicate earlier, than the moment the simulation started. So they would have had enough time in case the other vessel did not respond immediately, although the designed protocol and the current usage of \ac{VHF} differ in the way how operators should use SMCP strictly. Does it take the same amount of steps, and a similar amount of words. Therefore it is not expected that the conversations will take longer if the voice recognition works correctly.
 
 \section{Lessons learned}
-The aim of the experiment is to determine if the designed protocol will ensure safe navigation and more situational awareness, when manned and unmanned vessels encounter each other. This is can be answered by looking into different measures on how the participants and protocol performed during the experiment. This shows what should be taken into account in the next iterative steps in developing the protocol.
+The experiment aims to determine if the designed protocol will ensure safe navigation and more situational awareness when manned and unmanned vessels encounter each other. This can be answered by looking into different measures on how the participants and protocol performed during the experiment, which shows what should be taken into account in the next iterative steps while developing the protocol.
 
-The \emph{performance} is a simple evaluation if the participant followed regulations such as \ac{COLREGs}. Thus did he safely navigate the vessel by making the right decisions. None of the cases did result in an accident, there were however some close encounters. There was no clear correlation between the ability to communicate and the \acf{CPA}. As some participants took more risk, when the intention of another vessel was known. The protocol did however help to acquire the right information to chose a strategy earlier in the process. This gave them more control over the situation, and ensured them that the other vessels will also follow \ac{COLREGs}.
-Thereby was the communication as expected when using the protocol, after reminding participants how the communication should be according to \ac{SMCP}. This corresponds with the opinion of participants, that it is a complete protocol, which is easy to use and learn.
+The \emph{performance} is an evaluation if the participant followed regulations and made the right decisions. None of the cases did result in an accident, even though there were some close encounters. There was no clear correlation between the ability to communicate and the \acf{CPA}, as some participants took more risk when the intention of another vessel was known. The protocol did help to acquire the right information to chose a strategy earlier in the process. This time gave participants more control over the situation and ensured them that the other vessels would also follow \ac{COLREGs}.
+Thereby was the communication as expected when using the protocol, after reminding participants how the communication should be according to \ac{SMCP}. This corresponds with the opinion of participants that it is a complete protocol, which is easy to use and learn.
 
-\emph{Trust} is the second measure which is evaluated. This means that the participants are confident that the system works as expected. The participants were most worried about the voice recognition, certainly for Filipino, Indian or Pakistani crew. As these have a clear accent. The protocol itself shouldn't be the problem, as it is optimized to be well understandable via radio. The recognition of speech acts could be difficult, but it has the advantage that clear keywords are used. Thereby is every response started with a confirmation of the previous message, which helps to increase trust in the protocol and unmanned vessels in general.
+\emph{Trust} is the second measure which is evaluated. This means that the participants are confident that the system works as expected. The participants were most worried about voice recognition, definitely for Filipino, Indian or Pakistani crew, as these have an accent which is already hard to understand for humans. The words and sentences within the protocol itself shouldn't be the problem, as it is optimised to be well understandable via radio. The recognition of speech acts could be difficult, but it has the advantage that the protocol uses explicit keywords. Thereby is every response started with a confirmation of the previous message, which helps to increase trust in the protocol and unmanned vessels in general.
 
-The third measure is \emph{situation awareness}. This is measured by checking if the participants were aware of relevant and irrelevant details such as estimating relative speed, number of course changes and the color of a vessel. The relevant details went better in the complex situation which demanded high attention. Irrelevant details such as course changes of vessels which already passed, or the color of a vessel were remembered less in these situations. This was however not influenced by the protocol, which means that the protocol has a small effect on the free cognitive capacity.
+The third measure is \emph{situation awareness}. This is measured by checking if the participants were aware of relevant and irrelevant details such as estimating relative speed, number of course changes and the colour of a vessel. The relevant details went better in the complex situation which demanded high attention. Irrelevant details such as course changes of vessels which already passed, or the colour of a vessel were remembered less in these situations. These results were however not influenced by the protocol, which means that the protocol has a small effect on the free cognitive capacity.
 
-The last measure is \emph{satisfaction}. Thus, do the participants like to use the protocol. Here is the voice recognition most important, if this will understand natural language variations to \ac{SMCP}, are most participants very positive. As \ac{SMCP} itself is and 'idiot proof' system. If it is possible to communicate this way with vessels, will strategies not differ from interactions with manned vessels.
+The last measure is \emph{satisfaction}. The participants like to use the protocol. Here is the voice recognition most important, if this will understand natural language variations to \ac{SMCP}, are most participants very positive. As \ac{SMCP} itself is an 'idiot proof' system. If it is possible to communicate this way with vessels, will strategies not differ from interactions with manned vessels.

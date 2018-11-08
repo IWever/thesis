@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_thesis.aux
 The style file: include/tudelft-report.bst
 Database file #1: include/library.bib
-Warning--empty publisher in Adamson2003
 0 is an integer literal, not a function, for entry Arimura2001
 while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Arimura2001
@@ -13,6 +12,7 @@ while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Blanke2017
 while executing---line 1428 of file include/tudelft-report.bst
 Warning--empty journal in Blanke2017
+Warning--empty publisher in Boyd1987
 0 is an integer literal, not a function, for entry Bradshaw2003
 while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Bradshaw2003
@@ -35,6 +35,7 @@ while executing---line 1428 of file include/tudelft-report.bst
 while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Demir2017
 while executing---line 1428 of file include/tudelft-report.bst
+Warning--empty publisher in Endsley2013
 0 is an integer literal, not a function, for entry Finnsgard2018
 while executing---line 1428 of file include/tudelft-report.bst
 You can't pop an empty literal stack for entry Finnsgard2018

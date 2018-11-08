@@ -1,6 +1,6 @@
 \chapter{Identification of situation and scenarios}
 \label{ch:identify-situation}
-After forming a mental model of the situation, starts the decision process with the identification of the situation and scenario. Where the decision tree from chapter~\ref{ch:decision-process}, will help to identify common critical situations. The identification of these situations, aims to narrow down possible strategies in the next phases of the decision making process. This chapter discusses the first steps of classifying the situation. Followed by the steps taken in the orientation phase to narrow down the possible strategies. Which will help to determine which paths are common and critical, thus are good to be used while evaluating manoeuvring criteria.
+After forming a mental model of the situation, starts the decision process with the identification of the situation and scenario. Where the decision tree from chapter~\ref{ch:decision-process}, will help to identify common critical situations. The identification of these situations aims to narrow down possible strategies in the next phases of the decision-making process. This chapter discusses the first steps of classifying the situation. Followed by the steps taken in the orientation phase to narrow down the possible strategies. Which will help to determine which paths are common and critical, thus are good to be used while evaluating manoeuvring criteria.
 
 \section{Situation identification}
 \label{sec:situation-identification}
@@ -11,7 +11,7 @@ Situations can be classified into four types. These are also discussed in chapte
 		\toprule
 		Situations & Description\\
 		\midrule
-		Passing & The paths of both ships are in opposite direction, and do not cross. \\
+		Passing & The paths of both ships are in the opposite direction, and do not cross. \\
 		Crossing & The final direction of both ships differ, but they do cross. \\
 		Over-taking & The paths of both ships are the same but at different speeds. \\
 		Merge & The starting direction of both ships differ, but the final direction is the same. \\
@@ -21,9 +21,9 @@ Situations can be classified into four types. These are also discussed in chapte
 	\captionof{table}{Tags for different situations}
 	\label{tab:situations2}
 \end{table}
-It depends on the waterway lay-out which situation is likely. This can be influenced by traffic separation schemes, forbidden zones or land masses. To determine the situation, a classification of paths is used. To do this systematically, paths will be based on figure~\ref{fig:junction-letters} and can be written as: [current~position,~direction].
+It depends on the waterway lay-out which situation is likely. Traffic separation schemes, forbidden zones or land masses influence this layout. A classification of paths is used to determine the situation. Paths are based on figure~\ref{fig:junction-letters} and can be written as: [current~position,~direction].
 
-To classify a situation where two vessels encounter each other, the paths are considered. Key is to determine the angle between those paths. This way it is possible to classify them using table~\ref{tab:scenarios-standard} and figure~\ref{fig:junction-letters}.
+The paths are considered to classify a situation where two vessels encounter each other. Key is to determine the angle between those paths. This way it is possible to classify them using table~\ref{tab:scenarios-standard} and figure~\ref{fig:junction-letters}.
 
 \begin{table}[p]
 	\centering
@@ -53,35 +53,35 @@ To classify a situation where two vessels encounter each other, the paths are co
 	\label{fig:junction-letters}
 \end{figure}
 
-The boundaries to determine if the other ship comes from direction A, B, C or D are based on \ac{COLREGs} \cite{IMO1972}. Direction A is between 112.5 and 247.5 degrees, as shown with the dotted line in figure~\ref{fig:junction-letters}. While sailing this angle can be observed using the mast-head lights. Which are seen as red when the vessel comes from B, green when from D and green and red from C. While from direction A the color of the light will be white. When in doubt if it is a head-on situation or a crossing situation. Always assume a head-on situation, as this stated in rule 14 \cite{IMO1972}.
+The boundaries to determine if the other ship comes from direction A, B, C or D are based on \ac{COLREGs} \cite{IMO1972}. Direction A is between 112.5 and 247.5 degrees, as shown with the dotted line in figure~\ref{fig:junction-letters}. While sailing this angle can be observed using the mast-head lights. Which are seen as red when the vessel comes from B, green when from D and green and red from C. While from direction A the colour of the light will be white. When in doubt if it is a head-on situation or a crossing situation. Always assume a head-on situation, as this stated in rule 14 \cite{IMO1972}.
 
 \clearpage
 
 
 \section{Situations which limit possible strategies}
-Beside this first identification of the situation. More details must be taken into account to eventually form the right strategies, as these details might limit the possible strategies. Below the effect of the waterway and actors are discussed on possible strategies.
+Beside this first identification of the situation. More details must be taken into account to eventually form the right strategy, as these details might limit the possible strategies. Below the effect of the waterway and actors are discussed on possible strategies.
 
 \subsection{Waterway properties}
-To limit the strategies which have to be evaluated, are strategies filtered based on the physical properties of the waterway. As this might restrict the area where can be sailed, or does behavior differ. For example is it common to over-take ships in open-water on starboard side. While on restricted waterways ships will sail as far as possible to starboard already. Which means that the ship which is over-taking will have to pass on the port side of the other vessel, at the center of the waterway.
+To limit the strategies which have to be evaluated by a system or operator, are they filtered based on the physical properties of the waterway, as this might restrict the area where can be sailed or does behaviour differ. It is common to over-take ships in open-water on the starboard side. While on restricted waterways ships will sail as far as possible to starboard already. This means that the ship which is over-taking will have to pass on the port side of the other vessel, at the centre of the waterway.
 
-In the next step other static hazards are considered to check if the chosen strategy does not lead to a collision. Or if there are specific regulation frameworks for this waterway. These are however not part of the first iteration of the decision model, as this will introduce much more complexity, without improving the result in most cases. Examples of static hazards which could be evaluated in future iterations are buoys, forbidden zones, bridges, quays, port mouths or shallow waters. As possibilities for over-taking or evasive manoeuvers are limited in those cases for example. This means the strategies are limited.
+In the next step, other static hazards are considered to check if the chosen strategy does not lead to a collision, or if there are specific regulation frameworks for this waterway. These are however not part of the first iteration of the decision model, as this will introduce much more complexity, without improving the result in most cases. Future iterations of the model should evaluate static hazards, such as buoys, forbidden zones, bridges, quays, port mouths or shallow waters. In thos cases are possibilities for over-taking or evasive manoeuvers limited, which means the strategies are limited.
 
-Another limiting factor related to waterways are the difference in regulations between waterways. Most obvious are traffic separation schemes, or other road marks such as signs which forbid to over-take or meet. But others are for example to not create wash or no turning, thus limiting the options to manoeuvrer. Or more directive signs on obligated directions or speed limits. This is most relevant for coastal and inland waterways.
+Another limiting factor related to waterways are the difference in regulations between waterways. Most noticeable are traffic separation schemes or other road marks such as signs which forbid to over-take or meet. But others are for example to not create wash or no turning, thus limiting the options to manoeuvrer. Or more directive signs on obligated directions or speed limits. These signs are most relevant for coastal and inland waterways.
 
 \subsection{Dynamic objects}
-The second major step is the identification of dynamic objects. Those are all relevant moving objects. Most obvious are other ships, which come close. But in future developments of the decision model, objects which are not under any control of a human should also be considered, such as floating containers, this is however not within the scope of this research. The major difference between static hazards are of course that the 'forbidden zone' around these objects change over time. This means more complex evaluation methods are needed to determine if there is no perceived risk, and thus a safe situation.
+The second major step is the identification of dynamic objects. Those are all relevant moving objects. Most obvious are other ships, which come close. But in future developments of the decision model, objects which are not under any control of a human should also be considered, such as floating containers, this is however not within the scope of this research. The major difference between static hazards is of course that the 'forbidden zone' around these objects change over time. This means more complex evaluation methods are needed to determine if there is no perceived risk, and thus a safe situation. The path itself is relevant for the evaluation of different criteria, as will be discussed in chapter~\ref{ch:criteria-problem} with different algorithms.
 
-These complex evaluation methods will have to predict the path. To do this, first the general information about the object should be acquired. Such as manoeuvrability, speed, course, type of object, under control, etc.
-Thereby might it be possible in future developments to take into account the human factor to improve the path prediction. This could be based on the experience of the crew, availability of a pilot or if the vessel is completely unmanned.
+These complex evaluation methods will have to predict the path. To do this, first, the general information about the object should be acquired. Such as manoeuvrability, speed, course, type of object, under control, etc.
+Thereby, might it be possible in future developments to take into account the human factor, to improve the path prediction. This prediction uses the experience of the crew, availability of a pilot or if the vessel is unmanned.
 
-Examples of such dynamic objects which limit the possible strategies, are for example: Fishery vessels, as they might have long nets behind them during operation. Ferries in inland waters which have priority over other shipping traffic. Ships with limited manoeuvrability or forbidden zones around them.
+Examples of such dynamic objects which limit the possible strategies, are for instance: Fishery vessels, as they might have long nets behind them during operation. Ferries in inland waters which have priority over other shipping traffic. Ships with limited manoeuvrability or forbidden zones around them.
 
 \section{Scenarios}
-Using the information about the properties of the waterway and actors, the scenario can be identified. Where the situation is based on observations and describes the current state. Do the scenarios take into account the possible future strategies of those actors and thus describe what the future states could be.
-Based on the scenarios, can be determined which rules to apply and what their implications are on the possible strategies. The same goes for the estimated path of dynamic objects. This might also narrow down the possible strategies.
+The scenario can is identified by using the information about the properties of the waterway and actors, where the situation is based on observations and describes the current state. Do the scenarios take into account the possible future strategies of those actors and thus describe what the future states could be.
+Based on the scenarios, can be determined which rules to apply and what their implications are on the possible strategies. The same goes for the estimated path of dynamic objects. These both might narrow down the possible strategies.
 
-Using the above mentioned information in the decision model, the strategies can be narrowed down. This can be used to simplify the decision tree and select the right criteria to evaluate.
-Different scenarios for the same situation could be that the ship turns to port or starboard. For both does a probability exist. Using a probability index for the decision of other vessels will in this case improve the eventual decision making. This can be taken into account by for example the safe motion parameters and safety domains as described by Szlapczynski \cite{Szlapczynski2017}\cite{Szlapczynski2017a}.
+Using the information as mentioned above in the decision model, the strategies can be narrowed down. This information can be used to simplify the decision tree and select the right criteria to evaluate.
+Different scenarios for the same situation could be that the ship turns to port or starboard. For both does a probability exist. Using a probability index for the decision of other vessels will, in this case, improve the final decision making. This index can be taken into account by the safe motion parameters and safety domains as described by Szlapczynski \cite{Szlapczynski2017}\cite{Szlapczynski2017a}.
 
 \vspace{1.5cm}
 \emph{In the next chapter} the criteria are defined to evaluate the situations and scenarios. This evaluation shows if a problem might occur. These criteria are eventually used to determine the most critical common situations. 

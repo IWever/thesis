@@ -1,5 +1,5 @@
 from src.MTexperiment.general import *
-
+import math
 
 # Performing a standard sea-trial
 def seatrial(ship, speed, trialsList=None, dt=0.01, printResult=False, reduceMemory=True):
@@ -134,7 +134,7 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
         "Drift [degrees]": [],
         "Rudder [degrees]": [],
         "Rudder real [degrees]": [],
-        "Advance [meter]": 0,
+        "Advance distance [meter]": 0,
         "Tactical diameter [meter]": 0,
         "Steady turning diameter [meter]": 0,
         "Final speed [knots]": 0,
@@ -162,7 +162,7 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
             circle += 3
 
     # Calculations
-    result["Advance [meter]"] = max(result["locy"])
+    result["Advance distance [meter]"] = max(result["locy"])
     result["Tactical diameter [meter]"] = max(result["locx"])
     result["Steady turning diameter [meter]"] = maxSteadyTurn - minSteadyTurn
     result["Final speed [knots]"] = result["Speed [knots]"][-1]
@@ -172,7 +172,7 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
     if printResult:
         print(result["test"])
         print("Tactical diameter: %d" % result["Tactical diameter [meter]"])
-        print("Advance: %d" % result["Advance [meter]"])
+        print("Advance: %d" % result["Advance distance [meter]"])
         print("Steady turning diameter: %d" % result["Steady turning diameter [meter]"])
         print("Final speed: %2.1f" % result["Final speed [knots]"])
         print("Steady drift angle: %2.1f degrees" % result["Steady drift angle [degrees]"])
@@ -184,10 +184,13 @@ def turningCirlce(ship, speed, rudderAngle=35, dt=0.01, printResult=False, reduc
     return result
 
 
-def evasiveManouvre(ship, speed, courseChange, dt=0.01, changetime=19, speedOther=14, printResult=False, reduceMemory=True):
+def evasiveManouvre(ship, speed, courseChange, dt=0.01, changetime=0, speedOther=14, maxRudder=35, printResult=False, reduceMemory=True):
     # Set ship speed, location, angle and inertia
     setSpeed(ship, speed)
     resetShip(ship)
+
+    if changetime != 0:
+        print("WARNING: Change time turned off")
 
     # Result dictionary
     result = {
@@ -210,49 +213,60 @@ def evasiveManouvre(ship, speed, courseChange, dt=0.01, changetime=19, speedOthe
         "Distance till initial CPA": 0,
         "Extra time [seconds]": 0,
         "Passing distance [meter]": 0,
+        "CPA [meter]": 0,
         "Overshoot [degrees]": 0,
-        "Max course [degrees]": 0
+        "Max course [degrees]": 0,
+        "Max rudder [degrees]": maxRudder
     }
 
     # Start of manouvre
     result = manouverStep(ship, dt, result)
-    ship.rudderAngle = -35
+    ship.rudderAngle = -maxRudder
 
     # Reduce rudder angle
-    while changetime * ship.headingChange > - courseChange - ship.heading:
+    while courseChange > - ship.heading:
         result = manouverStep(ship, dt, result)
-        if result["Time [seconds]"] >= 2000:
+        if result["Time [seconds]"] >= 1200:
             return None
     ship.rudderAngle = 0
 
     # Sail till angle of desired course change
     while ship.course > -courseChange:
         result = manouverStep(ship, dt, result)
-        if result["Time [seconds]"] >= 2000:
+        if result["Time [seconds]"] >= 3600:
             return None
-    ship.rudderAngle = 35
+    ship.rudderAngle = maxRudder
 
     # Return rudder to 0 position
     while changetime * ship.headingChange < - ship.course:
         result = manouverStep(ship, dt, result)
-        if result["Time [seconds]"] >= 2000:
+        if result["Time [seconds]"] >= 3600:
             return None
     ship.rudderAngle = 0
 
     # Stop test
     while ship.course < 0:
         result = manouverStep(ship, dt, result)
-        if result["Time [seconds]"] >= 2000:
+        if result["Time [seconds]"] >= 3600:
             return None
 
-    # Calculate measures
-    timeWhenStraight = ship.location[1] / (result["Start speed [knots]"] * 1852/3600)
-    result["Extra time [seconds]"] = result["Time [seconds]"] - timeWhenStraight
 
-    result["Passing distance [meter]"] = abs(ship.location[0]) + result["Extra time [seconds]"] * speedOther * 1852 / 3600
+    # Calculate measures
+    timeWhenStraight = ship.location[1] / (result["Start speed [knots]"] * 1852 / 3600)
+    result["Extra time [seconds]"] = result["Time [seconds]"] - timeWhenStraight
     result["Distance till initial CPA [meter]"] = ship.location[1]
     result["Overshoot [degrees]"] = -min(result["Course [degrees]"]) - courseChange
     result["Max course [degrees]"] = -min(result["Course [degrees]"])
+    result["Passing distance [meter]"] = abs(ship.location[0]) + result["Extra time [seconds]"] * speedOther * 1852 / 3600
+
+    CPA = 10000000
+    xStartShipB = -timeWhenStraight * speedOther * 1852/3600
+    for i in range(0, len(result["Timestamp"])):
+        xlocShipB = xStartShipB + result["Timestamp"][i] * speedOther * 1852 / 3600
+        distance = math.hypot(result["locx"][i] - xlocShipB, result["locy"][i] - result["Distance till initial CPA [meter]"])
+        CPA = min(CPA, distance)
+
+    result["CPA [meter]"] = CPA
 
     # Print result
     if printResult:
@@ -260,9 +274,10 @@ def evasiveManouvre(ship, speed, courseChange, dt=0.01, changetime=19, speedOthe
         print(result["test"])
         print("Time: %d s | extra time gained: %d | Overshoot: %2.1f" % (result["Time [seconds]"], result["Extra time [seconds]"], result["Overshoot [degrees]"]))
         print("Distance to side: %d | Distance forward: %d" % (abs(ship.location[0]), ship.location[1]))
-        print("Passing distance behind ship with speed (%d kn): %d" % (speedOther, result["Passing distance [meter]"]))
+        print("Passing distance behind ship with speed (%d kn): %d meter and CPA: %d meter" % (speedOther, result["Passing distance [meter]"], result["CPA [meter]"]))
 
     if reduceMemory:
         removeListsFromDict(result)
 
     return result
+

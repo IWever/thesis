@@ -13,10 +13,10 @@ class World:
     def __init__(self):
 
         # Set-up for world
-        self.experimentName = "Maasgeul1_control_Tanker"
+        self.experimentName = "Dover0_MT_case"
         self.comment = "Damen5"
-        self.showWaypointMarkers = False
-        self.saveLog = True
+        self.showWaypointMarkers = True
+        self.saveLog = False
 
         # Set-up for simulation
         self.mapName = None

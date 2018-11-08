@@ -1,16 +1,9 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Adamson (2003)]{Adamson2003}
-Peter Adamson.
-\newblock \emph{{Review: Epictetus: A Stoic and Socratic Guide to Life}}.
-\newblock 2003.
-\newblock ISBN 0199245568 (alk. paper).
-\newblock \doi{10.1093/mind/112.446.363}.
 
 \bibitem[Arimura et~al. (2001)]{Arimura2001}
 Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
@@ -53,6 +46,14 @@ Mogens Blanke, Michael Henrique, and Jakob Bang.
 \newblock pages 1--27, 2017.
 \newblock URL \url{https://www.dma.dk/Documents/Publikationer/Autonome
   skibe{\_}DTU{\_}rapport{\_}UK.pdf}.
+
+\bibitem[Boyd (1987)]{Boyd1987}
+John~R. Boyd.
+\newblock \emph{{A discourse on winning and losing}}.
+\newblock 1987.
+\newblock ISBN M-U 43947 (Briefing slides).
+\newblock URL
+  \url{http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:A+discourse+on+Wining+and+Losing{\#}0}.
 
 \bibitem[Bradshaw et~al. (2003)]{Bradshaw2003}
 Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
@@ -118,6 +119,13 @@ Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
 \newblock \emph{Rules and regulations}, 2011.
 \newblock ISSN 0028-0836.
 \newblock \doi{10.1038/147264c0}.
+
+\bibitem[Endsley (2013)]{Endsley2013}
+Mica~R Endsley.
+\newblock \emph{{Situation Awareness}}.
+\newblock 2013.
+\newblock ISBN 0805821333.
+\newblock \doi{10.1093/oxfordhb/9780199757183.013.0006}.
 
 \bibitem[Eriksen (2017)]{Eriksen2017}
 Remi Eriksen.
@@ -261,6 +269,11 @@ Steven~B Most, Daniel~J. Simons, Brian~J Scholl, and Christopher~F Chabris.
 \newblock \doi{10.1068/p2952}.
 \newblock URL
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.72.9071{\&}rep=rep1{\&}type=pdf}.
+
+\bibitem[Moyers (1988)]{Moyers1988}
+Bill Moyers.
+\newblock {Peter Drucker: Father of Modern Management}, 1988.
+\newblock URL \url{https://billmoyers.com/content/peter-drucker/}.
 
 \bibitem[MUNIN (2016)]{MUNIN2016}
 MUNIN.
