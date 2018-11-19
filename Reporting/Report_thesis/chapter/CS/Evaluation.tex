@@ -8,7 +8,16 @@ The evaluation method will be an experiment, where participants have to decide o
 \end{quotation}
 Different measures are used for validation and verification. Key variables are performance, trust, situation awareness and satisfaction. This chapter describes these in more detail. This chapter aims to test if the earlier described protocol, will indeed result in more situational awareness. The situational awareness should on its turn result in safer navigation.
 
-Several situations will be simulated to get the right feedback. The situations are based on the accident reports as described in appendix \ref{app:accidents}, everyday situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualised using the tool as described in appendix \ref{app:tool}. This visualisation will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge-based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the experiment, and usage of systems like \acf{AIS} and \acf{ARPA}.
+The performance variable measures if the protocol does not influence the decision-making negatively, thus do the participants follow COLREGs and use SMCP correctly. This is validated by looking at the \ac{CPA} and questioning the participants about their reasoning. The main question is: Does the protocol influence the performance of seafarers?
+
+The trust variable is about the confidence of seafarers in the system. The protocol will only work effectively when seafarers trust the protocol. The aim of this first iteration is to find out what worries the participants, and if they want to cooperate. Based on this can be answered: Are seafarers confident that the protocol will act as they expect?
+
+The third variable is situation awareness, as this should not be influenced negatively by the protocol. This means that seafarers predict future states correctly and are aware of everything happening around them. This is rated by the participants themselves using an observer rating system, and by questioning them on their awareness of key characteristics of other vessels (e.g relative speed, colour, course changes). This answer the question: Has the protocol a negative impact on the situation awareness?
+
+The last variable is satisfaction, seafarers should like to use the protocol, as this is necessary to ensure that seafarers indeed use the protocol. Thus answering the question: Do seafarers like to use the designed protocol?
+
+Two situations will be simulated to get relevant feedback and answer the above mentioned questions. The situations are based on the accident reports as described in appendix \ref{app:accidents}, everyday situations around the port of Rotterdam and cases used in literature. The situations are simulated and visualised using the tool as described in appendix \ref{app:tool}. This visualisation will enable the experts to gain situational awareness and give useful feedback on the protocol. The protocol itself is mostly knowledge-based and not automated during the evaluation. Thus the interviewer has to know the \acf{SMCP} relevant to the experiment, and usage of systems like \acf{AIS} and \acf{ARPA}.
+
 
 \section{Evaluation method}
 The evaluation method is a so-called Wizard of Oz evaluation. This technique enables unimplemented technology to be evaluated, by using a human to simulate the response of an automated system. As the technology itself has not yet been implemented. The "wizard" simulates the system responses in real-time. Using seafarers and the Wizard of Oz method, an expert evaluation can be acquired on the proposed protocol without implementing it.
@@ -140,7 +149,7 @@ An example is given below for the communication in the situation when operating 
 		Length     & 249.0    & 141.6    &  397.7 & m \\
 		Width     & 48.0    & 20.6    &  56.4 & m  \\
 		Draft     & 13.2    & 6.5    &  12.6 & m  \\
-		Deadweight & 114900 & 9543 & 156907 & m \\
+		Deadweight & 114900 & 9543 & 156907 & ton \\
 		Type     & Oil tanker    & General cargo vessel    &  Container vessel & \\
 		\midrule
 		Position& [-1400, -1400]    & [3250, 0]    &  [400, 2400] & m \\
@@ -220,7 +229,7 @@ The following conversation is likely for the situation where the GULF VALOUR is 
 		Length     & 249.0    & 141.6    &  142.4 & m \\
 		Width     & 48.0    & 20.6    &  23.0 & m  \\
 		Draft     & 13.2    & 6.5    &  5.0 & m  \\
-		Deadweight & 114900 & 9543 & 4650 & m \\
+		Deadweight & 114900 & 9543 & 4650 & ton \\
 		Type     & Oil tanker    & General cargo vessel    &  Container vessel & \\
 		\midrule
 		Position& [-1372, -1377]    & [-3090, 1395]    &  [3000, -550] & m \\
@@ -337,6 +346,7 @@ The next steps are repeated several times for the different situations. The comm
 		\item Leaving port of Rotterdam via Maasgeul
 	\end{enumerate}
 \end{spacing}
+During these simulation are all actions logged together with the \ac{CPA}. Thereby are notes made on the way decision are made, these are verified with the participants when filling in the questionnaire in the next steps. This includes feedback on the risk taken.
 
 \subsubsection{Relevant questions for situation (7, 8, 9)}
 Different questions will be asked, to gain insight into the quality of the experiment and the effectiveness of the protocol. Thereby is a link made to the decision process as discussed in section~\ref{ch:model}:
@@ -392,7 +402,7 @@ The relative start speed in the second situation when leaving the port of Rotter
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.8\textwidth]{speed-estimation-maasgeul.png}
-	\caption{Estimation of relative start speed for Maasgeul (protocol vs no-communication)}
+	\caption{Estimation of relative start speed at Maasgeul (protocol vs no-communication)}
 	\label{fig:speed-estimation-maasgeul}
 \end{figure}
 
@@ -488,3 +498,6 @@ Thereby was the communication as expected when using the protocol, after remindi
 The third measure is \emph{situation awareness}. This is measured by checking if the participants were aware of relevant and irrelevant details such as estimating relative speed, number of course changes and the colour of a vessel. The relevant details went better in the complex situation which demanded high attention. Irrelevant details such as course changes of vessels which already passed, or the colour of a vessel were remembered less in these situations. These results were however not influenced by the protocol, which means that the protocol has a small effect on the free cognitive capacity.
 
 The last measure is \emph{satisfaction}. The participants like to use the protocol. Here is the voice recognition most important, if this will understand natural language variations to \ac{SMCP}, are most participants very positive. As \ac{SMCP} itself is an 'idiot proof' system. If it is possible to communicate this way with vessels, will strategies not differ from interactions with manned vessels.
+
+Critically looking at the way the results are acquired shows the relevance of these results. The main strength of the experiment is that a participants are used with different backgrounds, as the participants are both experienced and inexperienced on small and large vessels. The group of 16 participants is sufficient to draw conclusions for this first iteration and shows that it is feasible to develop a protocol using SMCP and a conversational agent.
+When implementing the full protocol more evaluations are necessary. These evaluations should consider more different situations. These will not only say if there is an impact on the performance, trust, situation awareness and satisfaction of seafarers. But the results of these evaluations should also what this impact is. This means it is possible to mitigate a negative impact, or exploit the advantages.

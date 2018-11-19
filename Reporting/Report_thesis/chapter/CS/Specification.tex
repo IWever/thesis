@@ -30,12 +30,12 @@ The previous chapter describes the problem which has to be solved with the envis
 
 \subsubsection{Envisioned effect of system implementation}
 How the problems as mentioned above are tackled is discussed below. This shows what the result is after implementing the envisioned technology:
+
 \begin{enumerate}
 	\item The system will send only on demand or when it has tried any other solution, as this will reduce the probability for information overload. As a threshold to check if the system is successful in solving the problem of information overload, is the criteria the current amount of communication.
 	\item The protocols which are currently used by the officer of watch are the same. The purpose is to make it more easy to get information, which means that the situational awareness will minimally be affected by the system on board of the manned vessel. Also here the current level of situational awareness can be used as a threshold.
 	\item By introducing an negotiating agent, decisions can be made similarly to current ships. Using the decision tree, the agent will have a favourite strategy, but it might be possible to use others if this is better for the encountered manned ship. This choice will ensure that the officer of watch at the manned ship, still has a feeling of autonomy, similar to that of the current situation. 
 	\item Although the current systems are not designed to be used by unmanned vessels. There are significant developments on conversational agents in the last few years. Voice communication is becoming easier to develop, especially when considering that a lot of \ac{VHF} conversations are recorded. These make it more easy to train the conversational agent. The importance of transparent communication must thereby be acknowledged. Thus also being open about being a robot. 
-	
 	\item Using addressed \ac{AIS} messages and a conversational agent at unmanned vessels. Manned ships will be able to ask for support or information at all time. It is even likely they will receive the information faster compared to manned-manned ship communication.
 	\item The conversational agent is most relevant for unmanned ships when they want to ask for support or information, as operators do not use addressed messages often at the moment. They will use the \ac{SMCP} in a similar way to how they use it right now. So not much will change compared to the current situation for manned ships.
 \end{enumerate}
@@ -130,7 +130,7 @@ Communication is necessary to ensure the Reefer understands the intentions of th
 	\item Update AIS status of FCS2610 to show it has no questions, and is listening.
 \end{itemize}
 
-\section{Ontology}
+\section{Specification of terms used in protocol}
 Lastly, the sCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer, and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project. For this project, they are categorised in status, messages and situations.
 
 \subsection{Status}
@@ -146,7 +146,7 @@ The system will know which functions and protocols it should execute, by definin
 These states will also be communicated via \ac{AIS}, to ensure transparency between different agents and avoid confusion.
 
 \subsection{Types of messages}
-Both in the messaging and negotiation states, will there be messages send. These messages form the conversation. The agent will send different messages, during the phases of the conversation. These types of messages are described below:
+Both in the messaging and negotiation states are messages send. These messages form the conversation. The agent will send different messages, during the phases of the conversation. The types of messages are described below:
 \begin{description}
 	\item [Call] Start of conversation, in which a ship only requests contact with another ship.
 	\item [Acknowledge] Accept the invitation for conversation.

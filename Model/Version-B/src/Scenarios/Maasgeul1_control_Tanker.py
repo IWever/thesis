@@ -1,5 +1,5 @@
 def initial(simulation):
-    simulation.addDynamicObject("Tanker", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
+    simulation.addDynamicObject("Gulf Valour", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
     simulation.addDynamicObject("Astrorunner", [-3090, 1395], 114, speed=13.4)
     simulation.addDynamicObject("Anglia", [3000, -550], 291, speed=10.3)
 

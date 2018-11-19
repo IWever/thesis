@@ -25,7 +25,7 @@ def plotLinesOverTime(figureName, testResults, plotY, save=True):
 
 
 
-def plotScatter(figureName, testResults, plotX, plotY, plotC, save=True):
+def plotScatter(figureName, testResults, plotX, plotY, plotC, save=True, label=False):
     createPlot(figureName)
     cmap = matplotlib.cm.get_cmap('Spectral')  # blue is high, red is low
 
@@ -46,8 +46,14 @@ def plotScatter(figureName, testResults, plotX, plotY, plotC, save=True):
     cbar = plt.colorbar()
     cbar.set_label(plotC)
 
+    if label:
+        for i in range(0, len(resultC[0])):
+            annot = plt.annotate(resultC[0][i], (resultX[0][i], resultY[0][i]))
+
     if save:
         storePlot(figureName)
+
+
 
 def plotPath(figureName, testResults, save=True):
     createPlot(figureName)
@@ -59,4 +65,5 @@ def plotPath(figureName, testResults, save=True):
 
     if save:
         storePlot(figureName)
+
 

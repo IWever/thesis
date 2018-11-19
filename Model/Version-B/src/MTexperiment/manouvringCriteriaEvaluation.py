@@ -20,7 +20,7 @@ import random
 # Running evasive manoeuvres to determine domain for decision making
 plotnumber = None # no plot is being made
 testResults = {}
-tests = ["Course"]
+tests = ["Random"]
 
 for testname in tests:
     print("---------------------------------")
@@ -146,7 +146,7 @@ if "timestep" in tests:
     plotScatter("Effect of varying dt", testResults, "Time [seconds]", "Passing distance [meter]", "Timestep [seconds]")
 
 if "Random" in tests:
-    numberOfTests = 50
+    numberOfTests = 3000
     changeTimeIn = 0
     generalResult = {"TC": {}}
     generalResult["TC"] = {
@@ -167,7 +167,7 @@ if "Random" in tests:
         testResults[ship.name] = {}
 
         for i in range(1, numberOfTests):
-            angle = random.randint(5, 65)
+            angle = random.randint(5, 70)
             speed = random.randint(50, ship.vmax*10) / 10
 
             result_EM = evasiveManouvre(ship, speed, angle, changetime=changeTimeIn, printResult=False)
@@ -187,8 +187,6 @@ if "Random" in tests:
 
         plotScatter("%s %d distance passing distance start speed" % (ship.name, numberOfTests), testResults[ship.name], "Distance till initial CPA [meter]", "Passing distance [meter]", "Start speed [knots]", save=True)
         plotScatter("%s %d distance CPA start speed" % (ship.name, numberOfTests), testResults[ship.name], "Distance till initial CPA [meter]", "CPA [meter]", "Start speed [knots]", save=True)
-        plotScatter("%s %d time passing distance course change" % (ship.name, numberOfTests), testResults[ship.name], "Time [seconds]", "Passing distance [meter]", "Max course [degrees]", save=True)
-        plotScatter("%s %d time CPA course change" % (ship.name, numberOfTests), testResults[ship.name], "Time [seconds]", "CPA [meter]", "Max course [degrees]", save=True)
 
         for test in testResults[ship.name]:
             generalResult["TC"]["Time [seconds]"].append(testResults[ship.name][test]["Time [seconds]"])
@@ -204,15 +202,13 @@ if "Random" in tests:
         #plt.close('all')
 
     plotScatter("%d distance passing distance advance" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "Passing distance [meter]", "Advance distance [meter]")
-    plotScatter("%d time passing distance advance" % numberOfTests, generalResult, "Time [seconds]", "Passing distance [meter]", "Advance distance [meter]")
     plotScatter("%d distance CPA advance" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "CPA [meter]", "Advance distance [meter]")
-    plotScatter("%d time CPA advance" % numberOfTests, generalResult, "Time [seconds]", "CPA [meter]", "Advance distance [meter]")
 
     # Save result
     saveResult(generalResult)
 
 if "Advance" in tests:
-    numberOfTests = 3000
+    numberOfTests = 50
     generalResult = {"TC": {}}
     generalResult["TC"] = {
         "Simulation": "Advance",
@@ -227,17 +223,14 @@ if "Advance" in tests:
         "Speed other [knots]": [],
         "Shipname": []
     }
-    for ship in [Astrorunner, Tanker, EmmaMaersk]:
+    for ship, speed, amplificationFactor in [(EmmaMaersk, 12, 3.5), (EmmaMaersk, 12, 2.5), (Tanker, 15, 3.5), (Tanker, 15, 2.5), (Astrorunner, 14.7, 2.5), (Astrorunner, 14.7, 3.5)]:
         testResults[ship.name] = {}
-        for i in range(1, numberOfTests+1):
-            amplificationFactor = random.triangular(6, 60, 25) / 10 #[.6, 1, 1.5, 2.5, 4, 5, 8, 10]:
-            ship.rudderAmplificationFactor = amplificationFactor
+        ship.rudderAmplificationFactor = amplificationFactor
 
-            angle = random.triangular(5, 65, 45)
-            speed = random.triangular(50, ship.vmax*10, 9*ship.vmax) / 10
-            rudder = random.randint(100, 350)/10
-
-            result_EM = evasiveManouvre(ship, speed, angle, changetime=0, maxRudder=rudder)
+        for angle in range(5, 65, 2):
+            i = angle
+            rudder = 35
+            result_EM = evasiveManouvre(ship, speed, angle, changetime=0)
 
             if result_EM is None:
                 print("%s - Test %d - AF: %2.1f | Startspeed: %2.1f kn| angle: %d deg | rudder: %d deg | failed " % (ship.name, i, amplificationFactor, speed, angle, rudder))
@@ -247,7 +240,7 @@ if "Advance" in tests:
                 result = {**result_EM, **result_TC}
 
                 testResults[ship.name]["%s - Test %d - startSpeed: %2.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
-                print("%s - Test %d - AF: %2.1f | Startspeed: %2.1f kn| angle: %d deg | rudder: %d deg  | Max angle: %2.1f deg | Passing distance: %d m | CPA %d m" % (ship.name, i, amplificationFactor, speed, angle, rudder, result["Max course [degrees]"], result["Passing distance [meter]"], result["CPA [meter]"]))
+                print("%s - Test %d - AF: %2.1f | Startspeed: %2.1f kn| angle: %d deg | rudder: %d deg  | Max angle: %2.1f deg | Advance: %d m | Passing distance: %d m | CPA %d m | DTICPA: %d meter" % (ship.name, i, amplificationFactor, speed, angle, rudder, result["Max course [degrees]"], result["Advance distance [meter]"], result["Passing distance [meter]"], result["CPA [meter]"], result["Distance till initial CPA [meter]"]))
 
                 del result_EM, result_TC, result
 
@@ -269,10 +262,13 @@ if "Advance" in tests:
 
     plotScatter("%d distance CPA advance" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "CPA [meter]", "Advance distance [meter]")
     plotScatter("%d distance CPA start speed" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "CPA [meter]", "Start speed [knots]")
+    plotScatter("%d time CPA advance" % numberOfTests, generalResult, "Time [seconds]", "CPA [meter]", "Advance distance [meter]")
     plotScatter("%d distance advance start speed" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "Advance distance [meter]", "Start speed [knots]")
     plotScatter("%d distance advance CPA" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "Advance distance [meter]", "CPA [meter]")
-    plotScatter("%d distance advance rudder" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "Advance distance [meter]", "Max rudder [degrees]")
-    plotScatter("%d distance CPA rudder" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "CPA [meter]", "Max rudder [degrees]")
+    plotScatter("%d distance passing distance advance" % numberOfTests, generalResult, "Distance till initial CPA [meter]", "Passing distance [meter]", "Advance distance [meter]")
+    plotScatter("%d time passing distance advance" % numberOfTests, generalResult, "Time [seconds]", "Passing distance [meter]", "Advance distance [meter]")
+
+
 
     # Save result
     saveResult(generalResult)

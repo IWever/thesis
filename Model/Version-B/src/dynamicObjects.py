@@ -98,7 +98,7 @@ Anglia = Ship(name="Anglia Seaways",
                   color='deepskyblue')
 
 # Add ships to dictionary
-shipList["Tanker"] = Tanker
+shipList["Gulf Valour"] = Tanker
 shipList["Bulk"] = Bulk
 shipList["Tug"] = Tug
 shipList["Bibby"] = Bibby

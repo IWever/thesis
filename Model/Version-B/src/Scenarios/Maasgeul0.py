@@ -1,10 +1,10 @@
 def initial(simulation):
-    simulation.addDynamicObject("Tanker", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
+    simulation.addDynamicObject("Gulf Valour", [-1372, -1377], 98, speed=7.8, rudderAngle=-35)
     simulation.addDynamicObject("Astrorunner", [-3090, 1395], 114, speed=13.4)
     simulation.addDynamicObject("Anglia", [3000, -550], 291, speed=10.3)
 
-    simulation.world.do["Tanker"].waypoints.append([-550, -1000])
-    simulation.world.do["Tanker"].waypoints.append([-3000, 1300])
+    simulation.world.do["Gulf Valour"].waypoints.append([-550, -1000])
+    simulation.world.do["Gulf Valour"].waypoints.append([-3000, 1300])
 
     simulation.world.do["Astrorunner"].waypoints.append([-1400, 600])
     simulation.world.do["Astrorunner"].waypoints.append([1800, -900])

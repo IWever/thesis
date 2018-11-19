@@ -6,7 +6,7 @@ To determine if a problem might occur in the situations and scenarios as identif
 \label{sec:linearised-methods}
 Within \ac{ARPA} and \ac{ECDIS}, different calculations are made, which can be used to evaluate if there is a problem in the current scenario. These calculations often use linearised algorithms, which results are not correct when turning. Humans can easily dismiss the false alarms given due to these wrong results. Computers do not handle these false positives well. The advantage, however, is that the calculations can be done very fast. Below these calculations are discussed for the \acf{CPA} and crossing position.
 
-\subsection{\acf{CPA}}
+\subsection{Closest point of approach}
 The \ac{CPA} refers to the positions at which two dynamically moving objects reach their closest possible distance, which is an important calculation for collision avoidance. A linearised form uses two points moving at fixed speed and fixed direction. Figure \ref{fig:CPA} shows an example, where P and Q are the moving points, with corresponding direction vectors $u$ and $v$, which include the speed and direction.
 
 \begin{figure}[h]
@@ -105,7 +105,7 @@ P(t) = \sum\limits_{i=0}^n b_{i,n}(t) \cdot P_i \quad and
 b_{i,n}(t) = \begin{array}{c} n \\ i \end{array} t^i(1-t)^{n-i}, i = 0,\dots,n
 \end{equation}
 
-\subsection{\acf{CPA}}
+\subsection{Closest point of approach}
 \label{ssec:CPA-calculation}
 The numerical algorithm used to calculate the CPA is shown below. Herein is the path of own vessel represented by a Bézier curve. While other vessels are represented with a linearised function as described in section~\ref{sec:linearised-methods}. This results in the following algorithm:
 \begin{enumerate}

@@ -1,12 +1,12 @@
 def initial(simulation):
     # Dynamic objects
-    simulation.addDynamicObject("Tanker", [-1400, -1400], 45, speed=16, rudderAngle=0)
+    simulation.addDynamicObject("Gulf Valour", [-1400, -1400], 45, speed=16, rudderAngle=0)
     simulation.addDynamicObject("Astrorunner", [3250, 0], 278, speed=15.2, rudderAngle=0)
     simulation.addDynamicObject("EmmaMaersk", [400, 2400], 225, speed=12, rudderAngle=0)
 
-    simulation.world.do["Tanker"].waypoints.append([-55, -375])
-    simulation.world.do["Tanker"].waypoints.append([1360, 130])
-    simulation.world.do["Tanker"].waypoints.append([2500, 1100])
+    simulation.world.do["Gulf Valour"].waypoints.append([-55, -375])
+    simulation.world.do["Gulf Valour"].waypoints.append([1360, 130])
+    simulation.world.do["Gulf Valour"].waypoints.append([2500, 1100])
 
     # Static objects
     separationZonePolygon = [

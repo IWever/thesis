@@ -2,15 +2,15 @@
 \BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 2
 \BOOKMARK [0][-]{section*.6}{Glossary}{}% 3
 \BOOKMARK [0][-]{chapter*.15}{Introduction}{}% 4
-\BOOKMARK [-1][-]{part.1}{I The problem of communication for autonomous vessels}{}% 5
+\BOOKMARK [-1][-]{part.1}{I The problem of communication for unmanned vessels}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Steps towards safe unmanned shipping}{part.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Decision model for safe operation}{part.1}% 7
 \BOOKMARK [-1][-]{part.2}{II Impact of manoeuvrability on decision making}{}% 8
 \BOOKMARK [0][-]{chapter.3}{ Decision-making process}{part.2}% 9
 \BOOKMARK [0][-]{chapter.4}{Identification of situation and scenarios}{part.2}% 10
 \BOOKMARK [0][-]{chapter.5}{Definition of criteria for evaluation of situation}{part.2}% 11
-\BOOKMARK [0][-]{chapter.6}{Manoeuvers for validation and testing}{part.2}% 12
-\BOOKMARK [0][-]{chapter.7}{Evaluation of critical evasive manoeuvrer}{part.2}% 13
+\BOOKMARK [0][-]{chapter.6}{Manoeuvres for validation and testing}{part.2}% 12
+\BOOKMARK [0][-]{chapter.7}{Evaluation of critical evasive manoeuvre}{part.2}% 13
 \BOOKMARK [0][-]{chapter.8}{Conclusion}{part.2}% 14
 \BOOKMARK [-1][-]{part.3}{III Necessity of a protocol to enable teamwork between manned and unmanned ships}{}% 15
 \BOOKMARK [0][-]{chapter.9}{Foundation}{part.3}% 16
@@ -25,4 +25,4 @@
 \BOOKMARK [0][-]{appendix.B}{Simulation environment}{part.5}% 25
 \BOOKMARK [0][-]{appendix.C}{Accidents}{part.5}% 26
 \BOOKMARK [0][-]{appendix.D}{Extra figures}{part.5}% 27
-\BOOKMARK [0][-]{figure.caption.109}{Bibliography}{part.5}% 28
+\BOOKMARK [0][-]{section*.116}{Bibliography}{part.5}% 28
