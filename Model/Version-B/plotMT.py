@@ -1,7 +1,7 @@
 import pickle
 from src.MTexperiment.plotResults import *
 
-file = open("results/20181118-084942_Result_Random_start-speed", "rb")
+file = open("results/20181112-155526_Result_Advance", "rb")
 generalResult = pickle.load(file)
 
 # plotScatter("Distsance, Passing distance, Advance", generalResult, "Distance till initial CPA [meter]", "Passing distance [meter]", "Advance [meter]", save=False)

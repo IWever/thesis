@@ -3,43 +3,43 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Description of phases in decision process\relax }}{27}{table.caption.30}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Tags for different situations\relax }}{28}{table.caption.31}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Criteria and result of evaluation to identify a problem\relax }}{28}{table.caption.32}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Tags for different strategies\relax }}{29}{table.caption.33}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Criteria to determine if action is possible\relax }}{29}{table.caption.34}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Types of actions\relax }}{29}{table.caption.35}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Time-domain for action\relax }}{29}{table.caption.36}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Tags for safe situation criteria\relax }}{30}{table.caption.38}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Description of phases in decision process\relax }}{27}{table.caption.27}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Tags for different situations\relax }}{28}{table.caption.29}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Criteria and result of evaluation to identify a problem\relax }}{28}{table.caption.30}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Tags for different strategies\relax }}{29}{table.caption.31}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Criteria to determine if action is possible\relax }}{29}{table.caption.32}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Types of actions\relax }}{29}{table.caption.33}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Time-domain for action\relax }}{29}{table.caption.34}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Tags for safe situation criteria\relax }}{30}{table.caption.36}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tags for different situations\relax }}{33}{table.caption.40}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Path definitions for different situations\relax }}{34}{table.caption.41}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tags for different situations\relax }}{33}{table.caption.38}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Path definitions for different situations\relax }}{34}{table.caption.39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Validation of manoeuvring model\relax }}{48}{table.caption.48}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Validation of manoeuvring model\relax }}{48}{table.caption.47}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Metrics for evasive manoeuvrer\relax }}{52}{table.caption.50}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Metrics for evasive manoeuvre\relax }}{52}{table.caption.49}
 \contentsline {table}{\numberline {7.2}{\ignorespaces Relevant information for crossing situation at North-Sea\relax }}{59}{table.caption.56}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Results for double crossing situation with original advance distance\relax }}{61}{table.caption.57}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Results for double crossing situation with improved advance distance\relax }}{61}{table.caption.58}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {9.1}{\ignorespaces Interaction design patterns\relax }}{77}{table.caption.67}
-\contentsline {table}{\numberline {9.2}{\ignorespaces Envisioned technology\relax }}{78}{table.caption.68}
+\contentsline {table}{\numberline {9.1}{\ignorespaces Interaction design patterns\relax }}{77}{table.caption.66}
+\contentsline {table}{\numberline {9.2}{\ignorespaces Envisioned technology\relax }}{78}{table.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {11.1}{\ignorespaces Relevant information for crossing situation at North-Sea\relax }}{94}{table.caption.73}
-\contentsline {table}{\numberline {11.2}{\ignorespaces Relevant information entering Maasgeul\relax }}{96}{table.caption.75}
+\contentsline {table}{\numberline {11.1}{\ignorespaces Relevant information for crossing situation at North-Sea\relax }}{93}{table.caption.76}
+\contentsline {table}{\numberline {11.2}{\ignorespaces Relevant information entering Maasgeul\relax }}{95}{table.caption.78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Current relevant systems and technologies\relax }}{134}{table.caption.104}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Current relevant systems and technologies\relax }}{135}{table.caption.100}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Input for ship characteristics\relax }}{140}{table.caption.101}
-\contentsline {table}{\numberline {B.2}{\ignorespaces Ship details from simulation\relax }}{140}{table.caption.102}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Input for ship characteristics\relax }}{140}{table.caption.105}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Ship details from simulation\relax }}{140}{table.caption.106}
 \contentsline {table}{\numberline {B.3}{\ignorespaces Rudder angle based on relative angle\relax }}{141}{table.B.3}
-\contentsline {table}{\numberline {B.4}{\ignorespaces Input for manoeuvring model\relax }}{144}{table.caption.103}
-\contentsline {table}{\numberline {B.5}{\ignorespaces Dimensionless coefficients based on Artyszuk\relax }}{144}{table.caption.104}
-\contentsline {table}{\numberline {B.6}{\ignorespaces Standard output for manoeuvres\relax }}{148}{table.caption.107}
-\contentsline {table}{\numberline {B.7}{\ignorespaces Different manoeuvring tests\relax }}{148}{table.caption.108}
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.4}{\ignorespaces Input for manoeuvring model\relax }}{144}{table.caption.108}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Dimensionless coefficients based on Artyszuk\relax }}{144}{table.caption.109}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Standard output for manoeuvres\relax }}{148}{table.caption.113}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Different manoeuvring tests\relax }}{148}{table.caption.114}
 \addvspace {10\p@ }

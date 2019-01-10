@@ -1,10 +1,10 @@
 % What is the current state of the system
-\chapter{Current systems for safe navigation}
+\chapter{Systems for safe navigation}
 \label{app:systems}
-Before developing new systems and procedures to improve safety, the first step is to know what is currently available. Thereby should be considered how different types of information can be supplied. Nowadays decisions on navigation are taken from the bridge. Thus all information must be available there. In this chapter these elements will first be discussed, how they are in theory. This is followed by a discussion on the differences between this theory and practice. Which results in a conclusion on relevant systems for the communication between manned and unmanned ships.
+Before developing new systems and procedures to improve safety, the first step is to know what is currently available. Thereby should be considered how different types of information can be supplied. Nowadays decisions on navigation are taken from the bridge. Thus all information must be available there. In this chapter these elements will first be discussed, how they are in theory. This is followed by a discussion on the differences between this theory and practice which results in a conclusion on relevant systems for the communication between manned and unmanned ships.
 
 \section{Bridge system elements}
-To gain insight in a structured way, the bridge is split into four elements as described by DNV-GL. The human operator, procedures, technical system and the human-machine interface \cite{DNVGL2011}, as shown in figure \ref{fig:Bridge-system-elements}. This section describes every element in more detail.
+The bridge is divided into four elements as described by DNV-GL. The human operator, procedures, technical system and the human-machine interface \cite{DNVGL2011}, as shown in figure \ref{fig:Bridge-system-elements}. This section describes every element in more detail.
 
 \begin{figure}[H]
 	\centering
@@ -14,7 +14,7 @@ To gain insight in a structured way, the bridge is split into four elements as d
 \end{figure}
 
 \subsection{Technical system}
-The first element which will be discussed are the instruments and equipment at the bridge, the technical system. The different classification societies prescribe the equipment which is obligated to have at the bridge. These are based on the regulations for navigational equipment on board of ships from the \ac{SOLAS}, a modern ship should at least have:
+The first elements which will be discussed are the instruments and equipment at the bridge, the technical system. The different classification societies prescribe the equipment which is obligated to have at the bridge. These are based on the regulations for navigational equipment on board of ships from the \ac{SOLAS}. A modern ship should at least have:
 \begin{multicols}{2}
 	\begin{itemize}
 		\item Magnetic compass
@@ -63,9 +63,9 @@ Based on this list, DNV-GL demands at least the following equipment shall be ins
 Some of these systems will be highlighted to show the relevance for the development of unmanned vessels, as these systems are currently the most important systems while navigating. Thereby should be considered that more details on underlying procedures are given later in this chapter. 
 
 \subsubsection{\acf{Navtex}}
-Navtex (Navigational Telex) is an international automated medium frequency direct-printing service for delivery of navigational and meteorological warnings and forecasts, as well as urgent maritime safety information to ships. Navtex was developed to provide a low-cost, simple, and automated means of receiving this information aboard ships at sea within approximately 370 km (200 nautical miles) off shore.
-Transmissions are typically transmitted from the National Weather Authority, Coast Guard or other navigational authority.
-The system is an important element in the Global Maritime Distress Safety System (GMDSS). Therefore does \ac{SOLAS} mandate certain classes of vessels must carry Navtex.
+Navtex (Navigational Telex) is an international automated medium frequency direct-printing service for delivery of navigational and meteorological warnings and forecasts, as well as urgent maritime safety information to ships. Navtex was developed to provide a low-cost, simple, and automated means of receiving this information aboard ships at sea within approximately 370 km (200 nautical miles) offshore.
+The National Weather Authority, Coast Guard or other navigational authority typically transmits information.
+The system is a vital element in the Global Maritime Distress Safety System (GMDSS). Therefore does \ac{SOLAS} mandate certain classes of vessels must carry Navtex. 
 Examples of messages which can be received are:
 \begin{multicols}{2}
 	\begin{itemize}
@@ -77,11 +77,11 @@ Examples of messages which can be received are:
 		\item \ac{AIS} messages
 	\end{itemize}
 \end{multicols}
-The receiver automatically prints the messages. The officer of watch keeps track of the received messages, and anticipates on them when necessary.
+The receiver automatically prints the messages. The officer of watch keeps track of the received messages and anticipates on them when necessary.
 
 \subsubsection{\acf{VHF}}
-Marine VHF radio refers to the radio frequency range between 156 and 174 MHz. In the official language of the International Telecommunication Union the band is called the VHF maritime mobile band.
-A marine VHF set is a combined transmitter and receiver and only operates on standard, international frequencies known as channels. For example is channel 16 (156.8 MHz) the international calling and distress channel. Transmission power ranges between 1 and 25 watts, giving a maximum range of up to about 60 nautical miles (111 km) between aerials mounted on tall ships and hills, and 5 nautical miles (9 km) between aerials mounted on small boats at sea level (figure \ref{fig:vhf-radio}). Frequency modulation (FM) is used, with vertical polarization, meaning that antennas have to be vertical in order to have good reception.
+Marine VHF radio refers to the radio frequency range between 156 and 174 MHz. In the official language of the International Telecommunication Union, the band is called the VHF maritime mobile band.
+A marine VHF set is a combined transmitter and receiver and only operates on standard, international frequencies known as channels. For example is channel 16 (156.8 MHz) the international calling and distress channel. Transmission power ranges between 1 and 25 watts, giving a maximum range of up to about 60 nautical miles (111 km) between aerials mounted on tall ships and hills, and 5 nautical miles (9 km) between aerials mounted on small boats at sea level (figure \ref{fig:vhf-radio}). Frequency modulation (FM) is used, with vertical polarisation, meaning that antennas have to be upright to have good reception.
 
 \begin{figure}[H]
 	\centering
@@ -90,28 +90,30 @@ A marine VHF set is a combined transmitter and receiver and only operates on sta
 	\label{fig:vhf-radio}
 \end{figure}
 
+\newpage
+
 Modern-day marine VHF radios offer not only basic transmit and receive capabilities. Permanently mounted marine VHF radios on seagoing vessels are required to have certification of some level of "Digital Selective Calling" (DSC) capability, to allow a distress signal to be sent with a single button press.
 
-Marine VHF mostly uses "simplex" transmission, where communication can only take place in one direction at a time. A transmit button on the set or microphone determines whether it is operating as a transmitter or a receiver. Some channels, however, are "duplex" transmission channels where communication can take place in both directions simultaneously when the equipment on both ends allow it (full duplex), otherwise "semi-duplex" is used. Each duplex channel has two frequency assignments. Duplex channels can be used to place calls on the public telephone system for a fee via a marine operator. When full duplex is used, the call is similar to one using a mobile phone or landlines. When semi-duplex is used, voice is only carried one way at a time and the party on the boat must press the transmit button only when speaking. This facility is still available in some areas, though its use has largely died out with the advent of mobile and satellite phones. Marine VHF radios can also receive weather radio broadcasts, where they are available.
+Marine VHF mostly uses "simplex" transmission, where communication can only take place in one direction at a time. A transmit button on the set or microphone determines whether it is operating as a transmitter or a receiver. Some channels, however, are "duplex" transmission channels where communication can take place in both directions simultaneously when the equipment on both ends allow it (full duplex), otherwise "semi-duplex" is used. Each duplex channel has two frequency assignments. Duplex channels can be used to place calls on the public telephone system for a fee via a marine operator. When full duplex is used, the call is similar to one using a mobile phone or landlines. When semi-duplex is used, voice is only carried one way at a time, and the party on the boat must press the transmit button only when speaking. This facility is still available in some areas, though its use has mostly died out with the advent of mobile and satellite phones. Marine VHF radios can also receive weather radio broadcasts, where they are available.
 
 \subsubsection{\acf{ARPA}}
-Radars have been playing a vital role in ship navigation for several decades now, assisting in collision avoidance and early detection of obstacles.The history of marine radars goes a long way back to the time of World War II, when radars were introduced and effectively used by war ships for tracking and detection. Radar technology has improved immensely from post-WWII period to the present and the application of computer technology to commercial marine radar sets resulted in the introduction of Automatic Radar Plotting Aids (ARPA). A print-screen of an ARPA systems can be seen in figure \ref{fig:ARPA}.
+Radars have been playing a vital role in ship navigation for several decades now, assisting in collision avoidance and early detection of obstacles. The history of marine radars goes a long way back to the time of World War II when radars were introduced and effectively used by warships for tracking and detection. Radar technology has improved immensely since the post-WWII period to the present, and the application of computer technology to commercial marine radar sets resulted in the introduction of Automatic Radar Plotting Aids (ARPA). Figure \ref{fig:ARPA} shows a print-screen of an ARPA system.
 
-\begin{figure}[H]
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.72\textwidth]{ARPA.png}
+	\includegraphics[width=0.63\textwidth]{ARPA.png}
 	\caption{\acf{ARPA}}
 	\label{fig:ARPA}
 \end{figure}
 
-Automatic radar plotting aids are essentially utilized to improve the standard of collision avoidance at sea. Primarily designed as anti-collision radar, the ARPA technology removed the chore of plotting targets manually on a reflection plotter or separate plotting aid. The system is able to acquire automatically and constantly monitor number of targets, plot their speeds and courses, present these as vectors on the display screen, updated with each sweep of the antenna, and calculate their closest points of approach to own ship and the time before that will occur.
+Automatic radar plotting aids are utilised to improve the standard of collision avoidance at sea. Primarily designed as anti-collision radar, the ARPA technology removed the chore of plotting targets manually on a reflection plotter or separate plotting aid. The system is able to acquire information automatically and can continuously monitor a number of targets, plot their speeds and courses, present these as vectors on the display screen, updated with each sweep of the antenna, and calculate their closest points of approach to own ship and the time before that will occur.
 
 \subsubsection{\acf{ECDIS}}
 The \acf{ECDIS} is a development in the navigational chart system used in naval vessels and ships. With the use of the \acf{ENC} system, it has become easier for a ship’s navigating crew to pinpoint locations and attain directions. ECDIS equipment complying with SOLAS requirements can be used as an alternative to paper charts. Besides enhancing navigational safety, ECDIS greatly eases the navigator’s workload with its automatic capabilities such as route planning, route monitoring, automatic ETA computation and ENC updating. In addition, ECDIS provides many other sophisticated navigation and safety features, including continuous data recording for later analysis. How the ECDIS is integrated in the bridge can be seen in figure \ref{fig:ECDIS}.
 
-\begin{figure}[H]
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.72\textwidth]{ECDIS.jpg}
+	\includegraphics[width=0.63\textwidth]{ECDIS.jpg}
 	\caption{\acf{ECDIS}}
 	\label{fig:ECDIS}
 \end{figure}
@@ -121,36 +123,37 @@ The ECDIS utilises the feature of the Global Positioning System (GPS) to success
 \subsubsection{\acf{AIS}}
 \ac{AIS} is designed to be capable of providing information about the ship to other ships and to coastal authorities automatically. The \ac{SOLAS} regulations require \ac{AIS} to be fitted aboard all ships of 300 gross tonnage and upwards engaged on international voyages, cargo ships of 500 gross tonnage and upwards not engaged on international voyages and all passenger ships irrespective of size. The requirement became effective for all ships by 31 December 2004, this means there are still ships which do not have \ac{AIS}. Ships fitted with \ac{AIS} shall maintain \ac{AIS} in operation at all times except where international agreements, rules or standards provide for the protection of navigational information.
 
-The regulations require the \ac{AIS} to provide information on ship's identity, type, position, course, speed, navigational status and other safety-related information. Which will be automatically send to appropriately equipped shore stations, others ships and aircrafts. While also being able to receive such information automatically from similarly fitted ships, to monitor and track them. Lastly they should be able to exchange data with shore-based facilities. 
+The regulations require the \ac{AIS} to provide information on ship's identity, type, position, course, speed, navigational status and other safety-related information. Which will be automatically send to appropriately equipped shore stations, others ships and aircraft. While also being able to receive such information automatically from similarly fitted ships, to monitor and track them. Lastly they should be able to exchange data with shore-based facilities. 
 
-Originally the messages were send regularly via a \ac{VHF} transmitter. The information originates partly from ship's navigational sensors. Other information, such as the vessel name and \ac{VHF} call sign, is programmed when installing the equipment. Some information must be filled in by hand, such as the status or destination, which is often forgotten. The received information can be displayed on a screen or chart plotter, showing the other vessels' positions in much the same manner as a radar display. Data is transmitted via a tracking system which makes use of a Self-Organized Time Division Multiple Access (SOTDMA).
+The messages were sent originally on a regular basis via a \ac{VHF} transmitter. The information originates partly from ship's navigational sensors. Other information, such as the vessel name and \ac{VHF} call sign, is programmed when installing the equipment. Some information must be filled in by hand, such as the status or destination, which is often forgotten. The received information can be displayed on a screen or chart plotter, showing the other vessels' positions in much the same manner as a radar display. A tracking system which uses a Self-Organized Time Division Multiple Access (SOTDMA) transmits data.
 
-There are different types of transmitters. Depending on the object it is installed on. This determines what kind of messages can be send and which protocol is used to access \ac{AIS} slots. Below relevant types are described:
+There are different types of transmitters. The object on which the transmitter is installed determines what kind of messages can be sent and which protocol is used to access \ac{AIS} slots. Below relevant types are described:
 \begin{itemize}
 	\item Class A, the most common type of \ac{AIS} transceiver for large merchant vessels.
 	\item Class B, \ac{AIS} for smaller vessels.
-	\item Base station, shored-based \ac{AIS} transceiver, able to maanage \ac{AIS} slots.
-	\item Aids to navigation, shore- or buoy based transceiver operating in fixed time-slots. Designed to collect and transmit data related to sea and weather conditions, or forward \ac{AIS} messages to extend reach.
-	\item Search and rescue transceiver, designed to function as an emergency distress beacon, with high probability of success for transmission.
+	\item Base station, shore-based \ac{AIS} transceiver, able to manage \ac{AIS} slots.
+	\item Aids to navigation, shore- or buoy-based transceiver operating in fixed time-slots. Designed to collect and transmit data related to sea and weather conditions, or forward \ac{AIS} messages to extend reach.
+	\item Search and rescue transceiver, designed to function as an emergency distress beacon, with a high probability of success for transmission.
 \end{itemize}
 
-As mentioned before, there are different types of \ac{AIS} messages, identification numbers are used to identify the type of message within the NMEA string. The following types of messages are relevant for this research and the development of unmanned ships \cite{USCG2018}:
+\newpage
+As mentioned before, there are different types of \ac{AIS} messages. Identification numbers are used to identify the type of message within the NMEA string. The following types of messages are relevant for this research and the development of unmanned ships \cite{USCG2018}:
 \begin{itemize}
 	\item Position report, reports navigational information.
-	\item Standard class B equipment position report, less detailed report for vessels using class B transmitters.
+	\item Standard class B equipment position report, with less details
 	\item Base station report, used by base stations to indicate presence.
-	\item Static and voyage related data, gives information on a ship and its trip
-	\item Binary addressed message and acknowledgment, an addressed point-to-point message with unspecified binary payload.
-	\item Binary broadcast message, broadcast message with unspecified binary payload.
-	\item Standard Search and Rescue Aircraft Position Report, used by an aircraft (helicopter or airplane) which is involved with search and rescue operation on the sea (i.e. search for and recovery of survivors of an accident at sea).
+	\item Static and voyage related data gives information on a ship and its trip
+	\item Binary addressed message and acknowledgement, an addressed point-to-point message with an unspecified binary payload.
+	\item Binary broadcast message, a broadcast message with an unspecified binary payload.
+	\item Standard Search and Rescue Aircraft Position Report, used by an aircraft (helicopter or aeroplane) which is involved with search and rescue operation on the sea (i.e. search for and recovery of survivors of an accident at sea).
 	\item Addressed Safety-Related message and response, used to send text messages to a specified vessel.
 	\item Interrogation, used by a base station to get the status of up to 2 other AIS devices.
-	\item Aids-to-navigation report, used by an (AtN) aid to navigation device (buoys, lighthouse, etc.).
-	\item Multiple slot binary message with communications state, used to transmit binary data from one device to another.
+	\item Aids-to-navigation report (buoys, lighthouse, etc.).
+	\item Multiple slot binary message with communications state used to transmit binary data from one device to another.
 \end{itemize}
 
 \subsection{Man/machine interface}
-Previously all information was plotted by hand on navigational charts. With the developments of integrated bridge systems and for example the \ac{ECDIS}, this is not necessary. This also means that a digital representation of the environment is already being made. Including calculations, relevant for navigational safety. These also give warnings to avoid collisions or represent information received via \ac{VHF}. This is done in a way which is more easy to interpret by the officer of watch, as for example \ac{AIS}, \ac{ENC} and the radar are combined. Examples of the different systems can be found in figure \ref{fig:ECDIS-example}.
+Previously all information was plotted by hand on navigational charts. With the developments of integrated bridge systems and for example the \ac{ECDIS}, this is not necessary. A digital representation of the environment is already made, including calculations, relevant to navigational safety. These also give warnings to avoid collisions or represent information received via \ac{VHF}. This is done in a way which is more easy to interpret by the officer of watch, as \ac{AIS}, \ac{ENC} and the radar are combined. Examples of the different systems can be found in figure \ref{fig:ECDIS-example}.
 
 \begin{figure}[p]
 	\centering
@@ -170,9 +173,7 @@ Previously all information was plotted by hand on navigational charts. With the 
 	
 \end{figure}
 
-These screens are all integrated in some way into the bridge console. Depending on the size of the vessel, the lay-out may differ. Although, there are also regulations for the placement of systems in \ac{SOLAS}. Examples of these bridge layouts can be found in figure \ref{fig:Bridge-system-elements}.
-
-These lay-outs also show that bridges are operated in different ways. Where the officer of watch walks around on bigger ships, which also enables the crew to look together and discuss further actions. While on smaller ships the operator can see every screen from its seat. Certainly in those cases is it important to have the right balance between supplying the operator with enough information to decide on the right strategy. But avoid an information overload.
+These screens are all integrated in some way into the bridge console. Depending on the size of the vessel, the layout may differ. Although, there are also regulations for the placement of systems in \ac{SOLAS}. Examples of these bridge layouts can be found in figure \ref{fig:bridge-example}.
 
 \begin{figure}[p]
 	\centering
@@ -195,19 +196,22 @@ These lay-outs also show that bridges are operated in different ways. Where the 
 	\begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Brug-SPa-5009-Trinidad.jpg}
 		\caption{DAMEN Stan Patrol 5009}
-	\end{subfigure}	
+	\end{subfigure}    
 	
 	\caption{Various examples of bridge designs}
 	\label{fig:bridge-example}
 	
 \end{figure}
 
+These layouts also show that bridges are operated in different ways. Where the officer of watch walks around on bigger ships, which also enables the crew to look together and discuss further actions. While on smaller ships the operator can see every screen from its seat. Especially in those situations, it is essential to have the right balance between supplying the operator with enough information to decide on the right strategy. But avoid information overload.
+
+
 \subsection{Human operator}
-The human operator has two sides, to formal straight forward role as an operator. Which can be described with a list of tasks depending on their function. And the more difficult and unpredictable side of being a human. Which relates to the situational awareness and decision making ability.
+The human operator has two sides, the formal role as an operator which can be described with a list of tasks depending on their function. And the more difficult and unpredictable side of being a human which relates to the situational awareness and decision making ability.
 
 \subsubsection{Role as operator}
 \label{sec:deck-crew}
-To give more insight into the different roles on board of a merchant's vessel, is the structure shown for officers in figure \ref{fig:crew-structure}. At smaller vessels, roles are combined where possible. The Navy has in some cases even more operational crew members. Apart from the licensed officers who manage the vessel, does the crew also consist of ratings who have hands-on skills within their own domain. \cite{Nedcon2013}
+To give more insight into the different roles on board of a merchant's vessel is the structure shown for officers in figure \ref{fig:crew-structure}. At smaller vessels, roles are combined where possible. The Navy has in some cases even more operational crew members. Apart from the licensed officers who manage the vessel, the crew does also consist of ratings who have hands-on skills within their domain. \cite{Nedcon2013}
 
 \input{include/tikz}
 \begin{figure}[p]
@@ -251,22 +255,29 @@ To give more insight into the different roles on board of a merchant's vessel, i
 For this research the Deck crew is most relevant, as they are in charge of the vessel navigation, watch keeping, maintaining the ship’s hull, cargo, gear and accommodation, taking care of the ship’s lifesaving and firefighting appliances. The deck department is also the one in charge of receiving, discharging and caring for cargo. According to the vessel’s hierarchy, the deck officers are as follows: Master, Chief Officer, Second Officer, Third Officer and Deck Cadet (deck officer to be).
 
 The supreme authority on board a merchant's vessel is the Master or Captain. The entire crew is under his command. He is responsible for the safety, use and maintenance of the vessel and makes sure that every crew member carries out his work accordingly. He is also in charge of the following: payroll, ship’s accounting, inventories, custom and immigration regulations, and the ship’s documentation. In order to become Master, a seafarer must first have several years of experience as a deck officer and as Chief Officer.
-According to the vessel’s hierarchy, the first deck officer and the head of the deck department after the Master is the Chief Officer. He is in charge of the vessel navigation, watch duties, charging and discharging operations. The Chief Officer also directs all the other officers on deck, creates and posts watch assignments and implements the Master’s orders in order to maintain safe operations and maintenance of the vessel.
-Second Officer or Second Mate is the next in rank after the Chief Mate and is the ship’s navigator, focusing on creating the ship’s passage plans and keeping charts and publications up to date. Apart from watchkeeping, the Second Officer may also be designated to train the cadets on board or to fulfill the rank of security, safety, environmental or medical officer.
-The Third Officer or Third Mate is the fourth deck officer in command and is usually the Ship’s Safety Officer, responsible for ensuring the good functioning of the fire-fighting equipment and lifesaving appliances. He undertakes bridge watches and learns how to become a Second Officer.
+According to the vessel’s hierarchy, the first deck officer and the head of the deck department after the Master is the Chief Officer. He is in charge of the vessel navigation, watch duties, charging and discharging operations. The Chief Officer also directs all the other officers on deck, creates and posts watch assignments and implements the Master’s orders to maintain safe operations and maintenance of the vessel.
+
+Second Officer or Second Mate is the next in rank after the Chief Mate. He is the ship’s navigator, his main duties are the ship’s passage plans, and keep charts and publications up to date. Apart from watchkeeping, the Second Officer may also be designated to train the cadets on board or to fulfil the rank of security, safety, environmental or medical officer.
+The Third Officer or Third Mate is the fourth deck officer in command and is usually the Ship’s Safety Officer, responsible for ensuring the proper functioning of the fire-fighting equipment and lifesaving appliances. He undertakes bridge watches and learns how to become a Second Officer.
 A Cadet on board a merchant's vessel receives structured training and experience on board and learns how to become a deck officer.
 
 Apart from the officers, the deck department crew also consists of ratings, such as AB (Able Body Seaman), OS (Ordinary Seaman) and Boatswain.
 The AB is part of the deck crew and has duties such as: taking watches, steering the vessel, assisting the Officer on watch, mooring and un-mooring the vessel, deck maintenance and cleaning. The AB also secures and un-secures the cargo and carries our deck and accommodation patrols.
-OS is the crew member whose main duty is to maintain the cleanliness of the whole ship and serves as an assistant for the AB. Being an OS is considered to be an apprenticeship, a period called “sea time” in order to be allowed to take courses and training for AB.
-Both AB and OS are usually supervised by a Boatswain, who is also a rating, in charge of examining the cargo-handling gear and lifesaving equipment as well. The Boatswain usually holds an AB certificate as well.
+OS is the crew member whose primary duty is to maintain the cleanliness of the whole ship and serves as an assistant for the AB. Being an OS is considered to be an apprenticeship, a period called “sea time” to be allowed to take courses and training for AB.
+Both AB and OS are usually supervised by a Boatswain.
 The structure for the deck department on board merchant vessels is mainly the same on all vessel types. \cite{Nedcon2013}
 
 \subsubsection{Human factor}
-At unmanned autonomous vessels the human operator will be replaced by a computer. This means that the duties as described above will be executed by a computer. This automation step has unknown consequences for the ability to observe and decision making. While it has clear advantages when it comes to memory and reduced concentration due to fatigue.
+At unmanned autonomous vessels, the human operator will be replaced by a computer. This change means that a computer will execute the duties as described above. This automation step has unknown consequences for the ability to observe and decision making while it has clear advantages when it comes to memory and reduced concentration due to fatigue.
 
-Situational awareness is a model to determine the ability to observe and make decisions. How well humans perform is determined by their (learning) experience \cite{Underwood2013}. Hereby is important to notice that situational awareness is not limited to perceiving, but has multiple levels. This is described using the Endsley model (figure~\ref{fig:Endsley-SA-model}).
+Situational awareness is a model to determine the ability to observe and make decisions. How well humans perform is determined by their (learning) experience \cite{Underwood2013}. As a result of this, it is important to notice that situational awareness is not limited to perceiving, but has multiple levels. This is described using the Endsley model (figure~\ref{fig:Endsley-SA-model}).
 The first step is to acquire situational awareness. This is based on three different levels of information processing \cite{Kalloniatis2017}: 
+
+\begin{description}
+	\item [Perception] Data is merely perceived.
+	\item [Comprehension] Interpretation of data, enabling understanding of relevance concerning tasks performed and goals to be attained, forming a holistic picture of the operational environment. Identifying the significance of objects and events in that environment.
+	\item [Projection] Making a forecast for likely future states of the situation. This is based on the interpreted data, experience and knowledge.
+\end{description}
 
 \begin{figure}[p]
 	\centering
@@ -275,40 +286,34 @@ The first step is to acquire situational awareness. This is based on three diffe
 	\label{fig:Endsley-SA-model}
 \end{figure}
 
-\begin{description}
-	\item [Perception] Data is merely perceived.
-	\item [Comprehension] Interpretation of data, enabling understanding of relevance in relation to tasks performed and goals to be attained. Forming a holistic picture of the operational environment. Identifying the significance of objects and events in that environment.
-	\item [Projection] Making a forecast for likely future states of the situation. This is based on the interpreted data, experience and knowledge.
-\end{description}
+Based on the situational awareness, a decision is made that results in an action. Changing the system and repeating the whole process. There are however factors which influence the effectiveness of this process. These can be internally or from the environment. Where automation is less prone to environmental factors, it will have a disadvantage when it comes to setting goals, preconceptions, acquiring knowledge or learning from experience, as many of the machine learning techniques are too much of a black box approach or are not yet useful for the assignments where ships have to navigate for example. There’s also that indefinable matter of common sense that humans have but robots lack. Hundreds of thousands of years of evolution have provided us with a pretty good ability to recognise and make sense of things.
 
-Based on the situational awareness, an decision is being made which results in an action. Changing the system and repeating the whole process. However there are factors which influence the effectiveness of this process. These can be internally or from the environment. Where automation is less prone to environmental factors, will it have a disadvantage when it comes to setting goals, preconceptions, acquiring knowledge or learning from experience. As many of the machine learning techniques are too much of a black box approach, or are not yet effective for the assignments where ships have to navigate for example. There’s also that indefinable matter of common sense that humans have but robots lack. Hundreds of thousands of years of evolution have provided us with a pretty good ability to recognize and make sense of things.
+Whereas the human operator is more prone to environmental factors where the workload is a major factor in the ability to concentrate and thus the ability to forecast future states and therefore make the right decisions. The workload might be too high due to an overload of information \cite{Speier1999}, when tasks are too easy \cite{Washburn2001}, or when limited attention is desired for a long time, and something unexpected happens \cite{McMorris2018}.
 
-Whereas the human operator is more prone to environmental factors. Where workload is a big factor in the ability to concentrate and thus the ability to forecast future states and thus make the right decisions. The workload might be too high due to an overload of information \cite{Speier1999}, when tasks are too easy \cite{Washburn2001}, or when limited attention is desired for a long time, and something unexpected happens \cite{McMorris2018}.
-
-These factors do only consider the single individual within the human operator team. But with larger ships there are multiple persons at the bridge, all with their own responsibilities. Research has shown that many of these crews have multiple cultures and nationalities work next to each other. Which often have a agreed working language which is not their first. This leads not only to minor irritations. But in some cases to hazardous situations \cite{Hetherington2006}. Certainly when conversations happen via a radio with some noise. 
+These factors do only consider the single individual within the human operator team. But with larger ships, there are multiple persons at the bridge, all with their responsibilities. Research has shown that many of these crews have various cultures and nationalities work next to each other. Which often have an agreed working language which is not their first. This leads not only to minor irritations. But in some cases to hazardous situations \cite{Hetherington2006} when conversations happen via a noisy radio. 
 
 \subsection{Procedures}
 \label{apps:procedures}
-To become a certified seafarer, different skills and knowledge must be acquired. The \ac{IMO} has developed several conventions to standardize this knowledge globally, the \ac{STCW} is leading here. This ensures that ships sailing in international waters have skilled crew which know what they can expect from other vessels. This also means they have navigational abilities such as plotting on a radar. But they also have knowledge of the conventions and systems used for safe navigation. Below some of these are explained in more detail. Followed by a description of known flaws of these systems and differences when compared to procedures used in practice.
+Different skills and knowledge must be acquired to become a certified seafarer. The \ac{IMO} has developed several conventions to standardise this knowledge globally. The \ac{STCW} is leading here. They ensure that ships sailing in international waters have skilled crew which know what to expect from other vessels. They have navigational abilities such as plotting with \ac{ARPA} and know the conventions and systems used for safe navigation. Below some of these are explained in more detail. Followed by a description of known flaws of these systems and differences when compared to procedures used in practice.
 
+\clearpage
 \subsubsection{\acf{COLREGs}}
 The \ac{COLREGs} set out the navigational to be followed by ships and other vessels at sea, to prevent collisions between two or more vessels. Although rules for navigating vessels inland may differ, the international rules specify that they should be as closely in line with the international rules as possible. In most of continental Europe, the Code Européen des Voies de la Navigation Intérieure (CEVNI, or the European Code for Navigation on Inland Waters) apply. In the United States, the rules for vessels navigating inland are published alongside the international rules.
 
-Prior to the development of a single set of international rules and practices, there existed separate practices and various conventions and informal procedures in different parts of the world, as advanced by various maritime nations. As a result, there were inconsistencies and even contradictions that gave rise to unintended collisions. Vessel navigation lights for operating in darkness as well as navigation marks also were not standardised, giving rise to dangerous confusion and ambiguity between vessels at risk of colliding. Different nations already came up with their own set of rules. But the first version was amended together with \ac{SOLAS} in 1960. Additions were made including traffic separation schemes in 1972.
+Before the development of a single set of international rules and practices, there existed separate practices and various conventions and informal procedures in different parts of the world, as advanced by multiple maritime nations. As a result, there were inconsistencies and even contradictions that gave rise to unintended collisions. Vessel navigation lights for operating in darkness, as well as navigation marks, also were not standardised, giving rise to dangerous confusion and ambiguity between vessels at risk of colliding. Different nations already came up with their own set of rules. But the first version was amended together with \ac{SOLAS} in 1960. Additions were made including traffic separation schemes in 1972.
 
-The \ac{COLREGs} includes 41 rules divided into six sections: Part A - General; Part B - Steering and Sailing; Part C - Lights and Shapes; Part D - Sound and Light signals;  Part E - Exemptions; and Part F - Verification of compliance with the provisions of the Convention. There are also four Annexes containing technical requirements concerning lights and shapes and their positioning; sound signalling appliances; additional signals for fishing vessels when operating in close proximity, and international distress signals.
-
-Where part B is most relevant for this research, with subject like safe speed, obligation to determine risk of collision and take action with all means available, how to act in different situations with other ships, or in restricted waterways. 
+The \ac{COLREGs} includes 41 rules divided into six sections: Part A - General; Part B - Steering and Sailing; Part C - Lights and Shapes; Part D - Sound and Light signals;  Part E - Exemptions; and Part F - Verification of compliance with the provisions of the Convention. There are also annexes containing technical requirements concerning lights and their positioning; sound signalling appliances; additional signals for fishing vessels when operating in close proximity to other ships; and international distress signals.
+Where part B is most relevant for this research, with subjects like safe speed, obligation to determine the risk of collision and take action with all means available, how to act in different situations with other ships, or within restricted waterways. 
 
 \subsubsection{\acf{SMCP}}
-As navigational and safety communications from ship to shore and vice versa, ship to ship , and on board ships must be precise, simple and unambiguous, so as to avoid confusion and error, there is a need to standardize the language used. This is of particular importance in the light of the increasing number of internationally trading vessels with crews speaking many different languages since problems of communication may cause misunderstandings leading to dangers to the vessel, the people on board and the environment.
+As navigational and safety communications from ship to shore and vice versa, ship to ship, and on board ships must be precise, simple and unambiguous, to avoid confusion and error, there is a need to standardise the language used. This is of particular importance in the light of the increasing number of internationally trading vessels with crews speaking many different languages since problems of communication may cause misunderstandings leading to dangers to the vessel, the people on board and the environment.
 
-In 1973 \ac{IMO} started to develop the \acf{SMNV}, which was replaced by the \ac{SMCP} in 2001. The ability to understand and use the \ac{SMCP} is required for the certification of officers in charge of a navigational watch on ships of 500 gross tonnage or more. To assist in greater safety of navigation and of the conduct of the ship. To standardize the language used in communication for navigation at sea, in port-apporaches, in waterways, harbours and on board vessels with multilingual crews. Which is all instructed at maritime training institutions. These are not intended to supplant or contradict \ac{COLREGs} or special local rules or recommendations made by IMO concerning ship routeing. Just as radiotelephone procedures should be followed strictly as set out in the ITU Radio Regulations. 
+In 1973 \ac{IMO} started to develop the \acf{SMNV}, which was replaced by the \ac{SMCP} in 2001. The ability to understand and use the \ac{SMCP} is required for the certification of officers in charge of a navigational watch on ships of 500 gross tonnage or more. To assist in greater safety of navigation and of the conduct of the ship. To standardise the language used in communication for navigation at sea, in port-approaches, in waterways, harbours and on board vessels with multilingual crews which is all instructed at maritime training institutions. These are not intended to supplant or contradict \ac{COLREGs} or special local rules or recommendations made by IMO concerning ship routeing. Just as radiotelephone procedures should be followed strictly as set out in the ITU Radio Regulations. 
 
-It is a collection of phrases used to standardize and simplify the communication, where synonyms and contracted forms are avoided. Some \href{http://www.segeln.co.at/media/pdf/smcp.pdf}{examples of the usage of \ac{SMCP}} are shown below, including message markers to indicate the type of message:
+It is a collection of phrases used to standardise and simplify the communication, where synonyms and contracted forms are avoided. Some \href{http://www.segeln.co.at/media/pdf/smcp.pdf}{examples of the usage of \ac{SMCP}} are shown below, including message markers to indicate the type of message:
 \begin{description}
-	\item [Advice] Stand by on channel 6 - 8.
-	\item [Information] The fairway entrance is: position: bearing 1-3-7 degrees true from North Point Lighthouse, distance: 2 decimal 3 miles.
+	\item [Advice] Standby on channel 6 - 8.
+	\item [Information] The fairway entrance is at position: bearing 1-3-7 degrees true from North Point Lighthouse, distance: 2 decimal 3 miles.
 	\item [Warning] Buoy number: one - five unlit.
 	\item [Intention] I intend to reduce speed, new speed: eight knots.
 	\item [Question] What are your intentions?
@@ -317,16 +322,16 @@ It is a collection of phrases used to standardize and simplify the communication
 \end{description}
 
 \section{Difference between theory and practice}
-In the previous section is described how different systems and components should function to form the bridge system. However this is not always the case. These exceptions should be taken into account when developing an unmanned vessel. It is not within the scope of this research to find all exceptions. But based on conversations with seafarers can some already be identified which are relevant for solving the problem with communication.
+In the previous section is described how different systems and components should function to form the bridge system. This is however not always the case. These exceptions should be taken into account when developing an unmanned vessel. It is not within the scope of this research to find all exceptions. But based on conversations with seafarers can some already be identified which are relevant for solving the problem with communication.
 
 \subsubsection{Natural language}
-The first challenge is the usage of a protocol. Every seafarer learns today the \acf{SMCP}. But during operation many natural language influences are used. This does include talking in the local language, for example Dutch in front of the ports in the North sea. This was one of the main issues during the collision between AL ORAIQ and FLINTERSTAR, as described in appendix \ref{sec:al-oraiq-vs-flinterstar}.
-Another example which occured when I sailed at inland waters was the usage of location descriptions. It is very common to tell at which point a decision is taken. Many of these locations exist on maps, but in some cases it also happens that area's get names which are not written down on maps. For example was there a camping between Rotterdam and Dordrecht, which does not exist anymore. However the operators still refer to this bend as the camping.
-Autonomous systems should be able to interpret natural language and recognize when manned vessel make natural language variations to known protocols. Or using completely different ontologies. 
+The first challenge is the usage of a protocol. Every seafarer learns today the \acf{SMCP}. But during operation, many natural language influences are used. This includes the usage of a local language, such as Dutch near the North Sea ports. This was one of the main issues during the collision between AL ORAIQ and FLINTERSTAR, as described in appendix \ref{sec:al-oraiq-vs-flinterstar}.
+Another example which occurred when I sailed at inland waters was the usage of location descriptions. It is very common to tell at which point a decision is taken. Many of these locations exist on maps, but in some cases, it also happens that area's get names which are not written down on charts. For example, there was a camping between Rotterdam and Dordrecht, which does not exist anymore. Operators still refer to the bend close to this former camping, as the camping.
+Autonomous systems should be able to interpret natural language and recognise when manned vessel make natural language variations to known protocols. Or using completely different ontologies. 
 
 \subsubsection{Incorrect AIS information}
-Another important issue is the usage of AIS, as mentioned on the \acf{VDES} conference is AIS victim of its own success. Due to the popularity, more and more information is send over these radio frequencies. Limiting the number of AIS transmissions per ship per minute. Which automatically reduces the accuracy and relevance, as information is older. This make it harder to predict paths on the AIS information, therefor it is obligated to use \acf{ARPA}. This is however harder to interpret. Combining these would give very good information which can be used by the autonomous system.
-There is however another problem in this case. As shown by Loodswezen do some ships tweak the AIS information, in order to ensure that the officer of watch uses its \ac{ARPA}. This can be seen in figure~\ref{fig:wrong-AIS}. Here the vessel have an error of 150-200 meter compared to the \ac{ARPA}. How to cope with this is not within the scope of this research, but is something which should be discussed within organizations, such as \acf{IMO}. As it will determine which solutions are possible.
+Another important issue is the usage of AIS, as mentioned on the \acf{VDES} conference is AIS victim of its success. Due to the popularity, more and more information is sent over these radio frequencies, limiting the number of AIS transmissions per ship per minute. This limit automatically reduces the accuracy and relevance, as information is older. This makes it harder to predict paths on the AIS information, it is therefore obligated to use \ac{ARPA}. \ac{ARPA} is, however, harder to interpret. These would together result in sufficient information which can be used by the autonomous system.
+There is another problem in this case. As shown by Loodswezen do some ships tweak their AIS information, to ensure that the officer of watch uses its \ac{ARPA}. This can be seen in figure~\ref{fig:wrong-AIS}. The vessel has an error of approximately 150-200 meter compared to the \ac{ARPA}. How to cope with this is not within the scope of this research, but is something which should be discussed within organisations, such as \acf{IMO}, as it will determine which solutions are possible.
 
 \begin{figure}[bhp]
 	\centering
@@ -334,10 +339,11 @@ There is however another problem in this case. As shown by Loodswezen do some sh
 	\caption{Wrong AIS input when plotted on ARPA}
 	\label{fig:wrong-AIS}
 \end{figure}
+\newpage
 
 \section{Summary of relevant communication systems}
 \label{sec:relevant-systems}
-In the previous sections a lot of different systems are discussed. But not all these systems are relevant for the development of communication between manned and unmanned ships. In table~\ref{tab:current-technology} the most relevant systems and technologies are discussed, this will be the basis for the envisioned technology.
+In the previous sections, a lot of different systems are discussed. But not all these systems are relevant for the development of communication between manned and unmanned ships. In table~\ref{tab:current-technology} the most relevant systems and technologies are discussed, this will be the basis for the envisioned technology.
 This only includes systems for the communication. Not the systems to make decisions and create situational awareness, such as the ECDIS and ARPA.
 
 \begin{table}[H]

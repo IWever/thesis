@@ -146,7 +146,7 @@ if "timestep" in tests:
     plotScatter("Effect of varying dt", testResults, "Time [seconds]", "Passing distance [meter]", "Timestep [seconds]")
 
 if "Random" in tests:
-    numberOfTests = 3000
+    numberOfTests = 50
     changeTimeIn = 0
     generalResult = {"TC": {}}
     generalResult["TC"] = {
@@ -167,20 +167,26 @@ if "Random" in tests:
         testResults[ship.name] = {}
 
         for i in range(1, numberOfTests):
-            angle = random.randint(5, 70)
+            angle = 70#random.randint(5, 70)
             speed = random.randint(50, ship.vmax*10) / 10
+            AF = random.randint(20, 40) / 10
+            speedOtherVessel = random.randint(50, ship.vmax*10) / 10
 
-            result_EM = evasiveManouvre(ship, speed, angle, changetime=changeTimeIn, printResult=False)
+
+            ship.rudderAmplificationFactor = AF
+            result_EM = evasiveManouvre(ship, speed, angle, changetime=changeTimeIn, printResult=False, speedOther=speedOtherVessel)
 
             if result_EM is None:
-                print("%s - Test %d - Startspeed: %2.1f kn| angle: %d deg | failed " % (ship.name, i, speed, angle))
+                print("%s - Test %d - Startspeed: %2.1f kn| angle: %d deg | amplification factor: %2.1f | speed other: %d kn | failed "
+                      % (ship.name, i, speed, angle, AF, speedOtherVessel))
                 del result_EM
             else:
                 result_TC = turningCirlce(ship, speed)
                 result = {**result_EM, **result_TC}
 
                 testResults[ship.name]["%s - Test %d - startSpeed: %2.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
-                print("%s - Test %d - Startspeed: %2.1f kn| angle: %d deg | Max angle: %2.1f deg | Passing distance: %d m" % (ship.name, i, speed, angle, result["Max course [degrees]"], result["Passing distance [meter]"]))
+                print("%s - Test %d - Startspeed: %2.1f kn| angle: %d deg | amplification factor: %2.1f | speed other: %d kn |-> advance: %d m | dx: %d m | CPA: %d m | PD: %d m"
+                      % (ship.name, i, speed, angle, AF, speedOtherVessel, result["Advance distance [meter]"], result["Distance till initial CPA [meter]"], result["CPA [meter]"], result["Passing distance [meter]"]))
 
                 del result_EM, result_TC, result
 
@@ -233,14 +239,14 @@ if "Advance" in tests:
             result_EM = evasiveManouvre(ship, speed, angle, changetime=0)
 
             if result_EM is None:
-                print("%s - Test %d - AF: %2.1f | Startspeed: %2.1f kn| angle: %d deg | rudder: %d deg | failed " % (ship.name, i, amplificationFactor, speed, angle, rudder))
+                print("%s - Test %d - AF: %3.1f | Startspeed: %3.1f kn| angle: %d deg | rudder: %d deg | failed " % (ship.name, i, amplificationFactor, speed, angle, rudder))
                 del result_EM
             else:
                 result_TC = turningCirlce(ship, speed)
                 result = {**result_EM, **result_TC}
 
-                testResults[ship.name]["%s - Test %d - startSpeed: %2.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
-                print("%s - Test %d - AF: %2.1f | Startspeed: %2.1f kn| angle: %d deg | rudder: %d deg  | Max angle: %2.1f deg | Advance: %d m | Passing distance: %d m | CPA %d m | DTICPA: %d meter" % (ship.name, i, amplificationFactor, speed, angle, rudder, result["Max course [degrees]"], result["Advance distance [meter]"], result["Passing distance [meter]"], result["CPA [meter]"], result["Distance till initial CPA [meter]"]))
+                testResults[ship.name]["%s - Test %d - startSpeed: %3.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
+                print("%s - Test %d - AF: %3.1f | Startspeed: %3.1f kn| angle: %d deg | rudder: %d deg  | Max angle: %3.1f deg | Advance: %d m | Passing distance: %d m | CPA %d m | DTICPA: %d meter" % (ship.name, i, amplificationFactor, speed, angle, rudder, result["Max course [degrees]"], result["Advance distance [meter]"], result["Passing distance [meter]"], result["CPA [meter]"], result["Distance till initial CPA [meter]"]))
 
                 del result_EM, result_TC, result
 
@@ -305,8 +311,8 @@ if "Course" in tests:
                 result_TC = turningCirlce(ship, speed)
                 result = {**result_EM, **result_TC}
 
-                testResults[ship.name]["%s - Test %d - startSpeed: %2.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
-                print("%s - Test %d - Startspeed: %2.1f kn| angle: %d deg | Max angle: %2.1f deg | Passing distance: %d m | CPA %d m" % (ship.name, i, speed, angle, result["Max course [degrees]"], result["Passing distance [meter]"], result["CPA [meter]"]))
+                testResults[ship.name]["%s - Test %d - startSpeed: %3.1f kn| angle deg: %d" % (ship.name, i, speed, angle)] = result
+                print("%s - Test %d - Startspeed: %3.1f kn| angle: %d deg | Max angle: %3.1f deg | Passing distance: %d m | CPA %d m" % (ship.name, i, speed, angle, result["Max course [degrees]"], result["Passing distance [meter]"], result["CPA [meter]"]))
 
                 del result_EM, result_TC, result
 

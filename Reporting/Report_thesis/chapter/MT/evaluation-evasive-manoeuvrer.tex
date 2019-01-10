@@ -1,11 +1,11 @@
 \chapter{Evaluation of critical evasive manoeuvre}
 In the previous chapters are steps taken to identify common critical situations. Enough clearance is key to avoid communication. Ships can acquire this clearance by making the right decision well in advance. This chapter will take a look at the relation between the manoeuvrability of the vessel and this clearance. Section \ref{sec:trial-result} shows the relation between manoeuvring characteristics and criteria for safe operation. Using the simulation environment is looked into the effect of varying manoeuvring characteristics, including the advance distances from the turning circle test.
-These relations are used to evaluate the effect of improvements to the advance distance by increasing the manoeuvrability of a vessel on the possibility to avoid communication. This increase in manoeuvrability should result in less critical situations and therewith the amount of communication. This will on its turn show how the passing distance can be improved by changing manoeuvrability characteristics, and how this should be taken into account in the design and decision process of ships. A use case is thereby used to support this.
-The method to find this relation for the critical evasive manoeuvre and effect on the decision and design process can be used to give a general answer to the question if it is possible to ensure that a chosen strategy will result in an approach distance which does not require communication.
+These relations are used to evaluate the effect of improvements to the advance distance by increasing the manoeuvrability of a vessel on the possibility to avoid communication. This increase in manoeuvrability should result in less critical situations and hence the amount of communication. This will show how the passing distance can be improved by changing manoeuvrability characteristics, and how this should be taken into account in the design and decision process of ships. A use case is used to support this.
+The method to find this relation for the critical evasive manoeuvre and effect on the decision and design process can be used to give a general answer to the question whether it is possible to ensure that a chosen strategy will result in an approach distance that does not require communication.
 
 \section{Trial results for critical evasive manoeuvre}
 \label{sec:trial-result}
-The first step is to find the relations between manoeuvring characteristics and criteria for the operation which do not require communication. The tests from section~\ref{sec:manoeuvrer-description} are used in the simulation environment to acquire these relations. The criteria herein are the \ac{CPA} and crossing distance. The primary input for the results depend on the ship manoeuvrability and starting speed of the vessel. The speed of another vessel and crossing angle should be taken into account to eventually calculate the closest point of approach and passing distance for the most critical situation. The metrics to evaluate the above mentioned criteria are described in table~\ref{tab:evasive-manoeuvrer-metrics} and shown in figure~\ref{fig:evasive-manoeuvrer-path}.
+The first step is to find the relations between manoeuvring characteristics and criteria for the operation that do not require communication. The tests from section~\ref{sec:manoeuvrer-description} are used in the simulation environment to acquire these relations. The criteria herein are the \ac{CPA} and crossing distance. The primary input for the results depend on the ship manoeuvrability and starting speed of the vessel. The speed of another vessel and crossing angle should be taken into account to calculate the closest point of approach and passing distance for the most critical situation. The metrics to evaluate the above mentioned criteria are described in table~\ref{tab:evasive-manoeuvrer-metrics} and shown in figure~\ref{fig:evasive-manoeuvrer-path}.
 
 \begin{table}[ht]
 	\hyphenpenalty=10000
@@ -22,67 +22,89 @@ The first step is to find the relations between manoeuvring characteristics and 
 		\bottomrule
 	\end{tabular}
 	
-	\captionof{table}{Metrics for evasive manoeuvrer}
+	\captionof{table}{Metrics for evasive manoeuvre}
 	\label{tab:evasive-manoeuvrer-metrics}
 \end{table}
 
 The reason to use the evasive manoeuvre is that when two ships are parallel, the situation becomes a head-on or take-over situation. These situations are less critical and more easy to cope with than a crossing situation. A ship has to alter its course to go from a crossing situation to another situation. In case the crossing angle is 90 degrees, the ship has to alter its course the most. This is deduced from figure~\ref{fig:evasive-direction}. Therefore is the crossing angle for the most critical evasive manoeuvre 90 degrees.
 
 \subsection{Passing distance}
-The passing distance is the first criteria which will be evaluated, as this is often used by seafarers to determine if they pass correctly. A simplified calculation for the passing distance can be used due to the perpendicular crossing situation. 
+The passing distance is the first criteria that will be evaluated, as this is often used by seafarers to determine if they pass correctly. A simplified calculation for the passing distance can be used due to the perpendicular crossing situation. 
 Figure~\ref{fig:result-distance-passing-distance-start-speed} shows the results of trials revealing the relation between passing distance, distance till initial CPA and starting speed.
 
 \subsubsection{Results of simulations}
 The $passing~distance = side~distance + speed~other \times extra~time$.
 For the simulation is the speed of the other vessel kept constant at 14 knots, as the effect of the speed of another vessel is relatively small. For the same passing distance will the distance till CPA vary with less than 50 meters. 14 knots is a typical speed for large cargo vessels at open-sea. The possible passing distance for lower speeds is smaller for the same distance till CPA.
 
-The wedges as shown in figure~\ref{fig:result-distance-passing-distance-start-speed} should be read as follows: If I'm operating the Gulf Valour at 13 knots, and I'm currently on a collision course with another vessel sailing 14 knots. It means that I have to start acting at least 860 meters before the collision point, to end up with a \ac{CPA} of 500 meters.
-The Emma Maersk has to act 1150 meter before the expected collision point when she operates at a similar speed of 13 knots and also the desired passing distance of 500 meters. Figure~\ref{fig:general-advance-passing} shows the generalised curve for these plots, where the location of the curve depends on the advance distance and speed of the other ship.
+The wedges in figure~\ref{fig:result-distance-passing-distance-start-speed} are used to determine the distance till initial CPA. For the Gulf Valour at 13 knots, and a collision course with a vessel sailing  at 14 knots, it means that the Gulf Valour has to start acting at least 860 meters before the collision point, to end up with a \ac{CPA} of 500 meters.
+When the Emma Maersk sails 13 knots and has 1150 meter left to act before a collision. Does it mean that the passing distance can be at most 500 meters. 
 
-There exist a maximum at a distance for every ship and speed. This distance is equal to the distance needed to do an evasive manoeuvre with a maximum course change of 90 degrees. The ship becomes parallel to the other vessel with this course change, which means it's not a crossing situation anymore.
+In figure~\ref{fig:result-passing-distance-combined} are the wedges combined, to show the relative size of these wedges. The location of the curves within the wedges depend on the start speed, that influences the advance distance.
+The ship becomes parallel to the other vessel when the course changes 90 degrees, as it means that it is not a crossing situation anymore. The point where this happens is the maximum passing distance for each advance distance.
 
 \begin{figure}[!p]
 	\centering
-	\includegraphics[width=.7\textwidth]{distance-passing-distance-advance.png} 
-	\caption{Relation between passing distance, distance till initial CPA and start speed, for Astrorunner, Gulf Valour and Emma Maersk}
-	\label{fig:result-distance-passing-distance-start-speed} 
-\end{figure}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{astrorunner-pd.png} 
+		\caption{Astrorunner (140m - 9500 ton - General cargo)} 
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{emma-maersk-pd.png} 
+		\caption{Emma Maersk (400m - 157000 ton - Containers)} 
+	\end{subfigure}
 
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=.6\textwidth]{generalized-passing-distance.png}
-	\caption{General curve for relation between distance till initial CPA and passing distance}
-	\label{fig:general-advance-passing} 
+	\medskip \bigskip
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\textwidth]{gulf-valour-pd.png} 
+		\caption{Gulf Valour (250m - 115000 ton - Tanker)} 
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{distance-passing-distance-advance.png} 
+		\caption{Combined relations for vessels}
+		\label{fig:result-passing-distance-combined}
+	\end{subfigure}
+
+	\caption{Relation between passing distance, distance till CPA and start speed} 
+	\label{fig:result-distance-passing-distance-start-speed} 
 \end{figure}
 
 \subsubsection{Relation between the passing distance and advance distance}
 \label{sec:relation-advance-distance}
-From the results above is clear that there is a relation between start speed and the results of the critical evasive manoeuvrer. This start speed influences the key manoeuvrability characteristic relevant to the critical evasive manoeuvrer: Advance distance. This is measured during the turning circle test. To show the relation between the advance distance, distance till initial CPA and passing distance, are trial results as shown in figure~\ref{fig:result-distance-passing-distance-start-speed} combined. Many more ships are however needed to create a continuous graph which can be used to show relations over a wider range. More ships are created using a mocking strategy, where beside the start speed and course change, also the input for the manoeuvring model is varied. This creates fake ships which do not exist in reality but will give results comparable to existing ships. The empirical amplification factor of the rudder force is varied, which means that the rudder is more or less effective. Vessels acquire this change by changing the size of the rudder or adding rudders. Due to non-linearities can't be said that a doubling of this factor is the same as adding an extra rudder. However, it will give a requirement for the advance distance. 
+The results in figure~\ref{fig:result-distance-passing-distance-start-speed} make it clear that there is a relation between start speed and the results of the critical evasive manoeuvre. This start speed influences the key manoeuvrability characteristic relevant to the critical evasive manoeuvre: Advance distance. This is measured during the turning circle test. To show the relation between the advance distance, distance till initial CPA and passing distance, trial results are as shown in figure~\ref{fig:result-distance-passing-distance-start-speed} combined. Many more ships are however needed to create a continuous graph that can be used to show relations over a wider range. More ships are created using a mocking strategy, where besides the start speed and course change, also the input for the manoeuvring model is varied. This creates artificial ships that do not exist in reality. With these ships it is possible to test more advance distances. The empirical amplification factor of the rudder force is varied, that means that the rudder is more or less effective. Vessels acquire this change by changing the size of the rudder or adding rudders. Due to non-linearities no conclusion can be made that a doubling of this factor is the same as adding an extra rudder. However, it will give a requirement for the advance distance. 
 
 \begin{figure}[p]
 	\centering
-	\includegraphics[width=\textwidth]{advance-passing-distance.png}
+	\includegraphics[width=.9\textwidth]{advance-passing-distance.png}
 	\caption{Combined plots for different advance distances, showing the relation between distance till CPA, passing distance and advance distance by varying start speed and rudder amplification factor. Including example advance distance iso-curves}
 	\label{fig:passing-distance-advance}
 \end{figure}
 
-Figure~\ref{fig:passing-distance-advance} shows how the relation between distance till CPA and the final passing distance depends on the advance distance. Where the advance distance depends on three factors, the ship (140m cargo ship, 250m tanker or 400m container ship), the start-speed and the empirical rudder amplification factor. Using the different graphs per ship as shown in appendix~\ref{app:extra-figures} is a continuous graph created. The curves deducted from this graph can be used during the design process or while operating a vessel to determine the required advance distance for a specific situation. This can be used on its turn to define vessel dependent speed limits or manoeuvrability requirements for specific areas and situations.
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=.7\textwidth]{generalized-passing-distance.png}
+	\caption{General curve for relation between distance till initial CPA and passing distance}
+	\label{fig:general-advance-passing} 
+\end{figure}
 
-\subsubsection{Generalized relation for passing distance}
+Figure~\ref{fig:passing-distance-advance} shows how the relation between distance till CPA and the final passing distance depends on the advance distance. Where the advance distance depends on three factors, the ship (140m cargo ship, 250m tanker or 400m container ship), the start-speed and the empirical rudder amplification factor. Combining the results of these simulation will result in a continuous graph. The curves deducted from this graph can be used during the design process or while operating a vessel to determine the required advance distance for a specific situation. This can be used on its turn to define vessel dependent speed limits or manoeuvrability requirements for specific areas and situations.
+
+\subsubsection{Generalised relation for passing distance}
 Figure~\ref{fig:general-advance-passing} shows the generalised form for the relation between distance till initial CPA and passing distance.
 Going left or right on this general curve, relates to the maximum course change ($\theta$). The position of the curve depends on two factors, the advance distance and speed of another vessel. Where the speed of another vessel has a relatively small impact, as the bandwidth of these curves is small. By comparing different curves, is seen that an increase of 1 knot, will result in a maximum change of 1\% of the distance till \ac{CPA} when the passing distance is kept constant. This change means for a 400-meter container ship with the desired passing distance of 1000 meter that the distance till initial CPA varies between 960 and 1070 meters when the speed of the other vessel varies between 0 and 18 knots.
 
 \clearpage
 
-The advance distance is however much more relevant for increasing the ability of unmanned vessels to ensure safe operation in critical situations. In case of an evasive manoeuvrer does a reduction of 1\% of the advance distance, result in a 1\% reduction of the distance till initial CPA.
-Liu \cite{Liu2015a} has shown that a reduction of 10 \% in advance distance can already be acquired by using different rudder profiles, compared to commonly used profiles. Similar results are acquired by using a high-lift rudder \cite{Zaky2018}. For a 250 meter tanker at 12 knots, with the desired passing distance of 1000 meter, this would mean a reduction of 100 meters on the distance till initial CPA. This reduction will on its turn mean that 100 meters less is required to ensure that the chosen strategy will result in a passing distance which does not require communication.
+The advance distance is however much more relevant for increasing the ability of unmanned vessels to ensure safe operation in critical situations. In case of an evasive manoeuvre does a reduction of 1\% of the advance distance, result in a 1\% reduction of the distance till initial CPA.
+Liu \cite{Liu2015a} has shown that a reduction of 10 \% in advance distance can already be acquired by using different rudder profiles, compared to commonly used profiles. Similar results are acquired by using a high-lift rudder \cite{Zaky2018}. For a 250 meter tanker at 12 knots, with the desired passing distance of 1000 meter. This would mean a reduction of 100 meters on the distance till initial CPA. This reduction will on its turn mean that 100 meters less is required to ensure that the chosen strategy will result in a passing distance that does not require communication.
 
 \subsection{Closest point of approach}
-The more critical measure is the \ac{CPA}, as this tells what the minimal distance is between two vessels. For this criteria is a more complex calculation necessary. The algorithm from section~\ref{ssec:CPA-calculation} is used to calculate the CPA. In case of the critical evasive manoeuvre is the CPA smaller than the passing distance. The moment of the \ac{CPA} is often earlier than the initial CPA, as the first step in a crossing situation is to steer towards the other vessel. Using the knowledge from the passing distance is again looked at the influence of the advance distance on the CPA.
+The more critical measure is the \ac{CPA}, as this defines the minimal distance between two vessels. For this criteria is a more complex calculation required. The algorithm specified in section~\ref{ssec:CPA-calculation} is used to calculate the CPA. In case of the critical evasive manoeuvre is the CPA smaller than the passing distance. The moment of the \ac{CPA} is often earlier than the initial CPA, as the first step in a crossing situation is to steer towards the other vessel. Using the knowledge from the passing distance is again looked at the influence of the advance distance on the CPA.
 
 \subsubsection{Results of simulations of the relation between the CPA and advance distance}
-The minimum for the distance between another ship and own ship at every timestep is the \ac{CPA}. To find the general relations are for this simulation different inputs varied again. Varying these inputs will give insight into how these affect the decision and design process.
-Inputs which are also varied for to find the general relation for the passing distance are the ships, the maximum course change, the start speed, and the rudder amplification factor. The speed of the other vessel is 14 knots again for the same reasons as described in the previous section.
+The minimum for the distance between another ship and own ship at every timestep is the \ac{CPA}. The different inputs are varied again to find the general relations for this simulation. Varying these inputs will give insight into how these affect the decision and design process.
+Inputs which are also varied to find the general relation for the passing distance are the ships, the maximum course change, the start speed, and the rudder amplification factor. The speed of the other vessel is 14 knots again for the same reasons as described in the previous section.
 
 \begin{figure}[!p]
 	\centering
@@ -105,22 +127,26 @@ Inputs which are also varied for to find the general relation for the passing di
 	\caption{Relation between distance till CPA and CPA}
 \end{figure}
 
-Figure~\ref{fig:distance-CPA-advance} shows a clear maximum for the CPA at every distance till the initial CPA. Thereby can be seen that this depends on the advance distance. This relation has a different generalised curve than figure~\ref{fig:general-advance-passing}. Figure~\ref{fig:distsance-cpa-course-50} shows the generalised curve for the CPA, where the advance distance is constant for each of the different curves. The advance distance is for these curves 397, 609 and 1140 meter.
+Figure~\ref{fig:distance-CPA-advance} shows a clear maximum for the CPA at every distance till the initial CPA. Thereby can be seen that this depends on the advance distance. This relation has a different generalised curve than figure~\ref{fig:general-advance-passing}. Figure~\ref{fig:distsance-cpa-course-50} shows the generalised curve for the CPA, where the advance distance is constant for each of the different curves. The advance distance for these curves is 397, 609 and 1140 meter.
 
 \clearpage
 
 The maximum rudder angle during the evasive manoeuvre is an extra factor influenced to find the relation between CPA and advance distance. For calculating the CPA is the shape of the curve during the evasive manoeuvre relevant, as the CPA takes often place somewhere in this bend. Varying this input will give results for a larger range of CPAs. Figure~\ref{fig:distance-cpa-max-rudder} shows how this changes the relation between distance till initial CPA, CPA and the advance distance.
 
 \subsubsection{General relation for CPA}
-In the previous section are results shown for the impact of the advance distance. The manoeuvring characteristics and start speed vessel determine the advance distance, thereby is shown how these affect the CPA in a critical evasive manoeuvre. Conclusions can be drawn on the effect of the manoeuvring characteristics on the decision process, by taking the general curves for these relations. These are also taken into account during the design process of a ship.
-\todo{explain in more detail what causes the straight front showing max CPA}
+In the previous section are results shown for the impact of the advance distance. The manoeuvring characteristics and start speed of the vessel determine the advance distance, thereby is shown how these affect the CPA in a critical evasive manoeuvre. Conclusions can be drawn on the effect of the manoeuvring characteristics on the decision process, by taking the general curves for these relations. These are also taken into account during the design process of a ship or traffic schemes.
+
+One of the most interesting characteristics from the results, is the maximum value for \ac{CPA} at different distances till initial \ac{CPA}. Thus the almost linear line showing the maximum CPA reachable for each distance till a collision would occur. This line can be explained by the trajectories of the ships and the shape of the safety domain. 
+The exact trajectory of the ship depends on the manoeuvrability characteristics, such as overshoot and turning ability. But the most important factor for the shape is the advance distance.
+
+The point where the \ac{CPA} is reached is at a similar location in the manoeuvre when normalized by the advance distance and time for the situation where the maximum course change is 90 degrees. This point is exactly where the ship has turned 90 degrees. This point is exactly the same as the point where the advance distance in the turning circle test is measured. This means there is a direct correlation between the advance distance and the point where the CPA is reached. As the speed of the other vessel is kept the same due to its limited impact, will this result in a linear line for the relation between CPA and distance till initial CPA.
 
 \section{Use case}
-Examples are given to show how the relations for common critical evasive manoeuvres can be used in the decision and design process. These show how the relations can be used to define vessel dependent speed limits or manoeuvrability requirements for specific situations. The common critical situation used is a crossing of a traffic lane. This is similar to the situation as used in part~\ref{part:CS} during the experiment. The situation is described first, next the manoeuvrability characteristics are varied to show how this influences the decision process. This is concluded by a discussion on the requirements for different vessels in such a situation.
+Examples are given to show how the found relations for the common critical evasive manoeuvre can be used. These show how the relations are used to define vessel dependent speed limits and manoeuvrability requirements. The used situation is the crossing of a traffic lane. This is similar to the situation as used in part~\ref{part:CS}. The situation is described first, next the manoeuvrability characteristics are varied to show how this influences the decision process. This is concluded by a discussion on the requirements for different vessels in such a situation.
 
-A crossing situation at the North-Sea is used. This situation is also described in section~\ref{ssec:crossing-north-sea}. The situation is based on the accident between MV ARTADI and MV ST-GERMAIN (appendix~\ref{sec:artadiVSst-germain}). Three vessels are included in this use case: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 400-meter container vessel (EMMA MAERSK). The situation is shown in figure~\ref{fig:crossing-dover-MT}. The relevant information for these ships is given in table~\ref{tab:info-dover-MT}.
+The crossing situation is at the North-Sea and also described in section~\ref{ssec:crossing-north-sea}. The situation is based on the accident between MV ARTADI and MV ST-GERMAIN (appendix~\ref{sec:artadiVSst-germain}). Three vessels are included in this use case: a 250-meter tanker (GULF VALOUR), a 140-meter cargo vessel (ASTRORUNNER) and a 400-meter container vessel (EMMA MAERSK). Different screenshots of the situation are shown in figure~\ref{fig:use-case-1} and \ref{fig:use-case-2} over time, on page~\pageref{fig:use-case-1} at the end of this chapter. The relevant information about the ships is given in table~\ref{tab:info-dover-MT}.
 
-\begin{table}[p]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{l | r r r l}
 		\toprule
@@ -131,8 +157,9 @@ A crossing situation at the North-Sea is used. This situation is also described 
 		Draft     & 13.2    & 6.5    &  12.6 & m  \\
 		Deadweight & 114900 & 9543 & 156907 & ton \\
 		Type     & Oil tanker    & General cargo vessel    &  Container vessel & \\
+		Colour & Green & Orange & Blue \\
 		\midrule
-		Position& [-100, -100]    & [3250, 0]    &  [2800, 3400] & m \\
+		Start position & [-100, -100]    & [3250, 0]    &  [2800, 3400] & m \\
 		Speed     & 15.0    & 14.7    &  12.0 & knots\\
 		Course     & 45    & 315    &  225 & degrees \\
 		Advance distance & 633 & 393 & 940 & m \\
@@ -142,36 +169,160 @@ A crossing situation at the North-Sea is used. This situation is also described 
 	\label{tab:info-dover-MT}
 \end{table}
 
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=\textwidth]{situation-dover-MT.png}
-	\caption{Situation sketch for crossing situation at North-Sea}
-	\label{fig:crossing-dover-MT}
-\end{figure}
+
 
 The ASTRORUNNER sails perpendicular to the courses of both GULF VALOUR and EMMA MAERSK. The first interaction is between GULF VALOUR and ASTRORUNNER. The GULF VALOUR has to give-way in this situation. Based on the results from the previous section and considering a minimal CPA of 370 meters (two cables). The experts from the experiment in chapter~\ref{ch:evaluation} confirmed that this a realistic CPA in busy areas.
-This CPA forces the GULF VALOUR to start the evasive manoeuvre 982 meter before the initial collision point. 
+This CPA forces the GULF VALOUR to start the evasive manoeuvre 968 meter before the initial collision point. 
 
-As the ASTRORUNNER is the stand-on vessel, it has to hold course and speed till the GULF VALOUR has passed. But also considering the results from the previous section and a minimal CPA of 370 meters, this does mean that the ASTRORUNNER has to change its course 835 meters before colliding with the EMMA MAERSK. The GULF VALOUR has passed the ASTRORUNNER 1060 meter before the initial collision point with the EMMA MAERSK, which means that the ASTRORUNNER has plenty of time to avoid a collision with the EMMA MAERSK
+As the ASTRORUNNER is the stand-on vessel, it has to hold course and speed till the GULF VALOUR has passed. But also considering the results from the previous section and a minimal CPA of 370 meters, this does mean that the ASTRORUNNER has to change its course 739 meters before colliding with the EMMA MAERSK. The GULF VALOUR has passed the ASTRORUNNER 1060 meter before the initial collision point with the EMMA MAERSK, which means that the ASTRORUNNER has plenty of time to avoid a collision with the EMMA MAERSK
 
-If the GULF VALOUR would have been in the same situation as the ASTRORUNNER will it still be possible to manoeuvre in time. As the CPA of 370 meters can be reached by changing its course 982 meter before. This is less than the 1060 meter which is left after becoming the give-way vessel. 
-The EMMA MAERSK would get into problems, as she has to start the evasive manoeuvre 1345 meters before the collision, while the distance at which the vessels changes from stand-on to give-way vessel is only 1060 meters from the collision point. In that case is it for the EMMA MAERSK only possible to increase the CPA to 218 meters.
+If the GULF VALOUR would be in the same situation as the ASTRORUNNER, it would be still be possible to manoeuvre in time. As the CPA of 370 meters can be reached by changing its course 968 meter in advance. This is less than the 1060 meter that is left after becoming the give-way vessel. 
+The EMMA MAERSK faces a problem, as she has to start the evasive manoeuvre 1285 meters before the collision, while the distance at which the vessels changes from stand-on to give-way vessel is only 1060 meters from the collision point. In that case is it for the EMMA MAERSK only possible to increase the CPA to 218 meters.
 
-Small adoptions are for vessels with the size of the EMMA MAERSK not sufficient, such as an improvement of the rudder properties or reducing speed. These changes will result in a maximum decrease for the distance till initial CPA to 1180 meters. For the GULF VALOUR will changing the rudder profile reduce the advance distance with 10\% as described before in section~\ref{sec:relation-advance-distance}. This reduction will result in an distance till initial CPA of 897 meters, instead of 982 meters for the same desired CPA of 370 meters.
+Small adoptions are for vessels with the size of the EMMA MAERSK not sufficient, such as an improvement of the rudder properties or reducing speed. These changes will result in a maximum decrease for the distance till initial CPA to 1180 meters. For the GULF VALOUR will changing the rudder profile reduce the advance distance with 10\% as described before in section~\ref{sec:relation-advance-distance}. This reduction will result in an distance till initial CPA of 897 meters, instead of 968 meters for the same desired CPA of 370 meters.
 
-\todo{Table with results of use case}
-\todo{Change name in fig 7.5 from Tanker --> Gulf Valour}
-\todo{Show plots of use case trough time, similar to a video}
+Tables \ref{tab:result-use-case-original} and \ref{tab:result-use-case-improved} show the results of substituting the ASTRORUNNER by the EMMA MAERSK or GULF VALOUR in the use case. This shows that the EMMA MAERSK can't act in this situation, the GULF VALOUR is limited by its manoeuvrability characteristics to improve the CPA, while the ASTRORUNNER would not benefit due to it's high manoeuvrability.
+
+\begin{table}[p]
+	\centering
+	\begin{tabular}{l | r r r l}
+		\toprule
+		& GULF VALOUR & ASTRORUNNER & EMMA MAERSK & \\
+		\midrule
+		Advance distance & 633 & 393 & 940 & m \\
+		Distance till initial CPA & 1060 & 1060 & 1060 & m \\
+		Possible CPA & 462 & 691 & 218 & m \\
+		Accepted CPA (370 m) & \cmark & \cmark & \xmark & \\
+		\midrule
+		Advance distance & 633 & 393 & 940 & m \\
+		Distance till initial CPA & 968 & 739 & 1285 & m\\
+		Possible CPA & 370 & 370 & 370 & m \\
+		Sufficient distance (1060 m) & \cmark & \cmark & \xmark & \\
+		\bottomrule
+	\end{tabular}
+\captionof{table}{Results for double crossing situation with original advance distance}
+\label{tab:result-use-case-original}
+\end{table}
+
+\begin{table}[p]
+	\centering
+	\begin{tabular}{l | r r r l}
+		\toprule
+		& GULF VALOUR & ASTRORUNNER & EMMA MAERSK & \\
+		\midrule
+		Advance distance & 570 & 354 & 846 & m \\
+		Distance till initial CPA & 1060 & 1060 & 1060 & m \\
+		Possible CPA & 527 & 762 & 274 & m \\
+		Accepted CPA (370 m) & \cmark & \cmark & \xmark & \\
+		\midrule
+		Advance distance & 570 & 354 & 846 & m \\
+		Distance till initial CPA & 897 & 704 & 1180 & m \\
+		Possible CPA & 370 & 370 & 370 & m \\
+		Sufficient distance (1060 m) & \cmark & \cmark & \xmark & \\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{Results for double crossing situation with improved advance distance}
+	\label{tab:result-use-case-improved}
+\end{table}
+
+\section{Effect of advance distance on decision and design process}
+In this research the critical evasive manoeuvre is evaluated. By evaluating more different manoeuvres and situations, it will be possible to create many more common use cases, that can subsequently be used to define more requirements for the advance distance in those situations. This advance distance is an input for the design process of a ship. On the other hand is it possible to use these results to make vessel and situation dependent speed limits. This will ensure that ships can operate safely without communication.
+
+For the critical evasive manoeuvre three results are possible. The first result is when insufficient distance is left until the initial CPA to improve the CPA to a satisfying distance. For the EMMA MAERSK this is true in the use case. In those situations it is necessary to communicate.
+The second result is when the manoeuvrability characteristics are limiting the possible CPA. In that case is a ship not able to turn 90 degrees, but has enough distance left till the collision to improve the CPA to the desired CPA. This is the case for the GULF VALOUR when no adaptions are made.
+The last possible result is that sufficient distance is available to go from a crossing situation to a situation where the courses of both ships are parallel. The maximum possible CPA can exceed in those cases the required CPA. For every extra meter distance till initial CPA, does the CPA also increase one meter. This is the case for the improved GULF VALOUR and the ASTRORUNNER.
+
+\clearpage
 
 %Two collision points:\\
 %- Tanker, Astrorunner - 1620m, 1620m, 300s \\
 %- Astrorunner, Emma Maersk - 870m, 2390m, 440s \\
 
-\section{Effect of advance distance on decision and design process}
-In this research is the critical evasive manoeuvre evaluated. By evaluating more different manoeuvres and situations, will it be possible to creating many more common use cases, which can subsequently be used to define more requirements for the advance distance in those situations. This advance distance is an input for the design process of a ship. On the other hand is it possible to use these results to make vessel and situation dependent speed limits. This will ensure that ships can operate safely without communication.
+\begin{figure}[p]
+	\centering
+	
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{use-case-MT/t-80.png}
+		\caption{Time: 0}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{use-case-MT/t-145.png}
+		\caption{Time: 65}
+	\end{subfigure}
+	
+	\medskip \bigskip
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{use-case-MT/t-200.png}
+		\caption{Time: 120}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{use-case-MT/t-250.png}
+		\caption{Time: 170}
+	\end{subfigure}
+	
+	\medskip \bigskip
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{use-case-MT/t-300.png}
+		\caption{Time: 220}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-320.png}
+		\caption{Time: 240}
+	\end{subfigure}
+	
+	\caption{Situation sketch for crossing situation at North-Sea part 1}
+	\label{fig:use-case-1}
+\end{figure}
 
-\todo{Update axis name to distance till initial CPA; plots in same figure or axis should be equal (figure 7.1)}
-\todo{Add help lines which show how I read the graph}
+\begin{figure}[p]
+	\centering
+	
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-350.png}
+		\caption{Time: 270}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-400.png}
+		\caption{Time: 320}
+	\end{subfigure}
+	
+	\medskip \bigskip
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-450.png}
+		\caption{Time: 370}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-500.png}
+		\caption{Time: 420}
+	\end{subfigure}
+	
+	\medskip \bigskip
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-575.png}
+		\caption{Time: 500}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{use-case-MT/t-700.png}
+		\caption{Time: 620}
+	\end{subfigure}
+	
+	\caption{Situation sketch for crossing situation at North-Sea part 2}
+	\label{fig:use-case-2}
+\end{figure}
+
+\clearpage
+
 
 
 

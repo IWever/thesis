@@ -15,8 +15,12 @@ class World:
         # Set-up for world
         self.experimentName = "Dover0_MT_case"
         self.comment = "Damen5"
-        self.showWaypointMarkers = True
+        self.showWaypointMarkers = False
         self.saveLog = False
+
+        # Safety domains
+        self.coldwell = False
+        self.twoCables = True
 
         # Set-up for simulation
         self.mapName = None

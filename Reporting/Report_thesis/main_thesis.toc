@@ -1,7 +1,9 @@
-\contentsline {chapter}{Preface}{v}{chapter*.3}
-\contentsline {chapter}{Abstract}{vii}{chapter*.5}
-\contentsline {chapter}{Glossary}{vii}{section*.6}
-\contentsline {chapter}{Introduction}{1}{chapter*.15}
+\contentsline {chapter}{Summary}{iii}{chapter*.1}
+\contentsline {subsubsection}{Impact of manoeuvrability on the necessity to communicate}{iii}{chapter*.1}
+\contentsline {subsubsection}{A protocol to enable communication between manned and unmanned ships}{iv}{chapter*.1}
+\contentsline {chapter}{Preface}{vii}{chapter*.5}
+\contentsline {chapter}{Glossary}{ix}{chapter*.6}
+\contentsline {chapter}{Introduction}{1}{chapter*.13}
 \contentsline {part}{I\hspace {1em}The problem of communication for unmanned vessels}{5}{part.1}
 \contentsline {chapter}{\numberline {1}Steps towards safe unmanned shipping}{9}{chapter.1}
 \contentsline {section}{\numberline {1.1}Why autonomous and unmanned shipping}{9}{section.1.1}
@@ -12,25 +14,25 @@
 \contentsline {section}{\numberline {1.4}Challenges when combining unmanned and manned vessel}{15}{section.1.4}
 \contentsline {chapter}{\numberline {2}Decision model for safe operation}{17}{chapter.2}
 \contentsline {section}{\numberline {2.1}Decision process}{17}{section.2.1}
-\contentsline {subsubsection}{Mental model}{17}{section.2.1}
-\contentsline {subsubsection}{Identify situation}{19}{section.2.1}
-\contentsline {subsubsection}{Predict future states and decide on strategy}{19}{section.2.1}
+\contentsline {subsubsection}{Mental model}{17}{section*.23}
+\contentsline {subsubsection}{Identify situation}{19}{section*.23}
+\contentsline {subsubsection}{Predict future states and decide on strategy}{19}{section*.23}
 \contentsline {section}{\numberline {2.2}External factors}{20}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Environment}{20}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Communication}{20}{subsection.2.2.2}
-\contentsline {part}{II\hspace {1em}Impact of manoeuvrability on decision making}{23}{part.2}
+\contentsline {subsection}{\numberline {2.2.2}Communication}{21}{subsection.2.2.2}
+\contentsline {part}{II\hspace {1em}Impact of manoeuvrability on the necessity to communicate}{23}{part.2}
 \contentsline {chapter}{\numberline {3} Decision-making process}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Decision phases}{27}{section.3.1}
 \contentsline {section}{\numberline {3.2}Nodes in decision-making tree}{28}{section.3.2}
-\contentsline {subsubsection}{Identify situations}{28}{section.3.2}
-\contentsline {subsubsection}{Predict future states}{28}{table.caption.31}
-\contentsline {subsubsection}{Possible strategies}{28}{table.caption.32}
-\contentsline {subsubsection}{Possible actions}{29}{table.caption.34}
-\contentsline {subsubsection}{Result}{30}{table.caption.36}
+\contentsline {subsubsection}{Identify situations}{28}{section*.28}
+\contentsline {subsubsection}{Predict future states}{28}{table.caption.29}
+\contentsline {subsubsection}{Possible strategies}{28}{table.caption.30}
+\contentsline {subsubsection}{Possible actions}{29}{table.caption.32}
+\contentsline {subsubsection}{Result}{29}{table.caption.34}
 \contentsline {section}{\numberline {3.3}Critical paths in decision trees}{30}{section.3.3}
 \contentsline {chapter}{\numberline {4}Identification of situation and scenarios}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Situation identification}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Situations which limit possible strategies}{35}{section.4.2}
+\contentsline {section}{\numberline {4.2}Situations that limit possible strategies}{35}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Waterway properties}{35}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Dynamic objects}{35}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Scenarios}{36}{section.4.3}
@@ -45,94 +47,100 @@
 \contentsline {chapter}{\numberline {6}Manoeuvres for validation and testing}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Manoeuvre descriptions}{43}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Sea-trial}{43}{subsection.6.1.1}
-\contentsline {subsubsection}{Turning circle manoeuvrer}{44}{subsection.6.1.1}
-\contentsline {subsubsection}{Zig-zag test}{44}{figure.caption.45}
-\contentsline {subsection}{\numberline {6.1.2}Critical evasive manoeuvrer}{46}{subsection.6.1.2}
+\contentsline {subsubsection}{Turning circle manoeuvre}{44}{section*.43}
+\contentsline {subsubsection}{Zig-zag test}{44}{figure.caption.44}
+\contentsline {subsection}{\numberline {6.1.2}Critical evasive manoeuvre}{46}{subsection.6.1.2}
 \contentsline {section}{\numberline {6.2}Tool validation}{47}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Validation of hydrodynamic model}{47}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Input for critical evasive manoeuvrer}{49}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}Input for critical evasive manoeuvre}{49}{subsection.6.2.2}
 \contentsline {chapter}{\numberline {7}Evaluation of critical evasive manoeuvre}{51}{chapter.7}
 \contentsline {section}{\numberline {7.1}Trial results for critical evasive manoeuvre}{51}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Passing distance}{52}{subsection.7.1.1}
-\contentsline {subsubsection}{Results of simulations}{52}{subsection.7.1.1}
-\contentsline {subsubsection}{Relation between the passing distance and advance distance}{54}{figure.caption.52}
-\contentsline {subsubsection}{Generalized relation for passing distance}{54}{figure.caption.53}
+\contentsline {subsubsection}{Results of simulations}{52}{section*.50}
+\contentsline {subsubsection}{Relation between the passing distance and advance distance}{54}{figure.caption.51}
+\contentsline {subsubsection}{Generalised relation for passing distance}{54}{figure.caption.53}
 \contentsline {subsection}{\numberline {7.1.2}Closest point of approach}{56}{subsection.7.1.2}
-\contentsline {subsubsection}{Results of simulations of the relation between the CPA and advance distance}{56}{subsection.7.1.2}
-\contentsline {subsubsection}{General relation for CPA}{58}{figure.caption.54}
+\contentsline {subsubsection}{Results of simulations of the relation between the CPA and advance distance}{56}{section*.54}
+\contentsline {subsubsection}{General relation for CPA}{58}{figure.caption.55}
 \contentsline {section}{\numberline {7.2}Use case}{58}{section.7.2}
 \contentsline {section}{\numberline {7.3}Effect of advance distance on decision and design process}{60}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusion}{63}{chapter.8}
-\contentsline {part}{III\hspace {1em}Necessity of a protocol to enable teamwork between manned and unmanned ships}{67}{part.3}
+\contentsline {chapter}{\numberline {8}Conclusion}{65}{chapter.8}
+\contentsline {part}{III\hspace {1em}A protocol to enable communication between manned and unmanned ships}{67}{part.3}
 \contentsline {chapter}{\numberline {9}Foundation}{71}{chapter.9}
 \contentsline {section}{\numberline {9.1}Operational demands}{71}{section.9.1}
 \contentsline {subsection}{\numberline {9.1.1}Problem scenario}{71}{subsection.9.1.1}
 \contentsline {subsection}{\numberline {9.1.2}Problem analysis}{72}{subsection.9.1.2}
-\contentsline {subsubsection}{Primary actors}{72}{subsection.9.1.2}
-\contentsline {subsubsection}{Secondary actors}{73}{subsection.9.1.2}
-\contentsline {subsubsection}{Goals}{74}{subsection.9.1.2}
-\contentsline {subsubsection}{Infeasible solutions}{74}{subsection.9.1.2}
+\contentsline {subsubsection}{Primary actors}{72}{section*.61}
+\contentsline {subsubsection}{Secondary actors}{73}{section*.61}
+\contentsline {subsubsection}{Goals}{73}{section*.61}
+\contentsline {subsubsection}{Infeasible solutions}{74}{section*.61}
 \contentsline {section}{\numberline {9.2}Human factors}{74}{section.9.2}
-\contentsline {subsubsection}{Human factor knowledge}{75}{section.9.2}
-\contentsline {subsubsection}{Human factor measures}{76}{section.9.2}
-\contentsline {subsubsection}{Interaction design patterns}{77}{section.9.2}
+\contentsline {subsubsection}{Human factor knowledge}{74}{section*.63}
+\contentsline {subsubsection}{Human factor measures}{76}{section*.63}
+\contentsline {subsubsection}{Interaction design patterns}{76}{section*.63}
 \contentsline {section}{\numberline {9.3}Envisioned technology}{77}{section.9.3}
 \contentsline {chapter}{\numberline {10}System design specification}{79}{chapter.10}
 \contentsline {section}{\numberline {10.1}Design scenarios}{79}{section.10.1}
 \contentsline {subsubsection}{Information extraction from problem scenario}{79}{Item.29}
 \contentsline {subsubsection}{Envisioned effect of system implementation}{80}{Item.35}
 \contentsline {section}{\numberline {10.2}Functional requirements and claims}{81}{section.10.2}
-\contentsline {subsubsection}{User stories}{81}{section.10.2}
+\contentsline {subsubsection}{User stories}{81}{section*.69}
 \contentsline {section}{\numberline {10.3}Use case}{82}{section.10.3}
-\contentsline {subsubsection}{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}{83}{section.10.3}
+\contentsline {subsubsection}{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}{83}{section*.70}
 \contentsline {section}{\numberline {10.4}Specification of terms used in protocol}{84}{section.10.4}
 \contentsline {subsection}{\numberline {10.4.1}Status}{84}{subsection.10.4.1}
 \contentsline {subsection}{\numberline {10.4.2}Types of messages}{85}{subsection.10.4.2}
 \contentsline {subsection}{\numberline {10.4.3}Speech acts}{85}{subsection.10.4.3}
 \contentsline {chapter}{\numberline {11}Design evaluation}{87}{chapter.11}
+\contentsline {subsubsection}{Research questions}{87}{section*.71}
+\contentsline {subsubsection}{Experiment}{88}{section*.71}
 \contentsline {section}{\numberline {11.1}Evaluation method}{88}{section.11.1}
 \contentsline {subsection}{\numberline {11.1.1}Experiment set-up}{88}{subsection.11.1.1}
-\contentsline {subsubsection}{Participants}{88}{subsection.11.1.1}
-\contentsline {subsubsection}{Tools}{89}{figure.caption.71}
-\contentsline {subsubsection}{Experiment design}{90}{figure.caption.72}
+\contentsline {subsubsection}{Participants}{88}{section*.72}
+\contentsline {subsubsection}{Tools}{90}{figure.caption.74}
+\contentsline {subsubsection}{Experiment design}{90}{figure.caption.75}
 \contentsline {subsection}{\numberline {11.1.2}Experiment task}{90}{subsection.11.1.2}
-\contentsline {subsubsection}{Crossing situation at North-Sea}{93}{Item.49}
-\contentsline {subsubsection}{Entering Maasgeul from Maasvlakte}{95}{figure.caption.74}
-\contentsline {subsection}{\numberline {11.1.3}Dependent variables}{97}{subsection.11.1.3}
-\contentsline {subsection}{\numberline {11.1.4}Experiment procedure}{98}{subsection.11.1.4}
-\contentsline {subsubsection}{Explanation and basic information (1, 2)}{99}{Item.70}
-\contentsline {subsubsection}{Situations and scenarios (3, 4, 5, 6)}{100}{Item.70}
-\contentsline {subsubsection}{Relevant questions for situation (7, 8, 9)}{100}{Item.72}
-\contentsline {subsubsection}{General questions on protocol (10)}{101}{Item.72}
+\contentsline {subsubsection}{Crossing situation at North-Sea}{92}{Item.49}
+\contentsline {subsubsection}{Entering Maasgeul from Maasvlakte}{94}{figure.caption.77}
+\contentsline {subsection}{\numberline {11.1.3}Dependent variables}{96}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}Experiment procedure}{97}{subsection.11.1.4}
+\contentsline {subsubsection}{Explanation and basic information (1, 2)}{98}{Item.74}
+\contentsline {subsubsection}{Situations and scenarios (3, 4, 5, 6)}{99}{Item.74}
+\contentsline {subsubsection}{Relevant questions for situation (7, 8, 9)}{99}{Item.76}
+\contentsline {subsubsection}{General questions on protocol (10)}{100}{Item.76}
+\contentsline {subsection}{\numberline {11.1.5}Level of measurement}{100}{subsection.11.1.5}
 \contentsline {section}{\numberline {11.2}Evaluation results}{101}{section.11.2}
 \contentsline {subsection}{\numberline {11.2.1}Observations during simulations}{101}{subsection.11.2.1}
-\contentsline {subsection}{\numberline {11.2.2}Evaluation of the protocol}{105}{subsection.11.2.2}
-\contentsline {section}{\numberline {11.3}Lessons learned}{107}{section.11.3}
+\contentsline {subsection}{\numberline {11.2.2}Evaluation of the protocol}{104}{subsection.11.2.2}
+\contentsline {section}{\numberline {11.3}Conclusion based on experiment}{107}{section.11.3}
 \contentsline {chapter}{\numberline {12}Conclusion}{109}{chapter.12}
 \contentsline {part}{IV\hspace {1em}Wrap-up}{111}{part.4}
-\contentsline {chapter}{\numberline {13}Final conclusion}{113}{chapter.13}
-\contentsline {chapter}{\numberline {14}Recommendations for future research}{115}{chapter.14}
+\contentsline {chapter}{\numberline {13}Final conclusion and recommendations}{113}{chapter.13}
+\contentsline {section}{\numberline {13.1}Impact of manoeuvrability on sailing without communication}{113}{section.13.1}
+\contentsline {section}{\numberline {13.2}Development of a protocol based on existing systems}{113}{section.13.2}
+\contentsline {section}{\numberline {13.3}Combining previous results}{114}{section.13.3}
+\contentsline {section}{\numberline {13.4}Recommendations for future research}{114}{section.13.4}
 \contentsline {part}{V\hspace {1em}Appendices}{117}{part.5}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Current systems for safe navigation}{119}{appendix.A}
+\contentsline {chapter}{\numberline {A}Systems for safe navigation}{119}{appendix.A}
 \contentsline {section}{\numberline {A.1}Bridge system elements}{119}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Technical system}{119}{subsection.A.1.1}
-\contentsline {subsubsection}{\acf {Navtex}}{121}{subsection.A.1.1}
-\contentsline {subsubsection}{\acf {VHF}}{121}{subsection.A.1.1}
-\contentsline {subsubsection}{\acf {ARPA}}{122}{figure.caption.89}
-\contentsline {subsubsection}{\acf {ECDIS}}{123}{figure.caption.90}
-\contentsline {subsubsection}{\acf {AIS}}{124}{figure.caption.92}
-\contentsline {subsection}{\numberline {A.1.2}Man/machine interface}{126}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Human operator}{126}{subsection.A.1.3}
-\contentsline {subsubsection}{Role as operator}{128}{subsection.A.1.3}
-\contentsline {subsubsection}{Human factor}{129}{figure.caption.95}
-\contentsline {subsection}{\numberline {A.1.4}Procedures}{131}{subsection.A.1.4}
-\contentsline {subsubsection}{\acf {COLREGs}}{131}{subsection.A.1.4}
-\contentsline {subsubsection}{\acf {SMCP}}{132}{subsection.A.1.4}
-\contentsline {section}{\numberline {A.2}Difference between theory and practice}{133}{section.A.2}
-\contentsline {subsubsection}{Natural language}{133}{section.A.2}
-\contentsline {subsubsection}{Incorrect AIS information}{134}{section.A.2}
-\contentsline {section}{\numberline {A.3}Summary of relevant communication systems}{135}{section.A.3}
+\contentsline {subsubsection}{\acf {Navtex}}{121}{section*.89}
+\contentsline {subsubsection}{\acf {VHF}}{121}{section*.89}
+\contentsline {subsubsection}{\acf {ARPA}}{122}{figure.caption.90}
+\contentsline {subsubsection}{\acf {ECDIS}}{122}{figure.caption.91}
+\contentsline {subsubsection}{\acf {AIS}}{124}{figure.caption.93}
+\contentsline {subsection}{\numberline {A.1.2}Man/machine interface}{125}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Human operator}{127}{subsection.A.1.3}
+\contentsline {subsubsection}{Role as operator}{127}{section*.96}
+\contentsline {subsubsection}{Human factor}{128}{figure.caption.97}
+\contentsline {subsection}{\numberline {A.1.4}Procedures}{129}{subsection.A.1.4}
+\contentsline {subsubsection}{\acf {COLREGs}}{131}{section*.100}
+\contentsline {subsubsection}{\acf {SMCP}}{131}{section*.100}
+\contentsline {section}{\numberline {A.2}Difference between theory and practice}{132}{section.A.2}
+\contentsline {subsubsection}{Natural language}{132}{section*.102}
+\contentsline {subsubsection}{Incorrect AIS information}{133}{section*.102}
+\contentsline {section}{\numberline {A.3}Summary of relevant communication systems}{134}{section.A.3}
 \contentsline {chapter}{\numberline {B}Simulation environment}{137}{appendix.B}
 \contentsline {section}{\numberline {B.1}Foundation}{137}{section.B.1}
 \contentsline {subsection}{\numberline {B.1.1}Software architecture}{138}{subsection.B.1.1}
@@ -140,13 +148,13 @@
 \contentsline {subsection}{\numberline {B.2.1}Ship description}{140}{subsection.B.2.1}
 \contentsline {subsection}{\numberline {B.2.2}Controller}{140}{subsection.B.2.2}
 \contentsline {subsection}{\numberline {B.2.3}Manoeuvring}{141}{subsection.B.2.3}
-\contentsline {subsubsection}{IMO standard}{142}{subsection.B.2.3}
-\contentsline {subsubsection}{Emperical model}{142}{Item.85}
+\contentsline {subsubsection}{IMO standard}{142}{section*.107}
+\contentsline {subsubsection}{Empirical model}{142}{Item.93}
 \contentsline {subsection}{\numberline {B.2.4}Numerical settings}{143}{subsection.B.2.4}
-\contentsline {subsubsection}{Time-step for simulation}{143}{subsection.B.2.4}
-\contentsline {subsubsection}{Change time for critical evasive manoeuvrer}{145}{subsection.B.2.4}
+\contentsline {subsubsection}{Time-step for simulation}{143}{section*.110}
+\contentsline {subsubsection}{Change time for critical evasive manoeuvre}{145}{section*.110}
 \contentsline {section}{\numberline {B.3}Build}{145}{section.B.3}
-\contentsline {subsection}{\numberline {B.3.1}User interface}{146}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.1}User interface}{145}{subsection.B.3.1}
 \contentsline {subsection}{\numberline {B.3.2}Output}{146}{subsection.B.3.2}
 \contentsline {subsection}{\numberline {B.3.3}Level of implementation}{146}{subsection.B.3.3}
 \contentsline {chapter}{\numberline {C}Accidents}{149}{appendix.C}
@@ -156,5 +164,4 @@
 \contentsline {section}{\numberline {C.4}USS JOHN S MCCAIN and MV ALNIC MC}{153}{section.C.4}
 \contentsline {section}{\numberline {C.5}MV CONTI PERIDOT and MV CARLA MAERSK}{154}{section.C.5}
 \contentsline {section}{\numberline {C.6}Lessons learned}{156}{section.C.6}
-\contentsline {chapter}{\numberline {D}Extra figures}{157}{appendix.D}
-\contentsline {chapter}{Bibliography}{161}{section*.116}
+\contentsline {chapter}{Bibliography}{159}{section.C.6}

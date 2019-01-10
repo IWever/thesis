@@ -53,6 +53,10 @@
 \newcommand{\satisfaction}{$\heartsuit$}
 \newcommand{\protocol}{$\star$}
 
+%% Checkmark and cross for tables
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
 %% Text lay-out
 % Customize chapter style
 \titleformat
@@ -79,6 +83,9 @@
 }
 
 \setlength{\parindent}{0pt}
+
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{-5pt plus 2pt minus 2pt}
+
 
 %% Line spacing
 \renewcommand{\baselinestretch}{1.35} 
@@ -109,13 +116,14 @@
 		\node (title-box-bg) at (current page.east) [fill = gray, minimum width=.5\paperwidth, minimum height=7cm, fill opacity = 0.85, xshift=-.3\paperwidth, yshift=-5cm, text=white] {};
 		
 		\node (title-box) at (current page.east) [minimum width=.5\paperwidth, minimum height=7cm, align=left, xshift=-.3\paperwidth, yshift=-5cm, text=white] {
-			\hspace{.5cm}
-			\huge{MSc Thesis Report} \\ \\
 			\Large{Manoeuvrability and communication} \\
 			\Large{requirements for safe operation when} \\
 			\Large{manned and unmanned vessels meet} \\ \\
-			Ingmar Wever \\
-			\today
+			
+			\huge{Ingmar Wever} \\ \\
+			
+			MSc Thesis report\\
+			December 19, 2018
 			
 		};
 	
@@ -146,21 +154,23 @@
 		\tiny{(Except for the above line.)}
 
 	\end{center}
-	\todo{Titels begeleiders and graduation date}
+	\newpage
 }
 
 \newcommand{\addTitlePage}{
-	\begin{titlepage}
+\begin{titlepage}
 	
 	%% Title page
-	\newpage
+	\setcounter{page}{1}
+	\thispagestyle{empty}
 	
 	\centering
-	\Large
-	\vspace*{.8cm}
-	Thesis Report for the degrees of \\ 
-	MSc Marine Technology specialising in ship design and \\
-	MSc Computer Science specialising in interactive intelligence \\
+	\large
+	\vspace*{.2cm}
+	Thesis to obtain the degrees of \\ 
+	MSc in Marine Technology and
+	MSc in Computer Science \\
+	at the Technical University of Delft
 	\vspace{1cm}
 	\begin{spacing}{2}
 		\begin{Huge}
@@ -169,28 +179,41 @@
 	\end{spacing}
 	\large
 	\vspace{1cm}	
-	by Ingmar Wever
-	at Damen Shipyards and TU Delft
-	
-	\today
+	by Ingmar Wever at Damen Shipyards, \\	
+	to be defended publicly on Wednesday 19 December 2018 at 11:00.
 	
 	\vspace{1.5cm}
 	\footnotesize
-	This thesis (SDPO.18.048.m) is classified as confidential in accordance with the general conditions for projects performed at the TU Delft. 
+	This thesis (SDPO.18.048.m) is classified as confidential in accordance with the general conditions for projects at the TU Delft. An electronic version of this thesis is available via \\ \url{http://repository.tudelft.nl/}.
 	
 	\vspace{3cm}
 	\normalsize
 	\begin{tabular}{lll}
 		Student: & Ingmar Wever (4161041) & \\
-		Project duration: & \multicolumn{2}{l}{September 2017 -- November 2018} \\
+		Project duration: & \multicolumn{2}{l}{September 2017 -- December 2018} \\
 		& & \\
-		Supervisors: & Dr.ir. Robert Hekkenberg & TU Delft, Ship Design \\
+		Daily supervisor: & ing. Toine Cleophas & Damen Shipyards, R\&D \\
+		Committee members: & Dr.ir. Robert Hekkenberg & TU Delft, Ship Design \\
 		& Prof.Dr. Mark Neerincx & TU Delft, Interactive Intelligence \\
-		& Toine Cleophas & Damen Shipyards, R\&D \\
-		Committee members: & Dr.ir. Peter de Vos & TU Delft, Marine Engineering \\
+		& Dr.ir. Peter de Vos & TU Delft, Marine Engineering \\
 		& Dr.ir. Willem-Paul Brinkman & TU Delft, Interactive Intelligence \\
 	\end{tabular}
 
-	\end{titlepage}
+\end{titlepage}
 }
+
+\newcommand{\lastPage}{
+	\newpage
+	\phantom{-}
+	\vfill
+	\centering
+	\includegraphics[height=1.95cm, keepaspectratio]{TU_Delft_logo_RGB.png}
+	\hspace{.8cm}
+	\includegraphics[height=1.2cm, keepaspectratio]{Damen_logo.png}
+	
+	\pagecolor{white}
+	\thispagestyle{empty}
+	
+	
+	}
 	

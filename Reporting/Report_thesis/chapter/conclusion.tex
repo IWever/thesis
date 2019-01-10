@@ -1,13 +1,35 @@
-\chapter{Final conclusion}
-Describe results when both researches are combined. Do they support each other. Relate this to the model
+\chapter{Final conclusion and recommendations}
+Digitalisation and automation will change the maritime industry. Vessels are connected to the shore and data is used in smarter ways. These technologies boost the development of autonomous and unmanned vessels, resulting in a significant amount of research and development projects. The challenge of communication between manned and unmanned vessels has not been within the scope of these projects.
 
-Is the acquired knowledge sufficient to identify the situation correctly, or is more information desired via communication? from chapter \ref{ch:model}
+This study focused on a design philosophy to solve the challenge of communication between manned and unmanned vessels. Two solutions for this challenge are discussed: Operate without communication or develop a protocol for communication.
 
-technological push
+\section{Impact of manoeuvrability on sailing without communication}
+Part~\ref{part:MT} targets a method to test if vessels can operate without communication. This method is developed to evaluate specific situations and manoeuvres, resulting in an extensive analysis of the common critical evasive manoeuvre. This analysis shows that ships like the Emma Maersk (400 meter) will have to communicate when crossing traffic lanes with traffic from both sides, whereas small cargo ships like the Astrorunner (140 meter) can manoeuvre with ease and turn 90 degrees, which changes the crossing situation into a passing or overtaking situation. For the ships like the Gulf Valour (250 meter) it is possible to sail without communication, but these ships can't avoid a crossing situation. Improvement to the manoeuvring characteristics will help to prevent these critical situations and give them too enough space to turn 90 degrees.
 
-\todo{Write final conclusion of report}
+The method starts with the identification of critical situations, which are evaluated using commonly used criteria such as the passing distance and \ac{CPA}, to determine if a ship stays well clear. This report has proven the value of the method for evaluating if the manoeuvrability of a ship is sufficient for specific situations. The results of these test can be used during ship design, traffic scheme design, and the definition of situation-dependent speed limits.
 
-\chapter{Recommendations for future research}
-what was not within the scope \\
-what are the next steps
-\todo{Recommendations for future research}
+\section{Development of a protocol based on existing systems}
+In part~\ref{part:CS} are the first steps taken to develop a protocol for the communication between manned and unmanned vessels. The first iterative step is made with the \acf{sCE} method. This method takes the human factor into account, which results in a protocol that performs well, the method ensures that other seafarers trust unmanned vessels, the situation awareness of seafarers may not degrade, and the method ensures that seafarers like to use such a protocol, as the way of working is familiar to them. These conclusions have been evaluated using an experiment, the results of this experiment showed that this method works well to develop a protocol for communication between manned and unmanned vessels, this protocol is based on existing protocols and systems. The experiment did thereby also give insight into factors which should be taken into account in the next step, such as the importance of good speech recognition. Seafarers expect for example that foreign accents are hard to understand, thereby is there the possibility to use text messaging via AIS or INMARSAT-C. In future iterations, the protocol should thus be tested with more complex situations.
+
+\section{Combining previous results}
+In chapter~\ref{ch:model} is a decision model shown which shows what should be taken into account when solving the problem of communication between manned and unmanned vessels. The results of part~\ref{part:MT} and \ref{part:CS} combined to support each other to solve the problem of communication in all situations and scenarios. The most important challenge which comes after this research is the mapping of situations to the possible strategies and communication. More information is desired to ensure that ships can operate safely in any situation. 
+
+\section{Recommendations for future research}
+This study has been a first step in solving the challenge of communication between manned and unmanned vessels. Since this study was a first step in solving the challenge, there are still bumps on the road which require other methods to solve them. Beside the manoeuvring criteria and seafarers, do more factors influence the decision-making process.
+
+The first recommendation is directly related to the developed method for finding the relation between manoeuvrability and operation without communication. This method has proven itself to be successful. The used hydrodynamic model gives thereby realistic results. The results could, however, be improved for more different vessels with extreme characteristics, by varying the input for the hydrodynamic model.
+
+When it comes to the protocol itself, are the two stakeholder groups who should also be taken into account. The first group are the vessels nearby. We did not look into the impact of this protocol on the performance, situational awareness, trust and satisfaction of operators on nearby ships. Information overload is here a key factor. 
+
+These problems are even more relevant in emergency situations. At the moment has not been looked at the expected behaviour of unmanned vessels in emergency situations of other vessels. Should they assist or stay away as far as possible. This strategy becomes even more relevant in cases where assistance from other vessels will take more time to arrive, such as the middle of the ocean. 
+In those situations, interventions from the shore might be a good solution.
+
+But there is also a lot of communication with the shore in everyday situations. At the moment do traffic controllers guide all ships trough busy area's. The traffic controllers inform all ships via radio whom may go first. Thereby do they divert from COLREGs in many cases, as that would often result in fewer manoeuvres for the ships. In future studies should be looked if the automation of current systems and protocols for traffic controllers is sufficient, or if the information shared by traffic controllers is too elaborate and require new systems. 
+
+Another critical issue within the whole maritime industry is redundancy. The focus of the first iteration was on common critical situations, where it is possible to use all available systems. The consequence of failing components such as AIS for identification or \ac{VHF} radio have not been studied. To ensure trust by seafarers in the system, should the redundancy of autonomous systems be much higher than that of the current system.
+
+The next step is the mapping of speech acts to situations. Here is the identification of situations important. This identification has currently been done at a level where data from sensors has already been converted to information. Current projects work already on this conversion of data to information, but considerable steps have to be taken, to correctly interpret the whole environment. These steps will include the identification of small vessels in the Malacca Strait or floating containers at open sea. Radar and sight are the most important sensors to perceive these. 
+
+These recommendations are all aimed at academia and future research projects, while the results of this thesis could already be used in practice. The protocol itself is not yet ready to be used in practice. Regulatory bodies can however emphasize already that it is important to use SMCP as it is designed. 
+
+The first conclusions and plotted graphs for the critical evasive manoeuvre can be directly used for ship design, as this is one of the most critical situations where the manoeuvring criteria should be considered. Thus the results give for example insight in the relation between the desired CPA and the required advance distance. 

@@ -4,29 +4,30 @@
 
 \begin{document}
 \frontmatter
-\addCoverPage  % Cover
-\addEmptyPage  % Blank page
+%\addCoverPage  % Cover
+%\addEmptyPage  % Blank page
 \addTitlePage  % Title page
 
-\listoftodos[Notes]
-\clearpage
+%\listoftodos[Notes]
+%\clearpage
 
-\input{chapter/preface}
+
 \input{chapter/summary}
+\input{chapter/preface}
 
 {\let\cleardoublepage\clearpage%
 \begin{spacing}{1}
-	\input{include/glossary}
-	
-	\emptyDoublePage
 	\setcounter{tocdepth}{1}
-	
 	\tableofcontents
+	
+	\setcounter{tocdepth}{3}
+	\input{include/glossary}
 \end{spacing}
-\clearpage
 }
 
-\emptyDoublePage
+\newpage\null
+\markboth{}{}
+\newpage
 
 \mainmatter
 \input{chapter/introduction}
@@ -49,7 +50,7 @@
 	\emph{We rarely recognize how wonderful it is that a person can traverse an entire lifetime without making a single really serious mistake. Like putting a fork in one's eye or using a window instead of a door.}\\
 	
 	-- Marvin Minsky \cite{Minsky1991}}\thispagestyle{empty}
-\part{Impact of manoeuvrability on decision making}
+\part{Impact of manoeuvrability on the necessity to communicate}
 \label{part:MT}
 \input{chapter/MT/introduction}
 \input{chapter/MT/decision-process}
@@ -66,7 +67,7 @@
 	\emph{Meant is not said, said is not heard, heard is not understood, understood is not done.}\\
 	
 	-- Marcus Rall \cite{Rall2005}}\thispagestyle{empty}
-\part{Necessity of a protocol to enable teamwork between manned and unmanned ships}
+\part{A protocol to enable communication between manned and unmanned ships}
 \label{part:CS}
 \input{chapter/CS/introduction}
 \input{chapter/CS/Foundation}
@@ -81,6 +82,7 @@
 	
 	-- Galileo \cite{Galilei1632}}\thispagestyle{empty}
 \part{Wrap-up}
+\label{part:conclusion}
 \input{chapter/conclusion}
 
 
@@ -100,8 +102,7 @@
 	\input{chapter/Appendix/simulation-environment}
 	%\input{chapter/Appendix/decision-trees}
 	\input{chapter/Appendix/accidents}
-	\input{chapter/Appendix/extra-figures}
-	\todo{Describe commonly used concepts}
+	%\input{chapter/Appendix/extra-figures}
 	%\input{chapter/Appendix/experiment-forms}
 \end{appendices}
 
@@ -112,7 +113,7 @@
 \bibliography{include/library}
 
 
-
+\lastPage
 
 \end{document}
 

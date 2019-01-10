@@ -5,13 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Arimura et~al. (2001)]{Arimura2001}
-Hiroki Arimura, Hiroshi Sakamoto, and Setsuo Arikawa.
-\newblock \emph{{Lecture Notes in Artificial Intelligence}}, volume 2225.
-\newblock 2001.
-\newblock ISBN 3540679154.
-\newblock \doi{10.1007/978-3-642-29066-4{_}11}.
-
 \bibitem[Artyszuk (2016)]{Artyszuk2016}
 Jaroslaw Artyszuk.
 \newblock {Inherent Properties of Ship Manoeuvring Linear Models in View of the
@@ -20,8 +13,6 @@ Jaroslaw Artyszuk.
   Safety of Sea Transportation}, 10\penalty0 (4):\penalty0 595--604, 2016.
 \newblock ISSN 2083-6473.
 \newblock \doi{10.12716/1001.10.04.08}.
-\newblock URL
-  \url{http://www.transnav.eu/Article{\_}Inherent{\_}Properties{\_}of{\_}Ship{\_}Manoeuvring{\_}Artyszuk,40,683.html}.
 
 \bibitem[Austin (1975)]{Austin1975}
 J.L. Austin.
@@ -43,14 +34,15 @@ Philippe D~E Backer.
 \bibitem[Blanke et~al. (2017)]{Blanke2017}
 Mogens Blanke, Michael Henrique, and Jakob Bang.
 \newblock {A pre-analysis on autonomous ships}.
-\newblock pages 1--27, 2017.
+\newblock Technical report, Technical University of Denmark, Lyngby, Denmark,
+  2017.
 \newblock URL \url{https://www.dma.dk/Documents/Publikationer/Autonome
   skibe{\_}DTU{\_}rapport{\_}UK.pdf}.
 
 \bibitem[Boyd (1987)]{Boyd1987}
 John~R. Boyd.
 \newblock \emph{{A discourse on winning and losing}}.
-\newblock 1987.
+\newblock Air University Press, Alabama, US, 1987.
 \newblock ISBN M-U 43947 (Briefing slides).
 \newblock URL
   \url{http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:A+discourse+on+Wining+and+Losing{\#}0}.
@@ -61,8 +53,10 @@ Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
   and Ron {Van Hoof}.
 \newblock {Adjustable Autonomy and Human-Agent Teamwork in Practice: An Interim
   Report on Space Applications}.
-\newblock pages 243--280, 2003.
-\newblock ISSN 978-1-4613-4833-7.
+\newblock In Henry Hexmoor, Cristiano Castelfranchi, and Rino Falcone, editors,
+  \emph{Agent Autonomy}, chapter~11, pages 243--280. Springer, Boston, MA, US,
+  2003.
+\newblock ISBN 1402074026 (alk. paper).
 \newblock \doi{10.1007/978-1-4419-9198-0_11}.
 \newblock URL \url{http://link.springer.com/10.1007/978-1-4419-9198-0{\_}11}.
 
@@ -70,8 +64,9 @@ Jeffrey~M. Bradshaw, Maarten Sierhuis, Alessandro Acquisti, Paul Feltovich,
 S.~Cahoon, L.~Caesar, and J.~Fei.
 \newblock {Human resource practices in seafaring: Opportunities for improving
   retention}.
-\newblock \emph{Contemporary Marine and Maritime Policy}, \penalty0 (June
-  2017), 2014.
+\newblock In Jingjing Xu, editor, \emph{Contemporary Marine and Maritime
+  Policy}, pages 85--103, Hauppauge, NY, USA, 2014. Nova Science publishers.
+\newblock ISBN 9781629488097 | 9781629488073.
 
 \bibitem[Cappelle et~al. (2018)]{Cappelle2018}
 L.E. Cappelle, L.~Chen, and R.R. Negenborn.
@@ -99,10 +94,9 @@ T.~G. Coldwell.
 
 \bibitem[Davis (1989)]{Davis1989}
 Fred~D. Davis.
-\newblock {Perceived Usefulness , Perceived Ease of Use , and User Acceptance
-  of}.
-\newblock \emph{Management Information System Research Center}, 13\penalty0
-  (3):\penalty0 319--340, 1989.
+\newblock {Perceived usefulness , perceived ease of use , and user acceptance
+  of information technology}.
+\newblock \emph{MIS Quarterly}, 13\penalty0 (3):\penalty0 319--340, 1989.
 
 \bibitem[Demir et~al. (2017)]{Demir2017}
 Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
@@ -111,7 +105,6 @@ Mustafa Demir, Nathan~J. McNeese, and Nancy~J. Cooke.
 \newblock \emph{Cognitive Systems Research}, 46:\penalty0 3--12, 2017.
 \newblock ISSN 13890417.
 \newblock \doi{10.1016/j.cogsys.2016.11.003}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.cogsys.2016.11.003}.
 
 \bibitem[{DNV GL} (2011)]{DNVGL2011}
 {DNV GL}.
@@ -217,6 +210,16 @@ C~Kooij, M~Loonstijn, R~G Hekkenberg, and K~Visser.
   short sea cargo vessels}.
 \newblock \emph{Marine Design XIII}, pages 871--880, 2018.
 
+\bibitem[Lenneman and Backs (2007)]{Arimura2001}
+John~K. Lenneman and Richard~W. Backs.
+\newblock {Diagnosticity of Cardiac Modes of Autonomic Control Elicited by
+  Simulated Driving and Verbal Working Memory Dual-Tasks John}.
+\newblock In Don Harris, editor, \emph{7th International Conference, EPCE
+  2007}, volume 2225, pages 541--550, Berlin Heidelberg, Germany, 2007.
+  Springer-Verlag.
+\newblock ISBN 3540679154.
+\newblock \doi{10.1007/978-3-642-29066-4{_}11}.
+
 \bibitem[Liu et~al. (2015)]{Liu2015a}
 Jialun Liu, Frans Quadvlieg, and Robert Hekkenberg.
 \newblock {Impacts of rudder profiles on ship manoeuvrability}.
@@ -288,26 +291,26 @@ Mohsen Naderpour, Jie Lu, and Guangquan Zhang.
   147--159, 2016.
 \newblock ISSN 09518320.
 \newblock \doi{10.1016/j.ress.2016.01.024}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.ress.2016.01.024}.
 
-\bibitem[Nedcon (2013)]{Nedcon2013}
-Nedcon.
+\bibitem[{Nedcon Maritime} (2013)]{Nedcon2013}
+{Nedcon Maritime}.
 \newblock {Crew structure on board merchant vessels}, 2013.
 \newblock URL
   \url{http://www.nedcon.ro/crew-structure-board-merchant-vessels-engine-department/}.
 
-\bibitem[Neerincx (2008)]{Neerincx2008}
-M.A. Neerincx.
+\bibitem[Neerincx et~al. (2008)]{Neerincx2008}
+M.A. Neerincx, G.M. te~Brake, J.G.M. van~de Ven, H.F.R. Arciszewski, T.E.
+  de~Greef, and J.~Lindenberg.
 \newblock {Situated cognitive engineering: Developing adaptive track handling
   support for naval command and control centers}.
-\newblock pages 1--18, 2008.
+\newblock In \emph{HCP-2008-Third Internation Conference on Human-Centered
+  Processes}, pages 3--20. Ashgate Publishing Limited, 2008.
 
-\bibitem[Neerincx and Linderberg (2012)]{Neerincx2012}
-Mark Neerincx and Jasper Linderberg.
+\bibitem[Neerincx and Lindenberg (2012)]{Neerincx2012}
+Mark Neerincx and Jasper Lindenberg.
 \newblock {Applying the Situated Cognitive Engineering Method - A Comprehensive
-  Guide}.
-\newblock 2012.
-\newblock URL \url{http://scetool.nl/sce{\_}manual{\_}v1.0.pdf}.
+  Guide}, 2012.
+\newblock URL \url{http://scetool.nl/scemanual.php}.
 
 \bibitem[Nieva (2018)]{Nieva2018}
 Richard Nieva.
@@ -321,9 +324,6 @@ Kensaku Nomoto and Kenshi Taguchi.
 \newblock {On steering qualities of ships}.
 \newblock \emph{Journal of Zosen Kiokai}, 1957\penalty0 (101):\penalty0 57--66,
   1957.
-\newblock \doi{https://doi.org/10.2534/jjasnaoe1952.1957.101_57}.
-\newblock URL
-  \url{https://www.jstage.jst.go.jp/article/jjasnaoe1952/1957/101/1957{\_}101{\_}57/{\_}article}.
 
 \bibitem[NTSB (2016{\natexlab{a}})]{NTSB2016}
 NTSB.
@@ -350,7 +350,6 @@ Sachiko Ozawa and Pooja Sripad.
 \newblock \emph{Social Science and Medicine}, 91:\penalty0 10--14, 2013.
 \newblock ISSN 02779536.
 \newblock \doi{10.1016/j.socscimed.2013.05.005}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.socscimed.2013.05.005}.
 
 \bibitem[Palmer et~al. (2007)]{Palmer2007}
 A.~R. Palmer, D.~A. Hall, C.~Sumner, D.~J~K Barrett, S.~Jones, K.~Nakamoto, and
@@ -367,7 +366,6 @@ Thomas Porathe, Margareta L{\"{u}}tzh{\"{o}}ft, and Gesa Praetorius.
 \newblock \emph{Accident Analysis and Prevention}, 60:\penalty0 366--370, 2013.
 \newblock ISSN 00014575.
 \newblock \doi{10.1016/j.aap.2012.12.012}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.aap.2012.12.012}.
 
 \bibitem[Porathe et~al. (2014)]{Porathe2014}
 Thomas Porathe, Johannes Prison, and Y~Man.
@@ -431,7 +429,6 @@ Rafal Szlapczynski and Joanna Szlapczynska.
   363--373, 2017{\natexlab{a}}.
 \newblock ISSN 00298018.
 \newblock \doi{10.1016/j.oceaneng.2016.11.044}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.oceaneng.2016.11.044}.
 
 \bibitem[Szlapczynski and Szlapczynska (2017{\natexlab{b}})]{Szlapczynski2017a}
 Rafal Szlapczynski and Joanna Szlapczynska.
@@ -440,7 +437,6 @@ Rafal Szlapczynski and Joanna Szlapczynska.
   2017{\natexlab{b}}.
 \newblock ISSN 00298018.
 \newblock \doi{10.1016/j.oceaneng.2017.09.020}.
-\newblock URL \url{https://doi.org/10.1016/j.oceaneng.2017.09.020}.
 
 \bibitem[Taams (2018)]{Taams2018}
 Hugo Taams.
@@ -459,7 +455,6 @@ Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 \newblock \emph{Safety Science}, 56:\penalty0 29--35, 2013.
 \newblock ISSN 09257535.
 \newblock \doi{10.1016/j.ssci.2012.05.025}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.ssci.2012.05.025}.
 
 \bibitem[{US Coast Guard} (2018)]{USCG2018}
 {US Coast Guard}.
@@ -474,9 +469,9 @@ Geoffrey Underwood, Athy Ngai, and Jean Underwood.
 
 \bibitem[Walliser (2011)]{Walliser2011}
 James Walliser.
-\newblock \emph{{Trust in automated systems the effect of automation level on
-  trust calibration}}.
-\newblock PhD thesis, 2011.
+\newblock \emph{{Trust in Automated Systems: The Effect of Automation Level on
+  Trust Calibration}}.
+\newblock Master thesis, Naval Postgraduate School, Monterey, 2011.
 
 \bibitem[Washburn and Putney (2001)]{Washburn2001}
 David~A. Washburn and R.~Thompson Putney.
@@ -488,8 +483,7 @@ David~A. Washburn and R.~Thompson Putney.
 
 \bibitem[Waterborne (2016)]{Waterborne2016}
 Waterborne.
-\newblock {Waterborne Vision 2030}.
-\newblock 2016.
+\newblock {Waterborne Vision 2030 {\&} Innovation Opportunities}, 2016.
 
 \bibitem[Wilson (2017)]{Wilson2017}
 Jonathan Wilson.
@@ -505,6 +499,5 @@ Mochammad Zaky, Masaaki Sano, and Hironori Yasukawa.
   2018.
 \newblock ISSN 00298018.
 \newblock \doi{10.1016/j.oceaneng.2018.07.030}.
-\newblock URL \url{https://doi.org/10.1016/j.oceaneng.2018.07.030}.
 
 \end{thebibliography}

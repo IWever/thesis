@@ -1,28 +1,164 @@
-\BOOKMARK [0][-]{chapter*.3}{Preface}{}% 1
-\BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 2
-\BOOKMARK [0][-]{section*.6}{Glossary}{}% 3
-\BOOKMARK [0][-]{chapter*.15}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter*.1}{Summary}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{Preface}{}% 2
+\BOOKMARK [0][-]{chapter*.6}{Glossary}{}% 3
+\BOOKMARK [0][-]{chapter*.13}{Introduction}{}% 4
 \BOOKMARK [-1][-]{part.1}{I The problem of communication for unmanned vessels}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Steps towards safe unmanned shipping}{part.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Decision model for safe operation}{part.1}% 7
-\BOOKMARK [-1][-]{part.2}{II Impact of manoeuvrability on decision making}{}% 8
-\BOOKMARK [0][-]{chapter.3}{ Decision-making process}{part.2}% 9
-\BOOKMARK [0][-]{chapter.4}{Identification of situation and scenarios}{part.2}% 10
-\BOOKMARK [0][-]{chapter.5}{Definition of criteria for evaluation of situation}{part.2}% 11
-\BOOKMARK [0][-]{chapter.6}{Manoeuvres for validation and testing}{part.2}% 12
-\BOOKMARK [0][-]{chapter.7}{Evaluation of critical evasive manoeuvre}{part.2}% 13
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{part.2}% 14
-\BOOKMARK [-1][-]{part.3}{III Necessity of a protocol to enable teamwork between manned and unmanned ships}{}% 15
-\BOOKMARK [0][-]{chapter.9}{Foundation}{part.3}% 16
-\BOOKMARK [0][-]{chapter.10}{System design specification}{part.3}% 17
-\BOOKMARK [0][-]{chapter.11}{Design evaluation}{part.3}% 18
-\BOOKMARK [0][-]{chapter.12}{Conclusion}{part.3}% 19
-\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 20
-\BOOKMARK [0][-]{chapter.13}{Final conclusion}{part.4}% 21
-\BOOKMARK [0][-]{chapter.14}{Recommendations for future research}{part.4}% 22
-\BOOKMARK [-1][-]{part.5}{V Appendices}{}% 23
-\BOOKMARK [0][-]{appendix.A}{Current systems for safe navigation}{part.5}% 24
-\BOOKMARK [0][-]{appendix.B}{Simulation environment}{part.5}% 25
-\BOOKMARK [0][-]{appendix.C}{Accidents}{part.5}% 26
-\BOOKMARK [0][-]{appendix.D}{Extra figures}{part.5}% 27
-\BOOKMARK [0][-]{section*.116}{Bibliography}{part.5}% 28
+\BOOKMARK [1][-]{section.1.1}{Why autonomous and unmanned shipping}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Ongoing projects}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{Exploratory projects}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{Industry projects}{section.1.2}% 10
+\BOOKMARK [1][-]{section.1.3}{Stakeholders}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Challenges when combining unmanned and manned vessel}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Decision model for safe operation}{part.1}% 13
+\BOOKMARK [1][-]{section.2.1}{Decision process}{chapter.2}% 14
+\BOOKMARK [2][-]{section*.23}{Mental model}{section.2.1}% 15
+\BOOKMARK [3][-]{section*.23}{Identify situation}{section.2.1}% 16
+\BOOKMARK [3][-]{section*.23}{Predict future states and decide on strategy}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{External factors}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Environment}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Communication}{section.2.2}% 20
+\BOOKMARK [-1][-]{part.2}{II Impact of manoeuvrability on the necessity to communicate}{}% 21
+\BOOKMARK [0][-]{chapter.3}{ Decision-making process}{part.2}% 22
+\BOOKMARK [1][-]{section.3.1}{Decision phases}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Nodes in decision-making tree}{chapter.3}% 24
+\BOOKMARK [2][-]{section*.28}{Identify situations}{section.3.2}% 25
+\BOOKMARK [3][-]{table.caption.29}{Predict future states}{section.3.2}% 26
+\BOOKMARK [3][-]{table.caption.30}{Possible strategies}{section.3.2}% 27
+\BOOKMARK [3][-]{table.caption.32}{Possible actions}{section.3.2}% 28
+\BOOKMARK [3][-]{table.caption.34}{Result}{section.3.2}% 29
+\BOOKMARK [1][-]{section.3.3}{Critical paths in decision trees}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{Identification of situation and scenarios}{part.2}% 31
+\BOOKMARK [1][-]{section.4.1}{Situation identification}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.2}{Situations that limit possible strategies}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{Waterway properties}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{Dynamic objects}{section.4.2}% 35
+\BOOKMARK [1][-]{section.4.3}{Scenarios}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Definition of criteria for evaluation of situation}{part.2}% 37
+\BOOKMARK [1][-]{section.5.1}{Calculations based on current systems}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.1.1}{Closest point of approach}{section.5.1}% 39
+\BOOKMARK [2][-]{subsection.5.1.2}{Crossing distance}{section.5.1}% 40
+\BOOKMARK [1][-]{section.5.2}{Proposed algorithm based on planned path}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.2.1}{B\351zier curve}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.2}{Closest point of approach}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.3}{Crossing distance}{section.5.2}% 44
+\BOOKMARK [0][-]{chapter.6}{Manoeuvres for validation and testing}{part.2}% 45
+\BOOKMARK [1][-]{section.6.1}{Manoeuvre descriptions}{chapter.6}% 46
+\BOOKMARK [2][-]{subsection.6.1.1}{Sea-trial}{section.6.1}% 47
+\BOOKMARK [3][-]{section*.43}{Turning circle manoeuvre}{subsection.6.1.1}% 48
+\BOOKMARK [3][-]{figure.caption.44}{Zig-zag test}{subsection.6.1.1}% 49
+\BOOKMARK [2][-]{subsection.6.1.2}{Critical evasive manoeuvre}{section.6.1}% 50
+\BOOKMARK [1][-]{section.6.2}{Tool validation}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.2.1}{Validation of hydrodynamic model}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.2}{Input for critical evasive manoeuvre}{section.6.2}% 53
+\BOOKMARK [0][-]{chapter.7}{Evaluation of critical evasive manoeuvre}{part.2}% 54
+\BOOKMARK [1][-]{section.7.1}{Trial results for critical evasive manoeuvre}{chapter.7}% 55
+\BOOKMARK [2][-]{subsection.7.1.1}{Passing distance}{section.7.1}% 56
+\BOOKMARK [3][-]{section*.50}{Results of simulations}{subsection.7.1.1}% 57
+\BOOKMARK [3][-]{figure.caption.51}{Relation between the passing distance and advance distance}{subsection.7.1.1}% 58
+\BOOKMARK [3][-]{figure.caption.53}{Generalised relation for passing distance}{subsection.7.1.1}% 59
+\BOOKMARK [2][-]{subsection.7.1.2}{Closest point of approach}{section.7.1}% 60
+\BOOKMARK [3][-]{section*.54}{Results of simulations of the relation between the CPA and advance distance}{subsection.7.1.2}% 61
+\BOOKMARK [3][-]{figure.caption.55}{General relation for CPA}{subsection.7.1.2}% 62
+\BOOKMARK [1][-]{section.7.2}{Use case}{chapter.7}% 63
+\BOOKMARK [1][-]{section.7.3}{Effect of advance distance on decision and design process}{chapter.7}% 64
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{part.2}% 65
+\BOOKMARK [-1][-]{part.3}{III A protocol to enable communication between manned and unmanned ships}{}% 66
+\BOOKMARK [0][-]{chapter.9}{Foundation}{part.3}% 67
+\BOOKMARK [1][-]{section.9.1}{Operational demands}{chapter.9}% 68
+\BOOKMARK [2][-]{subsection.9.1.1}{Problem scenario}{section.9.1}% 69
+\BOOKMARK [2][-]{subsection.9.1.2}{Problem analysis}{section.9.1}% 70
+\BOOKMARK [3][-]{section*.61}{Primary actors}{subsection.9.1.2}% 71
+\BOOKMARK [3][-]{section*.61}{Secondary actors}{subsection.9.1.2}% 72
+\BOOKMARK [3][-]{section*.61}{Goals}{subsection.9.1.2}% 73
+\BOOKMARK [3][-]{section*.61}{Infeasible solutions}{subsection.9.1.2}% 74
+\BOOKMARK [1][-]{section.9.2}{Human factors}{chapter.9}% 75
+\BOOKMARK [2][-]{section*.63}{Human factor knowledge}{section.9.2}% 76
+\BOOKMARK [3][-]{section*.63}{Human factor measures}{section.9.2}% 77
+\BOOKMARK [3][-]{section*.63}{Interaction design patterns}{section.9.2}% 78
+\BOOKMARK [1][-]{section.9.3}{Envisioned technology}{chapter.9}% 79
+\BOOKMARK [0][-]{chapter.10}{System design specification}{part.3}% 80
+\BOOKMARK [1][-]{section.10.1}{Design scenarios}{chapter.10}% 81
+\BOOKMARK [2][-]{Item.29}{Information extraction from problem scenario}{section.10.1}% 82
+\BOOKMARK [3][-]{Item.35}{Envisioned effect of system implementation}{Item.29}% 83
+\BOOKMARK [1][-]{section.10.2}{Functional requirements and claims}{chapter.10}% 84
+\BOOKMARK [2][-]{section*.69}{User stories}{section.10.2}% 85
+\BOOKMARK [1][-]{section.10.3}{Use case}{chapter.10}% 86
+\BOOKMARK [2][-]{section*.70}{Autonomous fast crew supplier crossing shipping lane in front of cargo ship}{section.10.3}% 87
+\BOOKMARK [1][-]{section.10.4}{Specification of terms used in protocol}{chapter.10}% 88
+\BOOKMARK [2][-]{subsection.10.4.1}{Status}{section.10.4}% 89
+\BOOKMARK [2][-]{subsection.10.4.2}{Types of messages}{section.10.4}% 90
+\BOOKMARK [2][-]{subsection.10.4.3}{Speech acts}{section.10.4}% 91
+\BOOKMARK [0][-]{chapter.11}{Design evaluation}{part.3}% 92
+\BOOKMARK [1][-]{section*.71}{Research questions}{chapter.11}% 93
+\BOOKMARK [2][-]{section*.71}{Experiment}{chapter.11}% 94
+\BOOKMARK [1][-]{section.11.1}{Evaluation method}{chapter.11}% 95
+\BOOKMARK [2][-]{subsection.11.1.1}{Experiment set-up}{section.11.1}% 96
+\BOOKMARK [3][-]{section*.72}{Participants}{subsection.11.1.1}% 97
+\BOOKMARK [3][-]{figure.caption.74}{Tools}{subsection.11.1.1}% 98
+\BOOKMARK [3][-]{figure.caption.75}{Experiment design}{subsection.11.1.1}% 99
+\BOOKMARK [2][-]{subsection.11.1.2}{Experiment task}{section.11.1}% 100
+\BOOKMARK [3][-]{Item.49}{Crossing situation at North-Sea}{subsection.11.1.2}% 101
+\BOOKMARK [3][-]{figure.caption.77}{Entering Maasgeul from Maasvlakte}{subsection.11.1.2}% 102
+\BOOKMARK [2][-]{subsection.11.1.3}{Dependent variables}{section.11.1}% 103
+\BOOKMARK [2][-]{subsection.11.1.4}{Experiment procedure}{section.11.1}% 104
+\BOOKMARK [3][-]{Item.74}{Explanation and basic information \(1, 2\)}{subsection.11.1.4}% 105
+\BOOKMARK [3][-]{Item.74}{Situations and scenarios \(3, 4, 5, 6\)}{subsection.11.1.4}% 106
+\BOOKMARK [3][-]{Item.76}{Relevant questions for situation \(7, 8, 9\)}{subsection.11.1.4}% 107
+\BOOKMARK [3][-]{Item.76}{General questions on protocol \(10\)}{subsection.11.1.4}% 108
+\BOOKMARK [2][-]{subsection.11.1.5}{Level of measurement}{section.11.1}% 109
+\BOOKMARK [1][-]{section.11.2}{Evaluation results}{chapter.11}% 110
+\BOOKMARK [2][-]{subsection.11.2.1}{Observations during simulations}{section.11.2}% 111
+\BOOKMARK [2][-]{subsection.11.2.2}{Evaluation of the protocol}{section.11.2}% 112
+\BOOKMARK [1][-]{section.11.3}{Conclusion based on experiment}{chapter.11}% 113
+\BOOKMARK [0][-]{chapter.12}{Conclusion}{part.3}% 114
+\BOOKMARK [-1][-]{part.4}{IV Wrap-up}{}% 115
+\BOOKMARK [0][-]{chapter.13}{Final conclusion and recommendations}{part.4}% 116
+\BOOKMARK [1][-]{section.13.1}{Impact of manoeuvrability on sailing without communication}{chapter.13}% 117
+\BOOKMARK [1][-]{section.13.2}{Development of a protocol based on existing systems}{chapter.13}% 118
+\BOOKMARK [1][-]{section.13.3}{Combining previous results}{chapter.13}% 119
+\BOOKMARK [1][-]{section.13.4}{Recommendations for future research}{chapter.13}% 120
+\BOOKMARK [-1][-]{part.5}{V Appendices}{}% 121
+\BOOKMARK [0][-]{appendix.A}{Systems for safe navigation}{part.5}% 122
+\BOOKMARK [1][-]{section.A.1}{Bridge system elements}{appendix.A}% 123
+\BOOKMARK [2][-]{subsection.A.1.1}{Technical system}{section.A.1}% 124
+\BOOKMARK [3][-]{section*.89}{Navigational text Messages \(Navtex\)}{subsection.A.1.1}% 125
+\BOOKMARK [3][-]{section*.89}{Very High Frequency radio \(VHF\)}{subsection.A.1.1}% 126
+\BOOKMARK [3][-]{figure.caption.90}{Automatic Radar Plotting Aid \(ARPA\)}{subsection.A.1.1}% 127
+\BOOKMARK [3][-]{figure.caption.91}{Electronic Chart Display Information System \(ECDIS\)}{subsection.A.1.1}% 128
+\BOOKMARK [3][-]{figure.caption.93}{Automatic Identification System \(AIS\)}{subsection.A.1.1}% 129
+\BOOKMARK [2][-]{subsection.A.1.2}{Man/machine interface}{section.A.1}% 130
+\BOOKMARK [2][-]{subsection.A.1.3}{Human operator}{section.A.1}% 131
+\BOOKMARK [3][-]{section*.96}{Role as operator}{subsection.A.1.3}% 132
+\BOOKMARK [3][-]{figure.caption.97}{Human factor}{subsection.A.1.3}% 133
+\BOOKMARK [2][-]{subsection.A.1.4}{Procedures}{section.A.1}% 134
+\BOOKMARK [3][-]{section*.100}{Convention on the International Regulations for Preventing Collisions at Sea \(COLREGs\)}{subsection.A.1.4}% 135
+\BOOKMARK [3][-]{section*.100}{Standard Maritime Communication Phrases \(SMCP\)}{subsection.A.1.4}% 136
+\BOOKMARK [1][-]{section.A.2}{Difference between theory and practice}{appendix.A}% 137
+\BOOKMARK [2][-]{section*.102}{Natural language}{section.A.2}% 138
+\BOOKMARK [3][-]{section*.102}{Incorrect AIS information}{section.A.2}% 139
+\BOOKMARK [1][-]{section.A.3}{Summary of relevant communication systems}{appendix.A}% 140
+\BOOKMARK [0][-]{appendix.B}{Simulation environment}{part.5}% 141
+\BOOKMARK [1][-]{section.B.1}{Foundation}{appendix.B}% 142
+\BOOKMARK [2][-]{subsection.B.1.1}{Software architecture}{section.B.1}% 143
+\BOOKMARK [1][-]{section.B.2}{Design specifications}{appendix.B}% 144
+\BOOKMARK [2][-]{subsection.B.2.1}{Ship description}{section.B.2}% 145
+\BOOKMARK [2][-]{subsection.B.2.2}{Controller}{section.B.2}% 146
+\BOOKMARK [2][-]{subsection.B.2.3}{Manoeuvring}{section.B.2}% 147
+\BOOKMARK [3][-]{section*.107}{IMO standard}{subsection.B.2.3}% 148
+\BOOKMARK [3][-]{Item.93}{Empirical model}{subsection.B.2.3}% 149
+\BOOKMARK [2][-]{subsection.B.2.4}{Numerical settings}{section.B.2}% 150
+\BOOKMARK [3][-]{section*.110}{Time-step for simulation}{subsection.B.2.4}% 151
+\BOOKMARK [3][-]{section*.110}{Change time for critical evasive manoeuvre}{subsection.B.2.4}% 152
+\BOOKMARK [1][-]{section.B.3}{Build}{appendix.B}% 153
+\BOOKMARK [2][-]{subsection.B.3.1}{User interface}{section.B.3}% 154
+\BOOKMARK [2][-]{subsection.B.3.2}{Output}{section.B.3}% 155
+\BOOKMARK [2][-]{subsection.B.3.3}{Level of implementation}{section.B.3}% 156
+\BOOKMARK [0][-]{appendix.C}{Accidents}{part.5}% 157
+\BOOKMARK [1][-]{section.C.1}{MV AL ORAIQ and MV FLINTERSTAR}{appendix.C}% 158
+\BOOKMARK [1][-]{section.C.2}{MV ARTADI and MV ST-GERMAIN}{appendix.C}% 159
+\BOOKMARK [1][-]{section.C.3}{USS FITZGERALD and MV ACX CRYSTAL}{appendix.C}% 160
+\BOOKMARK [1][-]{section.C.4}{USS JOHN S MCCAIN and MV ALNIC MC}{appendix.C}% 161
+\BOOKMARK [1][-]{section.C.5}{MV CONTI PERIDOT and MV CARLA MAERSK}{appendix.C}% 162
+\BOOKMARK [1][-]{section.C.6}{Lessons learned}{appendix.C}% 163
+\BOOKMARK [0][-]{section.C.6}{Bibliography}{part.5}% 164

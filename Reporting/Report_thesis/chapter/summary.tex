@@ -1,2 +1,39 @@
-\chapter{Abstract}
-\todo{Schrijf samenvatting}
+\chapter{Summary}
+\markboth{SUMMARY}{SUMMARY}
+This research aims to help in solving the challenge of communication between manned and unmanned vessels. The communication between manned and unmanned vessels has not been touched upon in earlier projects. This report proposes two partial solutions to tackle the challenge of communication. The first solution is to avoid communication by staying well clear. The second solution is to develop a protocol based on existing systems and protocols, to facilitate communication between manned and unmanned vessels.
+
+These partial solutions are selected by analysing the factors that influence the decision process during navigation. This decision process is also relevant to determine which situations are critical for avoiding communication by staying well clear. The decision process itself consists of the following phases: Form a mental model, identify the situation, predict future states, define strategy, execute actions, result state. The environment and communication are factors that influence the result and this process in general.
+
+\subsubsection{Impact of manoeuvrability on the necessity to communicate}
+Based on the decision process is a decision tree defined to gives insight into all different possibilities for every phase. Critical situations are determined by evaluating the branches in the decision tree using multiple criteria. This evaluation results in common critical situations, each of these situations has a favourable strategy. To ensure that a ship can avoid communication by staying well clear must all situations be evaluated to specify the manoeuvring requirements for the vessel.
+
+This research developed a method to evaluate a common critical situation. The first situation to test this method is a perpendicular crossing situation where two ships are on a collision course. An evasive manoeuvre is the favourable strategy in this situation. The common critical evasive manoeuvre is described as a manoeuvre where the \acf{CPA} and passing distance are increased as much as possible while returning to the original course. This is done in the least amount of time, and the least distance travelled forward. During the manoeuvre will the ship give maximum rudder to one side, followed by maximum rudder to the other side, until the ship has returned to its original course.
+
+The most relevant manoeuvring characteristic in this situation is the advance distance. This distance is measured during the turning-circle test. A validated simulation tool tests the evasive manoeuvre with varying inputs which determine the advance distance and distance travelled forward. This results in the relation between the distance travelled forward, the advance distance and the resulting CPA.
+The distance travelled forward for this manoeuvre is the same as the distance that is left when a ship wants to avoid a collision. This distance is also called the distance till initial CPA.
+The found relation can be used for both the ship design as for the design of shipping lanes, as it gives requirements for both the manoeuvring characteristics and required manoeuvring space. It shows how much distance a ship with specific advance distance needs for an evasive manoeuvre, that results in a desired CPA.
+
+Higher advance distances will result in higher distances till initial CPA and will need even more space between traffic lanes. The advance distance can be improved by adding rudders or changing the rudder profile. An improvement of 10\% on the advance distance results in a reduction of 10\% on the distance required to react.
+
+The developed method validates whether a specific ship reaches a certain level of well-clear. Testing more situations with this method will make it possible to give a set of manoeuvring requirements for a ship, related to the operational area. 
+More research and number crunching are necessary to determine the acceptable \ac{CPA} and passing distance to avoid communication and be well-clear. The results from that will also help to define what level of well-clear is necessary.
+
+\subsubsection{A protocol to enable communication between manned and unmanned ships}
+\noindent In the situations where it is not possible for a ship to get well-clear by itself, communication is necessary. Manned vessels are using VHF-radio and information exchange via AIS for this. For the communication between unmanned ships, it will be likely to develop new systems that share more information. This information is well interpretable by computers. 
+
+For the communication between manned and unmanned ships, the first steps are taken to develop a protocol. This protocol is based on existing protocols and systems, to avoid changes for manned vessels. A protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission or receipt of a message. 
+
+The most important reasons for communication are when an operator deviates from rules, deviant behaviour is registered, or more information is necessary to decide on the right strategy. Problems that might occur with communication are an information overload of the crew or communication channels, resulting in a loss of situational awareness. In case of communication between manned and unmanned vessel can the operator both be an automated system or a human seafarer.
+
+This research did not look into developing a full functional protocol, as more actors should be taken into account, i.e. traffic controllers and surrounding ships. This research did look into the feasibility of using existing systems and protocols to develop a new protocol. The \acf{sCE} method is used, as the seafarers are an essential factor in developing a reliable protocol. This method helps to develop an interactive and human-centred protocol, that is built on theory and empirical research.
+
+The core of the protocol is a conversational agent using \acf{SMCP}. The protocol around SMCP works with message markers and natural language variations on the SMCP phrases. Other signals are used to show that a ship is unmanned. The agent should be able to negotiate possible strategies to ensure that a seafarer has a feeling of autonomy, which is necessary for trust.
+
+The protocol is evaluated in an experiment with 16 experienced seafarers. Measures for acceptance of the protocol in this stage are performance, trust, situation awareness and satisfaction. In the experiment will the participants get a questionnaire and have to operate a vessel in two situations. It depends on the test group in which situation they use the protocol.
+The experiment gave valuable feedback on the protocol which can be used in next iterations, such as the limited usage of marker words by seafarers, problems with speech recognition of non-western crews, and possible usage of text messaging via AIS or INMARSAT-C.
+
+The main conclusion is that it is feasible to develop a protocol using SMCP and a conversational agent. The protocol is easy to use, which resulted in a good performance of participants during the experiment. The participants are confident that the system will work as expected and thus will trust the protocol. The protocol did not influence the situation awareness during the experiment, but more situations should be evaluated to ensure that this is the case. The participants liked that the protocol is based on SMCP, as this is an 'idiot proof' system.
+
+When implementing the full protocol, more evaluations are necessary. These evaluations should consider more different situations. These will not only say if there is an impact on the performance, trust, situation awareness and satisfaction of seafarers. But the results of these evaluations should also show what this impact is, which means that it is possible to mitigate a negative impact and exploit the advantages.
+
+The next step for developing the protocol is the mapping of situations to the possible strategies and required information. The design philosophies for uncovering the relation between manoeuvring criteria and CPA, and designing a protocol have been proven to be successful.

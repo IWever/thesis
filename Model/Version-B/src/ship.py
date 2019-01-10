@@ -117,6 +117,18 @@ class Ship():
 
         return ellipse
 
+    def safetyDomainCircle(self):
+        # Based on expert feedback for busy area's
+        cx = self.location[0]
+        cy = self.location[1]
+        center = (cx, cy)
+
+        diameter = 2 * 370
+
+        circle = patches.Ellipse(center, diameter, diameter, color=self.color, fill=False)
+
+        return circle
+
     # Functions to automatically steer vessel
     def adjustRudder(self):
         locationError = np.asarray(self.waypoints[0]) - np.asarray(self.location)

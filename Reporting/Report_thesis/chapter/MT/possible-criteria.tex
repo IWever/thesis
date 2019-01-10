@@ -1,6 +1,6 @@
 \chapter{Definition of criteria for evaluation of situation}
 \label{ch:criteria-problem}
-To determine if a problem might occur in the situations and scenarios as identified in the previous chapter, are different criteria evaluated. The current systems calculate most of these criteria, such as \ac{ECDIS} and \ac{ARPA}. However, they do use linearised algorithms. These do not predict the \ac{CPA} and crossing distance correctly while turning, often resulting in many dismissed alarms. This chapter describes different criteria, followed by the calculation needed to evaluate them. This description and calculation are given for both the linearised algorithms and proposed algorithms. Later in the process, these criteria can be used again, to ensure that the chosen strategies ensure safe operation with low perceived risk.
+To determine whether a problem might occur in the situations and scenarios as identified in the previous chapter, different criteria are evaluated. The current systems calculate most of these criteria, such as \ac{ECDIS} and \ac{ARPA}. However, they do use linearised algorithms. These do not predict the \ac{CPA} and crossing distance correctly while turning, often resulting in many dismissed alarms. This chapter describes different criteria, followed by the calculation needed to evaluate these criteria. This description and calculation are given for both the linearised algorithms and proposed algorithms. Later in the process, these criteria can be used again, to ensure that the chosen strategies ensure safe operation with low perceived risk.
 
 \section{Calculations based on current systems}
 \label{sec:linearised-methods}
@@ -86,9 +86,9 @@ d_{cd,QP}(t_{cp,Q}) = |P(t_{cp,Q}) - Q(t_{cp,Q})|
 \end{equation}
 
 \section{Proposed algorithm based on planned path}
-Better non-linearised methods are necessary for the calculation of the \ac{CPA} and crossing point, to improve the evaluation of criteria. By predicting the likely path of a vessel, better estimations can be made. Which first uses a first-order change, based on the rate of turn and course. This prediction can be extended with a combination of expected location and the probability that another ship is choosing a specific strategy.
+Better non-linearised methods are necessary for the calculation of the \ac{CPA} and crossing point, to improve the evaluation of criteria. By predicting the likely path of a vessel, improved estimations can be made. These use a first-order change, based on the rate of turn and course. This prediction can be extended with a combination of expected location and the probability that another ship is choosing a specific strategy.
 
-Although it will result in better evaluations, the disadvantage is that much heavier computations are needed, while also introducing uncertainty with the numerical solver. 
+Although it will result in better evaluations, the disadvantage is that much heavier computations are required, while also introducing uncertainty with the numerical solver. 
 The first step will be to make a combination of both the linearised and non-linearised methods. The calculations have to be done for every combination of ships.
 
 The Bézier curve is used to describe the paths in a non-linearised manner. This section first defines a Bézier curve. Followed by the same criteria as in the previous section: \acf{CPA} and crossing distance. This time describing the algorithm using to calculate it in a non-linearised manner.
@@ -102,7 +102,7 @@ d(t) = |P(t) - Q(t)|$. However is P taken as own ship and gets a new formula usi
 P(t) = \sum\limits_{i=0}^n b_{i,n}(t) \cdot P_i \quad and
 \end{equation}
 \begin{equation}
-b_{i,n}(t) = \begin{array}{c} n \\ i \end{array} t^i(1-t)^{n-i}, i = 0,\dots,n
+b_{i,n}(t) = \left( \begin{array}{c} n \\ i \end{array}\right) t^i(1-t)^{n-i}, i = 0,\dots,n
 \end{equation}
 
 \subsection{Closest point of approach}
@@ -120,7 +120,7 @@ The numerical algorithm used to calculate the CPA is shown below. Herein is the 
 	\item Calculate distance between ships for each time-step:
 	\begin{enumerate}
 		\item If smaller than stored CPA, update stored CPA with calculated CPA
-		\item If larger than stored CPA, do not update
+		\item If larger than stored CPA, do not update stored CPA
 	\end{enumerate}
 	\item Return CPA
 \end{enumerate}
@@ -146,5 +146,5 @@ The algorithm to calculate the crossing distance will require much less computat
 \end{enumerate}
 
 \vspace{1.5cm}
-\emph{In the next chapter} we will describe criteria which depend on the manoeuvrability characteristics of a ship. Using the \ac{CPA} and crossing distance can be determined if the chosen strategy without communication will result in safe operation. Where the algorithms as discussed in this chapter, will give more exact results.
+\emph{The next chapter} describes the criteria that depend on the manoeuvrability characteristics of a ship. Using the \ac{CPA} and crossing distance can be determined whether the chosen strategy without communication will result in safe operation. Where the algorithms as discussed in this chapter, will give more exact results.
 

@@ -433,7 +433,12 @@ class Viewer:
 
         ship.markerPlot = self.mapPlot.scatter(ship.location[0], ship.location[1], marker='o', color=ship.color)
         ship.tag = self.mapPlot.text(ship.location[0], ship.location[1], shipname)
-        ship.safetyDomain = self.mapPlot.add_artist(ship.safetyDomainEllipse())
+
+        if self.world.coldwell:
+            ship.safetyDomain = self.mapPlot.add_artist(ship.safetyDomainEllipse())
+
+        if self.world.twoCables:
+            ship.safetyDomain = self.mapPlot.add_artist(ship.safetyDomainCircle())
 
         if self.world.showWaypointMarkers:
             if not ship.waypointMarker:

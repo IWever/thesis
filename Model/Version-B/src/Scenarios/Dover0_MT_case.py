@@ -4,9 +4,13 @@ def initial(simulation):
     simulation.addDynamicObject("Astrorunner", [3250, 0], 315, speed=14.7, rudderAngle=0)
     simulation.addDynamicObject("EmmaMaersk", [2800, 4300], 225, speed=12, rudderAngle=0)
 
-    # simulation.world.do["Tanker"].waypoints.append([230, -50])
-    # simulation.world.do["Astrorunner"].waypoints.append([0, 400])
+    simulation.world.do["Gulf Valour"].waypoints.append([800, 800])
+    simulation.world.do["Gulf Valour"].waypoints.append([1700, 900])
+    simulation.world.do["Gulf Valour"].waypoints.append([3500, 2700])
 
+    simulation.world.do["Astrorunner"].waypoints.append([1500, 1700])
+    simulation.world.do["Astrorunner"].waypoints.append([1600, 2400])
+    simulation.world.do["Astrorunner"].waypoints.append([0, 3000])
 
     # Static objects
     forbiddenZonePolygonSouth = [
@@ -43,7 +47,7 @@ def initial(simulation):
     simulation.world.so["Seperation scheme north"] = simulation.createDangerLinePatch(separationSchemeNorth)
 
     # Initial view
-    simulation.world.mapLocation = [-3500, 4200, -800, 3600]
+    simulation.world.mapLocation = [-2500, 5200, -500, 3900]
 
 
 
